@@ -1,0 +1,22 @@
+{
+  "_id": "AntimagicField",
+  "name": "Antimagic Field",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Creates a sphere where magic cannot function and spells are suppressed.",
+    "spellLevel": 8,
+    "diceCount": 2,
+    "castStat": "int",
+    "category": "abjuration",
+    "prowess": 11,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

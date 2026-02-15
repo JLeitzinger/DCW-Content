@@ -1,0 +1,22 @@
+{
+  "_id": "Web",
+  "name": "Web",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Conjures thick, sticky webs that entangle and restrain creatures.",
+    "spellLevel": 2,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "conjuration",
+    "prowess": 3,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

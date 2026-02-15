@@ -1,0 +1,22 @@
+{
+  "_id": "TrueSeeing",
+  "name": "True Seeing",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Grants the ability to see through all illusions, darkness, and hidden doors.",
+    "spellLevel": 6,
+    "diceCount": 2,
+    "castStat": "wis",
+    "category": "divination",
+    "prowess": 8,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

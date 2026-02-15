@@ -1,0 +1,22 @@
+{
+  "_id": "LocateObject",
+  "name": "Locate Object",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Senses the direction to a known object within range.",
+    "spellLevel": 2,
+    "diceCount": 1,
+    "castStat": "wis",
+    "category": "divination",
+    "prowess": 3,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

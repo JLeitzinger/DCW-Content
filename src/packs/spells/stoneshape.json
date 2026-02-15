@@ -1,0 +1,22 @@
+{
+  "_id": "StoneShape",
+  "name": "Stone Shape",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Molds and sculpts stone into any shape you desire.",
+    "spellLevel": 4,
+    "diceCount": 1,
+    "castStat": "wis",
+    "category": "transmutation",
+    "prowess": 6,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

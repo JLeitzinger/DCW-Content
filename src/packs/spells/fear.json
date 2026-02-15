@@ -1,0 +1,22 @@
+{
+  "_id": "Fear",
+  "name": "Fear",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Projects a terrifying image that causes creatures to flee in panic.",
+    "spellLevel": 3,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "enchantment",
+    "prowess": 4,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

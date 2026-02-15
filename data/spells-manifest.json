@@ -96,6 +96,24 @@
         "castStat": "int",
         "category": "evocation",
         "description": "Summons blazing meteors from the sky to rain down on enemies."
+      },
+      {
+        "name": "Acid Arrow",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.AcidArrow",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "evocation",
+        "description": "Conjures a glowing arrow of acid that melts through armor and continues burning."
+      },
+      {
+        "name": "Flame Strike",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.FlameStrike",
+        "spellLevel": 5,
+        "diceCount": 2,
+        "castStat": "wis",
+        "category": "evocation",
+        "description": "Calls down a column of divine fire to incinerate enemies from above."
       }
     ],
     "abjuration": [
@@ -143,6 +161,24 @@
         "castStat": "int",
         "category": "abjuration",
         "description": "Creates an invisible wall of pure magical force."
+      },
+      {
+        "name": "Resist Energy",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.ResistEnergy",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "wis",
+        "category": "abjuration",
+        "description": "Grants resistance to a chosen energy type: fire, cold, lightning, or acid."
+      },
+      {
+        "name": "Antimagic Field",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.AntimagicField",
+        "spellLevel": 8,
+        "diceCount": 2,
+        "castStat": "int",
+        "category": "abjuration",
+        "description": "Creates a sphere where magic cannot function and spells are suppressed."
       }
     ],
     "conjuration": [
@@ -190,6 +226,24 @@
         "castStat": "int",
         "category": "conjuration",
         "description": "Instantly transports you and willing creatures to a distant location."
+      },
+      {
+        "name": "Web",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Web",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "conjuration",
+        "description": "Conjures thick, sticky webs that entangle and restrain creatures."
+      },
+      {
+        "name": "Dimension Door",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.DimensionDoor",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "conjuration",
+        "description": "Teleports you a medium distance, passing through barriers and obstacles."
       }
     ],
     "enchantment": [
@@ -237,6 +291,24 @@
         "castStat": "int",
         "category": "enchantment",
         "description": "Takes complete control of a humanoid's actions."
+      },
+      {
+        "name": "Fear",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Fear",
+        "spellLevel": 3,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "enchantment",
+        "description": "Projects a terrifying image that causes creatures to flee in panic."
+      },
+      {
+        "name": "Confusion",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Confusion",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "enchantment",
+        "description": "Scrambles the minds of creatures, making them act randomly and unpredictably."
       }
     ],
     "illusion": [
@@ -284,6 +356,24 @@
         "castStat": "int",
         "category": "illusion",
         "description": "Turns a creature invisible even while attacking or casting spells."
+      },
+      {
+        "name": "Blur",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Blur",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "illusion",
+        "description": "Distorts your form, making you appear as a hazy, shifting blur."
+      },
+      {
+        "name": "Phantasmal Killer",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.PhantasmalKiller",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "illusion",
+        "description": "Creates a nightmarish illusion of the target's deepest fears that can kill with terror."
       }
     ],
     "necromancy": [
@@ -331,6 +421,24 @@
         "castStat": "int",
         "category": "necromancy",
         "description": "Sends negative energy coursing through a creature, potentially killing it instantly."
+      },
+      {
+        "name": "Vampiric Touch",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.VampiricTouch",
+        "spellLevel": 3,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "necromancy",
+        "description": "Your touch drains life force from enemies and transfers it to heal your wounds."
+      },
+      {
+        "name": "Circle of Death",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.CircleOfDeath",
+        "spellLevel": 6,
+        "diceCount": 2,
+        "castStat": "int",
+        "category": "necromancy",
+        "description": "A sphere of necromantic energy bursts outward, withering all life within."
       }
     ],
     "transmutation": [
@@ -378,6 +486,24 @@
         "castStat": "int",
         "category": "transmutation",
         "description": "Transforms matter into fine dust with a thin green ray."
+      },
+      {
+        "name": "Slow",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Slow",
+        "spellLevel": 3,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "transmutation",
+        "description": "Drastically reduces the speed and reaction time of affected creatures."
+      },
+      {
+        "name": "Stone Shape",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.StoneShape",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "wis",
+        "category": "transmutation",
+        "description": "Molds and sculpts stone into any shape you desire."
       }
     ],
     "divination": [
@@ -425,6 +551,24 @@
         "castStat": "int",
         "category": "divination",
         "description": "Observes a creature at any distance through magical sight."
+      },
+      {
+        "name": "Locate Object",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.LocateObject",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "wis",
+        "category": "divination",
+        "description": "Senses the direction to a known object within range."
+      },
+      {
+        "name": "True Seeing",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.TrueSeeing",
+        "spellLevel": 6,
+        "diceCount": 2,
+        "castStat": "wis",
+        "category": "divination",
+        "description": "Grants the ability to see through all illusions, darkness, and hidden doors."
       }
     ]
   }

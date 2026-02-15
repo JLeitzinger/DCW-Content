@@ -1,0 +1,22 @@
+{
+  "_id": "AcidArrow",
+  "name": "Acid Arrow",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Conjures a glowing arrow of acid that melts through armor and continues burning.",
+    "spellLevel": 2,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "evocation",
+    "prowess": 3,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

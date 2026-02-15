@@ -1,0 +1,22 @@
+{
+  "_id": "CircleofDeath",
+  "name": "Circle of Death",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "A sphere of necromantic energy bursts outward, withering all life within.",
+    "spellLevel": 6,
+    "diceCount": 2,
+    "castStat": "int",
+    "category": "necromancy",
+    "prowess": 8,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}
