@@ -1,0 +1,29 @@
+{
+  "_id": "a33e31c9418d55bb",
+  "name": "Handaxe",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "A light axe, versatile for melee and throwing.",
+    "quantity": 1,
+    "weight": 2,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+    },
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Slash",
+        "level": 1
+      }
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

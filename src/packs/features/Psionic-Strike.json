@@ -1,0 +1,17 @@
+{
+  "_id": "Psionic-Strike",
+  "name": "Psionic Strike",
+  "type": "feature",
+  "img": "icons/svg/mind-blast.svg",
+  "system": {
+    "description": "You can infuse your weapons with psychic energy. When you hit with a melee attack, you can spend 2 mana to deal an additional 2d8 psychic damage. The target must also succeed on an Intelligence save or be stunned until the end of your next turn.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,17 @@
+{
+  "_id": "Spellcasting",
+  "name": "Spellcasting",
+  "type": "feature",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "You have learned to cast spells through study and practice. Intelligence is your spellcasting ability for your wizard spells. You can cast wizard spells from your spellbook.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

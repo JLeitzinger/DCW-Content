@@ -1,0 +1,17 @@
+{
+  "_id": "Storm-Surge",
+  "name": "Storm Surge",
+  "type": "feature",
+  "img": "icons/svg/lightning-storm.svg",
+  "system": {
+    "description": "You can summon devastating storms. As an action, spend 4 mana to create a storm in a 30-foot radius for 1 minute. You can command the storm to strike targets with lightning (3d10 damage), create strong winds (difficult terrain), or summon rain that extinguishes fires and obscures vision.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

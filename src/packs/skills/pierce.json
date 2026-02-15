@@ -1,0 +1,21 @@
+{
+  "_id": "Pierce",
+  "name": "Pierce",
+  "type": "skill",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Piercing weapons like spears and daggers. Thrusting and stabbing attacks.",
+    "level": 0,
+    "category": "combat",
+    "relatedStat": "dex",
+    "effort": 0,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

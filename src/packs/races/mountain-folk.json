@@ -1,0 +1,66 @@
+{
+  "_id": "mountain-folk",
+  "name": "Mountain Folk",
+  "type": "race",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "Hardy people who make their homes in the highest peaks. Miners, climbers, and hunters known for their incredible endurance and connection to the stone.",
+    "abilityBonuses": {
+      "str": 1,
+      "dex": 0,
+      "con": 2,
+      "int": 0,
+      "wis": 0,
+      "cha": 0
+    },
+    "bonuses": {
+      "hp": 3,
+      "stamina": 2,
+      "mana": 0
+    },
+    "size": "medium",
+    "speed": 25,
+    "senses": {
+      "darkvision": 60,
+      "blindsight": 0,
+      "tremorsense": 0,
+      "truesight": 0
+    },
+    "languages": "Common, Giant",
+    "features": [
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Mountain-born",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Stone-endurance",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Sure-footed",
+        "level": 1
+      }
+    ],
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Athletics",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Craft",
+        "level": 1
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Blunt",
+        "level": 2
+      }
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

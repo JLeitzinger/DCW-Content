@@ -1,0 +1,36 @@
+{
+  "name": "dcw-content",
+  "version": "1.0.0",
+  "description": "Content generation tools and compendium packs for Dungeon Crawler World",
+  "scripts": {
+    "generate:weapons": "node scripts/generators/generate-weapons.mjs",
+    "generate:skills": "node scripts/generate-skills.mjs",
+    "pack": "npm run pack:items && npm run pack:skills && npm run pack:races && npm run pack:spells && npm run pack:features && npm run pack:classes",
+    "pack:items": "node scripts/pack-items.mjs",
+    "pack:skills": "node scripts/pack-skills.mjs",
+    "pack:races": "node scripts/pack-races.mjs",
+    "pack:spells": "node scripts/pack-spells.mjs",
+    "pack:features": "node scripts/pack-features.mjs",
+    "pack:classes": "node scripts/pack-classes.mjs",
+    "add-skills-to-weapons": "node scripts/add-skills-to-weapons.mjs",
+    "skill-lookup": "node scripts/skill-lookup.mjs",
+    "verify:classes": "node scripts/verify-classes.mjs",
+    "inspect:skills": "node scripts/inspect-skills-db.mjs",
+    "list:skills": "node scripts/list-all-skills-db.mjs"
+  },
+  "keywords": [
+    "foundry-vtt",
+    "dungeon-crawler-world",
+    "compendium",
+    "content-tools"
+  ],
+  "author": "JLeitzinger",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JLeitzinger/DCW-Content"
+  },
+  "devDependencies": {
+    "classic-level": "^3.0.0"
+  }
+}

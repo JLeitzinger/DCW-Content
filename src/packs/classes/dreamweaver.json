@@ -1,0 +1,68 @@
+{
+  "_id": "dreamweaver",
+  "name": "Dreamweaver",
+  "type": "class",
+  "img": "icons/svg/sleeping.svg",
+  "system": {
+    "description": "A master of dreams, illusions, and the subconscious mind. Dreamweavers can enter dreamscapes, create convincing illusions that border on reality, and manipulate the sleeping and waking mind alike.",
+    "baseHP": 8,
+    "hpPerLevel": 2,
+    "staminaPerLevel": 1,
+    "manaPerLevel": 3,
+    "abilityBonuses": {
+      "str": 0,
+      "dex": 0,
+      "con": 0,
+      "int": 0.4,
+      "wis": 0,
+      "cha": 0.6
+    },
+    "levelAcquired": 1,
+    "saves": {
+      "str": false,
+      "con": false,
+      "dex": false,
+      "int": true,
+      "wis": false,
+      "cha": true
+    },
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Cast",
+        "level": 3
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Deception",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Diplomacy",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Perception",
+        "level": 1
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Focus",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": [
+      "Compendium.dungeon-crawler-world.features.Item.Dream-Walking",
+      "Compendium.dungeon-crawler-world.features.Item.Illusory-Reality"
+    ],
+    "hitDie": "d8",
+    "primaryAbility": "cha",
+    "secondaryAbility": "",
+    "features": "",
+    "subclasses": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

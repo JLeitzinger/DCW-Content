@@ -1,0 +1,21 @@
+{
+  "_id": "Athletics",
+  "name": "Athletics",
+  "type": "skill",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Climbing, jumping, swimming, and physical feats.",
+    "level": 0,
+    "category": "utility",
+    "relatedStat": "str",
+    "effort": 0,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

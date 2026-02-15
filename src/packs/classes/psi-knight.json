@@ -1,0 +1,64 @@
+{
+  "_id": "psi-knight",
+  "name": "Psi-Knight",
+  "type": "class",
+  "img": "icons/svg/mind-blast.svg",
+  "system": {
+    "description": "A psychic warrior who combines mental powers with martial prowess. Psi-Knights use telekinesis, telepathy, and psionic energy to enhance their combat abilities and devastate enemies with mind over matter.",
+    "baseHP": 11,
+    "hpPerLevel": 3,
+    "staminaPerLevel": 2,
+    "manaPerLevel": 3,
+    "abilityBonuses": {
+      "str": 0.5,
+      "dex": 0,
+      "con": 0,
+      "int": 0.5,
+      "wis": 0,
+      "cha": 0
+    },
+    "levelAcquired": 1,
+    "saves": {
+      "str": true,
+      "con": false,
+      "dex": false,
+      "int": true,
+      "wis": false,
+      "cha": false
+    },
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Slash",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Cast",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Focus",
+        "level": 3
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Athletics",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": [
+      "Compendium.dungeon-crawler-world.features.Item.Psionic-Strike",
+      "Compendium.dungeon-crawler-world.features.Item.Telekinetic-Shield"
+    ],
+    "hitDie": "d10",
+    "primaryAbility": "int",
+    "secondaryAbility": "",
+    "features": "",
+    "subclasses": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

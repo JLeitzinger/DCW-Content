@@ -1,0 +1,17 @@
+{
+  "_id": "Jack-In",
+  "name": "Jack In",
+  "type": "feature",
+  "img": "icons/svg/cyber-eye.svg",
+  "system": {
+    "description": "You can interface directly with digital systems and networks. By touching any electronic device, you can access its data, bypass security, or take control. Make an Intelligence check contested by the system's security rating.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,17 @@
+{
+  "_id": "Rune-Inscription",
+  "name": "Rune Inscription",
+  "type": "feature",
+  "img": "icons/svg/runes.svg",
+  "system": {
+    "description": "You can inscribe magical runes onto objects and surfaces. Spend 1 minute and 3 mana to inscribe a rune with one effect: protection (+1 AC), sharpness (+1d6 damage), warding (detect creatures), or explosive (2d10 damage when triggered). You can maintain a number of active runes equal to your Intelligence modifier.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

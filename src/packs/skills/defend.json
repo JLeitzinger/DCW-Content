@@ -1,0 +1,21 @@
+{
+  "_id": "Defend",
+  "name": "Defend",
+  "type": "skill",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Blocking, parrying, and damage mitigation.",
+    "level": 0,
+    "category": "combat",
+    "relatedStat": "con",
+    "effort": 0,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

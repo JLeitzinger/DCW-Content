@@ -1,0 +1,17 @@
+{
+  "_id": "Quick-Draw",
+  "name": "Quick Draw",
+  "type": "feature",
+  "img": "icons/svg/pistol.svg",
+  "system": {
+    "description": "Your reflexes are lightning-fast with firearms. You can draw and fire a ranged weapon as a single action. Additionally, you can make an attack as a reaction when rolling initiative, and you have advantage on attack rolls against creatures that haven't acted yet in combat.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

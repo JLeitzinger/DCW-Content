@@ -1,0 +1,21 @@
+{
+  "_id": "Thievery",
+  "name": "Thievery",
+  "type": "skill",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Lockpicking, pickpocketing, and sleight of hand.",
+    "level": 0,
+    "category": "general",
+    "relatedStat": "dex",
+    "effort": 0,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

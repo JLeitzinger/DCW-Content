@@ -1,0 +1,17 @@
+{
+  "_id": "Jack-Of-All-Trades",
+  "name": "Jack of All Trades",
+  "type": "feature",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "description": "You can add half your proficiency bonus (rounded down) to any ability check you make that doesn't already use your proficiency bonus. This represents your wide-ranging knowledge and experience.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

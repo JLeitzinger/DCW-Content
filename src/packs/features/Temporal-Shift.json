@@ -1,0 +1,17 @@
+{
+  "_id": "Temporal-Shift",
+  "name": "Temporal Shift",
+  "type": "feature",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "You can manipulate the flow of time around yourself. Once per short rest, you can rewind time by 6 seconds (1 round), undoing your actions and returning to your previous position with full knowledge of what occurred. Costs 5 mana.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

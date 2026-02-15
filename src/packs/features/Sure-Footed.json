@@ -1,0 +1,17 @@
+{
+  "_id": "Sure-Footed",
+  "name": "Sure-Footed",
+  "type": "feature",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "description": "You have advantage on ability checks and saving throws to avoid being knocked prone or shoved.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

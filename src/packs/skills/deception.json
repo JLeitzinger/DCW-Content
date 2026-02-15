@@ -1,0 +1,21 @@
+{
+  "_id": "Deception",
+  "name": "Deception",
+  "type": "skill",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Lying, disguise, and trickery.",
+    "level": 0,
+    "category": "general",
+    "relatedStat": "cha",
+    "effort": 0,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

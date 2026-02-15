@@ -1,0 +1,17 @@
+{
+  "_id": "Channel-Divinity",
+  "name": "Channel Divinity",
+  "type": "feature",
+  "img": "icons/svg/sun.svg",
+  "system": {
+    "description": "You can channel divine energy directly from your deity to fuel magical effects. You start with two effects: Turn Undead and an effect determined by your domain. You regain uses after a short or long rest.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

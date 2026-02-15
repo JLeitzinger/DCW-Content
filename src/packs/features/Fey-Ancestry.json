@@ -1,0 +1,17 @@
+{
+  "_id": "Fey-Ancestry",
+  "name": "Fey Ancestry",
+  "type": "feature",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "description": "You have advantage on saving throws against being charmed or magically put to sleep.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,17 @@
+{
+  "_id": "Lightning-Reflexes",
+  "name": "Lightning Reflexes",
+  "type": "feature",
+  "img": "icons/svg/zap.svg",
+  "system": {
+    "description": "Electricity courses through your body, enhancing your speed. Your base movement speed increases by 10 feet. When you move at least 20 feet in a straight line, you can make a melee attack that deals an additional 1d8 lightning damage. You also have resistance to lightning damage.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

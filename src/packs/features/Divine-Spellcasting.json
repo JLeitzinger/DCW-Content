@@ -1,0 +1,17 @@
+{
+  "_id": "Divine-Spellcasting",
+  "name": "Divine Spellcasting",
+  "type": "feature",
+  "img": "icons/svg/holy-symbol.svg",
+  "system": {
+    "description": "You can cast divine spells through your faith and devotion. Wisdom is your spellcasting ability for your cleric spells. You prepare spells through prayer and meditation.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

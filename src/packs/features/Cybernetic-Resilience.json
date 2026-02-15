@@ -1,0 +1,17 @@
+{
+  "_id": "Cybernetic-Resilience",
+  "name": "Cybernetic Resilience",
+  "type": "feature",
+  "img": "icons/svg/robot.svg",
+  "system": {
+    "description": "Your body is partially mechanical, making you resistant to biological threats. You have advantage on saving throws against disease, poison, and necrotic damage. Additionally, you can function without sleep and can survive in hostile environments (vacuum, extreme temperatures) for extended periods.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

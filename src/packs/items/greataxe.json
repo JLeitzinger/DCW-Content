@@ -1,0 +1,29 @@
+{
+  "_id": "0a3ad71eb5084142",
+  "name": "Greataxe",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "A massive two-handed axe capable of devastating strikes.",
+    "quantity": 1,
+    "weight": 7,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d12",
+      "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+    },
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Slash",
+        "level": 2
+      }
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

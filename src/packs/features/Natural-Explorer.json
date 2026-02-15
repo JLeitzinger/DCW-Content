@@ -1,0 +1,17 @@
+{
+  "_id": "Natural-Explorer",
+  "name": "Natural Explorer",
+  "type": "feature",
+  "img": "icons/svg/mountain.svg",
+  "system": {
+    "description": "You are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. In your favored terrain, you gain various benefits to navigation, tracking, and foraging.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,21 @@
+{
+  "_id": "Slash",
+  "name": "Slash",
+  "type": "skill",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Slashing weapons like swords and axes. Cutting and hacking attacks.",
+    "level": 0,
+    "category": "combat",
+    "relatedStat": "str",
+    "effort": 0,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

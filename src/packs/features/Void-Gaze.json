@@ -1,0 +1,17 @@
+{
+  "_id": "Void-Gaze",
+  "name": "Void Gaze",
+  "type": "feature",
+  "img": "icons/svg/evil-eye.svg",
+  "system": {
+    "description": "Your eyes have seen beyond reality. You can peer into the void to see invisible creatures, detect lies, and sense magic. Creatures that meet your gaze must succeed on a Wisdom save or become frightened for 1 minute. You have advantage on saves against illusions and charm effects.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

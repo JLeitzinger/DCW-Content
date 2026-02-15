@@ -1,0 +1,64 @@
+{
+  "_id": "chronomancer",
+  "name": "Chronomancer",
+  "type": "class",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "A master of temporal manipulation who can rewind time, slow enemies, and glimpse possible futures. Chronomancers perceive time as fluid and bend it to their will.",
+    "baseHP": 9,
+    "hpPerLevel": 3,
+    "staminaPerLevel": 2,
+    "manaPerLevel": 3,
+    "abilityBonuses": {
+      "str": 0,
+      "dex": 0,
+      "con": 0,
+      "int": 0.6,
+      "wis": 0.4,
+      "cha": 0
+    },
+    "levelAcquired": 1,
+    "saves": {
+      "str": false,
+      "con": false,
+      "dex": false,
+      "int": true,
+      "wis": true,
+      "cha": false
+    },
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Cast",
+        "level": 3
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Perception",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Focus",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Lore",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": [
+      "Compendium.dungeon-crawler-world.features.Item.Temporal-Shift",
+      "Compendium.dungeon-crawler-world.features.Item.Time-Dilation"
+    ],
+    "hitDie": "d8",
+    "primaryAbility": "int",
+    "secondaryAbility": "",
+    "features": "",
+    "subclasses": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

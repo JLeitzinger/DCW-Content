@@ -1,0 +1,21 @@
+{
+  "_id": "Survival",
+  "name": "Survival",
+  "type": "skill",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Tracking, foraging, and wilderness knowledge.",
+    "level": 0,
+    "category": "utility",
+    "relatedStat": "wis",
+    "effort": 0,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

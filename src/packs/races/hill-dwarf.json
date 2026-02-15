@@ -1,0 +1,66 @@
+{
+  "_id": "hill-dwarf",
+  "name": "Hill Dwarf",
+  "type": "race",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "Stout and sturdy folk who dwell in hills and mountains. Known for their craftsmanship, resilience, and fierce loyalty to clan and kin.",
+    "abilityBonuses": {
+      "str": 0,
+      "dex": 0,
+      "con": 2,
+      "int": 0,
+      "wis": 1,
+      "cha": 0
+    },
+    "bonuses": {
+      "hp": 2,
+      "stamina": 0,
+      "mana": 0
+    },
+    "size": "medium",
+    "speed": 25,
+    "senses": {
+      "darkvision": 60,
+      "blindsight": 0,
+      "tremorsense": 0,
+      "truesight": 0
+    },
+    "languages": "Common, Dwarvish",
+    "features": [
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Dwarven-resilience",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Stonecunning",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Craftsmen",
+        "level": 1
+      }
+    ],
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Craft",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Lore",
+        "level": 1
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Defend",
+        "level": 2
+      }
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

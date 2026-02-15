@@ -1,0 +1,29 @@
+{
+  "_id": "ace37ebef8860b71",
+  "name": "Longsword",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "A classic adventurer's blade, reliable and deadly.",
+    "quantity": 1,
+    "weight": 3,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d8",
+      "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+    },
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Slash",
+        "level": 1
+      }
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,17 @@
+{
+  "_id": "Rage",
+  "name": "Rage",
+  "type": "feature",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "description": "In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action. While raging, you gain bonus damage on melee attacks, resistance to physical damage, and advantage on Strength checks and saves. Your rage lasts for 1 minute.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

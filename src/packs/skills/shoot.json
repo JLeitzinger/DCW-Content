@@ -1,0 +1,21 @@
+{
+  "_id": "Shoot",
+  "name": "Shoot",
+  "type": "skill",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Ranged weapon attacks and marksmanship with bows and crossbows.",
+    "level": 0,
+    "category": "combat",
+    "relatedStat": "dex",
+    "effort": 0,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

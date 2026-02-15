@@ -1,0 +1,17 @@
+{
+  "_id": "Trick-Shot",
+  "name": "Trick Shot",
+  "type": "feature",
+  "img": "icons/svg/target-shot.svg",
+  "system": {
+    "description": "You can pull off impossible shots with firearms. By spending 2 stamina, you can: ricochet a shot around corners, disarm a target, shoot objects out of the air, or shoot through cover without penalty. These shots ignore half and three-quarters cover.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

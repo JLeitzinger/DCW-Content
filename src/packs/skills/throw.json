@@ -1,0 +1,21 @@
+{
+  "_id": "Throw",
+  "name": "Throw",
+  "type": "skill",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Throwing weapons and objects with accuracy and force.",
+    "level": 0,
+    "category": "combat",
+    "relatedStat": "dex",
+    "effort": 0,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

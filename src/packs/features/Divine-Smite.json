@@ -1,0 +1,17 @@
+{
+  "_id": "Divine-Smite",
+  "name": "Divine Smite",
+  "type": "feature",
+  "img": "icons/svg/sword-cross.svg",
+  "system": {
+    "description": "When you hit a creature with a melee weapon attack, you can expend mana to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for 2 mana, plus 1d8 for each additional mana spent, to a maximum of 5d8.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

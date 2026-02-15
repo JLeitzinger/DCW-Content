@@ -1,0 +1,17 @@
+{
+  "_id": "Illusory-Reality",
+  "name": "Illusory Reality",
+  "type": "feature",
+  "img": "icons/svg/mirror.svg",
+  "system": {
+    "description": "Your illusions are so convincing they become partially real. When you cast an illusion spell or create an illusion, you can spend 3 mana to make one object from the illusion real for up to 1 minute. The object can't deal damage or directly harm creatures, but otherwise functions as a real object.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

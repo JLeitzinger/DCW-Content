@@ -1,0 +1,17 @@
+{
+  "_id": "Genetic-Modification",
+  "name": "Genetic Modification",
+  "type": "feature",
+  "img": "icons/svg/dna.svg",
+  "system": {
+    "description": "You can alter biological structures at the genetic level. By spending 10 minutes and 5 stamina, you can grant yourself or an ally one mutation: claws (+1d6 damage), enhanced senses (darkvision 60ft), carapace (+2 AC), or gills (water breathing). The mutation lasts 8 hours.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

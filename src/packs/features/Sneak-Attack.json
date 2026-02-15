@@ -1,0 +1,17 @@
+{
+  "_id": "Sneak-Attack",
+  "name": "Sneak Attack",
+  "type": "feature",
+  "img": "icons/svg/dagger.svg",
+  "system": {
+    "description": "You know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The damage increases as you gain rogue levels.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

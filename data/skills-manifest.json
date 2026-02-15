@@ -1,0 +1,175 @@
+{
+  "manifestVersion": "1.0",
+  "description": "Registry of skill items with stable UUIDs for cross-referencing in items, classes, races, etc.",
+  "skills": {
+    "combat": [
+      {
+        "name": "Slash",
+        "uuid": "Compendium.dungeon-crawler-world.skills.Item.Slash",
+        "category": "combat",
+        "relatedStat": "str",
+        "description": "Slashing weapons like swords and axes. Cutting and hacking attacks."
+      },
+      {
+        "name": "Pierce",
+        "uuid": "Compendium.dungeon-crawler-world.skills.Item.Pierce",
+        "category": "combat",
+        "relatedStat": "dex",
+        "description": "Piercing weapons like spears and daggers. Thrusting and stabbing attacks."
+      },
+      {
+        "name": "Blunt",
+        "uuid": "Compendium.dungeon-crawler-world.skills.Item.Blunt",
+        "category": "combat",
+        "relatedStat": "str",
+        "description": "Blunt weapons like maces and hammers. Crushing and smashing attacks."
+      },
+      {
+        "name": "Shoot",
+        "uuid": "Compendium.dungeon-crawler-world.skills.Item.Shoot",
+        "category": "combat",
+        "relatedStat": "dex",
+        "description": "Ranged weapon attacks and marksmanship with bows and crossbows."
+      },
+      {
+        "name": "Defend",
+        "uuid": "Compendium.dungeon-crawler-world.skills.Item.Defend",
+        "category": "combat",
+        "relatedStat": "con",
+        "description": "Blocking, parrying, and damage mitigation."
+      },
+      {
+        "name": "Throw",
+        "uuid": "Compendium.dungeon-crawler-world.skills.Item.Throw",
+        "category": "combat",
+        "relatedStat": "dex",
+        "description": "Throwing weapons and objects with accuracy and force."
+      }
+    ],
+    "magic": [
+      {
+        "name": "Cast",
+        "uuid": "Compendium.dungeon-crawler-world.skills.Item.Cast",
+        "category": "magic",
+        "relatedStat": "int",
+        "description": "Spellcasting and magical ability."
+      },
+      {
+        "name": "Channel",
+        "uuid": "Compendium.dungeon-crawler-world.skills.Item.Channel",
+        "category": "magic",
+        "relatedStat": "wis",
+        "description": "Divine magic and channeled energy."
+      }
+    ],
+    "utility": [
+      {
+        "name": "Athletics",
+        "uuid": "Compendium.dungeon-crawler-world.skills.Item.Athletics",
+        "category": "utility",
+        "relatedStat": "str",
+        "description": "Climbing, jumping, swimming, and physical feats."
+      },
+      {
+        "name": "Acrobatics",
+        "uuid": "Compendium.dungeon-crawler-world.skills.Item.Acrobatics",
+        "category": "utility",
+        "relatedStat": "dex",
+        "description": "Balance, tumbling, and flexibility."
+      },
+      {
+        "name": "Stealth",
+        "uuid": "Compendium.dungeon-crawler-world.skills.Item.Stealth",
+        "category": "utility",
+        "relatedStat": "dex",
+        "description": "Hiding, sneaking, and evasion."
+      },
+      {
+        "name": "Perception",
+        "uuid": "Compendium.dungeon-crawler-world.skills.Item.Perception",
+        "category": "utility",
+        "relatedStat": "wis",
+        "description": "Noticing details, searching, and awareness."
+      },
+      {
+        "name": "Survival",
+        "uuid": "Compendium.dungeon-crawler-world.skills.Item.Survival",
+        "category": "utility",
+        "relatedStat": "wis",
+        "description": "Tracking, foraging, and wilderness knowledge."
+      }
+    ],
+    "general": [
+      {
+        "name": "Diplomacy",
+        "uuid": "Compendium.dungeon-crawler-world.skills.Item.Diplomacy",
+        "category": "general",
+        "relatedStat": "cha",
+        "description": "Persuasion, negotiation, and social influence."
+      },
+      {
+        "name": "Intimidation",
+        "uuid": "Compendium.dungeon-crawler-world.skills.Item.Intimidation",
+        "category": "general",
+        "relatedStat": "cha",
+        "description": "Coercion, threats, and imposing presence."
+      },
+      {
+        "name": "Deception",
+        "uuid": "Compendium.dungeon-crawler-world.skills.Item.Deception",
+        "category": "general",
+        "relatedStat": "cha",
+        "description": "Lying, disguise, and trickery."
+      },
+      {
+        "name": "Lore",
+        "uuid": "Compendium.dungeon-crawler-world.skills.Item.Lore",
+        "category": "general",
+        "relatedStat": "int",
+        "description": "Academic knowledge, research, and history."
+      },
+      {
+        "name": "Medicine",
+        "uuid": "Compendium.dungeon-crawler-world.skills.Item.Medicine",
+        "category": "general",
+        "relatedStat": "int",
+        "description": "Healing, diagnosis, and medical knowledge."
+      },
+      {
+        "name": "Mend",
+        "uuid": "Compendium.dungeon-crawler-world.skills.Item.Mend",
+        "category": "general",
+        "relatedStat": "int",
+        "description": "Repairing gear, fixing objects, and crafting equipment."
+      },
+      {
+        "name": "Craft",
+        "uuid": "Compendium.dungeon-crawler-world.skills.Item.Craft",
+        "category": "general",
+        "relatedStat": "int",
+        "description": "Creating items, crafting goods, and artisan work."
+      },
+      {
+        "name": "Thievery",
+        "uuid": "Compendium.dungeon-crawler-world.skills.Item.Thievery",
+        "category": "general",
+        "relatedStat": "dex",
+        "description": "Lockpicking, pickpocketing, and sleight of hand."
+      },
+      {
+        "name": "Focus",
+        "uuid": "Compendium.dungeon-crawler-world.skills.Item.Focus",
+        "category": "general",
+        "relatedStat": "wis",
+        "description": "Concentration, meditation, and mental discipline."
+      },
+      {
+        "name": "Ride",
+        "uuid": "Compendium.dungeon-crawler-world.skills.Item.Ride",
+        "category": "general",
+        "relatedStat": "dex",
+        "description": "Mounting, riding, and caring for animals and vehicles."
+      }
+    ]
+  }
+}

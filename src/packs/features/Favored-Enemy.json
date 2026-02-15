@@ -1,0 +1,17 @@
+{
+  "_id": "Favored-Enemy",
+  "name": "Favored Enemy",
+  "type": "feature",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "You have significant experience studying, tracking, hunting, and even talking to certain types of enemies. You have advantage on skill checks to track your favored enemies and recall information about them.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

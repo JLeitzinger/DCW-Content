@@ -1,0 +1,79 @@
+{
+  "manifestVersion": "1.0",
+  "description": "Registry of feature items with stable UUIDs for cross-referencing in races, classes, and other items.",
+  "features": {
+    "racial": [
+      {
+        "name": "Dwarven Resilience",
+        "uuid": "Compendium.dungeon-crawler-world.features.Item.Dwarven-resilience",
+        "description": "You have advantage on saving throws against poison, and you have resistance against poison damage."
+      },
+      {
+        "name": "Stonecunning",
+        "uuid": "Compendium.dungeon-crawler-world.features.Item.Stonecunning",
+        "description": "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check."
+      },
+      {
+        "name": "Craftsmen",
+        "uuid": "Compendium.dungeon-crawler-world.features.Item.Craftsmen",
+        "description": "You gain a +1 bonus to Craft skill checks.",
+        "grantedSkills": [{"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Craft", "level": 1}]
+      },
+      {
+        "name": "Fey Ancestry",
+        "uuid": "Compendium.dungeon-crawler-world.features.Item.Fey-ancestry",
+        "description": "You have advantage on saving throws against being charmed or magically put to sleep."
+      },
+      {
+        "name": "Mask of the Wild",
+        "uuid": "Compendium.dungeon-crawler-world.features.Item.Mask-of-the-wild",
+        "description": "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+      },
+      {
+        "name": "Trance",
+        "uuid": "Compendium.dungeon-crawler-world.features.Item.Trance",
+        "description": "You don't need to sleep. Instead, you meditate deeply for 4 hours a day."
+      },
+      {
+        "name": "Arcane Training",
+        "uuid": "Compendium.dungeon-crawler-world.features.Item.Arcane-training",
+        "description": "You can cast one cantrip of your choice from any spell list. Intelligence is your spellcasting ability for it."
+      },
+      {
+        "name": "Keen Mind",
+        "uuid": "Compendium.dungeon-crawler-world.features.Item.Keen-mind",
+        "description": "You always know which way is north, and you can accurately recall anything you have seen or heard within the past month."
+      },
+      {
+        "name": "Mountain Born",
+        "uuid": "Compendium.dungeon-crawler-world.features.Item.Mountain-born",
+        "description": "You're acclimated to high altitude, including elevations above 20,000 feet. You're also naturally adapted to cold climates."
+      },
+      {
+        "name": "Stone Endurance",
+        "uuid": "Compendium.dungeon-crawler-world.features.Item.Stone-endurance",
+        "description": "When you take damage, you can use your reaction to reduce that damage by 1d10 + your CON modifier."
+      },
+      {
+        "name": "Sure-Footed",
+        "uuid": "Compendium.dungeon-crawler-world.features.Item.Sure-footed",
+        "description": "You have advantage on ability checks and saving throws to avoid being knocked prone or shoved."
+      },
+      {
+        "name": "Shadow Touched",
+        "uuid": "Compendium.dungeon-crawler-world.features.Item.Shadow-touched",
+        "description": "You have advantage on Stealth checks in dim light or darkness."
+      },
+      {
+        "name": "Shadow Step",
+        "uuid": "Compendium.dungeon-crawler-world.features.Item.Shadow-step",
+        "description": "As a bonus action, you can teleport up to 30 feet to an unoccupied space you can see that is in dim light or darkness."
+      },
+      {
+        "name": "Chilling Presence",
+        "uuid": "Compendium.dungeon-crawler-world.features.Item.Chilling-presence",
+        "description": "When you hit a creature with an attack, you can reduce its speed by 10 feet until the start of your next turn."
+      }
+    ]
+  }
+}

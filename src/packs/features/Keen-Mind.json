@@ -1,0 +1,17 @@
+{
+  "_id": "Keen-Mind",
+  "name": "Keen Mind",
+  "type": "feature",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "description": "You always know which way is north, and you can accurately recall anything you have seen or heard within the past month.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

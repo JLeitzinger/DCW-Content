@@ -1,0 +1,17 @@
+{
+  "_id": "Dream-Walking",
+  "name": "Dream Walking",
+  "type": "feature",
+  "img": "icons/svg/sleeping.svg",
+  "system": {
+    "description": "You can enter and manipulate the dreams of sleeping creatures. By meditating for 1 minute while within 100 feet of a sleeping creature, you can enter their dreamscape. There, you can extract information, plant suggestions, or create nightmares that deal psychic damage when they wake.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

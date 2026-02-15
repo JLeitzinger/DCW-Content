@@ -1,0 +1,17 @@
+{
+  "_id": "Shadow-Touched",
+  "name": "Shadow Touched",
+  "type": "feature",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "description": "You have advantage on Stealth checks in dim light or darkness.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

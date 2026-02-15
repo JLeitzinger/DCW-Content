@@ -1,0 +1,21 @@
+{
+  "_id": "Channel",
+  "name": "Channel",
+  "type": "skill",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Divine magic and channeled energy.",
+    "level": 0,
+    "category": "magic",
+    "relatedStat": "wis",
+    "effort": 0,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

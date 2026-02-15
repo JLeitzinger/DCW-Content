@@ -1,0 +1,17 @@
+{
+  "_id": "Arcane-Training",
+  "name": "Arcane Training",
+  "type": "feature",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "description": "You can cast one cantrip of your choice from any spell list. Intelligence is your spellcasting ability for it.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

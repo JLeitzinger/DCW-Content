@@ -1,0 +1,29 @@
+{
+  "_id": "d2efc8acac35ea05",
+  "name": "Greatsword",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "A massive two-handed blade requiring great strength to wield effectively.",
+    "quantity": 1,
+    "weight": 6,
+    "roll": {
+      "diceNum": 2,
+      "diceSize": "d6",
+      "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+    },
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Slash",
+        "level": 2
+      }
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

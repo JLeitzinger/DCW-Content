@@ -1,0 +1,17 @@
+{
+  "_id": "Bio-Regeneration",
+  "name": "Bio-Regeneration",
+  "type": "feature",
+  "img": "icons/svg/regenerate.svg",
+  "system": {
+    "description": "Your modified biology allows rapid cellular regeneration. At the start of your turn, if you have at least 1 hit point, you regain hit points equal to your Constitution modifier (minimum 1). You can spend 3 stamina to double this regeneration for 1 minute.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

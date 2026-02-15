@@ -1,0 +1,17 @@
+{
+  "_id": "Stonecunning",
+  "name": "Stonecunning",
+  "type": "feature",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "description": "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,64 @@
+{
+  "_id": "paladin",
+  "name": "Paladin",
+  "type": "class",
+  "img": "icons/svg/holy-shield.svg",
+  "system": {
+    "description": "A holy warrior bound to a sacred oath. Paladins combine martial prowess with divine magic to smite evil and protect the innocent.",
+    "baseHP": 11,
+    "hpPerLevel": 3,
+    "staminaPerLevel": 2,
+    "manaPerLevel": 2,
+    "abilityBonuses": {
+      "str": 0.4,
+      "dex": 0,
+      "con": 0,
+      "int": 0,
+      "wis": 0.3,
+      "cha": 0.3
+    },
+    "levelAcquired": 1,
+    "saves": {
+      "str": false,
+      "con": false,
+      "dex": false,
+      "int": false,
+      "wis": true,
+      "cha": true
+    },
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Slash",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Defend",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Medicine",
+        "level": 1
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Diplomacy",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": [
+      "Compendium.dungeon-crawler-world.features.Item.Divine-Smite",
+      "Compendium.dungeon-crawler-world.features.Item.Lay-On-Hands"
+    ],
+    "hitDie": "d10",
+    "primaryAbility": "str",
+    "secondaryAbility": "",
+    "features": "",
+    "subclasses": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

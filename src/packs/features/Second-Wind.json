@@ -1,0 +1,17 @@
+{
+  "_id": "Second-Wind",
+  "name": "Second Wind",
+  "type": "feature",
+  "img": "icons/svg/heal.svg",
+  "system": {
+    "description": "You can use a bonus action to regain hit points equal to 1d10 + your fighter level. Once you use this feature, you must finish a short or long rest before you can use it again.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

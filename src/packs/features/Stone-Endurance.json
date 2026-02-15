@@ -1,0 +1,17 @@
+{
+  "_id": "Stone-Endurance",
+  "name": "Stone Endurance",
+  "type": "feature",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "description": "When you take damage, you can use your reaction to reduce that damage by 1d10 + your CON modifier. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

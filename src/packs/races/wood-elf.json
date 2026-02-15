@@ -1,0 +1,66 @@
+{
+  "_id": "wood-elf",
+  "name": "Wood Elf",
+  "type": "race",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "Graceful forest dwellers who live in harmony with nature. Expert hunters, scouts, and guardians of the wild places of the world.",
+    "abilityBonuses": {
+      "str": 0,
+      "dex": 2,
+      "con": 0,
+      "int": 0,
+      "wis": 1,
+      "cha": 0
+    },
+    "bonuses": {
+      "hp": 0,
+      "stamina": 0,
+      "mana": 0
+    },
+    "size": "medium",
+    "speed": 35,
+    "senses": {
+      "darkvision": 60,
+      "blindsight": 0,
+      "tremorsense": 0,
+      "truesight": 0
+    },
+    "languages": "Common, Elvish",
+    "features": [
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Fey-ancestry",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Mask-of-the-wild",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Trance",
+        "level": 1
+      }
+    ],
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Survival",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Stealth",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Shoot",
+        "level": 2
+      }
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

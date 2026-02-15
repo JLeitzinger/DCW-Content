@@ -1,0 +1,64 @@
+{
+  "_id": "necrotech",
+  "name": "Necrotech",
+  "type": "class",
+  "img": "icons/svg/cyber-skull.svg",
+  "system": {
+    "description": "A fusion of necromancy and technology, creating undead enhanced with cybernetic implants. Necrotechs blur the line between life and death, machine and flesh, commanding armies of cybernetic zombies.",
+    "baseHP": 10,
+    "hpPerLevel": 3,
+    "staminaPerLevel": 2,
+    "manaPerLevel": 2,
+    "abilityBonuses": {
+      "str": 0,
+      "dex": 0,
+      "con": 0.4,
+      "int": 0.6,
+      "wis": 0,
+      "cha": 0
+    },
+    "levelAcquired": 1,
+    "saves": {
+      "str": false,
+      "con": true,
+      "dex": false,
+      "int": true,
+      "wis": false,
+      "cha": false
+    },
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Channel",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Craft",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Medicine",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Intimidation",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": [
+      "Compendium.dungeon-crawler-world.features.Item.Necromech-Conversion",
+      "Compendium.dungeon-crawler-world.features.Item.Cybernetic-Resilience"
+    ],
+    "hitDie": "d10",
+    "primaryAbility": "int",
+    "secondaryAbility": "",
+    "features": "",
+    "subclasses": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

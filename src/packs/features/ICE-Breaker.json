@@ -1,0 +1,17 @@
+{
+  "_id": "ICE-Breaker",
+  "name": "ICE Breaker",
+  "type": "feature",
+  "img": "icons/svg/hacking.svg",
+  "system": {
+    "description": "You can create powerful hacking programs that shatter digital defenses. When hacking, you can spend 2 stamina to automatically succeed on one security bypass. You can also launch ICE attacks that deal psychic damage to targets connected to the same network.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

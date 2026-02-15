@@ -1,0 +1,17 @@
+{
+  "_id": "Arcane-Recovery",
+  "name": "Arcane Recovery",
+  "type": "feature",
+  "img": "icons/svg/regen.svg",
+  "system": {
+    "description": "You have learned to regain some of your magical energy by studying your spellbook. Once per day during a short rest, you can recover mana equal to half your wizard level (rounded up).",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

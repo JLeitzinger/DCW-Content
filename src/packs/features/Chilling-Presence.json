@@ -1,0 +1,17 @@
+{
+  "_id": "Chilling-Presence",
+  "name": "Chilling Presence",
+  "type": "feature",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "description": "When you hit a creature with an attack, you can reduce its speed by 10 feet until the start of your next turn. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

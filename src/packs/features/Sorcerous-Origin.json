@@ -1,0 +1,17 @@
+{
+  "_id": "Sorcerous-Origin",
+  "name": "Sorcerous Origin",
+  "type": "feature",
+  "img": "icons/svg/blood.svg",
+  "system": {
+    "description": "Your innate magic comes from a sorcerous origin that imbues you with power. Choose an origin such as Draconic Bloodline or Wild Magic, which grants you features and abilities tied to the source of your power.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

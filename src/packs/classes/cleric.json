@@ -1,0 +1,64 @@
+{
+  "_id": "cleric",
+  "name": "Cleric",
+  "type": "class",
+  "img": "icons/svg/angel.svg",
+  "system": {
+    "description": "A priestly champion who wields divine magic in service of a higher power. Clerics combine healing, support, and combat abilities.",
+    "baseHP": 10,
+    "hpPerLevel": 3,
+    "staminaPerLevel": 2,
+    "manaPerLevel": 3,
+    "abilityBonuses": {
+      "str": 0,
+      "dex": 0,
+      "con": 0.4,
+      "int": 0,
+      "wis": 0.6,
+      "cha": 0
+    },
+    "levelAcquired": 1,
+    "saves": {
+      "str": false,
+      "con": false,
+      "dex": false,
+      "int": false,
+      "wis": true,
+      "cha": true
+    },
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Channel",
+        "level": 3
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Medicine",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Blunt",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Diplomacy",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": [
+      "Compendium.dungeon-crawler-world.features.Item.Divine-Spellcasting",
+      "Compendium.dungeon-crawler-world.features.Item.Channel-Divinity"
+    ],
+    "hitDie": "d10",
+    "primaryAbility": "wis",
+    "secondaryAbility": "",
+    "features": "",
+    "subclasses": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

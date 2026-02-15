@@ -1,0 +1,17 @@
+{
+  "_id": "Dwarven-Resilience",
+  "name": "Dwarven Resilience",
+  "type": "feature",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "description": "You have advantage on saving throws against poison, and you have resistance against poison damage.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

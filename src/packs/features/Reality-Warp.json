@@ -1,0 +1,17 @@
+{
+  "_id": "Reality-Warp",
+  "name": "Reality Warp",
+  "type": "feature",
+  "img": "icons/svg/vortex.svg",
+  "system": {
+    "description": "You can bend the laws of reality in a small area. By spending 4 mana, you can choose one: create difficult terrain, reverse gravity, or cause objects to phase through walls. The effect lasts for 1 minute in a 20-foot radius.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

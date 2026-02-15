@@ -1,0 +1,17 @@
+{
+  "_id": "Telekinetic-Shield",
+  "name": "Telekinetic Shield",
+  "type": "feature",
+  "img": "icons/svg/force-field.svg",
+  "system": {
+    "description": "You maintain a shield of mental force around yourself. As a reaction when you are hit by an attack, you can spend 1 mana to add your Intelligence modifier to your AC. You can also use this to push attackers back 10 feet or deflect projectiles.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

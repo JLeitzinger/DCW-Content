@@ -1,0 +1,64 @@
+{
+  "_id": "gene-splicer",
+  "name": "Gene Splicer",
+  "type": "class",
+  "img": "icons/svg/dna.svg",
+  "system": {
+    "description": "A bio-engineer who manipulates genetics and biology at the molecular level. Gene Splicers can grant mutations, enhance physical abilities, and reshape living tissue with terrifying precision.",
+    "baseHP": 10,
+    "hpPerLevel": 3,
+    "staminaPerLevel": 3,
+    "manaPerLevel": 2,
+    "abilityBonuses": {
+      "str": 0,
+      "dex": 0,
+      "con": 0.5,
+      "int": 0.5,
+      "wis": 0,
+      "cha": 0
+    },
+    "levelAcquired": 1,
+    "saves": {
+      "str": false,
+      "con": true,
+      "dex": false,
+      "int": true,
+      "wis": false,
+      "cha": false
+    },
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Medicine",
+        "level": 3
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Craft",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Survival",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Lore",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": [
+      "Compendium.dungeon-crawler-world.features.Item.Genetic-Modification",
+      "Compendium.dungeon-crawler-world.features.Item.Bio-Regeneration"
+    ],
+    "hitDie": "d10",
+    "primaryAbility": "int",
+    "secondaryAbility": "",
+    "features": "",
+    "subclasses": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

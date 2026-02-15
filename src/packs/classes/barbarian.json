@@ -1,0 +1,64 @@
+{
+  "_id": "barbarian",
+  "name": "Barbarian",
+  "type": "class",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "description": "A fierce warrior of primitive background who can enter a battle rage. Barbarians are unmatched in raw physical power and durability.",
+    "baseHP": 12,
+    "hpPerLevel": 4,
+    "staminaPerLevel": 3,
+    "manaPerLevel": 1,
+    "abilityBonuses": {
+      "str": 0.6,
+      "dex": 0,
+      "con": 0.4,
+      "int": 0,
+      "wis": 0,
+      "cha": 0
+    },
+    "levelAcquired": 1,
+    "saves": {
+      "str": true,
+      "con": true,
+      "dex": false,
+      "int": false,
+      "wis": false,
+      "cha": false
+    },
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Slash",
+        "level": 3
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Athletics",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Intimidation",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Survival",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": [
+      "Compendium.dungeon-crawler-world.features.Item.Rage",
+      "Compendium.dungeon-crawler-world.features.Item.Reckless-Attack"
+    ],
+    "hitDie": "d12",
+    "primaryAbility": "str",
+    "secondaryAbility": "",
+    "features": "",
+    "subclasses": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

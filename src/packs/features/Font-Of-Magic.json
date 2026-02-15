@@ -1,0 +1,17 @@
+{
+  "_id": "Font-Of-Magic",
+  "name": "Font of Magic",
+  "type": "feature",
+  "img": "icons/svg/crystal-ball.svg",
+  "system": {
+    "description": "You tap into a deep wellspring of magic within yourself. You have a number of sorcery points equal to your sorcerer level. You can use sorcery points to create spell slots or convert spell slots into sorcery points. You regain all spent sorcery points when you finish a long rest.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

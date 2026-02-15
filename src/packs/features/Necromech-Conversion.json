@@ -1,0 +1,17 @@
+{
+  "_id": "Necromech-Conversion",
+  "name": "Necromech Conversion",
+  "type": "feature",
+  "img": "icons/svg/cyber-skull.svg",
+  "system": {
+    "description": "You can convert corpses into cybernetic undead servants. Spend 10 minutes and 5 mana to raise a corpse as a necromech minion with implanted weapons and armor plating. It obeys your mental commands and lasts until destroyed or you dismiss it. You can control up to your Intelligence modifier in necromechs.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

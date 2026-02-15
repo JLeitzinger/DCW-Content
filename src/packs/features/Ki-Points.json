@@ -1,0 +1,17 @@
+{
+  "_id": "Ki-Points",
+  "name": "Ki Points",
+  "type": "feature",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "Your training allows you to harness the mystic energy of ki. You have a number of ki points equal to your monk level. You can spend these points to fuel various ki features such as Flurry of Blows, Patient Defense, and Step of the Wind. You regain all spent ki points when you finish a short or long rest.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,17 @@
+{
+  "_id": "Action-Surge",
+  "name": "Action Surge",
+  "type": "feature",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+    "description": "You can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action. Once you use this feature, you must finish a short or long rest before you can use it again.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

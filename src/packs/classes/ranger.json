@@ -1,0 +1,64 @@
+{
+  "_id": "ranger",
+  "name": "Ranger",
+  "type": "class",
+  "img": "icons/svg/forest.svg",
+  "system": {
+    "description": "A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization. Rangers are skilled hunters and trackers.",
+    "baseHP": 10,
+    "hpPerLevel": 3,
+    "staminaPerLevel": 2,
+    "manaPerLevel": 2,
+    "abilityBonuses": {
+      "str": 0,
+      "dex": 0.5,
+      "con": 0,
+      "int": 0,
+      "wis": 0.5,
+      "cha": 0
+    },
+    "levelAcquired": 1,
+    "saves": {
+      "str": true,
+      "con": false,
+      "dex": true,
+      "int": false,
+      "wis": false,
+      "cha": false
+    },
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Shoot",
+        "level": 3
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Survival",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Perception",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Stealth",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": [
+      "Compendium.dungeon-crawler-world.features.Item.Favored-Enemy",
+      "Compendium.dungeon-crawler-world.features.Item.Natural-Explorer"
+    ],
+    "hitDie": "d10",
+    "primaryAbility": "dex",
+    "secondaryAbility": "",
+    "features": "",
+    "subclasses": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

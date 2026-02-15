@@ -1,0 +1,17 @@
+{
+  "_id": "Reckless-Attack",
+  "name": "Reckless Attack",
+  "type": "feature",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "description": "You can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly, giving you advantage on melee attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}
