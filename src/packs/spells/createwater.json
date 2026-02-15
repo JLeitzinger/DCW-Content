@@ -4,12 +4,15 @@
   "type": "spell",
   "img": "icons/svg/book.svg",
   "system": {
-    "description": "Conjures fresh, drinkable water from thin air.",
+    "description": "<p>Conjures fresh, drinkable water from thin air, creating up to 10 gallons that fills containers or creates puddles.</p><p><strong>Scaling:</strong> At dice count 3, creates 50 gallons. At dice count 6, can create other liquids (wine, oil). At dice count 9, creates 200 gallons. At dice count 12, can create a flowing stream. At dice count 15, creates a permanent water source.</p>",
     "spellLevel": 1,
     "diceCount": 1,
     "castStat": "wis",
     "category": "conjuration",
     "prowess": 2,
+    "castingTime": "instantaneous",
+    "range": "30 feet",
+    "duration": "instantaneous",
     "grantedSkills": []
   },
   "effects": [],

@@ -4,12 +4,15 @@
   "type": "spell",
   "img": "icons/svg/book.svg",
   "system": {
-    "description": "Blasts forth a cone of freezing air and ice.",
+    "description": "<p>Blasts forth a 60-foot cone of freezing air and ice, dealing cold damage to all creatures in the area.</p><p><strong>Scaling:</strong> At dice count 3, freezes the ground creating difficult terrain. At dice count 6, can freeze creatures solid. At dice count 9, creates ice walls where the cone hits surfaces. At dice count 12, the cone extends to 90 feet. At dice count 15, flash-freezes everything, potentially shattering frozen creatures.</p>",
     "spellLevel": 5,
     "diceCount": 2,
     "castStat": "int",
     "category": "evocation",
     "prowess": 7,
+    "castingTime": "instantaneous",
+    "range": "60 feet",
+    "duration": "instantaneous",
     "grantedSkills": []
   },
   "effects": [],

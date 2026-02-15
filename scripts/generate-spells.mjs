@@ -34,6 +34,9 @@ for (const [categoryName, categorySpells] of Object.entries(manifest.spells)) {
       castStat: spell.castStat,
       category: spell.category,
       description: spell.description,
+      castingTime: spell.castingTime,
+      range: spell.range,
+      duration: spell.duration,
       prowess: calculateProwess(spell.spellLevel)
     });
   }
@@ -52,6 +55,9 @@ function createSpellItem(spell) {
       castStat: spell.castStat,
       category: spell.category,
       prowess: spell.prowess,
+      castingTime: spell.castingTime,
+      range: spell.range,
+      duration: spell.duration,
       grantedSkills: []
     },
     effects: [],

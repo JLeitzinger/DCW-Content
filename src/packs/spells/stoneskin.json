@@ -4,12 +4,15 @@
   "type": "spell",
   "img": "icons/svg/book.svg",
   "system": {
-    "description": "Hardens the target's flesh to the toughness of stone.",
+    "description": "<p>Hardens the target's flesh to the toughness of stone, granting resistance to nonmagical physical damage.</p><p><strong>Scaling:</strong> At dice count 3, also grants resistance to magical physical damage. At dice count 6, can affect multiple creatures. At dice count 9, the skin becomes adamantine, granting damage reduction. At dice count 12, attackers take damage when they hit you. At dice count 15, you become nearly invulnerable to physical attacks.</p>",
     "spellLevel": 4,
     "diceCount": 1,
     "castStat": "int",
     "category": "abjuration",
     "prowess": 6,
+    "castingTime": "instantaneous",
+    "range": "touch",
+    "duration": "1 hour",
     "grantedSkills": []
   },
   "effects": [],

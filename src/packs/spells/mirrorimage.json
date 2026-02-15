@@ -4,12 +4,15 @@
   "type": "spell",
   "img": "icons/svg/book.svg",
   "system": {
-    "description": "Creates illusory duplicates of yourself that confound attackers.",
+    "description": "<p>Creates 3 illusory duplicates of yourself that confound attackers. When attacked, there's a chance the attack hits a duplicate instead of you.</p><p><strong>Scaling:</strong> At dice count 3, creates 5 duplicates. At dice count 6, duplicates can move independently. At dice count 9, creates 7 duplicates that fight. At dice count 12, duplicates are semi-real and can deal damage. At dice count 15, creates unlimited duplicates.</p>",
     "spellLevel": 2,
     "diceCount": 1,
     "castStat": "int",
     "category": "illusion",
     "prowess": 3,
+    "castingTime": "instantaneous",
+    "range": "self",
+    "duration": "1 minute",
     "grantedSkills": []
   },
   "effects": [],

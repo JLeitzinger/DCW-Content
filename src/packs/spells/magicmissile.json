@@ -4,12 +4,15 @@
   "type": "spell",
   "img": "icons/svg/book.svg",
   "system": {
-    "description": "Conjures glowing darts of magical force that unerringly strike targets.",
+    "description": "<p>Conjures glowing darts of magical force that unerringly strike targets, dealing force damage. Each dart automatically hits its target.</p><p><strong>Scaling:</strong> At dice count 3, fires two additional darts. At dice count 6, fires four additional darts. At dice count 9, darts can pass through cover. At dice count 12, each dart explodes on impact. At dice count 15, creates a barrage of ten darts.</p>",
     "spellLevel": 1,
     "diceCount": 1,
     "castStat": "int",
     "category": "evocation",
     "prowess": 2,
+    "castingTime": "instantaneous",
+    "range": "120 feet",
+    "duration": "instantaneous",
     "grantedSkills": []
   },
   "effects": [],

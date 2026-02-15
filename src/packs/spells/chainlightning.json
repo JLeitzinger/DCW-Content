@@ -4,12 +4,15 @@
   "type": "spell",
   "img": "icons/svg/book.svg",
   "system": {
-    "description": "Creates a bolt of lightning that arcs and jumps between multiple targets.",
+    "description": "<p>Creates a bolt of lightning that arcs and jumps between multiple targets within 30 feet of each other, dealing lightning damage. Hits up to 3 targets.</p><p><strong>Scaling:</strong> At dice count 3, chains to 5 targets. At dice count 6, chains to 7 targets and can hit the same target twice. At dice count 9, chains to 10 targets. At dice count 12, creates branching lightning storms. At dice count 15, hits unlimited targets in range.</p>",
     "spellLevel": 6,
     "diceCount": 2,
     "castStat": "int",
     "category": "evocation",
     "prowess": 8,
+    "castingTime": "instantaneous",
+    "range": "150 feet",
+    "duration": "instantaneous",
     "grantedSkills": []
   },
   "effects": [],

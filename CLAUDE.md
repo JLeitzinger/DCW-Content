@@ -235,6 +235,10 @@ Magical spells and rituals.
 - `castStat` - Related stat: "int" (arcane magic) or "wis" (divine magic)
 - `prowess` - Mana cost (formula: `spellLevel + ceil(spellLevel / 3)`)
 - `category` - Spell school/category (see categories below)
+- `castingTime` - Time to cast: "instantaneous" or a number of rounds (e.g., "1 round", "2 rounds")
+- `range` - Spell range: "self", "touch", or distance in feet (e.g., "30 feet", "60 feet", "120 feet")
+- `duration` - How long spell lasts: "instantaneous", or time duration (e.g., "1 minute", "10 minutes", "1 hour", "concentration")
+- `description` - HTML description of what the spell does and how it scales at higher dice counts (3, 6, 9, 12, 15)
 
 **Spell Scaling Rules:**
 - **Spell Level**: Ranges from 1-15
@@ -245,6 +249,7 @@ Magical spells and rituals.
   - Level 5: 7 mana
   - Level 9: 12 mana
   - Level 15: 20 mana
+- **Description**: Should explain the spell's effects and include scaling information for dice count increases at levels 3, 6, 9, 12, and 15 if applicable
 
 **Spell Categories:**
 Spells are organized into schools of magic (all have type "spell"):
@@ -267,7 +272,25 @@ Spells are organized into schools of magic (all have type "spell"):
   "castStat": "int",
   "prowess": 4,
   "category": "evocation",
-  "description": "Hurls an explosive sphere of flame that detonates in a fiery blast."
+  "castingTime": "instantaneous",
+  "range": "150 feet",
+  "duration": "instantaneous",
+  "description": "<p>Hurls an explosive sphere of flame that detonates in a fiery blast, dealing fire damage to all creatures in a 20-foot radius.</p><p><strong>Scaling:</strong> At dice count 3, the radius increases to 30 feet. At dice count 6, the radius increases to 40 feet and can melt through ice and snow.</p>"
+}
+```
+
+**Example: Haste (Level 3)**
+```json
+{
+  "spellLevel": 3,
+  "diceCount": 1,
+  "castStat": "int",
+  "prowess": 4,
+  "category": "transmutation",
+  "castingTime": "instantaneous",
+  "range": "30 feet",
+  "duration": "1 minute",
+  "description": "<p>Doubles a creature's speed and grants an additional action each turn for the duration.</p><p><strong>Scaling:</strong> At dice count 3, can target up to 2 creatures. At dice count 6, can target up to 4 creatures.</p>"
 }
 ```
 
@@ -279,7 +302,10 @@ Spells are organized into schools of magic (all have type "spell"):
   "castStat": "int",
   "prowess": 12,
   "category": "evocation",
-  "description": "Summons blazing meteors from the sky to rain down on enemies."
+  "castingTime": "instantaneous",
+  "range": "1 mile",
+  "duration": "instantaneous",
+  "description": "<p>Summons blazing meteors from the sky to rain down on enemies, dealing massive fire damage in multiple 40-foot radius bursts.</p><p><strong>Scaling:</strong> At dice count 6, summons twice as many meteors. At dice count 9, creates devastating explosions that leave the area scorched and difficult terrain.</p>"
 }
 ```
 

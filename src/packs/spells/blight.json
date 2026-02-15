@@ -4,12 +4,15 @@
   "type": "spell",
   "img": "icons/svg/book.svg",
   "system": {
-    "description": "Drains moisture and vitality from a creature.",
+    "description": "<p>Drains moisture and vitality from a creature, dealing necrotic damage. Particularly effective against plants, dealing maximum damage.</p><p><strong>Scaling:</strong> At dice count 3, affects an area. At dice count 6, withers the land around targets. At dice count 9, creates zones of death. At dice count 12, can kill plants instantly. At dice count 15, creates permanent dead zones.</p>",
     "spellLevel": 4,
     "diceCount": 1,
     "castStat": "wis",
     "category": "necromancy",
     "prowess": 6,
+    "castingTime": "instantaneous",
+    "range": "30 feet",
+    "duration": "instantaneous",
     "grantedSkills": []
   },
   "effects": [],

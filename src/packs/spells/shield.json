@@ -4,12 +4,15 @@
   "type": "spell",
   "img": "icons/svg/book.svg",
   "system": {
-    "description": "Creates an invisible barrier of magical force that protects you.",
+    "description": "<p>Creates an invisible barrier of magical force that protects you, granting +5 to AC until the start of your next turn.</p><p><strong>Scaling:</strong> At dice count 3, also grants resistance to force damage. At dice count 6, reflects projectiles back at attackers. At dice count 9, the shield lasts for 1 minute. At dice count 12, can protect adjacent allies. At dice count 15, creates an impenetrable force dome.</p>",
     "spellLevel": 1,
     "diceCount": 1,
     "castStat": "int",
     "category": "abjuration",
     "prowess": 2,
+    "castingTime": "instantaneous",
+    "range": "self",
+    "duration": "1 round",
     "grantedSkills": []
   },
   "effects": [],

@@ -4,12 +4,15 @@
   "type": "spell",
   "img": "icons/svg/book.svg",
   "system": {
-    "description": "Conjures thick, sticky webs that entangle and restrain creatures.",
+    "description": "<p>Conjures thick, sticky webs that fill a 20-foot cube, heavily obscuring the area and restraining creatures that enter.</p><p><strong>Scaling:</strong> At dice count 3, webs are fireproof. At dice count 6, creates 40-foot cube. At dice count 9, webs are stronger and harder to escape. At dice count 12, webs deal damage to restrained creatures. At dice count 15, creates a massive web network covering 100 feet.</p>",
     "spellLevel": 2,
     "diceCount": 1,
     "castStat": "int",
     "category": "conjuration",
     "prowess": 3,
+    "castingTime": "instantaneous",
+    "range": "60 feet",
+    "duration": "concentration, 1 hour",
     "grantedSkills": []
   },
   "effects": [],

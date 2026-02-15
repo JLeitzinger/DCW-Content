@@ -4,12 +4,15 @@
   "type": "spell",
   "img": "icons/svg/book.svg",
   "system": {
-    "description": "Turns a creature invisible even while attacking or casting spells.",
+    "description": "<p>Turns a creature invisible even while attacking or casting spells. The invisibility persists through any action.</p><p><strong>Scaling:</strong> At dice count 3, can affect multiple creatures. At dice count 6, grants advantage on attacks while invisible. At dice count 9, no concentration required. At dice count 12, duration extends to 10 minutes. At dice count 15, invisibility cannot be dispelled or detected.</p>",
     "spellLevel": 4,
     "diceCount": 1,
     "castStat": "int",
     "category": "illusion",
     "prowess": 6,
+    "castingTime": "instantaneous",
+    "range": "touch",
+    "duration": "concentration, 1 minute",
     "grantedSkills": []
   },
   "effects": [],

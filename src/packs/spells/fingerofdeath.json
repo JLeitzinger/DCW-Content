@@ -4,12 +4,15 @@
   "type": "spell",
   "img": "icons/svg/book.svg",
   "system": {
-    "description": "Sends negative energy coursing through a creature, potentially killing it instantly.",
+    "description": "<p>Sends negative energy coursing through a creature, potentially killing it instantly. Deals massive necrotic damage, and creatures killed by this spell rise as zombies under your control.</p><p><strong>Scaling:</strong> At dice count 3, can affect multiple targets. At dice count 6, raised zombies are more powerful. At dice count 9, instant death on failed save. At dice count 12, creates powerful undead servants. At dice count 15, can kill nearly anything with a gesture.</p>",
     "spellLevel": 7,
     "diceCount": 2,
     "castStat": "int",
     "category": "necromancy",
     "prowess": 10,
+    "castingTime": "instantaneous",
+    "range": "60 feet",
+    "duration": "instantaneous",
     "grantedSkills": []
   },
   "effects": [],

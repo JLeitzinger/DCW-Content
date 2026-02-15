@@ -4,12 +4,15 @@
   "type": "spell",
   "img": "icons/svg/book.svg",
   "system": {
-    "description": "Allows you to see invisible creatures and objects.",
+    "description": "<p>Allows you to see invisible creatures and objects as if they were visible. You can also see into the Ethereal Plane.</p><p><strong>Scaling:</strong> At dice count 3, can grant this to allies. At dice count 6, see through all illusions. At dice count 9, see in darkness and through walls. At dice count 12, see the true form of all things. At dice count 15, omniscient vision in your area.</p>",
     "spellLevel": 2,
     "diceCount": 1,
     "castStat": "int",
     "category": "divination",
     "prowess": 3,
+    "castingTime": "instantaneous",
+    "range": "self",
+    "duration": "1 hour",
     "grantedSkills": []
   },
   "effects": [],

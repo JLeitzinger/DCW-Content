@@ -4,12 +4,15 @@
   "type": "spell",
   "img": "icons/svg/book.svg",
   "system": {
-    "description": "Sends creatures into a magical slumber.",
+    "description": "<p>Sends creatures into a magical slumber in a 20-foot radius. Affects the weakest creatures first based on their hit points.</p><p><strong>Scaling:</strong> At dice count 3, affects more hit points of creatures. At dice count 6, radius increases to 40 feet. At dice count 9, can affect stronger creatures. At dice count 12, sleep is very deep and hard to wake from. At dice count 15, puts entire armies to sleep.</p>",
     "spellLevel": 1,
     "diceCount": 1,
     "castStat": "int",
     "category": "enchantment",
     "prowess": 2,
+    "castingTime": "instantaneous",
+    "range": "90 feet",
+    "duration": "1 minute",
     "grantedSkills": []
   },
   "effects": [],

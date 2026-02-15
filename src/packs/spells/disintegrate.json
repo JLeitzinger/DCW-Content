@@ -4,12 +4,15 @@
   "type": "spell",
   "img": "icons/svg/book.svg",
   "system": {
-    "description": "Transforms matter into fine dust with a thin green ray.",
+    "description": "<p>Transforms matter into fine dust with a thin green ray, dealing massive force damage. A creature reduced to 0 HP is completely disintegrated along with what they're wearing.</p><p><strong>Scaling:</strong> At dice count 3, affects larger objects. At dice count 6, can pierce through multiple targets. At dice count 9, disintegrates nearly anything. At dice count 12, creates disintegration zones. At dice count 15, erases targets from existence.</p>",
     "spellLevel": 6,
     "diceCount": 2,
     "castStat": "int",
     "category": "transmutation",
     "prowess": 8,
+    "castingTime": "instantaneous",
+    "range": "60 feet",
+    "duration": "instantaneous",
     "grantedSkills": []
   },
   "effects": [],

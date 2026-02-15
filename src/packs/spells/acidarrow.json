@@ -4,12 +4,15 @@
   "type": "spell",
   "img": "icons/svg/book.svg",
   "system": {
-    "description": "Conjures a glowing arrow of acid that melts through armor and continues burning.",
+    "description": "<p>Conjures a glowing arrow of acid that melts through armor and continues burning, dealing acid damage.</p><p><strong>Scaling:</strong> At dice count 3, the acid continues to burn for an additional round. At dice count 6, creates a splash that damages nearby creatures. At dice count 9, melts through metal armor. At dice count 12, creates a pool of acid. At dice count 15, the acid becomes incredibly corrosive, destroying nonmagical objects.</p>",
     "spellLevel": 2,
     "diceCount": 1,
     "castStat": "int",
     "category": "evocation",
     "prowess": 3,
+    "castingTime": "instantaneous",
+    "range": "90 feet",
+    "duration": "instantaneous",
     "grantedSkills": []
   },
   "effects": [],

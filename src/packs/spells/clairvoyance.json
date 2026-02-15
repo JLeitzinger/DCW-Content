@@ -4,12 +4,15 @@
   "type": "spell",
   "img": "icons/svg/book.svg",
   "system": {
-    "description": "Creates an invisible sensor at a distant location.",
+    "description": "<p>Creates an invisible sensor at a distant location you've been to or can see. You can see or hear (choose one) through the sensor.</p><p><strong>Scaling:</strong> At dice count 3, can see and hear simultaneously. At dice count 6, range extends to 10 miles. At dice count 9, can create multiple sensors. At dice count 12, sensors can move. At dice count 15, can observe anywhere on the same plane.</p>",
     "spellLevel": 3,
     "diceCount": 1,
     "castStat": "int",
     "category": "divination",
     "prowess": 4,
+    "castingTime": "1 round",
+    "range": "1 mile",
+    "duration": "concentration, 10 minutes",
     "grantedSkills": []
   },
   "effects": [],

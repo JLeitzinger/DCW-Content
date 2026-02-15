@@ -50,52 +50,10 @@
         "diceCount": 1,
         "castStat": "int",
         "category": "evocation",
-        "description": "Conjures glowing darts of magical force that unerringly strike targets."
-      },
-      {
-        "name": "Fireball",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Fireball",
-        "spellLevel": 3,
-        "diceCount": 1,
-        "castStat": "int",
-        "category": "evocation",
-        "description": "Hurls an explosive sphere of flame that detonates in a fiery blast."
-      },
-      {
-        "name": "Lightning Bolt",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.LightningBolt",
-        "spellLevel": 3,
-        "diceCount": 1,
-        "castStat": "int",
-        "category": "evocation",
-        "description": "Unleashes a stroke of lightning that arcs toward targets."
-      },
-      {
-        "name": "Cone of Cold",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.ConeOfCold",
-        "spellLevel": 5,
-        "diceCount": 2,
-        "castStat": "int",
-        "category": "evocation",
-        "description": "Blasts forth a cone of freezing air and ice."
-      },
-      {
-        "name": "Chain Lightning",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.ChainLightning",
-        "spellLevel": 6,
-        "diceCount": 2,
-        "castStat": "int",
-        "category": "evocation",
-        "description": "Creates a bolt of lightning that arcs and jumps between multiple targets."
-      },
-      {
-        "name": "Meteor Swarm",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.MeteorSwarm",
-        "spellLevel": 9,
-        "diceCount": 3,
-        "castStat": "int",
-        "category": "evocation",
-        "description": "Summons blazing meteors from the sky to rain down on enemies."
+        "castingTime": "instantaneous",
+        "range": "120 feet",
+        "duration": "instantaneous",
+        "description": "<p>Conjures glowing darts of magical force that unerringly strike targets, dealing force damage. Each dart automatically hits its target.</p><p><strong>Scaling:</strong> At dice count 3, fires two additional darts. At dice count 6, fires four additional darts. At dice count 9, darts can pass through cover. At dice count 12, each dart explodes on impact. At dice count 15, creates a barrage of ten darts.</p>"
       },
       {
         "name": "Acid Arrow",
@@ -104,7 +62,58 @@
         "diceCount": 1,
         "castStat": "int",
         "category": "evocation",
-        "description": "Conjures a glowing arrow of acid that melts through armor and continues burning."
+        "castingTime": "instantaneous",
+        "range": "90 feet",
+        "duration": "instantaneous",
+        "description": "<p>Conjures a glowing arrow of acid that melts through armor and continues burning, dealing acid damage.</p><p><strong>Scaling:</strong> At dice count 3, the acid continues to burn for an additional round. At dice count 6, creates a splash that damages nearby creatures. At dice count 9, melts through metal armor. At dice count 12, creates a pool of acid. At dice count 15, the acid becomes incredibly corrosive, destroying nonmagical objects.</p>"
+      },
+      {
+        "name": "Fireball",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Fireball",
+        "spellLevel": 3,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "evocation",
+        "castingTime": "instantaneous",
+        "range": "150 feet",
+        "duration": "instantaneous",
+        "description": "<p>Hurls an explosive sphere of flame that detonates in a fiery blast, dealing fire damage to all creatures in a 20-foot radius.</p><p><strong>Scaling:</strong> At dice count 3, the radius increases to 30 feet. At dice count 6, the radius increases to 40 feet and ignites flammable objects. At dice count 9, creates secondary explosions. At dice count 12, leaves the area burning for 1 minute. At dice count 15, the explosion is massive, with a 60-foot radius.</p>"
+      },
+      {
+        "name": "Lightning Bolt",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.LightningBolt",
+        "spellLevel": 3,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "evocation",
+        "castingTime": "instantaneous",
+        "range": "100 feet",
+        "duration": "instantaneous",
+        "description": "<p>Unleashes a stroke of lightning that arcs toward targets in a 100-foot line, dealing lightning damage.</p><p><strong>Scaling:</strong> At dice count 3, the bolt can curve around corners. At dice count 6, strikes two parallel lines. At dice count 9, stuns targets briefly. At dice count 12, bounces off surfaces. At dice count 15, creates a sustained lightning stream.</p>"
+      },
+      {
+        "name": "Cone of Cold",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.ConeOfCold",
+        "spellLevel": 5,
+        "diceCount": 2,
+        "castStat": "int",
+        "category": "evocation",
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "instantaneous",
+        "description": "<p>Blasts forth a 60-foot cone of freezing air and ice, dealing cold damage to all creatures in the area.</p><p><strong>Scaling:</strong> At dice count 3, freezes the ground creating difficult terrain. At dice count 6, can freeze creatures solid. At dice count 9, creates ice walls where the cone hits surfaces. At dice count 12, the cone extends to 90 feet. At dice count 15, flash-freezes everything, potentially shattering frozen creatures.</p>"
+      },
+      {
+        "name": "Chain Lightning",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.ChainLightning",
+        "spellLevel": 6,
+        "diceCount": 2,
+        "castStat": "int",
+        "category": "evocation",
+        "castingTime": "instantaneous",
+        "range": "150 feet",
+        "duration": "instantaneous",
+        "description": "<p>Creates a bolt of lightning that arcs and jumps between multiple targets within 30 feet of each other, dealing lightning damage. Hits up to 3 targets.</p><p><strong>Scaling:</strong> At dice count 3, chains to 5 targets. At dice count 6, chains to 7 targets and can hit the same target twice. At dice count 9, chains to 10 targets. At dice count 12, creates branching lightning storms. At dice count 15, hits unlimited targets in range.</p>"
       },
       {
         "name": "Flame Strike",
@@ -113,7 +122,22 @@
         "diceCount": 2,
         "castStat": "wis",
         "category": "evocation",
-        "description": "Calls down a column of divine fire to incinerate enemies from above."
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "instantaneous",
+        "description": "<p>Calls down a column of divine fire from above to incinerate enemies in a 10-foot radius, 40-foot high cylinder, dealing radiant and fire damage.</p><p><strong>Scaling:</strong> At dice count 3, the radius increases to 15 feet. At dice count 6, calls down multiple pillars in a 30-foot area. At dice count 9, the flames are holy and bypass resistances. At dice count 12, leaves blessed flames that heal allies. At dice count 15, summons a rain of divine fire over a 60-foot radius.</p>"
+      },
+      {
+        "name": "Meteor Swarm",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.MeteorSwarm",
+        "spellLevel": 9,
+        "diceCount": 3,
+        "castStat": "int",
+        "category": "evocation",
+        "castingTime": "instantaneous",
+        "range": "1 mile",
+        "duration": "instantaneous",
+        "description": "<p>Summons blazing meteors from the sky to rain down on enemies, creating four 40-foot radius explosions anywhere within range, dealing fire and bludgeoning damage.</p><p><strong>Scaling:</strong> At dice count 6, summons eight meteors. At dice count 9, meteors leave craters and burning terrain. At dice count 12, calls down a continuous meteor shower. At dice count 15, summons apocalyptic meteor storm covering a 500-foot radius.</p>"
       }
     ],
     "abjuration": [
@@ -124,7 +148,10 @@
         "diceCount": 1,
         "castStat": "int",
         "category": "abjuration",
-        "description": "Creates an invisible barrier of magical force that protects you."
+        "castingTime": "instantaneous",
+        "range": "self",
+        "duration": "1 round",
+        "description": "<p>Creates an invisible barrier of magical force that protects you, granting +5 to AC until the start of your next turn.</p><p><strong>Scaling:</strong> At dice count 3, also grants resistance to force damage. At dice count 6, reflects projectiles back at attackers. At dice count 9, the shield lasts for 1 minute. At dice count 12, can protect adjacent allies. At dice count 15, creates an impenetrable force dome.</p>"
       },
       {
         "name": "Protection from Evil",
@@ -133,34 +160,10 @@
         "diceCount": 1,
         "castStat": "wis",
         "category": "abjuration",
-        "description": "Wards a creature against attacks from evil creatures."
-      },
-      {
-        "name": "Dispel Magic",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.DispelMagic",
-        "spellLevel": 3,
-        "diceCount": 1,
-        "castStat": "int",
-        "category": "abjuration",
-        "description": "Ends ongoing magical effects within range."
-      },
-      {
-        "name": "Stoneskin",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Stoneskin",
-        "spellLevel": 4,
-        "diceCount": 1,
-        "castStat": "int",
-        "category": "abjuration",
-        "description": "Hardens the target's flesh to the toughness of stone."
-      },
-      {
-        "name": "Wall of Force",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.WallOfForce",
-        "spellLevel": 5,
-        "diceCount": 2,
-        "castStat": "int",
-        "category": "abjuration",
-        "description": "Creates an invisible wall of pure magical force."
+        "castingTime": "instantaneous",
+        "range": "touch",
+        "duration": "10 minutes",
+        "description": "<p>Wards a creature against attacks from evil creatures, granting advantage on saves against their abilities and preventing possession.</p><p><strong>Scaling:</strong> At dice count 3, extends to protect against aberrations and undead. At dice count 6, can affect multiple creatures. At dice count 9, actively repels evil creatures. At dice count 12, duration extends to 1 hour. At dice count 15, creates a permanent ward until dispelled.</p>"
       },
       {
         "name": "Resist Energy",
@@ -169,7 +172,46 @@
         "diceCount": 1,
         "castStat": "wis",
         "category": "abjuration",
-        "description": "Grants resistance to a chosen energy type: fire, cold, lightning, or acid."
+        "castingTime": "instantaneous",
+        "range": "touch",
+        "duration": "1 hour",
+        "description": "<p>Grants resistance to a chosen energy type (fire, cold, lightning, or acid), reducing damage of that type by half.</p><p><strong>Scaling:</strong> At dice count 3, can choose two energy types. At dice count 6, grants immunity instead of resistance. At dice count 9, can protect multiple creatures. At dice count 12, also reflects 25% of energy damage back. At dice count 15, grants immunity to all energy types.</p>"
+      },
+      {
+        "name": "Dispel Magic",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.DispelMagic",
+        "spellLevel": 3,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "abjuration",
+        "castingTime": "instantaneous",
+        "range": "120 feet",
+        "duration": "instantaneous",
+        "description": "<p>Ends ongoing magical effects within range. Automatically dispels spells of 3rd level or lower; higher level spells require a check.</p><p><strong>Scaling:</strong> At dice count 3, automatically dispels 5th level spells. At dice count 6, affects a 20-foot radius. At dice count 9, automatically dispels 7th level spells. At dice count 12, can target multiple effects. At dice count 15, creates an antimagic pulse that dispels everything in 60 feet.</p>"
+      },
+      {
+        "name": "Stoneskin",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Stoneskin",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "abjuration",
+        "castingTime": "instantaneous",
+        "range": "touch",
+        "duration": "1 hour",
+        "description": "<p>Hardens the target's flesh to the toughness of stone, granting resistance to nonmagical physical damage.</p><p><strong>Scaling:</strong> At dice count 3, also grants resistance to magical physical damage. At dice count 6, can affect multiple creatures. At dice count 9, the skin becomes adamantine, granting damage reduction. At dice count 12, attackers take damage when they hit you. At dice count 15, you become nearly invulnerable to physical attacks.</p>"
+      },
+      {
+        "name": "Wall of Force",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.WallOfForce",
+        "spellLevel": 5,
+        "diceCount": 2,
+        "castStat": "int",
+        "category": "abjuration",
+        "castingTime": "instantaneous",
+        "range": "120 feet",
+        "duration": "10 minutes",
+        "description": "<p>Creates an invisible wall of pure magical force that is completely impenetrable. The wall can be shaped as a dome, sphere, or flat panels.</p><p><strong>Scaling:</strong> At dice count 3, the wall becomes mobile. At dice count 6, can create multiple walls. At dice count 9, the wall damages creatures that touch it. At dice count 12, duration extends to 1 hour. At dice count 15, creates a permanent force structure.</p>"
       },
       {
         "name": "Antimagic Field",
@@ -178,19 +220,13 @@
         "diceCount": 2,
         "castStat": "int",
         "category": "abjuration",
-        "description": "Creates a sphere where magic cannot function and spells are suppressed."
+        "castingTime": "instantaneous",
+        "range": "self",
+        "duration": "concentration, 1 hour",
+        "description": "<p>Creates a 10-foot radius sphere where magic cannot function and spells are suppressed. Magical items become mundane and spells cannot be cast.</p><p><strong>Scaling:</strong> At dice count 3, radius increases to 20 feet. At dice count 6, can exclude certain magical effects. At dice count 9, radius increases to 30 feet. At dice count 12, the field becomes mobile and can be projected. At dice count 15, creates a permanent antimagic zone.</p>"
       }
     ],
     "conjuration": [
-      {
-        "name": "Summon Familiar",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.SummonFamiliar",
-        "spellLevel": 1,
-        "diceCount": 1,
-        "castStat": "int",
-        "category": "conjuration",
-        "description": "Summons a magical animal companion to serve you."
-      },
       {
         "name": "Create Water",
         "uuid": "Compendium.dungeon-crawler-world.spells.Item.CreateWater",
@@ -198,7 +234,22 @@
         "diceCount": 1,
         "castStat": "wis",
         "category": "conjuration",
-        "description": "Conjures fresh, drinkable water from thin air."
+        "castingTime": "instantaneous",
+        "range": "30 feet",
+        "duration": "instantaneous",
+        "description": "<p>Conjures fresh, drinkable water from thin air, creating up to 10 gallons that fills containers or creates puddles.</p><p><strong>Scaling:</strong> At dice count 3, creates 50 gallons. At dice count 6, can create other liquids (wine, oil). At dice count 9, creates 200 gallons. At dice count 12, can create a flowing stream. At dice count 15, creates a permanent water source.</p>"
+      },
+      {
+        "name": "Summon Familiar",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.SummonFamiliar",
+        "spellLevel": 1,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "conjuration",
+        "castingTime": "1 round",
+        "range": "10 feet",
+        "duration": "until dismissed",
+        "description": "<p>Summons a magical animal companion (cat, owl, rat, raven, etc.) to serve you. You can communicate telepathically and see through its eyes.</p><p><strong>Scaling:</strong> At dice count 3, familiar gains enhanced abilities. At dice count 6, can summon exotic familiars. At dice count 9, familiar can cast cantrips. At dice count 12, summon multiple familiars. At dice count 15, familiar becomes a powerful magical creature.</p>"
       },
       {
         "name": "Misty Step",
@@ -207,25 +258,10 @@
         "diceCount": 1,
         "castStat": "int",
         "category": "conjuration",
-        "description": "Teleports you a short distance in a puff of silvery mist."
-      },
-      {
-        "name": "Summon Monster",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.SummonMonster",
-        "spellLevel": 4,
-        "diceCount": 1,
-        "castStat": "int",
-        "category": "conjuration",
-        "description": "Summons an extraplanar creature to do your bidding."
-      },
-      {
-        "name": "Teleport",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Teleport",
-        "spellLevel": 7,
-        "diceCount": 2,
-        "castStat": "int",
-        "category": "conjuration",
-        "description": "Instantly transports you and willing creatures to a distant location."
+        "castingTime": "instantaneous",
+        "range": "self",
+        "duration": "instantaneous",
+        "description": "<p>Teleports you up to 30 feet to an unoccupied space you can see in a puff of silvery mist.</p><p><strong>Scaling:</strong> At dice count 3, range increases to 60 feet. At dice count 6, can bring one willing creature. At dice count 9, can teleport as a reaction. At dice count 12, range increases to 120 feet. At dice count 15, can teleport at will for 1 minute.</p>"
       },
       {
         "name": "Web",
@@ -234,7 +270,10 @@
         "diceCount": 1,
         "castStat": "int",
         "category": "conjuration",
-        "description": "Conjures thick, sticky webs that entangle and restrain creatures."
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "concentration, 1 hour",
+        "description": "<p>Conjures thick, sticky webs that fill a 20-foot cube, heavily obscuring the area and restraining creatures that enter.</p><p><strong>Scaling:</strong> At dice count 3, webs are fireproof. At dice count 6, creates 40-foot cube. At dice count 9, webs are stronger and harder to escape. At dice count 12, webs deal damage to restrained creatures. At dice count 15, creates a massive web network covering 100 feet.</p>"
       },
       {
         "name": "Dimension Door",
@@ -243,7 +282,34 @@
         "diceCount": 1,
         "castStat": "int",
         "category": "conjuration",
-        "description": "Teleports you a medium distance, passing through barriers and obstacles."
+        "castingTime": "instantaneous",
+        "range": "500 feet",
+        "duration": "instantaneous",
+        "description": "<p>Teleports you up to 500 feet to a location you can visualize, passing through barriers and obstacles. Can bring one willing creature.</p><p><strong>Scaling:</strong> At dice count 3, range increases to 1000 feet. At dice count 6, can bring multiple creatures. At dice count 9, can teleport to any location you've been before. At dice count 12, leaves no trace and cannot be tracked. At dice count 15, can teleport between planes.</p>"
+      },
+      {
+        "name": "Summon Monster",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.SummonMonster",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "conjuration",
+        "castingTime": "1 round",
+        "range": "60 feet",
+        "duration": "concentration, 1 hour",
+        "description": "<p>Summons an extraplanar creature (elemental, demon, etc.) to do your bidding. The creature is friendly and obeys your commands.</p><p><strong>Scaling:</strong> At dice count 3, summons a more powerful creature. At dice count 6, can summon multiple creatures. At dice count 9, summoned creatures are enhanced. At dice count 12, can summon legendary creatures. At dice count 15, summons an army of creatures.</p>"
+      },
+      {
+        "name": "Teleport",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Teleport",
+        "spellLevel": 7,
+        "diceCount": 2,
+        "castStat": "int",
+        "category": "conjuration",
+        "castingTime": "instantaneous",
+        "range": "10 feet",
+        "duration": "instantaneous",
+        "description": "<p>Instantly transports you and up to 8 willing creatures to a distant location you've been to before. Unfamiliar destinations carry risk of mishap.</p><p><strong>Scaling:</strong> At dice count 3, can teleport to locations you've only seen. At dice count 6, eliminates risk of mishap. At dice count 9, can bring more creatures or objects. At dice count 12, can create permanent teleportation circles. At dice count 15, can teleport across planes without error.</p>"
       }
     ],
     "enchantment": [
@@ -254,7 +320,10 @@
         "diceCount": 1,
         "castStat": "int",
         "category": "enchantment",
-        "description": "Makes a humanoid regard you as a trusted friend."
+        "castingTime": "instantaneous",
+        "range": "30 feet",
+        "duration": "1 hour",
+        "description": "<p>Makes a humanoid regard you as a trusted friend. The target has advantage on social interactions with you but won't do anything harmful to itself.</p><p><strong>Scaling:</strong> At dice count 3, can affect multiple humanoids. At dice count 6, works on any creature type. At dice count 9, duration extends to 8 hours. At dice count 12, the charm is much stronger and harder to break. At dice count 15, creates permanent loyalty.</p>"
       },
       {
         "name": "Sleep",
@@ -263,7 +332,10 @@
         "diceCount": 1,
         "castStat": "int",
         "category": "enchantment",
-        "description": "Sends creatures into a magical slumber."
+        "castingTime": "instantaneous",
+        "range": "90 feet",
+        "duration": "1 minute",
+        "description": "<p>Sends creatures into a magical slumber in a 20-foot radius. Affects the weakest creatures first based on their hit points.</p><p><strong>Scaling:</strong> At dice count 3, affects more hit points of creatures. At dice count 6, radius increases to 40 feet. At dice count 9, can affect stronger creatures. At dice count 12, sleep is very deep and hard to wake from. At dice count 15, puts entire armies to sleep.</p>"
       },
       {
         "name": "Hold Person",
@@ -272,7 +344,10 @@
         "diceCount": 1,
         "castStat": "wis",
         "category": "enchantment",
-        "description": "Paralyzes a humanoid, rendering them unable to move or act."
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "concentration, 1 minute",
+        "description": "<p>Paralyzes a humanoid, rendering them unable to move or act. The target can repeat the save each round to break free.</p><p><strong>Scaling:</strong> At dice count 3, can affect 2 humanoids. At dice count 6, works on any creature type. At dice count 9, paralysis is harder to resist. At dice count 12, can affect multiple creatures. At dice count 15, creates a zone of paralysis.</p>"
       },
       {
         "name": "Suggestion",
@@ -281,16 +356,10 @@
         "diceCount": 1,
         "castStat": "int",
         "category": "enchantment",
-        "description": "Magically influences a creature to follow a suggested course of action."
-      },
-      {
-        "name": "Dominate Person",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.DominatePerson",
-        "spellLevel": 5,
-        "diceCount": 2,
-        "castStat": "int",
-        "category": "enchantment",
-        "description": "Takes complete control of a humanoid's actions."
+        "castingTime": "instantaneous",
+        "range": "30 feet",
+        "duration": "concentration, 8 hours",
+        "description": "<p>Magically influences a creature to follow a suggested course of action that sounds reasonable. The suggestion must be worded to sound reasonable.</p><p><strong>Scaling:</strong> At dice count 3, can suggest to multiple creatures. At dice count 6, suggestions can be more complex. At dice count 9, no concentration required. At dice count 12, can implant delayed suggestions. At dice count 15, mass suggestion affecting dozens of creatures.</p>"
       },
       {
         "name": "Fear",
@@ -299,7 +368,10 @@
         "diceCount": 1,
         "castStat": "int",
         "category": "enchantment",
-        "description": "Projects a terrifying image that causes creatures to flee in panic."
+        "castingTime": "instantaneous",
+        "range": "self",
+        "duration": "concentration, 1 minute",
+        "description": "<p>Projects a terrifying image in a 30-foot cone that causes creatures to flee in panic, using their action to move away from you.</p><p><strong>Scaling:</strong> At dice count 3, cone extends to 60 feet. At dice count 6, frightened creatures are also stunned. At dice count 9, creates a zone of fear. At dice count 12, fear is so intense creatures may die of fright. At dice count 15, spreads terror across a mile radius.</p>"
       },
       {
         "name": "Confusion",
@@ -308,19 +380,25 @@
         "diceCount": 1,
         "castStat": "int",
         "category": "enchantment",
-        "description": "Scrambles the minds of creatures, making them act randomly and unpredictably."
+        "castingTime": "instantaneous",
+        "range": "90 feet",
+        "duration": "concentration, 1 minute",
+        "description": "<p>Scrambles the minds of creatures in a 10-foot radius, making them act randomly and unpredictably each turn. They might attack allies, stand still, or flee.</p><p><strong>Scaling:</strong> At dice count 3, radius increases to 20 feet. At dice count 6, confusion is more severe with worse outcomes. At dice count 9, can affect more creatures. At dice count 12, creates permanent madness. At dice count 15, drives entire armies insane.</p>"
+      },
+      {
+        "name": "Dominate Person",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.DominatePerson",
+        "spellLevel": 5,
+        "diceCount": 2,
+        "castStat": "int",
+        "category": "enchantment",
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "concentration, 1 minute",
+        "description": "<p>Takes complete control of a humanoid's actions. You can command them telepathically and they follow your orders to the best of their ability.</p><p><strong>Scaling:</strong> At dice count 3, works on any creature type. At dice count 6, duration extends to 10 minutes. At dice count 9, can control multiple creatures. At dice count 12, control lasts for 1 hour. At dice count 15, creates permanent mental domination.</p>"
       }
     ],
     "illusion": [
-      {
-        "name": "Silent Image",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.SilentImage",
-        "spellLevel": 1,
-        "diceCount": 1,
-        "castStat": "int",
-        "category": "illusion",
-        "description": "Creates a visual illusion with no sound, smell, or texture."
-      },
       {
         "name": "Disguise Self",
         "uuid": "Compendium.dungeon-crawler-world.spells.Item.DisguiseSelf",
@@ -328,34 +406,22 @@
         "diceCount": 1,
         "castStat": "int",
         "category": "illusion",
-        "description": "Makes you look different, changing your appearance."
+        "castingTime": "instantaneous",
+        "range": "self",
+        "duration": "1 hour",
+        "description": "<p>Makes you look different, changing your appearance including clothing, armor, and equipment. Does not change your body shape but can make you appear taller or shorter.</p><p><strong>Scaling:</strong> At dice count 3, can change apparent size significantly. At dice count 6, can disguise others. At dice count 9, disguise includes sound and smell. At dice count 12, can appear as specific individuals. At dice count 15, the illusion is perfect and undetectable.</p>"
       },
       {
-        "name": "Invisibility",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Invisibility",
-        "spellLevel": 2,
+        "name": "Silent Image",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.SilentImage",
+        "spellLevel": 1,
         "diceCount": 1,
         "castStat": "int",
         "category": "illusion",
-        "description": "Renders a creature completely invisible."
-      },
-      {
-        "name": "Mirror Image",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.MirrorImage",
-        "spellLevel": 2,
-        "diceCount": 1,
-        "castStat": "int",
-        "category": "illusion",
-        "description": "Creates illusory duplicates of yourself that confound attackers."
-      },
-      {
-        "name": "Greater Invisibility",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.GreaterInvisibility",
-        "spellLevel": 4,
-        "diceCount": 1,
-        "castStat": "int",
-        "category": "illusion",
-        "description": "Turns a creature invisible even while attacking or casting spells."
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "concentration, 10 minutes",
+        "description": "<p>Creates a visual illusion of an object, creature, or phenomenon in a 15-foot cube. The illusion has no sound, smell, or texture.</p><p><strong>Scaling:</strong> At dice count 3, illusion can move and animate. At dice count 6, can create multiple images. At dice count 9, images include sound. At dice count 12, creates tactile illusions. At dice count 15, creates fully real-seeming illusions.</p>"
       },
       {
         "name": "Blur",
@@ -364,7 +430,46 @@
         "diceCount": 1,
         "castStat": "int",
         "category": "illusion",
-        "description": "Distorts your form, making you appear as a hazy, shifting blur."
+        "castingTime": "instantaneous",
+        "range": "self",
+        "duration": "concentration, 1 minute",
+        "description": "<p>Distorts your form, making you appear as a hazy, shifting blur. Attackers have disadvantage on attack rolls against you.</p><p><strong>Scaling:</strong> At dice count 3, also grants advantage on Dexterity saves. At dice count 6, can affect allies. At dice count 9, you can move through enemies. At dice count 12, become nearly impossible to target. At dice count 15, phase partially out of reality.</p>"
+      },
+      {
+        "name": "Invisibility",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Invisibility",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "illusion",
+        "castingTime": "instantaneous",
+        "range": "touch",
+        "duration": "concentration, 1 hour",
+        "description": "<p>Renders a creature completely invisible until they attack or cast a spell. Items carried and worn become invisible as well.</p><p><strong>Scaling:</strong> At dice count 3, can affect multiple creatures. At dice count 6, invisibility doesn't end when attacking. At dice count 9, no concentration required. At dice count 12, can become invisible at will. At dice count 15, grants permanent invisibility.</p>"
+      },
+      {
+        "name": "Mirror Image",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.MirrorImage",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "illusion",
+        "castingTime": "instantaneous",
+        "range": "self",
+        "duration": "1 minute",
+        "description": "<p>Creates 3 illusory duplicates of yourself that confound attackers. When attacked, there's a chance the attack hits a duplicate instead of you.</p><p><strong>Scaling:</strong> At dice count 3, creates 5 duplicates. At dice count 6, duplicates can move independently. At dice count 9, creates 7 duplicates that fight. At dice count 12, duplicates are semi-real and can deal damage. At dice count 15, creates unlimited duplicates.</p>"
+      },
+      {
+        "name": "Greater Invisibility",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.GreaterInvisibility",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "illusion",
+        "castingTime": "instantaneous",
+        "range": "touch",
+        "duration": "concentration, 1 minute",
+        "description": "<p>Turns a creature invisible even while attacking or casting spells. The invisibility persists through any action.</p><p><strong>Scaling:</strong> At dice count 3, can affect multiple creatures. At dice count 6, grants advantage on attacks while invisible. At dice count 9, no concentration required. At dice count 12, duration extends to 10 minutes. At dice count 15, invisibility cannot be dispelled or detected.</p>"
       },
       {
         "name": "Phantasmal Killer",
@@ -373,7 +478,10 @@
         "diceCount": 1,
         "castStat": "int",
         "category": "illusion",
-        "description": "Creates a nightmarish illusion of the target's deepest fears that can kill with terror."
+        "castingTime": "instantaneous",
+        "range": "120 feet",
+        "duration": "concentration, 1 minute",
+        "description": "<p>Creates a nightmarish illusion of the target's deepest fears visible only to them. Each turn, the target takes psychic damage and must save or be frightened.</p><p><strong>Scaling:</strong> At dice count 3, fear can kill weak creatures. At dice count 6, affects multiple targets. At dice count 9, the nightmare becomes partially real. At dice count 12, nightmare manifests for all to see. At dice count 15, can kill even powerful creatures with fear.</p>"
       }
     ],
     "necromancy": [
@@ -384,7 +492,10 @@
         "diceCount": 1,
         "castStat": "wis",
         "category": "necromancy",
-        "description": "Channels negative energy to deal necrotic damage."
+        "castingTime": "instantaneous",
+        "range": "touch",
+        "duration": "instantaneous",
+        "description": "<p>Channels negative energy through your touch to deal necrotic damage to a creature you touch.</p><p><strong>Scaling:</strong> At dice count 3, wounds continue to bleed. At dice count 6, can affect at range. At dice count 9, prevents healing temporarily. At dice count 12, causes festering wounds. At dice count 15, can cause instant death to weak creatures.</p>"
       },
       {
         "name": "Ray of Enfeeblement",
@@ -393,7 +504,10 @@
         "diceCount": 1,
         "castStat": "int",
         "category": "necromancy",
-        "description": "A beam of enervating energy saps the target's strength."
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "concentration, 1 minute",
+        "description": "<p>A beam of enervating energy saps the target's strength, causing them to deal only half damage with weapon attacks using Strength.</p><p><strong>Scaling:</strong> At dice count 3, also reduces Constitution. At dice count 6, affects multiple targets. At dice count 9, weakening is more severe. At dice count 12, can drain all physical stats. At dice count 15, causes complete paralysis.</p>"
       },
       {
         "name": "Animate Dead",
@@ -402,25 +516,10 @@
         "diceCount": 1,
         "castStat": "wis",
         "category": "necromancy",
-        "description": "Raises corpses as undead servants."
-      },
-      {
-        "name": "Blight",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Blight",
-        "spellLevel": 4,
-        "diceCount": 1,
-        "castStat": "wis",
-        "category": "necromancy",
-        "description": "Drains moisture and vitality from a creature."
-      },
-      {
-        "name": "Finger of Death",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.FingerOfDeath",
-        "spellLevel": 7,
-        "diceCount": 2,
-        "castStat": "int",
-        "category": "necromancy",
-        "description": "Sends negative energy coursing through a creature, potentially killing it instantly."
+        "castingTime": "1 round",
+        "range": "10 feet",
+        "duration": "instantaneous",
+        "description": "<p>Raises corpses or piles of bones as undead servants (skeletons or zombies) that obey your commands. You can control up to 4 undead at once.</p><p><strong>Scaling:</strong> At dice count 3, can control more undead. At dice count 6, creates more powerful undead. At dice count 9, undead are intelligent and skilled. At dice count 12, creates specialized undead. At dice count 15, raises armies of undead.</p>"
       },
       {
         "name": "Vampiric Touch",
@@ -429,7 +528,22 @@
         "diceCount": 1,
         "castStat": "int",
         "category": "necromancy",
-        "description": "Your touch drains life force from enemies and transfers it to heal your wounds."
+        "castingTime": "instantaneous",
+        "range": "touch",
+        "duration": "concentration, 1 minute",
+        "description": "<p>Your touch drains life force from enemies and transfers it to heal your wounds. You deal necrotic damage and regain hit points equal to half the damage dealt.</p><p><strong>Scaling:</strong> At dice count 3, heal for full damage dealt. At dice count 6, can steal temporary hit points. At dice count 9, drains multiple attributes. At dice count 12, can work at range. At dice count 15, can drain permanent life force.</p>"
+      },
+      {
+        "name": "Blight",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Blight",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "wis",
+        "category": "necromancy",
+        "castingTime": "instantaneous",
+        "range": "30 feet",
+        "duration": "instantaneous",
+        "description": "<p>Drains moisture and vitality from a creature, dealing necrotic damage. Particularly effective against plants, dealing maximum damage.</p><p><strong>Scaling:</strong> At dice count 3, affects an area. At dice count 6, withers the land around targets. At dice count 9, creates zones of death. At dice count 12, can kill plants instantly. At dice count 15, creates permanent dead zones.</p>"
       },
       {
         "name": "Circle of Death",
@@ -438,7 +552,22 @@
         "diceCount": 2,
         "castStat": "int",
         "category": "necromancy",
-        "description": "A sphere of necromantic energy bursts outward, withering all life within."
+        "castingTime": "instantaneous",
+        "range": "150 feet",
+        "duration": "instantaneous",
+        "description": "<p>A sphere of necromantic energy bursts outward in a 60-foot radius, withering all life within and dealing massive necrotic damage.</p><p><strong>Scaling:</strong> At dice count 3, radius increases to 90 feet. At dice count 6, killed creatures rise as undead. At dice count 9, creates lingering death energy. At dice count 12, can affect huge areas. At dice count 15, kills everything in a 200-foot radius.</p>"
+      },
+      {
+        "name": "Finger of Death",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.FingerOfDeath",
+        "spellLevel": 7,
+        "diceCount": 2,
+        "castStat": "int",
+        "category": "necromancy",
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "instantaneous",
+        "description": "<p>Sends negative energy coursing through a creature, potentially killing it instantly. Deals massive necrotic damage, and creatures killed by this spell rise as zombies under your control.</p><p><strong>Scaling:</strong> At dice count 3, can affect multiple targets. At dice count 6, raised zombies are more powerful. At dice count 9, instant death on failed save. At dice count 12, creates powerful undead servants. At dice count 15, can kill nearly anything with a gesture.</p>"
       }
     ],
     "transmutation": [
@@ -449,7 +578,10 @@
         "diceCount": 1,
         "castStat": "int",
         "category": "transmutation",
-        "description": "Greatly increases your movement speed."
+        "castingTime": "instantaneous",
+        "range": "self",
+        "duration": "concentration, 10 minutes",
+        "description": "<p>Greatly increases your movement speed, allowing you to take the Dash action as a bonus action on each turn.</p><p><strong>Scaling:</strong> At dice count 3, doubles movement speed. At dice count 6, can affect allies. At dice count 9, can move through difficult terrain. At dice count 12, grants supernatural speed. At dice count 15, can move at the speed of thought.</p>"
       },
       {
         "name": "Enlarge Person",
@@ -458,7 +590,10 @@
         "diceCount": 1,
         "castStat": "int",
         "category": "transmutation",
-        "description": "Causes a creature to grow to twice its normal size."
+        "castingTime": "instantaneous",
+        "range": "30 feet",
+        "duration": "concentration, 1 minute",
+        "description": "<p>Causes a creature to grow to twice its normal size, increasing its size category. The target gains advantage on Strength checks and deals extra damage.</p><p><strong>Scaling:</strong> At dice count 3, target grows even larger. At dice count 6, can affect multiple creatures. At dice count 9, grants additional benefits like reach. At dice count 12, become giant-sized. At dice count 15, grow to colossal proportions.</p>"
       },
       {
         "name": "Haste",
@@ -467,25 +602,10 @@
         "diceCount": 1,
         "castStat": "int",
         "category": "transmutation",
-        "description": "Doubles a creature's speed and grants an additional action."
-      },
-      {
-        "name": "Polymorph",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Polymorph",
-        "spellLevel": 4,
-        "diceCount": 1,
-        "castStat": "int",
-        "category": "transmutation",
-        "description": "Transforms a creature into a different beast form."
-      },
-      {
-        "name": "Disintegrate",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Disintegrate",
-        "spellLevel": 6,
-        "diceCount": 2,
-        "castStat": "int",
-        "category": "transmutation",
-        "description": "Transforms matter into fine dust with a thin green ray."
+        "castingTime": "instantaneous",
+        "range": "30 feet",
+        "duration": "concentration, 1 minute",
+        "description": "<p>Doubles a creature's speed and grants an additional action each turn for the duration. When the spell ends, the target is lethargic for one turn.</p><p><strong>Scaling:</strong> At dice count 3, can affect 2 creatures. At dice count 6, grants even more actions. At dice count 9, no lethargy afterward. At dice count 12, affects multiple creatures. At dice count 15, grants supernatural speed and multiple extra actions.</p>"
       },
       {
         "name": "Slow",
@@ -494,7 +614,22 @@
         "diceCount": 1,
         "castStat": "int",
         "category": "transmutation",
-        "description": "Drastically reduces the speed and reaction time of affected creatures."
+        "castingTime": "instantaneous",
+        "range": "120 feet",
+        "duration": "concentration, 1 minute",
+        "description": "<p>Drastically reduces the speed and reaction time of up to 6 creatures in a 40-foot cube. Targets have reduced movement, can't take reactions, and can take only one action or bonus action per turn.</p><p><strong>Scaling:</strong> At dice count 3, affects more creatures. At dice count 6, slowing is more severe. At dice count 9, can freeze creatures in time briefly. At dice count 12, creates zones of slow time. At dice count 15, stops time for enemies.</p>"
+      },
+      {
+        "name": "Polymorph",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Polymorph",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "transmutation",
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "concentration, 1 hour",
+        "description": "<p>Transforms a creature into a different beast form. The target gains the beast's statistics but retains its personality. When reduced to 0 HP, reverts to original form.</p><p><strong>Scaling:</strong> At dice count 3, can transform into more powerful beasts. At dice count 6, can affect multiple creatures. At dice count 9, can polymorph into magical beasts. At dice count 12, transformations last longer. At dice count 15, can permanently transform creatures.</p>"
       },
       {
         "name": "Stone Shape",
@@ -503,7 +638,22 @@
         "diceCount": 1,
         "castStat": "wis",
         "category": "transmutation",
-        "description": "Molds and sculpts stone into any shape you desire."
+        "castingTime": "instantaneous",
+        "range": "touch",
+        "duration": "instantaneous",
+        "description": "<p>Molds and sculpts stone into any shape you desire, allowing you to create passages, sculptures, or modify stone structures.</p><p><strong>Scaling:</strong> At dice count 3, can affect more stone. At dice count 6, can shape metal as well. At dice count 9, creations are permanent and detailed. At dice count 12, can create complex stone mechanisms. At dice count 15, can reshape entire stone structures or mountains.</p>"
+      },
+      {
+        "name": "Disintegrate",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Disintegrate",
+        "spellLevel": 6,
+        "diceCount": 2,
+        "castStat": "int",
+        "category": "transmutation",
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "instantaneous",
+        "description": "<p>Transforms matter into fine dust with a thin green ray, dealing massive force damage. A creature reduced to 0 HP is completely disintegrated along with what they're wearing.</p><p><strong>Scaling:</strong> At dice count 3, affects larger objects. At dice count 6, can pierce through multiple targets. At dice count 9, disintegrates nearly anything. At dice count 12, creates disintegration zones. At dice count 15, erases targets from existence.</p>"
       }
     ],
     "divination": [
@@ -514,7 +664,10 @@
         "diceCount": 1,
         "castStat": "int",
         "category": "divination",
-        "description": "Senses the presence of magic within range."
+        "castingTime": "instantaneous",
+        "range": "self",
+        "duration": "concentration, 10 minutes",
+        "description": "<p>Senses the presence of magic within 30 feet. You can determine the school of magic and see a faint aura around magical objects and creatures.</p><p><strong>Scaling:</strong> At dice count 3, range increases to 60 feet. At dice count 6, can identify specific spells. At dice count 9, can see through illusions. At dice count 12, range increases to 120 feet. At dice count 15, detects all magic within a mile.</p>"
       },
       {
         "name": "Identify",
@@ -523,34 +676,10 @@
         "diceCount": 1,
         "castStat": "int",
         "category": "divination",
-        "description": "Reveals the properties of a magical object."
-      },
-      {
-        "name": "See Invisibility",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.SeeInvisibility",
-        "spellLevel": 2,
-        "diceCount": 1,
-        "castStat": "int",
-        "category": "divination",
-        "description": "Allows you to see invisible creatures and objects."
-      },
-      {
-        "name": "Clairvoyance",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Clairvoyance",
-        "spellLevel": 3,
-        "diceCount": 1,
-        "castStat": "int",
-        "category": "divination",
-        "description": "Creates an invisible sensor at a distant location."
-      },
-      {
-        "name": "Scrying",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Scrying",
-        "spellLevel": 5,
-        "diceCount": 2,
-        "castStat": "int",
-        "category": "divination",
-        "description": "Observes a creature at any distance through magical sight."
+        "castingTime": "1 round",
+        "range": "touch",
+        "duration": "instantaneous",
+        "description": "<p>Reveals the properties of a magical object, including how to use it, whether it requires attunement, and any curses it carries.</p><p><strong>Scaling:</strong> At dice count 3, can identify multiple objects. At dice count 6, reveals hidden properties. At dice count 9, can identify at range. At dice count 12, learns object's history. At dice count 15, knows everything about any object.</p>"
       },
       {
         "name": "Locate Object",
@@ -559,7 +688,46 @@
         "diceCount": 1,
         "castStat": "wis",
         "category": "divination",
-        "description": "Senses the direction to a known object within range."
+        "castingTime": "instantaneous",
+        "range": "self",
+        "duration": "concentration, 10 minutes",
+        "description": "<p>Senses the direction to a known object within 1000 feet. Can locate a specific object you've seen or a general type of object.</p><p><strong>Scaling:</strong> At dice count 3, range increases to 5 miles. At dice count 6, can locate creatures as well. At dice count 9, can locate across planes. At dice count 12, pinpoints exact location. At dice count 15, can find anything anywhere.</p>"
+      },
+      {
+        "name": "See Invisibility",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.SeeInvisibility",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "divination",
+        "castingTime": "instantaneous",
+        "range": "self",
+        "duration": "1 hour",
+        "description": "<p>Allows you to see invisible creatures and objects as if they were visible. You can also see into the Ethereal Plane.</p><p><strong>Scaling:</strong> At dice count 3, can grant this to allies. At dice count 6, see through all illusions. At dice count 9, see in darkness and through walls. At dice count 12, see the true form of all things. At dice count 15, omniscient vision in your area.</p>"
+      },
+      {
+        "name": "Clairvoyance",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Clairvoyance",
+        "spellLevel": 3,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "divination",
+        "castingTime": "1 round",
+        "range": "1 mile",
+        "duration": "concentration, 10 minutes",
+        "description": "<p>Creates an invisible sensor at a distant location you've been to or can see. You can see or hear (choose one) through the sensor.</p><p><strong>Scaling:</strong> At dice count 3, can see and hear simultaneously. At dice count 6, range extends to 10 miles. At dice count 9, can create multiple sensors. At dice count 12, sensors can move. At dice count 15, can observe anywhere on the same plane.</p>"
+      },
+      {
+        "name": "Scrying",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Scrying",
+        "spellLevel": 5,
+        "diceCount": 2,
+        "castStat": "int",
+        "category": "divination",
+        "castingTime": "1 round",
+        "range": "unlimited",
+        "duration": "concentration, 10 minutes",
+        "description": "<p>Observes a creature at any distance through magical sight. You can see and hear the target and their surroundings. The target can make a save to resist.</p><p><strong>Scaling:</strong> At dice count 3, target has disadvantage on save. At dice count 6, can scry multiple targets. At dice count 9, can scry across planes. At dice count 12, scrying is undetectable. At dice count 15, can communicate through the scrying sensor.</p>"
       },
       {
         "name": "True Seeing",
@@ -568,7 +736,10 @@
         "diceCount": 2,
         "castStat": "wis",
         "category": "divination",
-        "description": "Grants the ability to see through all illusions, darkness, and hidden doors."
+        "castingTime": "instantaneous",
+        "range": "touch",
+        "duration": "1 hour",
+        "description": "<p>Grants the ability to see through all illusions, darkness, and hidden doors. You can see invisible creatures, detect secret doors, and perceive the true form of shapeshifters.</p><p><strong>Scaling:</strong> At dice count 3, can see into other planes. At dice count 6, can grant to multiple creatures. At dice count 9, see the future briefly. At dice count 12, see all hidden things. At dice count 15, omniscient sight that sees all truths.</p>"
       }
     ]
   }

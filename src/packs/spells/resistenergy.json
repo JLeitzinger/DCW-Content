@@ -4,12 +4,15 @@
   "type": "spell",
   "img": "icons/svg/book.svg",
   "system": {
-    "description": "Grants resistance to a chosen energy type: fire, cold, lightning, or acid.",
+    "description": "<p>Grants resistance to a chosen energy type (fire, cold, lightning, or acid), reducing damage of that type by half.</p><p><strong>Scaling:</strong> At dice count 3, can choose two energy types. At dice count 6, grants immunity instead of resistance. At dice count 9, can protect multiple creatures. At dice count 12, also reflects 25% of energy damage back. At dice count 15, grants immunity to all energy types.</p>",
     "spellLevel": 2,
     "diceCount": 1,
     "castStat": "wis",
     "category": "abjuration",
     "prowess": 3,
+    "castingTime": "instantaneous",
+    "range": "touch",
+    "duration": "1 hour",
     "grantedSkills": []
   },
   "effects": [],
