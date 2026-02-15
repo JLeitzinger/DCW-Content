@@ -168,6 +168,31 @@ See `data/skills/README.md` for skill creation guidelines.
 
 For class, race, and item design rules, refer to the main system's `CLAUDE.md` file.
 
+## Creating a Release
+
+To package the module for distribution:
+
+1. **Update version** in `module.json`
+2. **Pack all content**:
+   ```bash
+   npm run pack
+   ```
+3. **Build release package**:
+   ```bash
+   npm run build:release
+   ```
+4. **Create GitHub Release**:
+   - Go to https://github.com/JLeitzinger/DCW-Content/releases
+   - Click "Draft a new release"
+   - Tag: `v1.0.0` (match version in module.json)
+   - Upload `dist/dcw-content-v1.0.0.zip`
+   - Publish release
+
+5. **Update module.json download URL** to point to release asset:
+   ```json
+   "download": "https://github.com/JLeitzinger/DCW-Content/releases/download/v1.0.0/dcw-content-v1.0.0.zip"
+   ```
+
 ## License
 
 MIT License - see LICENSE file for details

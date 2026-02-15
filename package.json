@@ -16,7 +16,8 @@
     "skill-lookup": "node scripts/skill-lookup.mjs",
     "verify:classes": "node scripts/verify-classes.mjs",
     "inspect:skills": "node scripts/inspect-skills-db.mjs",
-    "list:skills": "node scripts/list-all-skills-db.mjs"
+    "list:skills": "node scripts/list-all-skills-db.mjs",
+    "build:release": "node scripts/build-release.mjs"
   },
   "keywords": [
     "foundry-vtt",
@@ -31,6 +32,7 @@
     "url": "https://github.com/JLeitzinger/DCW-Content"
   },
   "devDependencies": {
+    "archiver": "^7.0.1",
     "classic-level": "^3.0.0"
   }
 }
