@@ -17,7 +17,6 @@
     "systems": [
       {
         "id": "dungeon-crawler-world",
-        "type": "requires",
         "compatibility": {
           "minimum": "0.15.0"
         }
