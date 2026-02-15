@@ -1,9 +1,17 @@
 # DCW-Content
 
-Content generation tools and compendium packs for **Dungeon Crawler World** Foundry VTT system.
+**Foundry VTT Module** - Official content compendiums for the Dungeon Crawler World game system.
 
-This repository contains:
-- Source JSON files for all game content (classes, races, items, spells, features, skills)
+This module provides all game content for Dungeon Crawler World, including:
+- 20 character classes (Fighter, Wizard, Rogue, etc. plus unique classes like Chronomancer, Netrunner)
+- 5 character races (Hill Dwarf, Wood Elf, High Elf, Mountain Folk, Shadowkin)
+- 50+ features and abilities
+- 15+ weapons and equipment
+- 23 skills across 4 categories (Combat, Magic, Utility, General)
+- Spells and magic items
+
+This repository also contains:
+- Source JSON files for all game content
 - Generator scripts to create content from manifests
 - Packing scripts to build Foundry VTT LevelDB compendium packs
 - Utility scripts for inspecting and debugging compendium data
@@ -128,22 +136,31 @@ npm run list:skills
 2. Run `npm run pack:items` to update compendium
 3. Commit changes
 
-## Integrating with Main System
+## Installation
 
-The `packs/` directory contains the compiled LevelDB compendium packs that Foundry VTT reads.
+### For Players
 
-To use these packs in the main Dungeon Crawler World system:
+Install this module from Foundry VTT:
+1. In Foundry, go to "Add-on Modules"
+2. Click "Install Module"
+3. Search for "Dungeon Crawler World - Content"
+4. Click "Install"
 
-1. Copy or symlink the `packs/` directory to the main system repository
-2. Ensure `system.json` in the main repo references these compendium packs
+**Requirements:** The Dungeon Crawler World system must be installed first.
 
-For development, you can use a symlink:
+### For Developers
+
+Clone this repository to develop or modify content:
 ```bash
-cd /path/to/Dungeon-Crawler-World
-ln -s ../DCW-Content/packs packs
+git clone https://github.com/JLeitzinger/DCW-Content.git
+cd DCW-Content
+npm install
 ```
 
-For releases, copy the `packs/` directory into the system package.
+To test locally, symlink to your Foundry modules directory:
+```bash
+ln -s /path/to/DCW-Content /path/to/FoundryVTT/Data/modules/dcw-content
+```
 
 ## Content Authoring Guidelines
 

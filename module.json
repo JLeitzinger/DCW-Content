@@ -1,0 +1,108 @@
+{
+  "id": "dcw-content",
+  "title": "Dungeon Crawler World - Content",
+  "description": "Official content compendiums for the Dungeon Crawler World game system. Includes classes, races, items, spells, features, and skills.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "JLeitzinger",
+      "url": "https://github.com/JLeitzinger"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dungeon-crawler-world",
+        "type": "requires",
+        "compatibility": {
+          "minimum": "0.15.0"
+        }
+      }
+    ]
+  },
+  "url": "https://github.com/JLeitzinger/DCW-Content",
+  "manifest": "https://raw.githubusercontent.com/JLeitzinger/DCW-Content/main/module.json",
+  "download": "https://github.com/JLeitzinger/DCW-Content/releases/latest/download/dcw-content.zip",
+  "license": "LICENSE",
+  "readme": "README.md",
+  "bugs": "https://github.com/JLeitzinger/DCW-Content/issues",
+  "packs": [
+    {
+      "name": "items",
+      "label": "Items & Equipment",
+      "type": "Item",
+      "system": "dungeon-crawler-world",
+      "path": "packs/items",
+      "ownership": {
+        "PLAYER": "LIMITED",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "spells",
+      "label": "Spells",
+      "type": "Item",
+      "system": "dungeon-crawler-world",
+      "path": "packs/spells",
+      "ownership": {
+        "PLAYER": "LIMITED",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "features",
+      "label": "Features & Abilities",
+      "type": "Item",
+      "system": "dungeon-crawler-world",
+      "path": "packs/features",
+      "ownership": {
+        "PLAYER": "LIMITED",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "classes",
+      "label": "Character Classes",
+      "type": "Item",
+      "system": "dungeon-crawler-world",
+      "path": "packs/classes",
+      "ownership": {
+        "PLAYER": "LIMITED",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "races",
+      "label": "Character Races",
+      "type": "Item",
+      "system": "dungeon-crawler-world",
+      "path": "packs/races",
+      "ownership": {
+        "PLAYER": "LIMITED",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "skills",
+      "label": "Skills",
+      "type": "Item",
+      "system": "dungeon-crawler-world",
+      "path": "packs/skills",
+      "ownership": {
+        "PLAYER": "LIMITED",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Dungeon Crawler World",
+      "sorting": "m",
+      "packs": ["items", "spells", "features", "classes", "races", "skills"]
+    }
+  ]
+}
