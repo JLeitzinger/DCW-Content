@@ -1,0 +1,22 @@
+{
+  "_id": "Suggestion",
+  "name": "Suggestion",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Magically influences a creature to follow a suggested course of action.",
+    "spellLevel": 2,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "enchantment",
+    "prowess": 3,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

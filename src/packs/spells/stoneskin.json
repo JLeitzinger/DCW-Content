@@ -1,0 +1,22 @@
+{
+  "_id": "Stoneskin",
+  "name": "Stoneskin",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Hardens the target's flesh to the toughness of stone.",
+    "spellLevel": 4,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "abjuration",
+    "prowess": 6,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

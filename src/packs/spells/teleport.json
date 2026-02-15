@@ -1,0 +1,22 @@
+{
+  "_id": "Teleport",
+  "name": "Teleport",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Instantly transports you and willing creatures to a distant location.",
+    "spellLevel": 7,
+    "diceCount": 2,
+    "castStat": "int",
+    "category": "conjuration",
+    "prowess": 10,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

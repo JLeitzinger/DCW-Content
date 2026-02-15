@@ -1,0 +1,22 @@
+{
+  "_id": "ExpeditiousRetreat",
+  "name": "Expeditious Retreat",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Greatly increases your movement speed.",
+    "spellLevel": 1,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "transmutation",
+    "prowess": 2,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "_id": "MistyStep",
+  "name": "Misty Step",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Teleports you a short distance in a puff of silvery mist.",
+    "spellLevel": 2,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "conjuration",
+    "prowess": 3,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

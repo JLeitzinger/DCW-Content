@@ -1,0 +1,22 @@
+{
+  "_id": "ChainLightning",
+  "name": "Chain Lightning",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Creates a bolt of lightning that arcs and jumps between multiple targets.",
+    "spellLevel": 6,
+    "diceCount": 2,
+    "castStat": "int",
+    "category": "evocation",
+    "prowess": 8,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

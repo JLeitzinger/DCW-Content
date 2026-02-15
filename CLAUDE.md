@@ -21,6 +21,7 @@ This repository includes both the **source JSON files** and **build tools** to g
 ```bash
 # Generate content from manifests
 npm run generate:skills
+npm run generate:spells
 npm run generate:weapons
 
 # Pack individual compendium
@@ -229,21 +230,56 @@ Abilities, feats, and special powers.
 Magical spells and rituals.
 
 **Required Fields:**
-- `spellLevel` - 0-9 (0 = cantrip, 1+ = leveled spells)
-- `diceCount` - Number of dice for the spell (usually equals spell level, minimum 1)
-- `castStat` - Related stat: "int" (arcane) or "wis" (divine)
-- `prowess` - Mana cost (typically 0 for cantrips, spellLevel × 2 for leveled spells)
+- `spellLevel` - 1-15 (no cantrips; all spells are leveled)
+- `diceCount` - Number of dice for the spell (all spells start at 1, may increase for powerful spells)
+- `castStat` - Related stat: "int" (arcane magic) or "wis" (divine magic)
+- `prowess` - Mana cost (formula: `spellLevel + ceil(spellLevel / 3)`)
+- `category` - Spell school/category (see categories below)
+
+**Spell Scaling Rules:**
+- **Spell Level**: Ranges from 1-15
+- **Dice Count**: All spells start at `diceCount: 1`. Higher-level or more powerful spells may increase dice count (e.g., level 5-6 → 2 dice, level 9+ → 3 dice)
+- **Prowess (Mana Cost)**: Calculated as `spellLevel + ceil(spellLevel / 3)`
+  - Level 1: 2 mana
+  - Level 3: 4 mana
+  - Level 5: 7 mana
+  - Level 9: 12 mana
+  - Level 15: 20 mana
+
+**Spell Categories:**
+Spells are organized into schools of magic (all have type "spell"):
+- **Evocation**: Damage-dealing spells (Fireball, Lightning Bolt, Magic Missile)
+- **Abjuration**: Protective magic (Shield, Dispel Magic, Stoneskin)
+- **Conjuration**: Summoning and creation (Summon Monster, Teleport, Misty Step)
+- **Enchantment**: Mind-affecting magic (Charm Person, Sleep, Dominate)
+- **Illusion**: Deceptive magic (Invisibility, Silent Image, Mirror Image)
+- **Necromancy**: Death and undeath magic (Animate Dead, Finger of Death, Blight)
+- **Transmutation**: Transformation magic (Haste, Polymorph, Enlarge Person)
+- **Divination**: Information and detection (Detect Magic, Scrying, Identify)
 
 **Do NOT add skills to spells** - they use the Cast/Channel skills from the character.
 
-**Example: Fireball**
+**Example: Fireball (Level 3)**
 ```json
 {
   "spellLevel": 3,
+  "diceCount": 1,
+  "castStat": "int",
+  "prowess": 4,
+  "category": "evocation",
+  "description": "Hurls an explosive sphere of flame that detonates in a fiery blast."
+}
+```
+
+**Example: Meteor Swarm (Level 9)**
+```json
+{
+  "spellLevel": 9,
   "diceCount": 3,
   "castStat": "int",
-  "prowess": 6,
-  "description": "Hurls an explosive fireball."
+  "prowess": 12,
+  "category": "evocation",
+  "description": "Summons blazing meteors from the sky to rain down on enemies."
 }
 ```
 
@@ -304,9 +340,18 @@ Base skills from the compendium (skills-manifest.json).
 
 ### Adding a New Spell
 
+**Option 1: Using the Spell Manifest (Recommended)**
+1. Add spell definition to `data/spells-manifest.json` under the appropriate category
+2. Ensure prowess is calculated correctly: `spellLevel + ceil(spellLevel / 3)`
+3. Run `npm run generate:spells` to create JSON files in `src/packs/spells/`
+4. Run `npm run pack:spells` to update compendium
+5. Commit changes to both `data/`, `src/packs/spells/`, and `packs/spells/`
+
+**Option 2: Manual Creation**
 1. Create JSON file in `src/packs/spells/<spellname>.json`
-2. Run `npm run pack:spells` to update compendium
-3. Commit changes
+2. Follow spell scaling rules (see Spell Items section)
+3. Run `npm run pack:spells` to update compendium
+4. Commit changes
 
 ## Utilities
 
@@ -319,6 +364,31 @@ npm run skill-lookup -- list
 # Get granted skill format
 npm run skill-lookup -- granted "Slash" 2
 # Output: {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Slash", "level": 2}
+```
+
+### Spell Lookup Tool
+
+```bash
+# Show all spell statistics
+npm run spell-lookup -- stats
+
+# List all spells
+npm run spell-lookup -- list
+
+# List spells by category
+npm run spell-lookup -- list evocation
+
+# Show spell information
+npm run spell-lookup -- info "Fireball"
+
+# Search spells
+npm run spell-lookup -- search "damage"
+
+# List spells by level
+npm run spell-lookup -- level 3
+
+# List all categories
+npm run spell-lookup -- categories
 ```
 
 ### Class Verification

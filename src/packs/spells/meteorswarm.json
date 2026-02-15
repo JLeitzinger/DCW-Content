@@ -1,0 +1,22 @@
+{
+  "_id": "MeteorSwarm",
+  "name": "Meteor Swarm",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Summons blazing meteors from the sky to rain down on enemies.",
+    "spellLevel": 9,
+    "diceCount": 3,
+    "castStat": "int",
+    "category": "evocation",
+    "prowess": 12,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

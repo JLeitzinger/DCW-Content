@@ -1,0 +1,22 @@
+{
+  "_id": "Disintegrate",
+  "name": "Disintegrate",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Transforms matter into fine dust with a thin green ray.",
+    "spellLevel": 6,
+    "diceCount": 2,
+    "castStat": "int",
+    "category": "transmutation",
+    "prowess": 8,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

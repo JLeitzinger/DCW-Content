@@ -1,0 +1,22 @@
+{
+  "_id": "Sleep",
+  "name": "Sleep",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Sends creatures into a magical slumber.",
+    "spellLevel": 1,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "enchantment",
+    "prowess": 2,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

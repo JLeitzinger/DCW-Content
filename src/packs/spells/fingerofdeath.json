@@ -1,0 +1,22 @@
+{
+  "_id": "FingerofDeath",
+  "name": "Finger of Death",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Sends negative energy coursing through a creature, potentially killing it instantly.",
+    "spellLevel": 7,
+    "diceCount": 2,
+    "castStat": "int",
+    "category": "necromancy",
+    "prowess": 10,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

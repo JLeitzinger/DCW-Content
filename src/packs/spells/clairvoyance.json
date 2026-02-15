@@ -1,0 +1,22 @@
+{
+  "_id": "Clairvoyance",
+  "name": "Clairvoyance",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Creates an invisible sensor at a distant location.",
+    "spellLevel": 3,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "divination",
+    "prowess": 4,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

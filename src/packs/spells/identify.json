@@ -1,0 +1,22 @@
+{
+  "_id": "Identify",
+  "name": "Identify",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Reveals the properties of a magical object.",
+    "spellLevel": 1,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "divination",
+    "prowess": 2,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

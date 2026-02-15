@@ -1,0 +1,22 @@
+{
+  "_id": "SummonMonster",
+  "name": "Summon Monster",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Summons an extraplanar creature to do your bidding.",
+    "spellLevel": 4,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "conjuration",
+    "prowess": 6,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

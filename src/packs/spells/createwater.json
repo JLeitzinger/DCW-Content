@@ -1,0 +1,22 @@
+{
+  "_id": "CreateWater",
+  "name": "Create Water",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Conjures fresh, drinkable water from thin air.",
+    "spellLevel": 1,
+    "diceCount": 1,
+    "castStat": "wis",
+    "category": "conjuration",
+    "prowess": 2,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

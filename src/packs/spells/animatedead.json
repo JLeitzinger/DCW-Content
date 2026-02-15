@@ -1,0 +1,22 @@
+{
+  "_id": "AnimateDead",
+  "name": "Animate Dead",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Raises corpses as undead servants.",
+    "spellLevel": 3,
+    "diceCount": 1,
+    "castStat": "wis",
+    "category": "necromancy",
+    "prowess": 4,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

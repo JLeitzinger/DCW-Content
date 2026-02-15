@@ -1,0 +1,22 @@
+{
+  "_id": "Haste",
+  "name": "Haste",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Doubles a creature's speed and grants an additional action.",
+    "spellLevel": 3,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "transmutation",
+    "prowess": 4,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

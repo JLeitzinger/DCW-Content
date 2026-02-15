@@ -1,0 +1,431 @@
+{
+  "manifestVersion": "1.0",
+  "description": "Spell registry with scaling rules and categories. All spells have type='spell'.",
+  "scalingRules": {
+    "diceCount": "All spells start at diceCount: 1. Higher level spells may increase dice count based on spell design.",
+    "prowess": "Mana cost formula: prowess = spellLevel + ceil(spellLevel / 3)",
+    "levelRange": "Spells range from level 1-15",
+    "castStat": "Either 'int' (arcane magic) or 'wis' (divine magic)"
+  },
+  "categories": {
+    "evocation": {
+      "description": "Damage-dealing spells that manipulate energy and elements",
+      "examples": "Fireball, Lightning Bolt, Magic Missile"
+    },
+    "abjuration": {
+      "description": "Protective magic that wards and shields",
+      "examples": "Shield, Protection from Evil, Dispel Magic"
+    },
+    "conjuration": {
+      "description": "Summoning and creation magic",
+      "examples": "Summon Creature, Create Water, Teleport"
+    },
+    "enchantment": {
+      "description": "Mind-affecting magic that influences thoughts and emotions",
+      "examples": "Charm Person, Sleep, Suggestion"
+    },
+    "illusion": {
+      "description": "Deceptive magic that creates false sensory impressions",
+      "examples": "Invisibility, Silent Image, Disguise Self"
+    },
+    "necromancy": {
+      "description": "Magic dealing with death, undeath, and life force",
+      "examples": "Animate Dead, Life Drain, Speak with Dead"
+    },
+    "transmutation": {
+      "description": "Magic that transforms and alters physical properties",
+      "examples": "Polymorph, Haste, Stone to Flesh"
+    },
+    "divination": {
+      "description": "Magic that reveals information and detects hidden things",
+      "examples": "Detect Magic, Scrying, Identify"
+    }
+  },
+  "spells": {
+    "evocation": [
+      {
+        "name": "Magic Missile",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.MagicMissile",
+        "spellLevel": 1,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "evocation",
+        "description": "Conjures glowing darts of magical force that unerringly strike targets."
+      },
+      {
+        "name": "Fireball",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Fireball",
+        "spellLevel": 3,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "evocation",
+        "description": "Hurls an explosive sphere of flame that detonates in a fiery blast."
+      },
+      {
+        "name": "Lightning Bolt",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.LightningBolt",
+        "spellLevel": 3,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "evocation",
+        "description": "Unleashes a stroke of lightning that arcs toward targets."
+      },
+      {
+        "name": "Cone of Cold",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.ConeOfCold",
+        "spellLevel": 5,
+        "diceCount": 2,
+        "castStat": "int",
+        "category": "evocation",
+        "description": "Blasts forth a cone of freezing air and ice."
+      },
+      {
+        "name": "Chain Lightning",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.ChainLightning",
+        "spellLevel": 6,
+        "diceCount": 2,
+        "castStat": "int",
+        "category": "evocation",
+        "description": "Creates a bolt of lightning that arcs and jumps between multiple targets."
+      },
+      {
+        "name": "Meteor Swarm",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.MeteorSwarm",
+        "spellLevel": 9,
+        "diceCount": 3,
+        "castStat": "int",
+        "category": "evocation",
+        "description": "Summons blazing meteors from the sky to rain down on enemies."
+      }
+    ],
+    "abjuration": [
+      {
+        "name": "Shield",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Shield",
+        "spellLevel": 1,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "abjuration",
+        "description": "Creates an invisible barrier of magical force that protects you."
+      },
+      {
+        "name": "Protection from Evil",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.ProtectionFromEvil",
+        "spellLevel": 1,
+        "diceCount": 1,
+        "castStat": "wis",
+        "category": "abjuration",
+        "description": "Wards a creature against attacks from evil creatures."
+      },
+      {
+        "name": "Dispel Magic",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.DispelMagic",
+        "spellLevel": 3,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "abjuration",
+        "description": "Ends ongoing magical effects within range."
+      },
+      {
+        "name": "Stoneskin",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Stoneskin",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "abjuration",
+        "description": "Hardens the target's flesh to the toughness of stone."
+      },
+      {
+        "name": "Wall of Force",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.WallOfForce",
+        "spellLevel": 5,
+        "diceCount": 2,
+        "castStat": "int",
+        "category": "abjuration",
+        "description": "Creates an invisible wall of pure magical force."
+      }
+    ],
+    "conjuration": [
+      {
+        "name": "Summon Familiar",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.SummonFamiliar",
+        "spellLevel": 1,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "conjuration",
+        "description": "Summons a magical animal companion to serve you."
+      },
+      {
+        "name": "Create Water",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.CreateWater",
+        "spellLevel": 1,
+        "diceCount": 1,
+        "castStat": "wis",
+        "category": "conjuration",
+        "description": "Conjures fresh, drinkable water from thin air."
+      },
+      {
+        "name": "Misty Step",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.MistyStep",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "conjuration",
+        "description": "Teleports you a short distance in a puff of silvery mist."
+      },
+      {
+        "name": "Summon Monster",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.SummonMonster",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "conjuration",
+        "description": "Summons an extraplanar creature to do your bidding."
+      },
+      {
+        "name": "Teleport",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Teleport",
+        "spellLevel": 7,
+        "diceCount": 2,
+        "castStat": "int",
+        "category": "conjuration",
+        "description": "Instantly transports you and willing creatures to a distant location."
+      }
+    ],
+    "enchantment": [
+      {
+        "name": "Charm Person",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.CharmPerson",
+        "spellLevel": 1,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "enchantment",
+        "description": "Makes a humanoid regard you as a trusted friend."
+      },
+      {
+        "name": "Sleep",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Sleep",
+        "spellLevel": 1,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "enchantment",
+        "description": "Sends creatures into a magical slumber."
+      },
+      {
+        "name": "Hold Person",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.HoldPerson",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "wis",
+        "category": "enchantment",
+        "description": "Paralyzes a humanoid, rendering them unable to move or act."
+      },
+      {
+        "name": "Suggestion",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Suggestion",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "enchantment",
+        "description": "Magically influences a creature to follow a suggested course of action."
+      },
+      {
+        "name": "Dominate Person",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.DominatePerson",
+        "spellLevel": 5,
+        "diceCount": 2,
+        "castStat": "int",
+        "category": "enchantment",
+        "description": "Takes complete control of a humanoid's actions."
+      }
+    ],
+    "illusion": [
+      {
+        "name": "Silent Image",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.SilentImage",
+        "spellLevel": 1,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "illusion",
+        "description": "Creates a visual illusion with no sound, smell, or texture."
+      },
+      {
+        "name": "Disguise Self",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.DisguiseSelf",
+        "spellLevel": 1,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "illusion",
+        "description": "Makes you look different, changing your appearance."
+      },
+      {
+        "name": "Invisibility",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Invisibility",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "illusion",
+        "description": "Renders a creature completely invisible."
+      },
+      {
+        "name": "Mirror Image",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.MirrorImage",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "illusion",
+        "description": "Creates illusory duplicates of yourself that confound attackers."
+      },
+      {
+        "name": "Greater Invisibility",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.GreaterInvisibility",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "illusion",
+        "description": "Turns a creature invisible even while attacking or casting spells."
+      }
+    ],
+    "necromancy": [
+      {
+        "name": "Cause Wounds",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.CauseWounds",
+        "spellLevel": 1,
+        "diceCount": 1,
+        "castStat": "wis",
+        "category": "necromancy",
+        "description": "Channels negative energy to deal necrotic damage."
+      },
+      {
+        "name": "Ray of Enfeeblement",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.RayOfEnfeeblement",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "necromancy",
+        "description": "A beam of enervating energy saps the target's strength."
+      },
+      {
+        "name": "Animate Dead",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.AnimateDead",
+        "spellLevel": 3,
+        "diceCount": 1,
+        "castStat": "wis",
+        "category": "necromancy",
+        "description": "Raises corpses as undead servants."
+      },
+      {
+        "name": "Blight",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Blight",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "wis",
+        "category": "necromancy",
+        "description": "Drains moisture and vitality from a creature."
+      },
+      {
+        "name": "Finger of Death",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.FingerOfDeath",
+        "spellLevel": 7,
+        "diceCount": 2,
+        "castStat": "int",
+        "category": "necromancy",
+        "description": "Sends negative energy coursing through a creature, potentially killing it instantly."
+      }
+    ],
+    "transmutation": [
+      {
+        "name": "Expeditious Retreat",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.ExpeditiousRetreat",
+        "spellLevel": 1,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "transmutation",
+        "description": "Greatly increases your movement speed."
+      },
+      {
+        "name": "Enlarge Person",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.EnlargePerson",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "transmutation",
+        "description": "Causes a creature to grow to twice its normal size."
+      },
+      {
+        "name": "Haste",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Haste",
+        "spellLevel": 3,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "transmutation",
+        "description": "Doubles a creature's speed and grants an additional action."
+      },
+      {
+        "name": "Polymorph",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Polymorph",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "transmutation",
+        "description": "Transforms a creature into a different beast form."
+      },
+      {
+        "name": "Disintegrate",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Disintegrate",
+        "spellLevel": 6,
+        "diceCount": 2,
+        "castStat": "int",
+        "category": "transmutation",
+        "description": "Transforms matter into fine dust with a thin green ray."
+      }
+    ],
+    "divination": [
+      {
+        "name": "Detect Magic",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.DetectMagic",
+        "spellLevel": 1,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "divination",
+        "description": "Senses the presence of magic within range."
+      },
+      {
+        "name": "Identify",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Identify",
+        "spellLevel": 1,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "divination",
+        "description": "Reveals the properties of a magical object."
+      },
+      {
+        "name": "See Invisibility",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.SeeInvisibility",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "divination",
+        "description": "Allows you to see invisible creatures and objects."
+      },
+      {
+        "name": "Clairvoyance",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Clairvoyance",
+        "spellLevel": 3,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "divination",
+        "description": "Creates an invisible sensor at a distant location."
+      },
+      {
+        "name": "Scrying",
+        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Scrying",
+        "spellLevel": 5,
+        "diceCount": 2,
+        "castStat": "int",
+        "category": "divination",
+        "description": "Observes a creature at any distance through magical sight."
+      }
+    ]
+  }
+}

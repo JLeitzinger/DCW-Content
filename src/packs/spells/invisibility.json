@@ -1,0 +1,22 @@
+{
+  "_id": "Invisibility",
+  "name": "Invisibility",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Renders a creature completely invisible.",
+    "spellLevel": 2,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "illusion",
+    "prowess": 3,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

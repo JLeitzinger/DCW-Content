@@ -1,0 +1,22 @@
+{
+  "_id": "EnlargePerson",
+  "name": "Enlarge Person",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Causes a creature to grow to twice its normal size.",
+    "spellLevel": 2,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "transmutation",
+    "prowess": 3,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

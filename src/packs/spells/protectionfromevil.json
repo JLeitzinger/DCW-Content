@@ -1,0 +1,22 @@
+{
+  "_id": "ProtectionfromEvil",
+  "name": "Protection from Evil",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Wards a creature against attacks from evil creatures.",
+    "spellLevel": 1,
+    "diceCount": 1,
+    "castStat": "wis",
+    "category": "abjuration",
+    "prowess": 2,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

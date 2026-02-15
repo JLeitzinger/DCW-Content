@@ -1,0 +1,22 @@
+{
+  "_id": "DominatePerson",
+  "name": "Dominate Person",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Takes complete control of a humanoid's actions.",
+    "spellLevel": 5,
+    "diceCount": 2,
+    "castStat": "int",
+    "category": "enchantment",
+    "prowess": 7,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

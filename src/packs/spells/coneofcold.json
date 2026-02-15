@@ -1,0 +1,22 @@
+{
+  "_id": "ConeofCold",
+  "name": "Cone of Cold",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Blasts forth a cone of freezing air and ice.",
+    "spellLevel": 5,
+    "diceCount": 2,
+    "castStat": "int",
+    "category": "evocation",
+    "prowess": 7,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

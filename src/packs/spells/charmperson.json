@@ -1,0 +1,22 @@
+{
+  "_id": "CharmPerson",
+  "name": "Charm Person",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Makes a humanoid regard you as a trusted friend.",
+    "spellLevel": 1,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "enchantment",
+    "prowess": 2,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

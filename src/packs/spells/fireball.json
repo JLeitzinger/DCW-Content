@@ -1,0 +1,22 @@
+{
+  "_id": "Fireball",
+  "name": "Fireball",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Hurls an explosive sphere of flame that detonates in a fiery blast.",
+    "spellLevel": 3,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "evocation",
+    "prowess": 4,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

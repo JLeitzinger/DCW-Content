@@ -5,6 +5,7 @@
   "scripts": {
     "generate:weapons": "node scripts/generators/generate-weapons.mjs",
     "generate:skills": "node scripts/generate-skills.mjs",
+    "generate:spells": "node scripts/generate-spells.mjs",
     "pack": "npm run pack:items && npm run pack:skills && npm run pack:races && npm run pack:spells && npm run pack:features && npm run pack:classes",
     "pack:items": "node scripts/pack-items.mjs",
     "pack:skills": "node scripts/pack-skills.mjs",
@@ -14,6 +15,7 @@
     "pack:classes": "node scripts/pack-classes.mjs",
     "add-skills-to-weapons": "node scripts/add-skills-to-weapons.mjs",
     "skill-lookup": "node scripts/skill-lookup.mjs",
+    "spell-lookup": "node scripts/spell-lookup.mjs",
     "verify:classes": "node scripts/verify-classes.mjs",
     "inspect:skills": "node scripts/inspect-skills-db.mjs",
     "list:skills": "node scripts/list-all-skills-db.mjs",
