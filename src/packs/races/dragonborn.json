@@ -1,0 +1,42 @@
+{
+  "_id": "dragonborn",
+  "name": "Dragonborn",
+  "type": "race",
+  "img": "icons/svg/dragon.svg",
+  "system": {
+    "description": "Dragonborn are proud and noble draconic humanoids, born with the blood of ancient dragons flowing through their veins. They combine the strength and majesty of dragons with humanoid versatility.",
+    "abilityBonuses": {
+      "str": 2,
+      "dex": 0,
+      "con": 1,
+      "int": 0,
+      "wis": 0,
+      "cha": 0
+    },
+    "bonuses": {
+      "hp": 2,
+      "stamina": 2,
+      "mana": 0
+    },
+    "size": "medium",
+    "speed": 30,
+    "senses": ["darkvision"],
+    "traits": [
+      "Draconic Ancestry: You have draconic ancestry which determines your breath weapon and damage resistance.",
+      "Breath Weapon: You can exhale destructive energy once per short rest.",
+      "Damage Resistance: You have resistance to the damage type associated with your draconic ancestry."
+    ],
+    "grantedSkills": [
+      {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Intimidation", "level": 1},
+      {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Diplomacy", "level": 1},
+      {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Slash", "level": 1}
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -2,7 +2,7 @@
   "id": "dcw-content",
   "title": "Dungeon Crawler World - Content",
   "description": "Official content compendiums for the Dungeon Crawler World game system. Includes classes, races, items, spells, features, and skills.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "authors": [
     {
       "name": "JLeitzinger",
@@ -26,7 +26,7 @@
   },
   "url": "https://github.com/JLeitzinger/DCW-Content",
   "manifest": "https://raw.githubusercontent.com/JLeitzinger/DCW-Content/main/module.json",
-  "download": "https://github.com/JLeitzinger/DCW-Content/releases/download/v1.0.0/dcw-content-v1.0.0.zip",
+  "download": "https://github.com/JLeitzinger/DCW-Content/releases/download/v1.1.0/dcw-content-v1.1.0.zip",
   "license": "LICENSE",
   "readme": "README.md",
   "bugs": "https://github.com/JLeitzinger/DCW-Content/issues",

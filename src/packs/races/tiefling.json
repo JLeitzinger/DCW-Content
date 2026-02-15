@@ -1,0 +1,42 @@
+{
+  "_id": "tiefling",
+  "name": "Tiefling",
+  "type": "race",
+  "img": "icons/svg/fire.svg",
+  "system": {
+    "description": "Tieflings bear the mark of infernal heritage in their appearance and magical abilities. Despite often facing prejudice, many tieflings embrace their dark charisma and innate magical talents.",
+    "abilityBonuses": {
+      "str": 0,
+      "dex": 0,
+      "con": 0,
+      "int": 1,
+      "wis": 0,
+      "cha": 2
+    },
+    "bonuses": {
+      "hp": 0,
+      "stamina": 1,
+      "mana": 2
+    },
+    "size": "medium",
+    "speed": 30,
+    "senses": ["darkvision"],
+    "traits": [
+      "Hellish Resistance: You have resistance to fire damage.",
+      "Infernal Legacy: You know the Thaumaturgy cantrip. You can cast Hellish Rebuke once per long rest, and Darkness once per long rest.",
+      "Devil's Tongue: Tieflings have a natural gift for persuasion and deception."
+    ],
+    "grantedSkills": [
+      {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Deception", "level": 1},
+      {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Diplomacy", "level": 1},
+      {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Cast", "level": 1}
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

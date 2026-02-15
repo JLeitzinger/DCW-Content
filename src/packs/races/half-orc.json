@@ -1,0 +1,42 @@
+{
+  "_id": "half-orc",
+  "name": "Half-Orc",
+  "type": "race",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "Half-orcs combine the best qualities of humans and orcs, though some would say they inherit the worst. They possess remarkable physical strength and endurance, along with a fierce will to survive.",
+    "abilityBonuses": {
+      "str": 2,
+      "dex": 0,
+      "con": 1,
+      "int": 0,
+      "wis": 0,
+      "cha": 0
+    },
+    "bonuses": {
+      "hp": 3,
+      "stamina": 3,
+      "mana": 0
+    },
+    "size": "medium",
+    "speed": 30,
+    "senses": ["darkvision"],
+    "traits": [
+      "Relentless Endurance: When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead (once per long rest).",
+      "Savage Attacks: When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time.",
+      "Menacing: You have proficiency in the Intimidation skill."
+    ],
+    "grantedSkills": [
+      {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Intimidation", "level": 2},
+      {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Survival", "level": 1},
+      {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Blunt", "level": 1}
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}
