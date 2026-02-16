@@ -1,0 +1,39 @@
+{
+  "_id": "w004frostbrand01",
+  "name": "Frostbrand Longsword",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-long-ice.webp",
+  "system": {
+    "description": "A magnificent blade forged in the frozen peaks of the Eternal Winter. Frost crawls along its edge, and the air around it shimmers with cold. Those struck by this weapon feel their movements slow as ice creeps through their veins.",
+    "quantity": 1,
+    "weight": 3,
+    "roll": {
+      "diceNum": 2,
+      "diceSize": "d6",
+      "diceBonus": "+@str.mod+ceil(@lvl / 2)+2"
+    },
+    "rarity": "rare",
+    "effort": 2,
+    "range": "melee",
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Slash",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Pierce",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "notes": "Features: Frost Aura (enemies within 5 feet take cold damage), Ice Wall (once per day)"
+}

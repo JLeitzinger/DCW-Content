@@ -1,0 +1,34 @@
+{
+  "_id": "w003longbow00001",
+  "name": "Longbow",
+  "type": "weapon",
+  "img": "icons/weapons/bows/longbow-wood.webp",
+  "system": {
+    "description": "A tall bow crafted from flexible yew. Requires strength to draw, but can strike targets from great distances.",
+    "quantity": 1,
+    "weight": 2,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d8",
+      "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+    },
+    "rarity": "common",
+    "effort": 0,
+    "range": "150 feet",
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Pierce",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

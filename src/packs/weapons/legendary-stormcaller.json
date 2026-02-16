@@ -1,0 +1,39 @@
+{
+  "_id": "w005stormcaller1",
+  "name": "Stormcaller",
+  "type": "weapon",
+  "img": "icons/weapons/hammers/hammer-war-lightning.webp",
+  "system": {
+    "description": "A massive warhammer wreathed in crackling lightning. Legends say it was wielded by a storm giant who fell defending the mortal realms. The weapon hums with barely-contained power, and thunder rumbles with each swing. When struck against the ground, it can summon devastating lightning storms.",
+    "quantity": 1,
+    "weight": 15,
+    "roll": {
+      "diceNum": 3,
+      "diceSize": "d8",
+      "diceBonus": "+@str.mod+ceil(@lvl / 2)+3"
+    },
+    "rarity": "legendary",
+    "effort": 3,
+    "range": "melee",
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Crush",
+        "level": 3
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Slash",
+        "level": 2
+      }
+    ],
+    "grantedFeatures": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "notes": "Features: Lightning Strike (chain lightning on hit), Thunder Crash (AoE slam), Storm's Fury (summon lightning storm once per day), Shock Aura (passive damage to nearby enemies)"
+}

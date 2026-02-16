@@ -1,0 +1,34 @@
+{
+  "_id": "w006battleaxe001",
+  "name": "Battleaxe",
+  "type": "weapon",
+  "img": "icons/weapons/axes/axe-battle-broad.webp",
+  "system": {
+    "description": "A heavy axe with a broad, crescent-shaped blade. Favored by warriors who value raw power over finesse.",
+    "quantity": 1,
+    "weight": 4,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d8",
+      "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+    },
+    "rarity": "common",
+    "effort": 0,
+    "range": "melee",
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Slash",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

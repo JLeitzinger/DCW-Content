@@ -1,0 +1,43 @@
+{
+  "_id": "w007sunblade0001",
+  "name": "The Sunblade",
+  "type": "weapon",
+  "img": "icons/weapons/swords/greatsword-gold-holy.webp",
+  "system": {
+    "description": "A radiant greatsword forged in the heart of a dying star. Pure sunlight flows through its crystalline blade, and it shines like a beacon of hope in the darkest places. Undead creatures shrink from its radiance, and darkness itself seems to flee before its wielder. The weapon is said to have been a gift from the solar deities to their greatest champion.",
+    "quantity": 1,
+    "weight": 6,
+    "roll": {
+      "diceNum": 4,
+      "diceSize": "d8",
+      "diceBonus": "+@str.mod+ceil(@lvl / 2)+5"
+    },
+    "rarity": "mythic",
+    "effort": 4,
+    "range": "melee",
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Slash",
+        "level": 4
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Pierce",
+        "level": 3
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Crush",
+        "level": 2
+      }
+    ],
+    "grantedFeatures": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "notes": "Features: Sunburst (massive radiant AoE), Searing Light (bonus radiant damage on all attacks), Daybreak (permanent light aura), Smite Undead (double damage to undead), Solar Flare (ranged beam attack)"
+}
