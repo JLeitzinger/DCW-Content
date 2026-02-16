@@ -13,7 +13,7 @@
       "diceBonus": "+@str.mod+ceil(@lvl / 2)"
     },
     "rarity": "common",
-    "effort": 0,
+    "effort": 1,
     "range": "melee",
     "equipped": false,
     "grantedSkills": [

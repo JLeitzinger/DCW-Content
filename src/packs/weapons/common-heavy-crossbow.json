@@ -13,7 +13,7 @@
       "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
     },
     "rarity": "common",
-    "effort": 0,
+    "effort": 1,
     "range": "100 feet",
     "equipped": false,
     "grantedSkills": [
