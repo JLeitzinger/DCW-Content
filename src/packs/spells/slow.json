@@ -4,7 +4,7 @@
   "type": "spell",
   "img": "icons/svg/book.svg",
   "system": {
-    "description": "<p>Drastically reduces the speed and reaction time of up to 6 creatures in a 40-foot cube. Targets have reduced movement, can't take reactions, and can take only one action or bonus action per turn.</p><p><strong>Scaling:</strong> At dice count 3, affects more creatures. At dice count 6, slowing is more severe. At dice count 9, can freeze creatures in time briefly. At dice count 12, creates zones of slow time. At dice count 15, stops time for enemies.</p>",
+    "description": "<p>Drastically reduces the speed and reaction time of up to 6 creatures in a 40-foot cube. Targets have reduced movement, can't take reactions, and all stamina and mana costs are doubled.</p><p><strong>Scaling:</strong> At dice count 3, affects more creatures. At dice count 6, slowing is more severe. At dice count 9, can freeze creatures in time briefly. At dice count 12, creates zones of slow time. At dice count 15, stops time for enemies.</p>",
     "spellLevel": 3,
     "diceCount": 1,
     "castStat": "int",

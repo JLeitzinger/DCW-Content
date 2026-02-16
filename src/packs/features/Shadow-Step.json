@@ -4,7 +4,7 @@
   "type": "feature",
   "img": "icons/svg/shield.svg",
   "system": {
-    "description": "As a bonus action, you can teleport up to 30 feet to an unoccupied space you can see that is in dim light or darkness. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+    "description": "You can spend 2 stamina to teleport up to 30 feet to an unoccupied space you can see that is in dim light or darkness. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
     "grantedSkills": []
   },
   "effects": [],

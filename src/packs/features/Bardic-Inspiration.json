@@ -4,7 +4,7 @@
   "type": "feature",
   "img": "icons/svg/sound.svg",
   "system": {
-    "description": "You can inspire others through stirring words or music. As a bonus action, choose one creature other than yourself within 60 feet who can hear you. That creature gains one Bardic Inspiration die (d6). Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw.",
+    "description": "You can inspire others through stirring words or music. Spend 1 mana to choose one creature other than yourself within 60 feet who can hear you. That creature gains one Bardic Inspiration die (d6). Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw.",
     "grantedSkills": []
   },
   "effects": [],

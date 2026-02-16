@@ -4,7 +4,7 @@
   "type": "feature",
   "img": "icons/svg/heal.svg",
   "system": {
-    "description": "You can use a bonus action to regain hit points equal to 1d10 + your fighter level. Once you use this feature, you must finish a short or long rest before you can use it again.",
+    "description": "You can spend 2 stamina to regain hit points equal to 1d10 + your fighter level. Once you use this feature, you must finish a short or long rest before you can use it again.",
     "grantedSkills": []
   },
   "effects": [],

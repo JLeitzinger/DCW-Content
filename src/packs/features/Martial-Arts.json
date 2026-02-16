@@ -4,7 +4,7 @@
   "type": "feature",
   "img": "icons/svg/fist.svg",
   "system": {
-    "description": "Your practice of martial arts gives you mastery of combat styles that use unarmed strikes. You gain the following benefits while unarmed or wielding only monk weapons: You can use Dexterity instead of Strength for attack and damage rolls, your unarmed strikes deal 1d6 damage, and you can make an unarmed strike as a bonus action when you take the Attack action.",
+    "description": "Your practice of martial arts gives you mastery of combat styles that use unarmed strikes. You gain the following benefits while unarmed or wielding only monk weapons: You can use Dexterity instead of Strength for attack and damage rolls, your unarmed strikes deal 1d6 damage, and when you make an attack you can make an additional unarmed strike for 1 stamina.",
     "grantedSkills": []
   },
   "effects": [],

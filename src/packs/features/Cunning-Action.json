@@ -4,7 +4,7 @@
   "type": "feature",
   "img": "icons/svg/running.svg",
   "system": {
-    "description": "Your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns to take the Dash, Disengage, or Hide action.",
+    "description": "Your quick thinking and agility allow you to move and act quickly. Dash, Disengage, and Hide actions cost 1 less stamina (minimum 0).",
     "grantedSkills": []
   },
   "effects": [],
