@@ -45,8 +45,14 @@
       }
     ],
     "grantedFeatures": [
-      "Compendium.dungeon-crawler-world.features.Item.Genetic-Modification",
-      "Compendium.dungeon-crawler-world.features.Item.Bio-Regeneration"
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Genetic-Modification",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Bio-Regeneration",
+        "level": 1
+      }
     ],
     "hitDie": "d10",
     "primaryAbility": "int",

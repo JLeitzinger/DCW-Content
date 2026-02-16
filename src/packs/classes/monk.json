@@ -45,8 +45,14 @@
       }
     ],
     "grantedFeatures": [
-      "Compendium.dungeon-crawler-world.features.Item.Martial-Arts",
-      "Compendium.dungeon-crawler-world.features.Item.Ki-Points"
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Martial-Arts",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Ki-Points",
+        "level": 1
+      }
     ],
     "hitDie": "d10",
     "primaryAbility": "dex",

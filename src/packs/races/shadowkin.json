@@ -27,7 +27,7 @@
       "truesight": 0
     },
     "languages": "Common, Undercommon",
-    "features": [
+    "grantedFeatures": [
       {
         "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Shadow-touched",
         "level": 1

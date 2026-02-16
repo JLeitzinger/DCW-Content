@@ -45,8 +45,14 @@
       }
     ],
     "grantedFeatures": [
-      "Compendium.dungeon-crawler-world.features.Item.Quick-Draw",
-      "Compendium.dungeon-crawler-world.features.Item.Trick-Shot"
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Quick-Draw",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Trick-Shot",
+        "level": 1
+      }
     ],
     "hitDie": "d10",
     "primaryAbility": "dex",

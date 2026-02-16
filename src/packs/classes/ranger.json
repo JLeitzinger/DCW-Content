@@ -45,8 +45,14 @@
       }
     ],
     "grantedFeatures": [
-      "Compendium.dungeon-crawler-world.features.Item.Favored-Enemy",
-      "Compendium.dungeon-crawler-world.features.Item.Natural-Explorer"
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Favored-Enemy",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Natural-Explorer",
+        "level": 1
+      }
     ],
     "hitDie": "d10",
     "primaryAbility": "dex",

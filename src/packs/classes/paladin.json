@@ -45,8 +45,14 @@
       }
     ],
     "grantedFeatures": [
-      "Compendium.dungeon-crawler-world.features.Item.Divine-Smite",
-      "Compendium.dungeon-crawler-world.features.Item.Lay-On-Hands"
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Divine-Smite",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Lay-On-Hands",
+        "level": 1
+      }
     ],
     "hitDie": "d10",
     "primaryAbility": "str",

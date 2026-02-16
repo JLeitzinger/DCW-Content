@@ -45,8 +45,14 @@
       }
     ],
     "grantedFeatures": [
-      "Compendium.dungeon-crawler-world.features.Item.Divine-Spellcasting",
-      "Compendium.dungeon-crawler-world.features.Item.Channel-Divinity"
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Divine-Spellcasting",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Channel-Divinity",
+        "level": 1
+      }
     ],
     "hitDie": "d10",
     "primaryAbility": "wis",

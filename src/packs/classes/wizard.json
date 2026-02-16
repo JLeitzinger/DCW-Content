@@ -45,8 +45,14 @@
       }
     ],
     "grantedFeatures": [
-      "Compendium.dungeon-crawler-world.features.Item.Spellcasting",
-      "Compendium.dungeon-crawler-world.features.Item.Arcane-Recovery"
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Spellcasting",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Arcane-Recovery",
+        "level": 1
+      }
     ],
     "hitDie": "d8",
     "primaryAbility": "int",

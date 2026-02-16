@@ -27,7 +27,7 @@
       "truesight": 0
     },
     "languages": "Common, Dwarvish",
-    "features": [
+    "grantedFeatures": [
       {
         "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Dwarven-resilience",
         "level": 1

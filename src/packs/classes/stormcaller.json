@@ -45,8 +45,14 @@
       }
     ],
     "grantedFeatures": [
-      "Compendium.dungeon-crawler-world.features.Item.Storm-Surge",
-      "Compendium.dungeon-crawler-world.features.Item.Lightning-Reflexes"
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Storm-Surge",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Lightning-Reflexes",
+        "level": 1
+      }
     ],
     "hitDie": "d10",
     "primaryAbility": "wis",

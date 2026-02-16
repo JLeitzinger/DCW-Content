@@ -45,8 +45,14 @@
       }
     ],
     "grantedFeatures": [
-      "Compendium.dungeon-crawler-world.features.Item.Necromech-Conversion",
-      "Compendium.dungeon-crawler-world.features.Item.Cybernetic-Resilience"
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Necromech-Conversion",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Cybernetic-Resilience",
+        "level": 1
+      }
     ],
     "hitDie": "d10",
     "primaryAbility": "int",

@@ -45,8 +45,14 @@
       }
     ],
     "grantedFeatures": [
-      "Compendium.dungeon-crawler-world.features.Item.Temporal-Shift",
-      "Compendium.dungeon-crawler-world.features.Item.Time-Dilation"
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Temporal-Shift",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Time-Dilation",
+        "level": 1
+      }
     ],
     "hitDie": "d8",
     "primaryAbility": "int",

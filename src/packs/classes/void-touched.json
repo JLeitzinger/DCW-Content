@@ -45,8 +45,14 @@
       }
     ],
     "grantedFeatures": [
-      "Compendium.dungeon-crawler-world.features.Item.Void-Gaze",
-      "Compendium.dungeon-crawler-world.features.Item.Reality-Warp"
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Void-Gaze",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Reality-Warp",
+        "level": 1
+      }
     ],
     "hitDie": "d8",
     "primaryAbility": "cha",

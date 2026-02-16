@@ -49,8 +49,14 @@
       }
     ],
     "grantedFeatures": [
-      "Compendium.dungeon-crawler-world.features.Item.Dream-Walking",
-      "Compendium.dungeon-crawler-world.features.Item.Illusory-Reality"
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Dream-Walking",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Illusory-Reality",
+        "level": 1
+      }
     ],
     "hitDie": "d8",
     "primaryAbility": "cha",

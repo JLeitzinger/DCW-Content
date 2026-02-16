@@ -49,8 +49,14 @@
       }
     ],
     "grantedFeatures": [
-      "Compendium.dungeon-crawler-world.features.Item.Jack-In",
-      "Compendium.dungeon-crawler-world.features.Item.ICE-Breaker"
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Jack-In",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.ICE-Breaker",
+        "level": 1
+      }
     ],
     "hitDie": "d8",
     "primaryAbility": "int",

@@ -27,7 +27,7 @@
       "truesight": 0
     },
     "languages": "Common, Elvish",
-    "features": [
+    "grantedFeatures": [
       {
         "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Fey-ancestry",
         "level": 1

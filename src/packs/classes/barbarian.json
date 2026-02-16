@@ -45,8 +45,14 @@
       }
     ],
     "grantedFeatures": [
-      "Compendium.dungeon-crawler-world.features.Item.Rage",
-      "Compendium.dungeon-crawler-world.features.Item.Reckless-Attack"
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Rage",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Reckless-Attack",
+        "level": 1
+      }
     ],
     "hitDie": "d12",
     "primaryAbility": "str",

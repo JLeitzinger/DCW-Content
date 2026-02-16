@@ -45,8 +45,14 @@
       }
     ],
     "grantedFeatures": [
-      "Compendium.dungeon-crawler-world.features.Item.Rune-Inscription",
-      "Compendium.dungeon-crawler-world.features.Item.Runic-Empowerment"
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Rune-Inscription",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Runic-Empowerment",
+        "level": 1
+      }
     ],
     "hitDie": "d8",
     "primaryAbility": "int",

@@ -49,8 +49,14 @@
       }
     ],
     "grantedFeatures": [
-      "Compendium.dungeon-crawler-world.features.Item.Sneak-Attack",
-      "Compendium.dungeon-crawler-world.features.Item.Cunning-Action"
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Sneak-Attack",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Cunning-Action",
+        "level": 1
+      }
     ],
     "hitDie": "d10",
     "primaryAbility": "dex",

@@ -45,8 +45,14 @@
       }
     ],
     "grantedFeatures": [
-      "Compendium.dungeon-crawler-world.features.Item.Second-Wind",
-      "Compendium.dungeon-crawler-world.features.Item.Action-Surge"
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Second-Wind",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Action-Surge",
+        "level": 1
+      }
     ],
     "hitDie": "d12",
     "primaryAbility": "str",

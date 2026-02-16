@@ -45,8 +45,14 @@
       }
     ],
     "grantedFeatures": [
-      "Compendium.dungeon-crawler-world.features.Item.Sorcerous-Origin",
-      "Compendium.dungeon-crawler-world.features.Item.Font-Of-Magic"
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Sorcerous-Origin",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Font-Of-Magic",
+        "level": 1
+      }
     ],
     "hitDie": "d8",
     "primaryAbility": "cha",

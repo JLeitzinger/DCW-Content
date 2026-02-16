@@ -27,7 +27,7 @@
       "truesight": 0
     },
     "languages": "Common, Giant",
-    "features": [
+    "grantedFeatures": [
       {
         "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Mountain-born",
         "level": 1

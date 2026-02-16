@@ -45,8 +45,14 @@
       }
     ],
     "grantedFeatures": [
-      "Compendium.dungeon-crawler-world.features.Item.Psionic-Strike",
-      "Compendium.dungeon-crawler-world.features.Item.Telekinetic-Shield"
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Psionic-Strike",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Telekinetic-Shield",
+        "level": 1
+      }
     ],
     "hitDie": "d10",
     "primaryAbility": "int",
