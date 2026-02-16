@@ -28,29 +28,29 @@
     },
     "grantedSkills": [
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Cast",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Cast",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Craft",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Craft",
         "level": 3
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Lore",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Lore",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Perception",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Perception",
         "level": 1
       }
     ],
     "grantedFeatures": [
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Rune-Inscription",
+        "featureUuid": "Compendium.dcw-content.features.Item.Rune-Inscription",
         "level": 1
       },
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Runic-Empowerment",
+        "featureUuid": "Compendium.dcw-content.features.Item.Runic-Empowerment",
         "level": 1
       }
     ],

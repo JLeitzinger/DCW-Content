@@ -27,9 +27,9 @@
       "Menacing: You have proficiency in the Intimidation skill."
     ],
     "grantedSkills": [
-      {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Intimidation", "level": 2},
-      {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Survival", "level": 1},
-      {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Blunt", "level": 1}
+      {"skillUuid": "Compendium.dcw-content.skills.Item.Intimidation", "level": 2},
+      {"skillUuid": "Compendium.dcw-content.skills.Item.Survival", "level": 1},
+      {"skillUuid": "Compendium.dcw-content.skills.Item.Blunt", "level": 1}
     ]
   },
   "effects": [],

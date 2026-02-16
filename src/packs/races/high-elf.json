@@ -29,33 +29,33 @@
     "languages": "Common, Elvish",
     "grantedFeatures": [
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Fey-ancestry",
+        "featureUuid": "Compendium.dcw-content.features.Item.Fey-Ancestry",
         "level": 1
       },
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Arcane-training",
+        "featureUuid": "Compendium.dcw-content.features.Item.Arcane-Training",
         "level": 1
       },
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Trance",
+        "featureUuid": "Compendium.dcw-content.features.Item.Trance",
         "level": 1
       },
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Keen-mind",
+        "featureUuid": "Compendium.dcw-content.features.Item.Keen-Mind",
         "level": 1
       }
     ],
     "grantedSkills": [
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Lore",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Lore",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Focus",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Focus",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Cast",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Cast",
         "level": 1
       }
     ]

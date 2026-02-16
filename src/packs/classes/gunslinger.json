@@ -28,29 +28,29 @@
     },
     "grantedSkills": [
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Shoot",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Shoot",
         "level": 3
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Perception",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Perception",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Acrobatics",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Acrobatics",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Intimidation",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Intimidation",
         "level": 1
       }
     ],
     "grantedFeatures": [
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Quick-Draw",
+        "featureUuid": "Compendium.dcw-content.features.Item.Quick-Draw",
         "level": 1
       },
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Trick-Shot",
+        "featureUuid": "Compendium.dcw-content.features.Item.Trick-Shot",
         "level": 1
       }
     ],

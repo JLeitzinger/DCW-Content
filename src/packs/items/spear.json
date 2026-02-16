@@ -14,7 +14,7 @@
     },
     "grantedSkills": [
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Pierce",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Pierce",
         "level": 1
       }
     ]

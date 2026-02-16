@@ -29,29 +29,29 @@
     "languages": "Common, Giant",
     "grantedFeatures": [
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Mountain-born",
+        "featureUuid": "Compendium.dcw-content.features.Item.Mountain-Born",
         "level": 1
       },
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Stone-endurance",
+        "featureUuid": "Compendium.dcw-content.features.Item.Stone-Endurance",
         "level": 1
       },
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Sure-footed",
+        "featureUuid": "Compendium.dcw-content.features.Item.Sure-Footed",
         "level": 1
       }
     ],
     "grantedSkills": [
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Athletics",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Athletics",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Craft",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Craft",
         "level": 1
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Blunt",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Blunt",
         "level": 2
       }
     ]

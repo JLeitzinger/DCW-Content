@@ -27,9 +27,9 @@
       "Devil's Tongue: Tieflings have a natural gift for persuasion and deception."
     ],
     "grantedSkills": [
-      {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Deception", "level": 1},
-      {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Diplomacy", "level": 1},
-      {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Cast", "level": 1}
+      {"skillUuid": "Compendium.dcw-content.skills.Item.Deception", "level": 1},
+      {"skillUuid": "Compendium.dcw-content.skills.Item.Diplomacy", "level": 1},
+      {"skillUuid": "Compendium.dcw-content.skills.Item.Cast", "level": 1}
     ]
   },
   "effects": [],

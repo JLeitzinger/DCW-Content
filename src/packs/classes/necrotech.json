@@ -28,29 +28,29 @@
     },
     "grantedSkills": [
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Channel",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Channel",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Craft",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Craft",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Medicine",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Medicine",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Intimidation",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Intimidation",
         "level": 1
       }
     ],
     "grantedFeatures": [
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Necromech-Conversion",
+        "featureUuid": "Compendium.dcw-content.features.Item.Necromech-Conversion",
         "level": 1
       },
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Cybernetic-Resilience",
+        "featureUuid": "Compendium.dcw-content.features.Item.Cybernetic-Resilience",
         "level": 1
       }
     ],

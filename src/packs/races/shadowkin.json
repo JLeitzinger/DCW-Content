@@ -29,29 +29,29 @@
     "languages": "Common, Undercommon",
     "grantedFeatures": [
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Shadow-touched",
+        "featureUuid": "Compendium.dcw-content.features.Item.Shadow-Touched",
         "level": 1
       },
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Shadow-step",
+        "featureUuid": "Compendium.dcw-content.features.Item.Shadow-Step",
         "level": 1
       },
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Chilling-presence",
+        "featureUuid": "Compendium.dcw-content.features.Item.Chilling-Presence",
         "level": 1
       }
     ],
     "grantedSkills": [
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Stealth",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Stealth",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Deception",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Deception",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Pierce",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Pierce",
         "level": 2
       }
     ]

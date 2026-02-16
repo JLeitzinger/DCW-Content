@@ -27,9 +27,9 @@
       "Halfling Nimbleness: You can move through the space of any creature that is larger than you."
     ],
     "grantedSkills": [
-      {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Acrobatics", "level": 1},
-      {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Diplomacy", "level": 1},
-      {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Throw", "level": 1}
+      {"skillUuid": "Compendium.dcw-content.skills.Item.Acrobatics", "level": 1},
+      {"skillUuid": "Compendium.dcw-content.skills.Item.Diplomacy", "level": 1},
+      {"skillUuid": "Compendium.dcw-content.skills.Item.Throw", "level": 1}
     ]
   },
   "effects": [],

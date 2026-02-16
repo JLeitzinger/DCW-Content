@@ -28,33 +28,33 @@
     },
     "grantedSkills": [
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Cast",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Cast",
         "level": 3
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Deception",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Deception",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Diplomacy",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Diplomacy",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Perception",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Perception",
         "level": 1
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Focus",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Focus",
         "level": 1
       }
     ],
     "grantedFeatures": [
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Dream-Walking",
+        "featureUuid": "Compendium.dcw-content.features.Item.Dream-Walking",
         "level": 1
       },
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Illusory-Reality",
+        "featureUuid": "Compendium.dcw-content.features.Item.Illusory-Reality",
         "level": 1
       }
     ],

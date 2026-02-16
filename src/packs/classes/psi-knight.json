@@ -28,29 +28,29 @@
     },
     "grantedSkills": [
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Slash",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Slash",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Cast",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Cast",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Focus",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Focus",
         "level": 3
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Athletics",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Athletics",
         "level": 1
       }
     ],
     "grantedFeatures": [
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Psionic-Strike",
+        "featureUuid": "Compendium.dcw-content.features.Item.Psionic-Strike",
         "level": 1
       },
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Telekinetic-Shield",
+        "featureUuid": "Compendium.dcw-content.features.Item.Telekinetic-Shield",
         "level": 1
       }
     ],

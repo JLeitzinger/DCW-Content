@@ -27,9 +27,9 @@
       "Damage Resistance: You have resistance to the damage type associated with your draconic ancestry."
     ],
     "grantedSkills": [
-      {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Intimidation", "level": 1},
-      {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Diplomacy", "level": 1},
-      {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Slash", "level": 1}
+      {"skillUuid": "Compendium.dcw-content.skills.Item.Intimidation", "level": 1},
+      {"skillUuid": "Compendium.dcw-content.skills.Item.Diplomacy", "level": 1},
+      {"skillUuid": "Compendium.dcw-content.skills.Item.Slash", "level": 1}
     ]
   },
   "effects": [],

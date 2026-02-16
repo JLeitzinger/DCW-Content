@@ -27,9 +27,9 @@
       "Tinker: You have proficiency with artisan's tools (tinker's tools)."
     ],
     "grantedSkills": [
-      {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Craft", "level": 2},
-      {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Lore", "level": 1},
-      {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Cast", "level": 1}
+      {"skillUuid": "Compendium.dcw-content.skills.Item.Craft", "level": 2},
+      {"skillUuid": "Compendium.dcw-content.skills.Item.Lore", "level": 1},
+      {"skillUuid": "Compendium.dcw-content.skills.Item.Cast", "level": 1}
     ]
   },
   "effects": [],

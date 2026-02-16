@@ -28,29 +28,29 @@
     },
     "grantedSkills": [
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Slash",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Slash",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Defend",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Defend",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Athletics",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Athletics",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Intimidation",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Intimidation",
         "level": 1
       }
     ],
     "grantedFeatures": [
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Second-Wind",
+        "featureUuid": "Compendium.dcw-content.features.Item.Second-Wind",
         "level": 1
       },
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Action-Surge",
+        "featureUuid": "Compendium.dcw-content.features.Item.Action-Surge",
         "level": 1
       }
     ],

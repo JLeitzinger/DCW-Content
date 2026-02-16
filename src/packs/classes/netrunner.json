@@ -28,33 +28,33 @@
     },
     "grantedSkills": [
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Thievery",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Thievery",
         "level": 3
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Craft",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Craft",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Perception",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Perception",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Stealth",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Stealth",
         "level": 1
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Deception",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Deception",
         "level": 1
       }
     ],
     "grantedFeatures": [
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Jack-In",
+        "featureUuid": "Compendium.dcw-content.features.Item.Jack-In",
         "level": 1
       },
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.ICE-Breaker",
+        "featureUuid": "Compendium.dcw-content.features.Item.ICE-Breaker",
         "level": 1
       }
     ],

@@ -28,29 +28,29 @@
     },
     "grantedSkills": [
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Cast",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Cast",
         "level": 3
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Intimidation",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Intimidation",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Perception",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Perception",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Focus",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Focus",
         "level": 1
       }
     ],
     "grantedFeatures": [
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Void-Gaze",
+        "featureUuid": "Compendium.dcw-content.features.Item.Void-Gaze",
         "level": 1
       },
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Reality-Warp",
+        "featureUuid": "Compendium.dcw-content.features.Item.Reality-Warp",
         "level": 1
       }
     ],

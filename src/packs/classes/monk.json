@@ -28,29 +28,29 @@
     },
     "grantedSkills": [
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Blunt",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Blunt",
         "level": 3
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Acrobatics",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Acrobatics",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Athletics",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Athletics",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Focus",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Focus",
         "level": 2
       }
     ],
     "grantedFeatures": [
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Martial-Arts",
+        "featureUuid": "Compendium.dcw-content.features.Item.Martial-Arts",
         "level": 1
       },
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Ki-Points",
+        "featureUuid": "Compendium.dcw-content.features.Item.Ki-Points",
         "level": 1
       }
     ],

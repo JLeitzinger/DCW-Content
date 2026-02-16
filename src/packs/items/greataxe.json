@@ -14,7 +14,7 @@
     },
     "grantedSkills": [
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Slash",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Slash",
         "level": 2
       }
     ]

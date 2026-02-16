@@ -28,29 +28,29 @@
     },
     "grantedSkills": [
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Shoot",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Shoot",
         "level": 3
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Survival",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Survival",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Perception",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Perception",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Stealth",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Stealth",
         "level": 1
       }
     ],
     "grantedFeatures": [
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Favored-Enemy",
+        "featureUuid": "Compendium.dcw-content.features.Item.Favored-Enemy",
         "level": 1
       },
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Natural-Explorer",
+        "featureUuid": "Compendium.dcw-content.features.Item.Natural-Explorer",
         "level": 1
       }
     ],

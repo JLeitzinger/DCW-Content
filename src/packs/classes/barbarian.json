@@ -28,29 +28,29 @@
     },
     "grantedSkills": [
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Slash",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Slash",
         "level": 3
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Athletics",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Athletics",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Intimidation",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Intimidation",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Survival",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Survival",
         "level": 1
       }
     ],
     "grantedFeatures": [
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Rage",
+        "featureUuid": "Compendium.dcw-content.features.Item.Rage",
         "level": 1
       },
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Reckless-Attack",
+        "featureUuid": "Compendium.dcw-content.features.Item.Reckless-Attack",
         "level": 1
       }
     ],

@@ -28,29 +28,29 @@
     },
     "grantedSkills": [
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Channel",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Channel",
         "level": 3
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Medicine",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Medicine",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Blunt",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Blunt",
         "level": 2
       },
       {
-        "skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Diplomacy",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Diplomacy",
         "level": 1
       }
     ],
     "grantedFeatures": [
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Divine-Spellcasting",
+        "featureUuid": "Compendium.dcw-content.features.Item.Divine-Spellcasting",
         "level": 1
       },
       {
-        "featureUuid": "Compendium.dungeon-crawler-world.features.Item.Channel-Divinity",
+        "featureUuid": "Compendium.dcw-content.features.Item.Channel-Divinity",
         "level": 1
       }
     ],
