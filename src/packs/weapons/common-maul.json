@@ -1,0 +1,34 @@
+{
+  "_id": "w014maul00000001",
+  "name": "Maul",
+  "type": "weapon",
+  "img": "icons/weapons/hammers/hammer-double-steel.webp",
+  "system": {
+    "description": "A massive two-handed hammer. Slow but devastating when it connects.",
+    "quantity": 1,
+    "weight": 10,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d10",
+      "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+    },
+    "rarity": "common",
+    "effort": 0,
+    "range": "melee",
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Crush",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

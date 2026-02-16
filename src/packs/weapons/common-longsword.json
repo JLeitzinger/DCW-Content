@@ -1,0 +1,34 @@
+{
+  "_id": "w022longsword001",
+  "name": "Longsword",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-long-steel.webp",
+  "system": {
+    "description": "A versatile straight blade. The quintessential knight's weapon, balanced for both offense and defense.",
+    "quantity": 1,
+    "weight": 3,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d8",
+      "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+    },
+    "rarity": "common",
+    "effort": 0,
+    "range": "melee",
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Slash",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

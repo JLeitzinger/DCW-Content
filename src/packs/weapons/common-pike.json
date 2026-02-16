@@ -1,0 +1,34 @@
+{
+  "_id": "w019pike00000001",
+  "name": "Pike",
+  "type": "weapon",
+  "img": "icons/weapons/polearms/spear-flanged-steel.webp",
+  "system": {
+    "description": "A long polearm with exceptional reach. Used to keep enemies at bay and break cavalry charges.",
+    "quantity": 1,
+    "weight": 18,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d10",
+      "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+    },
+    "rarity": "common",
+    "effort": 0,
+    "range": "melee",
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Pierce",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

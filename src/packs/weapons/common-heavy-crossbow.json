@@ -1,0 +1,34 @@
+{
+  "_id": "w028heavycrossbow",
+  "name": "Heavy Crossbow",
+  "type": "weapon",
+  "img": "icons/weapons/crossbows/crossbow-heavy.webp",
+  "system": {
+    "description": "A powerful crossbow with a reinforced frame. Fires heavy bolts with tremendous force.",
+    "quantity": 1,
+    "weight": 18,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d10",
+      "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+    },
+    "rarity": "common",
+    "effort": 0,
+    "range": "100 feet",
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Pierce",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

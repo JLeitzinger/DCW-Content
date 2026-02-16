@@ -1,0 +1,34 @@
+{
+  "_id": "w024handaxe00001",
+  "name": "Handaxe",
+  "type": "weapon",
+  "img": "icons/weapons/axes/axe-broad-black.webp",
+  "system": {
+    "description": "A small axe that can be used in one hand. Also effective when thrown.",
+    "quantity": 1,
+    "weight": 2,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+    },
+    "rarity": "common",
+    "effort": 0,
+    "range": "melee / 20 feet",
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Slash",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

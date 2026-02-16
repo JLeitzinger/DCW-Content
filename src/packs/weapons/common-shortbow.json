@@ -1,0 +1,34 @@
+{
+  "_id": "w026shortbow0001",
+  "name": "Shortbow",
+  "type": "weapon",
+  "img": "icons/weapons/bows/shortbow-recurve.webp",
+  "system": {
+    "description": "A compact bow suitable for hunting and skirmishing. Easy to draw and quick to fire.",
+    "quantity": 1,
+    "weight": 2,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+    },
+    "rarity": "common",
+    "effort": 0,
+    "range": "80 feet",
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Pierce",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

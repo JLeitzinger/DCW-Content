@@ -1,0 +1,34 @@
+{
+  "_id": "w012mace00000001",
+  "name": "Mace",
+  "type": "weapon",
+  "img": "icons/weapons/maces/mace-round-spiked.webp",
+  "system": {
+    "description": "A metal-headed club designed to crush armor and bone alike. Popular among clergy and knights.",
+    "quantity": 1,
+    "weight": 4,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+    },
+    "rarity": "common",
+    "effort": 0,
+    "range": "melee",
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Crush",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,34 @@
+{
+  "_id": "w027crossbow0001",
+  "name": "Crossbow",
+  "type": "weapon",
+  "img": "icons/weapons/crossbows/crossbow-simple.webp",
+  "system": {
+    "description": "A mechanical bow mounted on a stock. Easier to aim than a traditional bow but slower to reload.",
+    "quantity": 1,
+    "weight": 5,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d8",
+      "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+    },
+    "rarity": "common",
+    "effort": 0,
+    "range": "80 feet",
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Pierce",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

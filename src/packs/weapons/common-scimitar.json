@@ -1,0 +1,34 @@
+{
+  "_id": "w021scimitar0001",
+  "name": "Scimitar",
+  "type": "weapon",
+  "img": "icons/weapons/swords/scimitar-curved.webp",
+  "system": {
+    "description": "A curved blade designed for slashing attacks. Light and quick in the hands of a skilled warrior.",
+    "quantity": 1,
+    "weight": 3,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+    },
+    "rarity": "common",
+    "effort": 0,
+    "range": "melee",
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Slash",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

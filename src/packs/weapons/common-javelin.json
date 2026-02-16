@@ -1,0 +1,34 @@
+{
+  "_id": "w017javelin00001",
+  "name": "Javelin",
+  "type": "weapon",
+  "img": "icons/weapons/thrown/javelin-worn.webp",
+  "system": {
+    "description": "A light throwing spear. Designed primarily for ranged combat but can be used in melee.",
+    "quantity": 1,
+    "weight": 2,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+    },
+    "rarity": "common",
+    "effort": 0,
+    "range": "30 feet",
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Pierce",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

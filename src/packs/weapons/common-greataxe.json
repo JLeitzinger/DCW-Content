@@ -1,0 +1,34 @@
+{
+  "_id": "w025greataxe0001",
+  "name": "Greataxe",
+  "type": "weapon",
+  "img": "icons/weapons/axes/axe-double-engraved.webp",
+  "system": {
+    "description": "A fearsome two-handed axe with a wide, crescent blade. Favored by barbarians and executioners.",
+    "quantity": 1,
+    "weight": 7,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d12",
+      "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+    },
+    "rarity": "common",
+    "effort": 0,
+    "range": "melee",
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Slash",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}
