@@ -176,6 +176,7 @@ Weapons, armor, gear, and consumables.
 **Required Fields:**
 - `quantity` - Number of items (default: 1)
 - `weight` - Weight in pounds (number)
+- `rarity` - One of `"common"`, `"uncommon"`, `"rare"`, `"legendary"`, `"mythic"`, `"celestial"` (default: `"common"`). Same scale weapons use. This drives lootbox odds (see **Lootbox** Items below) - an item left at the default `common` will show up in every lootbox tier's low end, so set it deliberately for anything meant to feel special.
 
 **For Weapons:**
 - `roll.diceNum` - Number of dice (typically 1)
@@ -202,6 +203,29 @@ Weapons, armor, gear, and consumables.
   ]
 }
 ```
+
+---
+
+### **Lootbox** Items
+Sealed containers that pull a random item from the **Item** and **Weapon** compendiums when opened - see `Dungeon-Crawler-World/Rules/Loot/Lootboxes.md` for the full mechanic and odds table. There's no separate loot-table content to author here; the item and weapon compendiums (with their `rarity` fields) are the loot table, so keeping rarity set correctly on those two types is what actually matters for lootboxes to feel right.
+
+**Required Fields:**
+- `tier` - One of `"bronze"`, `"silver"`, `"gold"`, `"platinum"`, `"legendary"`, `"celestial"` (default: `"bronze"`)
+- `quantity` - Number of boxes (default: 1)
+
+**Example: Gold Lootbox**
+```json
+{
+  "type": "lootbox",
+  "description": "A gilded chest, humming faintly.",
+  "system": {
+    "tier": "gold",
+    "quantity": 1
+  }
+}
+```
+
+There's no lootbox content in this repo yet - this section documents the type so it's ready whenever lootbox items get added (a `lootboxes` pack would need to be registered in `module.json` at that point, following the same pattern as `items`/`weapons`).
 
 ---
 
