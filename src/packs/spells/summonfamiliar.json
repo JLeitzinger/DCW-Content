@@ -13,7 +13,13 @@
     "castingTime": "1 round",
     "range": "10 feet",
     "duration": "until dismissed",
-    "grantedSkills": []
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    }
   },
   "effects": [],
   "folder": null,

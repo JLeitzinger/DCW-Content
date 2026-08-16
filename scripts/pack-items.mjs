@@ -12,10 +12,10 @@ const packDir = path.join(__dirname, '../packs/items');
 async function packItems() {
   console.log('Packing items compendium...\n');
 
-  // Ensure pack directory exists
-  if (!fs.existsSync(packDir)) {
-    fs.mkdirSync(packDir, { recursive: true });
-  }
+  // Rebuild the pack directory from scratch each time, so a source file that was
+  // deleted or renamed doesn't leave a stale orphaned entry behind in the LevelDB.
+  fs.rmSync(packDir, { recursive: true, force: true });
+  fs.mkdirSync(packDir, { recursive: true });
 
   // Open LevelDB database
   const db = new ClassicLevel(packDir, { valueEncoding: 'json' });
@@ -23,6 +23,15 @@ async function packItems() {
   try {
     // Read all JSON files from source directory
     const files = fs.readdirSync(sourceDir).filter(f => f.endsWith('.json'));
+
+    if (files.length === 0) {
+      console.log('No items found. Compendium will be empty.');
+      // Write a temporary entry to force LevelDB to initialize, then delete it
+      await db.put('!temp!', { _id: 'temp', name: 'Temp' });
+      await db.del('!temp!');
+      console.log('✓ Items compendium initialized (empty)');
+      return;
+    }
 
     console.log(`Found ${files.length} source files`);
 

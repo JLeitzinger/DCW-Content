@@ -1,0 +1,5 @@
+{
+  "manifestVersion": "1.0",
+  "description": "Item (armor/gear/tools) registry - see CLAUDE.md's Item (Equipment) section for authoring guidelines.",
+  "items": []
+}

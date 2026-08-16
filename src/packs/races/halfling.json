@@ -4,7 +4,7 @@
   "type": "race",
   "img": "icons/svg/leaf.svg",
   "system": {
-    "description": "Halflings are a cheerful and practical folk, known for their resourcefulness and uncanny luck. Though small in stature, they possess remarkable courage and a knack for getting out of trouble.",
+    "description": "Halflings are a cheerful and practical folk, known for their resourcefulness and uncanny luck. Though small in stature, they possess remarkable courage and a knack for getting out of trouble.\n\nTraits: Lucky: When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll. Brave: You have advantage on saving throws against being frightened. Halfling Nimbleness: You can move through the space of any creature that is larger than you.",
     "abilityBonuses": {
       "str": 0,
       "dex": 2,
@@ -20,16 +20,27 @@
     },
     "size": "small",
     "speed": 25,
-    "senses": [],
-    "traits": [
-      "Lucky: When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.",
-      "Brave: You have advantage on saving throws against being frightened.",
-      "Halfling Nimbleness: You can move through the space of any creature that is larger than you."
-    ],
+    "senses": {
+      "darkvision": 0,
+      "blindsight": 0,
+      "tremorsense": 0,
+      "truesight": 0
+    },
+    "languages": "",
+    "grantedFeatures": [],
     "grantedSkills": [
-      {"skillUuid": "Compendium.dcw-content.skills.Item.Acrobatics", "level": 1},
-      {"skillUuid": "Compendium.dcw-content.skills.Item.Diplomacy", "level": 1},
-      {"skillUuid": "Compendium.dcw-content.skills.Item.Throw", "level": 1}
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Acrobatics",
+        "level": 1
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Diplomacy",
+        "level": 1
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Throw",
+        "level": 1
+      }
     ]
   },
   "effects": [],

@@ -1,5 +1,5 @@
 {
-  "_id": "w014maul00000001",
+  "_id": "common-maul",
   "name": "Maul",
   "type": "weapon",
   "img": "icons/weapons/hammers/hammer-double-steel.webp",
@@ -18,7 +18,7 @@
     "equipped": false,
     "grantedSkills": [
       {
-        "skillUuid": "Compendium.dcw-content.skills.Item.Crush",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Blunt",
         "level": 1
       }
     ],

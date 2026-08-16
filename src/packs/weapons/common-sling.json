@@ -1,5 +1,5 @@
 {
-  "_id": "w029sling0000001",
+  "_id": "common-sling",
   "name": "Sling",
   "type": "weapon",
   "img": "icons/weapons/thrown/sling-leather.webp",
@@ -18,7 +18,7 @@
     "equipped": false,
     "grantedSkills": [
       {
-        "skillUuid": "Compendium.dcw-content.skills.Item.Crush",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Blunt",
         "level": 1
       }
     ],

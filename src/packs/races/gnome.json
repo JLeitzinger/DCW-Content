@@ -4,7 +4,7 @@
   "type": "race",
   "img": "icons/svg/pawprint.svg",
   "system": {
-    "description": "Gnomes are small, energetic people driven by boundless curiosity and inventive genius. They delight in discovery and creation, combining keen intellect with playful mischief.",
+    "description": "Gnomes are small, energetic people driven by boundless curiosity and inventive genius. They delight in discovery and creation, combining keen intellect with playful mischief.\n\nTraits: Gnome Cunning: You have advantage on Intelligence, Wisdom, and Charisma saving throws against magic. Artificer's Lore: Whenever you make an Intelligence check related to magic items, alchemical objects, or technological devices, you can add double your proficiency. Tinker: You have proficiency with artisan's tools (tinker's tools).",
     "abilityBonuses": {
       "str": 0,
       "dex": 1,
@@ -20,16 +20,27 @@
     },
     "size": "small",
     "speed": 25,
-    "senses": ["darkvision"],
-    "traits": [
-      "Gnome Cunning: You have advantage on Intelligence, Wisdom, and Charisma saving throws against magic.",
-      "Artificer's Lore: Whenever you make an Intelligence check related to magic items, alchemical objects, or technological devices, you can add double your proficiency.",
-      "Tinker: You have proficiency with artisan's tools (tinker's tools)."
-    ],
+    "senses": {
+      "darkvision": 60,
+      "blindsight": 0,
+      "tremorsense": 0,
+      "truesight": 0
+    },
+    "languages": "",
+    "grantedFeatures": [],
     "grantedSkills": [
-      {"skillUuid": "Compendium.dcw-content.skills.Item.Craft", "level": 2},
-      {"skillUuid": "Compendium.dcw-content.skills.Item.Lore", "level": 1},
-      {"skillUuid": "Compendium.dcw-content.skills.Item.Cast", "level": 1}
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Craft",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Lore",
+        "level": 1
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Cast",
+        "level": 1
+      }
     ]
   },
   "effects": [],

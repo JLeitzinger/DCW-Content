@@ -4,7 +4,7 @@
   "type": "race",
   "img": "icons/svg/fire.svg",
   "system": {
-    "description": "Tieflings bear the mark of infernal heritage in their appearance and magical abilities. Despite often facing prejudice, many tieflings embrace their dark charisma and innate magical talents.",
+    "description": "Tieflings bear the mark of infernal heritage in their appearance and magical abilities. Despite often facing prejudice, many tieflings embrace their dark charisma and innate magical talents.\n\nTraits: Hellish Resistance: You have resistance to fire damage. Infernal Legacy: You know the Thaumaturgy cantrip. You can cast Hellish Rebuke once per long rest, and Darkness once per long rest. Devil's Tongue: Tieflings have a natural gift for persuasion and deception.",
     "abilityBonuses": {
       "str": 0,
       "dex": 0,
@@ -20,16 +20,27 @@
     },
     "size": "medium",
     "speed": 30,
-    "senses": ["darkvision"],
-    "traits": [
-      "Hellish Resistance: You have resistance to fire damage.",
-      "Infernal Legacy: You know the Thaumaturgy cantrip. You can cast Hellish Rebuke once per long rest, and Darkness once per long rest.",
-      "Devil's Tongue: Tieflings have a natural gift for persuasion and deception."
-    ],
+    "senses": {
+      "darkvision": 60,
+      "blindsight": 0,
+      "tremorsense": 0,
+      "truesight": 0
+    },
+    "languages": "",
+    "grantedFeatures": [],
     "grantedSkills": [
-      {"skillUuid": "Compendium.dcw-content.skills.Item.Deception", "level": 1},
-      {"skillUuid": "Compendium.dcw-content.skills.Item.Diplomacy", "level": 1},
-      {"skillUuid": "Compendium.dcw-content.skills.Item.Cast", "level": 1}
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Deception",
+        "level": 1
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Diplomacy",
+        "level": 1
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Cast",
+        "level": 1
+      }
     ]
   },
   "effects": [],

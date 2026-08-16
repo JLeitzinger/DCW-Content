@@ -1,0 +1,616 @@
+{
+  "manifestVersion": "1.0",
+  "description": "Weapon registry - see CLAUDE.md's Item (Equipment) section for authoring guidelines.",
+  "weapons": [
+    {
+      "name": "Battleaxe",
+      "img": "icons/weapons/axes/axe-battle-broad.webp",
+      "description": "A heavy axe with a broad, crescent-shaped blade. Favored by warriors who value raw power over finesse.",
+      "quantity": 1,
+      "weight": 4,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d8",
+        "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Slash",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Club",
+      "img": "icons/weapons/clubs/club-wooden.webp",
+      "description": "A simple wooden club. Not sophisticated, but effective for crushing skulls.",
+      "quantity": 1,
+      "weight": 2,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d4",
+        "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Blunt",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Crossbow",
+      "img": "icons/weapons/crossbows/crossbow-simple.webp",
+      "description": "A mechanical bow mounted on a stock. Easier to aim than a traditional bow but slower to reload.",
+      "quantity": 1,
+      "weight": 5,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d8",
+        "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "80 feet",
+      "grantedSkills": [
+        {
+          "skillName": "Pierce",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Dagger",
+      "img": "icons/weapons/daggers/dagger-straight-steel.webp",
+      "description": "A small blade, easily concealed. Can be thrown at nearby enemies.",
+      "quantity": 1,
+      "weight": 1,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d4",
+        "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "melee / 20 feet",
+      "grantedSkills": [
+        {
+          "skillName": "Pierce",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Greataxe",
+      "img": "icons/weapons/axes/axe-double-engraved.webp",
+      "description": "A fearsome two-handed axe with a wide, crescent blade. Favored by barbarians and executioners.",
+      "quantity": 1,
+      "weight": 7,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d12",
+        "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Slash",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Greatsword",
+      "img": "icons/weapons/swords/greatsword-crossguard-steel.webp",
+      "description": "A massive two-handed blade. Requires great strength to wield but delivers devastating slashes.",
+      "quantity": 1,
+      "weight": 6,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d12",
+        "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Slash",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Handaxe",
+      "img": "icons/weapons/axes/axe-broad-black.webp",
+      "description": "A small axe that can be used in one hand. Also effective when thrown.",
+      "quantity": 1,
+      "weight": 2,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d6",
+        "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "melee / 20 feet",
+      "grantedSkills": [
+        {
+          "skillName": "Slash",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Heavy Crossbow",
+      "img": "icons/weapons/crossbows/crossbow-heavy.webp",
+      "description": "A powerful crossbow with a reinforced frame. Fires heavy bolts with tremendous force.",
+      "quantity": 1,
+      "weight": 18,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d10",
+        "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "100 feet",
+      "grantedSkills": [
+        {
+          "skillName": "Pierce",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Javelin",
+      "img": "icons/weapons/thrown/javelin-worn.webp",
+      "description": "A light throwing spear. Designed primarily for ranged combat but can be used in melee.",
+      "quantity": 1,
+      "weight": 2,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d6",
+        "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "30 feet",
+      "grantedSkills": [
+        {
+          "skillName": "Pierce",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Longbow",
+      "img": "icons/weapons/bows/longbow-wood.webp",
+      "description": "A tall bow crafted from flexible yew. Requires strength to draw, but can strike targets from great distances.",
+      "quantity": 1,
+      "weight": 2,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d8",
+        "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "150 feet",
+      "grantedSkills": [
+        {
+          "skillName": "Pierce",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Longsword",
+      "img": "icons/weapons/swords/sword-long-steel.webp",
+      "description": "A versatile straight blade. The quintessential knight's weapon, balanced for both offense and defense.",
+      "quantity": 1,
+      "weight": 3,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d8",
+        "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Slash",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Mace",
+      "img": "icons/weapons/maces/mace-round-spiked.webp",
+      "description": "A metal-headed club designed to crush armor and bone alike. Popular among clergy and knights.",
+      "quantity": 1,
+      "weight": 4,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d6",
+        "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Blunt",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Maul",
+      "img": "icons/weapons/hammers/hammer-double-steel.webp",
+      "description": "A massive two-handed hammer. Slow but devastating when it connects.",
+      "quantity": 1,
+      "weight": 10,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d10",
+        "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Blunt",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Pike",
+      "img": "icons/weapons/polearms/spear-flanged-steel.webp",
+      "description": "A long polearm with exceptional reach. Used to keep enemies at bay and break cavalry charges.",
+      "quantity": 1,
+      "weight": 18,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d10",
+        "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Pierce",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Quarterstaff",
+      "img": "icons/weapons/staves/staff-simple.webp",
+      "description": "A sturdy wooden staff. Can be wielded with both hands for greater impact or used defensively.",
+      "quantity": 1,
+      "weight": 4,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d6",
+        "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Blunt",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Rapier",
+      "img": "icons/weapons/swords/rapier-jeweled.webp",
+      "description": "An elegant blade designed for precise thrusting attacks. Favored by duelists and nobles.",
+      "quantity": 1,
+      "weight": 2,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d8",
+        "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Pierce",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Scimitar",
+      "img": "icons/weapons/swords/scimitar-curved.webp",
+      "description": "A curved blade designed for slashing attacks. Light and quick in the hands of a skilled warrior.",
+      "quantity": 1,
+      "weight": 3,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d6",
+        "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Slash",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Shortbow",
+      "img": "icons/weapons/bows/shortbow-recurve.webp",
+      "description": "A compact bow suitable for hunting and skirmishing. Easy to draw and quick to fire.",
+      "quantity": 1,
+      "weight": 2,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d6",
+        "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "80 feet",
+      "grantedSkills": [
+        {
+          "skillName": "Pierce",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Shortsword",
+      "img": "icons/weapons/swords/sword-short-steel.webp",
+      "description": "A versatile blade suitable for both thrusting and slashing. Popular among adventurers for its balance of reach and speed.",
+      "quantity": 1,
+      "weight": 2,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d6",
+        "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Slash",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Sling",
+      "img": "icons/weapons/thrown/sling-leather.webp",
+      "description": "A simple leather strap used to hurl stones. Cheap, effective, and easy to find ammunition for.",
+      "quantity": 1,
+      "weight": 0,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d4",
+        "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "30 feet",
+      "grantedSkills": [
+        {
+          "skillName": "Blunt",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Spear",
+      "img": "icons/weapons/polearms/spear-hooked-steel.webp",
+      "description": "A versatile polearm with a sharp point. Can be thrust in melee or thrown.",
+      "quantity": 1,
+      "weight": 3,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d6",
+        "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "melee / 20 feet",
+      "grantedSkills": [
+        {
+          "skillName": "Pierce",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Trident",
+      "img": "icons/weapons/polearms/trident-steel.webp",
+      "description": "A three-pronged spear. Can be used to pierce enemies or trap their weapons.",
+      "quantity": 1,
+      "weight": 4,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d6",
+        "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "melee / 20 feet",
+      "grantedSkills": [
+        {
+          "skillName": "Pierce",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Warhammer",
+      "img": "icons/weapons/hammers/hammer-war-spiked.webp",
+      "description": "A balanced war hammer with a heavy head. Effective against armored opponents.",
+      "quantity": 1,
+      "weight": 5,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d8",
+        "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Blunt",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Stormcaller",
+      "img": "icons/weapons/hammers/hammer-war-lightning.webp",
+      "description": "A massive warhammer wreathed in crackling lightning. Legends say it was wielded by a storm giant who fell defending the mortal realms. The weapon hums with barely-contained power, and thunder rumbles with each swing. When struck against the ground, it can summon devastating lightning storms.",
+      "quantity": 1,
+      "weight": 15,
+      "roll": {
+        "diceNum": 3,
+        "diceSize": "d8",
+        "diceBonus": "+@str.mod+ceil(@lvl / 2)+3"
+      },
+      "rarity": "legendary",
+      "effort": 3,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Blunt",
+          "level": 3
+        },
+        {
+          "skillName": "Slash",
+          "level": 2
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "The Sunblade",
+      "img": "icons/weapons/swords/greatsword-gold-holy.webp",
+      "description": "A radiant greatsword forged in the heart of a dying star. Pure sunlight flows through its crystalline blade, and it shines like a beacon of hope in the darkest places. Undead creatures shrink from its radiance, and darkness itself seems to flee before its wielder. The weapon is said to have been a gift from the solar deities to their greatest champion.",
+      "quantity": 1,
+      "weight": 6,
+      "roll": {
+        "diceNum": 4,
+        "diceSize": "d8",
+        "diceBonus": "+@str.mod+ceil(@lvl / 2)+5"
+      },
+      "rarity": "mythic",
+      "effort": 4,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Slash",
+          "level": 4
+        },
+        {
+          "skillName": "Pierce",
+          "level": 3
+        },
+        {
+          "skillName": "Blunt",
+          "level": 2
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Frostbrand Longsword",
+      "img": "icons/weapons/swords/sword-long-ice.webp",
+      "description": "A magnificent blade forged in the frozen peaks of the Eternal Winter. Frost crawls along its edge, and the air around it shimmers with cold. Those struck by this weapon feel their movements slow as ice creeps through their veins.",
+      "quantity": 1,
+      "weight": 3,
+      "roll": {
+        "diceNum": 2,
+        "diceSize": "d6",
+        "diceBonus": "+@str.mod+ceil(@lvl / 2)+2"
+      },
+      "rarity": "rare",
+      "effort": 2,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Slash",
+          "level": 2
+        },
+        {
+          "skillName": "Pierce",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Flame Dagger",
+      "img": "icons/weapons/daggers/dagger-straight-fire.webp",
+      "description": "A slender blade wreathed in flickering flames. The heat never burns its wielder, but enemies feel its scorching bite.",
+      "quantity": 1,
+      "weight": 1,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d4",
+        "diceBonus": "+@dex.mod+ceil(@lvl / 2)+1"
+      },
+      "rarity": "uncommon",
+      "effort": 1,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Pierce",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    }
+  ]
+}

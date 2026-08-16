@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { wrapItem } from './lib/foundry-item.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -37,14 +38,16 @@ for (const [categoryName, categorySpells] of Object.entries(manifest.spells)) {
       castingTime: spell.castingTime,
       range: spell.range,
       duration: spell.duration,
-      prowess: calculateProwess(spell.spellLevel)
+      prowess: calculateProwess(spell.spellLevel),
+      offensive: spell.offensive ?? false,
+      roll: spell.roll ?? { diceNum: 1, diceSize: 'd6', diceBonus: '' }
     });
   }
 }
 
 function createSpellItem(spell) {
-  return {
-    _id: spell._id,
+  return wrapItem({
+    id: spell._id,
     name: spell.name,
     type: "spell",
     img: "icons/svg/book.svg",
@@ -58,20 +61,11 @@ function createSpellItem(spell) {
       castingTime: spell.castingTime,
       range: spell.range,
       duration: spell.duration,
-      grantedSkills: []
-      // TODO: emit `offensive` + `roll: {diceNum, diceSize, diceBonus}` here once
-      // spells-manifest.json entries carry them (see CLAUDE.md's Spell Items section).
-      // offensive should default true for category === 'evocation'-style damage spells;
-      // diceBonus should reference spell.castStat, e.g. `+@${spell.castStat}.mod`.
-    },
-    effects: [],
-    folder: null,
-    sort: 0,
-    ownership: {
-      default: 0
-    },
-    flags: {}
-  };
+      grantedSkills: [],
+      offensive: spell.offensive,
+      roll: spell.roll
+    }
+  });
 }
 
 // Generate all spell files

@@ -1,5 +1,5 @@
 {
-  "_id": "w011quarterstaff",
+  "_id": "common-quarterstaff",
   "name": "Quarterstaff",
   "type": "weapon",
   "img": "icons/weapons/staves/staff-simple.webp",
@@ -18,7 +18,7 @@
     "equipped": false,
     "grantedSkills": [
       {
-        "skillUuid": "Compendium.dcw-content.skills.Item.Crush",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Blunt",
         "level": 1
       }
     ],

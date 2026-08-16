@@ -13,7 +13,13 @@
     "castingTime": "1 round",
     "range": "1 mile",
     "duration": "concentration, 10 minutes",
-    "grantedSkills": []
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    }
   },
   "effects": [],
   "folder": null,

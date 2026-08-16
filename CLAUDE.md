@@ -6,11 +6,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working on cont
 
 This is a **Foundry VTT module** that provides all compendium content for the Dungeon Crawler World game system. It contains:
 - 20 character classes
-- 5 character races
-- 50+ features and abilities
-- Equipment and weapons
+- 10 character races
+- 54 features and abilities
+- Weapons (armor/gear is defined but not yet populated - see the **Item** Items section)
 - 23 skills across 4 categories
-- Spells
+- 57 spells
 
 This repository includes both the **source JSON files** and **build tools** to generate LevelDB compendium packs.
 
@@ -19,10 +19,21 @@ This repository includes both the **source JSON files** and **build tools** to g
 ### Quick Reference
 
 ```bash
-# Generate content from manifests
+# Generate content from manifests (every type is manifest-driven - see
+# data/<type>-manifest.json - and edited there, not by hand-writing src/packs/ JSON)
+npm run generate:races
+npm run generate:classes
+npm run generate:items
+npm run generate:weapons
+npm run generate:features
 npm run generate:skills
 npm run generate:spells
-npm run generate:weapons
+npm run generate          # all of the above, in one shot
+
+# Check the generated content against the real schema, cross-references, and the
+# design-budget rules below (npm run pack also runs this first and aborts on failure)
+npm run validate
+npm run validate -- --type=races   # scope to one type
 
 # Pack individual compendium
 npm run pack:skills
@@ -32,7 +43,7 @@ npm run pack:items
 npm run pack:features
 npm run pack:spells
 
-# Pack all compendia
+# Pack all compendia (runs validate first)
 npm run pack
 
 # Build release package
@@ -42,10 +53,11 @@ npm run build:release
 ### Testing Changes
 
 To test content changes in Foundry:
-1. Make changes to source files in `src/packs/`
-2. Run appropriate pack command (e.g., `npm run pack:classes`)
-3. Restart Foundry or reload the world
-4. Verify changes in the compendium
+1. Edit the relevant `data/<type>-manifest.json` (not `src/packs/` directly - that's generated output, see `## Creating New Content` below)
+2. Run the matching `npm run generate:<type>` command
+3. Run `npm run pack` (or the appropriate `pack:<type>`) - `npm run pack` validates first and aborts if anything's wrong
+4. Restart Foundry or reload the world
+5. Verify changes in the compendium
 
 Alternatively, symlink this directory to your Foundry modules folder for live development.
 
@@ -56,15 +68,15 @@ Alternatively, symlink this directory to your Foundry modules folder for live de
 When creating new items, follow these requirements and best practices for each item type:
 
 ### **Race** Items
-Races define hereditary characteristics and base abilities.
+Races define hereditary characteristics and base abilities. Authored in `data/races-manifest.json`, one entry per race (`grantedSkills`/`grantedFeatures` reference by human-readable `skillName`/`featureName` there, not raw UUIDs - `npm run generate:races` resolves those and stamps out `src/packs/races/*.json`).
 
-**Required Fields:**
+**Required Fields (mirrors `item-race.mjs` exactly - `npm run validate` enforces this):**
 - `abilityBonuses` - Object with stat bonuses (e.g., `{str: 2, dex: 1}`)
-- `bonuses.hp` - Hit point bonus (number, can be 0)
-- `bonuses.stamina` - Stamina bonus (number, can be 0)
-- `bonuses.mana` - Mana bonus (number, can be 0)
-- `size` - String: "tiny", "small", "medium", "large", "huge"
+- `bonuses.hp` / `bonuses.stamina` / `bonuses.mana` - Resource bonuses (numbers, can be 0)
+- `size` - One of `"tiny"`, `"small"`, `"medium"`, `"large"`, `"huge"`, `"gargantuan"`
 - `speed` - Number: base movement speed in feet
+- `senses` - **Object** of four numbers: `{darkvision, blindsight, tremorsense, truesight}` (all in feet, 0 = no sense). Not an array - a handful of races had this wrong for a while (stored as an array of sense names) and the value was silently discarded by Foundry as a result; `npm run validate` now catches this.
+- `languages` - String, e.g. `"Common, Elvish"` (comma-separated, free text)
 
 **Ability Score Rules:**
 - **Total ability bonuses must equal exactly 3**
@@ -76,23 +88,23 @@ Races define hereditary characteristics and base abilities.
 - **Must have exactly 1 skill from magic or combat categories**
 - Recommended skill levels: 1-2
 
-**Optional Fields:**
-- `senses` - Array of special senses (e.g., ["darkvision", "low-light"])
-- `traits` - Array of racial feature descriptions (text descriptions, not feature items)
+**Not a real field:** `traits` (freeform flavor-text array) shows up in some older content but `item-race.mjs` never defined it - Foundry silently drops it on load. If a race needs a mechanical racial trait, make it a real **Feature** item and reference it via `grantedFeatures` instead (see High Elf for the pattern); if it's just flavor text, fold it into `description`.
 
-**Example: Human**
+**Example: Human** (`data/races-manifest.json` entry)
 ```json
 {
+  "name": "Human",
+  "description": "Adaptable and ambitious, humans settle everywhere.",
   "abilityBonuses": {"str": 1, "dex": 1, "con": 1, "int": 0, "wis": 0, "cha": 0},
   "bonuses": {"hp": 0, "stamina": 0, "mana": 0},
   "size": "medium",
   "speed": 30,
-  "senses": [],
-  "traits": ["Versatile: Humans can learn any skill more quickly."],
+  "senses": {"darkvision": 0, "blindsight": 0, "tremorsense": 0, "truesight": 0},
+  "languages": "Common",
   "grantedSkills": [
-    {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Diplomacy", "level": 1},
-    {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Lore", "level": 1},
-    {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Slash", "level": 1}
+    {"skillName": "Diplomacy", "level": 1},
+    {"skillName": "Lore", "level": 1},
+    {"skillName": "Slash", "level": 1}
   ]
 }
 ```
@@ -100,7 +112,7 @@ Races define hereditary characteristics and base abilities.
 ---
 
 ### **Class** Items
-Classes define profession-based abilities, resource scaling, stat boosts, skills, and features.
+Classes define profession-based abilities, resource scaling, stat boosts, skills, and features. Authored in `data/classes-manifest.json` (same `skillName`/`featureName`-reference pattern as races - see above).
 
 **Required Fields:**
 - `baseHP` - Base hit points at level 1 (typically 8-12)
@@ -139,67 +151,98 @@ Stat Boost = (current_level - (level_acquired - 1)) × abilityBonuses[stat]
 **Feature Requirements:**
 - **Classes should grant 1-3 features at creation**
 - Features define special abilities, class mechanics, or passive bonuses
-- Use existing features from compendium or create new ones
-- Features are referenced via UUID (e.g., `Compendium.dungeon-crawler-world.features.Item.SecondWind`)
+- Use existing features from the compendium or create new ones in `data/features-manifest.json` first
+- Referenced by `featureName` in the manifest (resolved to a UUID at generation time - see the **Feature** Items section)
 
-**Optional Fields:**
-- `saveProficiency` - Array of abilities the class is proficient in (e.g., ["str", "con"])
-- `grantedFeatures` - Array of feature UUIDs the class provides
+**Other fields (all required, mirrors `item-class.mjs`):**
+- `saves` - **Object** of six booleans, one per ability (`{str: true, con: true, dex: false, ...}`) - not the `saveProficiency` array some older docs/examples showed; the real schema is boolean flags.
+- `hitDie` - One of `"d6"`, `"d8"`, `"d10"`, `"d12"`
+- `primaryAbility` / `secondaryAbility` - Ability abbreviations; `secondaryAbility` can be `""`
 
-**Example: Fighter**
+**Example: Fighter** (`data/classes-manifest.json` entry)
 ```json
 {
+  "name": "Fighter",
+  "description": "A master of martial combat.",
   "baseHP": 10,
   "hpPerLevel": 4,
   "staminaPerLevel": 2,
   "manaPerLevel": 1,
-  "abilityBonuses": {"str": 0.5, "con": 0.5},
+  "abilityBonuses": {"str": 0.5, "con": 0.5, "dex": 0, "int": 0, "wis": 0, "cha": 0},
   "levelAcquired": 1,
-  "saveProficiency": ["str", "con"],
+  "saves": {"str": true, "con": true, "dex": false, "int": false, "wis": false, "cha": false},
+  "hitDie": "d10",
+  "primaryAbility": "str",
+  "secondaryAbility": "",
   "grantedSkills": [
-    {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Slash", "level": 2},
-    {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Defend", "level": 2},
-    {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Athletics", "level": 1}
+    {"skillName": "Slash", "level": 2},
+    {"skillName": "Defend", "level": 2},
+    {"skillName": "Athletics", "level": 1}
   ],
   "grantedFeatures": [
-    "Compendium.dungeon-crawler-world.features.Item.SecondWind",
-    "Compendium.dungeon-crawler-world.features.Item.ActionSurge"
+    {"featureName": "Second Wind", "level": 1},
+    {"featureName": "Action Surge", "level": 1}
   ]
 }
 ```
 
 ---
 
-### **Item** (Equipment) Items
-Weapons, armor, gear, and consumables.
+### **Weapon** Items
+Authored in `data/weapons-manifest.json` (`npm run generate:weapons` → `src/packs/weapons/`). Weapon ids are always the clean slug scheme (`<rarity>-<name>`, e.g. `common-longsword`) - nothing else references a weapon's own id, so there's no need to pin one by hand.
 
-**Required Fields:**
+**Required Fields (mirrors `item-weapon.mjs`):**
 - `quantity` - Number of items (default: 1)
 - `weight` - Weight in pounds (number)
-- `rarity` - One of `"common"`, `"uncommon"`, `"rare"`, `"legendary"`, `"mythic"`, `"celestial"` (default: `"common"`). Same scale weapons use. This drives lootbox odds (see **Lootbox** Items below) - an item left at the default `common` will show up in every lootbox tier's low end, so set it deliberately for anything meant to feel special.
-
-**For Weapons:**
+- `rarity` - One of `"common"`, `"uncommon"`, `"rare"`, `"legendary"`, `"mythic"`, `"celestial"`. This drives lootbox odds (see **Lootbox** Items below) - an item left at the default `common` will show up in every lootbox tier's low end, so set it deliberately for anything meant to feel special.
 - `roll.diceNum` - Number of dice (typically 1)
 - `roll.diceSize` - Die size ("d4", "d6", "d8", "d10", "d12")
 - `roll.diceBonus` - Bonus to damage (formula like "+@str.mod+ceil(@lvl/2)")
+- `effort` - Stamina cost per combat-skill roll (0+)
+- `range` - `"melee"` or a distance string (e.g. `"melee / 20 feet"` for a thrown weapon)
 - **Should grant 1-2 relevant combat skills** at level 1-2
-- **Higher quality/masterwork items can grant skill +2 or +3**
+- **Higher quality/masterwork items can grant skill +2 or +3**, and higher rarities can add `grantedFeatures` (referenced by `featureName`, same as classes/races)
 
-**For Armor:**
-- There is no `acBonus` field — this system has no Armor Class. Armor works entirely through granted skills.
-- **Should grant the Defend skill** while equipped, scaled to quality: light/basic armor around Defend 1, heavier or masterwork pieces up to Defend 2-3 (same scaling weapons use for their granted skills)
-
-**For Tools/Gear:**
-- **Should grant 1 relevant utility or general skill** (e.g., thieves' tools → Thievery +1)
-
-**Example: Longsword**
+**Example: Longsword** (`data/weapons-manifest.json` entry)
 ```json
 {
+  "name": "Longsword",
+  "description": "A versatile straight blade.",
   "quantity": 1,
   "weight": 3,
+  "rarity": "common",
+  "effort": 1,
+  "range": "melee",
   "roll": {"diceNum": 1, "diceSize": "d8", "diceBonus": "+@str.mod+ceil(@lvl/2)"},
   "grantedSkills": [
-    {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Slash", "level": 1}
+    {"skillName": "Slash", "level": 1}
+  ]
+}
+```
+
+---
+
+### **Item** (Armor/Gear) Items
+Everything of type `"item"` that isn't a weapon: armor, tools, consumables. Authored in `data/items-manifest.json` (`npm run generate:items`). **This pack is currently empty** - the files that used to live in `src/packs/items/` were stale duplicates of the real weapons (leftover from an abandoned early generator) and were removed rather than migrated; there's no real armor/gear content yet.
+
+**Required Fields (mirrors `item-item.mjs` - deliberately smaller than the weapon schema):**
+- `quantity` - Number of items (default: 1)
+- `weight` - Weight in pounds (number)
+- `rarity` - Same choices/lootbox behavior as weapons (see above)
+- `grantedSkills` - Optional, same `{skillName, level}` shape as every other type
+
+**Known gap:** unlike weapons, `item-item.mjs` has no `equipped` field, and skill grants from a type-`"item"` document apply unconditionally (not gated by being equipped, the way a weapon's are). So "should grant Defend while equipped" for armor isn't actually enforceable today - an armor item's granted skill applies as soon as it's owned, equipped or not. Treat armor content as "owning it grants the bonus" until the system gains real equip-gating for this type (a `Dungeon-Crawler-World` change, not a content one).
+
+**Example: Leather Armor** (`data/items-manifest.json` entry)
+```json
+{
+  "name": "Leather Armor",
+  "description": "Simple, flexible protection.",
+  "quantity": 1,
+  "weight": 10,
+  "rarity": "common",
+  "grantedSkills": [
+    {"skillName": "Defend", "level": 1}
   ]
 }
 ```
@@ -261,7 +304,7 @@ GM-authored recognitions handed out via the "Grant Achievement" macro that ships
 ---
 
 ### **Feature** Items
-Abilities, feats, and special powers.
+Abilities, feats, and special powers. Authored in `data/features-manifest.json` (`npm run generate:features` → `src/packs/features/`). Referenced elsewhere (races/classes/weapons) by `featureName`.
 
 **Skill Guidelines:**
 - **Should grant 0-2 skills** relevant to the feature
@@ -269,12 +312,13 @@ Abilities, feats, and special powers.
 - Magic features → magic skill
 - Skill feats → specific skill at level 1-2
 
-**Example: Power Attack**
+**Example: Power Attack** (`data/features-manifest.json` entry)
 ```json
 {
+  "name": "Power Attack",
   "description": "Sacrifice accuracy for damage.",
   "grantedSkills": [
-    {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Slash", "level": 1}
+    {"skillName": "Slash", "level": 1}
   ]
 }
 ```
@@ -295,10 +339,10 @@ Magical spells and rituals.
 - `duration` - How long spell lasts: "instantaneous", or time duration (e.g., "1 minute", "10 minutes", "1 hour", "concentration")
 - `description` - HTML description of what the spell does and how it scales at higher dice counts (3, 6, 9, 12, 15)
 
-**TODO - not yet wired into the manifest/generator:** the system also supports offensive spells with their own damage roll, separate from the cast roll:
-- `offensive` - boolean, true for damage-dealing spells (Evocation spells are the obvious candidates)
-- `roll.diceNum` / `roll.diceSize` / `roll.diceBonus` - damage formula fields, same shape as a weapon's (see the **Item (Equipment)** section above). `diceBonus` should reference the spell's own `castStat`, e.g. `+@int.mod`
-- These currently have to be set by hand on each spell's Foundry sheet after generation. `scripts/generate-spells.mjs`'s `createSpellItem()` doesn't emit them yet, and `data/spells-manifest.json` has no matching fields per spell. Add `offensive`/damage-formula fields to the manifest schema and generator once spell content is being generated/regenerated in bulk, rather than hand-editing existing spells one at a time.
+**Offensive spells** have their own damage roll, separate from the cast roll:
+- `offensive` - boolean, true for damage-dealing spells (Evocation spells are the obvious candidates). Defaults to `false`.
+- `roll.diceNum` / `roll.diceSize` / `roll.diceBonus` - damage formula fields, same shape as a weapon's (see the **Weapon** Items section above). `diceBonus` should reference the spell's own `castStat`, e.g. `+@int.mod`. Only meaningful when `offensive` is `true`; defaults to `{diceNum: 1, diceSize: "d6", diceBonus: ""}` otherwise.
+- Set both directly in the spell's `data/spells-manifest.json` entry - `npm run generate:spells` emits them as-is, no manual per-item editing needed.
 
 **Spell Scaling Rules:**
 - **Spell Level**: Ranges from 1-15
@@ -312,7 +356,7 @@ Magical spells and rituals.
 - **Description**: Should explain the spell's effects and include scaling information for dice count increases at levels 3, 6, 9, 12, and 15 if applicable
 
 **Spell Categories:**
-Spells are organized into schools of magic (all have type "spell"):
+Spells are organized into schools of magic (all have type "spell"). **Known gap:** `category` is not actually a field `item-spell.mjs` defines - Foundry silently strips it from every spell on load (confirmed by inspecting a loaded spell document's `system` keys in a running world: `category` isn't there). So this categorization is authoring-time-only today - useful for `spell-lookup.mjs` and for organizing the manifest, but not something the character sheet or any in-game filter can currently see or use. Keep setting it (it's harmless and may get wired up later), but don't rely on it functioning in Foundry itself yet.
 - **Evocation**: Damage-dealing spells (Fireball, Lightning Bolt, Magic Missile)
 - **Abjuration**: Protective magic (Shield, Dispel Magic, Stoneskin)
 - **Conjuration**: Summoning and creation (Summon Monster, Teleport, Misty Step)
@@ -390,54 +434,57 @@ Base skills from the compendium (skills-manifest.json).
 
 ## Creating New Content
 
+Every type follows the same pattern now: edit the manifest, generate, validate, pack. `grantedSkills`/`grantedFeatures` are always written as `{skillName, level}` / `{featureName, level}` in the manifest - never hand-type a `Compendium....Item.<Id>` UUID; `npm run generate:<type>` resolves the name and fails loudly if it doesn't exist, which is what actually prevents a typo'd or hallucinated reference from ever reaching the compendium.
+
 ### Adding a New Skill
 
 1. Add skill definition to `data/skills-manifest.json`
 2. Run `npm run generate:skills` to create JSON file in `src/packs/skills/`
-3. Run `npm run pack:skills` to update compendium
-4. Commit changes to both `data/`, `src/packs/skills/`, and `packs/skills/`
+3. Run `npm run pack:skills` (or `npm run pack`) to update compendium
+4. Commit `data/skills-manifest.json`, `src/packs/skills/`, and `packs/skills/`
 
 ### Adding a New Class
 
-1. Create JSON file in `src/packs/classes/<classname>.json`
-2. Use skill-lookup to get proper UUIDs for granted skills: `npm run skill-lookup -- granted "SkillName" 2`
-3. Run `npm run pack:classes` to update compendium
-4. Run `npm run verify:classes` to validate
-5. Commit changes
+1. Add an entry to `data/classes-manifest.json` (see the **Class** Items example above for the shape)
+2. Run `npm run generate:classes`
+3. Run `npm run validate -- --type=classes` (or just `npm run pack`, which validates first)
+4. Commit `data/classes-manifest.json`, `src/packs/classes/`, and `packs/classes/`
 
 ### Adding a New Race
 
-1. Create JSON file in `src/packs/races/<racename>.json`
-2. Ensure all granted skills exist (use skill-lookup)
-3. Run `npm run pack:races` to update compendium
-4. Commit changes
+1. Add an entry to `data/races-manifest.json` (see the **Race** Items example above)
+2. Run `npm run generate:races`
+3. Run `npm run validate -- --type=races`
+4. Commit `data/races-manifest.json`, `src/packs/races/`, and `packs/races/`
 
-### Adding a New Item/Weapon
+### Adding a New Weapon
 
-1. Create JSON file in `src/packs/items/<itemname>.json` or use weapon generator
-2. Run `npm run pack:items` to update compendium
-3. Commit changes
+1. Add an entry to `data/weapons-manifest.json`
+2. Run `npm run generate:weapons`
+3. Run `npm run validate -- --type=weapons`
+4. Commit `data/weapons-manifest.json`, `src/packs/weapons/`, and `packs/weapons/`
+
+### Adding a New Item (armor/gear)
+
+1. Add an entry to `data/items-manifest.json`
+2. Run `npm run generate:items`
+3. Run `npm run validate -- --type=items`
+4. Commit `data/items-manifest.json`, `src/packs/items/`, and `packs/items/`
 
 ### Adding a New Feature
 
-1. Create JSON file in `src/packs/features/<featurename>.json`
-2. Run `npm run pack:features` to update compendium
-3. Commit changes
+1. Add an entry to `data/features-manifest.json`
+2. Run `npm run generate:features`
+3. Run `npm run validate -- --type=features`
+4. Commit `data/features-manifest.json`, `src/packs/features/`, and `packs/features/`
 
 ### Adding a New Spell
 
-**Option 1: Using the Spell Manifest (Recommended)**
 1. Add spell definition to `data/spells-manifest.json` under the appropriate category
-2. Ensure prowess is calculated correctly: `spellLevel + ceil(spellLevel / 3)`
+2. Ensure prowess is calculated correctly: `spellLevel + ceil(spellLevel / 3)` (`npm run validate` checks this exactly)
 3. Run `npm run generate:spells` to create JSON files in `src/packs/spells/`
-4. Run `npm run pack:spells` to update compendium
-5. Commit changes to both `data/`, `src/packs/spells/`, and `packs/spells/`
-
-**Option 2: Manual Creation**
-1. Create JSON file in `src/packs/spells/<spellname>.json`
-2. Follow spell scaling rules (see Spell Items section)
-3. Run `npm run pack:spells` to update compendium
-4. Commit changes
+4. Run `npm run pack:spells` (or `npm run pack`) to update compendium
+5. Commit `data/spells-manifest.json`, `src/packs/spells/`, and `packs/spells/`
 
 ## Utilities
 
@@ -449,8 +496,10 @@ npm run skill-lookup -- list
 
 # Get granted skill format
 npm run skill-lookup -- granted "Slash" 2
-# Output: {"skillUuid": "Compendium.dungeon-crawler-world.skills.Item.Slash", "level": 2}
+# Output: {"skillUuid": "Compendium.dcw-content.skills.Item.Slash", "level": 2}
 ```
+
+Mostly superseded by manifest authoring now (write `{"skillName": "Slash", "level": 2}` directly and let `generate:<type>` resolve it), but still useful for a quick manual lookup or to sanity-check a UUID.
 
 ### Spell Lookup Tool
 
@@ -477,11 +526,20 @@ npm run spell-lookup -- level 3
 npm run spell-lookup -- categories
 ```
 
-### Class Verification
+### Content Validation
 
 ```bash
-npm run verify:classes
+# Check everything: real-schema structural rules, cross-reference integrity
+# (every skillUuid/featureUuid must resolve to something real), and the
+# design-budget rules documented above (race/class ability-bonus totals,
+# skill/feature counts, spell prowess formula, no duplicate names/ids)
+npm run validate
+
+# Scope to one type
+npm run validate -- --type=classes
 ```
+
+`npm run pack` runs this first and aborts if it reports any errors (warnings don't block).
 
 ### Database Inspection
 
@@ -492,11 +550,12 @@ npm run list:skills
 
 ## Important Notes
 
-- Always use the skill-lookup tool to get correct UUIDs for granted skills
-- Verify class JSON files with `npm run verify:classes` before committing
+- Reference skills/features by name (`skillName`/`featureName`) in manifests, never by hand-typed UUID - the generator resolves and validates them
+- Run `npm run validate` (or just `npm run pack`, which does it automatically) before committing
 - Skills in the compendium start at level 0; granted skills can have any level
-- Feature UUIDs follow format: `Compendium.dungeon-crawler-world.features.Item.<FeatureName>`
+- The package id for every UUID in this repo is `dcw-content` (e.g. `Compendium.dcw-content.features.Item.<Id>`) - the system's own pack namespace, `dungeon-crawler-world`, is a different package and never appears in content UUIDs
 - Item type field in JSON must match the directory name (e.g., `"type": "class"` for classes)
+- `src/packs/<type>/*.json` and `packs/<type>/` are both generated/derived output now for every type except achievements (which are world-only, not compendium content - see the **Achievement** Items section) - the actual source of truth to hand-edit is `data/<type>-manifest.json`
 
 ## Version Management
 

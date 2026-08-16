@@ -1,5 +1,5 @@
 {
-  "_id": "w005stormcaller1",
+  "_id": "legendary-stormcaller",
   "name": "Stormcaller",
   "type": "weapon",
   "img": "icons/weapons/hammers/hammer-war-lightning.webp",
@@ -18,7 +18,7 @@
     "equipped": false,
     "grantedSkills": [
       {
-        "skillUuid": "Compendium.dcw-content.skills.Item.Crush",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Blunt",
         "level": 3
       },
       {
@@ -34,6 +34,5 @@
   "ownership": {
     "default": 0
   },
-  "flags": {},
-  "notes": "Features: Lightning Strike (chain lightning on hit), Thunder Crash (AoE slam), Storm's Fury (summon lightning storm once per day), Shock Aura (passive damage to nearby enemies)"
+  "flags": {}
 }

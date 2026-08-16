@@ -1,0 +1,495 @@
+{
+  "manifestVersion": "1.0",
+  "description": "Race registry - see CLAUDE.md's Race Items section for authoring guidelines.",
+  "races": [
+    {
+      "name": "Dragonborn",
+      "img": "icons/svg/dragon.svg",
+      "description": "Dragonborn are proud and noble draconic humanoids, born with the blood of ancient dragons flowing through their veins. They combine the strength and majesty of dragons with humanoid versatility.\n\nTraits: Draconic Ancestry: You have draconic ancestry which determines your breath weapon and damage resistance. Breath Weapon: You can exhale destructive energy once per short rest. Damage Resistance: You have resistance to the damage type associated with your draconic ancestry.",
+      "abilityBonuses": {
+        "str": 2,
+        "dex": 0,
+        "con": 1,
+        "int": 0,
+        "wis": 0,
+        "cha": 0
+      },
+      "bonuses": {
+        "hp": 2,
+        "stamina": 2,
+        "mana": 0
+      },
+      "size": "medium",
+      "speed": 30,
+      "senses": {
+        "darkvision": 60,
+        "blindsight": 0,
+        "tremorsense": 0,
+        "truesight": 0
+      },
+      "languages": "",
+      "grantedFeatures": [],
+      "grantedSkills": [
+        {
+          "skillName": "Intimidation",
+          "level": 1
+        },
+        {
+          "skillName": "Diplomacy",
+          "level": 1
+        },
+        {
+          "skillName": "Slash",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Gnome",
+      "img": "icons/svg/pawprint.svg",
+      "description": "Gnomes are small, energetic people driven by boundless curiosity and inventive genius. They delight in discovery and creation, combining keen intellect with playful mischief.\n\nTraits: Gnome Cunning: You have advantage on Intelligence, Wisdom, and Charisma saving throws against magic. Artificer's Lore: Whenever you make an Intelligence check related to magic items, alchemical objects, or technological devices, you can add double your proficiency. Tinker: You have proficiency with artisan's tools (tinker's tools).",
+      "abilityBonuses": {
+        "str": 0,
+        "dex": 1,
+        "con": 0,
+        "int": 2,
+        "wis": 0,
+        "cha": 0
+      },
+      "bonuses": {
+        "hp": 0,
+        "stamina": 0,
+        "mana": 2
+      },
+      "size": "small",
+      "speed": 25,
+      "senses": {
+        "darkvision": 60,
+        "blindsight": 0,
+        "tremorsense": 0,
+        "truesight": 0
+      },
+      "languages": "",
+      "grantedFeatures": [],
+      "grantedSkills": [
+        {
+          "skillName": "Craft",
+          "level": 2
+        },
+        {
+          "skillName": "Lore",
+          "level": 1
+        },
+        {
+          "skillName": "Cast",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Half-Orc",
+      "img": "icons/svg/skull.svg",
+      "description": "Half-orcs combine the best qualities of humans and orcs, though some would say they inherit the worst. They possess remarkable physical strength and endurance, along with a fierce will to survive.\n\nTraits: Relentless Endurance: When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead (once per long rest). Savage Attacks: When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time. Menacing: You have proficiency in the Intimidation skill.",
+      "abilityBonuses": {
+        "str": 2,
+        "dex": 0,
+        "con": 1,
+        "int": 0,
+        "wis": 0,
+        "cha": 0
+      },
+      "bonuses": {
+        "hp": 3,
+        "stamina": 3,
+        "mana": 0
+      },
+      "size": "medium",
+      "speed": 30,
+      "senses": {
+        "darkvision": 60,
+        "blindsight": 0,
+        "tremorsense": 0,
+        "truesight": 0
+      },
+      "languages": "",
+      "grantedFeatures": [],
+      "grantedSkills": [
+        {
+          "skillName": "Intimidation",
+          "level": 2
+        },
+        {
+          "skillName": "Survival",
+          "level": 1
+        },
+        {
+          "skillName": "Blunt",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Halfling",
+      "img": "icons/svg/leaf.svg",
+      "description": "Halflings are a cheerful and practical folk, known for their resourcefulness and uncanny luck. Though small in stature, they possess remarkable courage and a knack for getting out of trouble.\n\nTraits: Lucky: When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll. Brave: You have advantage on saving throws against being frightened. Halfling Nimbleness: You can move through the space of any creature that is larger than you.",
+      "abilityBonuses": {
+        "str": 0,
+        "dex": 2,
+        "con": 0,
+        "int": 0,
+        "wis": 0,
+        "cha": 1
+      },
+      "bonuses": {
+        "hp": 0,
+        "stamina": 2,
+        "mana": 0
+      },
+      "size": "small",
+      "speed": 25,
+      "senses": {
+        "darkvision": 0,
+        "blindsight": 0,
+        "tremorsense": 0,
+        "truesight": 0
+      },
+      "languages": "",
+      "grantedFeatures": [],
+      "grantedSkills": [
+        {
+          "skillName": "Acrobatics",
+          "level": 1
+        },
+        {
+          "skillName": "Diplomacy",
+          "level": 1
+        },
+        {
+          "skillName": "Throw",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "High Elf",
+      "img": "icons/svg/mystery-man.svg",
+      "description": "Ancient and noble elves with strong ties to arcane magic. Scholars, artisans, and mages who value knowledge, magical prowess, and cultural refinement.",
+      "abilityBonuses": {
+        "str": 0,
+        "dex": 2,
+        "con": 0,
+        "int": 1,
+        "wis": 0,
+        "cha": 0
+      },
+      "bonuses": {
+        "hp": 0,
+        "stamina": 0,
+        "mana": 5
+      },
+      "size": "medium",
+      "speed": 30,
+      "senses": {
+        "darkvision": 60,
+        "blindsight": 0,
+        "tremorsense": 0,
+        "truesight": 0
+      },
+      "languages": "Common, Elvish",
+      "grantedFeatures": [
+        {
+          "featureName": "Fey Ancestry",
+          "level": 1
+        },
+        {
+          "featureName": "Arcane Training",
+          "level": 1
+        },
+        {
+          "featureName": "Trance",
+          "level": 1
+        },
+        {
+          "featureName": "Keen Mind",
+          "level": 1
+        }
+      ],
+      "grantedSkills": [
+        {
+          "skillName": "Lore",
+          "level": 2
+        },
+        {
+          "skillName": "Focus",
+          "level": 2
+        },
+        {
+          "skillName": "Cast",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Hill Dwarf",
+      "img": "icons/svg/mystery-man.svg",
+      "description": "Stout and sturdy folk who dwell in hills and mountains. Known for their craftsmanship, resilience, and fierce loyalty to clan and kin.",
+      "abilityBonuses": {
+        "str": 0,
+        "dex": 0,
+        "con": 2,
+        "int": 0,
+        "wis": 1,
+        "cha": 0
+      },
+      "bonuses": {
+        "hp": 2,
+        "stamina": 0,
+        "mana": 0
+      },
+      "size": "medium",
+      "speed": 25,
+      "senses": {
+        "darkvision": 60,
+        "blindsight": 0,
+        "tremorsense": 0,
+        "truesight": 0
+      },
+      "languages": "Common, Dwarvish",
+      "grantedFeatures": [
+        {
+          "featureName": "Dwarven Resilience",
+          "level": 1
+        },
+        {
+          "featureName": "Stonecunning",
+          "level": 1
+        },
+        {
+          "featureName": "Craftsmen",
+          "level": 1
+        }
+      ],
+      "grantedSkills": [
+        {
+          "skillName": "Craft",
+          "level": 2
+        },
+        {
+          "skillName": "Lore",
+          "level": 1
+        },
+        {
+          "skillName": "Defend",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "name": "Mountain Folk",
+      "img": "icons/svg/mystery-man.svg",
+      "description": "Hardy people who make their homes in the highest peaks. Miners, climbers, and hunters known for their incredible endurance and connection to the stone.",
+      "abilityBonuses": {
+        "str": 1,
+        "dex": 0,
+        "con": 2,
+        "int": 0,
+        "wis": 0,
+        "cha": 0
+      },
+      "bonuses": {
+        "hp": 3,
+        "stamina": 2,
+        "mana": 0
+      },
+      "size": "medium",
+      "speed": 25,
+      "senses": {
+        "darkvision": 60,
+        "blindsight": 0,
+        "tremorsense": 0,
+        "truesight": 0
+      },
+      "languages": "Common, Giant",
+      "grantedFeatures": [
+        {
+          "featureName": "Mountain Born",
+          "level": 1
+        },
+        {
+          "featureName": "Stone Endurance",
+          "level": 1
+        },
+        {
+          "featureName": "Sure-Footed",
+          "level": 1
+        }
+      ],
+      "grantedSkills": [
+        {
+          "skillName": "Athletics",
+          "level": 2
+        },
+        {
+          "skillName": "Craft",
+          "level": 1
+        },
+        {
+          "skillName": "Blunt",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "name": "Shadowkin",
+      "img": "icons/svg/mystery-man.svg",
+      "description": "Mysterious folk touched by shadow, whether through curse, bloodline, or exposure to the Shadow Realm. Often misunderstood, they make excellent spies, scouts, and emissaries.",
+      "abilityBonuses": {
+        "str": 0,
+        "dex": 2,
+        "con": 0,
+        "int": 0,
+        "wis": 0,
+        "cha": 1
+      },
+      "bonuses": {
+        "hp": 0,
+        "stamina": 0,
+        "mana": 3
+      },
+      "size": "medium",
+      "speed": 30,
+      "senses": {
+        "darkvision": 120,
+        "blindsight": 0,
+        "tremorsense": 0,
+        "truesight": 0
+      },
+      "languages": "Common, Undercommon",
+      "grantedFeatures": [
+        {
+          "featureName": "Shadow Touched",
+          "level": 1
+        },
+        {
+          "featureName": "Shadow Step",
+          "level": 1
+        },
+        {
+          "featureName": "Chilling Presence",
+          "level": 1
+        }
+      ],
+      "grantedSkills": [
+        {
+          "skillName": "Stealth",
+          "level": 2
+        },
+        {
+          "skillName": "Deception",
+          "level": 2
+        },
+        {
+          "skillName": "Pierce",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "name": "Tiefling",
+      "img": "icons/svg/fire.svg",
+      "description": "Tieflings bear the mark of infernal heritage in their appearance and magical abilities. Despite often facing prejudice, many tieflings embrace their dark charisma and innate magical talents.\n\nTraits: Hellish Resistance: You have resistance to fire damage. Infernal Legacy: You know the Thaumaturgy cantrip. You can cast Hellish Rebuke once per long rest, and Darkness once per long rest. Devil's Tongue: Tieflings have a natural gift for persuasion and deception.",
+      "abilityBonuses": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 1,
+        "wis": 0,
+        "cha": 2
+      },
+      "bonuses": {
+        "hp": 0,
+        "stamina": 1,
+        "mana": 2
+      },
+      "size": "medium",
+      "speed": 30,
+      "senses": {
+        "darkvision": 60,
+        "blindsight": 0,
+        "tremorsense": 0,
+        "truesight": 0
+      },
+      "languages": "",
+      "grantedFeatures": [],
+      "grantedSkills": [
+        {
+          "skillName": "Deception",
+          "level": 1
+        },
+        {
+          "skillName": "Diplomacy",
+          "level": 1
+        },
+        {
+          "skillName": "Cast",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Wood Elf",
+      "img": "icons/svg/mystery-man.svg",
+      "description": "Graceful forest dwellers who live in harmony with nature. Expert hunters, scouts, and guardians of the wild places of the world.",
+      "abilityBonuses": {
+        "str": 0,
+        "dex": 2,
+        "con": 0,
+        "int": 0,
+        "wis": 1,
+        "cha": 0
+      },
+      "bonuses": {
+        "hp": 0,
+        "stamina": 0,
+        "mana": 0
+      },
+      "size": "medium",
+      "speed": 35,
+      "senses": {
+        "darkvision": 60,
+        "blindsight": 0,
+        "tremorsense": 0,
+        "truesight": 0
+      },
+      "languages": "Common, Elvish",
+      "grantedFeatures": [
+        {
+          "featureName": "Fey Ancestry",
+          "level": 1
+        },
+        {
+          "featureName": "Mask of the Wild",
+          "level": 1
+        },
+        {
+          "featureName": "Trance",
+          "level": 1
+        }
+      ],
+      "grantedSkills": [
+        {
+          "skillName": "Survival",
+          "level": 2
+        },
+        {
+          "skillName": "Stealth",
+          "level": 2
+        },
+        {
+          "skillName": "Shoot",
+          "level": 2
+        }
+      ]
+    }
+  ]
+}

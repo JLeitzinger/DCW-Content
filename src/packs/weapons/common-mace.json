@@ -1,5 +1,5 @@
 {
-  "_id": "w012mace00000001",
+  "_id": "common-mace",
   "name": "Mace",
   "type": "weapon",
   "img": "icons/weapons/maces/mace-round-spiked.webp",
@@ -18,7 +18,7 @@
     "equipped": false,
     "grantedSkills": [
       {
-        "skillUuid": "Compendium.dcw-content.skills.Item.Crush",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Blunt",
         "level": 1
       }
     ],

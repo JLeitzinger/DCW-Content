@@ -12,10 +12,10 @@ const packDir = path.join(__dirname, '../packs/races');
 async function packRaces() {
   console.log('Packing races compendium...\n');
 
-  // Ensure pack directory exists
-  if (!fs.existsSync(packDir)) {
-    fs.mkdirSync(packDir, { recursive: true });
-  }
+  // Rebuild the pack directory from scratch each time, so a source file that was
+  // deleted or renamed doesn't leave a stale orphaned entry behind in the LevelDB.
+  fs.rmSync(packDir, { recursive: true, force: true });
+  fs.mkdirSync(packDir, { recursive: true });
 
   // Open LevelDB database
   const db = new ClassicLevel(packDir, { valueEncoding: 'json' });

@@ -1,5 +1,5 @@
 {
-  "_id": "w013warhammer0001",
+  "_id": "common-warhammer",
   "name": "Warhammer",
   "type": "weapon",
   "img": "icons/weapons/hammers/hammer-war-spiked.webp",
@@ -18,7 +18,7 @@
     "equipped": false,
     "grantedSkills": [
       {
-        "skillUuid": "Compendium.dcw-content.skills.Item.Crush",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Blunt",
         "level": 1
       }
     ],

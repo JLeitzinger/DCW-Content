@@ -45,7 +45,6 @@
     "evocation": [
       {
         "name": "Magic Missile",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.MagicMissile",
         "spellLevel": 1,
         "diceCount": 1,
         "castStat": "int",
@@ -57,7 +56,6 @@
       },
       {
         "name": "Acid Arrow",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.AcidArrow",
         "spellLevel": 2,
         "diceCount": 1,
         "castStat": "int",
@@ -69,7 +67,6 @@
       },
       {
         "name": "Fireball",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Fireball",
         "spellLevel": 3,
         "diceCount": 1,
         "castStat": "int",
@@ -81,7 +78,6 @@
       },
       {
         "name": "Lightning Bolt",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.LightningBolt",
         "spellLevel": 3,
         "diceCount": 1,
         "castStat": "int",
@@ -93,7 +89,6 @@
       },
       {
         "name": "Cone of Cold",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.ConeOfCold",
         "spellLevel": 5,
         "diceCount": 2,
         "castStat": "int",
@@ -105,7 +100,6 @@
       },
       {
         "name": "Chain Lightning",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.ChainLightning",
         "spellLevel": 6,
         "diceCount": 2,
         "castStat": "int",
@@ -117,7 +111,6 @@
       },
       {
         "name": "Flame Strike",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.FlameStrike",
         "spellLevel": 5,
         "diceCount": 2,
         "castStat": "wis",
@@ -129,7 +122,6 @@
       },
       {
         "name": "Meteor Swarm",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.MeteorSwarm",
         "spellLevel": 9,
         "diceCount": 3,
         "castStat": "int",
@@ -143,7 +135,6 @@
     "abjuration": [
       {
         "name": "Shield",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Shield",
         "spellLevel": 1,
         "diceCount": 1,
         "castStat": "int",
@@ -155,7 +146,6 @@
       },
       {
         "name": "Protection from Evil",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.ProtectionFromEvil",
         "spellLevel": 1,
         "diceCount": 1,
         "castStat": "wis",
@@ -167,7 +157,6 @@
       },
       {
         "name": "Resist Energy",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.ResistEnergy",
         "spellLevel": 2,
         "diceCount": 1,
         "castStat": "wis",
@@ -179,7 +168,6 @@
       },
       {
         "name": "Dispel Magic",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.DispelMagic",
         "spellLevel": 3,
         "diceCount": 1,
         "castStat": "int",
@@ -191,7 +179,6 @@
       },
       {
         "name": "Stoneskin",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Stoneskin",
         "spellLevel": 4,
         "diceCount": 1,
         "castStat": "int",
@@ -203,7 +190,6 @@
       },
       {
         "name": "Wall of Force",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.WallOfForce",
         "spellLevel": 5,
         "diceCount": 2,
         "castStat": "int",
@@ -215,7 +201,6 @@
       },
       {
         "name": "Antimagic Field",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.AntimagicField",
         "spellLevel": 8,
         "diceCount": 2,
         "castStat": "int",
@@ -229,7 +214,6 @@
     "conjuration": [
       {
         "name": "Create Water",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.CreateWater",
         "spellLevel": 1,
         "diceCount": 1,
         "castStat": "wis",
@@ -241,7 +225,6 @@
       },
       {
         "name": "Summon Familiar",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.SummonFamiliar",
         "spellLevel": 1,
         "diceCount": 1,
         "castStat": "int",
@@ -253,7 +236,6 @@
       },
       {
         "name": "Misty Step",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.MistyStep",
         "spellLevel": 2,
         "diceCount": 1,
         "castStat": "int",
@@ -265,7 +247,6 @@
       },
       {
         "name": "Web",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Web",
         "spellLevel": 2,
         "diceCount": 1,
         "castStat": "int",
@@ -277,7 +258,6 @@
       },
       {
         "name": "Dimension Door",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.DimensionDoor",
         "spellLevel": 4,
         "diceCount": 1,
         "castStat": "int",
@@ -289,7 +269,6 @@
       },
       {
         "name": "Summon Monster",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.SummonMonster",
         "spellLevel": 4,
         "diceCount": 1,
         "castStat": "int",
@@ -301,7 +280,6 @@
       },
       {
         "name": "Teleport",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Teleport",
         "spellLevel": 7,
         "diceCount": 2,
         "castStat": "int",
@@ -315,7 +293,6 @@
     "enchantment": [
       {
         "name": "Charm Person",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.CharmPerson",
         "spellLevel": 1,
         "diceCount": 1,
         "castStat": "int",
@@ -327,7 +304,6 @@
       },
       {
         "name": "Sleep",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Sleep",
         "spellLevel": 1,
         "diceCount": 1,
         "castStat": "int",
@@ -339,7 +315,6 @@
       },
       {
         "name": "Hold Person",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.HoldPerson",
         "spellLevel": 2,
         "diceCount": 1,
         "castStat": "wis",
@@ -351,7 +326,6 @@
       },
       {
         "name": "Suggestion",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Suggestion",
         "spellLevel": 2,
         "diceCount": 1,
         "castStat": "int",
@@ -363,7 +337,6 @@
       },
       {
         "name": "Fear",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Fear",
         "spellLevel": 3,
         "diceCount": 1,
         "castStat": "int",
@@ -375,7 +348,6 @@
       },
       {
         "name": "Confusion",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Confusion",
         "spellLevel": 4,
         "diceCount": 1,
         "castStat": "int",
@@ -387,7 +359,6 @@
       },
       {
         "name": "Dominate Person",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.DominatePerson",
         "spellLevel": 5,
         "diceCount": 2,
         "castStat": "int",
@@ -401,7 +372,6 @@
     "illusion": [
       {
         "name": "Disguise Self",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.DisguiseSelf",
         "spellLevel": 1,
         "diceCount": 1,
         "castStat": "int",
@@ -413,7 +383,6 @@
       },
       {
         "name": "Silent Image",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.SilentImage",
         "spellLevel": 1,
         "diceCount": 1,
         "castStat": "int",
@@ -425,7 +394,6 @@
       },
       {
         "name": "Blur",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Blur",
         "spellLevel": 2,
         "diceCount": 1,
         "castStat": "int",
@@ -437,7 +405,6 @@
       },
       {
         "name": "Invisibility",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Invisibility",
         "spellLevel": 2,
         "diceCount": 1,
         "castStat": "int",
@@ -449,7 +416,6 @@
       },
       {
         "name": "Mirror Image",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.MirrorImage",
         "spellLevel": 2,
         "diceCount": 1,
         "castStat": "int",
@@ -461,7 +427,6 @@
       },
       {
         "name": "Greater Invisibility",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.GreaterInvisibility",
         "spellLevel": 4,
         "diceCount": 1,
         "castStat": "int",
@@ -473,7 +438,6 @@
       },
       {
         "name": "Phantasmal Killer",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.PhantasmalKiller",
         "spellLevel": 4,
         "diceCount": 1,
         "castStat": "int",
@@ -487,7 +451,6 @@
     "necromancy": [
       {
         "name": "Cause Wounds",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.CauseWounds",
         "spellLevel": 1,
         "diceCount": 1,
         "castStat": "wis",
@@ -499,7 +462,6 @@
       },
       {
         "name": "Ray of Enfeeblement",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.RayOfEnfeeblement",
         "spellLevel": 2,
         "diceCount": 1,
         "castStat": "int",
@@ -511,7 +473,6 @@
       },
       {
         "name": "Animate Dead",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.AnimateDead",
         "spellLevel": 3,
         "diceCount": 1,
         "castStat": "wis",
@@ -523,7 +484,6 @@
       },
       {
         "name": "Vampiric Touch",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.VampiricTouch",
         "spellLevel": 3,
         "diceCount": 1,
         "castStat": "int",
@@ -535,7 +495,6 @@
       },
       {
         "name": "Blight",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Blight",
         "spellLevel": 4,
         "diceCount": 1,
         "castStat": "wis",
@@ -547,7 +506,6 @@
       },
       {
         "name": "Circle of Death",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.CircleOfDeath",
         "spellLevel": 6,
         "diceCount": 2,
         "castStat": "int",
@@ -559,7 +517,6 @@
       },
       {
         "name": "Finger of Death",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.FingerOfDeath",
         "spellLevel": 7,
         "diceCount": 2,
         "castStat": "int",
@@ -573,7 +530,6 @@
     "transmutation": [
       {
         "name": "Expeditious Retreat",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.ExpeditiousRetreat",
         "spellLevel": 1,
         "diceCount": 1,
         "castStat": "int",
@@ -585,7 +541,6 @@
       },
       {
         "name": "Enlarge Person",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.EnlargePerson",
         "spellLevel": 2,
         "diceCount": 1,
         "castStat": "int",
@@ -597,7 +552,6 @@
       },
       {
         "name": "Haste",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Haste",
         "spellLevel": 3,
         "diceCount": 1,
         "castStat": "int",
@@ -609,7 +563,6 @@
       },
       {
         "name": "Slow",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Slow",
         "spellLevel": 3,
         "diceCount": 1,
         "castStat": "int",
@@ -621,7 +574,6 @@
       },
       {
         "name": "Polymorph",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Polymorph",
         "spellLevel": 4,
         "diceCount": 1,
         "castStat": "int",
@@ -633,7 +585,6 @@
       },
       {
         "name": "Stone Shape",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.StoneShape",
         "spellLevel": 4,
         "diceCount": 1,
         "castStat": "wis",
@@ -645,7 +596,6 @@
       },
       {
         "name": "Disintegrate",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Disintegrate",
         "spellLevel": 6,
         "diceCount": 2,
         "castStat": "int",
@@ -659,7 +609,6 @@
     "divination": [
       {
         "name": "Detect Magic",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.DetectMagic",
         "spellLevel": 1,
         "diceCount": 1,
         "castStat": "int",
@@ -671,7 +620,6 @@
       },
       {
         "name": "Identify",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Identify",
         "spellLevel": 1,
         "diceCount": 1,
         "castStat": "int",
@@ -683,7 +631,6 @@
       },
       {
         "name": "Locate Object",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.LocateObject",
         "spellLevel": 2,
         "diceCount": 1,
         "castStat": "wis",
@@ -695,7 +642,6 @@
       },
       {
         "name": "See Invisibility",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.SeeInvisibility",
         "spellLevel": 2,
         "diceCount": 1,
         "castStat": "int",
@@ -707,7 +653,6 @@
       },
       {
         "name": "Clairvoyance",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Clairvoyance",
         "spellLevel": 3,
         "diceCount": 1,
         "castStat": "int",
@@ -719,7 +664,6 @@
       },
       {
         "name": "Scrying",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.Scrying",
         "spellLevel": 5,
         "diceCount": 2,
         "castStat": "int",
@@ -731,7 +675,6 @@
       },
       {
         "name": "True Seeing",
-        "uuid": "Compendium.dungeon-crawler-world.spells.Item.TrueSeeing",
         "spellLevel": 6,
         "diceCount": 2,
         "castStat": "wis",

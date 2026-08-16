@@ -4,7 +4,7 @@
   "type": "race",
   "img": "icons/svg/dragon.svg",
   "system": {
-    "description": "Dragonborn are proud and noble draconic humanoids, born with the blood of ancient dragons flowing through their veins. They combine the strength and majesty of dragons with humanoid versatility.",
+    "description": "Dragonborn are proud and noble draconic humanoids, born with the blood of ancient dragons flowing through their veins. They combine the strength and majesty of dragons with humanoid versatility.\n\nTraits: Draconic Ancestry: You have draconic ancestry which determines your breath weapon and damage resistance. Breath Weapon: You can exhale destructive energy once per short rest. Damage Resistance: You have resistance to the damage type associated with your draconic ancestry.",
     "abilityBonuses": {
       "str": 2,
       "dex": 0,
@@ -20,16 +20,27 @@
     },
     "size": "medium",
     "speed": 30,
-    "senses": ["darkvision"],
-    "traits": [
-      "Draconic Ancestry: You have draconic ancestry which determines your breath weapon and damage resistance.",
-      "Breath Weapon: You can exhale destructive energy once per short rest.",
-      "Damage Resistance: You have resistance to the damage type associated with your draconic ancestry."
-    ],
+    "senses": {
+      "darkvision": 60,
+      "blindsight": 0,
+      "tremorsense": 0,
+      "truesight": 0
+    },
+    "languages": "",
+    "grantedFeatures": [],
     "grantedSkills": [
-      {"skillUuid": "Compendium.dcw-content.skills.Item.Intimidation", "level": 1},
-      {"skillUuid": "Compendium.dcw-content.skills.Item.Diplomacy", "level": 1},
-      {"skillUuid": "Compendium.dcw-content.skills.Item.Slash", "level": 1}
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Intimidation",
+        "level": 1
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Diplomacy",
+        "level": 1
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Slash",
+        "level": 1
+      }
     ]
   },
   "effects": [],

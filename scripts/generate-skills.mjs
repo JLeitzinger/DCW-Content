@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { wrapItem } from './lib/foundry-item.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -33,8 +34,8 @@ for (const category of Object.values(manifest.skills)) {
 }
 
 function createSkillItem(skill) {
-  return {
-    _id: skill._id,
+  return wrapItem({
+    id: skill._id,
     name: skill.name,
     type: "skill",
     img: "icons/svg/book.svg",
@@ -45,15 +46,8 @@ function createSkillItem(skill) {
       relatedStat: skill.relatedStat,
       effort: skill.effort,
       grantedSkills: []
-    },
-    effects: [],
-    folder: null,
-    sort: 0,
-    ownership: {
-      default: 0
-    },
-    flags: {}
-  };
+    }
+  });
 }
 
 // Generate all skill files
