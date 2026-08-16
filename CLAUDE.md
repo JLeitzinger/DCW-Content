@@ -250,6 +250,16 @@ There's no god content in this repo yet - this section documents the type so it'
 
 ---
 
+### **Achievement** Items
+GM-authored recognitions handed out via the "Grant Achievement" macro that ships with the system - see `Dungeon-Crawler-World/Rules/Achievements.md`. **Not compendium content** - unlike every other type in this file, achievements are campaign-specific homebrew, so they're authored directly as world Items (Items directory) rather than in a DCW-Content pack. Nothing to build here; this section just documents the fields for reference.
+
+**Fields:**
+- `description` - What the achievement is for.
+- `rewardUuid` - UUID of an Item to auto-grant to each recipient (usually a lootbox). Blank = purely informational.
+- `rewardQuantity` - How many of the reward to grant (only meaningful for stackable rewards like lootboxes).
+
+---
+
 ### **Feature** Items
 Abilities, feats, and special powers.
 
