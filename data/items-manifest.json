@@ -1,5 +1,102 @@
 {
   "manifestVersion": "1.0",
-  "description": "Item (armor/gear/tools) registry - see CLAUDE.md's Item (Equipment) section for authoring guidelines.",
-  "items": []
+  "description": "Item (armor/gear/consumables) registry - see CLAUDE.md's Item (Armor/Gear/Consumables) section for authoring guidelines.",
+  "items": [
+    {
+      "name": "Minor Health Potion",
+      "description": "A small vial of watered-down healing draught. Restores a modest amount of HP with no lingering effect.",
+      "quantity": 1,
+      "weight": 0.5,
+      "rarity": "common",
+      "consumable": true,
+      "restoreResource": "hp",
+      "restoreAmount": 10
+    },
+    {
+      "name": "Health Potion",
+      "description": "A ruby-red draught that knits wounds and quickens the body's own recovery for a short while after drinking.",
+      "quantity": 1,
+      "weight": 0.5,
+      "rarity": "uncommon",
+      "consumable": true,
+      "restoreResource": "hp",
+      "restoreAmount": 15,
+      "regenBoostAmount": 2,
+      "regenBoostUses": 3
+    },
+    {
+      "name": "Stamina Potion",
+      "description": "A fizzing, citrus-sharp brew that restores vigor and quickens stamina recovery for a short while after drinking.",
+      "quantity": 1,
+      "weight": 0.5,
+      "rarity": "common",
+      "consumable": true,
+      "restoreResource": "stamina",
+      "restoreAmount": 10,
+      "regenBoostAmount": 2,
+      "regenBoostUses": 3
+    },
+    {
+      "name": "Mana Potion",
+      "description": "A shimmering blue draught that replenishes magical reserves and quickens mana recovery for a short while after drinking.",
+      "quantity": 1,
+      "weight": 0.5,
+      "rarity": "common",
+      "consumable": true,
+      "restoreResource": "mana",
+      "restoreAmount": 10,
+      "regenBoostAmount": 2,
+      "regenBoostUses": 3
+    },
+    {
+      "name": "Bandages",
+      "description": "Clean cloth wrappings for a field dressing. Mundane, reliable, and safe to use as often as you have them.",
+      "quantity": 1,
+      "weight": 0.5,
+      "rarity": "common",
+      "consumable": true,
+      "restoreResource": "hp",
+      "restoreAmount": 5
+    },
+    {
+      "name": "Torch",
+      "description": "A length of pitch-soaked wood, ready to be lit. No mechanical light rules yet - carry it for the flavor and the occasional Survival check by torchlight.",
+      "quantity": 1,
+      "weight": 1,
+      "rarity": "common",
+      "grantedSkills": [
+        {"skillName": "Survival", "level": 1}
+      ]
+    },
+    {
+      "name": "Leather Armor",
+      "description": "Simple, flexible protection stitched from boiled leather. Doesn't slow you down much.",
+      "quantity": 1,
+      "weight": 10,
+      "rarity": "common",
+      "grantedSkills": [
+        {"skillName": "Defend", "level": 1}
+      ]
+    },
+    {
+      "name": "Chainmail",
+      "description": "Interlocking steel rings, heavy but dependable against a glancing blow.",
+      "quantity": 1,
+      "weight": 40,
+      "rarity": "uncommon",
+      "grantedSkills": [
+        {"skillName": "Defend", "level": 2}
+      ]
+    },
+    {
+      "name": "Plate Armor",
+      "description": "A full suit of fitted steel plate. Slow going, but very little gets through it.",
+      "quantity": 1,
+      "weight": 65,
+      "rarity": "rare",
+      "grantedSkills": [
+        {"skillName": "Defend", "level": 3}
+      ]
+    }
+  ]
 }

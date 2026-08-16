@@ -29,7 +29,12 @@ for (const entry of manifest.items) {
       weight: entry.weight ?? 0,
       rarity: entry.rarity ?? 'common',
       grantedSkills: (entry.grantedSkills || []).map(resolveSkill),
-      luckBonus: entry.luckBonus ?? 0
+      luckBonus: entry.luckBonus ?? 0,
+      consumable: entry.consumable ?? false,
+      restoreResource: entry.restoreResource ?? '',
+      restoreAmount: entry.restoreAmount ?? 0,
+      regenBoostAmount: entry.regenBoostAmount ?? 0,
+      regenBoostUses: entry.regenBoostUses ?? 0
     }
   });
 

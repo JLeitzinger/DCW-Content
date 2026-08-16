@@ -222,10 +222,10 @@ Authored in `data/weapons-manifest.json` (`npm run generate:weapons` → `src/pa
 
 ---
 
-### **Item** (Armor/Gear) Items
-Everything of type `"item"` that isn't a weapon: armor, tools, consumables. Authored in `data/items-manifest.json` (`npm run generate:items`). **This pack is currently empty** - the files that used to live in `src/packs/items/` were stale duplicates of the real weapons (leftover from an abandoned early generator) and were removed rather than migrated; there's no real armor/gear content yet.
+### **Item** (Armor/Gear/Consumables) Items
+Everything of type `"item"` that isn't a weapon: armor, tools, torches, and consumables (potions, bandages). Authored in `data/items-manifest.json` (`npm run generate:items`).
 
-**Required Fields (mirrors `item-item.mjs` - deliberately smaller than the weapon schema):**
+**Required Fields (mirrors `item-item.mjs`):**
 - `quantity` - Number of items (default: 1)
 - `weight` - Weight in pounds (number)
 - `rarity` - Same choices/lootbox behavior as weapons (see above)
@@ -233,7 +233,7 @@ Everything of type `"item"` that isn't a weapon: armor, tools, consumables. Auth
 
 **Known gap:** unlike weapons, `item-item.mjs` has no `equipped` field, and skill grants from a type-`"item"` document apply unconditionally (not gated by being equipped, the way a weapon's are). So "should grant Defend while equipped" for armor isn't actually enforceable today - an armor item's granted skill applies as soon as it's owned, equipped or not. Treat armor content as "owning it grants the bonus" until the system gains real equip-gating for this type (a `Dungeon-Crawler-World` change, not a content one).
 
-**Example: Leather Armor** (`data/items-manifest.json` entry)
+**Example: Leather Armor**
 ```json
 {
   "name": "Leather Armor",
@@ -244,6 +244,44 @@ Everything of type `"item"` that isn't a weapon: armor, tools, consumables. Auth
   "grantedSkills": [
     {"skillName": "Defend", "level": 1}
   ]
+}
+```
+
+**Consumables (potions, bandages):** set `consumable: true` and the sheet gets a "use" button (see `Dungeon-Crawler-World/module/documents/actor.mjs`'s `Actor#useItem`) that restores a resource and consumes one from `quantity` (deleting the item at 0).
+
+- `consumable` - boolean, required to get the "use" button at all.
+- `restoreResource` - `"hp"`, `"stamina"`, or `"mana"`. Required (and non-blank) when `consumable` is true.
+- `restoreAmount` - How much of `restoreResource` it restores on use (clamped to max). Required to be `> 0` when `consumable` is true.
+- `regenBoostAmount` / `regenBoostUses` - Optional "+N to `restoreResource`'s regen roll for the next X Regen clicks" effect. **Must be set together or not at all** (`npm run validate` enforces this) - `regenBoostUses > 0` is what makes an item "a potion" rather than a mundane consumable like Bandages, which restore HP with no regen boost.
+- **Potions specifically** (anything with `regenBoostUses > 0`) have an implicit cooldown: drinking one while still on cooldown from the last potion still restores/boosts as normal, but also applies the Poisoned status effect (see `Dungeon-Crawler-World/Rules/Status Effects/Poisoned.md`). The cooldown clears on the character's next Regen click - there's no round tracker in this system to hook a literal "1 round" to, so "since your last Regen" stands in for it. This is entirely handled system-side; nothing extra to set in content for it beyond `regenBoostUses > 0`.
+
+**Example: Stamina Potion**
+```json
+{
+  "name": "Stamina Potion",
+  "description": "A fizzing brew that restores vigor and quickens recovery.",
+  "quantity": 1,
+  "weight": 0.5,
+  "rarity": "common",
+  "consumable": true,
+  "restoreResource": "stamina",
+  "restoreAmount": 10,
+  "regenBoostAmount": 2,
+  "regenBoostUses": 3
+}
+```
+
+**Example: Bandages** (mundane consumable - restores HP, no regen boost, no cooldown)
+```json
+{
+  "name": "Bandages",
+  "description": "Clean cloth wrappings for a field dressing.",
+  "quantity": 1,
+  "weight": 0.5,
+  "rarity": "common",
+  "consumable": true,
+  "restoreResource": "hp",
+  "restoreAmount": 5
 }
 ```
 

@@ -1,0 +1,37 @@
+{
+  "_id": "bandages",
+  "name": "Bandages",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "Clean cloth wrappings for a field dressing. Mundane, reliable, and safe to use as often as you have them.",
+    "quantity": 1,
+    "weight": 0.5,
+    "rarity": "common",
+    "grantedSkills": [],
+    "luckBonus": 0,
+    "consumable": true,
+    "restoreResource": "hp",
+    "restoreAmount": 5,
+    "regenBoostAmount": 0,
+    "regenBoostUses": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

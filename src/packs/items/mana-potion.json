@@ -1,0 +1,37 @@
+{
+  "_id": "mana-potion",
+  "name": "Mana Potion",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "A shimmering blue draught that replenishes magical reserves and quickens mana recovery for a short while after drinking.",
+    "quantity": 1,
+    "weight": 0.5,
+    "rarity": "common",
+    "grantedSkills": [],
+    "luckBonus": 0,
+    "consumable": true,
+    "restoreResource": "mana",
+    "restoreAmount": 10,
+    "regenBoostAmount": 2,
+    "regenBoostUses": 3
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

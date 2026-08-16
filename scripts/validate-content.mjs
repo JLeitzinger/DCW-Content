@@ -207,6 +207,20 @@ function validateItems() {
     if (!(s.weight >= 0)) {
       error('items', file, `weight must be >= 0, found ${s.weight}`);
     }
+    if (s.consumable) {
+      if (!['hp', 'stamina', 'mana'].includes(s.restoreResource)) {
+        error('items', file, `consumable items must set restoreResource to "hp", "stamina", or "mana", found ${JSON.stringify(s.restoreResource)}`);
+      }
+      if (!(s.restoreAmount > 0)) {
+        error('items', file, `consumable items must set restoreAmount > 0, found ${s.restoreAmount}`);
+      }
+    }
+    // regenBoostAmount and regenBoostUses must be both-or-neither - a potion effect needs
+    // both a bonus and a duration, and regenBoostUses > 0 is what Actor#useItem treats as
+    // "this is a potion" (subject to the cooldown/Poisoned rule).
+    if ((s.regenBoostAmount > 0) !== (s.regenBoostUses > 0)) {
+      error('items', file, `regenBoostAmount (${s.regenBoostAmount}) and regenBoostUses (${s.regenBoostUses}) must be set together or not at all`);
+    }
   }
 }
 

@@ -1,0 +1,37 @@
+{
+  "_id": "health-potion",
+  "name": "Health Potion",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "A ruby-red draught that knits wounds and quickens the body's own recovery for a short while after drinking.",
+    "quantity": 1,
+    "weight": 0.5,
+    "rarity": "uncommon",
+    "grantedSkills": [],
+    "luckBonus": 0,
+    "consumable": true,
+    "restoreResource": "hp",
+    "restoreAmount": 15,
+    "regenBoostAmount": 2,
+    "regenBoostUses": 3
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}
