@@ -32,11 +32,18 @@
         "description": "Ranged weapon attacks and marksmanship with bows and crossbows."
       },
       {
-        "name": "Defend",
-        "uuid": "Compendium.dungeon-crawler-world.skills.Item.Defend",
+        "name": "Block",
+        "uuid": "Compendium.dungeon-crawler-world.skills.Item.Block",
         "category": "combat",
         "relatedStat": "con",
-        "description": "Blocking, parrying, and damage mitigation."
+        "description": "Standing firm behind a shield or heavy armor to absorb a blow. Granted by heavier armor and shields."
+      },
+      {
+        "name": "Dodge",
+        "uuid": "Compendium.dungeon-crawler-world.skills.Item.Dodge",
+        "category": "combat",
+        "relatedStat": "dex",
+        "description": "Slipping out of the way of an attack entirely. Granted by lighter armor."
       },
       {
         "name": "Throw",

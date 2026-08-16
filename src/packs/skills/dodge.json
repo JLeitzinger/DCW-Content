@@ -1,0 +1,32 @@
+{
+  "_id": "Dodge",
+  "name": "Dodge",
+  "type": "skill",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "Slipping out of the way of an attack entirely. Granted by lighter armor.",
+    "level": 0,
+    "category": "combat",
+    "relatedStat": "dex",
+    "effort": 0,
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

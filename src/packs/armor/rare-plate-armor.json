@@ -1,0 +1,40 @@
+{
+  "_id": "rare-plate-armor",
+  "name": "Plate Armor",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "A full suit of fitted steel plate. Slow going, but very little gets through it.",
+    "quantity": 1,
+    "weight": 65,
+    "rarity": "rare",
+    "effort": 3,
+    "damageReduction": 5,
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Block",
+        "level": 3
+      }
+    ],
+    "luckBonus": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "manifestVersion": "1.0",
+  "description": "Armor/shield registry - see CLAUDE.md's Armor section for authoring guidelines. Armor grants Block (heavy armor/shields) or Dodge (light armor) only while equipped, and passively reduces incoming damage by damageReduction while equipped, regardless of which skill was rolled to defend.",
+  "armor": [
+    {
+      "name": "Leather Armor",
+      "description": "Simple, flexible protection stitched from boiled leather. Light enough to duck and weave in.",
+      "quantity": 1,
+      "weight": 10,
+      "rarity": "common",
+      "effort": 1,
+      "damageReduction": 1,
+      "grantedSkills": [
+        {"skillName": "Dodge", "level": 1}
+      ]
+    },
+    {
+      "name": "Chainmail",
+      "description": "Interlocking steel rings, heavy but dependable against a glancing blow.",
+      "quantity": 1,
+      "weight": 40,
+      "rarity": "uncommon",
+      "effort": 2,
+      "damageReduction": 3,
+      "grantedSkills": [
+        {"skillName": "Block", "level": 2}
+      ]
+    },
+    {
+      "name": "Plate Armor",
+      "description": "A full suit of fitted steel plate. Slow going, but very little gets through it.",
+      "quantity": 1,
+      "weight": 65,
+      "rarity": "rare",
+      "effort": 3,
+      "damageReduction": 5,
+      "grantedSkills": [
+        {"skillName": "Block", "level": 3}
+      ]
+    },
+    {
+      "name": "Wooden Buckler",
+      "description": "A small round shield, strapped to the forearm. Cheap, light, and just enough to catch a blade.",
+      "quantity": 1,
+      "weight": 5,
+      "rarity": "common",
+      "effort": 1,
+      "damageReduction": 1,
+      "grantedSkills": [
+        {"skillName": "Block", "level": 1}
+      ]
+    },
+    {
+      "name": "Tower Shield",
+      "description": "A wall of banded steel nearly as tall as its bearer. Exhausting to hold up, but almost nothing gets past it.",
+      "quantity": 1,
+      "weight": 20,
+      "rarity": "rare",
+      "effort": 5,
+      "damageReduction": 6,
+      "grantedSkills": [
+        {"skillName": "Block", "level": 3}
+      ]
+    }
+  ]
+}

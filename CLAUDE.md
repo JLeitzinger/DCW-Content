@@ -176,7 +176,8 @@ Stat Boost = (current_level - (level_acquired - 1)) × abilityBonuses[stat]
   "secondaryAbility": "",
   "grantedSkills": [
     {"skillName": "Slash", "level": 2},
-    {"skillName": "Defend", "level": 2},
+    {"skillName": "Block", "level": 2},
+    {"skillName": "Dodge", "level": 2},
     {"skillName": "Athletics", "level": 1}
   ],
   "grantedFeatures": [
@@ -222,8 +223,40 @@ Authored in `data/weapons-manifest.json` (`npm run generate:weapons` → `src/pa
 
 ---
 
-### **Item** (Armor/Gear/Consumables) Items
-Everything of type `"item"` that isn't a weapon: armor, tools, torches, and consumables (potions, bandages). Authored in `data/items-manifest.json` (`npm run generate:items`).
+### **Armor** Items
+Armor and shields - its own type (`"armor"`), separate from generic gear, because it needs the same equip-gating and stamina-cost machinery as weapons. Authored in `data/armor-manifest.json` (`npm run generate:armor` → `src/packs/armor/`). Ids follow the same clean slug scheme as weapons (`<rarity>-<name>`) - nothing references an armor item's own id.
+
+**Required Fields (mirrors `item-armor.mjs`):**
+- `quantity` - Number of items (default: 1)
+- `weight` - Weight in pounds (number)
+- `rarity` - Same choices/lootbox behavior as weapons (see above)
+- `effort` - Stamina cost per Block/Dodge roll (0+). Same role as a weapon's `effort`: `Actor#rollSkill` sums `effort` across all equipped weapons/armor that grant the skill being rolled, then multiplies by the level rolled at.
+- `damageReduction` - Flat damage subtracted from any hit while this armor is equipped (`Actor#applyDamage`). Applies passively - it doesn't matter whether the wearer actually rolled Block, rolled Dodge, or rolled nothing that turn.
+- **Should grant exactly 1 combat skill** - `"Block"` (heavier armor and shields; con-based) or `"Dodge"` (lighter armor; dex-based). These replaced the old single `"Defend"` skill.
+- Skills/luck (`grantedSkills`, `luckBonus`) only apply while `equipped` is true, exactly like weapons - a character must actively equip armor from their sheet for it to do anything.
+
+**Design guidance for effort/damageReduction:** heavier, more protective pieces should cost more stamina to actively defend with but reduce more damage passively - a piece that's cheap to use should be correspondingly weak on both axes. Roughly: light armor ≈ 1 effort / 1 DR, medium ≈ 2 effort / 3 DR, heavy ≈ 3 effort / 5 DR, a dedicated tower shield can push higher on both (e.g. 5 effort / 6 DR) since it's a build-defining choice rather than default gear.
+
+**Example: Chainmail**
+```json
+{
+  "name": "Chainmail",
+  "description": "Interlocking steel rings, heavy but dependable against a glancing blow.",
+  "quantity": 1,
+  "weight": 40,
+  "rarity": "uncommon",
+  "effort": 2,
+  "damageReduction": 3,
+  "grantedSkills": [
+    {"skillName": "Block", "level": 2}
+  ]
+}
+```
+
+---
+
+### **Item** (Gear/Consumables) Items
+Everything of type `"item"` that isn't a weapon or armor: tools, torches, and consumables (potions, bandages). Authored in `data/items-manifest.json` (`npm run generate:items`).
 
 **Required Fields (mirrors `item-item.mjs`):**
 - `quantity` - Number of items (default: 1)
@@ -231,21 +264,7 @@ Everything of type `"item"` that isn't a weapon: armor, tools, torches, and cons
 - `rarity` - Same choices/lootbox behavior as weapons (see above)
 - `grantedSkills` - Optional, same `{skillName, level}` shape as every other type
 
-**Known gap:** unlike weapons, `item-item.mjs` has no `equipped` field, and skill grants from a type-`"item"` document apply unconditionally (not gated by being equipped, the way a weapon's are). So "should grant Defend while equipped" for armor isn't actually enforceable today - an armor item's granted skill applies as soon as it's owned, equipped or not. Treat armor content as "owning it grants the bonus" until the system gains real equip-gating for this type (a `Dungeon-Crawler-World` change, not a content one).
-
-**Example: Leather Armor**
-```json
-{
-  "name": "Leather Armor",
-  "description": "Simple, flexible protection.",
-  "quantity": 1,
-  "weight": 10,
-  "rarity": "common",
-  "grantedSkills": [
-    {"skillName": "Defend", "level": 1}
-  ]
-}
-```
+**Known gap:** `item-item.mjs` has no `equipped` field, and skill grants from a type-`"item"` document apply unconditionally (not gated by being equipped, the way a weapon's or armor's are). So this type is only appropriate for gear whose bonus should apply just by being owned (e.g. Torch granting a Survival bonus) - anything that should require actively equipping/wielding belongs in the **Armor** or **Weapon** type instead.
 
 **Consumables (potions, bandages):** set `consumable: true` and the sheet gets a "use" button (see `Dungeon-Crawler-World/module/documents/actor.mjs`'s `Actor#useItem`) that restores a resource and consumes one from `quantity` (deleting the item at 0).
 
@@ -502,7 +521,14 @@ Every type follows the same pattern now: edit the manifest, generate, validate, 
 3. Run `npm run validate -- --type=weapons`
 4. Commit `data/weapons-manifest.json`, `src/packs/weapons/`, and `packs/weapons/`
 
-### Adding a New Item (armor/gear)
+### Adding a New Armor
+
+1. Add an entry to `data/armor-manifest.json` (see the **Armor** Items example above)
+2. Run `npm run generate:armor`
+3. Run `npm run validate -- --type=armor`
+4. Commit `data/armor-manifest.json`, `src/packs/armor/`, and `packs/armor/`
+
+### Adding a New Item (gear/consumables)
 
 1. Add an entry to `data/items-manifest.json`
 2. Run `npm run generate:items`

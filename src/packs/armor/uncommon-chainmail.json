@@ -1,25 +1,23 @@
 {
-  "_id": "chainmail",
+  "_id": "uncommon-chainmail",
   "name": "Chainmail",
-  "type": "item",
+  "type": "armor",
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": "Interlocking steel rings, heavy but dependable against a glancing blow.",
     "quantity": 1,
     "weight": 40,
     "rarity": "uncommon",
+    "effort": 2,
+    "damageReduction": 3,
+    "equipped": false,
     "grantedSkills": [
       {
-        "skillUuid": "Compendium.dcw-content.skills.Item.Defend",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Block",
         "level": 2
       }
     ],
-    "luckBonus": 0,
-    "consumable": false,
-    "restoreResource": "",
-    "restoreAmount": 0,
-    "regenBoostAmount": 0,
-    "regenBoostUses": 0
+    "luckBonus": 0
   },
   "effects": [],
   "folder": null,

@@ -1,0 +1,40 @@
+{
+  "_id": "rare-tower-shield",
+  "name": "Tower Shield",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "A wall of banded steel nearly as tall as its bearer. Exhausting to hold up, but almost nothing gets past it.",
+    "quantity": 1,
+    "weight": 20,
+    "rarity": "rare",
+    "effort": 5,
+    "damageReduction": 6,
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Block",
+        "level": 3
+      }
+    ],
+    "luckBonus": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

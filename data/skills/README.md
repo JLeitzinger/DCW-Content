@@ -52,7 +52,8 @@ node scripts/skill-lookup.mjs category general
 - **Pierce** (dex) - Piercing weapons (spears, daggers)
 - **Blunt** (str) - Blunt weapons (maces, hammers)
 - **Shoot** (dex) - Ranged weapons (bows, crossbows)
-- **Defend** (con) - Blocking and damage mitigation
+- **Block** (con) - Standing firm behind a shield or heavy armor, granted by heavier armor/shields
+- **Dodge** (dex) - Slipping out of the way of an attack, granted by lighter armor
 - **Throw** (dex) - Throwing weapons
 
 ### Magic Skills

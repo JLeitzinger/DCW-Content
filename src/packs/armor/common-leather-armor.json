@@ -1,25 +1,23 @@
 {
-  "_id": "plate-armor",
-  "name": "Plate Armor",
-  "type": "item",
+  "_id": "common-leather-armor",
+  "name": "Leather Armor",
+  "type": "armor",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "A full suit of fitted steel plate. Slow going, but very little gets through it.",
+    "description": "Simple, flexible protection stitched from boiled leather. Light enough to duck and weave in.",
     "quantity": 1,
-    "weight": 65,
-    "rarity": "rare",
+    "weight": 10,
+    "rarity": "common",
+    "effort": 1,
+    "damageReduction": 1,
+    "equipped": false,
     "grantedSkills": [
       {
-        "skillUuid": "Compendium.dcw-content.skills.Item.Defend",
-        "level": 3
+        "skillUuid": "Compendium.dcw-content.skills.Item.Dodge",
+        "level": 1
       }
     ],
-    "luckBonus": 0,
-    "consumable": false,
-    "restoreResource": "",
-    "restoreAmount": 0,
-    "regenBoostAmount": 0,
-    "regenBoostUses": 0
+    "luckBonus": 0
   },
   "effects": [],
   "folder": null,

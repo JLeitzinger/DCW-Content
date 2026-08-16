@@ -341,7 +341,11 @@
           "level": 2
         },
         {
-          "skillName": "Defend",
+          "skillName": "Block",
+          "level": 2
+        },
+        {
+          "skillName": "Dodge",
           "level": 2
         },
         {
@@ -699,7 +703,11 @@
           "level": 2
         },
         {
-          "skillName": "Defend",
+          "skillName": "Block",
+          "level": 2
+        },
+        {
+          "skillName": "Dodge",
           "level": 2
         },
         {

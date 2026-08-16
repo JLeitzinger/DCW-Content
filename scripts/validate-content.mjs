@@ -252,6 +252,28 @@ function validateWeapons() {
   }
 }
 
+function validateArmor() {
+  const entries = loadEntries('armor');
+  checkNoDuplicates('armor', entries);
+  for (const { file, data } of entries) {
+    const s = data.system;
+    checkGrantedSkills('armor', file, s.grantedSkills);
+    if (!RARITIES.includes(s.rarity)) {
+      error('armor', file, `invalid rarity "${s.rarity}"`);
+    }
+    if (!(s.effort >= 0)) {
+      error('armor', file, `effort must be >= 0, found ${s.effort}`);
+    }
+    if (!(s.damageReduction >= 0)) {
+      error('armor', file, `damageReduction must be >= 0, found ${s.damageReduction}`);
+    }
+    const skillCount = (s.grantedSkills || []).length;
+    if (skillCount < 1 || skillCount > 2) {
+      warn('armor', file, `grants ${skillCount} skills, expected range is 1-2`);
+    }
+  }
+}
+
 function validateFeatures() {
   checkNoDuplicates('features', featureEntries);
   for (const { file, data } of featureEntries) {
@@ -290,6 +312,7 @@ const validators = {
   races: validateRaces,
   classes: validateClasses,
   items: validateItems,
+  armor: validateArmor,
   weapons: validateWeapons,
   features: validateFeatures,
   spells: validateSpells

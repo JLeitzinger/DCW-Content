@@ -1,25 +1,23 @@
 {
-  "_id": "leather-armor",
-  "name": "Leather Armor",
-  "type": "item",
+  "_id": "common-wooden-buckler",
+  "name": "Wooden Buckler",
+  "type": "armor",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "Simple, flexible protection stitched from boiled leather. Doesn't slow you down much.",
+    "description": "A small round shield, strapped to the forearm. Cheap, light, and just enough to catch a blade.",
     "quantity": 1,
-    "weight": 10,
+    "weight": 5,
     "rarity": "common",
+    "effort": 1,
+    "damageReduction": 1,
+    "equipped": false,
     "grantedSkills": [
       {
-        "skillUuid": "Compendium.dcw-content.skills.Item.Defend",
+        "skillUuid": "Compendium.dcw-content.skills.Item.Block",
         "level": 1
       }
     ],
-    "luckBonus": 0,
-    "consumable": false,
-    "restoreResource": "",
-    "restoreAmount": 0,
-    "regenBoostAmount": 0,
-    "regenBoostUses": 0
+    "luckBonus": 0
   },
   "effects": [],
   "folder": null,

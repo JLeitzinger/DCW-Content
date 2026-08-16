@@ -67,36 +67,6 @@
       "grantedSkills": [
         {"skillName": "Survival", "level": 1}
       ]
-    },
-    {
-      "name": "Leather Armor",
-      "description": "Simple, flexible protection stitched from boiled leather. Doesn't slow you down much.",
-      "quantity": 1,
-      "weight": 10,
-      "rarity": "common",
-      "grantedSkills": [
-        {"skillName": "Defend", "level": 1}
-      ]
-    },
-    {
-      "name": "Chainmail",
-      "description": "Interlocking steel rings, heavy but dependable against a glancing blow.",
-      "quantity": 1,
-      "weight": 40,
-      "rarity": "uncommon",
-      "grantedSkills": [
-        {"skillName": "Defend", "level": 2}
-      ]
-    },
-    {
-      "name": "Plate Armor",
-      "description": "A full suit of fitted steel plate. Slow going, but very little gets through it.",
-      "quantity": 1,
-      "weight": 65,
-      "rarity": "rare",
-      "grantedSkills": [
-        {"skillName": "Defend", "level": 3}
-      ]
     }
   ]
 }
