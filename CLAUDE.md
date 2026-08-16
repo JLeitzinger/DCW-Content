@@ -185,8 +185,8 @@ Weapons, armor, gear, and consumables.
 - **Higher quality/masterwork items can grant skill +2 or +3**
 
 **For Armor:**
-- `acBonus` - Armor class bonus (number)
-- Could grant defensive skills like Defend
+- There is no `acBonus` field — this system has no Armor Class. Armor works entirely through granted skills.
+- **Should grant the Defend skill** while equipped, scaled to quality: light/basic armor around Defend 1, heavier or masterwork pieces up to Defend 2-3 (same scaling weapons use for their granted skills)
 
 **For Tools/Gear:**
 - **Should grant 1 relevant utility or general skill** (e.g., thieves' tools → Thievery +1)
@@ -239,6 +239,11 @@ Magical spells and rituals.
 - `range` - Spell range: "self", "touch", or distance in feet (e.g., "30 feet", "60 feet", "120 feet")
 - `duration` - How long spell lasts: "instantaneous", or time duration (e.g., "1 minute", "10 minutes", "1 hour", "concentration")
 - `description` - HTML description of what the spell does and how it scales at higher dice counts (3, 6, 9, 12, 15)
+
+**TODO - not yet wired into the manifest/generator:** the system also supports offensive spells with their own damage roll, separate from the cast roll:
+- `offensive` - boolean, true for damage-dealing spells (Evocation spells are the obvious candidates)
+- `roll.diceNum` / `roll.diceSize` / `roll.diceBonus` - damage formula fields, same shape as a weapon's (see the **Item (Equipment)** section above). `diceBonus` should reference the spell's own `castStat`, e.g. `+@int.mod`
+- These currently have to be set by hand on each spell's Foundry sheet after generation. `scripts/generate-spells.mjs`'s `createSpellItem()` doesn't emit them yet, and `data/spells-manifest.json` has no matching fields per spell. Add `offensive`/damage-formula fields to the manifest schema and generator once spell content is being generated/regenerated in bulk, rather than hand-editing existing spells one at a time.
 
 **Spell Scaling Rules:**
 - **Spell Level**: Ranges from 1-15

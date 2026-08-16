@@ -59,6 +59,10 @@ function createSpellItem(spell) {
       range: spell.range,
       duration: spell.duration,
       grantedSkills: []
+      // TODO: emit `offensive` + `roll: {diceNum, diceSize, diceBonus}` here once
+      // spells-manifest.json entries carry them (see CLAUDE.md's Spell Items section).
+      // offensive should default true for category === 'evocation'-style damage spells;
+      // diceBonus should reference spell.castStat, e.g. `+@${spell.castStat}.mod`.
     },
     effects: [],
     folder: null,
