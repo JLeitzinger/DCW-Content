@@ -229,6 +229,27 @@ There's no lootbox content in this repo yet - this section documents the type so
 
 ---
 
+### **God** Items
+Deities a character can worship, dragged onto the character sheet's Worship tab - see `Dungeon-Crawler-World/Rules/Worship.md`. Only `description`, `grantedSkills`, and `luckBonus` do anything right now (same shape as any other item's - see **Skill Guidelines** patterns below). Full feature-granting (like race/class) is planned but not built yet, so don't add a `grantedFeatures` field to god content until the system supports it.
+
+**Example: A minor god of the hunt**
+```json
+{
+  "type": "god",
+  "description": "A quiet god of the hunt, worshipped by rangers and trackers.",
+  "system": {
+    "grantedSkills": [
+      {"skillUuid": "Compendium.dcw-content.skills.Item.Survival", "level": 1}
+    ],
+    "luckBonus": 1
+  }
+}
+```
+
+There's no god content in this repo yet - this section documents the type so it's ready whenever pantheon content gets added (a `gods` pack would need to be registered in `module.json` at that point, following the same pattern as `items`/`weapons`).
+
+---
+
 ### **Feature** Items
 Abilities, feats, and special powers.
 
