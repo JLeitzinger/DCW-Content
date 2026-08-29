@@ -10,6 +10,7 @@
  */
 import { buildSceneEnvelope } from './envelope.mjs';
 import { generateLights } from './LightingGenerator.mjs';
+import { generateTiles } from './TileGenerator.mjs';
 
 const GRID_SIZE = 100;
 const SOLID = { light: 20, move: 20, sight: 20, sound: 20, door: 0, ds: 0, dir: 0, doorSound: '' };
@@ -86,9 +87,11 @@ function buildInteriorWalls(id, w, h) {
 
 /**
  * @param {function(string):string} id - idFactory (ids.mjs) shared with JournalBuilder for this floor.
+ * @param {{ pool: Function }} library - TileLibrary.mjs handle; art is optional, see TileGenerator.mjs.
+ * @param {string} setting - assets/tiles/<setting>/... bucket, e.g. "dungeon".
  * @returns {{ primaryScene: object, subScenes: object[] }}
  */
-export function buildScenes(rng, id, theme, geometry, lights, journals, tierConfig) {
+export function buildScenes(rng, id, theme, geometry, lights, journals, tierConfig, library, setting) {
   const { rooms, walls, boundsPx } = geometry;
 
   const notes = rooms.map(room => buildNote(
@@ -140,7 +143,8 @@ export function buildScenes(rng, id, theme, geometry, lights, journals, tierConf
       walls: buildInteriorWalls(key => id(`sub-${room.id}-wall-${key}`), w, h),
       lights: generateLights(rng, id, [localRoom], theme),
       notes: [],
-      regions: [subRegion]
+      regions: [subRegion],
+      tiles: library ? generateTiles(rng, id, [localRoom], theme, setting, library, tierConfig) : []
     });
     subScenes.push(subScene);
   }
@@ -156,7 +160,8 @@ export function buildScenes(rng, id, theme, geometry, lights, journals, tierConf
     walls,
     lights,
     notes,
-    regions: primaryRegions
+    regions: primaryRegions,
+    tiles: library ? generateTiles(rng, id, rooms, theme, setting, library, tierConfig) : []
   });
 
   return { primaryScene, subScenes };

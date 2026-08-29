@@ -371,6 +371,22 @@ function validateFloors() {
         error('scenes', file, `note ${note._id} references unknown journal entry "${note.entryId}"`);
       }
     }
+    for (const tile of data.tiles || []) {
+      const src = tile.texture?.src;
+      if (!src) {
+        error('scenes', file, `tile ${tile._id} has no texture.src`);
+        continue;
+      }
+      const prefix = 'modules/dcw-content/';
+      if (!src.startsWith(prefix)) {
+        error('scenes', file, `tile ${tile._id} texture.src "${src}" isn't a modules/dcw-content/ path`);
+        continue;
+      }
+      const onDisk = path.join(__dirname, '..', src.slice(prefix.length));
+      if (!fs.existsSync(onDisk)) {
+        error('scenes', file, `tile ${tile._id} texture.src "${src}" does not exist on disk - it will render broken`);
+      }
+    }
     for (const region of data.regions || []) {
       for (const behavior of region.behaviors || []) {
         if (behavior.type !== 'teleportToken') continue;

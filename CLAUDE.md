@@ -542,6 +542,22 @@ Every type follows the same pattern now: edit the manifest, generate, validate, 
 3. Run `npm run validate -- --type=features`
 4. Commit `data/features-manifest.json`, `src/packs/features/`, and `packs/features/`
 
+### Adding Tile Art for Generated Maps
+
+`npm run generate:floors` (see `scripts/generate-floors.mjs` and `scripts/lib/level-gen/`)
+procedurally builds Scene/JournalEntry compendium content for dungeon floors. It can also
+scatter decorative Tile documents (floor textures, props) onto those scenes from image files -
+entirely optional and picked up automatically, no manifest entry needed:
+
+1. Drop `.webp`/`.png`/`.jpg` files into `assets/tiles/<setting>/<themeCategory>/<floors|props>/`
+   (see `assets/tiles/README.md` for the full convention - `setting` defaults to `dungeon`,
+   `themeCategory` matches `data/narrative-lexicon.json`'s theme keys, or use `_generic` for
+   art that isn't theme-specific).
+2. Run `npm run generate:floors` (or `npm run generate`) - `TileLibrary.mjs` scans those
+   folders and `TileGenerator.mjs` scatters matching art across each floor's rooms.
+3. `npm run validate` checks every placed tile's image actually exists on disk.
+4. Commit the image files alongside the regenerated `src/packs/scenes/` and `packs/scenes/`.
+
 ### Adding a New Spell
 
 1. Add spell definition to `data/spells-manifest.json` under the appropriate category

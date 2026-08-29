@@ -6,12 +6,14 @@
  */
 import { pickThemeCategory, getCategory, fillTemplate, pickEncounterHook } from './lexicon.mjs';
 
+// propDensity scales TileGenerator.mjs's prop-tile count per room (props per grid-cell of room
+// area, capped at MAX_PROPS_PER_ROOM there) - deeper/denser floors read as more lived-in.
 const TIER_CONFIG = {
-  1: { roomCountMin: 8, roomCountMax: 10, subStoryCount: 2, subSceneCountMin: 0, subSceneCountMax: 1, secretDoorChance: 0.08, dcBonus: 0 },
-  2: { roomCountMin: 11, roomCountMax: 13, subStoryCount: 2, subSceneCountMin: 0, subSceneCountMax: 1, secretDoorChance: 0.10, dcBonus: 1 },
-  3: { roomCountMin: 14, roomCountMax: 18, subStoryCount: 3, subSceneCountMin: 1, subSceneCountMax: 2, secretDoorChance: 0.13, dcBonus: 2 },
-  4: { roomCountMin: 19, roomCountMax: 23, subStoryCount: 3, subSceneCountMin: 1, subSceneCountMax: 3, secretDoorChance: 0.16, dcBonus: 3 },
-  5: { roomCountMin: 20, roomCountMax: 28, subStoryCount: 4, subSceneCountMin: 2, subSceneCountMax: 4, secretDoorChance: 0.20, dcBonus: 4 }
+  1: { roomCountMin: 8, roomCountMax: 10, subStoryCount: 2, subSceneCountMin: 0, subSceneCountMax: 1, secretDoorChance: 0.08, dcBonus: 0, propDensity: 0.05 },
+  2: { roomCountMin: 11, roomCountMax: 13, subStoryCount: 2, subSceneCountMin: 0, subSceneCountMax: 1, secretDoorChance: 0.10, dcBonus: 1, propDensity: 0.07 },
+  3: { roomCountMin: 14, roomCountMax: 18, subStoryCount: 3, subSceneCountMin: 1, subSceneCountMax: 2, secretDoorChance: 0.13, dcBonus: 2, propDensity: 0.09 },
+  4: { roomCountMin: 19, roomCountMax: 23, subStoryCount: 3, subSceneCountMin: 1, subSceneCountMax: 3, secretDoorChance: 0.16, dcBonus: 3, propDensity: 0.11 },
+  5: { roomCountMin: 20, roomCountMax: 28, subStoryCount: 4, subSceneCountMin: 2, subSceneCountMax: 4, secretDoorChance: 0.20, dcBonus: 4, propDensity: 0.13 }
 };
 
 /** complexityTier wins if set; otherwise derived from floorNumber (~2 floors per tier); default tier 1. */

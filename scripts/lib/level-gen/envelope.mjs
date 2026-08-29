@@ -16,8 +16,8 @@
  */
 import { DOCUMENT_STATS } from '../foundry-item.mjs';
 
-/** Foundry v13 Scene document. Embedded collections (walls/lights/notes/regions) passed in raw. */
-export function buildSceneEnvelope({ id, name, width, height, gridSize, backgroundColor, darknessLevel, walls, lights, notes, regions }) {
+/** Foundry v13 Scene document. Embedded collections (walls/lights/notes/regions/tiles) passed in raw. */
+export function buildSceneEnvelope({ id, name, width, height, gridSize, backgroundColor, darknessLevel, walls, lights, notes, regions, tiles = [] }) {
   return {
     _id: id,
     name,
@@ -52,7 +52,7 @@ export function buildSceneEnvelope({ id, name, width, height, gridSize, backgrou
     notes,
     regions,
     sounds: [],
-    tiles: [],
+    tiles,
     walls,
     folder: null,
     sort: 0,
@@ -105,5 +105,34 @@ export function buildFolderEnvelope({ id, name, type, folder = null, color = '#6
     color,
     flags: {},
     _stats: DOCUMENT_STATS
+  };
+}
+
+/**
+ * Embedded Tile Document - a decorative image (floor texture or scattered prop) placed on a
+ * Scene by TileGenerator.mjs, sourced from assets/tiles/ via TileLibrary.mjs. Field shape
+ * confirmed against the local Foundry install's common/documents/tile.mjs: written here using
+ * v13's `occlusion.mode` (single number) rather than v14's `occlusion.modes` (a Set) - same
+ * v13-first convention as buildSceneEnvelope's background/environment fields - since
+ * BaseTile.migrateData backfills `modes` from `mode` automatically on load, v14 included.
+ */
+export function buildTileEnvelope({ id, img, x, y, width, height, rotation = 0, sort = 0, alpha = 1, tint = null }) {
+  return {
+    _id: id,
+    texture: { src: img, anchorX: 0.5, anchorY: 0.5, fit: 'fill', scaleX: 1, scaleY: 1, tint: tint ?? '#ffffff', alphaThreshold: 0.75 },
+    width,
+    height,
+    x,
+    y,
+    elevation: 0,
+    sort,
+    rotation,
+    alpha,
+    hidden: false,
+    locked: false,
+    restrictions: { light: false, weather: false },
+    occlusion: { mode: 1, alpha: 0 }, // FADE - tokens standing on/behind the tile fade it rather than vanishing under it
+    video: { loop: true, autoplay: true, volume: 0 },
+    flags: {}
   };
 }

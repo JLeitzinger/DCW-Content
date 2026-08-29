@@ -1,5 +1,5 @@
 {
-  "_comment": "Each entry is generation parameters only - no hand-authored prose. Narrative/geometry are fully procedural (see scripts/generate-floors.mjs). `id` is optional (defaults to a slug of `name`); `complexityTier` (1-5) overrides the tier normally derived from `floorNumber` (~2 floors per tier). `themeCategory` must match a key in data/narrative-lexicon.json's themeCategories, or is picked at random from the seed if omitted.",
+  "_comment": "Each entry is generation parameters only - no hand-authored prose. Narrative/geometry are fully procedural (see scripts/generate-floors.mjs). `id` is optional (defaults to a slug of `name`); `complexityTier` (1-5) overrides the tier normally derived from `floorNumber` (~2 floors per tier). `themeCategory` must match a key in data/narrative-lexicon.json's themeCategories, or is picked at random from the seed if omitted. `setting` picks which assets/tiles/<setting>/ bucket floor/prop art is drawn from (see assets/tiles/README.md) - defaults to 'dungeon' if omitted.",
   "floors": [
     { "name": "Corrupted Alchemical Vaults", "seed": "vaults-03", "floorNumber": 3, "themeCategory": "alchemical" },
     { "name": "The Hollow Barrows", "seed": "barrows-09", "floorNumber": 9, "themeCategory": "undead" }
