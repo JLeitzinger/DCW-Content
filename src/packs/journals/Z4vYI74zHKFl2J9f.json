@@ -1,0 +1,44 @@
+{
+  "_id": "Z4vYI74zHKFl2J9f",
+  "name": "Boss Arena (Room 10)",
+  "pages": [
+    {
+      "_id": "e53Psk2cLQYUTi1O",
+      "name": "Boss Arena (Room 10)",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>The Wards open into a Weeping hall built - or reshaped - around whatever now claims it as its own.</p><section class=\"secret\"><h3>GM Notes</h3><p><strong>Milestone:</strong> This is where the floor's story comes to a head: A formula for a rogue homunculus conclave to end all suffering - or all resistance - was hidden in the Cisterns below, and someone just found the first ingredient.</p></section>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": "e71lfzyrxzzkhxj6",
+  "categories": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

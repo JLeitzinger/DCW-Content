@@ -15,7 +15,7 @@
  * break installs down to system.json's stated `compatibility.minimum: 13`. Pinning to the
  * schema version instead is safe for any Foundry release that can run this system at all.
  */
-const DOCUMENT_STATS = {
+export const DOCUMENT_STATS = {
   coreVersion: '13.341',
   systemId: 'dungeon-crawler-world',
   systemVersion: null,

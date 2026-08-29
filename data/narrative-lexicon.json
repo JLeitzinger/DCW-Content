@@ -1,0 +1,164 @@
+{
+  "_comment": "Word banks and sentence-frame templates for the fully-procedural floor narrative generator (scripts/lib/level-gen/StoryGenerator.mjs, JournalBuilder.mjs). Templates use {slot} placeholders filled from this same category's other arrays, so output stays thematically consistent rather than mad-lib random. Add a themeCategory here and it's immediately available via data/floors-manifest.json's themeCategory field.",
+  "themeCategories": {
+    "alchemical": {
+      "domainNouns": ["Vaults", "Cisterns", "Retorts", "Crucibles", "Wards"],
+      "adjectives": ["Corrupted", "Weeping", "Volatile", "Gilded", "Unstable"],
+      "threats": ["the Alchemist's Guild", "the Distillers of Ash", "a rogue homunculus conclave", "the Verdigris Cabal"],
+      "lightColor": "#7ee08c",
+      "torchColor": "#c98cff",
+      "darknessLevel": 0.65,
+      "arcTemplates": [
+        "{threat} sealed something down here that was never meant to finish brewing, and the seals are failing.",
+        "A formula for {threat} to end all suffering - or all resistance - was hidden in the {domain} below, and someone just found the first ingredient.",
+        "{threat} has been using this floor to distill something out of captives who never leave."
+      ],
+      "subStoryTemplates": [
+        "A cache of unstable reagents is destabilizing nearby rooms and needs to be found before it detonates.",
+        "One of {threat}'s apprentices wants out and has been leaving coded warnings for anyone who'll listen.",
+        "A half-transmuted survivor is trapped between forms in a side chamber, begging for the process to be reversed or finished.",
+        "The floor's water supply has been dosed with a reagent that's slowly changing everything that drinks it."
+      ]
+    },
+    "undead": {
+      "domainNouns": ["Crypts", "Ossuaries", "Catacombs", "Barrows", "Charnel Halls"],
+      "adjectives": ["Silent", "Hollow", "Forsaken", "Restless", "Grave-Cold"],
+      "threats": ["the Bone Choir", "a nameless lich-court", "the Widow of Ash Barrow", "the unquiet garrison"],
+      "lightColor": "#7fb8ff",
+      "torchColor": "#8fffb0",
+      "darknessLevel": 0.8,
+      "arcTemplates": [
+        "{threat} never got the burial it was owed, and it intends to make everyone still breathing understand why that matters.",
+        "Something in the {domain} below is calling the recently dead home, one grave at a time.",
+        "{threat} has been rebuilding an army out of everyone who's ever died on this floor - including, eventually, the party."
+      ],
+      "subStoryTemplates": [
+        "A restless spirit will not move on until an old debt, owed for generations, is finally settled.",
+        "Grave robbers hired by someone topside are already down here, and they know things about the layout the party doesn't.",
+        "A single still-living prisoner has been kept alive for decades as a witness to something {threat} doesn't want forgotten - or remembered.",
+        "Bones are going missing from sealed tombs, one at a time, in a pattern that spells out a name."
+      ]
+    },
+    "elemental": {
+      "domainNouns": ["Wards", "Conduits", "Forges", "Cisterns", "Rifts"],
+      "adjectives": ["Scorched", "Frostbound", "Storm-Wracked", "Molten", "Fracturing"],
+      "threats": ["the Cinder Court", "a bound storm-thing", "the Glasswrights", "an unmoored elemental rift"],
+      "lightColor": "#ff9d4d",
+      "torchColor": "#4ddfff",
+      "darknessLevel": 0.5,
+      "arcTemplates": [
+        "{threat} bound a piece of the raw elemental plane into this floor's foundations, and the binding is cracking room by room.",
+        "The {domain} below were built to contain {threat} - they were never built to contain it forever.",
+        "{threat} is trying to widen a rift that's already reshaping the floor's geography one tremor at a time."
+      ],
+      "subStoryTemplates": [
+        "A containment ward is failing in a side chamber and someone needs to re-anchor it before the whole floor destabilizes.",
+        "Local wildlife has been mutating near the rift and is now aggressively territorial in ways it wasn't before.",
+        "An engineer who helped build the original wards left instructions for shutting it all down - if anyone can find them.",
+        "{threat} has agents already on this floor trying to accelerate the breach rather than stop it."
+      ]
+    },
+    "cult": {
+      "domainNouns": ["Sanctums", "Chancels", "Reliquaries", "Undercrofts", "Vigil Halls"],
+      "adjectives": ["Whispering", "Veiled", "Anointed", "Fervent", "Unseen"],
+      "threats": ["the Veiled Choir", "a splinter sect of the Hollow Star", "the Anointed Few", "a self-declared prophet"],
+      "lightColor": "#c98cff",
+      "torchColor": "#ff5d8f",
+      "darknessLevel": 0.7,
+      "arcTemplates": [
+        "{threat} has been using this floor's {domain} for a ritual that requires exactly one more willing - or unwilling - participant.",
+        "{threat} believes something asleep beneath the {domain} is a god, and they intend to wake it whether or not that's true.",
+        "A schism inside {threat} has turned this floor into a battleground between two versions of the same faith."
+      ],
+      "subStoryTemplates": [
+        "A captured initiate wants to defect and can name every trap between here and the inner sanctum - for a price.",
+        "Ritual components are being smuggled in from the surface, and cutting off the supply would stall the whole plan.",
+        "One of {threat}'s own has started having doubts and is leaving evidence behind, half hoping to be stopped.",
+        "A relic central to the ritual has already been stolen by someone with their own agenda, and neither side has noticed yet."
+      ]
+    },
+    "feral": {
+      "domainNouns": ["Warrens", "Thickets", "Hollows", "Roosts", "Dens"],
+      "adjectives": ["Overgrown", "Feral", "Territorial", "Nesting", "Untamed"],
+      "threats": ["a matriarch beast", "a feral pack-mind", "the Bramble Court", "something that was never meant to breed this fast"],
+      "lightColor": "#8fdb6a",
+      "torchColor": "#e0c168",
+      "darknessLevel": 0.55,
+      "arcTemplates": [
+        "{threat} has claimed the {domain} below as territory, and it's been expanding its range every season since.",
+        "Something in the {domain} triggered a breeding surge, and {threat} now controls far more ground than any survey accounts for.",
+        "{threat} isn't hostile by nature - it's defending a nest, and anyone who reaches it uninvited won't get a warning."
+      ],
+      "subStoryTemplates": [
+        "A trapper who knows the den layout will trade that knowledge for help freeing a snared partner.",
+        "Something is picking off {threat}'s own brood one at a time, and it isn't the party.",
+        "A previous expedition's survivor has been living off the land down here long enough to have gone a little feral themselves.",
+        "The nest's growth is undermining a structural support that could collapse a much larger section of the floor."
+      ]
+    },
+    "abyssal": {
+      "domainNouns": ["Depths", "Rifts", "Maws", "Undercrofts", "Black Halls"],
+      "adjectives": ["Lightless", "Hungering", "Warping", "Silent", "Bottomless"],
+      "threats": ["something that predates the floor itself", "a bound outsider", "the Choir Below", "a presence with no true name"],
+      "lightColor": "#3d3d7a",
+      "torchColor": "#7a1f4d",
+      "darknessLevel": 0.9,
+      "arcTemplates": [
+        "{threat} was sealed in the {domain} long before this floor was ever mapped, and the seal was never meant to last this long.",
+        "{threat} doesn't want anything from the party - it wants them to stop looking, and it's willing to rearrange the floor to make that happen.",
+        "Something about the {domain} below makes maps stop matching the territory, and {threat} is the reason why."
+      ],
+      "subStoryTemplates": [
+        "A previous survey team's final log entries describe something that shouldn't be believed - and shouldn't be ignored either.",
+        "A sealed door has no lock, no hinges, and no explanation, and something on the other side has started answering knocks.",
+        "One party member's dreams have started including rooms that don't exist yet on this floor's map - until they do.",
+        "{threat} has been testing the wards a little more each night, and tonight is the first time one of them didn't hold."
+      ]
+    }
+  },
+  "roomRoleTemplates": {
+    "entrance": [
+      "The way down opens into a {adj} chamber, the air already carrying a trace of what waits deeper in the {domain}.",
+      "This landing marks the last point where retreat is still simple - past here, the {domain} close in."
+    ],
+    "corridor-junction": [
+      "Passages fork here into the {adj} heart of the {domain}, worn smooth by traffic that wasn't always living.",
+      "A junction of old routes, {adj} enough that it's clearly seen more use than the maps suggest."
+    ],
+    "treasure-vault": [
+      "A {adj} strongroom, its contents undisturbed long enough to have accumulated a history of their own.",
+      "Whatever was worth sealing away in this {adj} vault, someone judged it worth more than easy access."
+    ],
+    "secret-vault": [
+      "Hidden behind a wall no casual search would find, this {adj} chamber was never meant to be entered twice.",
+      "A concealed vault, {adj} and undisturbed - whoever built it wanted it forgotten, not just locked."
+    ],
+    "boss-arena": [
+      "The {domain} open into a {adj} hall built - or reshaped - around whatever now claims it as its own.",
+      "This is clearly the heart of the floor: {adj}, deliberately spacious, and unmistakably occupied."
+    ],
+    "hazard-chamber": [
+      "A {adj} room whose original purpose has been overtaken by something considerably less safe to stand near.",
+      "The floor and walls here bear the marks of a hazard that's still active, {adj} as it's become with age."
+    ],
+    "rest-area": [
+      "A {adj} alcove, quiet enough that it's clearly been used as a waypoint by more than one previous expedition.",
+      "This small chamber is {adj} but defensible - a rare pocket of calm in the {domain}."
+    ],
+    "chamber": [
+      "A {adj} room, unremarkable at a glance but part of the {domain}'s larger pattern all the same.",
+      "Another {adj} chamber in the {domain}, its purpose only clear in context with what's around it."
+    ]
+  },
+  "hazardTemplates": [
+    { "text": "A pressure plate near the threshold triggers a hidden mechanism unless disarmed (DC {dc} to notice, DC {dc} to disarm).", "dcBase": 12 },
+    { "text": "The floor here is unstable and gives way under careless weight (DC {dc} to notice before stepping wrong).", "dcBase": 13 },
+    { "text": "A ward etched into the doorway reacts to anyone who isn't already marked as an ally (DC {dc} to detect and counter).", "dcBase": 14 },
+    { "text": "A residual effect lingers in the air, growing worse the longer anyone stays without taking precautions (DC {dc} to resist each round).", "dcBase": 11 }
+  ],
+  "encounterTemplates": [
+    "Roll a random encounter check when the party lingers here more than a few minutes - something has noticed them.",
+    "A patrol or wandering hazard tied to the floor's threat passes through this area on a rotation; a failed Perception check meets it head-on.",
+    "This room refills with a new threat if left and returned to later, on the same table used for the floor's other random encounters."
+  ]
+}

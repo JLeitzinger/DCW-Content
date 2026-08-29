@@ -1,0 +1,22 @@
+{
+  "_id": "a5tpGCKDlPDbg4KJ",
+  "name": "Random Encounters",
+  "type": "JournalEntry",
+  "description": "",
+  "folder": "063RNZmDSUWt3EeS",
+  "sorting": "a",
+  "sort": 2,
+  "color": "#6a5acd",
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

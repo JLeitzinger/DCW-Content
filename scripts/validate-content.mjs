@@ -13,6 +13,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { resolveComplexityTier, getTierConfig } from './lib/level-gen/StoryGenerator.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const srcPacksDir = path.join(__dirname, '../src/packs');
@@ -329,6 +330,110 @@ function validateSpells() {
   }
 }
 
+// Unlike Item content (where grantedSkills/grantedFeatures reference by name), Scene/
+// JournalEntry/Folder docs are only ever referenced by _id - names legitimately repeat across
+// floors (every floor gets its own "Secrets" folder, "The Story So Far" entry, etc), so only
+// _id needs to be unique, not name (checkNoDuplicates enforces both - too strict here).
+function checkNoDuplicateIds(type, entries) {
+  const byId = new Map();
+  for (const { file, data } of entries) {
+    if (byId.has(data._id)) {
+      error(type, file, `duplicate _id "${data._id}" also used by ${byId.get(data._id)}`);
+    } else {
+      byId.set(data._id, file);
+    }
+  }
+}
+
+function validateFloors() {
+  const sceneEntries = loadEntries('scenes');
+  const journalEntries = loadEntries('journals');
+  const folderEntries = loadEntries('journal-folders');
+  checkNoDuplicateIds('scenes', sceneEntries);
+  checkNoDuplicateIds('journals', journalEntries);
+  checkNoDuplicateIds('journal-folders', folderEntries);
+
+  const journalIds = new Set(journalEntries.map(({ data }) => data._id));
+  const folderIds = new Set(folderEntries.map(({ data }) => data._id));
+  const sceneById = new Map(sceneEntries.map(({ data }) => [data._id, data]));
+
+  for (const { file, data } of sceneEntries) {
+    if (!data.grid || !(data.grid.size > 0)) {
+      error('scenes', file, `grid.size must be a positive number, found ${JSON.stringify(data.grid?.size)}`);
+    }
+    for (const wall of data.walls || []) {
+      if (!Array.isArray(wall.c) || wall.c.length !== 4 || wall.c.some(n => typeof n !== 'number')) {
+        error('scenes', file, `wall has an invalid c coordinate array: ${JSON.stringify(wall.c)}`);
+      }
+    }
+    for (const note of data.notes || []) {
+      if (note.entryId && !journalIds.has(note.entryId)) {
+        error('scenes', file, `note ${note._id} references unknown journal entry "${note.entryId}"`);
+      }
+    }
+    for (const region of data.regions || []) {
+      for (const behavior of region.behaviors || []) {
+        if (behavior.type !== 'teleportToken') continue;
+        for (const uuid of behavior.system?.destinations || []) {
+          const match = uuid.match(/^Scene\.([^.]+)\.Region\.([^.]+)$/);
+          if (!match) {
+            error('scenes', file, `region behavior ${behavior._id} has a malformed destination UUID "${uuid}"`);
+            continue;
+          }
+          const [, destSceneId, destRegionId] = match;
+          const destScene = sceneById.get(destSceneId);
+          if (!destScene) {
+            error('scenes', file, `region behavior ${behavior._id} destination scene "${destSceneId}" does not exist`);
+          } else if (!(destScene.regions || []).some(r => r._id === destRegionId)) {
+            error('scenes', file, `region behavior ${behavior._id} destination region "${destRegionId}" does not exist in scene "${destSceneId}"`);
+          }
+        }
+      }
+    }
+  }
+
+  for (const { file, data } of journalEntries) {
+    if (data.folder && !folderIds.has(data.folder)) {
+      error('journals', file, `folder "${data.folder}" does not exist`);
+    }
+    if (!Array.isArray(data.pages) || data.pages.length === 0) {
+      error('journals', file, `must have at least one page`);
+    }
+  }
+
+  // Design-budget cross-check against data/floors-manifest.json's declared complexity tier.
+  // Every id is a real random Foundry id now (see ids.mjs), not a constructed slug, so floors
+  // are matched by name instead: Scene.name and the floor's root Folder.name both equal the
+  // manifest entry's `name` (buildTheme only auto-generates a name when one isn't given).
+  const manifestPath = path.join(dataDir, 'floors-manifest.json');
+  if (!fs.existsSync(manifestPath)) return;
+  const floorsManifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+  for (const floorEntry of floorsManifest.floors || []) {
+    const label = floorEntry.name || floorEntry.seed;
+    if (!floorEntry.name) continue; // no fixed name to match against - nothing to cross-check
+    const primaryEntry = sceneEntries.find(({ data }) => data.name === floorEntry.name);
+    if (!primaryEntry) {
+      warn('scenes', `(${label})`, `no primary scene found for manifest entry "${label}" - run npm run generate:floors`);
+      continue;
+    }
+    const primary = primaryEntry.data;
+    const tier = resolveComplexityTier(floorEntry);
+    const tierConfig = getTierConfig(tier);
+    const roomCount = (primary.notes || []).length;
+    if (roomCount < tierConfig.roomCountMin || roomCount > tierConfig.roomCountMax) {
+      warn('scenes', primaryEntry.file, `${roomCount} rooms is outside tier ${tier}'s documented ${tierConfig.roomCountMin}-${tierConfig.roomCountMax} range`);
+    }
+
+    const rootFolder = folderEntries.find(({ data }) => data.name === floorEntry.name && data.folder === null);
+    const mainPlotFolder = rootFolder && folderEntries.find(({ data }) => data.name === 'Main Plot' && data.folder === rootFolder.data._id);
+    const storyEntry = mainPlotFolder && journalEntries.find(({ data }) => data.name === 'The Story So Far' && data.folder === mainPlotFolder.data._id);
+    const subStoryPages = storyEntry ? storyEntry.data.pages.filter(p => p.name.startsWith('Sub-story')).length : 0;
+    if (subStoryPages < 2 || subStoryPages > 4) {
+      warn('journals', storyEntry ? storyEntry.file : `(${label})`, `${subStoryPages} sub-storylines, documented range is 2-4`);
+    }
+  }
+}
+
 // ---- Run ----
 
 const validators = {
@@ -338,7 +443,8 @@ const validators = {
   armor: validateArmor,
   weapons: validateWeapons,
   features: validateFeatures,
-  spells: validateSpells
+  spells: validateSpells,
+  floors: validateFloors
 };
 
 console.log('Validating content...\n');

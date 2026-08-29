@@ -1,0 +1,44 @@
+{
+  "_id": "NC7APLqkanfM5SAv",
+  "name": "Corridor Junction (Room 15)",
+  "pages": [
+    {
+      "_id": "dSqqey9uX4OYtv8F",
+      "name": "Corridor Junction (Room 15)",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>A junction of old routes, Silent enough that it's clearly seen more use than the maps suggest.</p><section class=\"secret\"><h3>GM Notes</h3><p><strong>Clue:</strong> A clue toward the floor's deeper story: the Bone Choir has been rebuilding an army out of everyone who's ever died on this floor - including, eventually, the party.</p><p><strong>Hazard:</strong> A ward etched into the doorway reacts to anyone who isn't already marked as an ally (DC 18 to detect and counter).</p><p><strong>Encounter:</strong> Roll a random encounter check when the party lingers here more than a few minutes - something has noticed them.</p></section>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": "OPJF4HoZEl1geHKF",
+  "categories": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

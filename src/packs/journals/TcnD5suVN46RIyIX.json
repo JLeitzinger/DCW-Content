@@ -1,0 +1,144 @@
+{
+  "_id": "TcnD5suVN46RIyIX",
+  "name": "The Story So Far",
+  "pages": [
+    {
+      "_id": "EBHdGxqqi7NHrH8C",
+      "name": "Floor Overview",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><strong>Corrupted Alchemical Vaults</strong></p><p>A formula for a rogue homunculus conclave to end all suffering - or all resistance - was hidden in the Cisterns below, and someone just found the first ingredient.</p>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "xKsigagevRlLBXyh",
+      "name": "Milestone 1",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>A sign of the floor's deeper story: a rogue homunculus conclave has been using this floor to distill something out of captives who never leave.</p><p><em>Tied to: Entrance (Room 15)</em></p>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 1,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "00saq69ju6539Kvw",
+      "name": "Milestone 2",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>A sign of the floor's deeper story: a rogue homunculus conclave sealed something down here that was never meant to finish brewing, and the seals are failing.</p><p><em>Tied to: Corridor Junction (Room 20)</em></p>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 2,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "ZdSM13TbU9w9uBFi",
+      "name": "Milestone 3",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>This is where the floor's story comes to a head: A formula for a rogue homunculus conclave to end all suffering - or all resistance - was hidden in the Cisterns below, and someone just found the first ingredient.</p><p><em>Tied to: Boss Arena (Room 10)</em></p>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 3,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "cGICL3dZFtGihIW9",
+      "name": "Sub-story 1",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>The floor's water supply has been dosed with a reagent that's slowly changing everything that drinks it.</p>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 4,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "2il5mmT019bbjvzr",
+      "name": "Sub-story 2",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>A half-transmuted survivor is trapped between forms in a side chamber, begging for the process to be reversed or finished.</p>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 5,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": "ahNCrkXm1nWWrGbN",
+  "categories": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}
