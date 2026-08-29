@@ -2,7 +2,7 @@
   "_id": "uncommon-chainmail",
   "name": "Chainmail",
   "type": "armor",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/equipment/chest/breastplate-banded-steel.webp",
   "system": {
     "description": "Interlocking steel rings, heavy but dependable against a glancing blow.",
     "quantity": 1,

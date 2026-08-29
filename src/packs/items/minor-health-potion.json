@@ -2,7 +2,7 @@
   "_id": "minor-health-potion",
   "name": "Minor Health Potion",
   "type": "item",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/consumables/potions/bottle-round-corked-red.webp",
   "system": {
     "description": "A small vial of watered-down healing draught. Restores a modest amount of HP with no lingering effect.",
     "quantity": 1,

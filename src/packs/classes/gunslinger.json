@@ -2,7 +2,7 @@
   "_id": "gunslinger",
   "name": "Gunslinger",
   "type": "class",
-  "img": "icons/svg/pistol.svg",
+  "img": "icons/svg/target.svg",
   "system": {
     "description": "A master of firearms who can pull off impossible shots with preternatural accuracy. Gunslingers are deadly at range, combining quick reflexes with steady nerves and uncanny marksmanship.",
     "baseHP": 10,

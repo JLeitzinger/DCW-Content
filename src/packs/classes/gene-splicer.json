@@ -2,7 +2,7 @@
   "_id": "gene-splicer",
   "name": "Gene Splicer",
   "type": "class",
-  "img": "icons/svg/dna.svg",
+  "img": "icons/svg/biohazard.svg",
   "system": {
     "description": "A bio-engineer who manipulates genetics and biology at the molecular level. Gene Splicers can grant mutations, enhance physical abilities, and reshape living tissue with terrifying precision.",
     "baseHP": 10,

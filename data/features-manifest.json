@@ -33,7 +33,7 @@
     {
       "id": "Bio-Regeneration",
       "name": "Bio-Regeneration",
-      "img": "icons/svg/regenerate.svg",
+      "img": "icons/svg/regen.svg",
       "description": "Your modified biology allows rapid cellular regeneration. At the start of your turn, if you have at least 1 hit point, you regain hit points equal to your Constitution modifier (minimum 1). You can spend 3 stamina to double this regeneration for 1 minute.",
       "grantedSkills": []
     },
@@ -66,35 +66,35 @@
     {
       "id": "Cunning-Action",
       "name": "Cunning Action",
-      "img": "icons/svg/running.svg",
+      "img": "icons/svg/walk.svg",
       "description": "Your quick thinking and agility allow you to move and act quickly. Dash, Disengage, and Hide actions cost 1 less stamina (minimum 0).",
       "grantedSkills": []
     },
     {
       "id": "Cybernetic-Resilience",
       "name": "Cybernetic Resilience",
-      "img": "icons/svg/robot.svg",
+      "img": "icons/svg/shield.svg",
       "description": "Your body is partially mechanical, making you resistant to biological threats. You have advantage on saving throws against disease, poison, and necrotic damage. Additionally, you can function without sleep and can survive in hostile environments (vacuum, extreme temperatures) for extended periods.",
       "grantedSkills": []
     },
     {
       "id": "Divine-Smite",
       "name": "Divine Smite",
-      "img": "icons/svg/sword-cross.svg",
+      "img": "icons/svg/sword.svg",
       "description": "When you hit a creature with a melee weapon attack, you can expend mana to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for 2 mana, plus 1d8 for each additional mana spent, to a maximum of 5d8.",
       "grantedSkills": []
     },
     {
       "id": "Divine-Spellcasting",
       "name": "Divine Spellcasting",
-      "img": "icons/svg/holy-symbol.svg",
+      "img": "icons/svg/holy-shield.svg",
       "description": "You can cast divine spells through your faith and devotion. Wisdom is your spellcasting ability for your cleric spells. You prepare spells through prayer and meditation.",
       "grantedSkills": []
     },
     {
       "id": "Dream-Walking",
       "name": "Dream Walking",
-      "img": "icons/svg/sleeping.svg",
+      "img": "icons/svg/sleep.svg",
       "description": "You can enter and manipulate the dreams of sleeping creatures. By meditating for 1 minute while within 100 feet of a sleeping creature, you can enter their dreamscape. There, you can extract information, plant suggestions, or create nightmares that deal psychic damage when they wake.",
       "grantedSkills": []
     },
@@ -122,35 +122,35 @@
     {
       "id": "Font-Of-Magic",
       "name": "Font of Magic",
-      "img": "icons/svg/crystal-ball.svg",
+      "img": "icons/svg/aura.svg",
       "description": "You tap into a deep wellspring of magic within yourself. You have a number of sorcery points equal to your sorcerer level. You can use sorcery points to create spell slots or convert spell slots into sorcery points. You regain all spent sorcery points when you finish a long rest.",
       "grantedSkills": []
     },
     {
       "id": "Genetic-Modification",
       "name": "Genetic Modification",
-      "img": "icons/svg/dna.svg",
+      "img": "icons/svg/biohazard.svg",
       "description": "You can alter biological structures at the genetic level. By spending 10 minutes and 5 stamina, you can grant yourself or an ally one mutation: claws (+1d6 damage), enhanced senses (darkvision 60ft), carapace (+2 AC), or gills (water breathing). The mutation lasts 8 hours.",
       "grantedSkills": []
     },
     {
       "id": "ICE-Breaker",
       "name": "ICE Breaker",
-      "img": "icons/svg/hacking.svg",
+      "img": "icons/svg/padlock.svg",
       "description": "You can create powerful hacking programs that shatter digital defenses. When hacking, you can spend 2 stamina to automatically succeed on one security bypass. You can also launch ICE attacks that deal psychic damage to targets connected to the same network.",
       "grantedSkills": []
     },
     {
       "id": "Illusory-Reality",
       "name": "Illusory Reality",
-      "img": "icons/svg/mirror.svg",
+      "img": "icons/svg/invisible.svg",
       "description": "Your illusions are so convincing they become partially real. When you cast an illusion spell or create an illusion, you can spend 3 mana to make one object from the illusion real for up to 1 minute. The object can't deal damage or directly harm creatures, but otherwise functions as a real object.",
       "grantedSkills": []
     },
     {
       "id": "Jack-In",
       "name": "Jack In",
-      "img": "icons/svg/cyber-eye.svg",
+      "img": "icons/svg/eye.svg",
       "description": "You can interface directly with digital systems and networks. By touching any electronic device, you can access its data, bypass security, or take control. Make an Intelligence check contested by the system's security rating.",
       "grantedSkills": []
     },
@@ -185,14 +185,14 @@
     {
       "id": "Lightning-Reflexes",
       "name": "Lightning Reflexes",
-      "img": "icons/svg/zap.svg",
+      "img": "icons/svg/lightning.svg",
       "description": "Electricity courses through your body, enhancing your speed. Your base movement speed increases by 10 feet. When you move at least 20 feet in a straight line, you can make a melee attack that deals an additional 1d8 lightning damage. You also have resistance to lightning damage.",
       "grantedSkills": []
     },
     {
       "id": "Martial-Arts",
       "name": "Martial Arts",
-      "img": "icons/svg/fist.svg",
+      "img": "icons/svg/thrust.svg",
       "description": "Your practice of martial arts gives you mastery of combat styles that use unarmed strikes. You gain the following benefits while unarmed or wielding only monk weapons: You can use Dexterity instead of Strength for attack and damage rolls, your unarmed strikes deal 1d6 damage, and when you make an attack you can make an additional unarmed strike for 1 stamina.",
       "grantedSkills": []
     },
@@ -220,21 +220,21 @@
     {
       "id": "Necromech-Conversion",
       "name": "Necromech Conversion",
-      "img": "icons/svg/cyber-skull.svg",
+      "img": "icons/svg/skull.svg",
       "description": "You can convert corpses into cybernetic undead servants. Spend 10 minutes and 5 mana to raise a corpse as a necromech minion with implanted weapons and armor plating. It obeys your mental commands and lasts until destroyed or you dismiss it. You can control up to your Intelligence modifier in necromechs.",
       "grantedSkills": []
     },
     {
       "id": "Psionic-Strike",
       "name": "Psionic Strike",
-      "img": "icons/svg/mind-blast.svg",
+      "img": "icons/svg/terror.svg",
       "description": "You can infuse your weapons with psychic energy. When you hit with a melee attack, you can spend 2 mana to deal an additional 2d8 psychic damage. The target must also succeed on an Intelligence save or be stunned until the end of your next turn.",
       "grantedSkills": []
     },
     {
       "id": "Quick-Draw",
       "name": "Quick Draw",
-      "img": "icons/svg/pistol.svg",
+      "img": "icons/svg/target.svg",
       "description": "Your reflexes are lightning-fast with firearms. You can draw and fire a ranged weapon seamlessly. Additionally, when rolling initiative you may immediately make one free attack before normal turn order begins, and you have advantage on attack rolls against creatures that haven't acted yet in combat.",
       "grantedSkills": []
     },
@@ -248,7 +248,7 @@
     {
       "id": "Reality-Warp",
       "name": "Reality Warp",
-      "img": "icons/svg/vortex.svg",
+      "img": "icons/svg/portal.svg",
       "description": "You can bend the laws of reality in a small area. By spending 4 mana, you can choose one: create difficult terrain, reverse gravity, or cause objects to phase through walls. The effect lasts for 1 minute in a 20-foot radius.",
       "grantedSkills": []
     },
@@ -262,14 +262,14 @@
     {
       "id": "Rune-Inscription",
       "name": "Rune Inscription",
-      "img": "icons/svg/runes.svg",
+      "img": "icons/svg/obelisk.svg",
       "description": "You can inscribe magical runes onto objects and surfaces. Spend 1 minute and 3 mana to inscribe a rune with one effect: protection (+1 AC), sharpness (+1d6 damage), warding (detect creatures), or explosive (2d10 damage when triggered). You can maintain a number of active runes equal to your Intelligence modifier.",
       "grantedSkills": []
     },
     {
       "id": "Runic-Empowerment",
       "name": "Runic Empowerment",
-      "img": "icons/svg/magical-rune.svg",
+      "img": "icons/svg/upgrade.svg",
       "description": "You can empower yourself with temporary runic tattoos. During a short rest, inscribe up to 3 runes on your body. Each rune grants a benefit: Strength rune (+2 Strength), Speed rune (+15ft movement), Resilience rune (resistance to one damage type). Runes last until your next long rest.",
       "grantedSkills": []
     },
@@ -297,7 +297,7 @@
     {
       "id": "Sneak-Attack",
       "name": "Sneak Attack",
-      "img": "icons/svg/dagger.svg",
+      "img": "icons/svg/cowled.svg",
       "description": "You know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The damage increases as you gain rogue levels.",
       "grantedSkills": []
     },
@@ -332,7 +332,7 @@
     {
       "id": "Storm-Surge",
       "name": "Storm Surge",
-      "img": "icons/svg/lightning-storm.svg",
+      "img": "icons/svg/lightning.svg",
       "description": "You can summon devastating storms. Spend 4 mana to create a storm in a 30-foot radius for 1 minute. You can command the storm to strike targets with lightning (3d10 damage), create strong winds (difficult terrain), or summon rain that extinguishes fires and obscures vision.",
       "grantedSkills": []
     },
@@ -346,7 +346,7 @@
     {
       "id": "Telekinetic-Shield",
       "name": "Telekinetic Shield",
-      "img": "icons/svg/force-field.svg",
+      "img": "icons/svg/shield.svg",
       "description": "You maintain a shield of mental force around yourself. As a reaction when you are hit by an attack, you can spend 1 mana to add your Intelligence modifier to your AC. You can also use this to push attackers back 10 feet or deflect projectiles.",
       "grantedSkills": []
     },
@@ -360,7 +360,7 @@
     {
       "id": "Time-Dilation",
       "name": "Time Dilation",
-      "img": "icons/svg/hourglass.svg",
+      "img": "icons/svg/clockwork.svg",
       "description": "You perceive time differently than others. You can spend 3 mana to gain advantage on initiative rolls and +10 to your movement speed for 1 minute. At higher levels, you can slow enemies caught in a 15-foot radius.",
       "grantedSkills": []
     },
@@ -374,14 +374,14 @@
     {
       "id": "Trick-Shot",
       "name": "Trick Shot",
-      "img": "icons/svg/target-shot.svg",
+      "img": "icons/svg/target.svg",
       "description": "You can pull off impossible shots with firearms. By spending 2 stamina, you can: ricochet a shot around corners, disarm a target, shoot objects out of the air, or shoot through cover without penalty. These shots ignore half and three-quarters cover.",
       "grantedSkills": []
     },
     {
       "id": "Void-Gaze",
       "name": "Void Gaze",
-      "img": "icons/svg/evil-eye.svg",
+      "img": "icons/svg/eye.svg",
       "description": "Your eyes have seen beyond reality. You can peer into the void to see invisible creatures, detect lies, and sense magic. Creatures that meet your gaze must succeed on a Wisdom save or become frightened for 1 minute. You have advantage on saves against illusions and charm effects.",
       "grantedSkills": []
     }

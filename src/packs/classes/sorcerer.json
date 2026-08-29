@@ -2,7 +2,7 @@
   "_id": "sorcerer",
   "name": "Sorcerer",
   "type": "class",
-  "img": "icons/svg/fire-bolt.svg",
+  "img": "icons/svg/fire.svg",
   "system": {
     "description": "A spellcaster who draws on inherent magic from a gift or bloodline. Sorcerers wield raw, chaotic magical power with innate talent rather than study.",
     "baseHP": 8,

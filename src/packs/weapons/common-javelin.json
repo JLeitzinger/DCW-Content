@@ -2,7 +2,7 @@
   "_id": "common-javelin",
   "name": "Javelin",
   "type": "weapon",
-  "img": "icons/weapons/thrown/javelin-worn.webp",
+  "img": "icons/weapons/polearms/javelin-simple.webp",
   "system": {
     "description": "A light throwing spear. Designed primarily for ranged combat but can be used in melee.",
     "quantity": 1,

@@ -2,7 +2,7 @@
   "_id": "psi-knight",
   "name": "Psi-Knight",
   "type": "class",
-  "img": "icons/svg/mind-blast.svg",
+  "img": "icons/svg/aura.svg",
   "system": {
     "description": "A psychic warrior who combines mental powers with martial prowess. Psi-Knights use telekinesis, telepathy, and psionic energy to enhance their combat abilities and devastate enemies with mind over matter.",
     "baseHP": 11,

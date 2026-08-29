@@ -244,7 +244,7 @@
     },
     {
       "name": "Dreamweaver",
-      "img": "icons/svg/sleeping.svg",
+      "img": "icons/svg/sleep.svg",
       "description": "A master of dreams, illusions, and the subconscious mind. Dreamweavers can enter dreamscapes, create convincing illusions that border on reality, and manipulate the sleeping and waking mind alike.",
       "baseHP": 8,
       "hpPerLevel": 2,
@@ -370,7 +370,7 @@
     },
     {
       "name": "Gene Splicer",
-      "img": "icons/svg/dna.svg",
+      "img": "icons/svg/biohazard.svg",
       "description": "A bio-engineer who manipulates genetics and biology at the molecular level. Gene Splicers can grant mutations, enhance physical abilities, and reshape living tissue with terrifying precision.",
       "baseHP": 10,
       "hpPerLevel": 3,
@@ -429,7 +429,7 @@
     },
     {
       "name": "Gunslinger",
-      "img": "icons/svg/pistol.svg",
+      "img": "icons/svg/target.svg",
       "description": "A master of firearms who can pull off impossible shots with preternatural accuracy. Gunslingers are deadly at range, combining quick reflexes with steady nerves and uncanny marksmanship.",
       "baseHP": 10,
       "hpPerLevel": 3,
@@ -488,7 +488,7 @@
     },
     {
       "name": "Monk",
-      "img": "icons/svg/fist.svg",
+      "img": "icons/svg/thrust.svg",
       "description": "A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection. Monks are deadly unarmed combatants.",
       "baseHP": 10,
       "hpPerLevel": 3,
@@ -547,7 +547,7 @@
     },
     {
       "name": "Necrotech",
-      "img": "icons/svg/cyber-skull.svg",
+      "img": "icons/svg/skull.svg",
       "description": "A fusion of necromancy and technology, creating undead enhanced with cybernetic implants. Necrotechs blur the line between life and death, machine and flesh, commanding armies of cybernetic zombies.",
       "baseHP": 10,
       "hpPerLevel": 3,
@@ -606,7 +606,7 @@
     },
     {
       "name": "Netrunner",
-      "img": "icons/svg/cyber-eye.svg",
+      "img": "icons/svg/eye.svg",
       "description": "A cyberpunk hacker who infiltrates digital networks, breaks ICE defenses, and wages war in cyberspace. Netrunners can jack into any system and bend it to their will.",
       "baseHP": 8,
       "hpPerLevel": 2,
@@ -732,7 +732,7 @@
     },
     {
       "name": "Psi-Knight",
-      "img": "icons/svg/mind-blast.svg",
+      "img": "icons/svg/aura.svg",
       "description": "A psychic warrior who combines mental powers with martial prowess. Psi-Knights use telekinesis, telepathy, and psionic energy to enhance their combat abilities and devastate enemies with mind over matter.",
       "baseHP": 11,
       "hpPerLevel": 3,
@@ -791,7 +791,7 @@
     },
     {
       "name": "Ranger",
-      "img": "icons/svg/forest.svg",
+      "img": "icons/svg/walk.svg",
       "description": "A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization. Rangers are skilled hunters and trackers.",
       "baseHP": 10,
       "hpPerLevel": 3,
@@ -913,7 +913,7 @@
     },
     {
       "name": "Runesmith",
-      "img": "icons/svg/runes.svg",
+      "img": "icons/svg/obelisk.svg",
       "description": "An inscriber of magical runes who channels power through ancient symbols. Runesmiths etch mystical glyphs onto objects, surfaces, and even their own bodies to create powerful enchantments and devastating effects.",
       "baseHP": 9,
       "hpPerLevel": 3,
@@ -972,7 +972,7 @@
     },
     {
       "name": "Sorcerer",
-      "img": "icons/svg/fire-bolt.svg",
+      "img": "icons/svg/fire.svg",
       "description": "A spellcaster who draws on inherent magic from a gift or bloodline. Sorcerers wield raw, chaotic magical power with innate talent rather than study.",
       "baseHP": 8,
       "hpPerLevel": 2,
@@ -1031,7 +1031,7 @@
     },
     {
       "name": "Stormcaller",
-      "img": "icons/svg/lightning-storm.svg",
+      "img": "icons/svg/lightning.svg",
       "description": "A conduit for elemental fury who commands wind, rain, and lightning. Stormcallers are living tempests, channeling the raw power of nature's most devastating weather phenomena.",
       "baseHP": 10,
       "hpPerLevel": 3,
@@ -1090,7 +1090,7 @@
     },
     {
       "name": "Void Touched",
-      "img": "icons/svg/evil-eye.svg",
+      "img": "icons/svg/portal.svg",
       "description": "One who has gazed into the void beyond reality and returned changed. Void Touched wield eldritch powers that warp space, bend minds, and tear at the fabric of existence itself.",
       "baseHP": 9,
       "hpPerLevel": 3,
@@ -1149,7 +1149,7 @@
     },
     {
       "name": "Wizard",
-      "img": "icons/svg/mage.svg",
+      "img": "icons/svg/mage-shield.svg",
       "description": "A scholarly magic-user capable of manipulating the structures of reality through arcane study and practice. Wizards are masters of spellcasting.",
       "baseHP": 8,
       "hpPerLevel": 2,

@@ -2,7 +2,7 @@
   "_id": "common-rapier",
   "name": "Rapier",
   "type": "weapon",
-  "img": "icons/weapons/swords/rapier-jeweled.webp",
+  "img": "icons/weapons/swords/sword-simple-white.webp",
   "system": {
     "description": "An elegant blade designed for precise thrusting attacks. Favored by duelists and nobles.",
     "quantity": 1,

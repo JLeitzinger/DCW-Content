@@ -4,7 +4,7 @@
   "races": [
     {
       "name": "Dragonborn",
-      "img": "icons/svg/dragon.svg",
+      "img": "icons/svg/wing.svg",
       "description": "Dragonborn are proud and noble draconic humanoids, born with the blood of ancient dragons flowing through their veins. They combine the strength and majesty of dragons with humanoid versatility.\n\nTraits: Draconic Ancestry: You have draconic ancestry which determines your breath weapon and damage resistance. Breath Weapon: You can exhale destructive energy once per short rest. Damage Resistance: You have resistance to the damage type associated with your draconic ancestry.",
       "abilityBonuses": {
         "str": 2,
@@ -130,7 +130,7 @@
     },
     {
       "name": "Halfling",
-      "img": "icons/svg/leaf.svg",
+      "img": "icons/svg/oak.svg",
       "description": "Halflings are a cheerful and practical folk, known for their resourcefulness and uncanny luck. Though small in stature, they possess remarkable courage and a knack for getting out of trouble.\n\nTraits: Lucky: When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll. Brave: You have advantage on saving throws against being frightened. Halfling Nimbleness: You can move through the space of any creature that is larger than you.",
       "abilityBonuses": {
         "str": 0,

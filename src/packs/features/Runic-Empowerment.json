@@ -2,7 +2,7 @@
   "_id": "Runic-Empowerment",
   "name": "Runic Empowerment",
   "type": "feature",
-  "img": "icons/svg/magical-rune.svg",
+  "img": "icons/svg/upgrade.svg",
   "system": {
     "description": "You can empower yourself with temporary runic tattoos. During a short rest, inscribe up to 3 runes on your body. Each rune grants a benefit: Strength rune (+2 Strength), Speed rune (+15ft movement), Resilience rune (resistance to one damage type). Runes last until your next long rest.",
     "grantedSkills": []

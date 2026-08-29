@@ -2,7 +2,7 @@
   "_id": "torch",
   "name": "Torch",
   "type": "item",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/lights/torch-brown.webp",
   "system": {
     "description": "A length of pitch-soaked wood, ready to be lit. No mechanical light rules yet - carry it for the flavor and the occasional Survival check by torchlight.",
     "quantity": 1,

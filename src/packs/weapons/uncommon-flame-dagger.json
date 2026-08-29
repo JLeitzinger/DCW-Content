@@ -2,7 +2,7 @@
   "_id": "uncommon-flame-dagger",
   "name": "Flame Dagger",
   "type": "weapon",
-  "img": "icons/weapons/daggers/dagger-straight-fire.webp",
+  "img": "icons/magic/fire/dagger-rune-enchant-flame-orange.webp",
   "system": {
     "description": "A slender blade wreathed in flickering flames. The heat never burns its wielder, but enemies feel its scorching bite.",
     "quantity": 1,

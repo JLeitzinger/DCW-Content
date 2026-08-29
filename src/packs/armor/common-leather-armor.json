@@ -2,7 +2,7 @@
   "_id": "common-leather-armor",
   "name": "Leather Armor",
   "type": "armor",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/equipment/chest/vest-leather-brown.webp",
   "system": {
     "description": "Simple, flexible protection stitched from boiled leather. Light enough to duck and weave in.",
     "quantity": 1,

@@ -2,7 +2,7 @@
   "_id": "necrotech",
   "name": "Necrotech",
   "type": "class",
-  "img": "icons/svg/cyber-skull.svg",
+  "img": "icons/svg/skull.svg",
   "system": {
     "description": "A fusion of necromancy and technology, creating undead enhanced with cybernetic implants. Necrotechs blur the line between life and death, machine and flesh, commanding armies of cybernetic zombies.",
     "baseHP": 10,

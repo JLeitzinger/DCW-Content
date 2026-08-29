@@ -11,8 +11,12 @@
       "effort": 1,
       "damageReduction": 1,
       "grantedSkills": [
-        {"skillName": "Dodge", "level": 1}
-      ]
+        {
+          "skillName": "Dodge",
+          "level": 1
+        }
+      ],
+      "img": "icons/equipment/chest/vest-leather-brown.webp"
     },
     {
       "name": "Chainmail",
@@ -23,8 +27,12 @@
       "effort": 2,
       "damageReduction": 3,
       "grantedSkills": [
-        {"skillName": "Block", "level": 2}
-      ]
+        {
+          "skillName": "Block",
+          "level": 2
+        }
+      ],
+      "img": "icons/equipment/chest/breastplate-banded-steel.webp"
     },
     {
       "name": "Plate Armor",
@@ -35,8 +43,12 @@
       "effort": 3,
       "damageReduction": 5,
       "grantedSkills": [
-        {"skillName": "Block", "level": 3}
-      ]
+        {
+          "skillName": "Block",
+          "level": 3
+        }
+      ],
+      "img": "icons/equipment/chest/suit-armored-chest-plated.webp"
     },
     {
       "name": "Wooden Buckler",
@@ -47,8 +59,12 @@
       "effort": 1,
       "damageReduction": 1,
       "grantedSkills": [
-        {"skillName": "Block", "level": 1}
-      ]
+        {
+          "skillName": "Block",
+          "level": 1
+        }
+      ],
+      "img": "icons/equipment/shield/buckler-wooden-boss.webp"
     },
     {
       "name": "Tower Shield",
@@ -59,8 +75,12 @@
       "effort": 5,
       "damageReduction": 6,
       "grantedSkills": [
-        {"skillName": "Block", "level": 3}
-      ]
+        {
+          "skillName": "Block",
+          "level": 3
+        }
+      ],
+      "img": "icons/equipment/shield/Scutum-steel-worn.webp"
     }
   ]
 }

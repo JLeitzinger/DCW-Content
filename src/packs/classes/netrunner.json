@@ -2,7 +2,7 @@
   "_id": "netrunner",
   "name": "Netrunner",
   "type": "class",
-  "img": "icons/svg/cyber-eye.svg",
+  "img": "icons/svg/eye.svg",
   "system": {
     "description": "A cyberpunk hacker who infiltrates digital networks, breaks ICE defenses, and wages war in cyberspace. Netrunners can jack into any system and bend it to their will.",
     "baseHP": 8,

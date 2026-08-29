@@ -2,7 +2,7 @@
   "_id": "ranger",
   "name": "Ranger",
   "type": "class",
-  "img": "icons/svg/forest.svg",
+  "img": "icons/svg/walk.svg",
   "system": {
     "description": "A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization. Rangers are skilled hunters and trackers.",
     "baseHP": 10,

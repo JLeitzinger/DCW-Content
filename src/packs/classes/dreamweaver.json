@@ -2,7 +2,7 @@
   "_id": "dreamweaver",
   "name": "Dreamweaver",
   "type": "class",
-  "img": "icons/svg/sleeping.svg",
+  "img": "icons/svg/sleep.svg",
   "system": {
     "description": "A master of dreams, illusions, and the subconscious mind. Dreamweavers can enter dreamscapes, create convincing illusions that border on reality, and manipulate the sleeping and waking mind alike.",
     "baseHP": 8,

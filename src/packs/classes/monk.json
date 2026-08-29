@@ -2,7 +2,7 @@
   "_id": "monk",
   "name": "Monk",
   "type": "class",
-  "img": "icons/svg/fist.svg",
+  "img": "icons/svg/thrust.svg",
   "system": {
     "description": "A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection. Monks are deadly unarmed combatants.",
     "baseHP": 10,

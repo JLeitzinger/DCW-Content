@@ -2,7 +2,7 @@
   "_id": "Quick-Draw",
   "name": "Quick Draw",
   "type": "feature",
-  "img": "icons/svg/pistol.svg",
+  "img": "icons/svg/target.svg",
   "system": {
     "description": "Your reflexes are lightning-fast with firearms. You can draw and fire a ranged weapon seamlessly. Additionally, when rolling initiative you may immediately make one free attack before normal turn order begins, and you have advantage on attack rolls against creatures that haven't acted yet in combat.",
     "grantedSkills": []

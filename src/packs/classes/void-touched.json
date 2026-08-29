@@ -2,7 +2,7 @@
   "_id": "void-touched",
   "name": "Void Touched",
   "type": "class",
-  "img": "icons/svg/evil-eye.svg",
+  "img": "icons/svg/portal.svg",
   "system": {
     "description": "One who has gazed into the void beyond reality and returned changed. Void Touched wield eldritch powers that warp space, bend minds, and tear at the fabric of existence itself.",
     "baseHP": 9,

@@ -2,7 +2,7 @@
   "_id": "mythic-the-sunblade",
   "name": "The Sunblade",
   "type": "weapon",
-  "img": "icons/weapons/swords/greatsword-gold-holy.webp",
+  "img": "icons/weapons/swords/sword-gold-holy.webp",
   "system": {
     "description": "A radiant greatsword forged in the heart of a dying star. Pure sunlight flows through its crystalline blade, and it shines like a beacon of hope in the darkest places. Undead creatures shrink from its radiance, and darkness itself seems to flee before its wielder. The weapon is said to have been a gift from the solar deities to their greatest champion.",
     "quantity": 1,

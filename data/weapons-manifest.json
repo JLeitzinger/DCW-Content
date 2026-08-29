@@ -4,7 +4,7 @@
   "weapons": [
     {
       "name": "Battleaxe",
-      "img": "icons/weapons/axes/axe-battle-broad.webp",
+      "img": "icons/weapons/axes/axe-battle.webp",
       "description": "A heavy axe with a broad, crescent-shaped blade. Favored by warriors who value raw power over finesse.",
       "quantity": 1,
       "weight": 4,
@@ -26,7 +26,7 @@
     },
     {
       "name": "Club",
-      "img": "icons/weapons/clubs/club-wooden.webp",
+      "img": "icons/weapons/clubs/club-simple-black.webp",
       "description": "A simple wooden club. Not sophisticated, but effective for crushing skulls.",
       "quantity": 1,
       "weight": 2,
@@ -48,7 +48,7 @@
     },
     {
       "name": "Crossbow",
-      "img": "icons/weapons/crossbows/crossbow-simple.webp",
+      "img": "icons/weapons/crossbows/crossbow-simple-brown.webp",
       "description": "A mechanical bow mounted on a stock. Easier to aim than a traditional bow but slower to reload.",
       "quantity": 1,
       "weight": 5,
@@ -70,7 +70,7 @@
     },
     {
       "name": "Dagger",
-      "img": "icons/weapons/daggers/dagger-straight-steel.webp",
+      "img": "icons/weapons/daggers/dagger-straight-blue.webp",
       "description": "A small blade, easily concealed. Can be thrown at nearby enemies.",
       "quantity": 1,
       "weight": 1,
@@ -180,7 +180,7 @@
     },
     {
       "name": "Javelin",
-      "img": "icons/weapons/thrown/javelin-worn.webp",
+      "img": "icons/weapons/polearms/javelin-simple.webp",
       "description": "A light throwing spear. Designed primarily for ranged combat but can be used in melee.",
       "quantity": 1,
       "weight": 2,
@@ -202,7 +202,7 @@
     },
     {
       "name": "Longbow",
-      "img": "icons/weapons/bows/longbow-wood.webp",
+      "img": "icons/weapons/bows/longbow-recurve.webp",
       "description": "A tall bow crafted from flexible yew. Requires strength to draw, but can strike targets from great distances.",
       "quantity": 1,
       "weight": 2,
@@ -224,7 +224,7 @@
     },
     {
       "name": "Longsword",
-      "img": "icons/weapons/swords/sword-long-steel.webp",
+      "img": "icons/weapons/swords/sword-guard.webp",
       "description": "A versatile straight blade. The quintessential knight's weapon, balanced for both offense and defense.",
       "quantity": 1,
       "weight": 3,
@@ -246,7 +246,7 @@
     },
     {
       "name": "Mace",
-      "img": "icons/weapons/maces/mace-round-spiked.webp",
+      "img": "icons/weapons/maces/mace-round-steel.webp",
       "description": "A metal-headed club designed to crush armor and bone alike. Popular among clergy and knights.",
       "quantity": 1,
       "weight": 4,
@@ -290,7 +290,7 @@
     },
     {
       "name": "Pike",
-      "img": "icons/weapons/polearms/spear-flanged-steel.webp",
+      "img": "icons/weapons/polearms/pike-flared-brown.webp",
       "description": "A long polearm with exceptional reach. Used to keep enemies at bay and break cavalry charges.",
       "quantity": 1,
       "weight": 18,
@@ -334,7 +334,7 @@
     },
     {
       "name": "Rapier",
-      "img": "icons/weapons/swords/rapier-jeweled.webp",
+      "img": "icons/weapons/swords/sword-simple-white.webp",
       "description": "An elegant blade designed for precise thrusting attacks. Favored by duelists and nobles.",
       "quantity": 1,
       "weight": 2,
@@ -356,7 +356,7 @@
     },
     {
       "name": "Scimitar",
-      "img": "icons/weapons/swords/scimitar-curved.webp",
+      "img": "icons/weapons/swords/scimitar-guard.webp",
       "description": "A curved blade designed for slashing attacks. Light and quick in the hands of a skilled warrior.",
       "quantity": 1,
       "weight": 3,
@@ -400,7 +400,7 @@
     },
     {
       "name": "Shortsword",
-      "img": "icons/weapons/swords/sword-short-steel.webp",
+      "img": "icons/weapons/swords/shortsword-guard.webp",
       "description": "A versatile blade suitable for both thrusting and slashing. Popular among adventurers for its balance of reach and speed.",
       "quantity": 1,
       "weight": 2,
@@ -422,7 +422,7 @@
     },
     {
       "name": "Sling",
-      "img": "icons/weapons/thrown/sling-leather.webp",
+      "img": "icons/weapons/slings/sling-leather.webp",
       "description": "A simple leather strap used to hurl stones. Cheap, effective, and easy to find ammunition for.",
       "quantity": 1,
       "weight": 0,
@@ -444,7 +444,7 @@
     },
     {
       "name": "Spear",
-      "img": "icons/weapons/polearms/spear-hooked-steel.webp",
+      "img": "icons/weapons/polearms/spear-flared-steel.webp",
       "description": "A versatile polearm with a sharp point. Can be thrust in melee or thrown.",
       "quantity": 1,
       "weight": 3,
@@ -466,7 +466,7 @@
     },
     {
       "name": "Trident",
-      "img": "icons/weapons/polearms/trident-steel.webp",
+      "img": "icons/weapons/polearms/trident-curved-steel.webp",
       "description": "A three-pronged spear. Can be used to pierce enemies or trap their weapons.",
       "quantity": 1,
       "weight": 4,
@@ -510,7 +510,7 @@
     },
     {
       "name": "Stormcaller",
-      "img": "icons/weapons/hammers/hammer-war-lightning.webp",
+      "img": "icons/weapons/hammers/hammer-double-glowing-yellow.webp",
       "description": "A massive warhammer wreathed in crackling lightning. Legends say it was wielded by a storm giant who fell defending the mortal realms. The weapon hums with barely-contained power, and thunder rumbles with each swing. When struck against the ground, it can summon devastating lightning storms.",
       "quantity": 1,
       "weight": 15,
@@ -536,7 +536,7 @@
     },
     {
       "name": "The Sunblade",
-      "img": "icons/weapons/swords/greatsword-gold-holy.webp",
+      "img": "icons/weapons/swords/sword-gold-holy.webp",
       "description": "A radiant greatsword forged in the heart of a dying star. Pure sunlight flows through its crystalline blade, and it shines like a beacon of hope in the darkest places. Undead creatures shrink from its radiance, and darkness itself seems to flee before its wielder. The weapon is said to have been a gift from the solar deities to their greatest champion.",
       "quantity": 1,
       "weight": 6,
@@ -566,7 +566,7 @@
     },
     {
       "name": "Frostbrand Longsword",
-      "img": "icons/weapons/swords/sword-long-ice.webp",
+      "img": "icons/magic/water/strike-weapon-blade-ice-blue.webp",
       "description": "A magnificent blade forged in the frozen peaks of the Eternal Winter. Frost crawls along its edge, and the air around it shimmers with cold. Those struck by this weapon feel their movements slow as ice creeps through their veins.",
       "quantity": 1,
       "weight": 3,
@@ -592,7 +592,7 @@
     },
     {
       "name": "Flame Dagger",
-      "img": "icons/weapons/daggers/dagger-straight-fire.webp",
+      "img": "icons/magic/fire/dagger-rune-enchant-flame-orange.webp",
       "description": "A slender blade wreathed in flickering flames. The heat never burns its wielder, but enemies feel its scorching bite.",
       "quantity": 1,
       "weight": 1,

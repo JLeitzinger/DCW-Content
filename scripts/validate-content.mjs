@@ -56,6 +56,21 @@ for (const category of Object.values(skillsManifest.skills)) {
 const featureEntries = loadEntries('features');
 const featureIdsToNames = new Map(featureEntries.map(({ data }) => [data._id, data.name]));
 
+// Every core-Foundry icon path bundled with the pinned Foundry version (see
+// scripts/generate-icon-index.mjs) - used to catch an `img` that sounds plausible but was
+// never real, which otherwise renders as a broken image in the compendium and on sheets.
+const validIcons = new Set(JSON.parse(fs.readFileSync(path.join(dataDir, 'foundry-icons-index.json'), 'utf8')));
+
+function checkImg(type, file, img) {
+  if (!img) {
+    warn(type, file, `missing img - will render with Foundry's default mystery-man icon`);
+    return;
+  }
+  if (img.startsWith('icons/') && !validIcons.has(img)) {
+    error(type, file, `img "${img}" does not exist in Foundry's bundled icon set (see data/foundry-icons-index.json) - it will render broken`);
+  }
+}
+
 function checkGrantedSkills(type, file, grantedSkills) {
   for (const g of grantedSkills || []) {
     if (!g.skillUuid || typeof g.level !== 'number') {
@@ -118,6 +133,7 @@ function validateRaces() {
   checkNoDuplicates('races', entries);
   for (const { file, data } of entries) {
     const s = data.system;
+    checkImg('races', file, data.img);
     checkGrantedSkills('races', file, s.grantedSkills);
     checkGrantedFeatures('races', file, s.grantedFeatures);
 
@@ -159,6 +175,7 @@ function validateClasses() {
   checkNoDuplicates('classes', entries);
   for (const { file, data } of entries) {
     const s = data.system;
+    checkImg('classes', file, data.img);
     checkGrantedSkills('classes', file, s.grantedSkills);
     checkGrantedFeatures('classes', file, s.grantedFeatures);
 
@@ -197,6 +214,8 @@ function validateItems() {
   checkNoDuplicates('items', entries);
   for (const { file, data } of entries) {
     const s = data.system;
+    checkImg('items', file, data.img);
+    checkImg('items', file, data.img);
     checkGrantedSkills('items', file, s.grantedSkills);
     if (!RARITIES.includes(s.rarity)) {
       error('items', file, `invalid rarity "${s.rarity}"`);
@@ -229,6 +248,7 @@ function validateWeapons() {
   checkNoDuplicates('weapons', entries);
   for (const { file, data } of entries) {
     const s = data.system;
+    checkImg('weapons', file, data.img);
     checkGrantedSkills('weapons', file, s.grantedSkills);
     checkGrantedFeatures('weapons', file, s.grantedFeatures);
     if (!RARITIES.includes(s.rarity)) {
@@ -257,6 +277,7 @@ function validateArmor() {
   checkNoDuplicates('armor', entries);
   for (const { file, data } of entries) {
     const s = data.system;
+    checkImg('armor', file, data.img);
     checkGrantedSkills('armor', file, s.grantedSkills);
     if (!RARITIES.includes(s.rarity)) {
       error('armor', file, `invalid rarity "${s.rarity}"`);
@@ -277,6 +298,7 @@ function validateArmor() {
 function validateFeatures() {
   checkNoDuplicates('features', featureEntries);
   for (const { file, data } of featureEntries) {
+    checkImg('features', file, data.img);
     checkGrantedSkills('features', file, data.system.grantedSkills);
     const skillCount = (data.system.grantedSkills || []).length;
     if (skillCount > 2) {
@@ -290,6 +312,7 @@ function validateSpells() {
   checkNoDuplicates('spells', entries);
   for (const { file, data } of entries) {
     const s = data.system;
+    checkImg('spells', file, data.img);
     if ((s.grantedSkills || []).length > 0) {
       error('spells', file, `spells should not grant skills (they use the Cast/Channel skills instead)`);
     }

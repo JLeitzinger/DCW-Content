@@ -2,7 +2,7 @@
   "_id": "wizard",
   "name": "Wizard",
   "type": "class",
-  "img": "icons/svg/mage.svg",
+  "img": "icons/svg/mage-shield.svg",
   "system": {
     "description": "A scholarly magic-user capable of manipulating the structures of reality through arcane study and practice. Wizards are masters of spellcasting.",
     "baseHP": 8,

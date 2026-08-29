@@ -2,7 +2,7 @@
   "_id": "common-longbow",
   "name": "Longbow",
   "type": "weapon",
-  "img": "icons/weapons/bows/longbow-wood.webp",
+  "img": "icons/weapons/bows/longbow-recurve.webp",
   "system": {
     "description": "A tall bow crafted from flexible yew. Requires strength to draw, but can strike targets from great distances.",
     "quantity": 1,

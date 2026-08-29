@@ -10,7 +10,8 @@
       "rarity": "common",
       "consumable": true,
       "restoreResource": "hp",
-      "restoreAmount": 10
+      "restoreAmount": 10,
+      "img": "icons/consumables/potions/bottle-round-corked-red.webp"
     },
     {
       "name": "Health Potion",
@@ -22,7 +23,8 @@
       "restoreResource": "hp",
       "restoreAmount": 15,
       "regenBoostAmount": 2,
-      "regenBoostUses": 3
+      "regenBoostUses": 3,
+      "img": "icons/consumables/potions/bottle-bulb-corked-glowing-red.webp"
     },
     {
       "name": "Stamina Potion",
@@ -34,7 +36,8 @@
       "restoreResource": "stamina",
       "restoreAmount": 10,
       "regenBoostAmount": 2,
-      "regenBoostUses": 3
+      "regenBoostUses": 3,
+      "img": "icons/consumables/potions/bottle-round-corked-yellow.webp"
     },
     {
       "name": "Mana Potion",
@@ -46,7 +49,8 @@
       "restoreResource": "mana",
       "restoreAmount": 10,
       "regenBoostAmount": 2,
-      "regenBoostUses": 3
+      "regenBoostUses": 3,
+      "img": "icons/consumables/potions/bottle-round-corked-blue.webp"
     },
     {
       "name": "Bandages",
@@ -56,7 +60,8 @@
       "rarity": "common",
       "consumable": true,
       "restoreResource": "hp",
-      "restoreAmount": 5
+      "restoreAmount": 5,
+      "img": "icons/tools/medical/bandages-gauze.webp"
     },
     {
       "name": "Torch",
@@ -65,8 +70,12 @@
       "weight": 1,
       "rarity": "common",
       "grantedSkills": [
-        {"skillName": "Survival", "level": 1}
-      ]
+        {
+          "skillName": "Survival",
+          "level": 1
+        }
+      ],
+      "img": "icons/sundries/lights/torch-brown.webp"
     }
   ]
 }

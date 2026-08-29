@@ -2,7 +2,7 @@
   "_id": "dragonborn",
   "name": "Dragonborn",
   "type": "race",
-  "img": "icons/svg/dragon.svg",
+  "img": "icons/svg/wing.svg",
   "system": {
     "description": "Dragonborn are proud and noble draconic humanoids, born with the blood of ancient dragons flowing through their veins. They combine the strength and majesty of dragons with humanoid versatility.\n\nTraits: Draconic Ancestry: You have draconic ancestry which determines your breath weapon and damage resistance. Breath Weapon: You can exhale destructive energy once per short rest. Damage Resistance: You have resistance to the damage type associated with your draconic ancestry.",
     "abilityBonuses": {

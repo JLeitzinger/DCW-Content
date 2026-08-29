@@ -2,7 +2,7 @@
   "_id": "bandages",
   "name": "Bandages",
   "type": "item",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/tools/medical/bandages-gauze.webp",
   "system": {
     "description": "Clean cloth wrappings for a field dressing. Mundane, reliable, and safe to use as often as you have them.",
     "quantity": 1,

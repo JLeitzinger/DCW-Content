@@ -25,6 +25,7 @@
     "add-skills-to-weapons": "node scripts/add-skills-to-weapons.mjs",
     "skill-lookup": "node scripts/skill-lookup.mjs",
     "spell-lookup": "node scripts/spell-lookup.mjs",
+    "generate:icon-index": "node scripts/generate-icon-index.mjs",
     "inspect:skills": "node scripts/inspect-skills-db.mjs",
     "list:skills": "node scripts/list-all-skills-db.mjs",
     "build:release": "node scripts/build-release.mjs"

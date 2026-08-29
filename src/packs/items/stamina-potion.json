@@ -2,7 +2,7 @@
   "_id": "stamina-potion",
   "name": "Stamina Potion",
   "type": "item",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/consumables/potions/bottle-round-corked-yellow.webp",
   "system": {
     "description": "A fizzing, citrus-sharp brew that restores vigor and quickens stamina recovery for a short while after drinking.",
     "quantity": 1,

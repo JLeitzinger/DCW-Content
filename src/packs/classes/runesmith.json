@@ -2,7 +2,7 @@
   "_id": "runesmith",
   "name": "Runesmith",
   "type": "class",
-  "img": "icons/svg/runes.svg",
+  "img": "icons/svg/obelisk.svg",
   "system": {
     "description": "An inscriber of magical runes who channels power through ancient symbols. Runesmiths etch mystical glyphs onto objects, surfaces, and even their own bodies to create powerful enchantments and devastating effects.",
     "baseHP": 9,

@@ -2,7 +2,7 @@
   "_id": "stormcaller",
   "name": "Stormcaller",
   "type": "class",
-  "img": "icons/svg/lightning-storm.svg",
+  "img": "icons/svg/lightning.svg",
   "system": {
     "description": "A conduit for elemental fury who commands wind, rain, and lightning. Stormcallers are living tempests, channeling the raw power of nature's most devastating weather phenomena.",
     "baseHP": 10,

@@ -2,7 +2,7 @@
   "_id": "common-longsword",
   "name": "Longsword",
   "type": "weapon",
-  "img": "icons/weapons/swords/sword-long-steel.webp",
+  "img": "icons/weapons/swords/sword-guard.webp",
   "system": {
     "description": "A versatile straight blade. The quintessential knight's weapon, balanced for both offense and defense.",
     "quantity": 1,

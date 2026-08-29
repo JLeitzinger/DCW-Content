@@ -2,7 +2,7 @@
   "_id": "common-battleaxe",
   "name": "Battleaxe",
   "type": "weapon",
-  "img": "icons/weapons/axes/axe-battle-broad.webp",
+  "img": "icons/weapons/axes/axe-battle.webp",
   "system": {
     "description": "A heavy axe with a broad, crescent-shaped blade. Favored by warriors who value raw power over finesse.",
     "quantity": 1,

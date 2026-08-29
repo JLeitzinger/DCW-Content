@@ -2,7 +2,7 @@
   "_id": "Cunning-Action",
   "name": "Cunning Action",
   "type": "feature",
-  "img": "icons/svg/running.svg",
+  "img": "icons/svg/walk.svg",
   "system": {
     "description": "Your quick thinking and agility allow you to move and act quickly. Dash, Disengage, and Hide actions cost 1 less stamina (minimum 0).",
     "grantedSkills": []

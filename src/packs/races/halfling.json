@@ -2,7 +2,7 @@
   "_id": "halfling",
   "name": "Halfling",
   "type": "race",
-  "img": "icons/svg/leaf.svg",
+  "img": "icons/svg/oak.svg",
   "system": {
     "description": "Halflings are a cheerful and practical folk, known for their resourcefulness and uncanny luck. Though small in stature, they possess remarkable courage and a knack for getting out of trouble.\n\nTraits: Lucky: When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll. Brave: You have advantage on saving throws against being frightened. Halfling Nimbleness: You can move through the space of any creature that is larger than you.",
     "abilityBonuses": {

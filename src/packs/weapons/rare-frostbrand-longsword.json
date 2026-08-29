@@ -2,7 +2,7 @@
   "_id": "rare-frostbrand-longsword",
   "name": "Frostbrand Longsword",
   "type": "weapon",
-  "img": "icons/weapons/swords/sword-long-ice.webp",
+  "img": "icons/magic/water/strike-weapon-blade-ice-blue.webp",
   "system": {
     "description": "A magnificent blade forged in the frozen peaks of the Eternal Winter. Frost crawls along its edge, and the air around it shimmers with cold. Those struck by this weapon feel their movements slow as ice creeps through their veins.",
     "quantity": 1,
