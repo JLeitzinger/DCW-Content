@@ -681,14 +681,19 @@ npm run list:skills
 
 ## Version Management
 
+`module.json`'s `download` points at GitHub's `archive/refs/heads/main.zip`, not a tagged
+release - same scheme as the `Dungeon-Crawler-World` system repo. Foundry always installs
+whatever is on `main`, so there's no separate release-build/publish step in the normal loop.
+
 **When making changes that affect the module:**
 1. Update version in `module.json` (use semantic versioning)
 2. Pack all updated compendia: `npm run pack`
-3. Build release package: `npm run build:release`
-4. Create GitHub release with the zip file
-5. Update `download` URL in `module.json` to point to new release
-6. Commit and push changes
+3. Commit and push changes to `main`
+
+`npm run build:release` (zips `module.json`/`packs/`/`assets/`, excluding `data/`/`scripts`/
+`src/`) still exists for producing a standalone pinned zip outside Foundry's own updater, but
+it's optional now, not part of the normal publish flow.
 
 ## Release Process
 
-See README.md "Creating a Release" section for detailed instructions.
+See README.md "Publishing an Update" section for detailed instructions.

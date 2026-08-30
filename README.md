@@ -183,30 +183,22 @@ See `data/skills/README.md` for skill creation guidelines.
 
 For class, race, and item design rules, refer to the main system's `CLAUDE.md` file.
 
-## Creating a Release
+## Publishing an Update
 
-To package the module for distribution:
+`module.json`'s `download` points at GitHub's branch-archive zip
+(`archive/refs/heads/main.zip`), not a tagged release - same as the
+`Dungeon-Crawler-World` system repo. Foundry always installs whatever is on `main`, so
+publishing an update is just:
 
-1. **Update version** in `module.json`
-2. **Pack all content**:
-   ```bash
-   npm run pack
-   ```
-3. **Build release package**:
-   ```bash
-   npm run build:release
-   ```
-4. **Create GitHub Release**:
-   - Go to https://github.com/JLeitzinger/DCW-Content/releases
-   - Click "Draft a new release"
-   - Tag: `v1.0.0` (match version in module.json)
-   - Upload `dist/dcw-content-v1.0.0.zip`
-   - Publish release
+1. **Update version** in `module.json` (use semantic versioning)
+2. **Pack all content**: `npm run pack` (validates first, aborts on error)
+3. **Commit and push** `data/`, `src/packs/`, `packs/`, `module.json` (and `assets/` if art
+   changed) to `main`
 
-5. **Update module.json download URL** to point to release asset:
-   ```json
-   "download": "https://github.com/JLeitzinger/DCW-Content/releases/download/v1.0.0/dcw-content-v1.0.0.zip"
-   ```
+No GitHub Release needed - the next time a world checks for updates, Foundry re-downloads the
+`main` archive and diffs it against the installed version number. `npm run build:release` still
+exists if you ever want a standalone pinned zip (e.g. to hand someone a specific version
+outside Foundry's own updater), but it's optional now, not part of the normal publish flow.
 
 ## License
 
