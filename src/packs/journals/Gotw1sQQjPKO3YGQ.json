@@ -1,0 +1,44 @@
+{
+  "_id": "Gotw1sQQjPKO3YGQ",
+  "name": "Secret 1",
+  "pages": [
+    {
+      "_id": "CJFXZUGfyuGvi6ZF",
+      "name": "Secret 1",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>Hidden here: leverage against the Bone Choir that the floor's story doesn't want found.</p><p><em>Located in: Secret Vault (Room 34)</em></p>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": "MGGoBs3Mv8LrFMpz",
+  "categories": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

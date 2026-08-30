@@ -1,0 +1,1639 @@
+{
+  "_id": "N2NVGKFBc4q7kTjW",
+  "name": "Corrupted Alchemical Vaults - boss arena (Room 10)",
+  "active": false,
+  "width": 700,
+  "height": 500,
+  "padding": 0.25,
+  "initial": {
+    "x": null,
+    "y": null,
+    "scale": null
+  },
+  "background": {
+    "src": null,
+    "offsetX": 0,
+    "offsetY": 0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0,
+    "tint": "#ffffff"
+  },
+  "backgroundColor": "#1b1b1f",
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0.2,
+    "distance": 5,
+    "units": "ft"
+  },
+  "tokenVision": true,
+  "environment": {
+    "darknessLevel": 0.65,
+    "darknessLock": false,
+    "globalLight": {
+      "enabled": false,
+      "alpha": 0.5,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "contrast": 0,
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "luminosity": 0,
+      "saturation": 0,
+      "shadows": 0
+    }
+  },
+  "drawings": [],
+  "tokens": [],
+  "lights": [
+    {
+      "_id": "rJfJgWXcFVWgxLSZ",
+      "x": 210,
+      "y": 150,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "hidden": false,
+      "locked": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.5225,
+        "angle": 360,
+        "bright": 22.875,
+        "dim": 38.375,
+        "color": "#c98cff",
+        "coloration": 1,
+        "attenuation": 0.5,
+        "luminosity": 0.44999999999999996,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "flags": {}
+    },
+    {
+      "_id": "h3Oay8UKPq4vYJQ4",
+      "x": 489.99999999999994,
+      "y": 350,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "hidden": false,
+      "locked": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.5225,
+        "angle": 360,
+        "bright": 22.875,
+        "dim": 38.375,
+        "color": "#c98cff",
+        "coloration": 1,
+        "attenuation": 0.5,
+        "luminosity": 0.44999999999999996,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "flags": {}
+    }
+  ],
+  "notes": [],
+  "regions": [
+    {
+      "_id": "pQLGz4JJ0fhfCEsL",
+      "name": "Exit",
+      "color": "#ff6400",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 0,
+          "y": 400,
+          "width": 700,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "xYUnqF8RNWChej0D",
+          "name": "Return to floor",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.aHdhqjSfhqFq8RPM.Region.v3BzplW7HsFOFn5C"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false,
+            "revealed": false,
+            "dialog": {
+              "revealed": false,
+              "unrevealed": false
+            },
+            "transition": {
+              "type": 0,
+              "duration": 0
+            }
+          },
+          "disabled": false,
+          "flags": {}
+        }
+      ],
+      "hidden": false,
+      "locked": false,
+      "flags": {}
+    }
+  ],
+  "sounds": [],
+  "tiles": [
+    {
+      "_id": "8ol1TXulqkwuQuS4",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_0.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 0,
+      "y": 0,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "4UutOMSk53BvCPpU",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_5.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 100,
+      "y": 0,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "3BuzIhaSpoMbxaw6",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_0.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 200,
+      "y": 0,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "sADhRbFasDTd2Wn6",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_3.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 300,
+      "y": 0,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "aYPhlkyq3vXh56u9",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_1.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 400,
+      "y": 0,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "Qk5pu886ZevUN6ye",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_1.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 500,
+      "y": 0,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "5zpkwxiQRZGolA8o",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake-d_3.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 600,
+      "y": 0,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "smHqeShfP0HLR6Zu",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_5.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 0,
+      "y": 100,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "q9MokHVyViu6C95I",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_1.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 100,
+      "y": 100,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "mtj5FWF9pq38xXvB",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_4.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 200,
+      "y": 100,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "Sf5QwFaPriHaoJ56",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_1.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 300,
+      "y": 100,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "dYVozGvwAOMTcpyY",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_4.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 400,
+      "y": 100,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "zAxrHH5vBhhee6nX",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_3.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 500,
+      "y": 100,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "lGpAQxUWZcerAWfD",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_0.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 600,
+      "y": 100,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "Hr7y4sz7bqJBoPau",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_3.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 0,
+      "y": 200,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "5uSWsnjCTesIJ9UK",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_3.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 100,
+      "y": 200,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "kpqQXpvvzzWngKzT",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_4.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 200,
+      "y": 200,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "MdnudxA5kYNoMcze",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_0.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 300,
+      "y": 200,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "1vVZa4F73or0vsX7",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_3.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 400,
+      "y": 200,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "BM2Y36hQzoZP6iWZ",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_0.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 500,
+      "y": 200,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "1yxD9rLr5rjWpQlP",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_0.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 600,
+      "y": 200,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "63RpKPmgB4buuu4p",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_1.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 0,
+      "y": 300,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "DgBfEYZ6vuKqz0Gr",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_1.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 100,
+      "y": 300,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "EeH4dW8pWVxl3qCS",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_1.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 200,
+      "y": 300,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "IgDDhdY7r6ho0TTv",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_0.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 300,
+      "y": 300,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "wJ2jC1KbIptt2ZAm",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_3.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 400,
+      "y": 300,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "6YnTlPoIrF7Q7OKA",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_5.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 500,
+      "y": 300,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "OkatGuF2W5KIKiyM",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_2.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 600,
+      "y": 300,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "oZiQSEFuVsXhgwDV",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_0.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 0,
+      "y": 400,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "qaSUChiRyQaHAOwt",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_2.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 100,
+      "y": 400,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "AEUyLdh7f8eyoZ2h",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_1.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 200,
+      "y": 400,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "hOLRKaJojNmtwh7r",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_2.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 300,
+      "y": 400,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "6O7dHLfpIRSZVsGA",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_3.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 400,
+      "y": 400,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "wTGgfEFaLTp62Hz3",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_0.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 500,
+      "y": 400,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "9L7LeLNg9Hr50jXu",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_3.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 600,
+      "y": 400,
+      "elevation": 0,
+      "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "HkpQe6jh31GIu4Wf",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/statues/granite_stump.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 100,
+      "height": 100,
+      "x": 76,
+      "y": 160,
+      "elevation": 0,
+      "sort": -100,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    }
+  ],
+  "walls": [
+    {
+      "_id": "tnN4FEQz1kYkdqHu",
+      "c": [
+        0,
+        0,
+        700,
+        0
+      ],
+      "light": 20,
+      "move": 20,
+      "sight": 20,
+      "sound": 20,
+      "door": 0,
+      "ds": 0,
+      "dir": 0,
+      "doorSound": ""
+    },
+    {
+      "_id": "s924z7C1QZUVN1xF",
+      "c": [
+        0,
+        0,
+        0,
+        500
+      ],
+      "light": 20,
+      "move": 20,
+      "sight": 20,
+      "sound": 20,
+      "door": 0,
+      "ds": 0,
+      "dir": 0,
+      "doorSound": ""
+    },
+    {
+      "_id": "aitCtuYzpzt7xN0p",
+      "c": [
+        700,
+        0,
+        700,
+        500
+      ],
+      "light": 20,
+      "move": 20,
+      "sight": 20,
+      "sound": 20,
+      "door": 0,
+      "ds": 0,
+      "dir": 0,
+      "doorSound": ""
+    },
+    {
+      "_id": "6MudhtcF2OFkRUvY",
+      "c": [
+        0,
+        500,
+        320,
+        500
+      ],
+      "light": 20,
+      "move": 20,
+      "sight": 20,
+      "sound": 20,
+      "door": 0,
+      "ds": 0,
+      "dir": 0,
+      "doorSound": ""
+    },
+    {
+      "_id": "1FW8DdluqHntjp6N",
+      "c": [
+        320,
+        500,
+        380,
+        500
+      ],
+      "light": 20,
+      "move": 20,
+      "sight": 20,
+      "sound": 20,
+      "door": 1,
+      "ds": 0,
+      "dir": 0,
+      "doorSound": ""
+    },
+    {
+      "_id": "Mn1jEy6Z3GfTk7BI",
+      "c": [
+        380,
+        500,
+        700,
+        500
+      ],
+      "light": 20,
+      "move": 20,
+      "sight": 20,
+      "sound": 20,
+      "door": 0,
+      "ds": 0,
+      "dir": 0,
+      "doorSound": ""
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

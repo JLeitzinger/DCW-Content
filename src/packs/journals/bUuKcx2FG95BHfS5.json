@@ -1,0 +1,44 @@
+{
+  "_id": "bUuKcx2FG95BHfS5",
+  "name": "Treasure Vault (Room 19)",
+  "pages": [
+    {
+      "_id": "oq2ZRj84B8MN5gYI",
+      "name": "Treasure Vault (Room 19)",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>Whatever was worth sealing away in this Gilded vault, someone judged it worth more than easy access.</p><section class=\"secret\"><h3>GM Notes</h3><p><strong>Substory beat:</strong> The floor's water supply has been dosed with a reagent that's slowly changing everything that drinks it.</p><p><strong>Hazard:</strong> A pressure plate near the threshold triggers a hidden mechanism unless disarmed (DC 13 to notice, DC 13 to disarm).</p></section>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": "2XHY5Amb18svnLlP",
+  "categories": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

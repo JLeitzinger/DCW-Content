@@ -1,0 +1,44 @@
+{
+  "_id": "XfGNex3ajbLCTJ8o",
+  "name": "Chamber (Room 16)",
+  "pages": [
+    {
+      "_id": "9rhASjpffTPC8J9i",
+      "name": "Chamber (Room 16)",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>Another Weeping chamber in the Wards, its purpose only clear in context with what's around it.</p><section class=\"secret\"><h3>GM Notes</h3><p><strong>Clue:</strong> A clue toward the floor's deeper story: a rogue homunculus conclave sealed something down here that was never meant to finish brewing, and the seals are failing.</p></section>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": "2XHY5Amb18svnLlP",
+  "categories": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_id": "jBencX4H8pEHGsVY",
+  "name": "The Hollow Barrows",
+  "type": "JournalEntry",
+  "description": "",
+  "folder": null,
+  "sorting": "a",
+  "sort": 0,
+  "color": "#6a5acd",
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

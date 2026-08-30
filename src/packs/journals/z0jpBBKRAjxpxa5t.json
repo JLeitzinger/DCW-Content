@@ -1,0 +1,44 @@
+{
+  "_id": "z0jpBBKRAjxpxa5t",
+  "name": "Corridor Junction (Room 20)",
+  "pages": [
+    {
+      "_id": "pGCKDlPDbg4KJOPJ",
+      "name": "Corridor Junction (Room 20)",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>Passages fork here into the Forsaken heart of the Charnel Halls, worn smooth by traffic that wasn't always living.</p><section class=\"secret\"><h3>GM Notes</h3><p><strong>Clue:</strong> A clue toward the floor's deeper story: Something in the Crypts below is calling the recently dead home, one grave at a time.</p><p><strong>Encounter:</strong> This room refills with a new threat if left and returned to later, on the same table used for the floor's other random encounters.</p></section>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": "lZQXvWpWUrLgFhXi",
+  "categories": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

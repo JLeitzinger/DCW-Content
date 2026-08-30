@@ -1,0 +1,22 @@
+{
+  "_id": "MGGoBs3Mv8LrFMpz",
+  "name": "Secrets",
+  "type": "JournalEntry",
+  "description": "",
+  "folder": "jBencX4H8pEHGsVY",
+  "sorting": "a",
+  "sort": 1,
+  "color": "#6a5acd",
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

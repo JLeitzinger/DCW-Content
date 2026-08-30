@@ -47,6 +47,7 @@
   },
   "devDependencies": {
     "archiver": "^7.0.1",
-    "classic-level": "^3.0.0"
+    "classic-level": "^3.0.0",
+    "pngjs": "^7.0.0"
   }
 }
