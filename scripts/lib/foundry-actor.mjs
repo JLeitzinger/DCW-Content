@@ -11,7 +11,7 @@
  */
 import { DOCUMENT_STATS } from './foundry-item.mjs';
 
-export function wrapActor({ id, name, type, img, system }) {
+export function wrapActor({ id, name, type, img, system, items = [] }) {
   return {
     _id: id,
     name,
@@ -29,7 +29,7 @@ export function wrapActor({ id, name, type, img, system }) {
       bar1: { attribute: 'health' },
       bar2: { attribute: 'power' }
     },
-    items: [],
+    items,
     effects: [],
     folder: null,
     sort: 0,

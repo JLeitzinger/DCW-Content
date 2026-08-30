@@ -54,7 +54,92 @@
       "attribute": "power"
     }
   },
-  "items": [],
+  "items": [
+    {
+      "_id": "m9v6GKiyL9a4wfT5",
+      "name": "Caustic Engulfment",
+      "type": "weapon",
+      "img": "modules/dcw-content/assets/tiles/monster/amorphous/death_ooze.png",
+      "system": {
+        "description": "",
+        "quantity": 1,
+        "weight": 0,
+        "roll": {
+          "diceNum": 1,
+          "diceSize": "d10",
+          "diceBonus": "+@con.mod+ceil(@lvl/2)"
+        },
+        "rarity": "common",
+        "effort": 2,
+        "range": "melee",
+        "equipped": true,
+        "grantedSkills": [
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Blunt",
+            "level": 15
+          }
+        ],
+        "grantedFeatures": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "zIgXUfqHFtUwfTao",
+      "name": "Natural Defenses",
+      "type": "armor",
+      "img": "modules/dcw-content/assets/tiles/monster/amorphous/death_ooze.png",
+      "system": {
+        "description": "",
+        "quantity": 1,
+        "weight": 0,
+        "rarity": "common",
+        "effort": 1,
+        "damageReduction": 4,
+        "equipped": true,
+        "grantedSkills": [
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Block",
+            "level": 8
+          }
+        ]
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
   "effects": [],
   "folder": null,
   "sort": 0,

@@ -54,7 +54,92 @@
       "attribute": "power"
     }
   },
-  "items": [],
+  "items": [
+    {
+      "_id": "WEr0k7aAdHi8xhGV",
+      "name": "Crushing Claw",
+      "type": "weapon",
+      "img": "modules/dcw-content/assets/tiles/monster/abyss/apocalypse_crab.png",
+      "system": {
+        "description": "",
+        "quantity": 1,
+        "weight": 0,
+        "roll": {
+          "diceNum": 1,
+          "diceSize": "d6",
+          "diceBonus": "+@str.mod+ceil(@lvl/2)"
+        },
+        "rarity": "common",
+        "effort": 1,
+        "range": "melee",
+        "equipped": true,
+        "grantedSkills": [
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Blunt",
+            "level": 4
+          }
+        ],
+        "grantedFeatures": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "So05BMZWabUStX2C",
+      "name": "Natural Defenses",
+      "type": "armor",
+      "img": "modules/dcw-content/assets/tiles/monster/abyss/apocalypse_crab.png",
+      "system": {
+        "description": "",
+        "quantity": 1,
+        "weight": 0,
+        "rarity": "common",
+        "effort": 1,
+        "damageReduction": 1,
+        "equipped": true,
+        "grantedSkills": [
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Block",
+            "level": 2
+          }
+        ]
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
   "effects": [],
   "folder": null,
   "sort": 0,

@@ -12,6 +12,17 @@
  * 10+cr, secondaryAbility (if set) becomes 10+ceil(cr/2). This mirrors dccworldNPC.xp = cr*cr*100
  * already being cr-driven (see actor-npc.mjs) - CR is this roster's single difficulty knob.
  *
+ * Combat capability (computeCombat) is derived the same way, not hand-authored: a monster is
+ * otherwise just a stat block with nothing to actually roll in combat (dccworldActorBase only
+ * aggregates skills from OWNED items - see base-actor.mjs's _aggregateSkills - and an Actor with
+ * an empty `items` array has none). generate-monsters.mjs turns this into two embedded Items
+ * per monster (an "attack" weapon and a "Natural Defenses" armor, both `equipped: true` so their
+ * grantedSkills actually apply) - see that file for the embedding, this file only computes the
+ * numbers: attack skill level = cr (so CR IS the monster's attack proficiency, since a monster
+ * has only this one skill source, unlike a PC who stacks race+class+gear); damage dice scale by
+ * tier (d6/d8/d10); defense skill level = ceil(cr/2); damageReduction = round(cr/4), clamped
+ * 1-6. Defense skill is Block if con is this monster's primary or secondary ability, else Dodge.
+ *
  * Room-role affinity is band-driven, not hand-authored per monster (36 entries is already a lot
  * of fields to keep in sync) - see BAND_ROOM_ROLES. 'entrance' and 'rest-area' are deliberately
  * absent from every band: those are the floor's designated safe rooms (see SceneBuilder.mjs/
@@ -53,6 +64,20 @@ export function computeAbilities(primaryAbility, secondaryAbility, cr) {
   return abilities;
 }
 
+export function computeCombat(tier, cr, primaryAbility, secondaryAbility) {
+  const diceSize = tier <= 2 ? 'd6' : tier <= 4 ? 'd8' : 'd10';
+  const isConTanky = primaryAbility === 'con' || secondaryAbility === 'con';
+  return {
+    diceNum: 1,
+    diceSize,
+    attackLevel: cr,
+    attackEffort: cr >= 10 ? 2 : 1,
+    defenseSkill: isConTanky ? 'Block' : 'Dodge',
+    defenseLevel: Math.max(1, Math.ceil(cr / 2)),
+    damageReduction: Math.min(6, Math.max(1, Math.round(cr / 4)))
+  };
+}
+
 /** @returns {Array} resolved monster entries - see file header for shape. */
 export function loadMonsterRoster(dataDir) {
   const manifestPath = path.join(dataDir, 'monsters-manifest.json');
@@ -74,7 +99,10 @@ export function loadMonsterRoster(dataDir) {
       abilities: computeAbilities(m.primaryAbility, m.secondaryAbility, cr),
       primaryAbility: m.primaryAbility,
       secondaryAbility: m.secondaryAbility || null,
-      biography: m.biography || ''
+      biography: m.biography || '',
+      combatSkill: m.combatSkill,
+      attackName: m.attackName,
+      combat: computeCombat(m.tier, cr, m.primaryAbility, m.secondaryAbility)
     };
   });
 }

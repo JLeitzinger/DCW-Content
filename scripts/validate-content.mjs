@@ -369,6 +369,25 @@ function validateMonsters() {
         error('monsters', file, `abilities.${key}.value must be a number, found ${JSON.stringify(s.abilities?.[key])}`);
       }
     }
+
+    // A monster only has this embedded gear as its skill source (no race/class/skill-item
+    // stack the way a PC has) - missing/unequipped gear here means it has nothing to roll in
+    // combat at all, not just a weaker version of something.
+    const weapon = (data.items || []).find(i => i.type === 'weapon');
+    const armor = (data.items || []).find(i => i.type === 'armor');
+    if (!weapon) {
+      error('monsters', file, `no embedded weapon item - this monster has no attack skill and can't act in combat`);
+    } else {
+      if (!weapon.system.equipped) error('monsters', file, `embedded weapon "${weapon.name}" must be equipped:true or its grantedSkills won't apply`);
+      checkGrantedSkills('monsters', file, weapon.system.grantedSkills);
+    }
+    if (!armor) {
+      error('monsters', file, `no embedded armor item - this monster has no defense skill or damage reduction`);
+    } else {
+      if (!armor.system.equipped) error('monsters', file, `embedded armor "${armor.name}" must be equipped:true or its grantedSkills won't apply`);
+      if (!(armor.system.damageReduction >= 1)) error('monsters', file, `embedded armor damageReduction should be >= 1, found ${armor.system.damageReduction}`);
+      checkGrantedSkills('monsters', file, armor.system.grantedSkills);
+    }
   }
 }
 
@@ -397,6 +416,15 @@ function validateMonstersManifest() {
     }
     if (m.secondaryAbility && !ABILITIES.includes(m.secondaryAbility)) {
       error('monsters-manifest', label, `invalid secondaryAbility "${m.secondaryAbility}"`);
+    }
+    const combatSkill = skillsByName.get(m.combatSkill);
+    if (!combatSkill) {
+      error('monsters-manifest', label, `combatSkill "${m.combatSkill}" is not a real skill in data/skills-manifest.json`);
+    } else if (!['combat', 'magic'].includes(combatSkill.category)) {
+      error('monsters-manifest', label, `combatSkill "${m.combatSkill}" is a ${combatSkill.category} skill, expected combat or magic`);
+    }
+    if (!m.attackName) {
+      error('monsters-manifest', label, `attackName is required (flavor name for this monster's embedded weapon item)`);
     }
   }
 }

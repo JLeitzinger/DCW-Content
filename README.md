@@ -154,7 +154,10 @@ compendium into your world once: open the Compendium Packs sidebar tab, right-cl
 **Monsters**, choose **Import All Content**, and check **Keep Document IDs** before confirming
 (a single monster's own right-click "Import" keeps its id automatically - it's specifically the
 bulk "Import All Content" dialog that needs the box checked). Skipping this step means placed
-tokens show as an unresolved/unknown actor instead of the intended monster.
+tokens show as an unresolved/unknown actor instead of the intended monster. If a freshly
+imported monster's Skills tab or XP looks empty right after importing, refresh the browser page
+once - a one-time Foundry data-preparation timing quirk, not lost data; it won't recur for that
+actor afterward.
 
 ### For Developers
 
