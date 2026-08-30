@@ -15,7 +15,8 @@ const includePatterns = [
   'module.json',
   'LICENSE',
   'README.md',
-  'packs/**/*'
+  'packs/**/*',
+  'assets/**/*'
 ];
 
 // Files and directories to exclude
@@ -81,6 +82,11 @@ async function buildRelease() {
 
     // Add packs directory
     archive.directory(path.join(projectRoot, 'packs'), 'packs');
+
+    // Add assets directory (tile art referenced by generated scenes + weapon/armor/item icons -
+    // without this, every modules/dcw-content/assets/... img path 404s for anyone installing
+    // from the release zip instead of cloning the repo)
+    archive.directory(path.join(projectRoot, 'assets'), 'assets');
 
     archive.finalize();
   });
