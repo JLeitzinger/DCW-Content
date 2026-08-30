@@ -2,7 +2,7 @@
   "_id": "common-greataxe",
   "name": "Greataxe",
   "type": "weapon",
-  "img": "icons/weapons/axes/axe-double-engraved.webp",
+  "img": "modules/dcw-content/assets/tiles/item/weapon/executioner_axe.png",
   "system": {
     "description": "A fearsome two-handed axe with a wide, crescent blade. Favored by barbarians and executioners.",
     "quantity": 1,

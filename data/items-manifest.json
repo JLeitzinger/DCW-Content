@@ -11,7 +11,7 @@
       "consumable": true,
       "restoreResource": "hp",
       "restoreAmount": 10,
-      "img": "icons/consumables/potions/bottle-round-corked-red.webp"
+      "img": "modules/dcw-content/assets/tiles/item/potion/pink.png"
     },
     {
       "name": "Health Potion",
@@ -24,7 +24,7 @@
       "restoreAmount": 15,
       "regenBoostAmount": 2,
       "regenBoostUses": 3,
-      "img": "icons/consumables/potions/bottle-bulb-corked-glowing-red.webp"
+      "img": "modules/dcw-content/assets/tiles/item/potion/ruby.png"
     },
     {
       "name": "Stamina Potion",
@@ -37,7 +37,7 @@
       "restoreAmount": 10,
       "regenBoostAmount": 2,
       "regenBoostUses": 3,
-      "img": "icons/consumables/potions/bottle-round-corked-yellow.webp"
+      "img": "modules/dcw-content/assets/tiles/item/potion/yellow.png"
     },
     {
       "name": "Mana Potion",
@@ -50,7 +50,7 @@
       "restoreAmount": 10,
       "regenBoostAmount": 2,
       "regenBoostUses": 3,
-      "img": "icons/consumables/potions/bottle-round-corked-blue.webp"
+      "img": "modules/dcw-content/assets/tiles/item/potion/sky_blue.png"
     },
     {
       "name": "Bandages",

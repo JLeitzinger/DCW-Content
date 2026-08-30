@@ -2,7 +2,7 @@
   "_id": "common-spear",
   "name": "Spear",
   "type": "weapon",
-  "img": "icons/weapons/polearms/spear-flared-steel.webp",
+  "img": "modules/dcw-content/assets/tiles/item/weapon/spear_1.png",
   "system": {
     "description": "A versatile polearm with a sharp point. Can be thrust in melee or thrown.",
     "quantity": 1,

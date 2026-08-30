@@ -2,7 +2,7 @@
   "_id": "common-shortbow",
   "name": "Shortbow",
   "type": "weapon",
-  "img": "icons/weapons/bows/shortbow-recurve.webp",
+  "img": "modules/dcw-content/assets/tiles/item/weapon/ranged/shortbow_1.png",
   "system": {
     "description": "A compact bow suitable for hunting and skirmishing. Easy to draw and quick to fire.",
     "quantity": 1,

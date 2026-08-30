@@ -2,7 +2,7 @@
   "_id": "common-handaxe",
   "name": "Handaxe",
   "type": "weapon",
-  "img": "icons/weapons/axes/axe-broad-black.webp",
+  "img": "modules/dcw-content/assets/tiles/item/weapon/hand_axe_1.png",
   "system": {
     "description": "A small axe that can be used in one hand. Also effective when thrown.",
     "quantity": 1,

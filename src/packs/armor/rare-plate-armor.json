@@ -2,7 +2,7 @@
   "_id": "rare-plate-armor",
   "name": "Plate Armor",
   "type": "armor",
-  "img": "icons/equipment/chest/suit-armored-chest-plated.webp",
+  "img": "modules/dcw-content/assets/tiles/item/armor/torso/plate_mail_1.png",
   "system": {
     "description": "A full suit of fitted steel plate. Slow going, but very little gets through it.",
     "quantity": 1,

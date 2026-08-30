@@ -2,7 +2,7 @@
   "_id": "common-warhammer",
   "name": "Warhammer",
   "type": "weapon",
-  "img": "icons/weapons/hammers/hammer-war-spiked.webp",
+  "img": "modules/dcw-content/assets/tiles/item/weapon/war_hammer.png",
   "system": {
     "description": "A balanced war hammer with a heavy head. Effective against armored opponents.",
     "quantity": 1,

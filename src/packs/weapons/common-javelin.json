@@ -2,7 +2,7 @@
   "_id": "common-javelin",
   "name": "Javelin",
   "type": "weapon",
-  "img": "icons/weapons/polearms/javelin-simple.webp",
+  "img": "modules/dcw-content/assets/tiles/item/weapon/ranged/tomahawk_1.png",
   "system": {
     "description": "A light throwing spear. Designed primarily for ranged combat but can be used in melee.",
     "quantity": 1,

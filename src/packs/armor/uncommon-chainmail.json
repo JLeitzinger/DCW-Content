@@ -2,7 +2,7 @@
   "_id": "uncommon-chainmail",
   "name": "Chainmail",
   "type": "armor",
-  "img": "icons/equipment/chest/breastplate-banded-steel.webp",
+  "img": "modules/dcw-content/assets/tiles/item/armor/torso/chain_mail_1.png",
   "system": {
     "description": "Interlocking steel rings, heavy but dependable against a glancing blow.",
     "quantity": 1,

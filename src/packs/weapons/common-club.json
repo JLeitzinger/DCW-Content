@@ -2,7 +2,7 @@
   "_id": "common-club",
   "name": "Club",
   "type": "weapon",
-  "img": "icons/weapons/clubs/club-simple-black.webp",
+  "img": "modules/dcw-content/assets/tiles/item/weapon/club.png",
   "system": {
     "description": "A simple wooden club. Not sophisticated, but effective for crushing skulls.",
     "quantity": 1,

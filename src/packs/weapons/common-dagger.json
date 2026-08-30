@@ -2,7 +2,7 @@
   "_id": "common-dagger",
   "name": "Dagger",
   "type": "weapon",
-  "img": "icons/weapons/daggers/dagger-straight-blue.webp",
+  "img": "modules/dcw-content/assets/tiles/item/weapon/dagger.png",
   "system": {
     "description": "A small blade, easily concealed. Can be thrown at nearby enemies.",
     "quantity": 1,

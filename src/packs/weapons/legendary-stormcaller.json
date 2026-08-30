@@ -2,7 +2,7 @@
   "_id": "legendary-stormcaller",
   "name": "Stormcaller",
   "type": "weapon",
-  "img": "icons/weapons/hammers/hammer-double-glowing-yellow.webp",
+  "img": "modules/dcw-content/assets/tiles/item/weapon/artefact/spwpn_sword_of_power.png",
   "system": {
     "description": "A massive warhammer wreathed in crackling lightning. Legends say it was wielded by a storm giant who fell defending the mortal realms. The weapon hums with barely-contained power, and thunder rumbles with each swing. When struck against the ground, it can summon devastating lightning storms.",
     "quantity": 1,

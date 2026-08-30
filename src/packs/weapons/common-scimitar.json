@@ -2,7 +2,7 @@
   "_id": "common-scimitar",
   "name": "Scimitar",
   "type": "weapon",
-  "img": "icons/weapons/swords/scimitar-guard.webp",
+  "img": "modules/dcw-content/assets/tiles/item/weapon/scimitar_1.png",
   "system": {
     "description": "A curved blade designed for slashing attacks. Light and quick in the hands of a skilled warrior.",
     "quantity": 1,

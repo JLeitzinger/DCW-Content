@@ -2,7 +2,7 @@
   "_id": "common-shortsword",
   "name": "Shortsword",
   "type": "weapon",
-  "img": "icons/weapons/swords/shortsword-guard.webp",
+  "img": "modules/dcw-content/assets/tiles/item/weapon/short_sword_1.png",
   "system": {
     "description": "A versatile blade suitable for both thrusting and slashing. Popular among adventurers for its balance of reach and speed.",
     "quantity": 1,

@@ -2,7 +2,7 @@
   "_id": "rare-tower-shield",
   "name": "Tower Shield",
   "type": "armor",
-  "img": "icons/equipment/shield/Scutum-steel-worn.webp",
+  "img": "modules/dcw-content/assets/tiles/item/armor/shields/large_shield_1.png",
   "system": {
     "description": "A wall of banded steel nearly as tall as its bearer. Exhausting to hold up, but almost nothing gets past it.",
     "quantity": 1,

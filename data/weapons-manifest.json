@@ -4,7 +4,7 @@
   "weapons": [
     {
       "name": "Battleaxe",
-      "img": "icons/weapons/axes/axe-battle.webp",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/battle_axe_1.png",
       "description": "A heavy axe with a broad, crescent-shaped blade. Favored by warriors who value raw power over finesse.",
       "quantity": 1,
       "weight": 4,
@@ -26,7 +26,7 @@
     },
     {
       "name": "Club",
-      "img": "icons/weapons/clubs/club-simple-black.webp",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/club.png",
       "description": "A simple wooden club. Not sophisticated, but effective for crushing skulls.",
       "quantity": 1,
       "weight": 2,
@@ -48,7 +48,7 @@
     },
     {
       "name": "Crossbow",
-      "img": "icons/weapons/crossbows/crossbow-simple-brown.webp",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/ranged/crossbow_1.png",
       "description": "A mechanical bow mounted on a stock. Easier to aim than a traditional bow but slower to reload.",
       "quantity": 1,
       "weight": 5,
@@ -70,7 +70,7 @@
     },
     {
       "name": "Dagger",
-      "img": "icons/weapons/daggers/dagger-straight-blue.webp",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/dagger.png",
       "description": "A small blade, easily concealed. Can be thrown at nearby enemies.",
       "quantity": 1,
       "weight": 1,
@@ -92,7 +92,7 @@
     },
     {
       "name": "Greataxe",
-      "img": "icons/weapons/axes/axe-double-engraved.webp",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/executioner_axe.png",
       "description": "A fearsome two-handed axe with a wide, crescent blade. Favored by barbarians and executioners.",
       "quantity": 1,
       "weight": 7,
@@ -114,7 +114,7 @@
     },
     {
       "name": "Greatsword",
-      "img": "icons/weapons/swords/greatsword-crossguard-steel.webp",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/greatsword_1.png",
       "description": "A massive two-handed blade. Requires great strength to wield but delivers devastating slashes.",
       "quantity": 1,
       "weight": 6,
@@ -136,7 +136,7 @@
     },
     {
       "name": "Handaxe",
-      "img": "icons/weapons/axes/axe-broad-black.webp",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/hand_axe_1.png",
       "description": "A small axe that can be used in one hand. Also effective when thrown.",
       "quantity": 1,
       "weight": 2,
@@ -158,7 +158,7 @@
     },
     {
       "name": "Heavy Crossbow",
-      "img": "icons/weapons/crossbows/crossbow-heavy.webp",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/ranged/arbalest_1.png",
       "description": "A powerful crossbow with a reinforced frame. Fires heavy bolts with tremendous force.",
       "quantity": 1,
       "weight": 18,
@@ -180,7 +180,7 @@
     },
     {
       "name": "Javelin",
-      "img": "icons/weapons/polearms/javelin-simple.webp",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/ranged/tomahawk_1.png",
       "description": "A light throwing spear. Designed primarily for ranged combat but can be used in melee.",
       "quantity": 1,
       "weight": 2,
@@ -202,7 +202,7 @@
     },
     {
       "name": "Longbow",
-      "img": "icons/weapons/bows/longbow-recurve.webp",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/ranged/longbow_1.png",
       "description": "A tall bow crafted from flexible yew. Requires strength to draw, but can strike targets from great distances.",
       "quantity": 1,
       "weight": 2,
@@ -224,7 +224,7 @@
     },
     {
       "name": "Longsword",
-      "img": "icons/weapons/swords/sword-guard.webp",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/long_sword_1.png",
       "description": "A versatile straight blade. The quintessential knight's weapon, balanced for both offense and defense.",
       "quantity": 1,
       "weight": 3,
@@ -246,7 +246,7 @@
     },
     {
       "name": "Mace",
-      "img": "icons/weapons/maces/mace-round-steel.webp",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/mace_1.png",
       "description": "A metal-headed club designed to crush armor and bone alike. Popular among clergy and knights.",
       "quantity": 1,
       "weight": 4,
@@ -268,7 +268,7 @@
     },
     {
       "name": "Maul",
-      "img": "icons/weapons/hammers/hammer-double-steel.webp",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/mace_large_1.png",
       "description": "A massive two-handed hammer. Slow but devastating when it connects.",
       "quantity": 1,
       "weight": 10,
@@ -290,7 +290,7 @@
     },
     {
       "name": "Pike",
-      "img": "icons/weapons/polearms/pike-flared-brown.webp",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/halberd_1.png",
       "description": "A long polearm with exceptional reach. Used to keep enemies at bay and break cavalry charges.",
       "quantity": 1,
       "weight": 18,
@@ -312,7 +312,7 @@
     },
     {
       "name": "Quarterstaff",
-      "img": "icons/weapons/staves/staff-simple.webp",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/quarterstaff.png",
       "description": "A sturdy wooden staff. Can be wielded with both hands for greater impact or used defensively.",
       "quantity": 1,
       "weight": 4,
@@ -334,7 +334,7 @@
     },
     {
       "name": "Rapier",
-      "img": "icons/weapons/swords/sword-simple-white.webp",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/rapier_1.png",
       "description": "An elegant blade designed for precise thrusting attacks. Favored by duelists and nobles.",
       "quantity": 1,
       "weight": 2,
@@ -356,7 +356,7 @@
     },
     {
       "name": "Scimitar",
-      "img": "icons/weapons/swords/scimitar-guard.webp",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/scimitar_1.png",
       "description": "A curved blade designed for slashing attacks. Light and quick in the hands of a skilled warrior.",
       "quantity": 1,
       "weight": 3,
@@ -378,7 +378,7 @@
     },
     {
       "name": "Shortbow",
-      "img": "icons/weapons/bows/shortbow-recurve.webp",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/ranged/shortbow_1.png",
       "description": "A compact bow suitable for hunting and skirmishing. Easy to draw and quick to fire.",
       "quantity": 1,
       "weight": 2,
@@ -400,7 +400,7 @@
     },
     {
       "name": "Shortsword",
-      "img": "icons/weapons/swords/shortsword-guard.webp",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/short_sword_1.png",
       "description": "A versatile blade suitable for both thrusting and slashing. Popular among adventurers for its balance of reach and speed.",
       "quantity": 1,
       "weight": 2,
@@ -422,7 +422,7 @@
     },
     {
       "name": "Sling",
-      "img": "icons/weapons/slings/sling-leather.webp",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/ranged/sling_1.png",
       "description": "A simple leather strap used to hurl stones. Cheap, effective, and easy to find ammunition for.",
       "quantity": 1,
       "weight": 0,
@@ -444,7 +444,7 @@
     },
     {
       "name": "Spear",
-      "img": "icons/weapons/polearms/spear-flared-steel.webp",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/spear_1.png",
       "description": "A versatile polearm with a sharp point. Can be thrust in melee or thrown.",
       "quantity": 1,
       "weight": 3,
@@ -466,7 +466,7 @@
     },
     {
       "name": "Trident",
-      "img": "icons/weapons/polearms/trident-curved-steel.webp",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/trident_1.png",
       "description": "A three-pronged spear. Can be used to pierce enemies or trap their weapons.",
       "quantity": 1,
       "weight": 4,
@@ -488,7 +488,7 @@
     },
     {
       "name": "Warhammer",
-      "img": "icons/weapons/hammers/hammer-war-spiked.webp",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/war_hammer.png",
       "description": "A balanced war hammer with a heavy head. Effective against armored opponents.",
       "quantity": 1,
       "weight": 5,
@@ -510,7 +510,7 @@
     },
     {
       "name": "Stormcaller",
-      "img": "icons/weapons/hammers/hammer-double-glowing-yellow.webp",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/artefact/spwpn_sword_of_power.png",
       "description": "A massive warhammer wreathed in crackling lightning. Legends say it was wielded by a storm giant who fell defending the mortal realms. The weapon hums with barely-contained power, and thunder rumbles with each swing. When struck against the ground, it can summon devastating lightning storms.",
       "quantity": 1,
       "weight": 15,
@@ -536,7 +536,7 @@
     },
     {
       "name": "The Sunblade",
-      "img": "icons/weapons/swords/sword-gold-holy.webp",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/artefact/urand_eos.png",
       "description": "A radiant greatsword forged in the heart of a dying star. Pure sunlight flows through its crystalline blade, and it shines like a beacon of hope in the darkest places. Undead creatures shrink from its radiance, and darkness itself seems to flee before its wielder. The weapon is said to have been a gift from the solar deities to their greatest champion.",
       "quantity": 1,
       "weight": 6,
@@ -566,7 +566,7 @@
     },
     {
       "name": "Frostbrand Longsword",
-      "img": "icons/magic/water/strike-weapon-blade-ice-blue.webp",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/artefact/urand_chilly_death.png",
       "description": "A magnificent blade forged in the frozen peaks of the Eternal Winter. Frost crawls along its edge, and the air around it shimmers with cold. Those struck by this weapon feel their movements slow as ice creeps through their veins.",
       "quantity": 1,
       "weight": 3,
@@ -592,7 +592,7 @@
     },
     {
       "name": "Flame Dagger",
-      "img": "icons/magic/fire/dagger-rune-enchant-flame-orange.webp",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/artefact/urand_firestarter.png",
       "description": "A slender blade wreathed in flickering flames. The heat never burns its wielder, but enemies feel its scorching bite.",
       "quantity": 1,
       "weight": 1,

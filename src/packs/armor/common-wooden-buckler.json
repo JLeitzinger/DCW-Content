@@ -2,7 +2,7 @@
   "_id": "common-wooden-buckler",
   "name": "Wooden Buckler",
   "type": "armor",
-  "img": "icons/equipment/shield/buckler-wooden-boss.webp",
+  "img": "modules/dcw-content/assets/tiles/item/armor/shields/shield_1.png",
   "system": {
     "description": "A small round shield, strapped to the forearm. Cheap, light, and just enough to catch a blade.",
     "quantity": 1,

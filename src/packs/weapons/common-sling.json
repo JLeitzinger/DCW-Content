@@ -2,7 +2,7 @@
   "_id": "common-sling",
   "name": "Sling",
   "type": "weapon",
-  "img": "icons/weapons/slings/sling-leather.webp",
+  "img": "modules/dcw-content/assets/tiles/item/weapon/ranged/sling_1.png",
   "system": {
     "description": "A simple leather strap used to hurl stones. Cheap, effective, and easy to find ammunition for.",
     "quantity": 1,

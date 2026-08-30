@@ -2,7 +2,7 @@
   "_id": "common-crossbow",
   "name": "Crossbow",
   "type": "weapon",
-  "img": "icons/weapons/crossbows/crossbow-simple-brown.webp",
+  "img": "modules/dcw-content/assets/tiles/item/weapon/ranged/crossbow_1.png",
   "system": {
     "description": "A mechanical bow mounted on a stock. Easier to aim than a traditional bow but slower to reload.",
     "quantity": 1,

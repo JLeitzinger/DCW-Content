@@ -2,7 +2,7 @@
   "_id": "common-mace",
   "name": "Mace",
   "type": "weapon",
-  "img": "icons/weapons/maces/mace-round-steel.webp",
+  "img": "modules/dcw-content/assets/tiles/item/weapon/mace_1.png",
   "system": {
     "description": "A metal-headed club designed to crush armor and bone alike. Popular among clergy and knights.",
     "quantity": 1,

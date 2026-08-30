@@ -16,7 +16,7 @@
           "level": 1
         }
       ],
-      "img": "icons/equipment/chest/vest-leather-brown.webp"
+      "img": "modules/dcw-content/assets/tiles/item/armor/torso/leather_armor_1.png"
     },
     {
       "name": "Chainmail",
@@ -32,7 +32,7 @@
           "level": 2
         }
       ],
-      "img": "icons/equipment/chest/breastplate-banded-steel.webp"
+      "img": "modules/dcw-content/assets/tiles/item/armor/torso/chain_mail_1.png"
     },
     {
       "name": "Plate Armor",
@@ -48,7 +48,7 @@
           "level": 3
         }
       ],
-      "img": "icons/equipment/chest/suit-armored-chest-plated.webp"
+      "img": "modules/dcw-content/assets/tiles/item/armor/torso/plate_mail_1.png"
     },
     {
       "name": "Wooden Buckler",
@@ -64,7 +64,7 @@
           "level": 1
         }
       ],
-      "img": "icons/equipment/shield/buckler-wooden-boss.webp"
+      "img": "modules/dcw-content/assets/tiles/item/armor/shields/shield_1.png"
     },
     {
       "name": "Tower Shield",
@@ -80,7 +80,7 @@
           "level": 3
         }
       ],
-      "img": "icons/equipment/shield/Scutum-steel-worn.webp"
+      "img": "modules/dcw-content/assets/tiles/item/armor/shields/large_shield_1.png"
     }
   ]
 }

@@ -62,13 +62,24 @@ const featureIdsToNames = new Map(featureEntries.map(({ data }) => [data._id, da
 // never real, which otherwise renders as a broken image in the compendium and on sheets.
 const validIcons = new Set(JSON.parse(fs.readFileSync(path.join(dataDir, 'foundry-icons-index.json'), 'utf8')));
 
+const MODULE_ASSET_PREFIX = 'modules/dcw-content/';
+
 function checkImg(type, file, img) {
   if (!img) {
     warn(type, file, `missing img - will render with Foundry's default mystery-man icon`);
     return;
   }
-  if (img.startsWith('icons/') && !validIcons.has(img)) {
-    error(type, file, `img "${img}" does not exist in Foundry's bundled icon set (see data/foundry-icons-index.json) - it will render broken`);
+  if (img.startsWith('icons/')) {
+    if (!validIcons.has(img)) {
+      error(type, file, `img "${img}" does not exist in Foundry's bundled icon set (see data/foundry-icons-index.json) - it will render broken`);
+    }
+    return;
+  }
+  if (img.startsWith(MODULE_ASSET_PREFIX)) {
+    const onDisk = path.join(__dirname, '..', img.slice(MODULE_ASSET_PREFIX.length));
+    if (!fs.existsSync(onDisk)) {
+      error(type, file, `img "${img}" does not exist on disk - it will render broken`);
+    }
   }
 }
 

@@ -2,7 +2,7 @@
   "_id": "common-heavy-crossbow",
   "name": "Heavy Crossbow",
   "type": "weapon",
-  "img": "icons/weapons/crossbows/crossbow-heavy.webp",
+  "img": "modules/dcw-content/assets/tiles/item/weapon/ranged/arbalest_1.png",
   "system": {
     "description": "A powerful crossbow with a reinforced frame. Fires heavy bolts with tremendous force.",
     "quantity": 1,
