@@ -1,0 +1,27 @@
+{
+  "_comment": "Keyword rules TileLibrary.mjs uses to sort data/tile-pack-index.json entries into the six data/narrative-lexicon.json themeCategories. Rules are checked in order, case-insensitively, as a substring match against the file's basename (no extension); the first match wins. A file matching nothing falls back to _generic, same as the hand-curated assets/tiles/dungeon/_generic/ scaffold. Edit this file directly to retune matches - no regeneration step needed, TileLibrary.mjs reads it fresh each run.",
+  "rules": [
+    { "match": "crystal_", "themeCategory": "alchemical" },
+    { "match": "lab-", "themeCategory": "alchemical" },
+    { "match": "crypt", "themeCategory": "undead" },
+    { "match": "bone", "themeCategory": "undead" },
+    { "match": "catacombs", "themeCategory": "undead" },
+    { "match": "tomb", "themeCategory": "undead" },
+    { "match": "ice", "themeCategory": "elemental" },
+    { "match": "frozen", "themeCategory": "elemental" },
+    { "match": "hell", "themeCategory": "elemental" },
+    { "match": "infernal", "themeCategory": "elemental" },
+    { "match": "lava", "themeCategory": "elemental" },
+    { "match": "volcanic", "themeCategory": "elemental" },
+    { "match": "church", "themeCategory": "cult" },
+    { "match": "banners", "themeCategory": "cult" },
+    { "match": "relief", "themeCategory": "cult" },
+    { "match": "sigil", "themeCategory": "cult" },
+    { "match": "dirt", "themeCategory": "feral" },
+    { "match": "grass", "themeCategory": "feral" },
+    { "match": "lair", "themeCategory": "feral" },
+    { "match": "orc", "themeCategory": "feral" },
+    { "match": "abyss", "themeCategory": "abyssal" },
+    { "match": "demonic_red", "themeCategory": "abyssal" }
+  ]
+}
