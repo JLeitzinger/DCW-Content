@@ -1,0 +1,76 @@
+{
+  "_id": "lYN8t6D0OWkOqYpb",
+  "name": "Basilisk",
+  "type": "npc",
+  "img": "modules/dcw-content/assets/tiles/monster/animals/basilisk.png",
+  "system": {
+    "cr": 7,
+    "health": {
+      "value": 50,
+      "max": 50
+    },
+    "power": {
+      "value": 25,
+      "max": 25
+    },
+    "abilities": {
+      "str": {
+        "value": 10
+      },
+      "dex": {
+        "value": 14
+      },
+      "con": {
+        "value": 17
+      },
+      "int": {
+        "value": 10
+      },
+      "wis": {
+        "value": 10
+      },
+      "cha": {
+        "value": 10
+      }
+    },
+    "biography": "The statues nearby aren't decoration."
+  },
+  "prototypeToken": {
+    "name": "Basilisk",
+    "texture": {
+      "src": "modules/dcw-content/assets/tiles/monster/animals/basilisk.png"
+    },
+    "width": 1,
+    "height": 1,
+    "actorLink": false,
+    "disposition": -1,
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "health"
+    },
+    "bar2": {
+      "attribute": "power"
+    }
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

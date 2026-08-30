@@ -1,5 +1,5 @@
 {
-  "_id": "fFH3nIewzfzc7i1c",
+  "_id": "FH3nIewzfzc7i1c3",
   "name": "The Hollow Barrows - rest area (Room 31)",
   "active": false,
   "width": 500,
@@ -54,7 +54,7 @@
   "tokens": [],
   "lights": [
     {
-      "_id": "D36iS2T4Jpgo3qkZ",
+      "_id": "36iS2T4Jpgo3qkZE",
       "x": 150,
       "y": 180,
       "elevation": 0,
@@ -91,7 +91,7 @@
       "flags": {}
     },
     {
-      "_id": "EOs0OQY2G8C3xPDd",
+      "_id": "Os0OQY2G8C3xPDdO",
       "x": 350,
       "y": 420,
       "elevation": 0,
@@ -131,7 +131,7 @@
   "notes": [],
   "regions": [
     {
-      "_id": "Ah4B5PiXUGPNivJJ",
+      "_id": "h4B5PiXUGPNivJJc",
       "name": "Exit",
       "color": "#ff6400",
       "shapes": [
@@ -151,12 +151,12 @@
       },
       "behaviors": [
         {
-          "_id": "cNS0Lcdq4ba2BsgC",
+          "_id": "NS0Lcdq4ba2BsgCO",
           "name": "Return to floor",
           "type": "teleportToken",
           "system": {
             "destinations": [
-              "Scene.g6iaP7l8oTh9FJOu.Region.3lyYS6YseyliV350"
+              "Scene.g6iaP7l8oTh9FJOu.Region.lyYS6YseyliV350A"
             ],
             "placement": "center",
             "snap": true,
@@ -183,9 +183,9 @@
   "sounds": [],
   "tiles": [
     {
-      "_id": "gbyrjoPaN6sUtFmc",
+      "_id": "UtFmcXNf4nk5uzTz",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_3.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/acidic_floor_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -220,9 +220,9 @@
       "flags": {}
     },
     {
-      "_id": "Nf4nk5uzTzrnqo8K",
+      "_id": "nqo8KtWKuvKo2j5P",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_2.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/acidic_floor_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -257,9 +257,9 @@
       "flags": {}
     },
     {
-      "_id": "WKuvKo2j5Pg66beW",
+      "_id": "66beWCiaunRZZVgQ",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_3.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/acidic_floor_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -294,9 +294,9 @@
       "flags": {}
     },
     {
-      "_id": "iaunRZZVgQOgQHCI",
+      "_id": "gQHCIlGXdI3oI3YY",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_0.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/acidic_floor_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -331,9 +331,9 @@
       "flags": {}
     },
     {
-      "_id": "GXdI3oI3YYoJxmrg",
+      "_id": "JxmrgNDL0HxtRLio",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_3.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/acidic_floor_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -368,9 +368,9 @@
       "flags": {}
     },
     {
-      "_id": "DL0HxtRLio86oprb",
+      "_id": "6oprbbbQ2OlJpkHI",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_1.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/acidic_floor_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -405,9 +405,9 @@
       "flags": {}
     },
     {
-      "_id": "bQ2OlJpkHIaqJNCs",
+      "_id": "qJNCsd6N8DJamVGc",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_2.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/acidic_floor_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -442,9 +442,9 @@
       "flags": {}
     },
     {
-      "_id": "6N8DJamVGcdsATet",
+      "_id": "sATet6Wgwvwinnl6",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_2.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/acidic_floor_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -479,9 +479,9 @@
       "flags": {}
     },
     {
-      "_id": "Wgwvwinnl6EMZi34",
+      "_id": "MZi34uMF5d1H0IL5",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_0.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/acidic_floor_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -516,9 +516,9 @@
       "flags": {}
     },
     {
-      "_id": "MF5d1H0IL5MTwRpF",
+      "_id": "TwRpFcswFZCv256E",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_3.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/acidic_floor_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -553,9 +553,9 @@
       "flags": {}
     },
     {
-      "_id": "swFZCv256EeEqh1J",
+      "_id": "Eqh1J0YwoYWP5UT9",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_2.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/acidic_floor_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -590,9 +590,9 @@
       "flags": {}
     },
     {
-      "_id": "YwoYWP5UT9jLwpAk",
+      "_id": "LwpAkOyJJq1bPne3",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_0.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/acidic_floor_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -627,9 +627,9 @@
       "flags": {}
     },
     {
-      "_id": "yJJq1bPne3HZS6qY",
+      "_id": "ZS6qYmdDU00qRLIt",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_1.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/acidic_floor_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -664,9 +664,9 @@
       "flags": {}
     },
     {
-      "_id": "dDU00qRLItqw3Ukl",
+      "_id": "w3UklzvF1UIkX9mL",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_3.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/acidic_floor_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -701,9 +701,9 @@
       "flags": {}
     },
     {
-      "_id": "vF1UIkX9mLbjhVrx",
+      "_id": "jhVrxKN3pePQqyhY",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_3.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/acidic_floor_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -738,9 +738,9 @@
       "flags": {}
     },
     {
-      "_id": "N3pePQqyhYZkqzLd",
+      "_id": "kqzLdcvoFME57WUL",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_1.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/acidic_floor_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -775,9 +775,9 @@
       "flags": {}
     },
     {
-      "_id": "voFME57WULtu6poH",
+      "_id": "u6poHHD8QKjzn5Wc",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_2.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/acidic_floor_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -812,9 +812,9 @@
       "flags": {}
     },
     {
-      "_id": "D8QKjzn5Wc3f26gi",
+      "_id": "f26giQBWP1S6y8Rn",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_1.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/acidic_floor_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -849,9 +849,9 @@
       "flags": {}
     },
     {
-      "_id": "BWP1S6y8RnckGPnV",
+      "_id": "kGPnVRjjffmEySCe",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_1.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -886,9 +886,9 @@
       "flags": {}
     },
     {
-      "_id": "jjffmEySCedYxJ3j",
+      "_id": "YxJ3jAojTckmM7gg",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_1.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -923,9 +923,9 @@
       "flags": {}
     },
     {
-      "_id": "ojTckmM7gg17dqEe",
+      "_id": "7dqEeWvBlk9DaEgu",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_0.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake-c_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -960,9 +960,9 @@
       "flags": {}
     },
     {
-      "_id": "vBlk9DaEgu2OKzPZ",
+      "_id": "OKzPZAqNIlJxVFQE",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_2.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/acidic_floor_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -997,9 +997,9 @@
       "flags": {}
     },
     {
-      "_id": "qNIlJxVFQEb1LWMl",
+      "_id": "1LWMlPfot6Zuu9iO",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_0.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/acidic_floor_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -1034,9 +1034,9 @@
       "flags": {}
     },
     {
-      "_id": "fot6Zuu9iOJIdRgV",
+      "_id": "IdRgVmTiDbpTISZq",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_1.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -1071,9 +1071,9 @@
       "flags": {}
     },
     {
-      "_id": "TiDbpTISZqDUpQh5",
+      "_id": "UpQh5qFyZtpIANRb",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_3.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -1108,9 +1108,9 @@
       "flags": {}
     },
     {
-      "_id": "FyZtpIANRbKABfpv",
+      "_id": "ABfpvphqDL0uJvyC",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_3.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake-c_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -1145,9 +1145,9 @@
       "flags": {}
     },
     {
-      "_id": "hqDL0uJvyCuJP9fr",
+      "_id": "JP9frZKgMmjb3OIf",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_3.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/acidic_floor_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -1182,9 +1182,9 @@
       "flags": {}
     },
     {
-      "_id": "KgMmjb3OIfKcpw3u",
+      "_id": "cpw3uXoJBqwIIiNW",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_2.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/acidic_floor_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -1219,9 +1219,9 @@
       "flags": {}
     },
     {
-      "_id": "oJBqwIIiNWbZm21a",
+      "_id": "Zm21abapLHA90dd6",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_2.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/acidic_floor_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -1256,9 +1256,9 @@
       "flags": {}
     },
     {
-      "_id": "apLHA90dd6u1pQrP",
+      "_id": "1pQrPrDpFI5PUEzT",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/labyrinth_2.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/acidic_floor_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -1273,117 +1273,6 @@
       "y": 500,
       "elevation": 0,
       "sort": -200,
-      "rotation": 0,
-      "alpha": 1,
-      "hidden": false,
-      "locked": false,
-      "restrictions": {
-        "light": false,
-        "weather": false
-      },
-      "occlusion": {
-        "mode": 1,
-        "alpha": 0
-      },
-      "video": {
-        "loop": true,
-        "autoplay": true,
-        "volume": 0
-      },
-      "flags": {}
-    },
-    {
-      "_id": "I5PUEzTAXeoPYrIZ",
-      "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/altars/unknown.png",
-        "anchorX": 0.5,
-        "anchorY": 0.5,
-        "fit": "fill",
-        "scaleX": 1,
-        "scaleY": 1,
-        "tint": "#ffffff",
-        "alphaThreshold": 0.75
-      },
-      "width": 100,
-      "height": 100,
-      "x": 320,
-      "y": 137,
-      "elevation": 0,
-      "sort": -100,
-      "rotation": 0,
-      "alpha": 1,
-      "hidden": false,
-      "locked": false,
-      "restrictions": {
-        "light": false,
-        "weather": false
-      },
-      "occlusion": {
-        "mode": 1,
-        "alpha": 0
-      },
-      "video": {
-        "loop": true,
-        "autoplay": true,
-        "volume": 0
-      },
-      "flags": {}
-    },
-    {
-      "_id": "dKSLeA3WFUM8vIVX",
-      "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/water/shallow_water_disturbance.png",
-        "anchorX": 0.5,
-        "anchorY": 0.5,
-        "fit": "fill",
-        "scaleX": 1,
-        "scaleY": 1,
-        "tint": "#ffffff",
-        "alphaThreshold": 0.75
-      },
-      "width": 100,
-      "height": 100,
-      "x": 94,
-      "y": 232,
-      "elevation": 0,
-      "sort": -99,
-      "rotation": 0,
-      "alpha": 1,
-      "hidden": false,
-      "locked": false,
-      "restrictions": {
-        "light": false,
-        "weather": false
-      },
-      "occlusion": {
-        "mode": 1,
-        "alpha": 0
-      },
-      "video": {
-        "loop": true,
-        "autoplay": true,
-        "volume": 0
-      },
-      "flags": {}
-    },
-    {
-      "_id": "zbZs35gKfHcv8ZBn",
-      "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/statues/statue_cat.png",
-        "anchorX": 0.5,
-        "anchorY": 0.5,
-        "fit": "fill",
-        "scaleX": 1,
-        "scaleY": 1,
-        "tint": "#ffffff",
-        "alphaThreshold": 0.75
-      },
-      "width": 100,
-      "height": 100,
-      "x": 32,
-      "y": 96,
-      "elevation": 0,
-      "sort": -98,
       "rotation": 0,
       "alpha": 1,
       "hidden": false,
@@ -1406,7 +1295,7 @@
   ],
   "walls": [
     {
-      "_id": "OPZVJ6rEQGkBxSnO",
+      "_id": "PZVJ6rEQGkBxSnOL",
       "c": [
         0,
         0,
@@ -1423,7 +1312,7 @@
       "doorSound": ""
     },
     {
-      "_id": "LX9CbPHoujcH4Zk8",
+      "_id": "X9CbPHoujcH4Zk8j",
       "c": [
         0,
         0,
@@ -1440,7 +1329,7 @@
       "doorSound": ""
     },
     {
-      "_id": "jFJXkrKkbPrM13vZ",
+      "_id": "FJXkrKkbPrM13vZl",
       "c": [
         500,
         0,
@@ -1457,7 +1346,7 @@
       "doorSound": ""
     },
     {
-      "_id": "lIzfUvY95tIbU1jt",
+      "_id": "IzfUvY95tIbU1jtF",
       "c": [
         0,
         600,
@@ -1474,7 +1363,7 @@
       "doorSound": ""
     },
     {
-      "_id": "FwlWIjKoAiaMaHlw",
+      "_id": "wlWIjKoAiaMaHlwP",
       "c": [
         220,
         600,
@@ -1491,7 +1380,7 @@
       "doorSound": ""
     },
     {
-      "_id": "PWJ4JD7eqijdXd0T",
+      "_id": "WJ4JD7eqijdXd0TD",
       "c": [
         280,
         600,

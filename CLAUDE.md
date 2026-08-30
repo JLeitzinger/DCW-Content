@@ -489,6 +489,31 @@ Base skills from the compendium (skills-manifest.json).
 
 ---
 
+### **NPC (Monster)** Actors
+The only Actor-type content in this repo (everything else is Item/Scene/JournalEntry) - real `dccworldNPC` stat blocks (health, power, abilities, cr) from the Dungeon-Crawler-World system, illustrated with the DCSS `assets/tiles/monster/` pack. Authored in `data/monsters-manifest.json` (`npm run generate:monsters` → `src/packs/monsters/`, packed by `npm run pack:monsters`). Two consumers share this one manifest: the Monsters compendium itself (browsable/importable like any other Actor), and `scripts/lib/level-gen/MonsterGenerator.mjs`, which auto-populates generated floors' rooms with Tokens referencing it - "generating a floor" also generates its encounters now, no separate step.
+
+**Manifest fields (lean by design - see `scripts/lib/monster-roster.mjs` for the derivation logic, not hand-authored per monster):**
+- `name`, `img` (an `assets/tiles/monster/...` path), `themeCategory` (must be a key in `data/narrative-lexicon.json`'s `themeCategories` - same field used by floors)
+- `band` - `"minion"`, `"elite"`, or `"boss"`. Drives both its CR/stat scaling and which room roles it's eligible to be placed in (see `BAND_ROOM_ROLES` in monster-roster.mjs) - not something to hand-author per monster.
+- `tier` - 1-5, "which floor complexity tier this creature suits" (same tier `floors-manifest.json`/`StoryGenerator.mjs` already use). MonsterGenerator picks the nearest-tier match in the room's required theme+band, so this doesn't need to line up exactly - it's a bias, not a hard cutoff.
+- `primaryAbility` (required) / `secondaryAbility` (optional) - which of the six abilities this monster is built around.
+- `biography` - one line of flavor text, shown on the Actor's Description tab.
+
+**CR/stat formula** (computed, never hand-set - see `computeStats`/`computeAbilities` in monster-roster.mjs): `cr = round(tier * bandMultiplier)` where minion=1, elite=1.8, boss=3. `health.max = 8 + cr*6`, `power.max = 4 + cr*3`. Abilities start at 10 flat; `primaryAbility` becomes `10+cr`, `secondaryAbility` (if set) becomes `10+ceil(cr/2)`. This mirrors `dccworldNPC`'s own `xp = cr*cr*100` already being cr-driven - CR is this roster's one difficulty knob, same as everywhere else in the system.
+
+**Room placement (MonsterGenerator.mjs, runs automatically inside `npm run generate:floors`):** `entrance` and `rest-area` are always left empty (the floor's safe rooms). Every other room role rolls a fill chance, and if it hits, gets one same-theme monster group sized/banded by role (boss-arena → 1 boss + optional escorts on a big room, hazard-chamber/secret-vault → elite, treasure-vault → elite guardian or minion pack, corridor-junction/chamber → mostly minion packs of 1-3). A room that already got its own sub-scene (see SceneBuilder.mjs) is only populated *there*, not in the primary scene's passthrough version of that room.
+
+**The one real limitation, not fixable from generation alone:** a placed Token's `actorId` points directly at the Monsters compendium Actor's own stable id (see `stableId()`/`monsterActorId()` in `scripts/lib/stable-id.mjs` and `monster-roster.mjs` - deterministic from the monster's name, so it's the same value everywhere regardless of which script last ran). Foundry only resolves `actorId` against the **world's** Actor collection, not compendium content directly - a GM must import the Monsters compendium into their world once (compendium sidebar → right-click "Monsters" → **Import All Content** → check **Keep Document IDs** before confirming) before placed tokens show real art/stats instead of an unknown-actor token. Note: a single actor's own right-click **Import** (from inside the compendium browser) keeps its id by default with no checkbox needed - it's specifically the bulk "Import All Content" dialog that defaults `Keep Document IDs` to unchecked. This is the same constraint every non-Adventure-document Foundry module with pre-placed tokens has; there's no supported way around it for procedurally generated compendium Scenes.
+
+**Adding a monster:**
+1. Add an entry to `data/monsters-manifest.json` (name/img/themeCategory/band/tier/primaryAbility/description - see fields above).
+2. Verify the `img` path exists under `assets/tiles/monster/` (1,541 files across ~21 category folders - undead, draconic, demons, aquatic, etc. - browse there for art).
+3. Run `npm run generate:monsters`, then `npm run validate -- --type=monsters` (checks the generated Actor docs) and `--type=monsters-manifest` (checks themeCategory/band/tier/abilities on the source manifest itself).
+4. Run `npm run generate:floors` again if you want existing floors to pick up the new monster in their room placement (it's picked up automatically on any future regeneration - no code change needed).
+5. Commit `data/monsters-manifest.json`, `src/packs/monsters/`, `packs/monsters/`, and the regenerated `src/packs/scenes/`/`packs/scenes/` if floors were regenerated too.
+
+---
+
 ## Creating New Content
 
 Every type follows the same pattern now: edit the manifest, generate, validate, pack. `grantedSkills`/`grantedFeatures` are always written as `{skillName, level}` / `{featureName, level}` in the manifest - never hand-type a `Compendium....Item.<Id>` UUID; `npm run generate:<type>` resolves the name and fails loudly if it doesn't exist, which is what actually prevents a typo'd or hallucinated reference from ever reaching the compendium.
@@ -541,6 +566,14 @@ Every type follows the same pattern now: edit the manifest, generate, validate, 
 2. Run `npm run generate:features`
 3. Run `npm run validate -- --type=features`
 4. Commit `data/features-manifest.json`, `src/packs/features/`, and `packs/features/`
+
+### Adding a New Monster
+
+1. Add an entry to `data/monsters-manifest.json` (see the **NPC (Monster) Actors** section above for the field shape and CR/stat formula)
+2. Run `npm run generate:monsters`
+3. Run `npm run validate -- --type=monsters` and `--type=monsters-manifest`
+4. Run `npm run generate:floors` if you want existing floors to place it (optional - new monsters are picked up automatically on any future regeneration)
+5. Commit `data/monsters-manifest.json`, `src/packs/monsters/`, `packs/monsters/`, and any regenerated `src/packs/scenes/`/`packs/scenes/`
 
 ### Adding Tile Art for Generated Maps
 

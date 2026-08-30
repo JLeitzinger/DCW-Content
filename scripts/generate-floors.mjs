@@ -20,6 +20,7 @@ import { generateLights } from './lib/level-gen/LightingGenerator.mjs';
 import { buildJournals } from './lib/level-gen/JournalBuilder.mjs';
 import { buildScenes } from './lib/level-gen/SceneBuilder.mjs';
 import { loadTileLibrary } from './lib/level-gen/TileLibrary.mjs';
+import { loadMonsterRoster } from './lib/monster-roster.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const scenesDir = path.join(__dirname, '../src/packs/scenes');
@@ -27,9 +28,11 @@ const journalsDir = path.join(__dirname, '../src/packs/journals');
 const journalFoldersDir = path.join(__dirname, '../src/packs/journal-folders');
 const manifestPath = path.join(__dirname, '../data/floors-manifest.json');
 const tileAssetsDir = path.join(__dirname, '../assets/tiles');
+const dataDir = path.join(__dirname, '../data');
 
 const DEFAULT_SETTING = 'dungeon';
 const tileLibrary = loadTileLibrary(tileAssetsDir);
+const monsterRoster = loadMonsterRoster(dataDir);
 
 // Rebuild output dirs from scratch each run - same reasoning as pack-items.mjs: without this,
 // a room/id that no longer exists after a manifest/algorithm change leaves a stale orphaned
@@ -61,7 +64,7 @@ function generateFloor(floorEntry) {
 
   const journals = buildJournals(rng, id, theme, storyGraph, geometry.rooms, tierConfig);
   const setting = floorEntry.setting || DEFAULT_SETTING;
-  const { primaryScene, subScenes } = buildScenes(rng, id, theme, geometry, lights, journals, tierConfig, tileLibrary, setting);
+  const { primaryScene, subScenes } = buildScenes(rng, id, theme, geometry, lights, journals, tierConfig, tileLibrary, setting, tier, monsterRoster);
 
   return { floorSlug, tier, roomCount: geometry.rooms.length, subSceneCount: subScenes.length,
     scenes: [primaryScene, ...subScenes], journalEntries: journals.entries, journalFolders: journals.folders };

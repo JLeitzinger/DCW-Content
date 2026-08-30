@@ -1,0 +1,76 @@
+{
+  "_id": "WxXslxzt2Ijo2kLW",
+  "name": "Acid Blob",
+  "type": "npc",
+  "img": "modules/dcw-content/assets/tiles/monster/amorphous/acid_blob.png",
+  "system": {
+    "cr": 2,
+    "health": {
+      "value": 20,
+      "max": 20
+    },
+    "power": {
+      "value": 10,
+      "max": 10
+    },
+    "abilities": {
+      "str": {
+        "value": 10
+      },
+      "dex": {
+        "value": 10
+      },
+      "con": {
+        "value": 12
+      },
+      "int": {
+        "value": 10
+      },
+      "wis": {
+        "value": 10
+      },
+      "cha": {
+        "value": 10
+      }
+    },
+    "biography": "Whatever container once held it is long since dissolved."
+  },
+  "prototypeToken": {
+    "name": "Acid Blob",
+    "texture": {
+      "src": "modules/dcw-content/assets/tiles/monster/amorphous/acid_blob.png"
+    },
+    "width": 1,
+    "height": 1,
+    "actorLink": false,
+    "disposition": -1,
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "health"
+    },
+    "bar2": {
+      "attribute": "power"
+    }
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

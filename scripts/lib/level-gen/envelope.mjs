@@ -16,8 +16,8 @@
  */
 import { DOCUMENT_STATS } from '../foundry-item.mjs';
 
-/** Foundry v13 Scene document. Embedded collections (walls/lights/notes/regions/tiles) passed in raw. */
-export function buildSceneEnvelope({ id, name, width, height, gridSize, backgroundColor, darknessLevel, walls, lights, notes, regions, tiles = [] }) {
+/** Foundry v13 Scene document. Embedded collections (walls/lights/notes/regions/tiles/tokens) passed in raw. */
+export function buildSceneEnvelope({ id, name, width, height, gridSize, backgroundColor, darknessLevel, walls, lights, notes, regions, tiles = [], tokens = [] }) {
   return {
     _id: id,
     name,
@@ -47,7 +47,7 @@ export function buildSceneEnvelope({ id, name, width, height, gridSize, backgrou
       }
     },
     drawings: [],
-    tokens: [],
+    tokens,
     lights,
     notes,
     regions,
@@ -133,6 +133,53 @@ export function buildTileEnvelope({ id, img, x, y, width, height, rotation = 0, 
     restrictions: { light: false, weather: false },
     occlusion: { mode: 1, alpha: 0 }, // FADE - tokens standing on/behind the tile fade it rather than vanishing under it
     video: { loop: true, autoplay: true, volume: 0 },
+    flags: {}
+  };
+}
+
+/**
+ * Embedded Token Document placed by MonsterGenerator.mjs. `actorId` is a Monsters-compendium
+ * Actor's own stable id (see lib/monster-roster.mjs) - NOT this Scene's idFactory - so it stays
+ * correct regardless of when/whether that compendium was regenerated. `actorLink: false` means
+ * each placed instance tracks its own current health/power independently (an unlinked token
+ * gets its own on-the-fly ActorDelta the moment a GM edits its HP in Foundry - no delta needs
+ * to be pre-populated here for that to work) rather than three "Warren Wolf" tokens in one room
+ * sharing a single HP pool.
+ *
+ * Important limitation, not fixable from this generator alone: Foundry resolves `actorId`
+ * against the world's Actor collection, not compendium content directly. A GM must import the
+ * Monsters compendium into their world once (compendium sidebar -> right-click -> Import All)
+ * before these tokens resolve to a real actor instead of showing as broken/unknown - see the
+ * README's "Populated encounters" section. This is the same constraint every non-Adventure-
+ * document Foundry content module with pre-placed tokens has; there is no supported way around
+ * it for procedurally generated compendium Scenes.
+ */
+export function buildTokenEnvelope({ id, actorId, name, img, x, y, disposition = -1 }) {
+  return {
+    _id: id,
+    name,
+    actorId,
+    actorLink: false,
+    delta: null,
+    width: 1,
+    height: 1,
+    texture: { src: img, anchorX: 0.5, anchorY: 0.5, scaleX: 1, scaleY: 1, tint: '#ffffff' },
+    x,
+    y,
+    elevation: 0,
+    sort: 0,
+    rotation: 0,
+    alpha: 1,
+    hidden: false,
+    locked: false,
+    disposition,
+    displayName: 20, // HOVER, owner only
+    displayBars: 20,
+    bar1: { attribute: 'health' },
+    bar2: { attribute: 'power' },
+    light: { dim: 0, bright: 0 },
+    sight: { enabled: false },
+    detectionModes: [],
     flags: {}
   };
 }

@@ -11,6 +11,7 @@
 import { buildSceneEnvelope } from './envelope.mjs';
 import { generateLights } from './LightingGenerator.mjs';
 import { generateTiles } from './TileGenerator.mjs';
+import { placeMonsters } from './MonsterGenerator.mjs';
 
 const GRID_SIZE = 100;
 const SOLID = { light: 20, move: 20, sight: 20, sound: 20, door: 0, ds: 0, dir: 0, doorSound: '' };
@@ -89,9 +90,11 @@ function buildInteriorWalls(id, w, h) {
  * @param {function(string):string} id - idFactory (ids.mjs) shared with JournalBuilder for this floor.
  * @param {{ pool: Function }} library - TileLibrary.mjs handle; art is optional, see TileGenerator.mjs.
  * @param {string} setting - assets/tiles/<setting>/... bucket, e.g. "dungeon".
+ * @param {number} floorTier - resolveComplexityTier()'s 1-5, same value tierConfig was derived from.
+ * @param {Array} monsterRoster - lib/monster-roster.mjs's loadMonsterRoster() output; pass [] to disable auto-population.
  * @returns {{ primaryScene: object, subScenes: object[] }}
  */
-export function buildScenes(rng, id, theme, geometry, lights, journals, tierConfig, library, setting) {
+export function buildScenes(rng, id, theme, geometry, lights, journals, tierConfig, library, setting, floorTier, monsterRoster = []) {
   const { rooms, walls, boundsPx } = geometry;
 
   const notes = rooms.map(room => buildNote(
@@ -144,10 +147,18 @@ export function buildScenes(rng, id, theme, geometry, lights, journals, tierConf
       lights: generateLights(rng, id, [localRoom], theme),
       notes: [],
       regions: [subRegion],
-      tiles: library ? generateTiles(rng, id, [localRoom], theme, setting, library, tierConfig) : []
+      tiles: library ? generateTiles(rng, id, [localRoom], theme, setting, library, tierConfig) : [],
+      tokens: monsterRoster.length ? placeMonsters(rng, id, [localRoom], theme, floorTier, monsterRoster).tokens : []
     });
     subScenes.push(subScene);
   }
+
+  // Rooms that got their own sub-scene are only fought in *there* - the primary scene's version
+  // of that room is a cosmetic passthrough (Region teleports you out before you'd ever meet
+  // whatever's placed in it), so excluding them here is what stops the same monster group from
+  // effectively existing twice.
+  const subSceneRoomIds = new Set(subSceneRooms.map(r => r.id));
+  const populableRooms = rooms.filter(r => !subSceneRoomIds.has(r.id));
 
   const primaryScene = buildSceneEnvelope({
     id: primarySceneId,
@@ -161,7 +172,8 @@ export function buildScenes(rng, id, theme, geometry, lights, journals, tierConf
     lights,
     notes,
     regions: primaryRegions,
-    tiles: library ? generateTiles(rng, id, rooms, theme, setting, library, tierConfig) : []
+    tiles: library ? generateTiles(rng, id, rooms, theme, setting, library, tierConfig) : [],
+    tokens: monsterRoster.length ? placeMonsters(rng, id, populableRooms, theme, floorTier, monsterRoster).tokens : []
   });
 
   return { primaryScene, subScenes };

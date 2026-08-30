@@ -1,0 +1,76 @@
+{
+  "_id": "i4MDhxwky9R7h2xd",
+  "name": "High Priest",
+  "type": "npc",
+  "img": "modules/dcw-content/assets/tiles/monster/orc_high_priest.png",
+  "system": {
+    "cr": 4,
+    "health": {
+      "value": 32,
+      "max": 32
+    },
+    "power": {
+      "value": 16,
+      "max": 16
+    },
+    "abilities": {
+      "str": {
+        "value": 10
+      },
+      "dex": {
+        "value": 10
+      },
+      "con": {
+        "value": 10
+      },
+      "int": {
+        "value": 12
+      },
+      "wis": {
+        "value": 14
+      },
+      "cha": {
+        "value": 10
+      }
+    },
+    "biography": "Leads the rite personally when the stakes are high enough to warrant it."
+  },
+  "prototypeToken": {
+    "name": "High Priest",
+    "texture": {
+      "src": "modules/dcw-content/assets/tiles/monster/orc_high_priest.png"
+    },
+    "width": 1,
+    "height": 1,
+    "actorLink": false,
+    "disposition": -1,
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "health"
+    },
+    "bar2": {
+      "attribute": "power"
+    }
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

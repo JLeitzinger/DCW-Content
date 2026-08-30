@@ -1,0 +1,76 @@
+{
+  "_id": "SC6AUmxnIB7720vz",
+  "name": "Skeletal Warrior",
+  "type": "npc",
+  "img": "modules/dcw-content/assets/tiles/monster/undead/skeletons/skeleton_humanoid_small.png",
+  "system": {
+    "cr": 2,
+    "health": {
+      "value": 20,
+      "max": 20
+    },
+    "power": {
+      "value": 10,
+      "max": 10
+    },
+    "abilities": {
+      "str": {
+        "value": 10
+      },
+      "dex": {
+        "value": 12
+      },
+      "con": {
+        "value": 10
+      },
+      "int": {
+        "value": 10
+      },
+      "wis": {
+        "value": 10
+      },
+      "cha": {
+        "value": 10
+      }
+    },
+    "biography": "Still holds its old formation, decades after the rest of the garrison stopped answering roll call."
+  },
+  "prototypeToken": {
+    "name": "Skeletal Warrior",
+    "texture": {
+      "src": "modules/dcw-content/assets/tiles/monster/undead/skeletons/skeleton_humanoid_small.png"
+    },
+    "width": 1,
+    "height": 1,
+    "actorLink": false,
+    "disposition": -1,
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "health"
+    },
+    "bar2": {
+      "attribute": "power"
+    }
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

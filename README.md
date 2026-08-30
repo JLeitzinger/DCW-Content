@@ -148,6 +148,14 @@ Install this module from Foundry VTT:
 
 **Requirements:** The Dungeon Crawler World system must be installed first.
 
+**Populated encounters:** Generated floor scenes come pre-populated with monster tokens from
+this module's Monsters compendium. Before running a generated floor, import the Monsters
+compendium into your world once: open the Compendium Packs sidebar tab, right-click
+**Monsters**, choose **Import All Content**, and check **Keep Document IDs** before confirming
+(a single monster's own right-click "Import" keeps its id automatically - it's specifically the
+bulk "Import All Content" dialog that needs the box checked). Skipping this step means placed
+tokens show as an unresolved/unknown actor instead of the intended monster.
+
 ### For Developers
 
 Clone this repository to develop or modify content:

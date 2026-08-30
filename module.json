@@ -2,7 +2,7 @@
   "id": "dcw-content",
   "title": "Dungeon Crawler World - Content",
   "description": "Official content compendiums for the Dungeon Crawler World game system. Includes classes, races, items, spells, features, and skills.",
-  "version": "1.14.3",
+  "version": "1.14.4",
   "authors": [
     {
       "name": "JLeitzinger",
@@ -15,7 +15,7 @@
   },
   "url": "https://github.com/JLeitzinger/DCW-Content",
   "manifest": "https://raw.githubusercontent.com/JLeitzinger/DCW-Content/main/module.json",
-  "download": "https://github.com/JLeitzinger/DCW-Content/releases/download/v1.14.3/dcw-content-v1.14.3.zip",
+  "download": "https://github.com/JLeitzinger/DCW-Content/releases/download/v1.14.4/dcw-content-v1.14.4.zip",
   "license": "LICENSE",
   "readme": "README.md",
   "bugs": "https://github.com/JLeitzinger/DCW-Content/issues",
@@ -109,6 +109,17 @@
       }
     },
     {
+      "name": "monsters",
+      "label": "Monsters",
+      "type": "Actor",
+      "system": "dungeon-crawler-world",
+      "path": "packs/monsters",
+      "ownership": {
+        "PLAYER": "LIMITED",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
       "name": "scenes",
       "label": "Floor Scenes",
       "type": "Scene",
@@ -133,7 +144,7 @@
     {
       "name": "Dungeon Crawler World",
       "sorting": "m",
-      "packs": ["items", "weapons", "armor", "spells", "features", "classes", "races", "skills"]
+      "packs": ["items", "weapons", "armor", "spells", "features", "classes", "races", "skills", "monsters"]
     },
     {
       "name": "Dungeon Crawler World - Floors",

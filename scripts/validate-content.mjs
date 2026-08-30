@@ -64,6 +64,11 @@ const validIcons = new Set(JSON.parse(fs.readFileSync(path.join(dataDir, 'foundr
 
 const MODULE_ASSET_PREFIX = 'modules/dcw-content/';
 
+// Used by validateMonsters (themeCategory cross-check) and validateFloors (scene token
+// actorId cross-check against the Monsters compendium).
+const narrativeLexicon = JSON.parse(fs.readFileSync(path.join(dataDir, 'narrative-lexicon.json'), 'utf8'));
+const validThemeCategories = new Set(Object.keys(narrativeLexicon.themeCategories));
+
 function checkImg(type, file, img) {
   if (!img) {
     warn(type, file, `missing img - will render with Foundry's default mystery-man icon`);
@@ -341,6 +346,61 @@ function validateSpells() {
   }
 }
 
+function validateMonsters() {
+  const entries = loadEntries('monsters');
+  checkNoDuplicates('monsters', entries);
+  for (const { file, data } of entries) {
+    const s = data.system;
+    checkImg('monsters', file, data.img);
+    if (data.type !== 'npc') {
+      error('monsters', file, `type must be "npc", found "${data.type}"`);
+    }
+    if (!(s.cr >= 1)) {
+      error('monsters', file, `cr must be >= 1, found ${s.cr}`);
+    }
+    if (!(s.health?.max > 0) || !(s.health?.value > 0)) {
+      error('monsters', file, `health.value/max must be > 0, found ${JSON.stringify(s.health)}`);
+    }
+    if (!(s.power?.max > 0) || !(s.power?.value > 0)) {
+      error('monsters', file, `power.value/max must be > 0, found ${JSON.stringify(s.power)}`);
+    }
+    for (const key of ABILITIES) {
+      if (typeof s.abilities?.[key]?.value !== 'number') {
+        error('monsters', file, `abilities.${key}.value must be a number, found ${JSON.stringify(s.abilities?.[key])}`);
+      }
+    }
+  }
+}
+
+// Cross-check the source manifest (not just the generated Actor docs) for the fields that only
+// live there - themeCategory/band/tier drive MonsterGenerator.mjs's room-placement logic and
+// have no equivalent on the generated Actor, so a bad value here would silently produce a
+// floor with no monsters for that theme rather than throwing anywhere.
+function validateMonstersManifest() {
+  const manifestPath = path.join(dataDir, 'monsters-manifest.json');
+  if (!fs.existsSync(manifestPath)) return;
+  const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+  const validBands = new Set(['minion', 'elite', 'boss']);
+  for (const m of manifest.monsters || []) {
+    const label = m.name || '(unnamed)';
+    if (!validThemeCategories.has(m.themeCategory)) {
+      error('monsters-manifest', label, `themeCategory "${m.themeCategory}" is not a key in data/narrative-lexicon.json's themeCategories`);
+    }
+    if (!validBands.has(m.band)) {
+      error('monsters-manifest', label, `band must be one of minion/elite/boss, found "${m.band}"`);
+    }
+    if (!(m.tier >= 1 && m.tier <= 5)) {
+      error('monsters-manifest', label, `tier must be 1-5, found ${m.tier}`);
+    }
+    if (!ABILITIES.includes(m.primaryAbility)) {
+      error('monsters-manifest', label, `invalid primaryAbility "${m.primaryAbility}"`);
+    }
+    if (m.secondaryAbility && !ABILITIES.includes(m.secondaryAbility)) {
+      error('monsters-manifest', label, `invalid secondaryAbility "${m.secondaryAbility}"`);
+    }
+  }
+}
+
 // Unlike Item content (where grantedSkills/grantedFeatures reference by name), Scene/
 // JournalEntry/Folder docs are only ever referenced by _id - names legitimately repeat across
 // floors (every floor gets its own "Secrets" folder, "The Story So Far" entry, etc), so only
@@ -360,6 +420,7 @@ function validateFloors() {
   const sceneEntries = loadEntries('scenes');
   const journalEntries = loadEntries('journals');
   const folderEntries = loadEntries('journal-folders');
+  const monsterActorIds = new Set(loadEntries('monsters').map(({ data }) => data._id));
   checkNoDuplicateIds('scenes', sceneEntries);
   checkNoDuplicateIds('journals', journalEntries);
   checkNoDuplicateIds('journal-folders', folderEntries);
@@ -396,6 +457,11 @@ function validateFloors() {
       const onDisk = path.join(__dirname, '..', src.slice(prefix.length));
       if (!fs.existsSync(onDisk)) {
         error('scenes', file, `tile ${tile._id} texture.src "${src}" does not exist on disk - it will render broken`);
+      }
+    }
+    for (const token of data.tokens || []) {
+      if (!token.actorId || !monsterActorIds.has(token.actorId)) {
+        error('scenes', file, `token "${token.name}" (${token._id}) references unknown monster actorId "${token.actorId}" - run npm run generate:monsters`);
       }
     }
     for (const region of data.regions || []) {
@@ -471,6 +537,8 @@ const validators = {
   weapons: validateWeapons,
   features: validateFeatures,
   spells: validateSpells,
+  monsters: validateMonsters,
+  'monsters-manifest': validateMonstersManifest,
   floors: validateFloors
 };
 

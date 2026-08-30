@@ -51,7 +51,94 @@
     }
   },
   "drawings": [],
-  "tokens": [],
+  "tokens": [
+    {
+      "_id": "MXahuWVVYc3ShTCG",
+      "name": "The Great Distillation",
+      "actorId": "5VV2tbrmH5cJE57K",
+      "actorLink": false,
+      "delta": null,
+      "width": 1,
+      "height": 1,
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/monster/amorphous/death_ooze.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff"
+      },
+      "x": 400,
+      "y": 100,
+      "elevation": 0,
+      "sort": 0,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "disposition": -1,
+      "displayName": 20,
+      "displayBars": 20,
+      "bar1": {
+        "attribute": "health"
+      },
+      "bar2": {
+        "attribute": "power"
+      },
+      "light": {
+        "dim": 0,
+        "bright": 0
+      },
+      "sight": {
+        "enabled": false
+      },
+      "detectionModes": [],
+      "flags": {}
+    },
+    {
+      "_id": "j87oRcGHICaH0vmr",
+      "name": "Acid Blob",
+      "actorId": "WxXslxzt2Ijo2kLW",
+      "actorLink": false,
+      "delta": null,
+      "width": 1,
+      "height": 1,
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/monster/amorphous/acid_blob.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff"
+      },
+      "x": 200,
+      "y": 100,
+      "elevation": 0,
+      "sort": 0,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "disposition": -1,
+      "displayName": 20,
+      "displayBars": 20,
+      "bar1": {
+        "attribute": "health"
+      },
+      "bar2": {
+        "attribute": "power"
+      },
+      "light": {
+        "dim": 0,
+        "bright": 0
+      },
+      "sight": {
+        "enabled": false
+      },
+      "detectionModes": [],
+      "flags": {}
+    }
+  ],
   "lights": [
     {
       "_id": "rJfJgWXcFVWgxLSZ",
