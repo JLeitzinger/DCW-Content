@@ -1,0 +1,380 @@
+{
+  "_id": "jcbP87PYGe7JUCyk",
+  "name": "Wight",
+  "type": "character",
+  "img": "modules/dcw-content/assets/tiles/monster/undead/wight.png",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 15
+      },
+      "dex": {
+        "value": 10
+      },
+      "con": {
+        "value": 13
+      },
+      "int": {
+        "value": 10
+      },
+      "wis": {
+        "value": 10
+      },
+      "cha": {
+        "value": 10
+      }
+    },
+    "biography": "Its grip drains warmth first, then strength, then the will to pull away.",
+    "attributes": {
+      "level": {
+        "value": 10
+      }
+    },
+    "details": {
+      "race": "Half-Orc",
+      "class": "Fighter",
+      "subclass": "the Hollow"
+    },
+    "hp": {
+      "value": 999,
+      "max": 999
+    },
+    "stamina": {
+      "value": 999,
+      "max": 999
+    },
+    "mana": {
+      "value": 999,
+      "max": 999
+    }
+  },
+  "prototypeToken": {
+    "name": "Wight",
+    "texture": {
+      "src": "modules/dcw-content/assets/tiles/monster/undead/wight.png"
+    },
+    "width": 1,
+    "height": 1,
+    "actorLink": false,
+    "disposition": -1,
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "hp"
+    },
+    "bar2": {
+      "attribute": "stamina"
+    }
+  },
+  "items": [
+    {
+      "_id": "o9h6xDq7lT4NRQ5a",
+      "name": "Half-Orc",
+      "type": "race",
+      "img": "icons/svg/skull.svg",
+      "system": {
+        "description": "Half-orcs combine the best qualities of humans and orcs, though some would say they inherit the worst. They possess remarkable physical strength and endurance, along with a fierce will to survive.\n\nTraits: Relentless Endurance: When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead (once per long rest). Savage Attacks: When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time. Menacing: You have proficiency in the Intimidation skill.",
+        "abilityBonuses": {
+          "str": 2,
+          "dex": 0,
+          "con": 1,
+          "int": 0,
+          "wis": 0,
+          "cha": 0
+        },
+        "bonuses": {
+          "hp": 3,
+          "stamina": 3,
+          "mana": 0
+        },
+        "size": "medium",
+        "speed": 30,
+        "senses": {
+          "darkvision": 60,
+          "blindsight": 0,
+          "tremorsense": 0,
+          "truesight": 0
+        },
+        "languages": "",
+        "grantedFeatures": [],
+        "grantedSkills": [
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Intimidation",
+            "level": 2
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Survival",
+            "level": 1
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Blunt",
+            "level": 1
+          }
+        ]
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "XGFYTNqix8h9BwfP",
+      "name": "Fighter",
+      "type": "class",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "description": "A master of martial combat, skilled with a variety of weapons and armor. Fighters are versatile warriors who excel in melee and ranged combat.",
+        "baseHP": 12,
+        "hpPerLevel": 4,
+        "staminaPerLevel": 3,
+        "manaPerLevel": 1,
+        "abilityBonuses": {
+          "str": 0.5,
+          "dex": 0,
+          "con": 0.5,
+          "int": 0,
+          "wis": 0,
+          "cha": 0
+        },
+        "levelAcquired": 1,
+        "saves": {
+          "str": true,
+          "con": true,
+          "dex": false,
+          "int": false,
+          "wis": false,
+          "cha": false
+        },
+        "grantedSkills": [
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Slash",
+            "level": 2
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Block",
+            "level": 2
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Dodge",
+            "level": 2
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Athletics",
+            "level": 2
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Intimidation",
+            "level": 1
+          }
+        ],
+        "grantedFeatures": [
+          {
+            "featureUuid": "Compendium.dcw-content.features.Item.Second-Wind",
+            "level": 1
+          },
+          {
+            "featureUuid": "Compendium.dcw-content.features.Item.Action-Surge",
+            "level": 1
+          }
+        ],
+        "hitDie": "d12",
+        "primaryAbility": "str",
+        "secondaryAbility": "",
+        "features": "",
+        "subclasses": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "c3XV6Kcg5WXSkfEs",
+      "name": "Second Wind",
+      "type": "feature",
+      "img": "icons/svg/heal.svg",
+      "system": {
+        "description": "You can spend 2 stamina to regain hit points equal to 1d10 + your fighter level. Once you use this feature, you must finish a short or long rest before you can use it again.",
+        "grantedSkills": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "VKpJn3AfGq7PmYCn",
+      "name": "Action Surge",
+      "type": "feature",
+      "img": "icons/svg/lightning.svg",
+      "system": {
+        "description": "You can push yourself beyond your normal limits for a moment. On your turn, you gain 10 stamina immediately. Once you use this feature, you must finish an 8 hour rest before you can use it again.",
+        "grantedSkills": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "im1mzOokxID13GEh",
+      "name": "Flame Dagger",
+      "type": "weapon",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/artefact/urand_firestarter.png",
+      "system": {
+        "description": "A slender blade wreathed in flickering flames. The heat never burns its wielder, but enemies feel its scorching bite.",
+        "quantity": 1,
+        "weight": 1,
+        "roll": {
+          "diceNum": 1,
+          "diceSize": "d4",
+          "diceBonus": "+@dex.mod+ceil(@lvl / 2)+1"
+        },
+        "rarity": "uncommon",
+        "effort": 1,
+        "range": "melee",
+        "equipped": true,
+        "grantedSkills": [
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Pierce",
+            "level": 1
+          }
+        ],
+        "grantedFeatures": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "frk7hbycXCx37dhS",
+      "name": "Chainmail",
+      "type": "armor",
+      "img": "modules/dcw-content/assets/tiles/item/armor/torso/chain_mail_1.png",
+      "system": {
+        "description": "Interlocking steel rings, heavy but dependable against a glancing blow.",
+        "quantity": 1,
+        "weight": 40,
+        "rarity": "uncommon",
+        "effort": 2,
+        "damageReduction": 3,
+        "equipped": true,
+        "grantedSkills": [
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Block",
+            "level": 2
+          }
+        ],
+        "luckBonus": 0
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

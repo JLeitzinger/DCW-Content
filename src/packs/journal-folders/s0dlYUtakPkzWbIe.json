@@ -1,0 +1,22 @@
+{
+  "_id": "s0dlYUtakPkzWbIe",
+  "name": "Room Keys",
+  "type": "JournalEntry",
+  "description": "",
+  "folder": "m8CATMFKnJrrV79C",
+  "sorting": "a",
+  "sort": 3,
+  "color": "#6a5acd",
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

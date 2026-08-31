@@ -148,18 +148,20 @@ Install this module from Foundry VTT:
 
 **Requirements:** The Dungeon Crawler World system must be installed first.
 
-**Populated encounters:** Generated floor scenes come pre-populated with monster tokens from
-this module's Monsters compendium. **Import the Monsters compendium into your world *before*
-importing or opening any generated floor scene** - do it in this order every time you set up a
-new world: open the Compendium Packs sidebar tab, right-click **Monsters**, choose **Import All
-Content**, and check **Keep Document IDs** before confirming (a single monster's own right-click
-"Import" keeps its id automatically - it's specifically the bulk "Import All Content" dialog
-that needs the box checked). *Then* import/view the floor scene. If you import or open a scene
-first and see tokens report "this token references an actor which no longer exists in this
-world," import the Monsters compendium and re-import (or refresh) the scene - a scene's tokens
-resolve their actor at load time, so one that already loaded before the monsters existed needs
-to be reloaded once they do. Skipping the Monsters import entirely means placed tokens show as
-an unresolved/unknown actor instead of the intended monster. If a freshly imported monster's
+**Populated encounters:** Generated floor scenes come pre-populated with tokens from **two**
+compendiums - mobs (easily-defeated-but-dangerous-in-number encounters) from Monsters, and
+elites/bosses/friendly NPCs (real race+class+gear+spell characters, not flat stat blocks) from
+Characters. **Import both Monsters and Characters into your world *before* importing or opening
+any generated floor scene** - do it in this order every time you set up a new world: open the
+Compendium Packs sidebar tab, right-click **Monsters**, choose **Import All Content**, and check
+**Keep Document IDs** before confirming (a single actor's own right-click "Import" keeps its id
+automatically - it's specifically the bulk "Import All Content" dialog that needs the box
+checked); repeat for **Characters**. *Then* import/view the floor scene. If you import or open a
+scene first and see tokens report "this token references an actor which no longer exists in this
+world," import the Monsters and Characters compendiums and re-import (or refresh) the scene - a
+scene's tokens resolve their actor at load time, so one that already loaded before the actors
+existed needs to be reloaded once they do. Skipping either import means those tokens show as an
+unresolved/unknown actor instead of the intended monster/character. If a freshly imported actor's
 Skills tab or XP looks empty right after importing, refresh the browser page once - a one-time
 Foundry data-preparation timing quirk, not lost data; it won't recur for that actor afterward.
 

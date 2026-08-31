@@ -46,3 +46,18 @@ export function pickHazard(rng, tierDcBonus = 0) {
 export function pickEncounterHook(rng) {
   return rng.pick(lexicon.encounterTemplates);
 }
+
+/** A tone-neutral full name for a generated character - race/theme already carry flavor elsewhere. */
+export function pickName(rng) {
+  return rng.pick(lexicon.names);
+}
+
+/** A {threat}-templated title for a floor's boss, e.g. "Warlord of the Alchemist's Guild". */
+export function pickBossTitle(rng, category, overrides = {}) {
+  return fillTemplate(rng, category, rng.pick(category.bossTitles), overrides);
+}
+
+/** A {threat}-templated biography hook for a friendly NPC, tying them to the floor's threat. */
+export function pickFriendlyNpcHook(rng, category, overrides = {}) {
+  return fillTemplate(rng, category, rng.pick(category.friendlyNpcHooks), overrides);
+}

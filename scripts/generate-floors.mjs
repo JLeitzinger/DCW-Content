@@ -21,11 +21,14 @@ import { buildJournals } from './lib/level-gen/JournalBuilder.mjs';
 import { buildScenes } from './lib/level-gen/SceneBuilder.mjs';
 import { loadTileLibrary } from './lib/level-gen/TileLibrary.mjs';
 import { loadMonsterRoster } from './lib/monster-roster.mjs';
+import { buildBoss } from './lib/level-gen/CharacterGenerator.mjs';
+import { pickMonsterByThemeBand } from './lib/level-gen/MonsterGenerator.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const scenesDir = path.join(__dirname, '../src/packs/scenes');
 const journalsDir = path.join(__dirname, '../src/packs/journals');
 const journalFoldersDir = path.join(__dirname, '../src/packs/journal-folders');
+const charactersDir = path.join(__dirname, '../src/packs/characters');
 const manifestPath = path.join(__dirname, '../data/floors-manifest.json');
 const tileAssetsDir = path.join(__dirname, '../assets/tiles');
 const dataDir = path.join(__dirname, '../data');
@@ -37,7 +40,7 @@ const monsterRoster = loadMonsterRoster(dataDir);
 // Rebuild output dirs from scratch each run - same reasoning as pack-items.mjs: without this,
 // a room/id that no longer exists after a manifest/algorithm change leaves a stale orphaned
 // file behind that nothing then overwrites.
-for (const dir of [scenesDir, journalsDir, journalFoldersDir]) {
+for (const dir of [scenesDir, journalsDir, journalFoldersDir, charactersDir]) {
   fs.rmSync(dir, { recursive: true, force: true });
   fs.mkdirSync(dir, { recursive: true });
 }
@@ -56,7 +59,14 @@ function generateFloor(floorEntry) {
   const tierConfig = getTierConfig(tier);
 
   const theme = buildTheme(rng, floorEntry);
-  const storyGraph = buildStoryGraph(rng, theme, tierConfig);
+
+  // Built before the story graph so the boss's name/title can be woven into its climax
+  // milestone text (see StoryGenerator.mjs) - everything downstream (journals) sources its text
+  // from that graph, so the name flows through for free.
+  const bossArchetype = pickMonsterByThemeBand(rng, monsterRoster, theme.themeCategory, 'boss', tier);
+  const boss = bossArchetype ? buildBoss(rng, id, theme, tier, bossArchetype) : null;
+
+  const storyGraph = buildStoryGraph(rng, theme, tierConfig, boss);
 
   const roomCountTarget = rng.int(tierConfig.roomCountMin, tierConfig.roomCountMax);
   const geometry = generateGeometry(rng, id, { roomCountTarget, gridSize: 100, secretDoorChance: tierConfig.secretDoorChance });
@@ -64,10 +74,12 @@ function generateFloor(floorEntry) {
 
   const journals = buildJournals(rng, id, theme, storyGraph, geometry.rooms, tierConfig);
   const setting = floorEntry.setting || DEFAULT_SETTING;
-  const { primaryScene, subScenes } = buildScenes(rng, id, theme, geometry, lights, journals, tierConfig, tileLibrary, setting, tier, monsterRoster);
+  const { primaryScene, subScenes, characterActors } =
+    buildScenes(rng, id, theme, geometry, lights, journals, tierConfig, tileLibrary, setting, tier, monsterRoster, boss);
 
   return { floorSlug, tier, roomCount: geometry.rooms.length, subSceneCount: subScenes.length,
-    scenes: [primaryScene, ...subScenes], journalEntries: journals.entries, journalFolders: journals.folders };
+    scenes: [primaryScene, ...subScenes], journalEntries: journals.entries, journalFolders: journals.folders,
+    characterActors: boss ? [boss.actor, ...characterActors] : characterActors };
 }
 
 console.log('Generating floors...\n');
@@ -82,8 +94,9 @@ for (const floorEntry of manifest.floors || []) {
     for (const scene of result.scenes) writeJson(scenesDir, scene._id, scene);
     for (const entry of result.journalEntries) writeJson(journalsDir, entry._id, entry);
     for (const folder of result.journalFolders) writeJson(journalFoldersDir, folder._id, folder);
+    for (const actor of result.characterActors) writeJson(charactersDir, actor._id, actor);
 
-    console.log(`✓ ${floorEntry.name || result.floorSlug}: tier ${result.tier}, ${result.roomCount} rooms, ${result.subSceneCount} sub-scene(s), ${result.journalEntries.length} journal entries`);
+    console.log(`✓ ${floorEntry.name || result.floorSlug}: tier ${result.tier}, ${result.roomCount} rooms, ${result.subSceneCount} sub-scene(s), ${result.journalEntries.length} journal entries, ${result.characterActors.length} character(s)`);
     successCount++;
   } catch (err) {
     console.error(`✗ Failed to generate floor "${floorEntry.name || floorEntry.seed}": ${err.message}`);

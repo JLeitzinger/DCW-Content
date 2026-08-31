@@ -18,6 +18,11 @@
         "One of {threat}'s apprentices wants out and has been leaving coded warnings for anyone who'll listen.",
         "A half-transmuted survivor is trapped between forms in a side chamber, begging for the process to be reversed or finished.",
         "The floor's water supply has been dosed with a reagent that's slowly changing everything that drinks it."
+      ],
+      "bossTitles": ["Grand Distiller of {threat}", "Herald of {threat}", "the Last Formula of {threat}"],
+      "friendlyNpcHooks": [
+        "A former apprentice of {threat} who fled mid-formula and has been hiding here ever since, desperate for someone to finish what they started - or stop it.",
+        "A half-transmuted survivor, more lucid than they look, who knows the layout of {threat}'s workshops better than anyone still willing to talk about them."
       ]
     },
     "undead": {
@@ -37,6 +42,11 @@
         "Grave robbers hired by someone topside are already down here, and they know things about the layout the party doesn't.",
         "A single still-living prisoner has been kept alive for decades as a witness to something {threat} doesn't want forgotten - or remembered.",
         "Bones are going missing from sealed tombs, one at a time, in a pattern that spells out a name."
+      ],
+      "bossTitles": ["Warden of {threat}", "the Unburied Voice of {threat}", "Herald of {threat}"],
+      "friendlyNpcHooks": [
+        "The single still-living prisoner {threat} has kept as a witness for decades, finally free enough to talk if someone will listen.",
+        "A grave robber who turned back after seeing what {threat} does to the freshly dead, and hasn't stopped feeling watched since."
       ]
     },
     "elemental": {
@@ -56,6 +66,11 @@
         "Local wildlife has been mutating near the rift and is now aggressively territorial in ways it wasn't before.",
         "An engineer who helped build the original wards left instructions for shutting it all down - if anyone can find them.",
         "{threat} has agents already on this floor trying to accelerate the breach rather than stop it."
+      ],
+      "bossTitles": ["Warlord of {threat}", "the Unbound Voice of {threat}", "Herald of {threat}"],
+      "friendlyNpcHooks": [
+        "The engineer who helped build the original containment wards, still down here trying to finish the shutdown alone.",
+        "A refugee from a deeper level fleeing {threat}'s spreading rift, grateful for company and full of warnings."
       ]
     },
     "cult": {
@@ -75,6 +90,11 @@
         "Ritual components are being smuggled in from the surface, and cutting off the supply would stall the whole plan.",
         "One of {threat}'s own has started having doubts and is leaving evidence behind, half hoping to be stopped.",
         "A relic central to the ritual has already been stolen by someone with their own agenda, and neither side has noticed yet."
+      ],
+      "bossTitles": ["High Prophet of {threat}", "Anointed Voice of {threat}", "Herald of {threat}"],
+      "friendlyNpcHooks": [
+        "A captured initiate of {threat} who wants to defect and can name every trap between here and the inner sanctum - for a price.",
+        "One of {threat}'s own, quietly having doubts, who's been leaving evidence behind half hoping someone will stop this."
       ]
     },
     "feral": {
@@ -94,6 +114,11 @@
         "Something is picking off {threat}'s own brood one at a time, and it isn't the party.",
         "A previous expedition's survivor has been living off the land down here long enough to have gone a little feral themselves.",
         "The nest's growth is undermining a structural support that could collapse a much larger section of the floor."
+      ],
+      "bossTitles": ["Matriarch of {threat}", "the Untamed Voice of {threat}", "Warden of {threat}"],
+      "friendlyNpcHooks": [
+        "A trapper who knows the den layout and will trade that knowledge for help freeing a snared partner.",
+        "A previous expedition's survivor who's lived off this land long enough to have gone a little feral themselves, but still remembers how to talk."
       ]
     },
     "abyssal": {
@@ -113,9 +138,24 @@
         "A sealed door has no lock, no hinges, and no explanation, and something on the other side has started answering knocks.",
         "One party member's dreams have started including rooms that don't exist yet on this floor's map - until they do.",
         "{threat} has been testing the wards a little more each night, and tonight is the first time one of them didn't hold."
+      ],
+      "bossTitles": ["the Nameless Voice of {threat}", "Herald of {threat}", "the Last Warden against {threat}"],
+      "friendlyNpcHooks": [
+        "The sole survivor of a previous expedition's final log entries, alive but changed by however long they've spent near {threat}.",
+        "Someone whose dreams started including rooms that don't exist on this floor's map yet - until they do - and who wants that to stop."
       ]
     }
   },
+  "names": [
+    "Kest Vane", "Ilyra Duskthorn", "Bram Ashgrove", "Sable Wren", "Orin Marrow",
+    "Tessa Nightfell", "Draven Cole", "Mira Halloway", "Corvin Blackwell", "Anwen Frost",
+    "Talon Reyes", "Wren Castellan", "Lucian Vale", "Sera Windham", "Garrick Thorne",
+    "Nyx Callahan", "Edric Stormcrow", "Isolde Grey", "Malachi Fenn", "Rowan Ashby",
+    "Vesper Cain", "Thane Ossian", "Briar Locke", "Cassian Drake", "Eowyn March",
+    "Finnick Sable", "Zara Voss", "Percival Hale", "Delphine Ash", "Kael Ravensworth",
+    "Marisol Fane", "Ossian Cray", "Liora Wick", "Bastian Grim", "Yolanda Pike",
+    "Renlow Ash", "Sylvie Corbin", "Auric Bane", "Wynne Solace", "Torin Hearst"
+  ],
   "roomRoleTemplates": {
     "entrance": [
       "The way down opens into a {adj} chamber, the air already carrying a trace of what waits deeper in the {domain}.",

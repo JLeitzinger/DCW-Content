@@ -1,0 +1,44 @@
+{
+  "_id": "LQYUTi1OqHSxcQU3",
+  "name": "Boss Arena (Room 8)",
+  "pages": [
+    {
+      "_id": "VWdKvxXfGNex3ajb",
+      "name": "Boss Arena (Room 8)",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>The Wards open into a Gilded hall built - or reshaped - around whatever now claims it as its own.</p><section class=\"secret\"><h3>GM Notes</h3><p><strong>Milestone:</strong> This is where the floor's story comes to a head: A formula for a rogue homunculus conclave to end all suffering - or all resistance - was hidden in the Cisterns below, and someone just found the first ingredient. Its name is Edric Stormcrow, Herald of a rogue homunculus conclave.</p><p><strong>Secret:</strong> Hidden here: leverage against a rogue homunculus conclave that the floor's story doesn't want found.</p><p><strong>Hazard:</strong> A ward etched into the doorway reacts to anyone who isn't already marked as an ally (DC 15 to detect and counter).</p></section>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": "YI74zHKFl2J9fe53",
+  "categories": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

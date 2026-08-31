@@ -11,7 +11,7 @@
 import { buildSceneEnvelope } from './envelope.mjs';
 import { generateLights } from './LightingGenerator.mjs';
 import { generateTiles } from './TileGenerator.mjs';
-import { placeMonsters } from './MonsterGenerator.mjs';
+import { placeMonsters, placeFriendlyNpcs } from './MonsterGenerator.mjs';
 
 const GRID_SIZE = 100;
 const SOLID = { light: 20, move: 20, sight: 20, sound: 20, door: 0, ds: 0, dir: 0, doorSound: '' };
@@ -92,10 +92,14 @@ function buildInteriorWalls(id, w, h) {
  * @param {string} setting - assets/tiles/<setting>/... bucket, e.g. "dungeon".
  * @param {number} floorTier - resolveComplexityTier()'s 1-5, same value tierConfig was derived from.
  * @param {Array} monsterRoster - lib/monster-roster.mjs's loadMonsterRoster() output; pass [] to disable auto-population.
- * @returns {{ primaryScene: object, subScenes: object[] }}
+ * @param {{actor: object, name: string, title: string, img: string}} [boss] - CharacterGenerator.mjs's
+ * buildBoss() result (built once per floor, before this) - reused for every boss-arena room, even if
+ * geometry produces more than one on the same floor, rather than casting a second named boss.
+ * @returns {{ primaryScene: object, subScenes: object[], characterActors: object[] }}
  */
-export function buildScenes(rng, id, theme, geometry, lights, journals, tierConfig, library, setting, floorTier, monsterRoster = []) {
+export function buildScenes(rng, id, theme, geometry, lights, journals, tierConfig, library, setting, floorTier, monsterRoster = [], boss = null) {
   const { rooms, walls, boundsPx } = geometry;
+  const characterActors = [];
 
   const notes = rooms.map(room => buildNote(
     id(`note-room-${room.id}`),
@@ -135,6 +139,12 @@ export function buildScenes(rng, id, theme, geometry, lights, journals, tierConf
     const subRegion = buildRegion(subRegionId, 'Exit', { x: 0, y: h - GRID_SIZE, w, h: GRID_SIZE }, [subBehavior]);
 
     const localRoom = { id: `sub-${room.id}`, role: room.role, rectPx: { x: 0, y: 0, w, h }, centerPx: { x: w / 2, y: h / 2 } };
+    let subTokens = [];
+    if (monsterRoster.length) {
+      const placement = placeMonsters(rng, id, [localRoom], theme, floorTier, monsterRoster, boss);
+      subTokens = placement.tokens;
+      characterActors.push(...placement.characterActors);
+    }
     const subScene = buildSceneEnvelope({
       id: subSceneId,
       name: `${theme.name} - ${room.role.replace(/-/g, ' ')} (Room ${room.id})`,
@@ -148,7 +158,7 @@ export function buildScenes(rng, id, theme, geometry, lights, journals, tierConf
       notes: [],
       regions: [subRegion],
       tiles: library ? generateTiles(rng, id, [localRoom], theme, setting, library, tierConfig) : [],
-      tokens: monsterRoster.length ? placeMonsters(rng, id, [localRoom], theme, floorTier, monsterRoster).tokens : []
+      tokens: subTokens
     });
     subScenes.push(subScene);
   }
@@ -159,6 +169,20 @@ export function buildScenes(rng, id, theme, geometry, lights, journals, tierConf
   // effectively existing twice.
   const subSceneRoomIds = new Set(subSceneRooms.map(r => r.id));
   const populableRooms = rooms.filter(r => !subSceneRoomIds.has(r.id));
+
+  let primaryTokens = [];
+  if (monsterRoster.length) {
+    const placement = placeMonsters(rng, id, populableRooms, theme, floorTier, monsterRoster, boss);
+    primaryTokens = placement.tokens;
+    characterActors.push(...placement.characterActors);
+
+    // Friendly NPCs only ever target entrance/rest-area rooms, which are never sub-scene
+    // candidates (see `candidates` above) - so this only needs to run once, against the primary
+    // scene's own room list.
+    const friendly = placeFriendlyNpcs(rng, id, populableRooms, theme, floorTier);
+    primaryTokens = [...primaryTokens, ...friendly.tokens];
+    characterActors.push(...friendly.characterActors);
+  }
 
   const primaryScene = buildSceneEnvelope({
     id: primarySceneId,
@@ -173,8 +197,8 @@ export function buildScenes(rng, id, theme, geometry, lights, journals, tierConf
     notes,
     regions: primaryRegions,
     tiles: library ? generateTiles(rng, id, rooms, theme, setting, library, tierConfig) : [],
-    tokens: monsterRoster.length ? placeMonsters(rng, id, populableRooms, theme, floorTier, monsterRoster).tokens : []
+    tokens: primaryTokens
   });
 
-  return { primaryScene, subScenes };
+  return { primaryScene, subScenes, characterActors };
 }

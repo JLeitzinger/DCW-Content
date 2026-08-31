@@ -1,0 +1,576 @@
+{
+  "_id": "2ncouAS9p6hpTcvd",
+  "name": "Yolanda Pike, Herald of the Bone Choir",
+  "type": "character",
+  "img": "modules/dcw-content/assets/tiles/monster/undead/ancient_lich.png",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10
+      },
+      "dex": {
+        "value": 10
+      },
+      "con": {
+        "value": 10
+      },
+      "int": {
+        "value": 20
+      },
+      "wis": {
+        "value": 15
+      },
+      "cha": {
+        "value": 10
+      }
+    },
+    "biography": "Died centuries ago and has been meticulously annoyed about it ever since. Known to those who've survived this floor as Yolanda Pike, Herald of the Bone Choir.",
+    "attributes": {
+      "level": {
+        "value": 20
+      }
+    },
+    "details": {
+      "race": "Gnome",
+      "class": "Necrotech",
+      "subclass": "the Silent"
+    },
+    "hp": {
+      "value": 999,
+      "max": 999
+    },
+    "stamina": {
+      "value": 999,
+      "max": 999
+    },
+    "mana": {
+      "value": 999,
+      "max": 999
+    }
+  },
+  "prototypeToken": {
+    "name": "Yolanda Pike, Herald of the Bone Choir",
+    "texture": {
+      "src": "modules/dcw-content/assets/tiles/monster/undead/ancient_lich.png"
+    },
+    "width": 1,
+    "height": 1,
+    "actorLink": false,
+    "disposition": -1,
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "hp"
+    },
+    "bar2": {
+      "attribute": "stamina"
+    }
+  },
+  "items": [
+    {
+      "_id": "KUmJWpUZseNvZBEN",
+      "name": "Gnome",
+      "type": "race",
+      "img": "icons/svg/pawprint.svg",
+      "system": {
+        "description": "Gnomes are small, energetic people driven by boundless curiosity and inventive genius. They delight in discovery and creation, combining keen intellect with playful mischief.\n\nTraits: Gnome Cunning: You have advantage on Intelligence, Wisdom, and Charisma saving throws against magic. Artificer's Lore: Whenever you make an Intelligence check related to magic items, alchemical objects, or technological devices, you can add double your proficiency. Tinker: You have proficiency with artisan's tools (tinker's tools).",
+        "abilityBonuses": {
+          "str": 0,
+          "dex": 1,
+          "con": 0,
+          "int": 2,
+          "wis": 0,
+          "cha": 0
+        },
+        "bonuses": {
+          "hp": 0,
+          "stamina": 0,
+          "mana": 2
+        },
+        "size": "small",
+        "speed": 25,
+        "senses": {
+          "darkvision": 60,
+          "blindsight": 0,
+          "tremorsense": 0,
+          "truesight": 0
+        },
+        "languages": "",
+        "grantedFeatures": [],
+        "grantedSkills": [
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Craft",
+            "level": 2
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Lore",
+            "level": 1
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Cast",
+            "level": 1
+          }
+        ]
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "VygtoPgl75FdmnNP",
+      "name": "Necrotech",
+      "type": "class",
+      "img": "icons/svg/skull.svg",
+      "system": {
+        "description": "A fusion of necromancy and technology, creating undead enhanced with cybernetic implants. Necrotechs blur the line between life and death, machine and flesh, commanding armies of cybernetic zombies.",
+        "baseHP": 10,
+        "hpPerLevel": 3,
+        "staminaPerLevel": 2,
+        "manaPerLevel": 2,
+        "abilityBonuses": {
+          "str": 0,
+          "dex": 0,
+          "con": 0.4,
+          "int": 0.6,
+          "wis": 0,
+          "cha": 0
+        },
+        "levelAcquired": 1,
+        "saves": {
+          "str": false,
+          "con": true,
+          "dex": false,
+          "int": true,
+          "wis": false,
+          "cha": false
+        },
+        "grantedSkills": [
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Channel",
+            "level": 2
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Craft",
+            "level": 2
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Medicine",
+            "level": 2
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Intimidation",
+            "level": 1
+          }
+        ],
+        "grantedFeatures": [
+          {
+            "featureUuid": "Compendium.dcw-content.features.Item.Necromech-Conversion",
+            "level": 1
+          },
+          {
+            "featureUuid": "Compendium.dcw-content.features.Item.Cybernetic-Resilience",
+            "level": 1
+          }
+        ],
+        "hitDie": "d10",
+        "primaryAbility": "int",
+        "secondaryAbility": "",
+        "features": "",
+        "subclasses": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "XokMqTHOzgGqfGC1",
+      "name": "Necromech Conversion",
+      "type": "feature",
+      "img": "icons/svg/skull.svg",
+      "system": {
+        "description": "You can convert corpses into cybernetic undead servants. Spend 10 minutes and 5 mana to raise a corpse as a necromech minion with implanted weapons and armor plating. It obeys your mental commands and lasts until destroyed or you dismiss it. You can control up to your Intelligence modifier in necromechs.",
+        "grantedSkills": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "XpqoZiIUXL0CgJCt",
+      "name": "Cybernetic Resilience",
+      "type": "feature",
+      "img": "icons/svg/shield.svg",
+      "system": {
+        "description": "Your body is partially mechanical, making you resistant to biological threats. You have advantage on saving throws against disease, poison, and necrotic damage. Additionally, you can function without sleep and can survive in hostile environments (vacuum, extreme temperatures) for extended periods.",
+        "grantedSkills": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "wjAaGRM9HwzpYHIR",
+      "name": "Stormcaller",
+      "type": "weapon",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/artefact/spwpn_sword_of_power.png",
+      "system": {
+        "description": "A massive warhammer wreathed in crackling lightning. Legends say it was wielded by a storm giant who fell defending the mortal realms. The weapon hums with barely-contained power, and thunder rumbles with each swing. When struck against the ground, it can summon devastating lightning storms.",
+        "quantity": 1,
+        "weight": 15,
+        "roll": {
+          "diceNum": 3,
+          "diceSize": "d8",
+          "diceBonus": "+@str.mod+ceil(@lvl / 2)+3"
+        },
+        "rarity": "legendary",
+        "effort": 3,
+        "range": "melee",
+        "equipped": true,
+        "grantedSkills": [
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Blunt",
+            "level": 3
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Slash",
+            "level": 2
+          }
+        ],
+        "grantedFeatures": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "2TeTkCwdm8NbdDLg",
+      "name": "Wooden Buckler",
+      "type": "armor",
+      "img": "modules/dcw-content/assets/tiles/item/armor/shields/shield_1.png",
+      "system": {
+        "description": "A small round shield, strapped to the forearm. Cheap, light, and just enough to catch a blade.",
+        "quantity": 1,
+        "weight": 5,
+        "rarity": "common",
+        "effort": 1,
+        "damageReduction": 1,
+        "equipped": true,
+        "grantedSkills": [
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Block",
+            "level": 1
+          }
+        ],
+        "luckBonus": 0
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "AsIjJ1Udta8dKdFu",
+      "name": "Charm Person",
+      "type": "spell",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "<p>Makes a humanoid regard you as a trusted friend. The target has advantage on social interactions with you but won't do anything harmful to itself.</p><p><strong>Scaling:</strong> At dice count 3, can affect multiple humanoids. At dice count 6, works on any creature type. At dice count 9, duration extends to 8 hours. At dice count 12, the charm is much stronger and harder to break. At dice count 15, creates permanent loyalty.</p>",
+        "spellLevel": 1,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "enchantment",
+        "prowess": 2,
+        "castingTime": "instantaneous",
+        "range": "30 feet",
+        "duration": "1 hour",
+        "grantedSkills": [],
+        "offensive": false,
+        "roll": {
+          "diceNum": 1,
+          "diceSize": "d6",
+          "diceBonus": ""
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "Pyhm2Ubcs7kiyQC7",
+      "name": "Stoneskin",
+      "type": "spell",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "<p>Hardens the target's flesh to the toughness of stone, granting resistance to nonmagical physical damage.</p><p><strong>Scaling:</strong> At dice count 3, also grants resistance to magical physical damage. At dice count 6, can affect multiple creatures. At dice count 9, the skin becomes adamantine, granting damage reduction. At dice count 12, attackers take damage when they hit you. At dice count 15, you become nearly invulnerable to physical attacks.</p>",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "abjuration",
+        "prowess": 6,
+        "castingTime": "instantaneous",
+        "range": "touch",
+        "duration": "1 hour",
+        "grantedSkills": [],
+        "offensive": false,
+        "roll": {
+          "diceNum": 1,
+          "diceSize": "d6",
+          "diceBonus": ""
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "ibQmCuH5PJ9vp6Dg",
+      "name": "Acid Arrow",
+      "type": "spell",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "<p>Conjures a glowing arrow of acid that melts through armor and continues burning, dealing acid damage.</p><p><strong>Scaling:</strong> At dice count 3, the acid continues to burn for an additional round. At dice count 6, creates a splash that damages nearby creatures. At dice count 9, melts through metal armor. At dice count 12, creates a pool of acid. At dice count 15, the acid becomes incredibly corrosive, destroying nonmagical objects.</p>",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "evocation",
+        "prowess": 3,
+        "castingTime": "instantaneous",
+        "range": "90 feet",
+        "duration": "instantaneous",
+        "grantedSkills": [],
+        "offensive": false,
+        "roll": {
+          "diceNum": 1,
+          "diceSize": "d6",
+          "diceBonus": ""
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "N5Mwh1ZrcHquyBUR",
+      "name": "Greater Invisibility",
+      "type": "spell",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "<p>Turns a creature invisible even while attacking or casting spells. The invisibility persists through any action.</p><p><strong>Scaling:</strong> At dice count 3, can affect multiple creatures. At dice count 6, grants advantage on attacks while invisible. At dice count 9, no concentration required. At dice count 12, duration extends to 10 minutes. At dice count 15, invisibility cannot be dispelled or detected.</p>",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "illusion",
+        "prowess": 6,
+        "castingTime": "instantaneous",
+        "range": "touch",
+        "duration": "concentration, 1 minute",
+        "grantedSkills": [],
+        "offensive": false,
+        "roll": {
+          "diceNum": 1,
+          "diceSize": "d6",
+          "diceBonus": ""
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "tABAhBOHrSWZ3MRl",
+      "name": "Arcane Recovery",
+      "type": "feature",
+      "img": "icons/svg/regen.svg",
+      "system": {
+        "description": "You have learned to regain some of your magical energy by studying your spellbook. Once per day during a short rest, you can recover mana equal to half your wizard level (rounded up).",
+        "grantedSkills": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -4,14 +4,16 @@
  * eagerly-instantiated compendium index entry the same way Scene/JournalEntry/Folder do (see
  * ids.mjs), so callers must pass a real 16-char id, not a slug.
  *
- * prototypeToken.bar1/bar2 point at `health`/`power` explicitly - system.json's
+ * prototypeToken.bar1/bar2 point at `health`/`power` by default - system.json's
  * primaryTokenAttribute/secondaryTokenAttribute default to "hp"/"stamina", which only exist on
  * dccworldCharacter, not dccworldNPC (see Dungeon-Crawler-World/module/data/base-actor.mjs vs
  * actor-npc.mjs) - without this override every NPC token's health bars would render blank.
+ * Callers building a dccworldCharacter actor (CharacterGenerator.mjs) must pass
+ * bar1Attribute: 'hp', bar2Attribute: 'stamina' instead.
  */
 import { DOCUMENT_STATS } from './foundry-item.mjs';
 
-export function wrapActor({ id, name, type, img, system, items = [] }) {
+export function wrapActor({ id, name, type, img, system, items = [], bar1Attribute = 'health', bar2Attribute = 'power' }) {
   return {
     _id: id,
     name,
@@ -26,8 +28,8 @@ export function wrapActor({ id, name, type, img, system, items = [] }) {
       actorLink: false,
       disposition: -1, // HOSTILE
       sight: { enabled: false },
-      bar1: { attribute: 'health' },
-      bar2: { attribute: 'power' }
+      bar1: { attribute: bar1Attribute },
+      bar2: { attribute: bar2Attribute }
     },
     items,
     effects: [],

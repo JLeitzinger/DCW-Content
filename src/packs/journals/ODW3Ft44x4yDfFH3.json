@@ -1,0 +1,184 @@
+{
+  "_id": "ODW3Ft44x4yDfFH3",
+  "name": "The Story So Far",
+  "pages": [
+    {
+      "_id": "kVWfSjQJoeBjFxf5",
+      "name": "Floor Overview",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><strong>The Hollow Barrows</strong></p><p>the Bone Choir has been rebuilding an army out of everyone who's ever died on this floor - including, eventually, the party.</p>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "6Z8TraHQ4Bq0QUnO",
+      "name": "Milestone 1",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>A sign of the floor's deeper story: Something in the Crypts below is calling the recently dead home, one grave at a time.</p><p><em>Tied to: Entrance (Room 43)</em></p>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 1,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "ISf7k9VMm15crtwx",
+      "name": "Milestone 2",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>A sign of the floor's deeper story: the Bone Choir never got the burial it was owed, and it intends to make everyone still breathing understand why that matters.</p><p><em>Tied to: Corridor Junction (Room 36)</em></p>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 2,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "4heRD0R05ctxWjQ1",
+      "name": "Milestone 3",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>This is where the floor's story comes to a head: the Bone Choir has been rebuilding an army out of everyone who's ever died on this floor - including, eventually, the party. Its name is Yolanda Pike, Herald of the Bone Choir.</p><p><em>Tied to: Boss Arena (Room 32)</em></p>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 3,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "fWngznw9YKYXVgPw",
+      "name": "Sub-story 1",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>A single still-living prisoner has been kept alive for decades as a witness to something the Bone Choir doesn't want forgotten - or remembered.</p>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 4,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "JG061u1h6U8smaKw",
+      "name": "Sub-story 2",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>Bones are going missing from sealed tombs, one at a time, in a pattern that spells out a name.</p>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 5,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "xgKgCwLzviJGnyaz",
+      "name": "Sub-story 3",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>A restless spirit will not move on until an old debt, owed for generations, is finally settled.</p>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 6,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "G1tq5lYdxT4KLLdh",
+      "name": "Sub-story 4",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>Grave robbers hired by someone topside are already down here, and they know things about the layout the party doesn't.</p>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 7,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": "WFJwtuttUlmlzi0E",
+  "categories": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

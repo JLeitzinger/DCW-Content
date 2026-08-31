@@ -1,0 +1,44 @@
+{
+  "_id": "Pehp2zRuZB8d5sOw",
+  "name": "Corridor Junction (Room 34)",
+  "pages": [
+    {
+      "_id": "RssbOnPrLQ3j8qWr",
+      "name": "Corridor Junction (Room 34)",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>A junction of old routes, Hollow enough that it's clearly seen more use than the maps suggest.</p><section class=\"secret\"><h3>GM Notes</h3><p><strong>Hazard:</strong> A ward etched into the doorway reacts to anyone who isn't already marked as an ally (DC 18 to detect and counter).</p><p><strong>Encounter:</strong> This room refills with a new threat if left and returned to later, on the same table used for the floor's other random encounters.</p></section>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": "s0dlYUtakPkzWbIe",
+  "categories": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

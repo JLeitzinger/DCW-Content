@@ -1,0 +1,44 @@
+{
+  "_id": "fS5oq2ZRj84B8MN5",
+  "name": "Rest Area (Room 10)",
+  "pages": [
+    {
+      "_id": "gYIsuhhx2xfgZBWr",
+      "name": "Rest Area (Room 10)",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>A Corrupted alcove, quiet enough that it's clearly been used as a waypoint by more than one previous expedition.</p><section class=\"secret\"><h3>GM Notes</h3><p><strong>Clue:</strong> A clue toward the floor's deeper story: a rogue homunculus conclave has been using this floor to distill something out of captives who never leave.</p></section>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": "YI74zHKFl2J9fe53",
+  "categories": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

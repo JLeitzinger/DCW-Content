@@ -1,0 +1,473 @@
+{
+  "_id": "lPoIrF7Q7OKANOka",
+  "name": "Azure Jelly",
+  "type": "character",
+  "img": "modules/dcw-content/assets/tiles/monster/amorphous/azure_jelly.png",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10
+      },
+      "dex": {
+        "value": 10
+      },
+      "con": {
+        "value": 12
+      },
+      "int": {
+        "value": 11
+      },
+      "wis": {
+        "value": 10
+      },
+      "cha": {
+        "value": 10
+      }
+    },
+    "biography": "Cold to the touch and unsettlingly patient - it remembers every shape it has ever worn.",
+    "attributes": {
+      "level": {
+        "value": 4
+      }
+    },
+    "details": {
+      "race": "Mountain Folk",
+      "class": "Gene Splicer",
+      "subclass": "the Unstable"
+    },
+    "hp": {
+      "value": 999,
+      "max": 999
+    },
+    "stamina": {
+      "value": 999,
+      "max": 999
+    },
+    "mana": {
+      "value": 999,
+      "max": 999
+    }
+  },
+  "prototypeToken": {
+    "name": "Azure Jelly",
+    "texture": {
+      "src": "modules/dcw-content/assets/tiles/monster/amorphous/azure_jelly.png"
+    },
+    "width": 1,
+    "height": 1,
+    "actorLink": false,
+    "disposition": -1,
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "hp"
+    },
+    "bar2": {
+      "attribute": "stamina"
+    }
+  },
+  "items": [
+    {
+      "_id": "czeZ1vVZa4F73or0",
+      "name": "Mountain Folk",
+      "type": "race",
+      "img": "icons/svg/mystery-man.svg",
+      "system": {
+        "description": "Hardy people who make their homes in the highest peaks. Miners, climbers, and hunters known for their incredible endurance and connection to the stone.",
+        "abilityBonuses": {
+          "str": 1,
+          "dex": 0,
+          "con": 2,
+          "int": 0,
+          "wis": 0,
+          "cha": 0
+        },
+        "bonuses": {
+          "hp": 3,
+          "stamina": 2,
+          "mana": 0
+        },
+        "size": "medium",
+        "speed": 25,
+        "senses": {
+          "darkvision": 60,
+          "blindsight": 0,
+          "tremorsense": 0,
+          "truesight": 0
+        },
+        "languages": "Common, Giant",
+        "grantedFeatures": [
+          {
+            "featureUuid": "Compendium.dcw-content.features.Item.Mountain-Born",
+            "level": 1
+          },
+          {
+            "featureUuid": "Compendium.dcw-content.features.Item.Stone-Endurance",
+            "level": 1
+          },
+          {
+            "featureUuid": "Compendium.dcw-content.features.Item.Sure-Footed",
+            "level": 1
+          }
+        ],
+        "grantedSkills": [
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Athletics",
+            "level": 2
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Craft",
+            "level": 1
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Blunt",
+            "level": 2
+          }
+        ]
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "vsX70BM2Y36hQzoZ",
+      "name": "Mountain Born",
+      "type": "feature",
+      "img": "icons/svg/shield.svg",
+      "system": {
+        "description": "You're acclimated to high altitude, including elevations above 20,000 feet. You're also naturally adapted to cold climates.",
+        "grantedSkills": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "P6iWZ21yxD9rLr5r",
+      "name": "Stone Endurance",
+      "type": "feature",
+      "img": "icons/svg/shield.svg",
+      "system": {
+        "description": "As a reaction when you take damage, you can spend 2 stamina to reduce that damage by 1d10 + your CON modifier. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+        "grantedSkills": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "jWpQlPK63RpKPmgB",
+      "name": "Sure-Footed",
+      "type": "feature",
+      "img": "icons/svg/shield.svg",
+      "system": {
+        "description": "You have advantage on ability checks and saving throws to avoid being knocked prone or shoved.",
+        "grantedSkills": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "4buuu4pBDgBfEYZ6",
+      "name": "Gene Splicer",
+      "type": "class",
+      "img": "icons/svg/biohazard.svg",
+      "system": {
+        "description": "A bio-engineer who manipulates genetics and biology at the molecular level. Gene Splicers can grant mutations, enhance physical abilities, and reshape living tissue with terrifying precision.",
+        "baseHP": 10,
+        "hpPerLevel": 3,
+        "staminaPerLevel": 3,
+        "manaPerLevel": 2,
+        "abilityBonuses": {
+          "str": 0,
+          "dex": 0,
+          "con": 0.5,
+          "int": 0.5,
+          "wis": 0,
+          "cha": 0
+        },
+        "levelAcquired": 1,
+        "saves": {
+          "str": false,
+          "con": true,
+          "dex": false,
+          "int": true,
+          "wis": false,
+          "cha": false
+        },
+        "grantedSkills": [
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Medicine",
+            "level": 3
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Craft",
+            "level": 2
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Survival",
+            "level": 2
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Lore",
+            "level": 1
+          }
+        ],
+        "grantedFeatures": [
+          {
+            "featureUuid": "Compendium.dcw-content.features.Item.Genetic-Modification",
+            "level": 1
+          },
+          {
+            "featureUuid": "Compendium.dcw-content.features.Item.Bio-Regeneration",
+            "level": 1
+          }
+        ],
+        "hitDie": "d10",
+        "primaryAbility": "int",
+        "secondaryAbility": "",
+        "features": "",
+        "subclasses": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "vuKqz0GrEEeH4dW8",
+      "name": "Genetic Modification",
+      "type": "feature",
+      "img": "icons/svg/biohazard.svg",
+      "system": {
+        "description": "You can alter biological structures at the genetic level. By spending 10 minutes and 5 stamina, you can grant yourself or an ally one mutation: claws (+1d6 damage), enhanced senses (darkvision 60ft), carapace (+2 AC), or gills (water breathing). The mutation lasts 8 hours.",
+        "grantedSkills": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "pWVxl3qCS3IgDDhd",
+      "name": "Bio-Regeneration",
+      "type": "feature",
+      "img": "icons/svg/regen.svg",
+      "system": {
+        "description": "Your modified biology allows rapid cellular regeneration. At the start of your turn, if you have at least 1 hit point, you regain hit points equal to your Constitution modifier (minimum 1). You can spend 3 stamina to double this regeneration for 1 minute.",
+        "grantedSkills": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "Y7r6ho0TTvVwJ2jC",
+      "name": "Shortsword",
+      "type": "weapon",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/short_sword_1.png",
+      "system": {
+        "description": "A versatile blade suitable for both thrusting and slashing. Popular among adventurers for its balance of reach and speed.",
+        "quantity": 1,
+        "weight": 2,
+        "roll": {
+          "diceNum": 1,
+          "diceSize": "d6",
+          "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+        },
+        "rarity": "common",
+        "effort": 1,
+        "range": "melee",
+        "equipped": true,
+        "grantedSkills": [
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Slash",
+            "level": 1
+          }
+        ],
+        "grantedFeatures": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "1KbIptt2ZAmu6YnT",
+      "name": "Leather Armor",
+      "type": "armor",
+      "img": "modules/dcw-content/assets/tiles/item/armor/torso/leather_armor_1.png",
+      "system": {
+        "description": "Simple, flexible protection stitched from boiled leather. Light enough to duck and weave in.",
+        "quantity": 1,
+        "weight": 10,
+        "rarity": "common",
+        "effort": 1,
+        "damageReduction": 1,
+        "equipped": true,
+        "grantedSkills": [
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Dodge",
+            "level": 1
+          }
+        ],
+        "luckBonus": 0
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

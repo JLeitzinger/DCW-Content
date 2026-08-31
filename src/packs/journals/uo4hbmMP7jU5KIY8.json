@@ -1,0 +1,44 @@
+{
+  "_id": "uo4hbmMP7jU5KIY8",
+  "name": "Corridor Junction (Room 36)",
+  "pages": [
+    {
+      "_id": "MkaeiLojKZh9riET",
+      "name": "Corridor Junction (Room 36)",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>A junction of old routes, Restless enough that it's clearly seen more use than the maps suggest.</p><section class=\"secret\"><h3>GM Notes</h3><p><strong>Milestone:</strong> A sign of the floor's deeper story: the Bone Choir never got the burial it was owed, and it intends to make everyone still breathing understand why that matters.</p><p><strong>Hazard:</strong> A ward etched into the doorway reacts to anyone who isn't already marked as an ally (DC 18 to detect and counter).</p><p><strong>Encounter:</strong> A patrol or wandering hazard tied to the floor's threat passes through this area on a rotation; a failed Perception check meets it head-on.</p></section>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": "s0dlYUtakPkzWbIe",
+  "categories": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

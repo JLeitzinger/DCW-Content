@@ -153,8 +153,12 @@ export function buildTileEnvelope({ id, img, x, y, width, height, rotation = 0, 
  * README's "Populated encounters" section. This is the same constraint every non-Adventure-
  * document Foundry content module with pre-placed tokens has; there is no supported way around
  * it for procedurally generated compendium Scenes.
+ *
+ * bar1Attribute/bar2Attribute default to 'health'/'power' (dccworldNPC's fields, used by mobs -
+ * see MonsterGenerator.mjs). CharacterGenerator.mjs's tokens (dccworldCharacter actors) pass
+ * 'hp'/'stamina' instead - see foundry-actor.mjs's wrapActor for the same distinction.
  */
-export function buildTokenEnvelope({ id, actorId, name, img, x, y, disposition = -1 }) {
+export function buildTokenEnvelope({ id, actorId, name, img, x, y, disposition = -1, bar1Attribute = 'health', bar2Attribute = 'power' }) {
   return {
     _id: id,
     name,
@@ -175,8 +179,8 @@ export function buildTokenEnvelope({ id, actorId, name, img, x, y, disposition =
     disposition,
     displayName: 20, // HOVER, owner only
     displayBars: 20,
-    bar1: { attribute: 'health' },
-    bar2: { attribute: 'power' },
+    bar1: { attribute: bar1Attribute },
+    bar2: { attribute: bar2Attribute },
     light: { dim: 0, bright: 0 },
     sight: { enabled: false },
     detectionModes: [],

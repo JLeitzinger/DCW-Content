@@ -48,7 +48,13 @@ export function buildTheme(rng, { name, themeCategory: hint }) {
   };
 }
 
-export function buildStoryGraph(rng, theme, tierConfig) {
+/**
+ * @param {{name: string, title: string}} [boss] - CharacterGenerator.mjs's buildBoss() result,
+ * built before this so the climax milestone can name the floor's boss instead of leaving it
+ * anonymous. Optional only so callers that pass monsterRoster: [] (disabling auto-population
+ * entirely) don't need a boss to build a story graph at all.
+ */
+export function buildStoryGraph(rng, theme, tierConfig, boss) {
   const category = getCategory(theme.themeCategory);
   const overrides = { domain: theme.domain, adj: theme.adj, threat: theme.threat };
   let counter = 0;
@@ -72,7 +78,7 @@ export function buildStoryGraph(rng, theme, tierConfig) {
     kind: 'milestone',
     requiredRoomRole: role,
     text: i === milestoneRoles.length - 1
-      ? `This is where the floor's story comes to a head: ${mainArcText}`
+      ? `This is where the floor's story comes to a head: ${mainArcText}${boss ? ` Its name is ${boss.name}, ${boss.title}.` : ''}`
       : `A sign of the floor's deeper story: ${fillTemplate(rng, category, nextArcTemplate(), overrides)}`,
     dependsOn: []
   }));

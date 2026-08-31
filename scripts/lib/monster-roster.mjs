@@ -6,6 +6,13 @@
  * candidates while placing floor tokens) both import this, so the CR/stat formula and id scheme
  * only exist in one place and can never drift between the two.
  *
+ * Only `band: 'minion'` rows actually become Monster compendium actors (mobs - see
+ * generate-monsters.mjs's filter) using the CR-formula stat block this file computes. `elite`/
+ * `boss` rows are still resolved here the same way, but are consumed as *archetype* input
+ * (img/themeCategory/primaryAbility/combatSkill/biography only - not the CR/stat-block fields
+ * below) by CharacterGenerator.mjs, which builds them a real race+class+gear+spell dccworldCharacter
+ * instead. See MonsterGenerator.mjs and DCW-Content/CLAUDE.md's Character section.
+ *
  * CR/stat formula (documented here since nothing else derives it): cr = round(tier *
  * bandMultiplier) where minion=1, elite=1.8, boss=3 - e.g. a tier-3 elite is CR 5. health.max =
  * 8 + cr*6, power.max = 4 + cr*3. Ability scores start at 10 flat; primaryAbility becomes

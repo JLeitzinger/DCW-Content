@@ -17,7 +17,12 @@ const dataDir = path.join(__dirname, '../data');
 fs.rmSync(monstersDir, { recursive: true, force: true });
 fs.mkdirSync(monstersDir, { recursive: true });
 
-const roster = loadMonsterRoster(dataDir);
+// Only minion-band rows become standalone Monsters-compendium actors ("mobs" - easily defeated
+// but dangerous in number, flat stat blocks). Elite/boss rows are archetype *inputs* to
+// CharacterGenerator.mjs now (see lib/level-gen/CharacterGenerator.mjs, MonsterGenerator.mjs) -
+// they no longer produce their own standalone Monster entry, since a full character build
+// exists for them per-floor instead.
+const roster = loadMonsterRoster(dataDir).filter(m => m.band === 'minion');
 
 const RANGED_SKILLS = new Set(['Shoot', 'Cast', 'Channel']);
 

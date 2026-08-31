@@ -391,6 +391,50 @@ function validateMonsters() {
   }
 }
 
+// Elites/bosses/friendly NPCs (see CharacterGenerator.mjs) - unlike Monsters, names legitimately
+// repeat across instances/floors on purpose (every "Ash Cult Enforcer" elite shares its
+// archetype's name; a boss's rolled personal name can coincidentally repeat across floors too),
+// so only _id needs to be unique here, not name - checkNoDuplicateIds, not checkNoDuplicates.
+function validateCharacters() {
+  const entries = loadEntries('characters');
+  checkNoDuplicateIds('characters', entries);
+  for (const { file, data } of entries) {
+    checkImg('characters', file, data.img);
+    if (data.type !== 'character') {
+      error('characters', file, `type must be "character", found "${data.type}"`);
+    }
+    const s = data.system;
+    if (!(s.attributes?.level?.value >= 1)) {
+      error('characters', file, `attributes.level.value must be >= 1, found ${JSON.stringify(s.attributes?.level)}`);
+    }
+    for (const key of ABILITIES) {
+      if (typeof s.abilities?.[key]?.value !== 'number') {
+        error('characters', file, `abilities.${key}.value must be a number, found ${JSON.stringify(s.abilities?.[key])}`);
+      }
+    }
+
+    const items = data.items || [];
+    if (!items.find(i => i.type === 'race')) {
+      error('characters', file, `no embedded race item - this character has no racial skills/bonuses`);
+    }
+    if (!items.find(i => i.type === 'class')) {
+      error('characters', file, `no embedded class item - this character has no class skills/resources`);
+    }
+    const weapon = items.find(i => i.type === 'weapon');
+    const armor = items.find(i => i.type === 'armor');
+    if (!weapon) {
+      error('characters', file, `no embedded weapon item - this character has no attack skill and can't act in combat`);
+    } else if (!weapon.system.equipped) {
+      error('characters', file, `embedded weapon "${weapon.name}" must be equipped:true or its grantedSkills won't apply`);
+    }
+    if (!armor) {
+      error('characters', file, `no embedded armor item - this character has no defense skill or damage reduction`);
+    } else if (!armor.system.equipped) {
+      error('characters', file, `embedded armor "${armor.name}" must be equipped:true or its grantedSkills won't apply`);
+    }
+  }
+}
+
 // Cross-check the source manifest (not just the generated Actor docs) for the fields that only
 // live there - themeCategory/band/tier drive MonsterGenerator.mjs's room-placement logic and
 // have no equivalent on the generated Actor, so a bad value here would silently produce a
@@ -448,7 +492,12 @@ function validateFloors() {
   const sceneEntries = loadEntries('scenes');
   const journalEntries = loadEntries('journals');
   const folderEntries = loadEntries('journal-folders');
-  const monsterActorIds = new Set(loadEntries('monsters').map(({ data }) => data._id));
+  // A token's actorId can resolve against either compendium now - mobs still reference Monsters,
+  // elites/bosses/friendly NPCs reference the per-floor Characters actors CharacterGenerator.mjs built.
+  const monsterActorIds = new Set([
+    ...loadEntries('monsters').map(({ data }) => data._id),
+    ...loadEntries('characters').map(({ data }) => data._id)
+  ]);
   checkNoDuplicateIds('scenes', sceneEntries);
   checkNoDuplicateIds('journals', journalEntries);
   checkNoDuplicateIds('journal-folders', folderEntries);
@@ -489,7 +538,7 @@ function validateFloors() {
     }
     for (const token of data.tokens || []) {
       if (!token.actorId || !monsterActorIds.has(token.actorId)) {
-        error('scenes', file, `token "${token.name}" (${token._id}) references unknown monster actorId "${token.actorId}" - run npm run generate:monsters`);
+        error('scenes', file, `token "${token.name}" (${token._id}) references unknown actorId "${token.actorId}" - not in Monsters or Characters, run npm run generate:monsters and npm run generate:floors`);
       }
     }
     for (const region of data.regions || []) {
@@ -567,6 +616,7 @@ const validators = {
   spells: validateSpells,
   monsters: validateMonsters,
   'monsters-manifest': validateMonstersManifest,
+  characters: validateCharacters,
   floors: validateFloors
 };
 

@@ -1,0 +1,44 @@
+{
+  "_id": "t63jQdynsXa7Bd5R",
+  "name": "Chamber (Room 28)",
+  "pages": [
+    {
+      "_id": "YGSWtyqGebm8jGRu",
+      "name": "Chamber (Room 28)",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>A Silent room, unremarkable at a glance but part of the Ossuaries's larger pattern all the same.</p><section class=\"secret\"><h3>GM Notes</h3><p><strong>Clue:</strong> A clue toward the floor's deeper story: Something in the Crypts below is calling the recently dead home, one grave at a time.</p></section>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": "s0dlYUtakPkzWbIe",
+  "categories": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

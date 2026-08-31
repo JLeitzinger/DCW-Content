@@ -1,0 +1,482 @@
+{
+  "_id": "wRGXq4Pc9ZiEmY4g",
+  "name": "Torin Hearst",
+  "type": "character",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10
+      },
+      "dex": {
+        "value": 10
+      },
+      "con": {
+        "value": 13
+      },
+      "int": {
+        "value": 10
+      },
+      "wis": {
+        "value": 10
+      },
+      "cha": {
+        "value": 10
+      }
+    },
+    "biography": "The single still-living prisoner the Bone Choir has kept as a witness for decades, finally free enough to talk if someone will listen.",
+    "attributes": {
+      "level": {
+        "value": 5
+      }
+    },
+    "details": {
+      "race": "Hill Dwarf",
+      "class": "Bard",
+      "subclass": "the Restless"
+    },
+    "hp": {
+      "value": 999,
+      "max": 999
+    },
+    "stamina": {
+      "value": 999,
+      "max": 999
+    },
+    "mana": {
+      "value": 999,
+      "max": 999
+    }
+  },
+  "prototypeToken": {
+    "name": "Torin Hearst",
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    },
+    "width": 1,
+    "height": 1,
+    "actorLink": false,
+    "disposition": -1,
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "hp"
+    },
+    "bar2": {
+      "attribute": "stamina"
+    }
+  },
+  "items": [
+    {
+      "_id": "lmm9u68yLOQ0fiX1",
+      "name": "Hill Dwarf",
+      "type": "race",
+      "img": "icons/svg/mystery-man.svg",
+      "system": {
+        "description": "Stout and sturdy folk who dwell in hills and mountains. Known for their craftsmanship, resilience, and fierce loyalty to clan and kin.",
+        "abilityBonuses": {
+          "str": 0,
+          "dex": 0,
+          "con": 2,
+          "int": 0,
+          "wis": 1,
+          "cha": 0
+        },
+        "bonuses": {
+          "hp": 2,
+          "stamina": 0,
+          "mana": 0
+        },
+        "size": "medium",
+        "speed": 25,
+        "senses": {
+          "darkvision": 60,
+          "blindsight": 0,
+          "tremorsense": 0,
+          "truesight": 0
+        },
+        "languages": "Common, Dwarvish",
+        "grantedFeatures": [
+          {
+            "featureUuid": "Compendium.dcw-content.features.Item.Dwarven-Resilience",
+            "level": 1
+          },
+          {
+            "featureUuid": "Compendium.dcw-content.features.Item.Stonecunning",
+            "level": 1
+          },
+          {
+            "featureUuid": "Compendium.dcw-content.features.Item.Craftsmen",
+            "level": 1
+          }
+        ],
+        "grantedSkills": [
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Craft",
+            "level": 2
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Lore",
+            "level": 1
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Block",
+            "level": 2
+          }
+        ]
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "vT7DU8c9Lxnt31Rc",
+      "name": "Dwarven Resilience",
+      "type": "feature",
+      "img": "icons/svg/shield.svg",
+      "system": {
+        "description": "You have advantage on saving throws against poison, and you have resistance against poison damage.",
+        "grantedSkills": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "ae2ZaMzGmQJR96RX",
+      "name": "Stonecunning",
+      "type": "feature",
+      "img": "icons/svg/shield.svg",
+      "system": {
+        "description": "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check.",
+        "grantedSkills": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "3UARFpOH3MeOVrzq",
+      "name": "Craftsmen",
+      "type": "feature",
+      "img": "icons/svg/shield.svg",
+      "system": {
+        "description": "You gain a +1 bonus to Craft skill checks.",
+        "grantedSkills": [
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Craft",
+            "level": 1
+          }
+        ]
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "2L5jhAOZbQ7zKSgK",
+      "name": "Bard",
+      "type": "class",
+      "img": "icons/svg/sound.svg",
+      "system": {
+        "description": "An inspiring magician whose power echoes the music of creation. Bards are versatile spellcasters and skilled performers who support allies and hinder foes.",
+        "baseHP": 9,
+        "hpPerLevel": 3,
+        "staminaPerLevel": 2,
+        "manaPerLevel": 3,
+        "abilityBonuses": {
+          "str": 0,
+          "dex": 0.3,
+          "con": 0,
+          "int": 0,
+          "wis": 0,
+          "cha": 0.7
+        },
+        "levelAcquired": 1,
+        "saves": {
+          "str": false,
+          "con": false,
+          "dex": true,
+          "int": false,
+          "wis": false,
+          "cha": true
+        },
+        "grantedSkills": [
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Cast",
+            "level": 2
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Diplomacy",
+            "level": 2
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Deception",
+            "level": 2
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Lore",
+            "level": 2
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Perception",
+            "level": 1
+          }
+        ],
+        "grantedFeatures": [
+          {
+            "featureUuid": "Compendium.dcw-content.features.Item.Bardic-Inspiration",
+            "level": 1
+          },
+          {
+            "featureUuid": "Compendium.dcw-content.features.Item.Jack-Of-All-Trades",
+            "level": 1
+          }
+        ],
+        "hitDie": "d8",
+        "primaryAbility": "cha",
+        "secondaryAbility": "",
+        "features": "",
+        "subclasses": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "WNz8g7YW5LB4qy4p",
+      "name": "Bardic Inspiration",
+      "type": "feature",
+      "img": "icons/svg/sound.svg",
+      "system": {
+        "description": "You can inspire others through stirring words or music. Spend 1 mana to choose one creature other than yourself within 60 feet who can hear you. That creature gains one Bardic Inspiration die (d6). Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw.",
+        "grantedSkills": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "jpkRHP4yIZDj9yId",
+      "name": "Jack of All Trades",
+      "type": "feature",
+      "img": "icons/svg/coins.svg",
+      "system": {
+        "description": "You can add half your proficiency bonus (rounded down) to any ability check you make that doesn't already use your proficiency bonus. This represents your wide-ranging knowledge and experience.",
+        "grantedSkills": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "TpaAfDHXiXGoKUMb",
+      "name": "Longbow",
+      "type": "weapon",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/ranged/longbow_1.png",
+      "system": {
+        "description": "A tall bow crafted from flexible yew. Requires strength to draw, but can strike targets from great distances.",
+        "quantity": 1,
+        "weight": 2,
+        "roll": {
+          "diceNum": 1,
+          "diceSize": "d8",
+          "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+        },
+        "rarity": "common",
+        "effort": 1,
+        "range": "150 feet",
+        "equipped": true,
+        "grantedSkills": [
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Pierce",
+            "level": 1
+          }
+        ],
+        "grantedFeatures": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "fJWdsMGcdiEAWNmb",
+      "name": "Leather Armor",
+      "type": "armor",
+      "img": "modules/dcw-content/assets/tiles/item/armor/torso/leather_armor_1.png",
+      "system": {
+        "description": "Simple, flexible protection stitched from boiled leather. Light enough to duck and weave in.",
+        "quantity": 1,
+        "weight": 10,
+        "rarity": "common",
+        "effort": 1,
+        "damageReduction": 1,
+        "equipped": true,
+        "grantedSkills": [
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Dodge",
+            "level": 1
+          }
+        ],
+        "luckBonus": 0
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}
