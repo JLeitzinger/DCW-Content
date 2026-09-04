@@ -2,7 +2,7 @@
   "id": "dcw-content",
   "title": "Dungeon Crawler World - Content",
   "description": "Official content compendiums for the Dungeon Crawler World game system. Includes classes, races, items, spells, features, and skills.",
-  "version": "1.20.0",
+  "version": "1.21.0",
   "authors": [
     {
       "name": "JLeitzinger",
@@ -149,13 +149,23 @@
         "PLAYER": "LIMITED",
         "ASSISTANT": "OWNER"
       }
+    },
+    {
+      "name": "rules",
+      "label": "Rules Reference",
+      "type": "JournalEntry",
+      "path": "packs/rules",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
   "packFolders": [
     {
       "name": "Dungeon Crawler World",
       "sorting": "m",
-      "packs": ["items", "weapons", "armor", "spells", "features", "classes", "races", "skills", "monsters", "characters"]
+      "packs": ["items", "weapons", "armor", "spells", "features", "classes", "races", "skills", "monsters", "characters", "rules"]
     },
     {
       "name": "Dungeon Crawler World - Floors",
