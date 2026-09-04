@@ -1,0 +1,44 @@
+{
+  "_id": "lo8PpIvmqPnVLJVH",
+  "name": "Corridor Junction (Room 8)",
+  "pages": [
+    {
+      "_id": "nvZZ0RslzzySjE1b",
+      "name": "Corridor Junction (Room 8)",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>Passages fork here into the Spit-Slicked heart of the Pens, worn smooth by traffic that wasn't always living.</p><section class=\"secret\"><h3>GM Notes</h3><p><strong>Clue:</strong> A clue toward the floor's deeper story: Somewhere in the Larders, the Wool-Crowned King and his stolen throne of saddlebags is handing out promotions based entirely on who the llamas nuzzle first.</p><p><strong>Hazard:</strong> A ward etched into the doorway reacts to anyone who isn't already marked as an ally (DC 14 to detect and counter).</p></section>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": "IMByb5K1TXxESWUw",
+  "categories": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

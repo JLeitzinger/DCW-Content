@@ -1,0 +1,44 @@
+{
+  "_id": "giMMFganRMjtOk2U",
+  "name": "Entrance (Room 0)",
+  "pages": [
+    {
+      "_id": "Xjp4nAaRpqBpWzT2",
+      "name": "Entrance (Room 0)",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>This landing marks the last point where retreat is still simple - past here, the Middens close in.</p><section class=\"secret\"><h3>GM Notes</h3><p><strong>Milestone:</strong> A sign of the floor's deeper story: Somewhere in the Larders, the Wool-Crowned King and his stolen throne of saddlebags is handing out promotions based entirely on who the llamas nuzzle first.</p><p><strong>Secret:</strong> Hidden here: leverage against the Wool-Crowned King and his stolen throne of saddlebags that the floor's story doesn't want found.</p></section>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": "IMByb5K1TXxESWUw",
+  "categories": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "_id": "CXfE28gCAMlcdjvR",
+  "name": "The Story So Far",
+  "pages": [
+    {
+      "_id": "pkdL2wQTM3a2r9U4",
+      "name": "Floor Overview",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><strong>The Wool-Crowned Warrens</strong></p><p>the Wool-Crowned King and his stolen throne of saddlebags started as a joke - a goblin sat on a llama once, on a dare - and now it's the closest thing this warren has to a government.</p>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "D5zF82Dyhm3LilSa",
+      "name": "Milestone 1",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>A sign of the floor's deeper story: Somewhere in the Larders, the Wool-Crowned King and his stolen throne of saddlebags is handing out promotions based entirely on who the llamas nuzzle first.</p><p><em>Tied to: Entrance (Room 0)</em></p>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 1,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "pDEqKLlckwW7FEek",
+      "name": "Milestone 2",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>A sign of the floor's deeper story: the Wool-Crowned King and his stolen throne of saddlebags has turned the Larders into equal parts throne room and petting zoo, and nobody currently in charge can explain how that happened.</p><p><em>Tied to: Corridor Junction (Room 6)</em></p>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 2,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "kAghIocym5sqqzNq",
+      "name": "Milestone 3",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>This is where the floor's story comes to a head: the Wool-Crowned King and his stolen throne of saddlebags started as a joke - a goblin sat on a llama once, on a dare - and now it's the closest thing this warren has to a government. Its name is Corvin Blackwell, Drover of the Wool-Crowned King and his stolen throne of saddlebags. The stairs down to the next floor are here too - finding them means going through whatever's guarding this room first.</p><p><em>Tied to: Boss Arena (Room 28)</em></p>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 3,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "tgOCjfRtn0QBTn94",
+      "name": "Sub-story 1",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>One llama has figured out that spitting on goblins gets it double rations, and has started training the others.</p>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 4,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "t5I8VSeW5hKKzpdj",
+      "name": "Sub-story 2",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>Two rival goblin chiefs have agreed to settle their feud with a llama race down the main hall - and both have been caught trying to bribe the same llama.</p>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 5,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": "Lqqu0fSgvMGvh107",
+  "categories": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

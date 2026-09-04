@@ -740,7 +740,7 @@
     {
       "_id": "OTwxGXFjCahWG8CP",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_2.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",

@@ -1,0 +1,161 @@
+{
+  "_id": "k07X11DKhMd2jNfG",
+  "name": "Yaktaur Drover",
+  "type": "npc",
+  "img": "modules/dcw-content/assets/tiles/monster/yaktaur.png",
+  "system": {
+    "cr": 1,
+    "health": {
+      "value": 14,
+      "max": 14
+    },
+    "power": {
+      "value": 7,
+      "max": 7
+    },
+    "abilities": {
+      "str": {
+        "value": 11
+      },
+      "dex": {
+        "value": 10
+      },
+      "con": {
+        "value": 11
+      },
+      "int": {
+        "value": 10
+      },
+      "wis": {
+        "value": 10
+      },
+      "cha": {
+        "value": 10
+      }
+    },
+    "biography": "Technically enlisted. Mostly just annoyed that the goblins keep braiding its mane wrong."
+  },
+  "prototypeToken": {
+    "name": "Yaktaur Drover",
+    "texture": {
+      "src": "modules/dcw-content/assets/tiles/monster/yaktaur.png"
+    },
+    "width": 1,
+    "height": 1,
+    "actorLink": false,
+    "disposition": -1,
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "health"
+    },
+    "bar2": {
+      "attribute": "power"
+    }
+  },
+  "items": [
+    {
+      "_id": "T8iFHtXSZa7zZLcO",
+      "name": "Warren Javelin",
+      "type": "weapon",
+      "img": "modules/dcw-content/assets/tiles/monster/yaktaur.png",
+      "system": {
+        "description": "",
+        "quantity": 1,
+        "weight": 0,
+        "roll": {
+          "diceNum": 1,
+          "diceSize": "d6",
+          "diceBonus": "+@con.mod+ceil(@lvl/2)"
+        },
+        "rarity": "common",
+        "effort": 1,
+        "range": "melee",
+        "equipped": true,
+        "grantedSkills": [
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Throw",
+            "level": 1
+          }
+        ],
+        "grantedFeatures": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "jqX13yiAx84Oe9WW",
+      "name": "Natural Defenses",
+      "type": "armor",
+      "img": "modules/dcw-content/assets/tiles/monster/yaktaur.png",
+      "system": {
+        "description": "",
+        "quantity": 1,
+        "weight": 0,
+        "rarity": "common",
+        "effort": 1,
+        "damageReduction": 1,
+        "equipped": true,
+        "grantedSkills": [
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Block",
+            "level": 1
+          }
+        ]
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

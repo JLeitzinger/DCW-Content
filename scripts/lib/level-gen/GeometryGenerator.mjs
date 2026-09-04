@@ -140,11 +140,18 @@ function assignRoles(leaves, connections, rng) {
 }
 
 /**
- * Generate a floor's room graph + wall geometry.
+ * Generate a floor's room graph + wall geometry. `layout: 'grid'` picks generateGridGeometry
+ * below instead of the BSP algorithm above - same return shape either way, so every downstream
+ * consumer (SceneBuilder/JournalBuilder/LightingGenerator/MonsterGenerator) is layout-agnostic.
  * @param {object} idFactory - see ids.mjs; used to mint each Wall's required 16-char _id.
  * @returns {{ rooms: Array, walls: Array, boundsPx: {width:number, height:number} }}
  */
-export function generateGeometry(rng, idFactory, { roomCountTarget, gridSize = 100, secretDoorChance = 0.1 }) {
+export function generateGeometry(rng, idFactory, { roomCountTarget, gridSize = 100, secretDoorChance = 0.1, layout = 'bsp' }) {
+  if (layout === 'grid') return generateGridGeometry(rng, idFactory, { roomCountTarget, gridSize, secretDoorChance });
+  return generateBspGeometry(rng, idFactory, { roomCountTarget, gridSize, secretDoorChance });
+}
+
+function generateBspGeometry(rng, idFactory, { roomCountTarget, gridSize, secretDoorChance }) {
   // Each leaf needs >= MIN_LEAF*MIN_LEAF cells to exist post-split, so the bounding rect needs
   // comfortably more than roomCountTarget * MIN_LEAF^2 total area or splitting stalls out
   // before reaching the target (greedy split-the-biggest-leaf runs out of splittable leaves).
@@ -274,5 +281,159 @@ export function generateGeometry(rng, idFactory, { roomCountTarget, gridSize = 1
     rooms,
     walls,
     boundsPx: { width: px(cols), height: px(rows) }
+  };
+}
+
+/**
+ * Grid-hall generator: a lattice of wide "main hall" corridors running the full width/height of
+ * the map at irregular column/row spacing, with one room filling each pocket between them - the
+ * classic hand-drawn dungeon-crawl layout, as opposed to the BSP algorithm's fully-tiled rooms.
+ * Every pocket opens onto every hall segment it borders (a door per bordering side, not just a
+ * spanning tree), so the halls read as real explorable thoroughfares with multiple routes
+ * between rooms, not a single critical path. Room sizes vary because column widths and row
+ * heights are each rolled independently per band.
+ */
+const HALL_WIDTH = 2; // grid cells - wide enough to read as a "main hall", not a corridor sliver
+const MIN_COL_CELLS = 6, MAX_COL_CELLS = 11;
+const MIN_ROW_CELLS = 5, MAX_ROW_CELLS = 10;
+
+function generateGridGeometry(rng, idFactory, { roomCountTarget, gridSize, secretDoorChance }) {
+  const nCols = Math.max(2, Math.round(Math.sqrt(roomCountTarget)));
+  const nRows = Math.max(2, Math.ceil(roomCountTarget / nCols));
+
+  const colWidths = Array.from({ length: nCols }, () => rng.int(MIN_COL_CELLS, MAX_COL_CELLS));
+  const rowHeights = Array.from({ length: nRows }, () => rng.int(MIN_ROW_CELLS, MAX_ROW_CELLS));
+
+  const colStart = [], colEnd = [];
+  let cursor = 0;
+  for (let c = 0; c < nCols; c++) {
+    colStart[c] = cursor;
+    colEnd[c] = cursor + colWidths[c];
+    cursor = colEnd[c] + (c < nCols - 1 ? HALL_WIDTH : 0);
+  }
+  const totalCols = cursor;
+
+  const rowStart = [], rowEnd = [];
+  cursor = 0;
+  for (let r = 0; r < nRows; r++) {
+    rowStart[r] = cursor;
+    rowEnd[r] = cursor + rowHeights[r];
+    cursor = rowEnd[r] + (r < nRows - 1 ? HALL_WIDTH : 0);
+  }
+  const totalRows = cursor;
+
+  const pockets = [];
+  for (let r = 0; r < nRows; r++) {
+    for (let c = 0; c < nCols; c++) {
+      const doors = {};
+      if (c > 0) doors.left = { secret: rng.bool(secretDoorChance) };
+      if (c < nCols - 1) doors.right = { secret: rng.bool(secretDoorChance) };
+      if (r > 0) doors.top = { secret: rng.bool(secretDoorChance) };
+      if (r < nRows - 1) doors.bottom = { secret: rng.bool(secretDoorChance) };
+      pockets.push({
+        id: pockets.length, col: c, row: r,
+        x0: colStart[c], x1: colEnd[c], y0: rowStart[r], y1: rowEnd[r],
+        w: colWidths[c], h: rowHeights[r], doors
+      });
+    }
+  }
+  const pocketAt = (c, r) => pockets[r * nCols + c];
+  const degree = p => Object.keys(p.doors).length;
+
+  // Role assignment mirrors the BSP algorithm's spirit (entrance nearest the origin corner,
+  // boss-arena the farthest+biggest room, low-degree rooms read as vaults) but computed against
+  // grid-Manhattan distance and per-side door count instead of a BFS over a room adjacency graph,
+  // since a grid layout has no such graph - every pocket's "neighbors" are hall segments, not
+  // other pockets.
+  const entrance = pocketAt(0, 0);
+  let boss = entrance, bossScore = -1;
+  for (const p of pockets) {
+    const dist = Math.abs(p.col - entrance.col) + Math.abs(p.row - entrance.row);
+    const score = dist * (p.w * p.h);
+    if (score > bossScore) { bossScore = score; boss = p; }
+  }
+
+  const roles = new Map();
+  roles.set(entrance.id, 'entrance');
+  roles.set(boss.id, 'boss-arena');
+
+  const rotation = ['chamber', 'rest-area', 'hazard-chamber'];
+  let rotationIndex = 0;
+  for (const p of pockets) {
+    if (roles.has(p.id)) continue;
+    const d = degree(p);
+    if (d === 2) {
+      const hasSecretDoor = Object.values(p.doors).some(door => door.secret);
+      roles.set(p.id, hasSecretDoor ? 'secret-vault' : 'treasure-vault');
+    } else if (d === 4 && rng.bool(0.6)) {
+      roles.set(p.id, 'corridor-junction');
+    } else {
+      roles.set(p.id, rotation[rotationIndex % rotation.length]);
+      rotationIndex++;
+    }
+  }
+
+  const px = n => n * gridSize;
+  const walls = [];
+  let wallCounter = 0;
+
+  function emitSegment(x0, y0, x1, y1, preset) {
+    if (x0 === x1 && y0 === y1) return;
+    walls.push({ _id: idFactory(`wall-${wallCounter++}`), c: [px(x0), px(y0), px(x1), px(y1)], ...preset });
+  }
+
+  function emitWithDoor(x0, y0, x1, y1, isSecret) {
+    const doorPreset = isSecret ? WALL_SECRET_DOOR : WALL_DOOR;
+    const dx = x1 - x0, dy = y1 - y0;
+    const len = Math.hypot(dx, dy);
+    const gap = Math.min(1, len * 0.4);
+    const midX = (x0 + x1) / 2, midY = (y0 + y1) / 2;
+    const ux = dx / len, uy = dy / len;
+    const beforeX = midX - ux * (gap / 2), beforeY = midY - uy * (gap / 2);
+    const afterX = midX + ux * (gap / 2), afterY = midY + uy * (gap / 2);
+    emitSegment(x0, y0, beforeX, beforeY, WALL_SOLID);
+    emitSegment(beforeX, beforeY, afterX, afterY, doorPreset);
+    emitSegment(afterX, afterY, x1, y1, WALL_SOLID);
+  }
+
+  // Each pocket only emits walls on sides bordering a hall (interior) - map-boundary sides are
+  // handled once below as a clean, gap-free perimeter rectangle instead, since a hall's mouth at
+  // the map edge would otherwise leave a gap in a naive per-pocket boundary wall.
+  for (const p of pockets) {
+    if (p.doors.left) emitWithDoor(p.x0, p.y0, p.x0, p.y1, p.doors.left.secret);
+    if (p.doors.right) emitWithDoor(p.x1, p.y0, p.x1, p.y1, p.doors.right.secret);
+    if (p.doors.top) emitWithDoor(p.x0, p.y0, p.x1, p.y0, p.doors.top.secret);
+    if (p.doors.bottom) emitWithDoor(p.x0, p.y1, p.x1, p.y1, p.doors.bottom.secret);
+  }
+
+  function emitPerimeterRow(y) {
+    for (let c = 0; c < nCols; c++) {
+      emitSegment(colStart[c], y, colEnd[c], y, rng.bool(0.06) ? WALL_WINDOW : WALL_SOLID);
+      if (c < nCols - 1) emitSegment(colEnd[c], y, colStart[c + 1], y, WALL_SOLID); // hall mouth
+    }
+  }
+  function emitPerimeterCol(x) {
+    for (let r = 0; r < nRows; r++) {
+      emitSegment(x, rowStart[r], x, rowEnd[r], rng.bool(0.06) ? WALL_WINDOW : WALL_SOLID);
+      if (r < nRows - 1) emitSegment(x, rowEnd[r], x, rowStart[r + 1], WALL_SOLID); // hall mouth
+    }
+  }
+  emitPerimeterRow(0);
+  emitPerimeterRow(totalRows);
+  emitPerimeterCol(0);
+  emitPerimeterCol(totalCols);
+
+  const rooms = pockets.map(p => ({
+    id: p.id,
+    role: roles.get(p.id),
+    degree: degree(p),
+    rectPx: { x: px(p.x0), y: px(p.y0), w: px(p.w), h: px(p.h) },
+    centerPx: { x: px((p.x0 + p.x1) / 2), y: px((p.y0 + p.y1) / 2) }
+  }));
+
+  return {
+    rooms,
+    walls,
+    boundsPx: { width: px(totalCols), height: px(totalRows) }
   };
 }

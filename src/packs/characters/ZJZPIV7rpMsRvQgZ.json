@@ -1,0 +1,404 @@
+{
+  "_id": "ZJZPIV7rpMsRvQgZ",
+  "name": "Corvin Blackwell, Drover of the Wool-Crowned King and his stolen throne of saddlebags",
+  "type": "character",
+  "img": "modules/dcw-content/assets/tiles/monster/yaktaur_captain_new.png",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 11
+      },
+      "dex": {
+        "value": 10
+      },
+      "con": {
+        "value": 10
+      },
+      "int": {
+        "value": 10
+      },
+      "wis": {
+        "value": 10
+      },
+      "cha": {
+        "value": 12
+      }
+    },
+    "biography": "A goblin who fell off a llama once, landed on a golden hay-hook, and declared it a scepter. The llama underneath him stopped questioning the arrangement long ago, and frankly, so has everyone else in the warren. Known to those who've survived this floor as Corvin Blackwell, Drover of the Wool-Crowned King and his stolen throne of saddlebags.",
+    "attributes": {
+      "level": {
+        "value": 4
+      }
+    },
+    "details": {
+      "race": "Tiefling",
+      "class": "Void Touched",
+      "subclass": "the Spit-Slicked"
+    },
+    "hp": {
+      "value": 999,
+      "max": 999
+    },
+    "stamina": {
+      "value": 999,
+      "max": 999
+    },
+    "mana": {
+      "value": 999,
+      "max": 999
+    }
+  },
+  "prototypeToken": {
+    "name": "Corvin Blackwell, Drover of the Wool-Crowned King and his stolen throne of saddlebags",
+    "texture": {
+      "src": "modules/dcw-content/assets/tiles/monster/yaktaur_captain_new.png"
+    },
+    "width": 1,
+    "height": 1,
+    "actorLink": false,
+    "disposition": -1,
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "hp"
+    },
+    "bar2": {
+      "attribute": "stamina"
+    }
+  },
+  "items": [
+    {
+      "_id": "IoZjFfKauHSlxPyf",
+      "name": "Tiefling",
+      "type": "race",
+      "img": "icons/svg/fire.svg",
+      "system": {
+        "description": "Tieflings bear the mark of infernal heritage in their appearance and magical abilities. Despite often facing prejudice, many tieflings embrace their dark charisma and innate magical talents.\n\nTraits: Hellish Resistance: You have resistance to fire damage. Infernal Legacy: You know the Thaumaturgy cantrip. You can cast Hellish Rebuke once per long rest, and Darkness once per long rest. Devil's Tongue: Tieflings have a natural gift for persuasion and deception.",
+        "abilityBonuses": {
+          "str": 0,
+          "dex": 0,
+          "con": 0,
+          "int": 1,
+          "wis": 0,
+          "cha": 2
+        },
+        "bonuses": {
+          "hp": 0,
+          "stamina": 1,
+          "mana": 2
+        },
+        "size": "medium",
+        "speed": 30,
+        "senses": {
+          "darkvision": 60,
+          "blindsight": 0,
+          "tremorsense": 0,
+          "truesight": 0
+        },
+        "languages": "",
+        "grantedFeatures": [],
+        "grantedSkills": [
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Deception",
+            "level": 1
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Diplomacy",
+            "level": 1
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Cast",
+            "level": 1
+          }
+        ]
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "vuuT5X2uyZE6xNUU",
+      "name": "Void Touched",
+      "type": "class",
+      "img": "icons/svg/portal.svg",
+      "system": {
+        "description": "One who has gazed into the void beyond reality and returned changed. Void Touched wield eldritch powers that warp space, bend minds, and tear at the fabric of existence itself.",
+        "baseHP": 9,
+        "hpPerLevel": 3,
+        "staminaPerLevel": 1,
+        "manaPerLevel": 3,
+        "abilityBonuses": {
+          "str": 0,
+          "dex": 0,
+          "con": 0,
+          "int": 0,
+          "wis": 0.4,
+          "cha": 0.6
+        },
+        "levelAcquired": 1,
+        "saves": {
+          "str": false,
+          "con": false,
+          "dex": false,
+          "int": false,
+          "wis": true,
+          "cha": true
+        },
+        "grantedSkills": [
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Cast",
+            "level": 3
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Intimidation",
+            "level": 2
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Perception",
+            "level": 2
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Focus",
+            "level": 1
+          }
+        ],
+        "grantedFeatures": [
+          {
+            "featureUuid": "Compendium.dcw-content.features.Item.Void-Gaze",
+            "level": 1
+          },
+          {
+            "featureUuid": "Compendium.dcw-content.features.Item.Reality-Warp",
+            "level": 1
+          }
+        ],
+        "hitDie": "d8",
+        "primaryAbility": "cha",
+        "secondaryAbility": "",
+        "features": "",
+        "subclasses": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "7ewKYwcl42YyiEc7",
+      "name": "Void Gaze",
+      "type": "feature",
+      "img": "icons/svg/eye.svg",
+      "system": {
+        "description": "Your eyes have seen beyond reality. You can peer into the void to see invisible creatures, detect lies, and sense magic. Creatures that meet your gaze must succeed on a Wisdom save or become frightened for 1 minute. You have advantage on saves against illusions and charm effects.",
+        "grantedSkills": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "9GHMtDdLegNDVy04",
+      "name": "Reality Warp",
+      "type": "feature",
+      "img": "icons/svg/portal.svg",
+      "system": {
+        "description": "You can bend the laws of reality in a small area. By spending 4 mana, you can choose one: create difficult terrain, reverse gravity, or cause objects to phase through walls. The effect lasts for 1 minute in a 20-foot radius.",
+        "grantedSkills": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "sG2ilxxAX5Z54iYX",
+      "name": "Longsword",
+      "type": "weapon",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/long_sword_1.png",
+      "system": {
+        "description": "A versatile straight blade. The quintessential knight's weapon, balanced for both offense and defense.",
+        "quantity": 1,
+        "weight": 3,
+        "roll": {
+          "diceNum": 1,
+          "diceSize": "d8",
+          "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+        },
+        "rarity": "common",
+        "effort": 1,
+        "range": "melee",
+        "equipped": true,
+        "grantedSkills": [
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Slash",
+            "level": 1
+          }
+        ],
+        "grantedFeatures": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "mchuuluSqSaxBrH2",
+      "name": "Leather Armor",
+      "type": "armor",
+      "img": "modules/dcw-content/assets/tiles/item/armor/torso/leather_armor_1.png",
+      "system": {
+        "description": "Simple, flexible protection stitched from boiled leather. Light enough to duck and weave in.",
+        "quantity": 1,
+        "weight": 10,
+        "rarity": "common",
+        "effort": 1,
+        "damageReduction": 1,
+        "equipped": true,
+        "grantedSkills": [
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Dodge",
+            "level": 1
+          }
+        ],
+        "luckBonus": 0
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "GGr1qrQ013rH6oUm",
+      "name": "Jack In",
+      "type": "feature",
+      "img": "icons/svg/eye.svg",
+      "system": {
+        "description": "You can interface directly with digital systems and networks. By touching any electronic device, you can access its data, bypass security, or take control. Make an Intelligence check contested by the system's security rating.",
+        "grantedSkills": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.341",
+        "systemId": "dungeon-crawler-world",
+        "systemVersion": null,
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

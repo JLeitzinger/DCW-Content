@@ -1,0 +1,44 @@
+{
+  "_id": "3VHQiU51p2391SVQ",
+  "name": "Rest Area (Room 26)",
+  "pages": [
+    {
+      "_id": "VPGJOHWCSxOu5xon",
+      "name": "Rest Area (Room 26)",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>A Contested alcove, quiet enough that it's clearly been used as a waypoint by more than one previous expedition.</p><section class=\"secret\"><h3>GM Notes</h3><p><strong>Hazard:</strong> The floor here is unstable and gives way under careless weight (DC 13 to notice before stepping wrong).</p></section>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": "IMByb5K1TXxESWUw",
+  "categories": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

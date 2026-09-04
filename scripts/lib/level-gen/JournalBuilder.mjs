@@ -36,10 +36,14 @@ function assignNodesToRooms(rooms, nodes) {
 
 function buildRoomKeyEntry(rng, id, theme, category, room, placedNodes, tierConfig, folderId) {
   const readAloud = pickRoomText(rng, category, theme.themeCategory, room.role);
-  const secretParts = placedNodes.map(node => {
+  const secretParts = [];
+  if (room.role === 'boss-arena') {
+    secretParts.push('<p><strong>Objective:</strong> The stairwell down to the next floor is here - whatever holds this room is standing between the party and it.</p>');
+  }
+  secretParts.push(...placedNodes.map(node => {
     const label = node.kind.replace(/-/g, ' ').replace(/^\w/, c => c.toUpperCase());
     return `<p><strong>${label}:</strong> ${node.text}</p>`;
-  });
+  }));
   if (rng.bool(0.25)) {
     secretParts.push(`<p><strong>Hazard:</strong> ${pickHazard(rng, tierConfig.dcBonus)}</p>`);
   }

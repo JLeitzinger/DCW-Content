@@ -1,6 +1,6 @@
 {
-  "_id": "wRGXq4Pc9ZiEmY4g",
-  "name": "Torin Hearst",
+  "_id": "oXrm9zR7wfGDpexG",
+  "name": "Edric Stormcrow",
   "type": "character",
   "img": "icons/svg/mystery-man.svg",
   "system": {
@@ -31,9 +31,9 @@
       }
     },
     "details": {
-      "race": "Hill Dwarf",
+      "race": "Mountain Folk",
       "class": "Bard",
-      "subclass": "the Restless"
+      "subclass": "the Silent"
     },
     "hp": {
       "value": 999,
@@ -49,7 +49,7 @@
     }
   },
   "prototypeToken": {
-    "name": "Torin Hearst",
+    "name": "Edric Stormcrow",
     "texture": {
       "src": "icons/svg/mystery-man.svg"
     },
@@ -69,23 +69,23 @@
   },
   "items": [
     {
-      "_id": "lmm9u68yLOQ0fiX1",
-      "name": "Hill Dwarf",
+      "_id": "3lc7XaHndGkVCxlb",
+      "name": "Mountain Folk",
       "type": "race",
       "img": "icons/svg/mystery-man.svg",
       "system": {
-        "description": "Stout and sturdy folk who dwell in hills and mountains. Known for their craftsmanship, resilience, and fierce loyalty to clan and kin.",
+        "description": "Hardy people who make their homes in the highest peaks. Miners, climbers, and hunters known for their incredible endurance and connection to the stone.",
         "abilityBonuses": {
-          "str": 0,
+          "str": 1,
           "dex": 0,
           "con": 2,
           "int": 0,
-          "wis": 1,
+          "wis": 0,
           "cha": 0
         },
         "bonuses": {
-          "hp": 2,
-          "stamina": 0,
+          "hp": 3,
+          "stamina": 2,
           "mana": 0
         },
         "size": "medium",
@@ -96,32 +96,32 @@
           "tremorsense": 0,
           "truesight": 0
         },
-        "languages": "Common, Dwarvish",
+        "languages": "Common, Giant",
         "grantedFeatures": [
           {
-            "featureUuid": "Compendium.dcw-content.features.Item.Dwarven-Resilience",
+            "featureUuid": "Compendium.dcw-content.features.Item.Mountain-Born",
             "level": 1
           },
           {
-            "featureUuid": "Compendium.dcw-content.features.Item.Stonecunning",
+            "featureUuid": "Compendium.dcw-content.features.Item.Stone-Endurance",
             "level": 1
           },
           {
-            "featureUuid": "Compendium.dcw-content.features.Item.Craftsmen",
+            "featureUuid": "Compendium.dcw-content.features.Item.Sure-Footed",
             "level": 1
           }
         ],
         "grantedSkills": [
           {
-            "skillUuid": "Compendium.dcw-content.skills.Item.Craft",
+            "skillUuid": "Compendium.dcw-content.skills.Item.Athletics",
             "level": 2
           },
           {
-            "skillUuid": "Compendium.dcw-content.skills.Item.Lore",
+            "skillUuid": "Compendium.dcw-content.skills.Item.Craft",
             "level": 1
           },
           {
-            "skillUuid": "Compendium.dcw-content.skills.Item.Block",
+            "skillUuid": "Compendium.dcw-content.skills.Item.Blunt",
             "level": 2
           }
         ]
@@ -146,12 +146,12 @@
       }
     },
     {
-      "_id": "vT7DU8c9Lxnt31Rc",
-      "name": "Dwarven Resilience",
+      "_id": "zVAOpGZzAd7izuU2",
+      "name": "Mountain Born",
       "type": "feature",
       "img": "icons/svg/shield.svg",
       "system": {
-        "description": "You have advantage on saving throws against poison, and you have resistance against poison damage.",
+        "description": "You're acclimated to high altitude, including elevations above 20,000 feet. You're also naturally adapted to cold climates.",
         "grantedSkills": []
       },
       "effects": [],
@@ -174,12 +174,12 @@
       }
     },
     {
-      "_id": "ae2ZaMzGmQJR96RX",
-      "name": "Stonecunning",
+      "_id": "7OxNGSDPeNvo1AmG",
+      "name": "Stone Endurance",
       "type": "feature",
       "img": "icons/svg/shield.svg",
       "system": {
-        "description": "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check.",
+        "description": "As a reaction when you take damage, you can spend 2 stamina to reduce that damage by 1d10 + your CON modifier. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
         "grantedSkills": []
       },
       "effects": [],
@@ -202,18 +202,13 @@
       }
     },
     {
-      "_id": "3UARFpOH3MeOVrzq",
-      "name": "Craftsmen",
+      "_id": "rCWWoBUFNMxWZ3do",
+      "name": "Sure-Footed",
       "type": "feature",
       "img": "icons/svg/shield.svg",
       "system": {
-        "description": "You gain a +1 bonus to Craft skill checks.",
-        "grantedSkills": [
-          {
-            "skillUuid": "Compendium.dcw-content.skills.Item.Craft",
-            "level": 1
-          }
-        ]
+        "description": "You have advantage on ability checks and saving throws to avoid being knocked prone or shoved.",
+        "grantedSkills": []
       },
       "effects": [],
       "folder": null,
@@ -235,7 +230,7 @@
       }
     },
     {
-      "_id": "2L5jhAOZbQ7zKSgK",
+      "_id": "TIjO7d9FJq5hhOub",
       "name": "Bard",
       "type": "class",
       "img": "icons/svg/sound.svg",
@@ -320,7 +315,7 @@
       }
     },
     {
-      "_id": "WNz8g7YW5LB4qy4p",
+      "_id": "isiTuZLkmhN33Ns8",
       "name": "Bardic Inspiration",
       "type": "feature",
       "img": "icons/svg/sound.svg",
@@ -348,7 +343,7 @@
       }
     },
     {
-      "_id": "jpkRHP4yIZDj9yId",
+      "_id": "WiL7gufCY7jZPn7s",
       "name": "Jack of All Trades",
       "type": "feature",
       "img": "icons/svg/coins.svg",
@@ -376,22 +371,22 @@
       }
     },
     {
-      "_id": "TpaAfDHXiXGoKUMb",
-      "name": "Longbow",
+      "_id": "Bb4dQCnTZwur5bJ2",
+      "name": "Javelin",
       "type": "weapon",
-      "img": "modules/dcw-content/assets/tiles/item/weapon/ranged/longbow_1.png",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/ranged/tomahawk_1.png",
       "system": {
-        "description": "A tall bow crafted from flexible yew. Requires strength to draw, but can strike targets from great distances.",
+        "description": "A light throwing spear. Designed primarily for ranged combat but can be used in melee.",
         "quantity": 1,
         "weight": 2,
         "roll": {
           "diceNum": 1,
-          "diceSize": "d8",
-          "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+          "diceSize": "d6",
+          "diceBonus": "+@str.mod+ceil(@lvl / 2)"
         },
         "rarity": "common",
         "effort": 1,
-        "range": "150 feet",
+        "range": "30 feet",
         "equipped": true,
         "grantedSkills": [
           {
@@ -421,21 +416,21 @@
       }
     },
     {
-      "_id": "fJWdsMGcdiEAWNmb",
-      "name": "Leather Armor",
+      "_id": "b1Ph3OoooedFkrA7",
+      "name": "Wooden Buckler",
       "type": "armor",
-      "img": "modules/dcw-content/assets/tiles/item/armor/torso/leather_armor_1.png",
+      "img": "modules/dcw-content/assets/tiles/item/armor/shields/shield_1.png",
       "system": {
-        "description": "Simple, flexible protection stitched from boiled leather. Light enough to duck and weave in.",
+        "description": "A small round shield, strapped to the forearm. Cheap, light, and just enough to catch a blade.",
         "quantity": 1,
-        "weight": 10,
+        "weight": 5,
         "rarity": "common",
         "effort": 1,
         "damageReduction": 1,
         "equipped": true,
         "grantedSkills": [
           {
-            "skillUuid": "Compendium.dcw-content.skills.Item.Dodge",
+            "skillUuid": "Compendium.dcw-content.skills.Item.Block",
             "level": 1
           }
         ],

@@ -1,0 +1,44 @@
+{
+  "_id": "ps7Z3oPImk4gcSIu",
+  "name": "Treasure Vault (Room 4)",
+  "pages": [
+    {
+      "_id": "WmFhhZh2SsZcQwGg",
+      "name": "Treasure Vault (Room 4)",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>A Spit-Slicked strongroom, its contents undisturbed long enough to have accumulated a history of their own.</p><section class=\"secret\"><h3>GM Notes</h3><p><strong>Substory beat:</strong> Two rival goblin chiefs have agreed to settle their feud with a llama race down the main hall - and both have been caught trying to bribe the same llama.</p></section>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": "IMByb5K1TXxESWUw",
+  "categories": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

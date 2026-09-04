@@ -78,7 +78,7 @@ export function buildStoryGraph(rng, theme, tierConfig, boss) {
     kind: 'milestone',
     requiredRoomRole: role,
     text: i === milestoneRoles.length - 1
-      ? `This is where the floor's story comes to a head: ${mainArcText}${boss ? ` Its name is ${boss.name}, ${boss.title}.` : ''}`
+      ? `This is where the floor's story comes to a head: ${mainArcText}${boss ? ` Its name is ${boss.name}, ${boss.title}.` : ''} The stairs down to the next floor are here too - finding them means going through whatever's guarding this room first.`
       : `A sign of the floor's deeper story: ${fillTemplate(rng, category, nextArcTemplate(), overrides)}`,
     dependsOn: []
   }));

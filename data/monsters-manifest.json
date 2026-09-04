@@ -415,6 +415,76 @@
       "biography": "Predates the floor, the dungeon, and quite possibly the name anyone's given either.",
       "combatSkill": "Cast",
       "attackName": "Void Rend"
+    },
+    {
+      "name": "Warren Goblin",
+      "img": "modules/dcw-content/assets/tiles/monster/goblin.png",
+      "themeCategory": "goblin_warren",
+      "band": "minion",
+      "tier": 1,
+      "primaryAbility": "dex",
+      "biography": "Fights like it's got somewhere better to be - namely, wherever the llamas are being fed.",
+      "combatSkill": "Slash",
+      "attackName": "Rusty Shiv"
+    },
+    {
+      "name": "Hobgoblin Enforcer",
+      "img": "modules/dcw-content/assets/tiles/monster/hobgoblin.png",
+      "themeCategory": "goblin_warren",
+      "band": "minion",
+      "tier": 2,
+      "primaryAbility": "str",
+      "biography": "Keeps order the only way it knows how: loudly, and usually near a llama it's trying to impress.",
+      "combatSkill": "Blunt",
+      "attackName": "Camp Cudgel"
+    },
+    {
+      "name": "Yaktaur Drover",
+      "img": "modules/dcw-content/assets/tiles/monster/yaktaur.png",
+      "themeCategory": "goblin_warren",
+      "band": "minion",
+      "tier": 1,
+      "primaryAbility": "con",
+      "secondaryAbility": "str",
+      "biography": "Technically enlisted. Mostly just annoyed that the goblins keep braiding its mane wrong.",
+      "combatSkill": "Throw",
+      "attackName": "Warren Javelin"
+    },
+    {
+      "name": "Goblin War-Chief",
+      "img": "modules/dcw-content/assets/tiles/monster/hobgoblin_new.png",
+      "themeCategory": "goblin_warren",
+      "band": "elite",
+      "tier": 2,
+      "primaryAbility": "str",
+      "secondaryAbility": "cha",
+      "biography": "Claims the llama chose it personally to lead. The llama has never confirmed this.",
+      "combatSkill": "Blunt",
+      "attackName": "Chief's Warclub"
+    },
+    {
+      "name": "Yaktaur Captain",
+      "img": "modules/dcw-content/assets/tiles/monster/yaktaur_captain.png",
+      "themeCategory": "goblin_warren",
+      "band": "elite",
+      "tier": 4,
+      "primaryAbility": "dex",
+      "secondaryAbility": "con",
+      "biography": "The only creature in the warren both factions salute without being told to - mostly because it remembers where the good hay is kept.",
+      "combatSkill": "Throw",
+      "attackName": "Captain's Barbed Javelin"
+    },
+    {
+      "name": "The Wool-Crowned King",
+      "img": "modules/dcw-content/assets/tiles/monster/yaktaur_captain_new.png",
+      "themeCategory": "goblin_warren",
+      "band": "boss",
+      "tier": 5,
+      "primaryAbility": "cha",
+      "secondaryAbility": "str",
+      "biography": "A goblin who fell off a llama once, landed on a golden hay-hook, and declared it a scepter. The llama underneath him stopped questioning the arrangement long ago, and frankly, so has everyone else in the warren.",
+      "combatSkill": "Blunt",
+      "attackName": "The Gilded Crook"
     }
   ]
 }

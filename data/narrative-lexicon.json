@@ -144,6 +144,35 @@
         "The sole survivor of a previous expedition's final log entries, alive but changed by however long they've spent near {threat}.",
         "Someone whose dreams started including rooms that don't exist on this floor's map yet - until they do - and who wants that to stop."
       ]
+    },
+    "goblin_warren": {
+      "domainNouns": ["Warrens", "Middens", "Switchbacks", "Larders", "Pens"],
+      "adjectives": ["Squabbling", "Ramshackle", "Overcrowded", "Contested", "Spit-Slicked"],
+      "threats": [
+        "a goblin war-band that's crowned a llama as their living god",
+        "the Wool-Crowned King and his stolen throne of saddlebags",
+        "a llama cavalry that never agreed to be a cavalry",
+        "two goblin chiefs feuding over which of them the llamas actually like better"
+      ],
+      "lightColor": "#e8a23a",
+      "torchColor": "#ffb347",
+      "darknessLevel": 0.4,
+      "arcTemplates": [
+        "{threat} has turned the {domain} into equal parts throne room and petting zoo, and nobody currently in charge can explain how that happened.",
+        "Somewhere in the {domain}, {threat} is handing out promotions based entirely on who the llamas nuzzle first.",
+        "{threat} started as a joke - a goblin sat on a llama once, on a dare - and now it's the closest thing this warren has to a government."
+      ],
+      "subStoryTemplates": [
+        "A goblin quartermaster is trying to smuggle out the good llama, the one that doesn't spit on command, before the war-band notices it's gone.",
+        "Two rival goblin chiefs have agreed to settle their feud with a llama race down the main hall - and both have been caught trying to bribe the same llama.",
+        "One llama has figured out that spitting on goblins gets it double rations, and has started training the others.",
+        "A goblin who fell off a llama during the coronation still hasn't lived it down, and is looking for literally anyone new to tell the story to."
+      ],
+      "bossTitles": ["the Wool-Crowned", "Drover of {threat}", "Spit-Anointed Sovereign of {threat}"],
+      "friendlyNpcHooks": [
+        "A goblin cook who's stopped asking questions about the chain of command as long as somebody keeps bringing hay.",
+        "A llama who wandered in from a passing caravan months ago and has since - through no effort of its own - become a folk hero."
+      ]
     }
   },
   "names": [

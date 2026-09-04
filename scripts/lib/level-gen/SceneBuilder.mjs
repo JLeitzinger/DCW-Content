@@ -8,7 +8,7 @@
  * common/documents/{region,region-behavior,note}.mjs (stable across v13/v14). Every id comes
  * from idFactory (ids.mjs) - Foundry requires a real 16-char id, not a slug (see ids.mjs).
  */
-import { buildSceneEnvelope } from './envelope.mjs';
+import { buildSceneEnvelope, buildTileEnvelope } from './envelope.mjs';
 import { generateLights } from './LightingGenerator.mjs';
 import { generateTiles } from './TileGenerator.mjs';
 import { placeMonsters, placeFriendlyNpcs } from './MonsterGenerator.mjs';
@@ -16,6 +16,22 @@ import { placeMonsters, placeFriendlyNpcs } from './MonsterGenerator.mjs';
 const GRID_SIZE = 100;
 const SOLID = { light: 20, move: 20, sight: 20, sound: 20, door: 0, ds: 0, dir: 0, doorSound: '' };
 const DOOR = { ...SOLID, door: 1 };
+const STAIRS_ICON = 'modules/dcw-content/assets/tiles/dungeon/gateways/stone_stairs_down.png';
+
+/** Marks the floor's goal - a stairs-down Tile in the boss-arena room, the real Foundry object
+ * for "this is what the party is looking for" beyond just the Note's linked journal text. */
+function buildStairsTile(id, room) {
+  const size = GRID_SIZE * 2;
+  return buildTileEnvelope({
+    id: id(`stairs-${room.id}`),
+    img: STAIRS_ICON,
+    x: room.rectPx.x + room.rectPx.w - size - GRID_SIZE * 0.5,
+    y: room.rectPx.y + GRID_SIZE * 0.5,
+    width: size,
+    height: size,
+    sort: 10
+  });
+}
 
 function buildNote(id, room, entryId, text) {
   return {
@@ -157,7 +173,10 @@ export function buildScenes(rng, id, theme, geometry, lights, journals, tierConf
       lights: generateLights(rng, id, [localRoom], theme),
       notes: [],
       regions: [subRegion],
-      tiles: library ? generateTiles(rng, id, [localRoom], theme, setting, library, tierConfig) : [],
+      tiles: [
+        ...(library ? generateTiles(rng, id, [localRoom], theme, setting, library, tierConfig) : []),
+        ...(room.role === 'boss-arena' ? [buildStairsTile(id, localRoom)] : [])
+      ],
       tokens: subTokens
     });
     subScenes.push(subScene);
@@ -196,7 +215,12 @@ export function buildScenes(rng, id, theme, geometry, lights, journals, tierConf
     lights,
     notes,
     regions: primaryRegions,
-    tiles: library ? generateTiles(rng, id, rooms, theme, setting, library, tierConfig) : [],
+    // Boss-arena rooms that got their own sub-scene already have their stairs tile placed there
+    // above - only add one here for a boss-arena that stayed in the primary scene.
+    tiles: [
+      ...(library ? generateTiles(rng, id, rooms, theme, setting, library, tierConfig) : []),
+      ...populableRooms.filter(r => r.role === 'boss-arena').map(r => buildStairsTile(id, r))
+    ],
     tokens: primaryTokens
   });
 

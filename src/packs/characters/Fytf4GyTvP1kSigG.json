@@ -1,18 +1,18 @@
 {
-  "_id": "xfqO4Aja9E2uY7Gu",
-  "name": "Wight",
+  "_id": "Fytf4GyTvP1kSigG",
+  "name": "Goblin War-Chief",
   "type": "character",
-  "img": "modules/dcw-content/assets/tiles/monster/undead/wight.png",
+  "img": "modules/dcw-content/assets/tiles/monster/hobgoblin_new.png",
   "system": {
     "abilities": {
       "str": {
-        "value": 15
+        "value": 11
       },
       "dex": {
         "value": 10
       },
       "con": {
-        "value": 13
+        "value": 10
       },
       "int": {
         "value": 10
@@ -21,19 +21,19 @@
         "value": 10
       },
       "cha": {
-        "value": 10
+        "value": 11
       }
     },
-    "biography": "Its grip drains warmth first, then strength, then the will to pull away.",
+    "biography": "Claims the llama chose it personally to lead. The llama has never confirmed this.",
     "attributes": {
       "level": {
-        "value": 10
+        "value": 2
       }
     },
     "details": {
-      "race": "Dragonborn",
-      "class": "Fighter",
-      "subclass": "the Silent"
+      "race": "Half-Orc",
+      "class": "Barbarian",
+      "subclass": "the Overcrowded"
     },
     "hp": {
       "value": 999,
@@ -49,9 +49,9 @@
     }
   },
   "prototypeToken": {
-    "name": "Wight",
+    "name": "Goblin War-Chief",
     "texture": {
-      "src": "modules/dcw-content/assets/tiles/monster/undead/wight.png"
+      "src": "modules/dcw-content/assets/tiles/monster/hobgoblin_new.png"
     },
     "width": 1,
     "height": 1,
@@ -69,12 +69,12 @@
   },
   "items": [
     {
-      "_id": "67mwksh8L0dFjOKp",
-      "name": "Dragonborn",
+      "_id": "eF8t9ED7AK11wyHM",
+      "name": "Half-Orc",
       "type": "race",
-      "img": "icons/svg/wing.svg",
+      "img": "icons/svg/skull.svg",
       "system": {
-        "description": "Dragonborn are proud and noble draconic humanoids, born with the blood of ancient dragons flowing through their veins. They combine the strength and majesty of dragons with humanoid versatility.\n\nTraits: Draconic Ancestry: You have draconic ancestry which determines your breath weapon and damage resistance. Breath Weapon: You can exhale destructive energy once per short rest. Damage Resistance: You have resistance to the damage type associated with your draconic ancestry.",
+        "description": "Half-orcs combine the best qualities of humans and orcs, though some would say they inherit the worst. They possess remarkable physical strength and endurance, along with a fierce will to survive.\n\nTraits: Relentless Endurance: When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead (once per long rest). Savage Attacks: When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time. Menacing: You have proficiency in the Intimidation skill.",
         "abilityBonuses": {
           "str": 2,
           "dex": 0,
@@ -84,8 +84,8 @@
           "cha": 0
         },
         "bonuses": {
-          "hp": 2,
-          "stamina": 2,
+          "hp": 3,
+          "stamina": 3,
           "mana": 0
         },
         "size": "medium",
@@ -101,14 +101,14 @@
         "grantedSkills": [
           {
             "skillUuid": "Compendium.dcw-content.skills.Item.Intimidation",
+            "level": 2
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Survival",
             "level": 1
           },
           {
-            "skillUuid": "Compendium.dcw-content.skills.Item.Diplomacy",
-            "level": 1
-          },
-          {
-            "skillUuid": "Compendium.dcw-content.skills.Item.Slash",
+            "skillUuid": "Compendium.dcw-content.skills.Item.Blunt",
             "level": 1
           }
         ]
@@ -133,20 +133,20 @@
       }
     },
     {
-      "_id": "62ibrVmCT28Tg98D",
-      "name": "Fighter",
+      "_id": "oGYTk7R0wj4Vxb6r",
+      "name": "Barbarian",
       "type": "class",
-      "img": "icons/svg/sword.svg",
+      "img": "icons/svg/combat.svg",
       "system": {
-        "description": "A master of martial combat, skilled with a variety of weapons and armor. Fighters are versatile warriors who excel in melee and ranged combat.",
+        "description": "A fierce warrior of primitive background who can enter a battle rage. Barbarians are unmatched in raw physical power and durability.",
         "baseHP": 12,
         "hpPerLevel": 4,
         "staminaPerLevel": 3,
         "manaPerLevel": 1,
         "abilityBonuses": {
-          "str": 0.5,
+          "str": 0.6,
           "dex": 0,
-          "con": 0.5,
+          "con": 0.4,
           "int": 0,
           "wis": 0,
           "cha": 0
@@ -163,15 +163,7 @@
         "grantedSkills": [
           {
             "skillUuid": "Compendium.dcw-content.skills.Item.Slash",
-            "level": 2
-          },
-          {
-            "skillUuid": "Compendium.dcw-content.skills.Item.Block",
-            "level": 2
-          },
-          {
-            "skillUuid": "Compendium.dcw-content.skills.Item.Dodge",
-            "level": 2
+            "level": 3
           },
           {
             "skillUuid": "Compendium.dcw-content.skills.Item.Athletics",
@@ -179,16 +171,20 @@
           },
           {
             "skillUuid": "Compendium.dcw-content.skills.Item.Intimidation",
+            "level": 2
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Survival",
             "level": 1
           }
         ],
         "grantedFeatures": [
           {
-            "featureUuid": "Compendium.dcw-content.features.Item.Second-Wind",
+            "featureUuid": "Compendium.dcw-content.features.Item.Rage",
             "level": 1
           },
           {
-            "featureUuid": "Compendium.dcw-content.features.Item.Action-Surge",
+            "featureUuid": "Compendium.dcw-content.features.Item.Reckless-Attack",
             "level": 1
           }
         ],
@@ -218,12 +214,12 @@
       }
     },
     {
-      "_id": "KQNUrrYySYbRa0xQ",
-      "name": "Second Wind",
+      "_id": "CMnd01w1AkXmKPdi",
+      "name": "Rage",
       "type": "feature",
-      "img": "icons/svg/heal.svg",
+      "img": "icons/svg/explosion.svg",
       "system": {
-        "description": "You can spend 2 stamina to regain hit points equal to 1d10 + your fighter level. Once you use this feature, you must finish a short or long rest before you can use it again.",
+        "description": "In battle, you fight with primal ferocity. On your turn, you can spend 3 stamina to enter a rage. While raging, you gain bonus damage on melee attacks, resistance to physical damage, and advantage on Strength checks and saves. Your rage lasts for 1 minute.",
         "grantedSkills": []
       },
       "effects": [],
@@ -246,12 +242,12 @@
       }
     },
     {
-      "_id": "7lhsxKN7fWbxB9CG",
-      "name": "Action Surge",
+      "_id": "U5B8EtIsk9cwb4je",
+      "name": "Reckless Attack",
       "type": "feature",
-      "img": "icons/svg/lightning.svg",
+      "img": "icons/svg/combat.svg",
       "system": {
-        "description": "You can push yourself beyond your normal limits for a moment. On your turn, you gain 10 stamina immediately. Once you use this feature, you must finish an 8 hour rest before you can use it again.",
+        "description": "You can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly, giving you advantage on melee attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.",
         "grantedSkills": []
       },
       "effects": [],
@@ -274,26 +270,26 @@
       }
     },
     {
-      "_id": "14XIf6s6PFUPr1f2",
-      "name": "Flame Dagger",
+      "_id": "nmA4AGFWOyt6KExa",
+      "name": "Club",
       "type": "weapon",
-      "img": "modules/dcw-content/assets/tiles/item/weapon/artefact/urand_firestarter.png",
+      "img": "modules/dcw-content/assets/tiles/item/weapon/club.png",
       "system": {
-        "description": "A slender blade wreathed in flickering flames. The heat never burns its wielder, but enemies feel its scorching bite.",
+        "description": "A simple wooden club. Not sophisticated, but effective for crushing skulls.",
         "quantity": 1,
-        "weight": 1,
+        "weight": 2,
         "roll": {
           "diceNum": 1,
           "diceSize": "d4",
-          "diceBonus": "+@dex.mod+ceil(@lvl / 2)+1"
+          "diceBonus": "+@str.mod+ceil(@lvl / 2)"
         },
-        "rarity": "uncommon",
+        "rarity": "common",
         "effort": 1,
         "range": "melee",
         "equipped": true,
         "grantedSkills": [
           {
-            "skillUuid": "Compendium.dcw-content.skills.Item.Pierce",
+            "skillUuid": "Compendium.dcw-content.skills.Item.Blunt",
             "level": 1
           }
         ],
@@ -319,22 +315,22 @@
       }
     },
     {
-      "_id": "D5YWVvGZX1ZDP1LK",
-      "name": "Chainmail",
+      "_id": "RFwgQMMqswfdI4vL",
+      "name": "Wooden Buckler",
       "type": "armor",
-      "img": "modules/dcw-content/assets/tiles/item/armor/torso/chain_mail_1.png",
+      "img": "modules/dcw-content/assets/tiles/item/armor/shields/shield_1.png",
       "system": {
-        "description": "Interlocking steel rings, heavy but dependable against a glancing blow.",
+        "description": "A small round shield, strapped to the forearm. Cheap, light, and just enough to catch a blade.",
         "quantity": 1,
-        "weight": 40,
-        "rarity": "uncommon",
-        "effort": 2,
-        "damageReduction": 3,
+        "weight": 5,
+        "rarity": "common",
+        "effort": 1,
+        "damageReduction": 1,
         "equipped": true,
         "grantedSkills": [
           {
             "skillUuid": "Compendium.dcw-content.skills.Item.Block",
-            "level": 2
+            "level": 1
           }
         ],
         "luckBonus": 0

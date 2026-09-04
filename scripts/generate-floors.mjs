@@ -68,8 +68,11 @@ function generateFloor(floorEntry) {
 
   const storyGraph = buildStoryGraph(rng, theme, tierConfig, boss);
 
-  const roomCountTarget = rng.int(tierConfig.roomCountMin, tierConfig.roomCountMax);
-  const geometry = generateGeometry(rng, id, { roomCountTarget, gridSize: 100, secretDoorChance: tierConfig.secretDoorChance });
+  const roomCountTarget = floorEntry.roomCount
+    ? rng.int(floorEntry.roomCount.min, floorEntry.roomCount.max)
+    : rng.int(tierConfig.roomCountMin, tierConfig.roomCountMax);
+  const layout = floorEntry.layout || 'bsp';
+  const geometry = generateGeometry(rng, id, { roomCountTarget, gridSize: 100, secretDoorChance: tierConfig.secretDoorChance, layout });
   const lights = generateLights(rng, id, geometry.rooms, theme);
 
   const journals = buildJournals(rng, id, theme, storyGraph, geometry.rooms, tierConfig);

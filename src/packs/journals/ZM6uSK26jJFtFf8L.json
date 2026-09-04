@@ -1,0 +1,44 @@
+{
+  "_id": "ZM6uSK26jJFtFf8L",
+  "name": "Corridor Junction (Room 6)",
+  "pages": [
+    {
+      "_id": "ZY6i1QhEPCrFIlLv",
+      "name": "Corridor Junction (Room 6)",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>A junction of old routes, Overcrowded enough that it's clearly seen more use than the maps suggest.</p><section class=\"secret\"><h3>GM Notes</h3><p><strong>Milestone:</strong> A sign of the floor's deeper story: the Wool-Crowned King and his stolen throne of saddlebags has turned the Larders into equal parts throne room and petting zoo, and nobody currently in charge can explain how that happened.</p></section>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": "IMByb5K1TXxESWUw",
+  "categories": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

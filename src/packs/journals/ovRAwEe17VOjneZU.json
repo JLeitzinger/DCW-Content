@@ -1,0 +1,44 @@
+{
+  "_id": "ovRAwEe17VOjneZU",
+  "name": "Chamber (Room 14)",
+  "pages": [
+    {
+      "_id": "LCLuPIbSlyLOrnn5",
+      "name": "Chamber (Room 14)",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>Another Ramshackle chamber in the Switchbacks, its purpose only clear in context with what's around it.</p><section class=\"secret\"><h3>GM Notes</h3><p>Nothing special here - a breather room.</p></section>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": "IMByb5K1TXxESWUw",
+  "categories": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

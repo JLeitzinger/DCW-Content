@@ -1,5 +1,5 @@
 {
-  "_id": "Hy146c7CQ9bmfnGk",
+  "_id": "IYTN6aRzS04PNlmm",
   "name": "Wight",
   "type": "character",
   "img": "modules/dcw-content/assets/tiles/monster/undead/wight.png",
@@ -31,8 +31,8 @@
       }
     },
     "details": {
-      "race": "Half-Orc",
-      "class": "Barbarian",
+      "race": "Dragonborn",
+      "class": "Fighter",
       "subclass": "the Silent"
     },
     "hp": {
@@ -69,12 +69,12 @@
   },
   "items": [
     {
-      "_id": "wz0Ef9OeOMMtlLCn",
-      "name": "Half-Orc",
+      "_id": "Dmjr6VNq1wS04DU2",
+      "name": "Dragonborn",
       "type": "race",
-      "img": "icons/svg/skull.svg",
+      "img": "icons/svg/wing.svg",
       "system": {
-        "description": "Half-orcs combine the best qualities of humans and orcs, though some would say they inherit the worst. They possess remarkable physical strength and endurance, along with a fierce will to survive.\n\nTraits: Relentless Endurance: When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead (once per long rest). Savage Attacks: When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time. Menacing: You have proficiency in the Intimidation skill.",
+        "description": "Dragonborn are proud and noble draconic humanoids, born with the blood of ancient dragons flowing through their veins. They combine the strength and majesty of dragons with humanoid versatility.\n\nTraits: Draconic Ancestry: You have draconic ancestry which determines your breath weapon and damage resistance. Breath Weapon: You can exhale destructive energy once per short rest. Damage Resistance: You have resistance to the damage type associated with your draconic ancestry.",
         "abilityBonuses": {
           "str": 2,
           "dex": 0,
@@ -84,8 +84,8 @@
           "cha": 0
         },
         "bonuses": {
-          "hp": 3,
-          "stamina": 3,
+          "hp": 2,
+          "stamina": 2,
           "mana": 0
         },
         "size": "medium",
@@ -101,14 +101,14 @@
         "grantedSkills": [
           {
             "skillUuid": "Compendium.dcw-content.skills.Item.Intimidation",
-            "level": 2
-          },
-          {
-            "skillUuid": "Compendium.dcw-content.skills.Item.Survival",
             "level": 1
           },
           {
-            "skillUuid": "Compendium.dcw-content.skills.Item.Blunt",
+            "skillUuid": "Compendium.dcw-content.skills.Item.Diplomacy",
+            "level": 1
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Slash",
             "level": 1
           }
         ]
@@ -133,20 +133,20 @@
       }
     },
     {
-      "_id": "TeRmMiOQqNtDEdoJ",
-      "name": "Barbarian",
+      "_id": "iP19kt5iDVz6DADj",
+      "name": "Fighter",
       "type": "class",
-      "img": "icons/svg/combat.svg",
+      "img": "icons/svg/sword.svg",
       "system": {
-        "description": "A fierce warrior of primitive background who can enter a battle rage. Barbarians are unmatched in raw physical power and durability.",
+        "description": "A master of martial combat, skilled with a variety of weapons and armor. Fighters are versatile warriors who excel in melee and ranged combat.",
         "baseHP": 12,
         "hpPerLevel": 4,
         "staminaPerLevel": 3,
         "manaPerLevel": 1,
         "abilityBonuses": {
-          "str": 0.6,
+          "str": 0.5,
           "dex": 0,
-          "con": 0.4,
+          "con": 0.5,
           "int": 0,
           "wis": 0,
           "cha": 0
@@ -163,7 +163,15 @@
         "grantedSkills": [
           {
             "skillUuid": "Compendium.dcw-content.skills.Item.Slash",
-            "level": 3
+            "level": 2
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Block",
+            "level": 2
+          },
+          {
+            "skillUuid": "Compendium.dcw-content.skills.Item.Dodge",
+            "level": 2
           },
           {
             "skillUuid": "Compendium.dcw-content.skills.Item.Athletics",
@@ -171,20 +179,16 @@
           },
           {
             "skillUuid": "Compendium.dcw-content.skills.Item.Intimidation",
-            "level": 2
-          },
-          {
-            "skillUuid": "Compendium.dcw-content.skills.Item.Survival",
             "level": 1
           }
         ],
         "grantedFeatures": [
           {
-            "featureUuid": "Compendium.dcw-content.features.Item.Rage",
+            "featureUuid": "Compendium.dcw-content.features.Item.Second-Wind",
             "level": 1
           },
           {
-            "featureUuid": "Compendium.dcw-content.features.Item.Reckless-Attack",
+            "featureUuid": "Compendium.dcw-content.features.Item.Action-Surge",
             "level": 1
           }
         ],
@@ -214,12 +218,12 @@
       }
     },
     {
-      "_id": "0vTu9oPeL9g3OUAu",
-      "name": "Rage",
+      "_id": "Z1mTTWqeAE56g3k6",
+      "name": "Second Wind",
       "type": "feature",
-      "img": "icons/svg/explosion.svg",
+      "img": "icons/svg/heal.svg",
       "system": {
-        "description": "In battle, you fight with primal ferocity. On your turn, you can spend 3 stamina to enter a rage. While raging, you gain bonus damage on melee attacks, resistance to physical damage, and advantage on Strength checks and saves. Your rage lasts for 1 minute.",
+        "description": "You can spend 2 stamina to regain hit points equal to 1d10 + your fighter level. Once you use this feature, you must finish a short or long rest before you can use it again.",
         "grantedSkills": []
       },
       "effects": [],
@@ -242,12 +246,12 @@
       }
     },
     {
-      "_id": "n1Bv3YIx3FqLWj8E",
-      "name": "Reckless Attack",
+      "_id": "gtkAB7bCOAv8RBaa",
+      "name": "Action Surge",
       "type": "feature",
-      "img": "icons/svg/combat.svg",
+      "img": "icons/svg/lightning.svg",
       "system": {
-        "description": "You can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly, giving you advantage on melee attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.",
+        "description": "You can push yourself beyond your normal limits for a moment. On your turn, you gain 10 stamina immediately. Once you use this feature, you must finish an 8 hour rest before you can use it again.",
         "grantedSkills": []
       },
       "effects": [],
@@ -270,7 +274,7 @@
       }
     },
     {
-      "_id": "5i1l1AOiuTAm1Z8F",
+      "_id": "17QdWQeglBf8O4i1",
       "name": "Flame Dagger",
       "type": "weapon",
       "img": "modules/dcw-content/assets/tiles/item/weapon/artefact/urand_firestarter.png",
@@ -315,7 +319,7 @@
       }
     },
     {
-      "_id": "MRScBAgKB5dFRWOn",
+      "_id": "B4EUTQfLc35xljNG",
       "name": "Chainmail",
       "type": "armor",
       "img": "modules/dcw-content/assets/tiles/item/armor/torso/chain_mail_1.png",

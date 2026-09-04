@@ -1,0 +1,44 @@
+{
+  "_id": "NoJGiwGekmtCSWZo",
+  "name": "Hazard Chamber (Room 23)",
+  "pages": [
+    {
+      "_id": "aEEj43brtY5HEgve",
+      "name": "Hazard Chamber (Room 23)",
+      "type": "text",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>The floor and walls here bear the marks of a hazard that's still active, Overcrowded as it's become with age.</p><section class=\"secret\"><h3>GM Notes</h3><p>Nothing special here - a breather room.</p></section>",
+        "markdown": "",
+        "format": 1
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": "IMByb5K1TXxESWUw",
+  "categories": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -2198,6 +2198,43 @@
         "volume": 0
       },
       "flags": {}
+    },
+    {
+      "_id": "IR4OHoG06rqL5P5B",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/gateways/stone_stairs_down.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 200,
+      "height": 200,
+      "x": 150,
+      "y": 50,
+      "elevation": 0,
+      "sort": 10,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
     }
   ],
   "walls": [

@@ -1382,7 +1382,7 @@
     {
       "_id": "C5B1gwGihtMYgR3V",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_2.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -1419,7 +1419,7 @@
     {
       "_id": "HPOiuSOof62NbmKN",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_2.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -1604,7 +1604,7 @@
     {
       "_id": "JHIixNzeqE6IECcQ",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_2.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -1641,7 +1641,7 @@
     {
       "_id": "MjiJGgHitiidks4h",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_4.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",

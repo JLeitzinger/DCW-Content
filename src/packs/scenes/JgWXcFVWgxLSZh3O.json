@@ -1596,7 +1596,7 @@
     {
       "_id": "FM0mQd3HJjqNiwul",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_5.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/floor_nerves_5.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -3890,7 +3890,7 @@
     {
       "_id": "aXgXsheXqADmXTqT",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_0_old.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -3927,7 +3927,7 @@
     {
       "_id": "YAyaeaHoxjRVC79a",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_5_old.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -3964,7 +3964,7 @@
     {
       "_id": "DBZiZkk2qn8Tt7Yo",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_1_old.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -4001,7 +4001,7 @@
     {
       "_id": "yZj41YjeDYAYRROd",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_6.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -4038,7 +4038,7 @@
     {
       "_id": "6TOUw7IqBTuMlE8v",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_4_old.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -4075,7 +4075,7 @@
     {
       "_id": "kvoIHPu1Ihh3bxve",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_6.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -4112,7 +4112,7 @@
     {
       "_id": "jXkJlZKWLtln86eR",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_7.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -4149,7 +4149,7 @@
     {
       "_id": "BZstHco4eImXt8CA",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_4_new.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -4186,7 +4186,7 @@
     {
       "_id": "tMBEadkaq4e9fnVW",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_1_new.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -4223,7 +4223,7 @@
     {
       "_id": "fYVbOzGXxEcn5d8k",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_3_old.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -4260,7 +4260,7 @@
     {
       "_id": "c72WEqYQCUcRRCp8",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_6_new.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -4297,7 +4297,7 @@
     {
       "_id": "wJOWom5UXFkjlsEV",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_2.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -4334,7 +4334,7 @@
     {
       "_id": "JNC7XqpfW81oI5ql",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_5.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -4371,7 +4371,7 @@
     {
       "_id": "AmrO1nYsaiHKFYso",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -4408,7 +4408,7 @@
     {
       "_id": "1tVb05uNRrSz93Sm",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -4445,7 +4445,7 @@
     {
       "_id": "qzcR9y0RdWXkPkwk",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_3.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -4482,7 +4482,7 @@
     {
       "_id": "tbEnuZftUBtrDg3N",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_8_old.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -4519,7 +4519,7 @@
     {
       "_id": "Vq5lebHEex2wAPvo",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_3_old.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -4556,7 +4556,7 @@
     {
       "_id": "RriIO0onk8i7HsMm",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_7.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -4593,7 +4593,7 @@
     {
       "_id": "u6TOF5IACBCQZn8w",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_3.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -4630,7 +4630,7 @@
     {
       "_id": "FsXXeLK2PvDVdFYG",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_0_old.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -4667,7 +4667,7 @@
     {
       "_id": "95WZbYGTS1Wg8nB9",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_1_new.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -4704,7 +4704,7 @@
     {
       "_id": "AxAVo7Y94KLz9rRb",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_2_new.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -4741,7 +4741,7 @@
     {
       "_id": "fr3GtFbtH7aeSxcp",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_7_new.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -4778,7 +4778,7 @@
     {
       "_id": "fUpiZ1EZqjf9KEZT",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_2.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -4815,7 +4815,7 @@
     {
       "_id": "j0648BWVNYtIaCW1",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_2_new.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -4852,7 +4852,7 @@
     {
       "_id": "wUokA4suqBPms2IN",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_4_new.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -4889,7 +4889,7 @@
     {
       "_id": "B37YdiuJnGyIRs9A",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_2_old.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -4926,7 +4926,7 @@
     {
       "_id": "0ZyOf8ENs2jJ3Ypr",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_4_old.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -4963,7 +4963,7 @@
     {
       "_id": "dFaqkIx1OToiy4np",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_4_new.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -5000,7 +5000,7 @@
     {
       "_id": "byRiMGaPmKZ69pOx",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_6.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -5037,7 +5037,7 @@
     {
       "_id": "9ixS1iO3ZhtPboQi",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_2_old.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -5074,7 +5074,7 @@
     {
       "_id": "fojSgECHPcRIZP1P",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_1_new.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -5111,7 +5111,7 @@
     {
       "_id": "Uod6ouSpRoogUtX9",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_7.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -5148,7 +5148,7 @@
     {
       "_id": "wsuIr7pfS1DGl4EO",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_6_old.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -5185,7 +5185,7 @@
     {
       "_id": "fxJSJdJz8c4elYlF",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_2_new.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -5222,7 +5222,7 @@
     {
       "_id": "daYqkuSS2zq9Ljoj",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_1.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -5259,7 +5259,7 @@
     {
       "_id": "Mx1VtdhE3phtOyNl",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_1_new.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -5296,7 +5296,7 @@
     {
       "_id": "qVfy97C8oA67Qnvk",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_1_new.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -5333,7 +5333,7 @@
     {
       "_id": "34C8HHP37mpzqY1b",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_2.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -5370,7 +5370,7 @@
     {
       "_id": "S6MIJgE013I28Mkq",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_4_new.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -5407,7 +5407,7 @@
     {
       "_id": "ROaNDbJ4wgNUVZ5t",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_3.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -5444,7 +5444,7 @@
     {
       "_id": "GKfb5T1OhkRiCOF4",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_6.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -5481,7 +5481,7 @@
     {
       "_id": "LMt0Tr9l9x3G0ott",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_4_new.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -5518,7 +5518,7 @@
     {
       "_id": "T4rPy1qiFtNiyaXU",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_6.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -5555,7 +5555,7 @@
     {
       "_id": "8pB4RtohiTYXmhNw",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_5.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -5592,7 +5592,7 @@
     {
       "_id": "RBYLuWtqjTiF1s5U",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_3.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -5629,7 +5629,7 @@
     {
       "_id": "5k4bxVp4SHdMIEzk",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_7_new.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -5666,7 +5666,7 @@
     {
       "_id": "N9yNyZuM8zfZSSQF",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_8_old.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -5703,7 +5703,7 @@
     {
       "_id": "ZApsNHsuf7Dx7kEC",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_7.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -5740,7 +5740,7 @@
     {
       "_id": "AWsfrwnJbk2w6JpK",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_5.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -5777,7 +5777,7 @@
     {
       "_id": "dQHvxSJJHnQN62AE",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pebble_brown_0.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/pedestal_full.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -7775,7 +7775,7 @@
     {
       "_id": "LSuGTU7vRwkoXkuc",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_8.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -7812,7 +7812,7 @@
     {
       "_id": "YBthKlLnJDSk0ywn",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_9.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -7849,7 +7849,7 @@
     {
       "_id": "Py1XDdRYObF2xPbr",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_5.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -7886,7 +7886,7 @@
     {
       "_id": "OYtRNE2FSz0bPEuL",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_8.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -7923,7 +7923,7 @@
     {
       "_id": "tTTqw4dkhsHzx3L6",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_7.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -7960,7 +7960,7 @@
     {
       "_id": "m09VTULKB4MvG3oT",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_7.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -7997,7 +7997,7 @@
     {
       "_id": "Ms0uU06fJa3YmpOO",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_2.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -8034,7 +8034,7 @@
     {
       "_id": "s8l1eKTFEL4uwF1a",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_3.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -8071,7 +8071,7 @@
     {
       "_id": "ToSaiHWfMSpsv8Y7",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_7.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -8108,7 +8108,7 @@
     {
       "_id": "uv7MFkVpG04AA3Xa",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_9.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -8145,7 +8145,7 @@
     {
       "_id": "BJLRdcSJdvL4BQfc",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_4.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -8182,7 +8182,7 @@
     {
       "_id": "GZ90fW30bznDjtXp",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_7.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -8219,7 +8219,7 @@
     {
       "_id": "N3GBVDIJ7DJ8RmXV",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_0.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -8256,7 +8256,7 @@
     {
       "_id": "JH3fa0aRpliC1WC0",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_3.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -8293,7 +8293,7 @@
     {
       "_id": "Iat3SzH9vlnBSzMM",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_5.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -8330,7 +8330,7 @@
     {
       "_id": "JSvbc3Cs2foQEgbb",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_8.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -8367,7 +8367,7 @@
     {
       "_id": "tTI1zAynGuONLEvB",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_8.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -8404,7 +8404,7 @@
     {
       "_id": "DIEkMmRXD7JU7Mid",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_2.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -8441,7 +8441,7 @@
     {
       "_id": "hx0PbO4dF46Zi14S",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_6.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -8478,7 +8478,7 @@
     {
       "_id": "KiCAfBDe3kptaX3g",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_6.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -8515,7 +8515,7 @@
     {
       "_id": "SC060T1Q0NSzrRPR",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_7.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -8552,7 +8552,7 @@
     {
       "_id": "bGHw7PPF7TIW9itI",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_1.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -8589,7 +8589,7 @@
     {
       "_id": "idwZLHSaeXiT2Gy0",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_2.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -8626,7 +8626,7 @@
     {
       "_id": "n38JjNW8Cn9gQxl5",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_5.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -8663,7 +8663,7 @@
     {
       "_id": "Sj0XzrX2ridhRYUI",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_7.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -8700,7 +8700,7 @@
     {
       "_id": "DPP188VLCMKTj4l5",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_7.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -8737,7 +8737,7 @@
     {
       "_id": "vYiauqmWIbvmpinH",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_0.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -8774,7 +8774,7 @@
     {
       "_id": "1eDqUzEjDtRvCSYk",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_9.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -8811,7 +8811,7 @@
     {
       "_id": "V3fta1uE62S5IyG3",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_4.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -8848,7 +8848,7 @@
     {
       "_id": "fiEDxeRNGw5xBZS5",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_9.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -8885,7 +8885,7 @@
     {
       "_id": "VNxXI8vUexPmqRma",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_3.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -8922,7 +8922,7 @@
     {
       "_id": "M9JivX0aqCz8flWb",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_2.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -8959,7 +8959,7 @@
     {
       "_id": "hdOVbSgFNS1E4rhG",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_6.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -8996,7 +8996,7 @@
     {
       "_id": "dV6Youd9kkKeGKwL",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_2.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -9033,7 +9033,7 @@
     {
       "_id": "QVTha1WDxp2p10gn",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_5.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -9070,7 +9070,7 @@
     {
       "_id": "bihfEntAr2Z2IBuQ",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_0.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -9107,7 +9107,7 @@
     {
       "_id": "N6501P1A3ugoySXX",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_3.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -9144,7 +9144,7 @@
     {
       "_id": "bsosL3LQqEIvsULh",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_9.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -9181,7 +9181,7 @@
     {
       "_id": "yoAZWNIt1OyMEs9k",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_6.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -9218,7 +9218,7 @@
     {
       "_id": "bf358UloluMCQLoo",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_6.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -9255,7 +9255,7 @@
     {
       "_id": "is0rI0vX7OZUMv1A",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_5.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -9292,7 +9292,7 @@
     {
       "_id": "ZDyR0FP88bG2ovmu",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_4.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -9329,7 +9329,7 @@
     {
       "_id": "cy849NxieLUXuIbS",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_5.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -9366,7 +9366,7 @@
     {
       "_id": "PkQBqsufmkyvM3xR",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_2.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -9403,7 +9403,7 @@
     {
       "_id": "46wwBMvz3vXIQnGV",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_0.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -9440,7 +9440,7 @@
     {
       "_id": "bpP7hhOnrGd17rF3",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_0.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -9477,7 +9477,7 @@
     {
       "_id": "TM61sm1PjlJ4NEgf",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_0.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -9514,7 +9514,7 @@
     {
       "_id": "NG5n94eUfFvDj1lO",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sandstone_floor_2.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -10957,7 +10957,7 @@
     {
       "_id": "5BtVovYvb9KGS4aV",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_9.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -10994,7 +10994,7 @@
     {
       "_id": "6Iiy73p4roCczioW",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_7.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_3_old.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -11031,7 +11031,7 @@
     {
       "_id": "5zNirEoKGA4p2i5x",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_11.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -11068,7 +11068,7 @@
     {
       "_id": "s0cRqDus6nTeFWhB",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_6.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_3_new.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -11105,7 +11105,7 @@
     {
       "_id": "PvdICQibZ6tPZ7IC",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_7.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_3_old.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -11142,7 +11142,7 @@
     {
       "_id": "Pv1MvO9YLFAwa1DC",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_14.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_1_old.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -11179,7 +11179,7 @@
     {
       "_id": "CREn5DMt6U7KJXJ2",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_8.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -11216,7 +11216,7 @@
     {
       "_id": "t3KkdDZD7lUBYeRo",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_4.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -11253,7 +11253,7 @@
     {
       "_id": "dSk0vODjd16bCT3P",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_3.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_2_old.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -11290,7 +11290,7 @@
     {
       "_id": "dXAYn8shL8csAWNz",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_4.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_2_old.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -11327,7 +11327,7 @@
     {
       "_id": "dBGVz4B8pte9Rnjd",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_8.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_3_old.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -11364,7 +11364,7 @@
     {
       "_id": "GJw2BqkT63L8m7xn",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_7.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_3_old.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -11401,7 +11401,7 @@
     {
       "_id": "w1kE35jQmd35WnT1",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_14.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_1_old.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -11438,7 +11438,7 @@
     {
       "_id": "7tsGmhcGFh6V3jru",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_12.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_1_new.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -11475,7 +11475,7 @@
     {
       "_id": "Vz11F7HBzE54orzp",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_10.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_0_old.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -11512,7 +11512,7 @@
     {
       "_id": "lGCXn97WgZIAOZxa",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_12.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_1_new.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -11549,7 +11549,7 @@
     {
       "_id": "loNNPKhoTdW01ki9",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_1.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_0_old.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -11586,7 +11586,7 @@
     {
       "_id": "0mTYDdxuoi1nFFXv",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_6.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_3_new.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -11623,7 +11623,7 @@
     {
       "_id": "fUH6GmRZVNUwU6SM",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_11.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -11660,7 +11660,7 @@
     {
       "_id": "dEh7geLrQAJdUjjX",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_12.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_1_new.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -11697,7 +11697,7 @@
     {
       "_id": "Oab5gMnTfcHun5jx",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_9.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -11734,7 +11734,7 @@
     {
       "_id": "crPxFykedkIn6aAj",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_1.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_0_old.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -11771,7 +11771,7 @@
     {
       "_id": "wmpS4ErSSBaoBUuo",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_8.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_3_old.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -11808,7 +11808,7 @@
     {
       "_id": "2ZwGPcuQLPcKHOY8",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_6.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_3_new.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -11845,7 +11845,7 @@
     {
       "_id": "3EftT6lsAQRexFnu",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_6.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_3_new.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -11882,7 +11882,7 @@
     {
       "_id": "tV1xRhWGgHCAfNcE",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_0.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_0_new.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -11919,7 +11919,7 @@
     {
       "_id": "zexNcKJ2eJu40Gg5",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_10.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_0_old.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -11956,7 +11956,7 @@
     {
       "_id": "zIzZuvQlzCkHW1hQ",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_7.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_3_old.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -11993,7 +11993,7 @@
     {
       "_id": "lV4v9ZAbFxsitFb7",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_10.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_0_old.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -12030,7 +12030,7 @@
     {
       "_id": "THdmmol5zzeKGgZn",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_3.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_2_old.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -12067,7 +12067,7 @@
     {
       "_id": "khWoxGSK9iJeNPm2",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_0.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_0_new.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -12104,7 +12104,7 @@
     {
       "_id": "caiO5EczmQMpYeXW",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_2.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_2_new.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -12141,7 +12141,7 @@
     {
       "_id": "thBwv4KP5F6IFBah",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_15.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -12178,7 +12178,7 @@
     {
       "_id": "ZJNfQz5Auxdu5UwH",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_13.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_1_new.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -12215,7 +12215,7 @@
     {
       "_id": "DmZsXdfWN1Rueoef",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_5.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mesh_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -12289,7 +12289,7 @@
     {
       "_id": "q71mHjJPMqfbqs3T",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rect_gray_0_new.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -12326,7 +12326,7 @@
     {
       "_id": "WL3mIAuQZKuLQoOQ",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rect_gray_1_new.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -12363,7 +12363,7 @@
     {
       "_id": "8xLG8tnx9m7tzSF3",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rect_gray_1_new.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -12400,7 +12400,7 @@
     {
       "_id": "p4T7CF3u6audHfpI",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rect_gray_1_old.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -12437,7 +12437,7 @@
     {
       "_id": "KRAhTjIc9jaHph8x",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rect_gray_3.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -12474,7 +12474,7 @@
     {
       "_id": "Jh7DRdrHa5AEEQ1z",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rect_gray_0.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -12511,7 +12511,7 @@
     {
       "_id": "fSyD1TKwn0uv3Wcf",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rect_gray_1_new.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -12548,7 +12548,7 @@
     {
       "_id": "IGZ6ENSFW26Gj99I",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rect_gray_0_old.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -12585,7 +12585,7 @@
     {
       "_id": "VQUHAPJ9m9KCyOLt",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rect_gray_1_old.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -12622,7 +12622,7 @@
     {
       "_id": "8VkgVFExyWso2cQ7",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rect_gray_0_old.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -12659,7 +12659,7 @@
     {
       "_id": "2PrsaH1eltYQHeaG",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rect_gray_3_old.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -12696,7 +12696,7 @@
     {
       "_id": "bLwSEqa2a0giStgH",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rect_gray_1_new.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -12733,7 +12733,7 @@
     {
       "_id": "s7fwDtDo4cTVger4",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rect_gray_3.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -12770,7 +12770,7 @@
     {
       "_id": "vrqS2gJbEVNYkSD6",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rect_gray_2.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -12807,7 +12807,7 @@
     {
       "_id": "wHiH1wIlEgaKRcZO",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rect_gray_0_new.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -12844,7 +12844,7 @@
     {
       "_id": "sioxvdWJW16wjxe7",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rect_gray_3_new.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -12881,7 +12881,7 @@
     {
       "_id": "LTu3XYikmVVGtabi",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rect_gray_0.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -12918,7 +12918,7 @@
     {
       "_id": "fSCtZ1UOwUOVwUGO",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rect_gray_3_old.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -12955,7 +12955,7 @@
     {
       "_id": "OJ9xqUGqaLvzeFHK",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rect_gray_0_old.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -12992,7 +12992,7 @@
     {
       "_id": "vyHHlE0BjpSV9zzG",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rect_gray_0_old.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -13029,7 +13029,7 @@
     {
       "_id": "ghqkyNdrYO8TOT7N",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rect_gray_1_old.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -13066,7 +13066,7 @@
     {
       "_id": "zEY1ZeFoArcXr5CN",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rect_gray_0_new.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -13103,7 +13103,7 @@
     {
       "_id": "6TnGnDNpSAShpcBQ",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rect_gray_1_old.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -13140,7 +13140,7 @@
     {
       "_id": "hnB3DwIJT5oQKdSn",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rect_gray_1_old.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -14065,7 +14065,7 @@
     {
       "_id": "WWS5XG2cpduAP7xv",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/crystal_floor_0.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -14102,7 +14102,7 @@
     {
       "_id": "jCx6NwIlp7o8aI4J",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/crystal_floor_0.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -14139,7 +14139,7 @@
     {
       "_id": "M2q6LAVbt2VVQ0lT",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/crystal_floor_0.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -14176,7 +14176,7 @@
     {
       "_id": "qO4aiyhUGrja1SLb",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/crystal_floor_5.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_5.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -14213,7 +14213,7 @@
     {
       "_id": "mQ0EjvSAJTPHXyFe",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/crystal_floor_0.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -14250,7 +14250,7 @@
     {
       "_id": "mkhrZAnXCLtHcC5i",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/crystal_floor_5.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_5.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -14287,7 +14287,7 @@
     {
       "_id": "E4PUYGaSOkhqYqMy",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/moss_0.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -14324,7 +14324,7 @@
     {
       "_id": "MjRAgpxhNHEe8hAd",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/moss_2.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/mosaic_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -14361,7 +14361,7 @@
     {
       "_id": "FhJ9lDd5AkZBeVTM",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/crystal_floor_0.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -14398,7 +14398,7 @@
     {
       "_id": "urTWj5i17WjXMn3t",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/crystal_floor_5.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_5.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -14435,7 +14435,7 @@
     {
       "_id": "iYxm9dgZ9WTv70Sx",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/crystal_floor_3.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -14472,7 +14472,7 @@
     {
       "_id": "8OBQptiz89cubOQL",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_3.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sand_7.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -14509,7 +14509,7 @@
     {
       "_id": "ICSpI4MqoS2hXZcf",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/crystal_floor_1.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -14546,7 +14546,7 @@
     {
       "_id": "PBRhPw03gHqFxU2a",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/crystal_floor_0.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -14583,7 +14583,7 @@
     {
       "_id": "zw71zWqElrhvVNsv",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/crystal_floor_5.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_5.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -14620,7 +14620,7 @@
     {
       "_id": "GWu9otjP7EbB17tC",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/crystal_floor_3.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -14657,7 +14657,7 @@
     {
       "_id": "hytpKYPrYCOmV3js",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/crystal_floor_3.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -14694,7 +14694,7 @@
     {
       "_id": "o3zWnjaUe0lXz8A1",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/rough_red_1.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/sand_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -14731,7 +14731,7 @@
     {
       "_id": "xoY2B3KCd9j6otat",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/crystal_floor_4.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_4.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -14768,7 +14768,7 @@
     {
       "_id": "9uGhC8Iw0SWGnXKb",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/crystal_floor_1.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_1.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -14805,7 +14805,7 @@
     {
       "_id": "vCHwmwXSSZdPKKHx",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/crystal_floor_5.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_5.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -14842,7 +14842,7 @@
     {
       "_id": "8sINRYCZF9Ec3V9j",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/crystal_floor_2.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_2.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -14879,7 +14879,7 @@
     {
       "_id": "qmtVWoJl0Nba2rR8",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/crystal_floor_3.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -14916,7 +14916,7 @@
     {
       "_id": "6THXKhmuxLz9nNX9",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/crystal_floor_3.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/etched_3.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -17247,7 +17247,7 @@
     {
       "_id": "TM5qyUf5tGmy1msK",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/snake-d_0.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/swamp_0.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -17876,7 +17876,7 @@
     {
       "_id": "M6fCZiTYmUA3x1Ts",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/cage_5.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/cobble_blood_8_new.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -17913,7 +17913,7 @@
     {
       "_id": "Ka6GwUfF8DEcZ4I4",
       "texture": {
-        "src": "modules/dcw-content/assets/tiles/dungeon/floor/cage_0.png",
+        "src": "modules/dcw-content/assets/tiles/dungeon/floor/cobble_blood_10.png",
         "anchorX": 0.5,
         "anchorY": 0.5,
         "fit": "fill",
@@ -17965,6 +17965,43 @@
       "y": 1300,
       "elevation": 0,
       "sort": -200,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "Zi1TN7NlMNxr0Ite",
+      "texture": {
+        "src": "modules/dcw-content/assets/tiles/dungeon/gateways/stone_stairs_down.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "width": 200,
+      "height": 200,
+      "x": 2150,
+      "y": 950,
+      "elevation": 0,
+      "sort": 10,
       "rotation": 0,
       "alpha": 1,
       "hidden": false,

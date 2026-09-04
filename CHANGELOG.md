@@ -1,5 +1,29 @@
 # CHANGELOG
 
+## 1.16.0
+
+- New `goblin_warren` theme category (`data/narrative-lexicon.json`) and a matching six-monster
+  roster (`data/monsters-manifest.json`): Warren Goblin/Hobgoblin Enforcer/Yaktaur Drover minions,
+  Goblin War-Chief/Yaktaur Captain elites, and a boss - The Wool-Crowned King, a goblin who fell
+  off a llama, landed on a hay-hook, and declared it a scepter. Goblins and anthropomorphic llamas
+  (DCSS's yaktaur art) share every band, so their rivalry-turned-alliance runs through the whole
+  roster, not just the boss.
+- New `layout: "grid"` option for `data/floors-manifest.json` entries (`scripts/lib/level-gen/
+  GeometryGenerator.mjs`'s `generateGridGeometry`) - a lattice of wide main-hall corridors at
+  irregular column/row spacing, with one room filling each pocket between them, instead of the
+  existing BSP algorithm's fully-tiled irregular rooms. Same `{rooms, walls, boundsPx}` output
+  shape, so every downstream generator (scenes, journals, lighting, monster placement) needed no
+  changes. New `roomCount: {min, max}` manifest field decouples a floor's room count from its
+  `complexityTier` (which still drives monster CR/level on its own), so a floor can be large with
+  easy monsters or small with hard ones.
+- Every floor's boss-arena room now marks the actual goal: a stairs-down Tile
+  (`assets/tiles/dungeon/gateways/stone_stairs_down.png`) placed in the room (primary scene or its
+  sub-scene, whichever the boss-arena ends up in), an "Objective" line in that room's Room Key
+  journal entry, and an explicit callout in the floor's climax milestone text - "find the stairs
+  down, guarded by whatever holds this room" is now a stated goal, not just an implied one.
+- New floor: **The Wool-Crowned Warrens** (`goblin_warren` theme, `grid` layout, tier 1, 30 rooms)
+  - a large, easy-difficulty level-1 floor themed around the new goblin/llama roster.
+
 ## 1.15.0
 
 - Generated floors now populate elites, bosses, and a new friendly-NPC category with real
