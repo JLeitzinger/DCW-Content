@@ -1,0 +1,28 @@
+{
+  "_id": "commander-in-chief",
+  "name": "Commander in Chief",
+  "type": "feature",
+  "img": "icons/svg/tower-flag.svg",
+  "system": {
+    "description": "Once per long rest, as an action, rally your allies with a single address: each ally within 30 feet who can hear you gains advantage on their next attack roll or saving throw made before the end of your next turn, plus temporary hit points equal to 1d8 + your Charisma modifier.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

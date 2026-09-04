@@ -1,0 +1,28 @@
+{
+  "_id": "claim-denied",
+  "name": "Claim Denied",
+  "type": "feature",
+  "img": "icons/svg/cancel.svg",
+  "system": {
+    "description": "As a reaction when a creature within 5 feet of you is hit by an attack, you can spend 2 stamina to intervene. Reduce the damage that creature takes by an amount equal to 1d10 + your Constitution modifier - the rest, if any, still applies. You've found a technicality, and it's not in the attacker's favor.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

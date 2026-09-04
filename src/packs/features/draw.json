@@ -1,0 +1,28 @@
+{
+  "_id": "draw",
+  "name": "Draw!",
+  "type": "feature",
+  "img": "icons/svg/d20.svg",
+  "system": {
+    "description": "Once per short rest, draw on fate itself: roll a d6. On a 1-3, you gain advantage on your next attack roll or skill check. On a 4-6, you regain 1d4 mana.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

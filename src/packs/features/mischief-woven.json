@@ -1,0 +1,28 @@
+{
+  "_id": "mischief-woven",
+  "name": "Mischief Woven",
+  "type": "feature",
+  "img": "icons/svg/invisible.svg",
+  "system": {
+    "description": "Once per long rest, target one creature within 30 feet and make a Deception check contested by its Wisdom saving throw. On a success, the creature is convinced of one false, harmless fact about its immediate surroundings for 1 minute - a wall that isn't there, a door that is, an ally who's secretly you.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "into-the-blaze",
+  "name": "Into the Blaze",
+  "type": "feature",
+  "img": "icons/svg/fire.svg",
+  "system": {
+    "description": "You've walked into more burning buildings than you can count. You have resistance to fire damage, and you can move through fire, smoke, and other hazardous terrain without penalty or harm from the terrain itself.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

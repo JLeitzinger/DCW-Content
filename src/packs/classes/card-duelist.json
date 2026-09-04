@@ -1,0 +1,81 @@
+{
+  "_id": "card-duelist",
+  "name": "Card Duelist",
+  "type": "class",
+  "img": "icons/svg/card-hand.svg",
+  "system": {
+    "description": "A strategist who fights through a bond with a spectral creature summoned from their deck. Card Duelists trust as much in the turn of fate as they do in their own skill.",
+    "baseHP": 8,
+    "hpPerLevel": 2,
+    "staminaPerLevel": 1,
+    "manaPerLevel": 3,
+    "abilityBonuses": {
+      "str": 0,
+      "dex": 0,
+      "con": 0,
+      "int": 0.5,
+      "wis": 0,
+      "cha": 0.5
+    },
+    "levelAcquired": 1,
+    "saves": {
+      "str": false,
+      "con": false,
+      "dex": false,
+      "int": true,
+      "wis": false,
+      "cha": true
+    },
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Cast",
+        "level": 3
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Lore",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Deception",
+        "level": 1
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Focus",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": [
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.summon",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.draw",
+        "level": 1
+      }
+    ],
+    "hitDie": "d8",
+    "primaryAbility": "int",
+    "secondaryAbility": "",
+    "features": "",
+    "subclasses": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

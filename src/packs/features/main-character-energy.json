@@ -1,0 +1,28 @@
+{
+  "_id": "main-character-energy",
+  "name": "Main Character Energy",
+  "type": "feature",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "While at least one creature can see you, you have advantage on Diplomacy, Deception, and Intimidation checks. While no creature can see you, you have disadvantage on the same checks - you just don't perform the same without an audience.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

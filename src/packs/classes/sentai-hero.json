@@ -1,0 +1,81 @@
+{
+  "_id": "sentai-hero",
+  "name": "Sentai Hero",
+  "type": "class",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "A costumed champion who fights best as part of a team, striking dramatic poses between devastating blows. Sentai Heroes hit harder for every ally at their side, though their flashy transformations leave them briefly exposed.",
+    "baseHP": 11,
+    "hpPerLevel": 3,
+    "staminaPerLevel": 3,
+    "manaPerLevel": 1,
+    "abilityBonuses": {
+      "str": 0.5,
+      "dex": 0,
+      "con": 0,
+      "int": 0,
+      "wis": 0,
+      "cha": 0.5
+    },
+    "levelAcquired": 1,
+    "saves": {
+      "str": true,
+      "con": false,
+      "dex": false,
+      "int": false,
+      "wis": false,
+      "cha": true
+    },
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Slash",
+        "level": 3
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Acrobatics",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Athletics",
+        "level": 1
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Intimidation",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": [
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.transformation-sequence",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.team-up",
+        "level": 1
+      }
+    ],
+    "hitDie": "d10",
+    "primaryAbility": "str",
+    "secondaryAbility": "",
+    "features": "",
+    "subclasses": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

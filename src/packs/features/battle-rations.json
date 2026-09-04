@@ -1,0 +1,28 @@
+{
+  "_id": "battle-rations",
+  "name": "Battle Rations",
+  "type": "feature",
+  "img": "icons/svg/regen.svg",
+  "system": {
+    "description": "Given 10 minutes and a fire during a short rest, you can cook a meal for up to 4 creatures. Each creature who eats gains temporary hit points equal to 1d8 + your Wisdom modifier, lasting until their next long rest or until depleted.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

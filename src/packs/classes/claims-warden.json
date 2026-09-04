@@ -1,0 +1,81 @@
+{
+  "_id": "claims-warden",
+  "name": "Claims Warden",
+  "type": "class",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "description": "A risk assessor who's read every disaster report and decided to start intercepting the disasters personally. Claims Wardens step between their allies and harm, then find the technicality that makes the damage someone else's problem.",
+    "baseHP": 10,
+    "hpPerLevel": 3,
+    "staminaPerLevel": 2,
+    "manaPerLevel": 2,
+    "abilityBonuses": {
+      "str": 0,
+      "dex": 0,
+      "con": 0.5,
+      "int": 0.5,
+      "wis": 0,
+      "cha": 0
+    },
+    "levelAcquired": 1,
+    "saves": {
+      "str": false,
+      "con": true,
+      "dex": false,
+      "int": true,
+      "wis": false,
+      "cha": false
+    },
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Block",
+        "level": 3
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Lore",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Perception",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Diplomacy",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": [
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.claim-denied",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.risk-assessment",
+        "level": 1
+      }
+    ],
+    "hitDie": "d10",
+    "primaryAbility": "con",
+    "secondaryAbility": "",
+    "features": "",
+    "subclasses": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

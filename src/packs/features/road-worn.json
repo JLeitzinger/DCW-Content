@@ -1,0 +1,28 @@
+{
+  "_id": "road-worn",
+  "name": "Road-Worn",
+  "type": "feature",
+  "img": "icons/svg/wingfoot.svg",
+  "system": {
+    "description": "Years behind the wheel have taught your body to keep going long after most would quit. You have advantage on saving throws against exhaustion, and difficult terrain doesn't cost you extra movement while you're moving in a straight line.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

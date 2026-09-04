@@ -1,0 +1,81 @@
+{
+  "_id": "auditor",
+  "name": "Auditor",
+  "type": "class",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "description": "A meticulous examiner who treats every enemy like a ledger full of hidden errors. Auditors find the flaw in any defense and make sure the cost of missing it compounds.",
+    "baseHP": 8,
+    "hpPerLevel": 2,
+    "staminaPerLevel": 1,
+    "manaPerLevel": 3,
+    "abilityBonuses": {
+      "str": 0,
+      "dex": 0,
+      "con": 0,
+      "int": 0.6,
+      "wis": 0,
+      "cha": 0.4
+    },
+    "levelAcquired": 1,
+    "saves": {
+      "str": false,
+      "con": false,
+      "dex": false,
+      "int": true,
+      "wis": false,
+      "cha": true
+    },
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Cast",
+        "level": 3
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Lore",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Deception",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Perception",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": [
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.audit",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.compound-interest",
+        "level": 1
+      }
+    ],
+    "hitDie": "d8",
+    "primaryAbility": "int",
+    "secondaryAbility": "",
+    "features": "",
+    "subclasses": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

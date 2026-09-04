@@ -1,0 +1,28 @@
+{
+  "_id": "full-load-no-stops",
+  "name": "Full Load, No Stops",
+  "type": "feature",
+  "img": "icons/svg/wall-direction.svg",
+  "system": {
+    "description": "When you move at least 20 feet in a straight line without stopping this turn, you can spend 2 stamina to barrel through the first creature in your path instead of going around it. That creature takes 1d8 bludgeoning damage and is shoved along with you to the space you end your movement in, unless it succeeds on a Strength save or is anchored (braced, restrained, or larger than you).",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "golden-hour",
+  "name": "Golden Hour",
+  "type": "feature",
+  "img": "icons/svg/sun.svg",
+  "system": {
+    "description": "You work fastest when it matters most. As an action, you can spend 3 mana to stabilize and heal a creature at half its maximum hit points or lower, restoring hit points equal to 2d8 + your Intelligence modifier. You can only use this feature once per short or long rest - the golden hour doesn't open twice.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

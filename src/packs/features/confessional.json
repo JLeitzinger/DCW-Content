@@ -1,0 +1,28 @@
+{
+  "_id": "confessional",
+  "name": "Confessional",
+  "type": "feature",
+  "img": "icons/svg/sound.svg",
+  "system": {
+    "description": "Once per short rest, spend 1 minute speaking your true thoughts aloud to an unseen camera. Doing so, you can reroll any one failed check you made in the last minute and take the better result - venting clears your head.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

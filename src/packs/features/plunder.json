@@ -1,0 +1,28 @@
+{
+  "_id": "plunder",
+  "name": "Plunder",
+  "type": "feature",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "description": "When you defeat a creature or search a body, you have advantage on the check to find anything valuable on it. Once per long rest, you find a small, useful item of your GM's choosing - you always seem to come away with exactly what you needed.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

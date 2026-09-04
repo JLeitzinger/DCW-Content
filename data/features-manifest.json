@@ -468,6 +468,246 @@
       "img": "icons/svg/coins.svg",
       "description": "A lifetime of picking warrens clean has sharpened your eye for what's worth taking. You have advantage on checks to find hidden objects, traps, or valuables, and once per long rest you can reroll a failed Thievery check.",
       "grantedSkills": []
+    },
+    {
+      "name": "Full Load, No Stops",
+      "img": "icons/svg/wall-direction.svg",
+      "description": "When you move at least 20 feet in a straight line without stopping this turn, you can spend 2 stamina to barrel through the first creature in your path instead of going around it. That creature takes 1d8 bludgeoning damage and is shoved along with you to the space you end your movement in, unless it succeeds on a Strength save or is anchored (braced, restrained, or larger than you).",
+      "grantedSkills": []
+    },
+    {
+      "name": "Road-Worn",
+      "img": "icons/svg/wingfoot.svg",
+      "description": "Years behind the wheel have taught your body to keep going long after most would quit. You have advantage on saving throws against exhaustion, and difficult terrain doesn't cost you extra movement while you're moving in a straight line.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Into the Blaze",
+      "img": "icons/svg/fire.svg",
+      "description": "You've walked into more burning buildings than you can count. You have resistance to fire damage, and you can move through fire, smoke, and other hazardous terrain without penalty or harm from the terrain itself.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Rescue Carry",
+      "img": "icons/svg/ladder.svg",
+      "description": "You can sling a creature over your shoulder without breaking stride. As part of your movement, you can pick up one willing or incapacitated creature of your size or smaller and carry it with you at no penalty to your speed. While you're carrying a creature this way, you can spend 2 stamina to intercept an attack that would hit it, redirecting the attack to yourself instead.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Precision Incision",
+      "img": "icons/svg/thrust.svg",
+      "description": "You know exactly where to cut. When you hit a creature with a Pierce attack, you can spend 1 stamina to strike a vital point: the attack ignores half of the target's damage reduction, and you gain advantage on your next Medicine check made regarding that creature.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Golden Hour",
+      "img": "icons/svg/sun.svg",
+      "description": "You work fastest when it matters most. As an action, you can spend 3 mana to stabilize and heal a creature at half its maximum hit points or lower, restoring hit points equal to 2d8 + your Intelligence modifier. You can only use this feature once per short or long rest - the golden hour doesn't open twice.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Audit",
+      "img": "icons/svg/eye.svg",
+      "description": "As an action, spend 1 mana to scrutinize one creature you can see within 30 feet, examining it for exploitable flaws the way you'd examine a ledger for errors. Until the end of your next turn, the first attack or spell you make against that creature has advantage, and any resistance it has to the damage type dealt is ignored.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Compound Interest",
+      "img": "icons/svg/upgrade.svg",
+      "description": "Damage you deal to a creature you've Audited this encounter doesn't cost it just once. Each time you damage that creature, it accrues debt equal to a quarter of the damage dealt (rounded down). At the start of its turn, it takes damage equal to its accrued debt, then the debt resets to 0 - the price of falling behind on payments.",
+      "grantedSkills": []
+    },
+    {
+      "name": "On the House",
+      "img": "icons/svg/tankard.svg",
+      "description": "You know exactly what everyone's drinking. During a short rest, you can spend 2 stamina to pour drinks for up to 3 creatures who aren't hostile to you. Each one chooses to regain stamina equal to 1d6 + your Charisma modifier, or gain advantage on their next saving throw made within the next hour.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Read the Room",
+      "img": "icons/svg/mystery-man.svg",
+      "description": "You've spent years watching a room for the exact moment things are about to go sideways. You have advantage on Perception checks made to sense the mood or intentions of a crowd. Once per long rest, you can spend 1 minute working a hostile crowd to defuse it, making a Diplomacy check to avert violence before the first blow is struck.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Get the Scoop",
+      "img": "icons/svg/hanging-sign.svg",
+      "description": "Given 10 minutes to ask around, dig through records, or talk to the right people, you can learn one true and useful fact about a creature, location, or organization - a weakness, a secret, a routine - as determined by your GM. You have advantage on the first attack roll, skill check, or saving throw you make that turns that fact to your advantage.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Breaking News",
+      "img": "icons/svg/video.svg",
+      "description": "When you publicly expose a secret or call out an enemy's weakness where your allies can hear you, word travels fast. Each ally who heard you gains advantage on their next attack roll against that target, made before the end of your next turn.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Clear for Departure",
+      "img": "icons/svg/wing.svg",
+      "description": "As an action, you can spend 2 mana to give one ally within 60 feet who can hear you clearance to move. That ally can immediately use their reaction to move up to their speed without provoking opportunity attacks, or to make one weapon attack.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Eye in the Tower",
+      "img": "icons/svg/eye.svg",
+      "description": "You track the whole battlefield the way a controller tracks every plane in the sky. You always know the position of every ally and enemy within 120 feet of you, even ones you can't directly see, and neither you nor any ally within that range can be surprised while you're conscious.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Strike the Vein",
+      "img": "icons/svg/mountain.svg",
+      "description": "You know how to find the weak seam in anything, be it rock or flesh. When you spend a full turn attacking the same creature or object without moving, your next Blunt attack against it that turn scores a critical hit on a roll of 18-20 instead of only 20.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Tunnel Vision",
+      "img": "icons/svg/burrow.svg",
+      "description": "You can dig through earth, loose rock, and similar terrain at a rate of 5 feet per minute using only your tools, and you have darkvision out to 60 feet. While underground or in an enclosed space, you have advantage on saving throws against being frightened - the walls have never scared you.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Battle Rations",
+      "img": "icons/svg/regen.svg",
+      "description": "Given 10 minutes and a fire during a short rest, you can cook a meal for up to 4 creatures. Each creature who eats gains temporary hit points equal to 1d8 + your Wisdom modifier, lasting until their next long rest or until depleted.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Knife Work",
+      "img": "icons/svg/target.svg",
+      "description": "Your hands never slow down at the cutting board, and they don't slow down anywhere else either. When you make a Pierce attack with a small blade (dagger, knife, or similar), you can spend 1 stamina to make one additional attack with that weapon as part of the same action.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Claim Denied",
+      "img": "icons/svg/cancel.svg",
+      "description": "As a reaction when a creature within 5 feet of you is hit by an attack, you can spend 2 stamina to intervene. Reduce the damage that creature takes by an amount equal to 1d10 + your Constitution modifier - the rest, if any, still applies. You've found a technicality, and it's not in the attacker's favor.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Risk Assessment",
+      "img": "icons/svg/dice-target.svg",
+      "description": "You've read enough policies to know exactly how disasters usually start. You and allies within 30 feet of you have advantage on the first saving throw each of you makes against a trap, ambush, or other surprise effect in a given encounter.",
+      "grantedSkills": []
+    },
+    {
+      "name": "One More Take",
+      "img": "icons/svg/video.svg",
+      "description": "Once per short or long rest, immediately after you make an attack roll, ability check, or saving throw, you can throw a fit and demand a retake: reroll and use the new result, even if it's worse.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Precocious Talent",
+      "img": "icons/svg/sun.svg",
+      "description": "You've been performing since before you could read a script. You have advantage on Deception and Diplomacy checks against creatures who underestimate you for your age or size, and once per short rest you can substitute your Charisma modifier for any other ability modifier on one skill check.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Main Character Energy",
+      "img": "icons/svg/aura.svg",
+      "description": "While at least one creature can see you, you have advantage on Diplomacy, Deception, and Intimidation checks. While no creature can see you, you have disadvantage on the same checks - you just don't perform the same without an audience.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Viral Moment",
+      "img": "icons/svg/lightning.svg",
+      "description": "Once per long rest, spend 3 mana to attempt something spectacular: make one attack roll, skill check, or saving throw with advantage. If you succeed, each ally within 30 feet who witnessed it gains 1d6 temporary stamina, hyped up by what they just saw.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Commander in Chief",
+      "img": "icons/svg/tower-flag.svg",
+      "description": "Once per long rest, as an action, rally your allies with a single address: each ally within 30 feet who can hear you gains advantage on their next attack roll or saving throw made before the end of your next turn, plus temporary hit points equal to 1d8 + your Charisma modifier.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Secret Service",
+      "img": "icons/svg/shield.svg",
+      "description": "You're never truly alone. As a reaction when you would take damage, you can spend 3 mana to have an unseen protector intercept the blow instead - you take no damage. Usable once per short rest.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Transformation Sequence",
+      "img": "icons/svg/upgrade.svg",
+      "description": "As a bonus action, spend 1 stamina to transform: your next attack this turn deals an extra 1d8 damage. Unless an ally is within 5 feet of you when you transform, one enemy that can see you gets a free attack against you before your pose finishes.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Team Up",
+      "img": "icons/svg/combat.svg",
+      "description": "While you and at least one ally are both engaged with (adjacent to or attacking) the same enemy, you gain a +1 bonus to attack rolls against that enemy for each other ally engaged with it, to a maximum of +3.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Summon",
+      "img": "icons/svg/portal.svg",
+      "description": "As an action, spend 3 mana to summon a spectral monster into an unoccupied space within 30 feet. It has hit points equal to twice your class level and can make one Slash or Cast attack dealing 1d8 + your Intelligence modifier on each of your turns. You can have only one monster summoned at a time, and it vanishes if reduced to 0 hit points or if you dismiss it.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Draw!",
+      "img": "icons/svg/d20.svg",
+      "description": "Once per short rest, draw on fate itself: roll a d6. On a 1-3, you gain advantage on your next attack roll or skill check. On a 4-6, you regain 1d4 mana.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Well, Actually",
+      "img": "icons/svg/book.svg",
+      "description": "When a creature you can see succeeds on an attack roll, skill check, or saving throw, you can spend 1 stamina to interject with an unsolicited correction: make a Lore check contested by that creature's relevant ability check. If you win, it must reroll and use the new result.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Karma Farming",
+      "img": "icons/svg/coins.svg",
+      "description": "Whenever you land a hit, deceive, or intimidate a creature in front of at least one ally, you gain 1 point of Karma (maximum 5). As a reaction, you can spend all your accumulated Karma to grant yourself advantage on one roll - the validation carries you through.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Glimpse the Threads",
+      "img": "icons/svg/eye.svg",
+      "description": "Once per short rest, as a reaction before you or an ally within 30 feet makes an attack roll, ability check, or saving throw, you can grant advantage on that roll - you saw this moment coming.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Cryptic Prophecy",
+      "img": "icons/svg/statue.svg",
+      "description": "As an action, spend 2 mana to speak a prophecy over a creature within 60 feet. Once before the end of the encounter, the next time that creature would be reduced to 0 hit points, it drops to 1 hit point instead - fate isn't ready to let go of it yet.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Confessional",
+      "img": "icons/svg/sound.svg",
+      "description": "Once per short rest, spend 1 minute speaking your true thoughts aloud to an unseen camera. Doing so, you can reroll any one failed check you made in the last minute and take the better result - venting clears your head.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Showmance",
+      "img": "icons/svg/card-joker.svg",
+      "description": "At the start of an encounter, choose one ally as your alliance. While that ally is within 30 feet of you, you both have advantage on Diplomacy and Deception checks made to influence a third party. You can change your alliance at the start of any of your turns.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Rally the Crew",
+      "img": "icons/svg/sound.svg",
+      "description": "Once per short rest, as an action, shout a rousing command: each ally within 30 feet gains temporary hit points equal to 1d8 + your Charisma modifier and can immediately move up to half their speed without using their action.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Plunder",
+      "img": "icons/svg/coins.svg",
+      "description": "When you defeat a creature or search a body, you have advantage on the check to find anything valuable on it. Once per long rest, you find a small, useful item of your GM's choosing - you always seem to come away with exactly what you needed.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Trade Places",
+      "img": "icons/svg/teleport.svg",
+      "description": "As a reaction when you would be hit by an attack, spend 2 mana to swap places with an illusory duplicate: the attack automatically misses, and you teleport up to 15 feet to an unoccupied space you can see.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Mischief Woven",
+      "img": "icons/svg/invisible.svg",
+      "description": "Once per long rest, target one creature within 30 feet and make a Deception check contested by its Wisdom saving throw. On a success, the creature is convinced of one false, harmless fact about its immediate surroundings for 1 minute - a wall that isn't there, a door that is, an ally who's secretly you.",
+      "grantedSkills": []
     }
   ]
 }

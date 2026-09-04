@@ -1,0 +1,81 @@
+{
+  "_id": "influencer",
+  "name": "Influencer",
+  "type": "class",
+  "img": "icons/svg/video.svg",
+  "system": {
+    "description": "A charismatic self-promoter who has never once forgotten they might be being watched. Influencers thrive in the spotlight and visibly wilt the moment nobody's paying attention.",
+    "baseHP": 8,
+    "hpPerLevel": 2,
+    "staminaPerLevel": 1,
+    "manaPerLevel": 3,
+    "abilityBonuses": {
+      "str": 0,
+      "dex": 0,
+      "con": 0,
+      "int": 0.3,
+      "wis": 0,
+      "cha": 0.7
+    },
+    "levelAcquired": 1,
+    "saves": {
+      "str": false,
+      "con": false,
+      "dex": false,
+      "int": true,
+      "wis": false,
+      "cha": true
+    },
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Diplomacy",
+        "level": 3
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Deception",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Perception",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Lore",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": [
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.main-character-energy",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.viral-moment",
+        "level": 1
+      }
+    ],
+    "hitDie": "d8",
+    "primaryAbility": "cha",
+    "secondaryAbility": "",
+    "features": "",
+    "subclasses": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

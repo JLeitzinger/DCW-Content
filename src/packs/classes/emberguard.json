@@ -1,0 +1,81 @@
+{
+  "_id": "emberguard",
+  "name": "Emberguard",
+  "type": "class",
+  "img": "icons/svg/fire-shield.svg",
+  "system": {
+    "description": "A firefighter who never learned to walk away from danger. Emberguards charge into burning buildings, collapsing structures, and worse, dragging the helpless out ahead of the flames.",
+    "baseHP": 12,
+    "hpPerLevel": 4,
+    "staminaPerLevel": 3,
+    "manaPerLevel": 1,
+    "abilityBonuses": {
+      "str": 0.5,
+      "dex": 0,
+      "con": 0.5,
+      "int": 0,
+      "wis": 0,
+      "cha": 0
+    },
+    "levelAcquired": 1,
+    "saves": {
+      "str": true,
+      "con": true,
+      "dex": false,
+      "int": false,
+      "wis": false,
+      "cha": false
+    },
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Blunt",
+        "level": 3
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Athletics",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Perception",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Block",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": [
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.into-the-blaze",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.rescue-carry",
+        "level": 1
+      }
+    ],
+    "hitDie": "d12",
+    "primaryAbility": "str",
+    "secondaryAbility": "",
+    "features": "",
+    "subclasses": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

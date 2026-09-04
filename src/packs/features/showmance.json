@@ -1,0 +1,28 @@
+{
+  "_id": "showmance",
+  "name": "Showmance",
+  "type": "feature",
+  "img": "icons/svg/card-joker.svg",
+  "system": {
+    "description": "At the start of an encounter, choose one ally as your alliance. While that ally is within 30 feet of you, you both have advantage on Diplomacy and Deception checks made to influence a third party. You can change your alliance at the start of any of your turns.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

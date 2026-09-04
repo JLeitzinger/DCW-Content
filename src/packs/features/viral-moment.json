@@ -1,0 +1,28 @@
+{
+  "_id": "viral-moment",
+  "name": "Viral Moment",
+  "type": "feature",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+    "description": "Once per long rest, spend 3 mana to attempt something spectacular: make one attack roll, skill check, or saving throw with advantage. If you succeed, each ally within 30 feet who witnessed it gains 1d6 temporary stamina, hyped up by what they just saw.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

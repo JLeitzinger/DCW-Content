@@ -1,0 +1,28 @@
+{
+  "_id": "eye-in-the-tower",
+  "name": "Eye in the Tower",
+  "type": "feature",
+  "img": "icons/svg/eye.svg",
+  "system": {
+    "description": "You track the whole battlefield the way a controller tracks every plane in the sky. You always know the position of every ally and enemy within 120 feet of you, even ones you can't directly see, and neither you nor any ally within that range can be surprised while you're conscious.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

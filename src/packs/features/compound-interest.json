@@ -1,0 +1,28 @@
+{
+  "_id": "compound-interest",
+  "name": "Compound Interest",
+  "type": "feature",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "Damage you deal to a creature you've Audited this encounter doesn't cost it just once. Each time you damage that creature, it accrues debt equal to a quarter of the damage dealt (rounded down). At the start of its turn, it takes damage equal to its accrued debt, then the debt resets to 0 - the price of falling behind on payments.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

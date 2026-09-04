@@ -1,0 +1,28 @@
+{
+  "_id": "risk-assessment",
+  "name": "Risk Assessment",
+  "type": "feature",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "description": "You've read enough policies to know exactly how disasters usually start. You and allies within 30 feet of you have advantage on the first saving throw each of you makes against a trap, ambush, or other surprise effect in a given encounter.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

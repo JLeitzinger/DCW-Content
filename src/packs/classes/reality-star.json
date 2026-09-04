@@ -1,0 +1,81 @@
+{
+  "_id": "reality-star",
+  "name": "Reality Star",
+  "type": "class",
+  "img": "icons/svg/card-joker.svg",
+  "system": {
+    "description": "A drama magnet who's never met a conflict they didn't lean into for the cameras. Reality Stars thrive on confrontation and forge alliances as easily as they break them.",
+    "baseHP": 8,
+    "hpPerLevel": 2,
+    "staminaPerLevel": 2,
+    "manaPerLevel": 2,
+    "abilityBonuses": {
+      "str": 0,
+      "dex": 0.4,
+      "con": 0,
+      "int": 0,
+      "wis": 0,
+      "cha": 0.6
+    },
+    "levelAcquired": 1,
+    "saves": {
+      "str": false,
+      "con": false,
+      "dex": true,
+      "int": false,
+      "wis": false,
+      "cha": true
+    },
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Deception",
+        "level": 3
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Diplomacy",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Perception",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Intimidation",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": [
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.confessional",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.showmance",
+        "level": 1
+      }
+    ],
+    "hitDie": "d8",
+    "primaryAbility": "cha",
+    "secondaryAbility": "",
+    "features": "",
+    "subclasses": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

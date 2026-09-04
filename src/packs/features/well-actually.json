@@ -1,0 +1,28 @@
+{
+  "_id": "well-actually",
+  "name": "Well, Actually",
+  "type": "feature",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "When a creature you can see succeeds on an attack roll, skill check, or saving throw, you can spend 1 stamina to interject with an unsolicited correction: make a Lore check contested by that creature's relevant ability check. If you win, it must reroll and use the new result.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

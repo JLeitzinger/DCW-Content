@@ -1,0 +1,28 @@
+{
+  "_id": "trade-places",
+  "name": "Trade Places",
+  "type": "feature",
+  "img": "icons/svg/teleport.svg",
+  "system": {
+    "description": "As a reaction when you would be hit by an attack, spend 2 mana to swap places with an illusory duplicate: the attack automatically misses, and you teleport up to 15 feet to an unoccupied space you can see.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

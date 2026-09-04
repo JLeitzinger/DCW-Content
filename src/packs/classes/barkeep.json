@@ -1,0 +1,81 @@
+{
+  "_id": "barkeep",
+  "name": "Barkeep",
+  "type": "class",
+  "img": "icons/svg/tankard.svg",
+  "system": {
+    "description": "A tavern keeper who's seen every kind of trouble walk through the door and knows how to talk it back out again. Barkeeps read a room in an instant and pour exactly what's needed to keep the peace - or win the fight.",
+    "baseHP": 9,
+    "hpPerLevel": 3,
+    "staminaPerLevel": 3,
+    "manaPerLevel": 1,
+    "abilityBonuses": {
+      "str": 0,
+      "dex": 0,
+      "con": 0,
+      "int": 0,
+      "wis": 0.4,
+      "cha": 0.6
+    },
+    "levelAcquired": 1,
+    "saves": {
+      "str": false,
+      "con": false,
+      "dex": false,
+      "int": false,
+      "wis": true,
+      "cha": true
+    },
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Diplomacy",
+        "level": 3
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Perception",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Medicine",
+        "level": 1
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Blunt",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": [
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.on-the-house",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.read-the-room",
+        "level": 1
+      }
+    ],
+    "hitDie": "d8",
+    "primaryAbility": "cha",
+    "secondaryAbility": "",
+    "features": "",
+    "subclasses": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

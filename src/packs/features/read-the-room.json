@@ -1,0 +1,28 @@
+{
+  "_id": "read-the-room",
+  "name": "Read the Room",
+  "type": "feature",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "You've spent years watching a room for the exact moment things are about to go sideways. You have advantage on Perception checks made to sense the mood or intentions of a crowd. Once per long rest, you can spend 1 minute working a hostile crowd to defuse it, making a Diplomacy check to avert violence before the first blow is struck.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

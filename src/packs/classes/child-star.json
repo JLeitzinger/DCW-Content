@@ -1,0 +1,81 @@
+{
+  "_id": "child-star",
+  "name": "Child Star",
+  "type": "class",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "A prodigy who's been in the spotlight since before they could walk unassisted. Child Stars burn brighter than anyone else in the room, and demand - loudly - the chance to do it all again if it isn't perfect the first time.",
+    "baseHP": 8,
+    "hpPerLevel": 2,
+    "staminaPerLevel": 2,
+    "manaPerLevel": 2,
+    "abilityBonuses": {
+      "str": 0,
+      "dex": 0.4,
+      "con": 0,
+      "int": 0,
+      "wis": 0,
+      "cha": 0.6
+    },
+    "levelAcquired": 1,
+    "saves": {
+      "str": false,
+      "con": false,
+      "dex": true,
+      "int": false,
+      "wis": false,
+      "cha": true
+    },
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Diplomacy",
+        "level": 3
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Deception",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Acrobatics",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Perception",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": [
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.one-more-take",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.precocious-talent",
+        "level": 1
+      }
+    ],
+    "hitDie": "d8",
+    "primaryAbility": "cha",
+    "secondaryAbility": "",
+    "features": "",
+    "subclasses": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

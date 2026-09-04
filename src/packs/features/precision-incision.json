@@ -1,0 +1,28 @@
+{
+  "_id": "precision-incision",
+  "name": "Precision Incision",
+  "type": "feature",
+  "img": "icons/svg/thrust.svg",
+  "system": {
+    "description": "You know exactly where to cut. When you hit a creature with a Pierce attack, you can spend 1 stamina to strike a vital point: the attack ignores half of the target's damage reduction, and you gain advantage on your next Medicine check made regarding that creature.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

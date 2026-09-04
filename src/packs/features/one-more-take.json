@@ -1,0 +1,28 @@
+{
+  "_id": "one-more-take",
+  "name": "One More Take",
+  "type": "feature",
+  "img": "icons/svg/video.svg",
+  "system": {
+    "description": "Once per short or long rest, immediately after you make an attack roll, ability check, or saving throw, you can throw a fit and demand a retake: reroll and use the new result, even if it's worse.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

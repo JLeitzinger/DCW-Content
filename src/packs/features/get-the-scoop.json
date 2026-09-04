@@ -1,0 +1,28 @@
+{
+  "_id": "get-the-scoop",
+  "name": "Get the Scoop",
+  "type": "feature",
+  "img": "icons/svg/hanging-sign.svg",
+  "system": {
+    "description": "Given 10 minutes to ask around, dig through records, or talk to the right people, you can learn one true and useful fact about a creature, location, or organization - a weakness, a secret, a routine - as determined by your GM. You have advantage on the first attack roll, skill check, or saving throw you make that turns that fact to your advantage.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

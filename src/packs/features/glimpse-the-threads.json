@@ -1,0 +1,28 @@
+{
+  "_id": "glimpse-the-threads",
+  "name": "Glimpse the Threads",
+  "type": "feature",
+  "img": "icons/svg/eye.svg",
+  "system": {
+    "description": "Once per short rest, as a reaction before you or an ally within 30 feet makes an attack roll, ability check, or saving throw, you can grant advantage on that roll - you saw this moment coming.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

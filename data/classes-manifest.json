@@ -1148,6 +1148,1186 @@
       ]
     },
     {
+      "name": "Roadwarden",
+      "img": "icons/svg/direction.svg",
+      "description": "A long-haul driver turned wandering guardian, unstoppable once they get moving. Roadwardens barrel through anything that isn't nailed down and shrug off exhaustion that would fell lesser travelers.",
+      "baseHP": 12,
+      "hpPerLevel": 4,
+      "staminaPerLevel": 3,
+      "manaPerLevel": 1,
+      "abilityBonuses": {
+        "str": 0.5,
+        "dex": 0,
+        "con": 0.5,
+        "int": 0,
+        "wis": 0,
+        "cha": 0
+      },
+      "levelAcquired": 1,
+      "saves": {
+        "str": true,
+        "con": true,
+        "dex": false,
+        "int": false,
+        "wis": false,
+        "cha": false
+      },
+      "hitDie": "d12",
+      "primaryAbility": "str",
+      "secondaryAbility": "",
+      "features": "",
+      "subclasses": "",
+      "grantedSkills": [
+        {
+          "skillName": "Blunt",
+          "level": 3
+        },
+        {
+          "skillName": "Block",
+          "level": 2
+        },
+        {
+          "skillName": "Athletics",
+          "level": 2
+        },
+        {
+          "skillName": "Survival",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": [
+        {
+          "featureName": "Full Load, No Stops",
+          "level": 1
+        },
+        {
+          "featureName": "Road-Worn",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Emberguard",
+      "img": "icons/svg/fire-shield.svg",
+      "description": "A firefighter who never learned to walk away from danger. Emberguards charge into burning buildings, collapsing structures, and worse, dragging the helpless out ahead of the flames.",
+      "baseHP": 12,
+      "hpPerLevel": 4,
+      "staminaPerLevel": 3,
+      "manaPerLevel": 1,
+      "abilityBonuses": {
+        "str": 0.5,
+        "dex": 0,
+        "con": 0.5,
+        "int": 0,
+        "wis": 0,
+        "cha": 0
+      },
+      "levelAcquired": 1,
+      "saves": {
+        "str": true,
+        "con": true,
+        "dex": false,
+        "int": false,
+        "wis": false,
+        "cha": false
+      },
+      "hitDie": "d12",
+      "primaryAbility": "str",
+      "secondaryAbility": "",
+      "features": "",
+      "subclasses": "",
+      "grantedSkills": [
+        {
+          "skillName": "Blunt",
+          "level": 3
+        },
+        {
+          "skillName": "Athletics",
+          "level": 2
+        },
+        {
+          "skillName": "Perception",
+          "level": 2
+        },
+        {
+          "skillName": "Block",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": [
+        {
+          "featureName": "Into the Blaze",
+          "level": 1
+        },
+        {
+          "featureName": "Rescue Carry",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Field Surgeon",
+      "img": "icons/svg/pill.svg",
+      "description": "A battlefield trauma doctor with a scalpel's precision and a stopwatch's urgency. Field Surgeons know exactly where to cut to hurt and exactly where to press to heal.",
+      "baseHP": 9,
+      "hpPerLevel": 3,
+      "staminaPerLevel": 2,
+      "manaPerLevel": 2,
+      "abilityBonuses": {
+        "str": 0,
+        "dex": 0.5,
+        "con": 0,
+        "int": 0.5,
+        "wis": 0,
+        "cha": 0
+      },
+      "levelAcquired": 1,
+      "saves": {
+        "str": false,
+        "con": false,
+        "dex": true,
+        "int": true,
+        "wis": false,
+        "cha": false
+      },
+      "hitDie": "d8",
+      "primaryAbility": "int",
+      "secondaryAbility": "",
+      "features": "",
+      "subclasses": "",
+      "grantedSkills": [
+        {
+          "skillName": "Medicine",
+          "level": 3
+        },
+        {
+          "skillName": "Pierce",
+          "level": 2
+        },
+        {
+          "skillName": "Perception",
+          "level": 2
+        },
+        {
+          "skillName": "Focus",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": [
+        {
+          "featureName": "Precision Incision",
+          "level": 1
+        },
+        {
+          "featureName": "Golden Hour",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Auditor",
+      "img": "icons/svg/coins.svg",
+      "description": "A meticulous examiner who treats every enemy like a ledger full of hidden errors. Auditors find the flaw in any defense and make sure the cost of missing it compounds.",
+      "baseHP": 8,
+      "hpPerLevel": 2,
+      "staminaPerLevel": 1,
+      "manaPerLevel": 3,
+      "abilityBonuses": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 0.6,
+        "wis": 0,
+        "cha": 0.4
+      },
+      "levelAcquired": 1,
+      "saves": {
+        "str": false,
+        "con": false,
+        "dex": false,
+        "int": true,
+        "wis": false,
+        "cha": true
+      },
+      "hitDie": "d8",
+      "primaryAbility": "int",
+      "secondaryAbility": "",
+      "features": "",
+      "subclasses": "",
+      "grantedSkills": [
+        {
+          "skillName": "Cast",
+          "level": 3
+        },
+        {
+          "skillName": "Lore",
+          "level": 2
+        },
+        {
+          "skillName": "Deception",
+          "level": 2
+        },
+        {
+          "skillName": "Perception",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": [
+        {
+          "featureName": "Audit",
+          "level": 1
+        },
+        {
+          "featureName": "Compound Interest",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Barkeep",
+      "img": "icons/svg/tankard.svg",
+      "description": "A tavern keeper who's seen every kind of trouble walk through the door and knows how to talk it back out again. Barkeeps read a room in an instant and pour exactly what's needed to keep the peace - or win the fight.",
+      "baseHP": 9,
+      "hpPerLevel": 3,
+      "staminaPerLevel": 3,
+      "manaPerLevel": 1,
+      "abilityBonuses": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 0,
+        "wis": 0.4,
+        "cha": 0.6
+      },
+      "levelAcquired": 1,
+      "saves": {
+        "str": false,
+        "con": false,
+        "dex": false,
+        "int": false,
+        "wis": true,
+        "cha": true
+      },
+      "hitDie": "d8",
+      "primaryAbility": "cha",
+      "secondaryAbility": "",
+      "features": "",
+      "subclasses": "",
+      "grantedSkills": [
+        {
+          "skillName": "Diplomacy",
+          "level": 3
+        },
+        {
+          "skillName": "Perception",
+          "level": 2
+        },
+        {
+          "skillName": "Medicine",
+          "level": 1
+        },
+        {
+          "skillName": "Blunt",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": [
+        {
+          "featureName": "On the House",
+          "level": 1
+        },
+        {
+          "featureName": "Read the Room",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Newshound",
+      "img": "icons/svg/book.svg",
+      "description": "A relentless investigator who can't leave a story unfinished. Newshounds dig up the secret nobody wanted found and know exactly how to make it count once it's out.",
+      "baseHP": 8,
+      "hpPerLevel": 2,
+      "staminaPerLevel": 2,
+      "manaPerLevel": 2,
+      "abilityBonuses": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 0.5,
+        "wis": 0,
+        "cha": 0.5
+      },
+      "levelAcquired": 1,
+      "saves": {
+        "str": false,
+        "con": false,
+        "dex": false,
+        "int": true,
+        "wis": false,
+        "cha": true
+      },
+      "hitDie": "d8",
+      "primaryAbility": "int",
+      "secondaryAbility": "",
+      "features": "",
+      "subclasses": "",
+      "grantedSkills": [
+        {
+          "skillName": "Lore",
+          "level": 3
+        },
+        {
+          "skillName": "Diplomacy",
+          "level": 2
+        },
+        {
+          "skillName": "Perception",
+          "level": 2
+        },
+        {
+          "skillName": "Stealth",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": [
+        {
+          "featureName": "Get the Scoop",
+          "level": 1
+        },
+        {
+          "featureName": "Breaking News",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Dispatcher",
+      "img": "icons/svg/tower-flag.svg",
+      "description": "A battlefield coordinator with the calm, all-seeing focus of someone who's talked a hundred flights safely to the ground. Dispatchers rarely swing a weapon themselves, choosing instead to put every ally exactly where they need to be.",
+      "baseHP": 8,
+      "hpPerLevel": 2,
+      "staminaPerLevel": 1,
+      "manaPerLevel": 3,
+      "abilityBonuses": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 0,
+        "wis": 0.5,
+        "cha": 0.5
+      },
+      "levelAcquired": 1,
+      "saves": {
+        "str": false,
+        "con": false,
+        "dex": false,
+        "int": false,
+        "wis": true,
+        "cha": true
+      },
+      "hitDie": "d8",
+      "primaryAbility": "wis",
+      "secondaryAbility": "",
+      "features": "",
+      "subclasses": "",
+      "grantedSkills": [
+        {
+          "skillName": "Perception",
+          "level": 3
+        },
+        {
+          "skillName": "Diplomacy",
+          "level": 2
+        },
+        {
+          "skillName": "Focus",
+          "level": 2
+        },
+        {
+          "skillName": "Lore",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": [
+        {
+          "featureName": "Clear for Departure",
+          "level": 1
+        },
+        {
+          "featureName": "Eye in the Tower",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Deep Driller",
+      "img": "icons/svg/cave.svg",
+      "description": "A career miner who's spent more time underground than under the sun. Deep Drillers can find the weak point in any wall, vein, or foe, and the dark holds no fear for them.",
+      "baseHP": 12,
+      "hpPerLevel": 4,
+      "staminaPerLevel": 3,
+      "manaPerLevel": 1,
+      "abilityBonuses": {
+        "str": 0.5,
+        "dex": 0,
+        "con": 0.5,
+        "int": 0,
+        "wis": 0,
+        "cha": 0
+      },
+      "levelAcquired": 1,
+      "saves": {
+        "str": true,
+        "con": true,
+        "dex": false,
+        "int": false,
+        "wis": false,
+        "cha": false
+      },
+      "hitDie": "d10",
+      "primaryAbility": "str",
+      "secondaryAbility": "",
+      "features": "",
+      "subclasses": "",
+      "grantedSkills": [
+        {
+          "skillName": "Blunt",
+          "level": 3
+        },
+        {
+          "skillName": "Athletics",
+          "level": 2
+        },
+        {
+          "skillName": "Survival",
+          "level": 2
+        },
+        {
+          "skillName": "Perception",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": [
+        {
+          "featureName": "Strike the Vein",
+          "level": 1
+        },
+        {
+          "featureName": "Tunnel Vision",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Culinarian",
+      "img": "icons/svg/barrel.svg",
+      "description": "A chef whose knife work is as sharp on the battlefield as it is in the kitchen. Culinarians keep the whole party fed, fueled, and fighting at their best.",
+      "baseHP": 9,
+      "hpPerLevel": 3,
+      "staminaPerLevel": 3,
+      "manaPerLevel": 1,
+      "abilityBonuses": {
+        "str": 0,
+        "dex": 0.5,
+        "con": 0,
+        "int": 0,
+        "wis": 0.5,
+        "cha": 0
+      },
+      "levelAcquired": 1,
+      "saves": {
+        "str": false,
+        "con": false,
+        "dex": true,
+        "int": false,
+        "wis": true,
+        "cha": false
+      },
+      "hitDie": "d8",
+      "primaryAbility": "dex",
+      "secondaryAbility": "",
+      "features": "",
+      "subclasses": "",
+      "grantedSkills": [
+        {
+          "skillName": "Craft",
+          "level": 3
+        },
+        {
+          "skillName": "Pierce",
+          "level": 2
+        },
+        {
+          "skillName": "Perception",
+          "level": 2
+        },
+        {
+          "skillName": "Survival",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": [
+        {
+          "featureName": "Battle Rations",
+          "level": 1
+        },
+        {
+          "featureName": "Knife Work",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Claims Warden",
+      "img": "icons/svg/shield.svg",
+      "description": "A risk assessor who's read every disaster report and decided to start intercepting the disasters personally. Claims Wardens step between their allies and harm, then find the technicality that makes the damage someone else's problem.",
+      "baseHP": 10,
+      "hpPerLevel": 3,
+      "staminaPerLevel": 2,
+      "manaPerLevel": 2,
+      "abilityBonuses": {
+        "str": 0,
+        "dex": 0,
+        "con": 0.5,
+        "int": 0.5,
+        "wis": 0,
+        "cha": 0
+      },
+      "levelAcquired": 1,
+      "saves": {
+        "str": false,
+        "con": true,
+        "dex": false,
+        "int": true,
+        "wis": false,
+        "cha": false
+      },
+      "hitDie": "d10",
+      "primaryAbility": "con",
+      "secondaryAbility": "",
+      "features": "",
+      "subclasses": "",
+      "grantedSkills": [
+        {
+          "skillName": "Block",
+          "level": 3
+        },
+        {
+          "skillName": "Lore",
+          "level": 2
+        },
+        {
+          "skillName": "Perception",
+          "level": 2
+        },
+        {
+          "skillName": "Diplomacy",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": [
+        {
+          "featureName": "Claim Denied",
+          "level": 1
+        },
+        {
+          "featureName": "Risk Assessment",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Child Star",
+      "img": "icons/svg/statue.svg",
+      "description": "A prodigy who's been in the spotlight since before they could walk unassisted. Child Stars burn brighter than anyone else in the room, and demand - loudly - the chance to do it all again if it isn't perfect the first time.",
+      "baseHP": 8,
+      "hpPerLevel": 2,
+      "staminaPerLevel": 2,
+      "manaPerLevel": 2,
+      "abilityBonuses": {
+        "str": 0,
+        "dex": 0.4,
+        "con": 0,
+        "int": 0,
+        "wis": 0,
+        "cha": 0.6
+      },
+      "levelAcquired": 1,
+      "saves": {
+        "str": false,
+        "con": false,
+        "dex": true,
+        "int": false,
+        "wis": false,
+        "cha": true
+      },
+      "hitDie": "d8",
+      "primaryAbility": "cha",
+      "secondaryAbility": "",
+      "features": "",
+      "subclasses": "",
+      "grantedSkills": [
+        {
+          "skillName": "Diplomacy",
+          "level": 3
+        },
+        {
+          "skillName": "Deception",
+          "level": 2
+        },
+        {
+          "skillName": "Acrobatics",
+          "level": 2
+        },
+        {
+          "skillName": "Perception",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": [
+        {
+          "featureName": "One More Take",
+          "level": 1
+        },
+        {
+          "featureName": "Precocious Talent",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Influencer",
+      "img": "icons/svg/video.svg",
+      "description": "A charismatic self-promoter who has never once forgotten they might be being watched. Influencers thrive in the spotlight and visibly wilt the moment nobody's paying attention.",
+      "baseHP": 8,
+      "hpPerLevel": 2,
+      "staminaPerLevel": 1,
+      "manaPerLevel": 3,
+      "abilityBonuses": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 0.3,
+        "wis": 0,
+        "cha": 0.7
+      },
+      "levelAcquired": 1,
+      "saves": {
+        "str": false,
+        "con": false,
+        "dex": false,
+        "int": true,
+        "wis": false,
+        "cha": true
+      },
+      "hitDie": "d8",
+      "primaryAbility": "cha",
+      "secondaryAbility": "",
+      "features": "",
+      "subclasses": "",
+      "grantedSkills": [
+        {
+          "skillName": "Diplomacy",
+          "level": 3
+        },
+        {
+          "skillName": "Deception",
+          "level": 2
+        },
+        {
+          "skillName": "Perception",
+          "level": 2
+        },
+        {
+          "skillName": "Lore",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": [
+        {
+          "featureName": "Main Character Energy",
+          "level": 1
+        },
+        {
+          "featureName": "Viral Moment",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "President",
+      "img": "icons/svg/castle.svg",
+      "description": "An elected (or self-appointed) leader who commands a room the way they command a nation. Presidents rally their people with a word and never go anywhere without protection.",
+      "baseHP": 10,
+      "hpPerLevel": 3,
+      "staminaPerLevel": 2,
+      "manaPerLevel": 2,
+      "abilityBonuses": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 0,
+        "wis": 0.5,
+        "cha": 0.5
+      },
+      "levelAcquired": 1,
+      "saves": {
+        "str": false,
+        "con": false,
+        "dex": false,
+        "int": false,
+        "wis": true,
+        "cha": true
+      },
+      "hitDie": "d8",
+      "primaryAbility": "cha",
+      "secondaryAbility": "",
+      "features": "",
+      "subclasses": "",
+      "grantedSkills": [
+        {
+          "skillName": "Diplomacy",
+          "level": 3
+        },
+        {
+          "skillName": "Intimidation",
+          "level": 2
+        },
+        {
+          "skillName": "Lore",
+          "level": 2
+        },
+        {
+          "skillName": "Perception",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": [
+        {
+          "featureName": "Commander in Chief",
+          "level": 1
+        },
+        {
+          "featureName": "Secret Service",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Sentai Hero",
+      "img": "icons/svg/aura.svg",
+      "description": "A costumed champion who fights best as part of a team, striking dramatic poses between devastating blows. Sentai Heroes hit harder for every ally at their side, though their flashy transformations leave them briefly exposed.",
+      "baseHP": 11,
+      "hpPerLevel": 3,
+      "staminaPerLevel": 3,
+      "manaPerLevel": 1,
+      "abilityBonuses": {
+        "str": 0.5,
+        "dex": 0,
+        "con": 0,
+        "int": 0,
+        "wis": 0,
+        "cha": 0.5
+      },
+      "levelAcquired": 1,
+      "saves": {
+        "str": true,
+        "con": false,
+        "dex": false,
+        "int": false,
+        "wis": false,
+        "cha": true
+      },
+      "hitDie": "d10",
+      "primaryAbility": "str",
+      "secondaryAbility": "",
+      "features": "",
+      "subclasses": "",
+      "grantedSkills": [
+        {
+          "skillName": "Slash",
+          "level": 3
+        },
+        {
+          "skillName": "Acrobatics",
+          "level": 2
+        },
+        {
+          "skillName": "Athletics",
+          "level": 1
+        },
+        {
+          "skillName": "Intimidation",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": [
+        {
+          "featureName": "Transformation Sequence",
+          "level": 1
+        },
+        {
+          "featureName": "Team Up",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Card Duelist",
+      "img": "icons/svg/card-hand.svg",
+      "description": "A strategist who fights through a bond with a spectral creature summoned from their deck. Card Duelists trust as much in the turn of fate as they do in their own skill.",
+      "baseHP": 8,
+      "hpPerLevel": 2,
+      "staminaPerLevel": 1,
+      "manaPerLevel": 3,
+      "abilityBonuses": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 0.5,
+        "wis": 0,
+        "cha": 0.5
+      },
+      "levelAcquired": 1,
+      "saves": {
+        "str": false,
+        "con": false,
+        "dex": false,
+        "int": true,
+        "wis": false,
+        "cha": true
+      },
+      "hitDie": "d8",
+      "primaryAbility": "int",
+      "secondaryAbility": "",
+      "features": "",
+      "subclasses": "",
+      "grantedSkills": [
+        {
+          "skillName": "Cast",
+          "level": 3
+        },
+        {
+          "skillName": "Lore",
+          "level": 2
+        },
+        {
+          "skillName": "Deception",
+          "level": 1
+        },
+        {
+          "skillName": "Focus",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": [
+        {
+          "featureName": "Summon",
+          "level": 1
+        },
+        {
+          "featureName": "Draw!",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Redditor",
+      "img": "icons/svg/mystery-man-black.svg",
+      "description": "A self-appointed expert on absolutely everything, ready with an unsolicited correction at a moment's notice. Redditors thrive on being right - or at least sounding like it - and grow more confident with every point they score.",
+      "baseHP": 8,
+      "hpPerLevel": 2,
+      "staminaPerLevel": 2,
+      "manaPerLevel": 2,
+      "abilityBonuses": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 0.6,
+        "wis": 0,
+        "cha": 0.4
+      },
+      "levelAcquired": 1,
+      "saves": {
+        "str": false,
+        "con": false,
+        "dex": false,
+        "int": true,
+        "wis": false,
+        "cha": true
+      },
+      "hitDie": "d8",
+      "primaryAbility": "int",
+      "secondaryAbility": "",
+      "features": "",
+      "subclasses": "",
+      "grantedSkills": [
+        {
+          "skillName": "Lore",
+          "level": 3
+        },
+        {
+          "skillName": "Intimidation",
+          "level": 2
+        },
+        {
+          "skillName": "Deception",
+          "level": 2
+        },
+        {
+          "skillName": "Perception",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": [
+        {
+          "featureName": "Well, Actually",
+          "level": 1
+        },
+        {
+          "featureName": "Karma Farming",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Oracle",
+      "img": "icons/svg/temple.svg",
+      "description": "A seer who speaks in riddles and sees the threads of fate before they're pulled. Oracles glimpse danger a heartbeat before it arrives and can occasionally talk death itself into waiting a little longer.",
+      "baseHP": 8,
+      "hpPerLevel": 2,
+      "staminaPerLevel": 1,
+      "manaPerLevel": 3,
+      "abilityBonuses": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 0,
+        "wis": 1,
+        "cha": 0
+      },
+      "levelAcquired": 1,
+      "saves": {
+        "str": false,
+        "con": false,
+        "dex": false,
+        "int": true,
+        "wis": true,
+        "cha": false
+      },
+      "hitDie": "d8",
+      "primaryAbility": "wis",
+      "secondaryAbility": "",
+      "features": "",
+      "subclasses": "",
+      "grantedSkills": [
+        {
+          "skillName": "Channel",
+          "level": 3
+        },
+        {
+          "skillName": "Lore",
+          "level": 2
+        },
+        {
+          "skillName": "Perception",
+          "level": 2
+        },
+        {
+          "skillName": "Focus",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": [
+        {
+          "featureName": "Glimpse the Threads",
+          "level": 1
+        },
+        {
+          "featureName": "Cryptic Prophecy",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Reality Star",
+      "img": "icons/svg/card-joker.svg",
+      "description": "A drama magnet who's never met a conflict they didn't lean into for the cameras. Reality Stars thrive on confrontation and forge alliances as easily as they break them.",
+      "baseHP": 8,
+      "hpPerLevel": 2,
+      "staminaPerLevel": 2,
+      "manaPerLevel": 2,
+      "abilityBonuses": {
+        "str": 0,
+        "dex": 0.4,
+        "con": 0,
+        "int": 0,
+        "wis": 0,
+        "cha": 0.6
+      },
+      "levelAcquired": 1,
+      "saves": {
+        "str": false,
+        "con": false,
+        "dex": true,
+        "int": false,
+        "wis": false,
+        "cha": true
+      },
+      "hitDie": "d8",
+      "primaryAbility": "cha",
+      "secondaryAbility": "",
+      "features": "",
+      "subclasses": "",
+      "grantedSkills": [
+        {
+          "skillName": "Deception",
+          "level": 3
+        },
+        {
+          "skillName": "Diplomacy",
+          "level": 2
+        },
+        {
+          "skillName": "Perception",
+          "level": 2
+        },
+        {
+          "skillName": "Intimidation",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": [
+        {
+          "featureName": "Confessional",
+          "level": 1
+        },
+        {
+          "featureName": "Showmance",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Pirate Captain",
+      "img": "icons/svg/anchor.svg",
+      "description": "A charismatic outlaw of the high seas who leads through fear, charm, and the promise of plunder. Pirate Captains rally their crew with a shout and always seem to know exactly where the good loot is buried.",
+      "baseHP": 11,
+      "hpPerLevel": 3,
+      "staminaPerLevel": 3,
+      "manaPerLevel": 1,
+      "abilityBonuses": {
+        "str": 0.5,
+        "dex": 0,
+        "con": 0,
+        "int": 0,
+        "wis": 0,
+        "cha": 0.5
+      },
+      "levelAcquired": 1,
+      "saves": {
+        "str": true,
+        "con": false,
+        "dex": false,
+        "int": false,
+        "wis": false,
+        "cha": true
+      },
+      "hitDie": "d10",
+      "primaryAbility": "str",
+      "secondaryAbility": "",
+      "features": "",
+      "subclasses": "",
+      "grantedSkills": [
+        {
+          "skillName": "Slash",
+          "level": 3
+        },
+        {
+          "skillName": "Intimidation",
+          "level": 2
+        },
+        {
+          "skillName": "Acrobatics",
+          "level": 2
+        },
+        {
+          "skillName": "Diplomacy",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": [
+        {
+          "featureName": "Rally the Crew",
+          "level": 1
+        },
+        {
+          "featureName": "Plunder",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Trickster",
+      "img": "icons/svg/invisible.svg",
+      "description": "A shapeshifting figure of myth who delights in chaos, illusion, and getting the last laugh. Tricksters slip out of danger by leaving a decoy behind and can talk their way into - or out of - almost anything.",
+      "baseHP": 8,
+      "hpPerLevel": 2,
+      "staminaPerLevel": 2,
+      "manaPerLevel": 2,
+      "abilityBonuses": {
+        "str": 0,
+        "dex": 0.5,
+        "con": 0,
+        "int": 0,
+        "wis": 0,
+        "cha": 0.5
+      },
+      "levelAcquired": 1,
+      "saves": {
+        "str": false,
+        "con": false,
+        "dex": true,
+        "int": false,
+        "wis": false,
+        "cha": true
+      },
+      "hitDie": "d8",
+      "primaryAbility": "dex",
+      "secondaryAbility": "",
+      "features": "",
+      "subclasses": "",
+      "grantedSkills": [
+        {
+          "skillName": "Deception",
+          "level": 3
+        },
+        {
+          "skillName": "Stealth",
+          "level": 2
+        },
+        {
+          "skillName": "Cast",
+          "level": 2
+        },
+        {
+          "skillName": "Acrobatics",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": [
+        {
+          "featureName": "Trade Places",
+          "level": 1
+        },
+        {
+          "featureName": "Mischief Woven",
+          "level": 1
+        }
+      ]
+    },
+    {
       "name": "Wizard",
       "img": "icons/svg/mage-shield.svg",
       "description": "A scholarly magic-user capable of manipulating the structures of reality through arcane study and practice. Wizards are masters of spellcasting.",

@@ -1,0 +1,28 @@
+{
+  "_id": "tunnel-vision",
+  "name": "Tunnel Vision",
+  "type": "feature",
+  "img": "icons/svg/burrow.svg",
+  "system": {
+    "description": "You can dig through earth, loose rock, and similar terrain at a rate of 5 feet per minute using only your tools, and you have darkvision out to 60 feet. While underground or in an enclosed space, you have advantage on saving throws against being frightened - the walls have never scared you.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

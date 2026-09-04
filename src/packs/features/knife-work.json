@@ -1,0 +1,28 @@
+{
+  "_id": "knife-work",
+  "name": "Knife Work",
+  "type": "feature",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "Your hands never slow down at the cutting board, and they don't slow down anywhere else either. When you make a Pierce attack with a small blade (dagger, knife, or similar), you can spend 1 stamina to make one additional attack with that weapon as part of the same action.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

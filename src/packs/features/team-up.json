@@ -1,0 +1,28 @@
+{
+  "_id": "team-up",
+  "name": "Team Up",
+  "type": "feature",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "description": "While you and at least one ally are both engaged with (adjacent to or attacking) the same enemy, you gain a +1 bonus to attack rolls against that enemy for each other ally engaged with it, to a maximum of +3.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "transformation-sequence",
+  "name": "Transformation Sequence",
+  "type": "feature",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "As a bonus action, spend 1 stamina to transform: your next attack this turn deals an extra 1d8 damage. Unless an ally is within 5 feet of you when you transform, one enemy that can see you gets a free attack against you before your pose finishes.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

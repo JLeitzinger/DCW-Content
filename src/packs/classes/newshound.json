@@ -1,0 +1,81 @@
+{
+  "_id": "newshound",
+  "name": "Newshound",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "A relentless investigator who can't leave a story unfinished. Newshounds dig up the secret nobody wanted found and know exactly how to make it count once it's out.",
+    "baseHP": 8,
+    "hpPerLevel": 2,
+    "staminaPerLevel": 2,
+    "manaPerLevel": 2,
+    "abilityBonuses": {
+      "str": 0,
+      "dex": 0,
+      "con": 0,
+      "int": 0.5,
+      "wis": 0,
+      "cha": 0.5
+    },
+    "levelAcquired": 1,
+    "saves": {
+      "str": false,
+      "con": false,
+      "dex": false,
+      "int": true,
+      "wis": false,
+      "cha": true
+    },
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Lore",
+        "level": 3
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Diplomacy",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Perception",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Stealth",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": [
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.get-the-scoop",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.breaking-news",
+        "level": 1
+      }
+    ],
+    "hitDie": "d8",
+    "primaryAbility": "int",
+    "secondaryAbility": "",
+    "features": "",
+    "subclasses": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

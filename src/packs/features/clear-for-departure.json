@@ -1,0 +1,28 @@
+{
+  "_id": "clear-for-departure",
+  "name": "Clear for Departure",
+  "type": "feature",
+  "img": "icons/svg/wing.svg",
+  "system": {
+    "description": "As an action, you can spend 2 mana to give one ally within 60 feet who can hear you clearance to move. That ally can immediately use their reaction to move up to their speed without provoking opportunity attacks, or to make one weapon attack.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

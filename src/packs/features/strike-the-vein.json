@@ -1,0 +1,28 @@
+{
+  "_id": "strike-the-vein",
+  "name": "Strike the Vein",
+  "type": "feature",
+  "img": "icons/svg/mountain.svg",
+  "system": {
+    "description": "You know how to find the weak seam in anything, be it rock or flesh. When you spend a full turn attacking the same creature or object without moving, your next Blunt attack against it that turn scores a critical hit on a roll of 18-20 instead of only 20.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

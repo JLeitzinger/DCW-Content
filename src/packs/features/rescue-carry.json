@@ -1,0 +1,28 @@
+{
+  "_id": "rescue-carry",
+  "name": "Rescue Carry",
+  "type": "feature",
+  "img": "icons/svg/ladder.svg",
+  "system": {
+    "description": "You can sling a creature over your shoulder without breaking stride. As part of your movement, you can pick up one willing or incapacitated creature of your size or smaller and carry it with you at no penalty to your speed. While you're carrying a creature this way, you can spend 2 stamina to intercept an attack that would hit it, redirecting the attack to yourself instead.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

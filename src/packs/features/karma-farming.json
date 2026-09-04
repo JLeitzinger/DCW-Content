@@ -1,0 +1,28 @@
+{
+  "_id": "karma-farming",
+  "name": "Karma Farming",
+  "type": "feature",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "description": "Whenever you land a hit, deceive, or intimidate a creature in front of at least one ally, you gain 1 point of Karma (maximum 5). As a reaction, you can spend all your accumulated Karma to grant yourself advantage on one roll - the validation carries you through.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

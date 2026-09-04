@@ -1,0 +1,28 @@
+{
+  "_id": "rally-the-crew",
+  "name": "Rally the Crew",
+  "type": "feature",
+  "img": "icons/svg/sound.svg",
+  "system": {
+    "description": "Once per short rest, as an action, shout a rousing command: each ally within 30 feet gains temporary hit points equal to 1d8 + your Charisma modifier and can immediately move up to half their speed without using their action.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

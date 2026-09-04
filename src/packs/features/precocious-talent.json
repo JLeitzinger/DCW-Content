@@ -1,0 +1,28 @@
+{
+  "_id": "precocious-talent",
+  "name": "Precocious Talent",
+  "type": "feature",
+  "img": "icons/svg/sun.svg",
+  "system": {
+    "description": "You've been performing since before you could read a script. You have advantage on Deception and Diplomacy checks against creatures who underestimate you for your age or size, and once per short rest you can substitute your Charisma modifier for any other ability modifier on one skill check.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

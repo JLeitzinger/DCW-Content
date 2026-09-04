@@ -1,0 +1,28 @@
+{
+  "_id": "on-the-house",
+  "name": "On the House",
+  "type": "feature",
+  "img": "icons/svg/tankard.svg",
+  "system": {
+    "description": "You know exactly what everyone's drinking. During a short rest, you can spend 2 stamina to pour drinks for up to 3 creatures who aren't hostile to you. Each one chooses to regain stamina equal to 1d6 + your Charisma modifier, or gain advantage on their next saving throw made within the next hour.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "audit",
+  "name": "Audit",
+  "type": "feature",
+  "img": "icons/svg/eye.svg",
+  "system": {
+    "description": "As an action, spend 1 mana to scrutinize one creature you can see within 30 feet, examining it for exploitable flaws the way you'd examine a ledger for errors. Until the end of your next turn, the first attack or spell you make against that creature has advantage, and any resistance it has to the damage type dealt is ignored.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

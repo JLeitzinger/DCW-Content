@@ -1,0 +1,28 @@
+{
+  "_id": "cryptic-prophecy",
+  "name": "Cryptic Prophecy",
+  "type": "feature",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "As an action, spend 2 mana to speak a prophecy over a creature within 60 feet. Once before the end of the encounter, the next time that creature would be reduced to 0 hit points, it drops to 1 hit point instead - fate isn't ready to let go of it yet.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

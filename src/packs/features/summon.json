@@ -1,0 +1,28 @@
+{
+  "_id": "summon",
+  "name": "Summon",
+  "type": "feature",
+  "img": "icons/svg/portal.svg",
+  "system": {
+    "description": "As an action, spend 3 mana to summon a spectral monster into an unoccupied space within 30 feet. It has hit points equal to twice your class level and can make one Slash or Cast attack dealing 1d8 + your Intelligence modifier on each of your turns. You can have only one monster summoned at a time, and it vanishes if reduced to 0 hit points or if you dismiss it.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

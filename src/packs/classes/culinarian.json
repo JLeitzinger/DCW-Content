@@ -1,0 +1,81 @@
+{
+  "_id": "culinarian",
+  "name": "Culinarian",
+  "type": "class",
+  "img": "icons/svg/barrel.svg",
+  "system": {
+    "description": "A chef whose knife work is as sharp on the battlefield as it is in the kitchen. Culinarians keep the whole party fed, fueled, and fighting at their best.",
+    "baseHP": 9,
+    "hpPerLevel": 3,
+    "staminaPerLevel": 3,
+    "manaPerLevel": 1,
+    "abilityBonuses": {
+      "str": 0,
+      "dex": 0.5,
+      "con": 0,
+      "int": 0,
+      "wis": 0.5,
+      "cha": 0
+    },
+    "levelAcquired": 1,
+    "saves": {
+      "str": false,
+      "con": false,
+      "dex": true,
+      "int": false,
+      "wis": true,
+      "cha": false
+    },
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Craft",
+        "level": 3
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Pierce",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Perception",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Survival",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": [
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.battle-rations",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.knife-work",
+        "level": 1
+      }
+    ],
+    "hitDie": "d8",
+    "primaryAbility": "dex",
+    "secondaryAbility": "",
+    "features": "",
+    "subclasses": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}
