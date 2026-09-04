@@ -1,0 +1,28 @@
+{
+  "_id": "deathless-vigor",
+  "name": "Deathless Vigor",
+  "type": "feature",
+  "img": "icons/svg/heal.svg",
+  "system": {
+    "description": "You have already died once, and your body no longer negotiates with exhaustion the way living flesh does. You don't need to eat, drink, or breathe, and you have advantage on saving throws against poison and disease. When you would be reduced to 0 hit points but not killed outright, you can spend 2 stamina to instead drop to 1 hit point.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

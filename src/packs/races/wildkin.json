@@ -1,0 +1,73 @@
+{
+  "_id": "wildkin",
+  "name": "Wildkin",
+  "type": "race",
+  "img": "icons/svg/pawprint.svg",
+  "system": {
+    "description": "Wildkin are born in or driven early into the dungeon's feral warrens - raised alongside wolves, bonded to a cave spider's brood, or simply gone half-wild from years spent surviving among the beasts that hunt these tunnels. They move like their animal kin: low to the ground, fast to react, and always aware of what's circling just out of torchlight. Civilized folk find them a little unsettling company. The beasts don't.",
+    "abilityBonuses": {
+      "str": 1,
+      "dex": 1,
+      "con": 1,
+      "int": 0,
+      "wis": 0,
+      "cha": 0
+    },
+    "bonuses": {
+      "hp": 2,
+      "stamina": 2,
+      "mana": 0
+    },
+    "size": "medium",
+    "speed": 35,
+    "senses": {
+      "darkvision": 60,
+      "blindsight": 0,
+      "tremorsense": 10,
+      "truesight": 0
+    },
+    "languages": "Common",
+    "grantedFeatures": [
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.predator-s-instinct",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.thick-hide",
+        "level": 1
+      }
+    ],
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Survival",
+        "level": 1
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Athletics",
+        "level": 1
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Pierce",
+        "level": 1
+      }
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

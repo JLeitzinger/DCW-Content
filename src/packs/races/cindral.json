@@ -1,0 +1,73 @@
+{
+  "_id": "cindral",
+  "name": "Cindral",
+  "type": "race",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+    "description": "Cindral trace their ancestry to a bloodline touched by raw elemental force - a family line blessed, cursed, or bound by an elemental spirit generations ago. Sparks skitter along their skin when they're angry, and their breath fogs with heat or frost depending on their mood. They burn hot, move fast, and rarely stay calm for long, but that same volatility makes them formidable in a fight and hard to pin down.",
+    "abilityBonuses": {
+      "str": 0,
+      "dex": 1,
+      "con": 2,
+      "int": 0,
+      "wis": 0,
+      "cha": 0
+    },
+    "bonuses": {
+      "hp": 1,
+      "stamina": 1,
+      "mana": 3
+    },
+    "size": "medium",
+    "speed": 30,
+    "senses": {
+      "darkvision": 30,
+      "blindsight": 0,
+      "tremorsense": 0,
+      "truesight": 0
+    },
+    "languages": "Common, Primordial",
+    "grantedFeatures": [
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.elemental-attunement",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.volatile-surge",
+        "level": 1
+      }
+    ],
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Survival",
+        "level": 1
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Focus",
+        "level": 1
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Cast",
+        "level": 1
+      }
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

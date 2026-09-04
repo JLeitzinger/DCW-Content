@@ -1,0 +1,28 @@
+{
+  "_id": "whispered-communion",
+  "name": "Whispered Communion",
+  "type": "feature",
+  "img": "icons/svg/sound.svg",
+  "system": {
+    "description": "You have learned to listen for the voice your order serves, even when no ritual is underway. Once per long rest, you can spend 10 minutes in quiet communion to ask a single yes-or-no question and sense whether the answer is true - though the source of the answer is not always trustworthy.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "warren-tactics",
+  "name": "Warren Tactics",
+  "type": "feature",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "description": "You grew up fighting in packs against things much bigger than you. When you attack a creature that is within 5 feet of at least one of your allies, you gain a +1 bonus to the attack roll.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

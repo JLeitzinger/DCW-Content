@@ -1,0 +1,73 @@
+{
+  "_id": "vashkari",
+  "name": "Vashkari",
+  "type": "race",
+  "img": "icons/svg/acid.svg",
+  "system": {
+    "description": "Vashkari are humanoid folk grown or transformed in the alchemical vats and failed experiments that seep through the dungeon's deeper tunnels. Their flesh is semisolid and faintly translucent, closer in substance to living jelly than to muscle and bone, and it remembers every wound it has ever knit shut. Slow of step but nearly impossible to truly kill, Vashkari are patient tinkerers and unshakeable survivors, equally at home brewing reagents or absorbing a blow that would fell sturdier folk.",
+    "abilityBonuses": {
+      "str": 1,
+      "dex": 0,
+      "con": 2,
+      "int": 0,
+      "wis": 0,
+      "cha": 0
+    },
+    "bonuses": {
+      "hp": 3,
+      "stamina": 1,
+      "mana": 0
+    },
+    "size": "medium",
+    "speed": 25,
+    "senses": {
+      "darkvision": 0,
+      "blindsight": 30,
+      "tremorsense": 0,
+      "truesight": 0
+    },
+    "languages": "Common",
+    "grantedFeatures": [
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.amorphous-resilience",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.caustic-secretion",
+        "level": 1
+      }
+    ],
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Medicine",
+        "level": 1
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Athletics",
+        "level": 1
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Blunt",
+        "level": 1
+      }
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

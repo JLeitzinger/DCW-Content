@@ -490,6 +490,363 @@
           "level": 2
         }
       ]
+    },
+    {
+      "name": "Vashkari",
+      "img": "icons/svg/acid.svg",
+      "description": "Vashkari are humanoid folk grown or transformed in the alchemical vats and failed experiments that seep through the dungeon's deeper tunnels. Their flesh is semisolid and faintly translucent, closer in substance to living jelly than to muscle and bone, and it remembers every wound it has ever knit shut. Slow of step but nearly impossible to truly kill, Vashkari are patient tinkerers and unshakeable survivors, equally at home brewing reagents or absorbing a blow that would fell sturdier folk.",
+      "abilityBonuses": {
+        "str": 1,
+        "dex": 0,
+        "con": 2,
+        "int": 0,
+        "wis": 0,
+        "cha": 0
+      },
+      "bonuses": {
+        "hp": 3,
+        "stamina": 1,
+        "mana": 0
+      },
+      "size": "medium",
+      "speed": 25,
+      "senses": {
+        "darkvision": 0,
+        "blindsight": 30,
+        "tremorsense": 0,
+        "truesight": 0
+      },
+      "languages": "Common",
+      "grantedFeatures": [
+        {
+          "featureName": "Amorphous Resilience",
+          "level": 1
+        },
+        {
+          "featureName": "Caustic Secretion",
+          "level": 1
+        }
+      ],
+      "grantedSkills": [
+        {
+          "skillName": "Medicine",
+          "level": 1
+        },
+        {
+          "skillName": "Athletics",
+          "level": 1
+        },
+        {
+          "skillName": "Blunt",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Graveborn",
+      "img": "icons/svg/bones.svg",
+      "description": "Graveborn are the dead who did not stay down - risen by an errant necromantic working, a god's mercy, or a stubbornness that outlasted the grave itself - and who kept enough of themselves to walk back into the world as people rather than monsters. Cold to the touch and slow to tire, they carry the memory of the tomb in their bones: little frightens a Graveborn who has already died once, and little exhausts a body that no longer strictly needs to breathe.",
+      "abilityBonuses": {
+        "str": 0,
+        "dex": 0,
+        "con": 2,
+        "int": 0,
+        "wis": 1,
+        "cha": 0
+      },
+      "bonuses": {
+        "hp": 4,
+        "stamina": 0,
+        "mana": 1
+      },
+      "size": "medium",
+      "speed": 25,
+      "senses": {
+        "darkvision": 60,
+        "blindsight": 0,
+        "tremorsense": 0,
+        "truesight": 0
+      },
+      "languages": "Common",
+      "grantedFeatures": [
+        {
+          "featureName": "Deathless Vigor",
+          "level": 1
+        },
+        {
+          "featureName": "Graveborn Chill",
+          "level": 1
+        }
+      ],
+      "grantedSkills": [
+        {
+          "skillName": "Lore",
+          "level": 1
+        },
+        {
+          "skillName": "Survival",
+          "level": 1
+        },
+        {
+          "skillName": "Channel",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Cindral",
+      "img": "icons/svg/lightning.svg",
+      "description": "Cindral trace their ancestry to a bloodline touched by raw elemental force - a family line blessed, cursed, or bound by an elemental spirit generations ago. Sparks skitter along their skin when they're angry, and their breath fogs with heat or frost depending on their mood. They burn hot, move fast, and rarely stay calm for long, but that same volatility makes them formidable in a fight and hard to pin down.",
+      "abilityBonuses": {
+        "str": 0,
+        "dex": 1,
+        "con": 2,
+        "int": 0,
+        "wis": 0,
+        "cha": 0
+      },
+      "bonuses": {
+        "hp": 1,
+        "stamina": 1,
+        "mana": 3
+      },
+      "size": "medium",
+      "speed": 30,
+      "senses": {
+        "darkvision": 30,
+        "blindsight": 0,
+        "tremorsense": 0,
+        "truesight": 0
+      },
+      "languages": "Common, Primordial",
+      "grantedFeatures": [
+        {
+          "featureName": "Elemental Attunement",
+          "level": 1
+        },
+        {
+          "featureName": "Volatile Surge",
+          "level": 1
+        }
+      ],
+      "grantedSkills": [
+        {
+          "skillName": "Survival",
+          "level": 1
+        },
+        {
+          "skillName": "Focus",
+          "level": 1
+        },
+        {
+          "skillName": "Cast",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Choir-born",
+      "img": "icons/svg/cowled.svg",
+      "description": "Choir-born are raised from childhood inside the hidden sects that whisper to the Hollow Star and the things that answer it - taught to chant in unison, to read omens in candle-smoke, and to give themselves over fully to whatever their order demands. Most who leave the choir carry the training with them for life: an unshakeable conviction, a voice that can fill a room, and an ear tuned to things most people are better off not hearing.",
+      "abilityBonuses": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 0,
+        "wis": 2,
+        "cha": 1
+      },
+      "bonuses": {
+        "hp": 0,
+        "stamina": 1,
+        "mana": 2
+      },
+      "size": "medium",
+      "speed": 30,
+      "senses": {
+        "darkvision": 30,
+        "blindsight": 0,
+        "tremorsense": 0,
+        "truesight": 0
+      },
+      "languages": "Common",
+      "grantedFeatures": [
+        {
+          "featureName": "Fanatical Devotion",
+          "level": 1
+        },
+        {
+          "featureName": "Whispered Communion",
+          "level": 1
+        }
+      ],
+      "grantedSkills": [
+        {
+          "skillName": "Diplomacy",
+          "level": 1
+        },
+        {
+          "skillName": "Intimidation",
+          "level": 1
+        },
+        {
+          "skillName": "Channel",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Wildkin",
+      "img": "icons/svg/pawprint.svg",
+      "description": "Wildkin are born in or driven early into the dungeon's feral warrens - raised alongside wolves, bonded to a cave spider's brood, or simply gone half-wild from years spent surviving among the beasts that hunt these tunnels. They move like their animal kin: low to the ground, fast to react, and always aware of what's circling just out of torchlight. Civilized folk find them a little unsettling company. The beasts don't.",
+      "abilityBonuses": {
+        "str": 1,
+        "dex": 1,
+        "con": 1,
+        "int": 0,
+        "wis": 0,
+        "cha": 0
+      },
+      "bonuses": {
+        "hp": 2,
+        "stamina": 2,
+        "mana": 0
+      },
+      "size": "medium",
+      "speed": 35,
+      "senses": {
+        "darkvision": 60,
+        "blindsight": 0,
+        "tremorsense": 10,
+        "truesight": 0
+      },
+      "languages": "Common",
+      "grantedFeatures": [
+        {
+          "featureName": "Predator's Instinct",
+          "level": 1
+        },
+        {
+          "featureName": "Thick Hide",
+          "level": 1
+        }
+      ],
+      "grantedSkills": [
+        {
+          "skillName": "Survival",
+          "level": 1
+        },
+        {
+          "skillName": "Athletics",
+          "level": 1
+        },
+        {
+          "skillName": "Pierce",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Starspawn",
+      "img": "icons/svg/eye.svg",
+      "description": "Starspawn carry something not of this world folded into their bloodline - a touch of the abyss that answered a summoning, brushed a birth, or simply seeped up through the stone one generation too close to a rift. Their thoughts run at odd angles to everyone else's, drifting toward geometries and certainties that don't quite belong here, but that same alien clarity lets them shrug off the fear and confusion that unravels ordinary minds.",
+      "abilityBonuses": {
+        "str": 0,
+        "dex": 0,
+        "con": 1,
+        "int": 2,
+        "wis": 0,
+        "cha": 0
+      },
+      "bonuses": {
+        "hp": 1,
+        "stamina": 0,
+        "mana": 3
+      },
+      "size": "medium",
+      "speed": 30,
+      "senses": {
+        "darkvision": 60,
+        "blindsight": 15,
+        "tremorsense": 0,
+        "truesight": 0
+      },
+      "languages": "Common, Deep Speech",
+      "grantedFeatures": [
+        {
+          "featureName": "Alien Mind",
+          "level": 1
+        },
+        {
+          "featureName": "Otherworldly Resilience",
+          "level": 1
+        }
+      ],
+      "grantedSkills": [
+        {
+          "skillName": "Lore",
+          "level": 1
+        },
+        {
+          "skillName": "Perception",
+          "level": 1
+        },
+        {
+          "skillName": "Cast",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Warrenkin",
+      "img": "icons/svg/net.svg",
+      "description": "Warrenkin come from the sprawling goblin-run tunnels that riddle the dungeon's upper levels - warrens of rope bridges, salvaged scrap, and a hundred half-finished traps. Small, quick, and endlessly resourceful, they're raised to solve problems with cunning long before they're strong enough to solve them with force. A Warrenkin who's lived to adulthood has usually out-thought something much bigger than themselves at least once, and remembers exactly how they did it.",
+      "abilityBonuses": {
+        "str": 0,
+        "dex": 2,
+        "con": 1,
+        "int": 0,
+        "wis": 0,
+        "cha": 0
+      },
+      "bonuses": {
+        "hp": 1,
+        "stamina": 2,
+        "mana": 0
+      },
+      "size": "small",
+      "speed": 30,
+      "senses": {
+        "darkvision": 60,
+        "blindsight": 0,
+        "tremorsense": 0,
+        "truesight": 0
+      },
+      "languages": "Common, Goblin",
+      "grantedFeatures": [
+        {
+          "featureName": "Warren Tactics",
+          "level": 1
+        },
+        {
+          "featureName": "Scavenger's Instinct",
+          "level": 1
+        }
+      ],
+      "grantedSkills": [
+        {
+          "skillName": "Stealth",
+          "level": 1
+        },
+        {
+          "skillName": "Thievery",
+          "level": 1
+        },
+        {
+          "skillName": "Throw",
+          "level": 1
+        }
+      ]
     }
   ]
 }

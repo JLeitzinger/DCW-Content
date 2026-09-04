@@ -1,0 +1,28 @@
+{
+  "_id": "fanatical-devotion",
+  "name": "Fanatical Devotion",
+  "type": "feature",
+  "img": "icons/svg/holy-shield.svg",
+  "system": {
+    "description": "Years of ritual conviction have hardened your will past the point of easy breaking. You have advantage on saving throws against being frightened or charmed, and once per long rest you can reroll a failed Channel check.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

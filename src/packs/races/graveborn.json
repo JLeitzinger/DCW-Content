@@ -1,0 +1,73 @@
+{
+  "_id": "graveborn",
+  "name": "Graveborn",
+  "type": "race",
+  "img": "icons/svg/bones.svg",
+  "system": {
+    "description": "Graveborn are the dead who did not stay down - risen by an errant necromantic working, a god's mercy, or a stubbornness that outlasted the grave itself - and who kept enough of themselves to walk back into the world as people rather than monsters. Cold to the touch and slow to tire, they carry the memory of the tomb in their bones: little frightens a Graveborn who has already died once, and little exhausts a body that no longer strictly needs to breathe.",
+    "abilityBonuses": {
+      "str": 0,
+      "dex": 0,
+      "con": 2,
+      "int": 0,
+      "wis": 1,
+      "cha": 0
+    },
+    "bonuses": {
+      "hp": 4,
+      "stamina": 0,
+      "mana": 1
+    },
+    "size": "medium",
+    "speed": 25,
+    "senses": {
+      "darkvision": 60,
+      "blindsight": 0,
+      "tremorsense": 0,
+      "truesight": 0
+    },
+    "languages": "Common",
+    "grantedFeatures": [
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.deathless-vigor",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.graveborn-chill",
+        "level": 1
+      }
+    ],
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Lore",
+        "level": 1
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Survival",
+        "level": 1
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Channel",
+        "level": 1
+      }
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

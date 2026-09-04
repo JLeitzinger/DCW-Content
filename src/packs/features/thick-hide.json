@@ -1,0 +1,28 @@
+{
+  "_id": "thick-hide",
+  "name": "Thick Hide",
+  "type": "feature",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "description": "Years spent in the company of tooth and claw have toughened your skin. You gain a +1 bonus to your effective damage reduction from any armor you have equipped, and you take no damage reduction penalty while unarmored.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

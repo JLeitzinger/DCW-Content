@@ -1,0 +1,28 @@
+{
+  "_id": "otherworldly-resilience",
+  "name": "Otherworldly Resilience",
+  "type": "feature",
+  "img": "icons/svg/radiation.svg",
+  "system": {
+    "description": "Something not quite of this reality steadies you against harm that should not exist. You have resistance to psychic damage, and once per long rest you can spend 2 mana to gain advantage on a single saving throw.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

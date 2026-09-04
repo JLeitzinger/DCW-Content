@@ -1,0 +1,28 @@
+{
+  "_id": "graveborn-chill",
+  "name": "Graveborn Chill",
+  "type": "feature",
+  "img": "icons/svg/frozen.svg",
+  "system": {
+    "description": "The cold of the grave clings to you and unsettles the living. Creatures within 5 feet of you that can see you have disadvantage on saving throws against being frightened, and you have resistance to cold damage.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

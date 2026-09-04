@@ -384,6 +384,90 @@
       "img": "icons/svg/eye.svg",
       "description": "Your eyes have seen beyond reality. You can peer into the void to see invisible creatures, detect lies, and sense magic. Creatures that meet your gaze must succeed on a Wisdom save or become frightened for 1 minute. You have advantage on saves against illusions and charm effects.",
       "grantedSkills": []
+    },
+    {
+      "name": "Amorphous Resilience",
+      "img": "icons/svg/biohazard.svg",
+      "description": "Your semisolid body has no vital organs to target and can flow through cracks a rigid frame never could. You have advantage on saving throws against being restrained or squeezed into a smaller space, and critical hits against you deal only normal damage.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Caustic Secretion",
+      "img": "icons/svg/acid.svg",
+      "description": "Your body weeps a mild acid when threatened. As a reaction when a creature hits you with a melee attack, you can spend 1 stamina to deal 1d4 acid damage to it. You have resistance to acid damage.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Deathless Vigor",
+      "img": "icons/svg/heal.svg",
+      "description": "You have already died once, and your body no longer negotiates with exhaustion the way living flesh does. You don't need to eat, drink, or breathe, and you have advantage on saving throws against poison and disease. When you would be reduced to 0 hit points but not killed outright, you can spend 2 stamina to instead drop to 1 hit point.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Graveborn Chill",
+      "img": "icons/svg/frozen.svg",
+      "description": "The cold of the grave clings to you and unsettles the living. Creatures within 5 feet of you that can see you have disadvantage on saving throws against being frightened, and you have resistance to cold damage.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Elemental Attunement",
+      "img": "icons/svg/fire-shield.svg",
+      "description": "When you take this trait, choose one damage type: acid, cold, fire, lightning, or thunder. You have resistance to that damage type, and once per long rest you can infuse a weapon attack with it, adding 1d4 damage of the chosen type to the hit.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Volatile Surge",
+      "img": "icons/svg/explosion.svg",
+      "description": "When you are reduced to a quarter of your maximum hit points or fewer, elemental energy floods out of you. You can spend 3 mana to unleash a burst that deals 2d6 damage of your Elemental Attunement's type to each creature within 10 feet of you (allies included - choose your moment carefully). Usable once per long rest.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Fanatical Devotion",
+      "img": "icons/svg/holy-shield.svg",
+      "description": "Years of ritual conviction have hardened your will past the point of easy breaking. You have advantage on saving throws against being frightened or charmed, and once per long rest you can reroll a failed Channel check.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Whispered Communion",
+      "img": "icons/svg/sound.svg",
+      "description": "You have learned to listen for the voice your order serves, even when no ritual is underway. Once per long rest, you can spend 10 minutes in quiet communion to ask a single yes-or-no question and sense whether the answer is true - though the source of the answer is not always trustworthy.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Predator's Instinct",
+      "img": "icons/svg/target.svg",
+      "description": "You've learned to read a hunt the way a wolf pack does - who's wounded, who's about to bolt, where the exit is. You have advantage on Perception checks to track creatures, and you can't be surprised while at least one hostile creature is within 30 feet of you.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Thick Hide",
+      "img": "icons/svg/shield.svg",
+      "description": "Years spent in the company of tooth and claw have toughened your skin. You gain a +1 bonus to your effective damage reduction from any armor you have equipped, and you take no damage reduction penalty while unarmored.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Alien Mind",
+      "img": "icons/svg/terror.svg",
+      "description": "Your thoughts don't run along paths a mortal mind can easily unravel. You have advantage on saving throws against being frightened, charmed, or having your thoughts read, and creatures attempting to telepathically contact you sense only unsettling static unless you allow otherwise.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Otherworldly Resilience",
+      "img": "icons/svg/radiation.svg",
+      "description": "Something not quite of this reality steadies you against harm that should not exist. You have resistance to psychic damage, and once per long rest you can spend 2 mana to gain advantage on a single saving throw.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Warren Tactics",
+      "img": "icons/svg/combat.svg",
+      "description": "You grew up fighting in packs against things much bigger than you. When you attack a creature that is within 5 feet of at least one of your allies, you gain a +1 bonus to the attack roll.",
+      "grantedSkills": []
+    },
+    {
+      "name": "Scavenger's Instinct",
+      "img": "icons/svg/coins.svg",
+      "description": "A lifetime of picking warrens clean has sharpened your eye for what's worth taking. You have advantage on checks to find hidden objects, traps, or valuables, and once per long rest you can reroll a failed Thievery check.",
+      "grantedSkills": []
     }
   ]
 }

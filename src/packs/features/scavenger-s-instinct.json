@@ -1,0 +1,28 @@
+{
+  "_id": "scavenger-s-instinct",
+  "name": "Scavenger's Instinct",
+  "type": "feature",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "description": "A lifetime of picking warrens clean has sharpened your eye for what's worth taking. You have advantage on checks to find hidden objects, traps, or valuables, and once per long rest you can reroll a failed Thievery check.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

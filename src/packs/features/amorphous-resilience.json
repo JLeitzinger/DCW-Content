@@ -1,0 +1,28 @@
+{
+  "_id": "amorphous-resilience",
+  "name": "Amorphous Resilience",
+  "type": "feature",
+  "img": "icons/svg/biohazard.svg",
+  "system": {
+    "description": "Your semisolid body has no vital organs to target and can flow through cracks a rigid frame never could. You have advantage on saving throws against being restrained or squeezed into a smaller space, and critical hits against you deal only normal damage.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

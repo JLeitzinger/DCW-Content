@@ -1,0 +1,28 @@
+{
+  "_id": "volatile-surge",
+  "name": "Volatile Surge",
+  "type": "feature",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "description": "When you are reduced to a quarter of your maximum hit points or fewer, elemental energy floods out of you. You can spend 3 mana to unleash a burst that deals 2d6 damage of your Elemental Attunement's type to each creature within 10 feet of you (allies included - choose your moment carefully). Usable once per long rest.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

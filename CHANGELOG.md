@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.17.0
+
+- Seven new playable races, each themed after one of the dungeon's seven monster factions
+  (`data/monsters-manifest.json`'s `themeCategory`s) and given two new, faction-flavored racial
+  Features (`data/features-manifest.json`): **Vashkari** (alchemical, ooze/construct-kin -
+  Amorphous Resilience, Caustic Secretion), **Graveborn** (undead, the risen dead who stayed
+  themselves - Deathless Vigor, Graveborn Chill), **Cindral** (elemental-touched bloodline -
+  Elemental Attunement, Volatile Surge), **Choir-born** (cult, raised in the Hollow Star's sects -
+  Fanatical Devotion, Whispered Communion), **Wildkin** (feral, beast-raised - Predator's Instinct,
+  Thick Hide), **Starspawn** (abyssal, aberration-touched - Alien Mind, Otherworldly Resilience),
+  and **Warrenkin** (goblin_warren, small and pack-cunning - Warren Tactics, Scavenger's Instinct).
+  All 7 follow the same ability-bonus/skill-budget rules as the existing 10 races.
+
 ## 1.16.0
 
 - New `goblin_warren` theme category (`data/narrative-lexicon.json`) and a matching six-monster

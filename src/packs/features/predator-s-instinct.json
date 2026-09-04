@@ -1,0 +1,28 @@
+{
+  "_id": "predator-s-instinct",
+  "name": "Predator's Instinct",
+  "type": "feature",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "You've learned to read a hunt the way a wolf pack does - who's wounded, who's about to bolt, where the exit is. You have advantage on Perception checks to track creatures, and you can't be surprised while at least one hostile creature is within 30 feet of you.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

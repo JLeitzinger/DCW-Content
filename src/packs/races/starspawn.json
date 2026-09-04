@@ -1,0 +1,73 @@
+{
+  "_id": "starspawn",
+  "name": "Starspawn",
+  "type": "race",
+  "img": "icons/svg/eye.svg",
+  "system": {
+    "description": "Starspawn carry something not of this world folded into their bloodline - a touch of the abyss that answered a summoning, brushed a birth, or simply seeped up through the stone one generation too close to a rift. Their thoughts run at odd angles to everyone else's, drifting toward geometries and certainties that don't quite belong here, but that same alien clarity lets them shrug off the fear and confusion that unravels ordinary minds.",
+    "abilityBonuses": {
+      "str": 0,
+      "dex": 0,
+      "con": 1,
+      "int": 2,
+      "wis": 0,
+      "cha": 0
+    },
+    "bonuses": {
+      "hp": 1,
+      "stamina": 0,
+      "mana": 3
+    },
+    "size": "medium",
+    "speed": 30,
+    "senses": {
+      "darkvision": 60,
+      "blindsight": 15,
+      "tremorsense": 0,
+      "truesight": 0
+    },
+    "languages": "Common, Deep Speech",
+    "grantedFeatures": [
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.alien-mind",
+        "level": 1
+      },
+      {
+        "featureUuid": "Compendium.dcw-content.features.Item.otherworldly-resilience",
+        "level": 1
+      }
+    ],
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Lore",
+        "level": 1
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Perception",
+        "level": 1
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Cast",
+        "level": 1
+      }
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

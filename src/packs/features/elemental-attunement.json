@@ -1,0 +1,28 @@
+{
+  "_id": "elemental-attunement",
+  "name": "Elemental Attunement",
+  "type": "feature",
+  "img": "icons/svg/fire-shield.svg",
+  "system": {
+    "description": "When you take this trait, choose one damage type: acid, cold, fire, lightning, or thunder. You have resistance to that damage type, and once per long rest you can infuse a weapon attack with it, adding 1d4 damage of the chosen type to the hit.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "alien-mind",
+  "name": "Alien Mind",
+  "type": "feature",
+  "img": "icons/svg/terror.svg",
+  "system": {
+    "description": "Your thoughts don't run along paths a mortal mind can easily unravel. You have advantage on saving throws against being frightened, charmed, or having your thoughts read, and creatures attempting to telepathically contact you sense only unsettling static unless you allow otherwise.",
+    "grantedSkills": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}
