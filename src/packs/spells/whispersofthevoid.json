@@ -1,0 +1,42 @@
+{
+  "_id": "WhispersoftheVoid",
+  "name": "Whispers of the Void",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You pour the maddening susurrus of the void directly into a creature's mind. The target takes psychic damage and must succeed on a Wisdom save or have disadvantage on attack rolls and ability checks for the duration as the whispers gnaw at its concentration.</p><p><strong>Scaling:</strong> At dice count 3, the target also has disadvantage on saving throws. At dice count 6, you can target a second creature within range. At dice count 9, while the target is affected, you can sense its surface emotions whenever you're within 60 feet of it. At dice count 12, the duration increases to 10 minutes. At dice count 15, the whispers spread to any ally of the target within 10 feet of it.</p>",
+    "spellLevel": 3,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "enchantment",
+    "prowess": 4,
+    "castingTime": "instantaneous",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

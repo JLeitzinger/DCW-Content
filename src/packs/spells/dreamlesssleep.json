@@ -1,0 +1,42 @@
+{
+  "_id": "DreamlessSleep",
+  "name": "Dreamless Sleep",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You guide a willing creature into a deep, restorative sleep untroubled by dreams, nightmares, or magical intrusion into its mind. The creature wakes having gained the benefit of a full rest, even if only a short one was actually taken.</p><p><strong>Scaling:</strong> At dice count 3, the creature also gains advantage on saving throws against being charmed or frightened for 1 hour after waking. At dice count 6, you can lull up to 3 willing creatures at once. At dice count 9, the sleep also cures one level of exhaustion. At dice count 12, casting time drops to instantaneous. At dice count 15, you can extend the effect to any creature within 30 feet, willing or not, that fails a Wisdom save.</p>",
+    "spellLevel": 2,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "enchantment",
+    "prowess": 3,
+    "castingTime": "1 round",
+    "range": "touch",
+    "duration": "8 hours",
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

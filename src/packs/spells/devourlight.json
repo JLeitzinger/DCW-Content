@@ -1,0 +1,42 @@
+{
+  "_id": "DevourLight",
+  "name": "Devour Light",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You tear open a sliver of the void at a point you can see, and it hungrily consumes light and warmth in a 15-foot radius. Each creature in the area takes necrotic damage and is blinded until the end of its next turn; the area is filled with magical darkness for the duration.</p><p><strong>Scaling:</strong> At dice count 3, the radius increases to 20 feet. At dice count 6, the darkness lingers for 1 minute instead. At dice count 9, the damage increases substantially. At dice count 12, creatures that start their turn in the area take damage again. At dice count 15, the void consumes healing magic cast within it, negating it entirely.</p>",
+    "spellLevel": 4,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "necromancy",
+    "prowess": 6,
+    "castingTime": "instantaneous",
+    "range": "30 feet",
+    "duration": "1 round",
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

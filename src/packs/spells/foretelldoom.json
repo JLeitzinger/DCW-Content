@@ -1,0 +1,42 @@
+{
+  "_id": "ForetellDoom",
+  "name": "Foretell Doom",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You speak a fragment of a creature's fate aloud, and the weight of it settles over the target. The target has disadvantage on the next saving throw it makes, and the next attack roll made against it by an ally has advantage.</p><p><strong>Scaling:</strong> At dice count 3, the effect applies to the next two rolls of each type. At dice count 6, you can target a second creature within range. At dice count 9, the duration increases to 10 minutes. At dice count 12, the doom also reduces the target's speed by 10 feet for its duration. At dice count 15, you can foretell the doom of every enemy you can see.</p>",
+    "spellLevel": 2,
+    "diceCount": 1,
+    "castStat": "wis",
+    "category": "divination",
+    "prowess": 3,
+    "castingTime": "instantaneous",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

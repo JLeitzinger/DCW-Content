@@ -1,0 +1,42 @@
+{
+  "_id": "Rewind",
+  "name": "Rewind",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>The instant after a creature you can see takes damage, you unravel the last few seconds and undo some of the harm. The creature regains a portion of the hit points it just lost.</p><p><strong>Scaling:</strong> At dice count 3, the creature regains all of the damage it just took. At dice count 6, you can also remove one condition imposed by the same instance of damage. At dice count 9, the spell can be cast as your reaction rather than using your turn. At dice count 12, you can target two creatures who were damaged in the same round. At dice count 15, the rewind is total: the triggering attack is undone as though it never happened.</p>",
+    "spellLevel": 5,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "transmutation",
+    "prowess": 7,
+    "castingTime": "instantaneous",
+    "range": "30 feet",
+    "duration": "instantaneous",
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

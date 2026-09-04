@@ -1,0 +1,42 @@
+{
+  "_id": "CallLightning",
+  "name": "Call Lightning",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>A storm cloud forms overhead, crackling and ready to strike wherever you point. On later turns while this spell lasts, you can call down a bolt at a point you can see within range; each creature within 5 feet of that point takes lightning damage.</p><p><strong>Scaling:</strong> At dice count 3, the damage increases substantially. At dice count 6, you can call down two bolts at different points with a single action. At dice count 9, the storm also creates heavy rain that douses flames and obscures vision in the area. At dice count 12, you can call a bolt as a reaction. At dice count 15, every bolt you call strikes all valid targets in the area, not just one.</p>",
+    "spellLevel": 3,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "evocation",
+    "prowess": 4,
+    "castingTime": "instantaneous",
+    "range": "120 feet",
+    "duration": "concentration, 10 minutes",
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

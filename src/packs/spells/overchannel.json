@@ -1,0 +1,42 @@
+{
+  "_id": "Overchannel",
+  "name": "Overchannel",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You force more power through yourself than is safe to channel. The next offensive spell you cast before the end of your turn deals maximum possible effect instead of an average roll, but you take a measure of damage from the strain immediately after it resolves.</p><p><strong>Scaling:</strong> At dice count 3, the strain damage is halved. At dice count 6, the strain damage no longer applies. At dice count 9, the empowered spell also ignores resistance. At dice count 12, you can overchannel twice before the end of your turn. At dice count 15, overchanneling costs no strain and can be used on every spell you cast this turn.</p>",
+    "spellLevel": 5,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "evocation",
+    "prowess": 7,
+    "castingTime": "instantaneous",
+    "range": "self",
+    "duration": "1 round",
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

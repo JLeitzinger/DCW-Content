@@ -1,0 +1,42 @@
+{
+  "_id": "TrapCard",
+  "name": "Trap Card",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You set a hidden ward that springs to life the instant it's needed. The next time a creature hits you with an attack or targets you with a spell before this ends, the trap triggers: the triggering creature takes damage and, if it hasn't yet resolved its own effect, that effect fails.</p><p><strong>Scaling:</strong> At dice count 3, the damage increases substantially. At dice count 6, the trap can trigger twice before it's spent. At dice count 9, the duration increases to 8 hours. At dice count 12, triggering the trap also grants you advantage on your next attack against the triggering creature. At dice count 15, the trap protects every ally within 5 feet of you as well.</p>",
+    "spellLevel": 2,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "abjuration",
+    "prowess": 3,
+    "castingTime": "instantaneous",
+    "range": "self",
+    "duration": "1 hour",
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "BaitedSwap",
+  "name": "Baited Swap",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You trade places with a creature within range in a blink of misdirection, willing or not (an unwilling creature can negate the swap with a successful Charisma save). You and the target instantly swap positions.</p><p><strong>Scaling:</strong> At dice count 3, the range increases to 90 feet. At dice count 6, the target has disadvantage on the save if it's currently unaware of you. At dice count 9, you can swap a willing ally into the target's space instead of yourself. At dice count 12, the swap also disorients the target, giving it disadvantage on its next attack roll. At dice count 15, you can swap the positions of any two creatures you can see, without needing to be one of them.</p>",
+    "spellLevel": 3,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "conjuration",
+    "prowess": 4,
+    "castingTime": "instantaneous",
+    "range": "60 feet",
+    "duration": "instantaneous",
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

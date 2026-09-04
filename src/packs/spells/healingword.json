@@ -1,0 +1,42 @@
+{
+  "_id": "HealingWord",
+  "name": "Healing Word",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You speak a single word of divine power, and a wave of healing energy washes over a creature you can see, restoring a modest amount of hit points - less than a hands-on healing spell, but fast enough to speak between blows.</p><p><strong>Scaling:</strong> At dice count 3, the healing increases. At dice count 6, you can target a second creature within range. At dice count 9, the word also grants the target advantage on its next saving throw. At dice count 12, the range increases to 60 feet. At dice count 15, every ally within 30 feet of the target is healed as well.</p>",
+    "spellLevel": 1,
+    "diceCount": 1,
+    "castStat": "wis",
+    "category": "abjuration",
+    "prowess": 2,
+    "castingTime": "instantaneous",
+    "range": "30 feet",
+    "duration": "instantaneous",
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

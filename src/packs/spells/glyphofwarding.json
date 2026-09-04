@@ -1,0 +1,42 @@
+{
+  "_id": "GlyphofWarding",
+  "name": "Glyph of Warding",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You inscribe a hidden rune onto a surface or object, primed to trigger when your chosen condition is met. When triggered, the rune detonates, dealing damage to the triggering creature and any creature within 10 feet of it. Only you and creatures you designate can bypass it safely.</p><p><strong>Scaling:</strong> At dice count 3, the damage increases substantially. At dice count 6, you can inscribe two glyphs from a single casting. At dice count 9, the glyph also applies a condition of your choice (blinded, deafened, or restrained) to the triggering creature. At dice count 12, the glyph's duration extends to 1 week. At dice count 15, the glyph is permanent until triggered or dispelled.</p>",
+    "spellLevel": 3,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "abjuration",
+    "prowess": 4,
+    "castingTime": "1 round",
+    "range": "touch",
+    "duration": "8 hours",
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

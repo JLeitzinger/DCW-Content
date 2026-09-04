@@ -1,0 +1,42 @@
+{
+  "_id": "GarnishWages",
+  "name": "Garnish Wages",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You slap a curse of crushing debt onto a creature, and it takes necrotic damage as the weight of it lands. Until the curse ends, whenever the target would regain hit points from any source, it regains only half that amount - the rest is seized to cover the balance.</p><p><strong>Scaling:</strong> At dice count 3, the curse also prevents the target from gaining temporary hit points for its duration. At dice count 6, the damage increases substantially. At dice count 9, the healing reduction becomes total: the target regains no hit points at all while cursed. At dice count 12, the duration increases to 10 minutes. At dice count 15, the seized healing instead flows to you or an ally you designate.</p>",
+    "spellLevel": 3,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "necromancy",
+    "prowess": 4,
+    "castingTime": "instantaneous",
+    "range": "30 feet",
+    "duration": "1 minute",
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

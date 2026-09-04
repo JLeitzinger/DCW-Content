@@ -1,0 +1,42 @@
+{
+  "_id": "MirrorTrick",
+  "name": "Mirror Trick",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You conjure a perfect illusory duplicate of yourself in your space. The next time a creature targets you with an attack, it instead strikes the duplicate, which absorbs the hit and pops like a soap bubble, ending the spell.</p><p><strong>Scaling:</strong> At dice count 3, you conjure two duplicates instead of one. At dice count 6, the duplicate also mimics one of your movements each round, making it harder to tell which of you is real. At dice count 9, the duplicate can absorb a spell instead of only a physical attack. At dice count 12, the duplicate lasts until it's targeted, regardless of time elapsed. At dice count 15, you conjure a duplicate for every ally within 30 feet as well.</p>",
+    "spellLevel": 2,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "illusion",
+    "prowess": 3,
+    "castingTime": "instantaneous",
+    "range": "self",
+    "duration": "1 minute",
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}
