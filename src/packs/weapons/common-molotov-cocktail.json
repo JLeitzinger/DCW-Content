@@ -1,0 +1,45 @@
+{
+  "_id": "common-molotov-cocktail",
+  "name": "Molotov Cocktail",
+  "type": "weapon",
+  "img": "icons/consumables/potions/potion-flask-corked-flat-red.webp",
+  "system": {
+    "description": "A glass bottle filled with fuel and stoppered with a burning rag. Shatters into a spreading wash of fire on impact.",
+    "quantity": 1,
+    "weight": 1.5,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+    },
+    "rarity": "common",
+    "effort": 1,
+    "range": "20 feet",
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Throw",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

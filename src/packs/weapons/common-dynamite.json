@@ -1,0 +1,45 @@
+{
+  "_id": "common-dynamite",
+  "name": "Dynamite",
+  "type": "weapon",
+  "img": "icons/weapons/thrown/dynamite-red.webp",
+  "system": {
+    "description": "A bundled stick of explosive charge with a short fuse. Loud, heavy, and merciless up close.",
+    "quantity": 1,
+    "weight": 1,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d10",
+      "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+    },
+    "rarity": "common",
+    "effort": 1,
+    "range": "20 feet",
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Throw",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

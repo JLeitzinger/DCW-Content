@@ -883,6 +883,204 @@
         }
       ],
       "grantedFeatures": []
+    },
+    {
+      "name": "Revolver",
+      "img": "icons/weapons/guns/pistol-revolver-steel.webp",
+      "description": "A compact six-shot handgun, easy to conceal and quick to draw.",
+      "quantity": 1,
+      "weight": 2,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d6",
+        "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "60 feet",
+      "grantedSkills": [
+        {
+          "skillName": "Shoot",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Submachine Gun",
+      "img": "icons/weapons/guns/machine-gun-sub-pistol.webp",
+      "description": "A lightweight automatic weapon that sprays fire in a wide, close-range arc.",
+      "quantity": 1,
+      "weight": 6,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d6",
+        "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "40 feet",
+      "grantedSkills": [
+        {
+          "skillName": "Shoot",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Pump Shotgun",
+      "img": "icons/weapons/guns/shotgun-pump.webp",
+      "description": "A pump-action shotgun loaded with buckshot. Devastating up close, nearly useless at range.",
+      "quantity": 1,
+      "weight": 7,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d10",
+        "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "30 feet",
+      "grantedSkills": [
+        {
+          "skillName": "Shoot",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Assault Rifle",
+      "img": "icons/weapons/guns/rifle-assault-carbine.webp",
+      "description": "A rugged automatic rifle built for sustained fire at range.",
+      "quantity": 1,
+      "weight": 8,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d8",
+        "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "120 feet",
+      "grantedSkills": [
+        {
+          "skillName": "Shoot",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Hunting Rifle",
+      "img": "icons/weapons/guns/rifle-bolt-action.webp",
+      "description": "A bolt-action rifle built for a single, precise shot from a great distance.",
+      "quantity": 1,
+      "weight": 8,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d10",
+        "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "180 feet",
+      "grantedSkills": [
+        {
+          "skillName": "Shoot",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Molotov Cocktail",
+      "img": "icons/consumables/potions/potion-flask-corked-flat-red.webp",
+      "description": "A glass bottle filled with fuel and stoppered with a burning rag. Shatters into a spreading wash of fire on impact.",
+      "quantity": 1,
+      "weight": 1.5,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d6",
+        "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "20 feet",
+      "grantedSkills": [
+        {
+          "skillName": "Throw",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Pipe Bomb",
+      "img": "icons/weapons/ammunition/explosive-dynamite.webp",
+      "description": "A length of pipe packed with explosive and capped at both ends. Crude, unstable, and effective.",
+      "quantity": 1,
+      "weight": 2,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d6",
+        "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "20 feet",
+      "grantedSkills": [
+        {
+          "skillName": "Throw",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Frag Grenade",
+      "img": "icons/weapons/thrown/grenade-frag-green.webp",
+      "description": "A hand grenade that showers the surrounding area with shrapnel on detonation.",
+      "quantity": 1,
+      "weight": 1,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d8",
+        "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "30 feet",
+      "grantedSkills": [
+        {
+          "skillName": "Throw",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Dynamite",
+      "img": "icons/weapons/thrown/dynamite-red.webp",
+      "description": "A bundled stick of explosive charge with a short fuse. Loud, heavy, and merciless up close.",
+      "quantity": 1,
+      "weight": 1,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d10",
+        "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "20 feet",
+      "grantedSkills": [
+        {
+          "skillName": "Throw",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
     }
   ]
 }

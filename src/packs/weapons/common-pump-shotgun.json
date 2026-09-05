@@ -1,0 +1,45 @@
+{
+  "_id": "common-pump-shotgun",
+  "name": "Pump Shotgun",
+  "type": "weapon",
+  "img": "icons/weapons/guns/shotgun-pump.webp",
+  "system": {
+    "description": "A pump-action shotgun loaded with buckshot. Devastating up close, nearly useless at range.",
+    "quantity": 1,
+    "weight": 7,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d10",
+      "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+    },
+    "rarity": "common",
+    "effort": 1,
+    "range": "30 feet",
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Shoot",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

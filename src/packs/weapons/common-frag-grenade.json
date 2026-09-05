@@ -1,0 +1,45 @@
+{
+  "_id": "common-frag-grenade",
+  "name": "Frag Grenade",
+  "type": "weapon",
+  "img": "icons/weapons/thrown/grenade-frag-green.webp",
+  "system": {
+    "description": "A hand grenade that showers the surrounding area with shrapnel on detonation.",
+    "quantity": 1,
+    "weight": 1,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d8",
+      "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+    },
+    "rarity": "common",
+    "effort": 1,
+    "range": "30 feet",
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Throw",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

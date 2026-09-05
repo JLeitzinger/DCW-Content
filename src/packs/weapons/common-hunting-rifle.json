@@ -1,0 +1,45 @@
+{
+  "_id": "common-hunting-rifle",
+  "name": "Hunting Rifle",
+  "type": "weapon",
+  "img": "icons/weapons/guns/rifle-bolt-action.webp",
+  "system": {
+    "description": "A bolt-action rifle built for a single, precise shot from a great distance.",
+    "quantity": 1,
+    "weight": 8,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d10",
+      "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+    },
+    "rarity": "common",
+    "effort": 1,
+    "range": "180 feet",
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Shoot",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}
