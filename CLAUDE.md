@@ -398,7 +398,7 @@ Magical spells and rituals.
 
 **Offensive spells** have their own damage roll, separate from the cast roll:
 - `offensive` - boolean, true for damage-dealing spells (Evocation spells are the obvious candidates). Defaults to `false`.
-- `roll.diceNum` / `roll.diceSize` / `roll.diceBonus` - damage formula fields, same shape as a weapon's (see the **Weapon** Items section above). `diceBonus` should reference the spell's own `castStat`, e.g. `+@int.mod`. Only meaningful when `offensive` is `true`; defaults to `{diceNum: 1, diceSize: "d6", diceBonus: ""}` otherwise.
+- `roll.diceNum` / `roll.diceSize` / `roll.diceBonus` - damage formula fields, same shape as a weapon's (see the **Weapon** Items section above). `diceBonus` should reference the spell's own `castStat`, e.g. `+@int.mod` - do **not** add a `ceil(@lvl/2)` term yourself, unlike a weapon's `diceBonus`: `dccworldSpell#prepareDerivedData` (item-spell.mjs) appends that automatically for every offensive spell, so authoring it in content would double it. Only meaningful when `offensive` is `true`; defaults to `{diceNum: 1, diceSize: "d6", diceBonus: ""}` otherwise.
 - Set both directly in the spell's `data/spells-manifest.json` entry - `npm run generate:spells` emits them as-is, no manual per-item editing needed.
 
 **Spell Scaling Rules:**
