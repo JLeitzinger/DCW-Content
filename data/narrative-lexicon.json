@@ -2,9 +2,26 @@
   "_comment": "Word banks and sentence-frame templates for the fully-procedural floor narrative generator (scripts/lib/level-gen/StoryGenerator.mjs, JournalBuilder.mjs). Templates use {slot} placeholders filled from this same category's other arrays, so output stays thematically consistent rather than mad-lib random. Add a themeCategory here and it's immediately available via data/floors-manifest.json's themeCategory field.",
   "themeCategories": {
     "alchemical": {
-      "domainNouns": ["Vaults", "Cisterns", "Retorts", "Crucibles", "Wards"],
-      "adjectives": ["Corrupted", "Weeping", "Volatile", "Gilded", "Unstable"],
-      "threats": ["the Alchemist's Guild", "the Distillers of Ash", "a rogue homunculus conclave", "the Verdigris Cabal"],
+      "domainNouns": [
+        "Vaults",
+        "Cisterns",
+        "Retorts",
+        "Crucibles",
+        "Wards"
+      ],
+      "adjectives": [
+        "Corrupted",
+        "Weeping",
+        "Volatile",
+        "Gilded",
+        "Unstable"
+      ],
+      "threats": [
+        "the Alchemist's Guild",
+        "the Distillers of Ash",
+        "a rogue homunculus conclave",
+        "the Verdigris Cabal"
+      ],
       "lightColor": "#7ee08c",
       "torchColor": "#c98cff",
       "darknessLevel": 0.65,
@@ -19,16 +36,71 @@
         "A half-transmuted survivor is trapped between forms in a side chamber, begging for the process to be reversed or finished.",
         "The floor's water supply has been dosed with a reagent that's slowly changing everything that drinks it."
       ],
-      "bossTitles": ["Grand Distiller of {threat}", "Herald of {threat}", "the Last Formula of {threat}"],
+      "bossTitles": [
+        "Grand Distiller of {threat}",
+        "Herald of {threat}",
+        "the Last Formula of {threat}"
+      ],
       "friendlyNpcHooks": [
         "A former apprentice of {threat} who fled mid-formula and has been hiding here ever since, desperate for someone to finish what they started - or stop it.",
         "A half-transmuted survivor, more lucid than they look, who knows the layout of {threat}'s workshops better than anyone still willing to talk about them."
+      ],
+      "detailTemplates": [
+        "A faint chemical tang clings to everything, sharp enough to sting at the back of the throat.",
+        "Runnels in the floor channel some old spill toward a drain that hasn't worked in a long time.",
+        "Glassware, some of it still faintly warm, lies abandoned mid-experiment."
+      ],
+      "castTemplates": [
+        "{name}, a former apprentice who still wears their guild sash out of habit, mixing reagents nobody asked for anymore.",
+        "{name}, a lab-rat turned unnervingly loyal familiar after one experiment too many, still answering to a name it probably shouldn't remember."
+      ],
+      "sideQuestTemplates": [
+        "A crate of mislabeled reagents has been swapped with a crate of mundane vegetables, and neither side has noticed yet - sorting out which crate is which before someone drinks from the wrong one is trivial, but nobody else seems inclined to do it.",
+        "{cast} insists a particular shade of blue means a batch is ruined and a particular shade of green means it's perfect, and can't remember which shade is which - has been guessing for weeks.",
+        "Something in the {domain} has started fermenting rather than distilling, and the smell alone is now a bigger problem than the original formula ever was.",
+        "A junior alchemist bet their whole stipend that a particular reagent would explode if shaken exactly right, and is now trying to recruit test subjects."
+      ],
+      "breatherTemplates": [
+        "A shelf of failed experiments sits labeled, in careful handwriting, \"DO NOT.\" Nobody has followed the instruction in some time.",
+        "Chalk equations cover one wall, corrected and re-corrected in three different hands.",
+        "A cracked retort has been repurposed as a plant pot for something that probably shouldn't be growing indoors."
+      ],
+      "secretPayloads": [
+        {
+          "leverage": "A partially-legible formula that, properly read, identifies the single unstable compound {threat}'s entire operation depends on.",
+          "payoff": "If the party understood the unstable-compound formula, they can threaten to destabilize it in front of {threat} - a credible bluff (or a real one) that buys hesitation, a surrender, or a bargaining position instead of a straight fight."
+        },
+        {
+          "leverage": "A ledger of debts {threat} owes to guild suppliers who were never paid - proof the operation is one bad delivery away from total collapse.",
+          "payoff": "Presenting the ledger to {threat} mid-confrontation forces a choice between the fight and the funding - a distracted or divided {threat} is a noticeably easier one."
+        }
+      ],
+      "promptedFlavorTemplates": [
+        "If asked what the smell is: \"That's not supposed to still be doing that.\"",
+        "If asked who's in charge here: nobody in the room actually knows - {threat} delegates everything and remembers none of it."
       ]
     },
     "undead": {
-      "domainNouns": ["Crypts", "Ossuaries", "Catacombs", "Barrows", "Charnel Halls"],
-      "adjectives": ["Silent", "Hollow", "Forsaken", "Restless", "Grave-Cold"],
-      "threats": ["the Bone Choir", "a nameless lich-court", "the Widow of Ash Barrow", "the unquiet garrison"],
+      "domainNouns": [
+        "Crypts",
+        "Ossuaries",
+        "Catacombs",
+        "Barrows",
+        "Charnel Halls"
+      ],
+      "adjectives": [
+        "Silent",
+        "Hollow",
+        "Forsaken",
+        "Restless",
+        "Grave-Cold"
+      ],
+      "threats": [
+        "the Bone Choir",
+        "a nameless lich-court",
+        "the Widow of Ash Barrow",
+        "the unquiet garrison"
+      ],
       "lightColor": "#7fb8ff",
       "torchColor": "#8fffb0",
       "darknessLevel": 0.8,
@@ -43,16 +115,71 @@
         "A single still-living prisoner has been kept alive for decades as a witness to something {threat} doesn't want forgotten - or remembered.",
         "Bones are going missing from sealed tombs, one at a time, in a pattern that spells out a name."
       ],
-      "bossTitles": ["Warden of {threat}", "the Unburied Voice of {threat}", "Herald of {threat}"],
+      "bossTitles": [
+        "Warden of {threat}",
+        "the Unburied Voice of {threat}",
+        "Herald of {threat}"
+      ],
       "friendlyNpcHooks": [
         "The single still-living prisoner {threat} has kept as a witness for decades, finally free enough to talk if someone will listen.",
         "A grave robber who turned back after seeing what {threat} does to the freshly dead, and hasn't stopped feeling watched since."
+      ],
+      "detailTemplates": [
+        "Cold radiates from the walls in a way no draft can explain.",
+        "Dust lies undisturbed except for a single set of tracks, too fresh for how old this place looks.",
+        "Every surface bears a name, scratched by hand, in more languages than should have ever met down here."
+      ],
+      "castTemplates": [
+        "{name}, a spirit who insists on proper introductions before anything else, and grows genuinely offended when skipped.",
+        "{name}, the last member of the garrison who still remembers being alive, and would very much like someone to talk to about it."
+      ],
+      "sideQuestTemplates": [
+        "{cast} has misplaced something - a ring, a name, a single memory - and won't move on until it's found, though the search itself is entirely harmless.",
+        "A string of graves has been rearranged into a message no one still living can read, and {threat} isn't the one doing it.",
+        "Something down here keeps sweeping the floor with meticulous, pointless care, and has done so for what is very obviously centuries.",
+        "A single candle in the {domain} has been burning without fuel for as long as anyone remembers, and someone left a note asking that it never be blown out."
+      ],
+      "breatherTemplates": [
+        "A row of small offerings - coins, flowers long since turned to dust, a child's toy - line one wall, undisturbed.",
+        "Names are carved into every surface here, patient and unhurried, as if whoever did it had all the time in the world. They did.",
+        "A chair sits facing the wall, as though someone were meant to return and sit in it."
+      ],
+      "secretPayloads": [
+        {
+          "leverage": "The true, forgotten name {threat} answered to while it was still alive - the one thing it has never stopped listening for.",
+          "payoff": "Speaking {threat}'s true name aloud during the confrontation visibly rattles it - a moment of hesitation the party can use, or, chosen carefully, a chance to actually reach whoever it used to be."
+        },
+        {
+          "leverage": "A record of the exact grievance that kept {threat} from resting - who wronged it, and how.",
+          "payoff": "Confronting {threat} with the truth of its own grievance, rather than a weapon, opens a path to ending this without a fight - though it may cost the party something to make good on the debt themselves."
+        }
+      ],
+      "promptedFlavorTemplates": [
+        "If asked why it's so cold: it isn't, not really - something here just doesn't remember what warmth felt like, and neither, now, does the air.",
+        "If asked whether the dead here are dangerous: most aren't, not on purpose - {threat} is the exception, not the rule."
       ]
     },
     "elemental": {
-      "domainNouns": ["Wards", "Conduits", "Forges", "Cisterns", "Rifts"],
-      "adjectives": ["Scorched", "Frostbound", "Storm-Wracked", "Molten", "Fracturing"],
-      "threats": ["the Cinder Court", "a bound storm-thing", "the Glasswrights", "an unmoored elemental rift"],
+      "domainNouns": [
+        "Wards",
+        "Conduits",
+        "Forges",
+        "Cisterns",
+        "Rifts"
+      ],
+      "adjectives": [
+        "Scorched",
+        "Frostbound",
+        "Storm-Wracked",
+        "Molten",
+        "Fracturing"
+      ],
+      "threats": [
+        "the Cinder Court",
+        "a bound storm-thing",
+        "the Glasswrights",
+        "an unmoored elemental rift"
+      ],
       "lightColor": "#ff9d4d",
       "torchColor": "#4ddfff",
       "darknessLevel": 0.5,
@@ -67,16 +194,71 @@
         "An engineer who helped build the original wards left instructions for shutting it all down - if anyone can find them.",
         "{threat} has agents already on this floor trying to accelerate the breach rather than stop it."
       ],
-      "bossTitles": ["Warlord of {threat}", "the Unbound Voice of {threat}", "Herald of {threat}"],
+      "bossTitles": [
+        "Warlord of {threat}",
+        "the Unbound Voice of {threat}",
+        "Herald of {threat}"
+      ],
       "friendlyNpcHooks": [
         "The engineer who helped build the original containment wards, still down here trying to finish the shutdown alone.",
         "A refugee from a deeper level fleeing {threat}'s spreading rift, grateful for company and full of warnings."
+      ],
+      "detailTemplates": [
+        "Heat and cold trade places in the air without warning, like the room can't decide what season it wants to be.",
+        "Fine cracks web the walls, and something bright is visible moving inside a few of them.",
+        "The floor is warm underfoot in patches with no obvious source."
+      ],
+      "castTemplates": [
+        "{name}, an engineer's apprentice left behind when the original crew fled, still recalibrating instruments nobody's read in years.",
+        "{name}, a small elemental spark that's gone domestic, following whoever feeds it interesting minerals."
+      ],
+      "sideQuestTemplates": [
+        "{cast} has been trying to teach the local wildlife to fear fire again, with limited and occasionally combustible success.",
+        "A gauge in the {domain} has been climbing steadily for weeks, and whoever was supposed to check it stopped showing up.",
+        "A vein of raw elemental material has fused two mundane objects together in a way nobody can explain, and someone wants it back regardless.",
+        "{threat}'s agents left behind a genuinely excellent packed lunch, untouched, in their hurry - and someone's still hoping to reclaim it."
+      ],
+      "breatherTemplates": [
+        "Scorch marks and frost patterns overlap on the same wall, neither one recent enough to explain the other.",
+        "A cracked gauge sits frozen mid-reading, its needle pointed at a number nobody wants to think too hard about.",
+        "Someone left a windbreak of stacked stone here, clearly built in a hurry and clearly still standing."
+      ],
+      "secretPayloads": [
+        {
+          "leverage": "The original containment ward's activation sigil, still legible, that {threat} never thought to look for because it was never meant to still exist.",
+          "payoff": "Redrawing the activation sigil during the confrontation can briefly re-engage part of the original containment around {threat} - not enough to end the fight outright, but enough to blunt its worst effect for a few crucial rounds."
+        },
+        {
+          "leverage": "A schematic showing the exact structural weak point {threat} has been carefully avoiding damaging itself.",
+          "payoff": "Striking the weak point from the schematic, rather than {threat} directly, can force an opening, a retreat, or a much shorter fight than the party was expecting."
+        }
+      ],
+      "promptedFlavorTemplates": [
+        "If asked what's causing the tremors: nothing good, and it's getting worse the deeper the party goes.",
+        "If asked whether the heat or cold is dangerous on its own: not yet - {threat} is still the actual problem, this is just the weather it brings with it."
       ]
     },
     "cult": {
-      "domainNouns": ["Sanctums", "Chancels", "Reliquaries", "Undercrofts", "Vigil Halls"],
-      "adjectives": ["Whispering", "Veiled", "Anointed", "Fervent", "Unseen"],
-      "threats": ["the Veiled Choir", "a splinter sect of the Hollow Star", "the Anointed Few", "a self-declared prophet"],
+      "domainNouns": [
+        "Sanctums",
+        "Chancels",
+        "Reliquaries",
+        "Undercrofts",
+        "Vigil Halls"
+      ],
+      "adjectives": [
+        "Whispering",
+        "Veiled",
+        "Anointed",
+        "Fervent",
+        "Unseen"
+      ],
+      "threats": [
+        "the Veiled Choir",
+        "a splinter sect of the Hollow Star",
+        "the Anointed Few",
+        "a self-declared prophet"
+      ],
       "lightColor": "#c98cff",
       "torchColor": "#ff5d8f",
       "darknessLevel": 0.7,
@@ -91,16 +273,71 @@
         "One of {threat}'s own has started having doubts and is leaving evidence behind, half hoping to be stopped.",
         "A relic central to the ritual has already been stolen by someone with their own agenda, and neither side has noticed yet."
       ],
-      "bossTitles": ["High Prophet of {threat}", "Anointed Voice of {threat}", "Herald of {threat}"],
+      "bossTitles": [
+        "High Prophet of {threat}",
+        "Anointed Voice of {threat}",
+        "Herald of {threat}"
+      ],
       "friendlyNpcHooks": [
         "A captured initiate of {threat} who wants to defect and can name every trap between here and the inner sanctum - for a price.",
         "One of {threat}'s own, quietly having doubts, who's been leaving evidence behind half hoping someone will stop this."
+      ],
+      "detailTemplates": [
+        "Candle wax has pooled and reset so many times it's built its own small landscape on the floor.",
+        "A chant, too faint to make out clearly, seems to come from every direction at once and none of them.",
+        "Robes hang on pegs along one wall, sized for everyone from children to giants."
+      ],
+      "castTemplates": [
+        "{name}, a devotee who still believes completely, and finds the party's skepticism more sad than threatening.",
+        "{name}, a former true believer who's since gone quiet about all of it, and flinches at the sight of a robe."
+      ],
+      "sideQuestTemplates": [
+        "{cast} needs one more voice for tonight's chant to sound \"complete\" and is genuinely, harmlessly desperate to recruit anyone within earshot.",
+        "A ritual candle in the {domain} has gone out three nights running, and whoever's responsible for relighting it is too afraid of a bad omen to go near it.",
+        "Someone has been quietly replacing the sacramental wine with regular wine, and the difference has gone entirely unnoticed for weeks.",
+        "A junior member of {threat} lost the ceremonial mask and has been wearing a convincing paper substitute, hoping no one looks too closely."
+      ],
+      "breatherTemplates": [
+        "An altar here is dressed for a ceremony that clearly isn't happening today - candles unlit, offerings untouched.",
+        "A hand-copied hymnal lies open, its margins full of someone's doodles rather than notes.",
+        "A robe several sizes too large hangs alone on its own peg, like it's still waiting for whoever it was meant for."
+      ],
+      "secretPayloads": [
+        {
+          "leverage": "The true wording of the ritual {threat} is building toward - proof it doesn't do what {threat} has told every follower it will do.",
+          "payoff": "Reciting the ritual's true wording back at {threat} in front of its own followers can crack the operation's authority wide open, right when it matters most."
+        },
+        {
+          "leverage": "A signed confession from {threat} admitting the whole thing started as a scheme, not a revelation.",
+          "payoff": "Producing the confession at the right moment can turn {threat}'s own followers against it mid-confrontation, buying the party an opening they didn't have to fight for."
+        }
+      ],
+      "promptedFlavorTemplates": [
+        "If asked what they actually believe: most of them can't fully explain it, and get uncomfortable when pressed - only {threat} claims full certainty.",
+        "If asked if the ritual is real: something is definitely happening down here. Whether it's what {threat} thinks is happening is a different question."
       ]
     },
     "feral": {
-      "domainNouns": ["Warrens", "Thickets", "Hollows", "Roosts", "Dens"],
-      "adjectives": ["Overgrown", "Feral", "Territorial", "Nesting", "Untamed"],
-      "threats": ["a matriarch beast", "a feral pack-mind", "the Bramble Court", "something that was never meant to breed this fast"],
+      "domainNouns": [
+        "Warrens",
+        "Thickets",
+        "Hollows",
+        "Roosts",
+        "Dens"
+      ],
+      "adjectives": [
+        "Overgrown",
+        "Feral",
+        "Territorial",
+        "Nesting",
+        "Untamed"
+      ],
+      "threats": [
+        "a matriarch beast",
+        "a feral pack-mind",
+        "the Bramble Court",
+        "something that was never meant to breed this fast"
+      ],
       "lightColor": "#8fdb6a",
       "torchColor": "#e0c168",
       "darknessLevel": 0.55,
@@ -115,16 +352,71 @@
         "A previous expedition's survivor has been living off the land down here long enough to have gone a little feral themselves.",
         "The nest's growth is undermining a structural support that could collapse a much larger section of the floor."
       ],
-      "bossTitles": ["Matriarch of {threat}", "the Untamed Voice of {threat}", "Warden of {threat}"],
+      "bossTitles": [
+        "Matriarch of {threat}",
+        "the Untamed Voice of {threat}",
+        "Warden of {threat}"
+      ],
       "friendlyNpcHooks": [
         "A trapper who knows the den layout and will trade that knowledge for help freeing a snared partner.",
         "A previous expedition's survivor who's lived off this land long enough to have gone a little feral themselves, but still remembers how to talk."
+      ],
+      "detailTemplates": [
+        "Claw marks, old and new, mark every doorway at roughly chest height.",
+        "The air smells thickly of animal musk and something recently killed.",
+        "Bones, cracked for marrow, are scattered with the casualness of a well-used feeding ground."
+      ],
+      "castTemplates": [
+        "{name}, a trapper who's spent so long down here they've started thinking in the same patterns as what they're tracking.",
+        "{name}, a juvenile beast too young to be properly territorial yet, more curious than dangerous - for now."
+      ],
+      "sideQuestTemplates": [
+        "{cast} has a snare that's caught the wrong thing three times running, and would appreciate help resetting it properly before it happens a fourth time.",
+        "A den in the {domain} has been abandoned mid-litter, and the young left behind are too young to fend for themselves.",
+        "Something has been leaving small, deliberate gifts of food outside a particular chamber, and nobody's figured out who - or what - it's trying to befriend.",
+        "{threat}'s territory marking has started overlapping with a much smaller, much less dangerous animal's, and the smaller one is losing badly."
+      ],
+      "breatherTemplates": [
+        "A nest built from scavenged cloth and bits of old armor sits empty in one corner, recently abandoned.",
+        "Deep scratches mark a rough tally into the stone - feeding days, maybe, or something else entirely.",
+        "A trail of disturbed earth leads nowhere in particular and doubles back on itself twice."
+      ],
+      "secretPayloads": [
+        {
+          "leverage": "A scent-marked hide that, worn or carried, reads to {threat} as belonging to something it already submits to.",
+          "payoff": "Carrying or wearing the marked hide during the confrontation can trigger {threat}'s instinct to submit rather than fight - briefly, and only if the deception isn't pushed too far."
+        },
+        {
+          "leverage": "The exact location of {threat}'s actual young, kept separate from the den the party has already found.",
+          "payoff": "Threatening or protecting the real nest, once found, gives the party leverage {threat} will not risk ignoring, regardless of how the fight is otherwise going."
+        }
+      ],
+      "promptedFlavorTemplates": [
+        "If asked why the animals down here act strangely: {threat} isn't hostile by nature, it's defending something, and everything nearby has picked up the same instinct.",
+        "If asked whether this can be avoided entirely: probably, if the party doesn't push into the den itself - but the stairs down don't care about that."
       ]
     },
     "abyssal": {
-      "domainNouns": ["Depths", "Rifts", "Maws", "Undercrofts", "Black Halls"],
-      "adjectives": ["Lightless", "Hungering", "Warping", "Silent", "Bottomless"],
-      "threats": ["something that predates the floor itself", "a bound outsider", "the Choir Below", "a presence with no true name"],
+      "domainNouns": [
+        "Depths",
+        "Rifts",
+        "Maws",
+        "Undercrofts",
+        "Black Halls"
+      ],
+      "adjectives": [
+        "Lightless",
+        "Hungering",
+        "Warping",
+        "Silent",
+        "Bottomless"
+      ],
+      "threats": [
+        "something that predates the floor itself",
+        "a bound outsider",
+        "the Choir Below",
+        "a presence with no true name"
+      ],
       "lightColor": "#3d3d7a",
       "torchColor": "#7a1f4d",
       "darknessLevel": 0.9,
@@ -139,15 +431,65 @@
         "One party member's dreams have started including rooms that don't exist yet on this floor's map - until they do.",
         "{threat} has been testing the wards a little more each night, and tonight is the first time one of them didn't hold."
       ],
-      "bossTitles": ["the Nameless Voice of {threat}", "Herald of {threat}", "the Last Warden against {threat}"],
+      "bossTitles": [
+        "the Nameless Voice of {threat}",
+        "Herald of {threat}",
+        "the Last Warden against {threat}"
+      ],
       "friendlyNpcHooks": [
         "The sole survivor of a previous expedition's final log entries, alive but changed by however long they've spent near {threat}.",
         "Someone whose dreams started including rooms that don't exist on this floor's map yet - until they do - and who wants that to stop."
+      ],
+      "detailTemplates": [
+        "Sound behaves wrong here - footsteps land a half-second late, or not at all.",
+        "The dark isn't merely unlit; light behaves like it's being spent rather than simply blocked.",
+        "A cold that has nothing to do with temperature settles into anyone who lingers too long."
+      ],
+      "castTemplates": [
+        "{name}, the last member of a previous expedition, present but not entirely all here anymore.",
+        "{name}, who insists they've done this exact conversation before, word for word, and isn't wrong."
+      ],
+      "sideQuestTemplates": [
+        "{cast} keeps finding the same coin over and over, in different rooms, and is quietly convinced it's the same coin every time.",
+        "A door in the {domain} has started answering knocks that nobody sent - it isn't hostile, or hasn't been yet, but it is definitely listening.",
+        "Someone's old camp is still set up exactly as they left it, mid-meal, with no explanation for where they went.",
+        "A journal entry describes tomorrow's events in exact, unsettling detail - and today's date matches."
+      ],
+      "breatherTemplates": [
+        "A stretch of wall here doesn't quite match the map, by a measurement too small to be sure of and too consistent to dismiss.",
+        "Every echo in this room returns a half-second wrong, like the space is slightly larger than it looks.",
+        "A cold spot lingers here with no draft to explain it, exactly the width of a doorway that isn't there."
+      ],
+      "secretPayloads": [
+        {
+          "leverage": "A previous expedition's working theory that {threat} can be genuinely startled by a truth it doesn't already know - paired with a truth the party has since learned that it plainly doesn't.",
+          "payoff": "Stating the one true thing {threat} doesn't already know, mid-confrontation, causes a visible, useful disruption - the only known crack in its composure."
+        },
+        {
+          "leverage": "Evidence that {threat} is bound to this floor by something physical and mundane, not by anything cosmic at all.",
+          "payoff": "Destroying or removing the mundane binding object, once identified, meaningfully weakens {threat} for the remainder of the encounter."
+        }
+      ],
+      "promptedFlavorTemplates": [
+        "If asked what {threat} wants: nothing the party can give it directly - it wants them gone, and unaware, and is willing to rearrange quite a lot to manage both.",
+        "If asked if the floor's map can be trusted: less and less, the deeper they go."
       ]
     },
     "goblin_warren": {
-      "domainNouns": ["Warrens", "Middens", "Switchbacks", "Larders", "Pens"],
-      "adjectives": ["Squabbling", "Ramshackle", "Overcrowded", "Contested", "Spit-Slicked"],
+      "domainNouns": [
+        "Warrens",
+        "Middens",
+        "Switchbacks",
+        "Larders",
+        "Pens"
+      ],
+      "adjectives": [
+        "Squabbling",
+        "Ramshackle",
+        "Overcrowded",
+        "Contested",
+        "Spit-Slicked"
+      ],
       "threats": [
         "a goblin war-band that's crowned a llama as their living god",
         "the Wool-Crowned King and his stolen throne of saddlebags",
@@ -168,22 +510,92 @@
         "One llama has figured out that spitting on goblins gets it double rations, and has started training the others.",
         "A goblin who fell off a llama during the coronation still hasn't lived it down, and is looking for literally anyone new to tell the story to."
       ],
-      "bossTitles": ["the Wool-Crowned", "Drover of {threat}", "Spit-Anointed Sovereign of {threat}"],
+      "bossTitles": [
+        "the Wool-Crowned",
+        "Drover of {threat}",
+        "Spit-Anointed Sovereign of {threat}"
+      ],
       "friendlyNpcHooks": [
         "A goblin cook who's stopped asking questions about the chain of command as long as somebody keeps bringing hay.",
         "A llama who wandered in from a passing caravan months ago and has since - through no effort of its own - become a folk hero."
+      ],
+      "detailTemplates": [
+        "A goblin somewhere nearby is loudly, badly, singing something about llamas.",
+        "Wool tufts drift across the floor like fallen leaves, caught in every corner and crevice.",
+        "Hoofprints and boot-prints overlap so thickly here that this is clearly a route, not a destination."
+      ],
+      "castTemplates": [
+        "{name}, a goblin scribe who takes the warren's llama-based bureaucracy with total, unblinking seriousness.",
+        "{name}, a llama who has, through no effort of its own, become the center of an entire chain of command."
+      ],
+      "sideQuestTemplates": [
+        "{cast} is trying to get a promotion by any means necessary and has started asking literally everyone, including the party, for tips on llama etiquette.",
+        "Somebody's been forging entries on the warren's nuzzle-ranking board, and the goblins are one bad accusation away from a genuine civil war over it.",
+        "A llama has wandered off into the {domain} unsupervised, and its herder is far more panicked about this than the situation seems to warrant.",
+        "Two goblins are in the middle of a very serious, very stupid duel over who gets to hold the ceremonial hay-fork, and both would love an excuse to stop."
+      ],
+      "breatherTemplates": [
+        "A pile of the warren's finest bedding - by warren standards - has been claimed, unofficially, by a napping llama nobody's brave enough to move.",
+        "A hand-lettered sign warns against several very specific things, all involving llamas, all clearly learned the hard way.",
+        "Someone has tried, and failed, to teach a llama to guard this spot. The llama is asleep."
+      ],
+      "secretPayloads": [
+        {
+          "leverage": "Proof of exactly how {threat} first came to power - less a coronation, more an accident nobody's corrected.",
+          "payoff": "Reciting the true, embarrassing origin story out loud in front of {threat}'s own followers can undercut its authority at exactly the wrong moment for it."
+        },
+        {
+          "leverage": "The name of the one llama whose approval {threat} has never actually earned - and still, visibly, wants.",
+          "payoff": "Bringing that llama into the confrontation, or simply invoking its name, throws {threat} off in a way no weapon has managed."
+        }
+      ],
+      "promptedFlavorTemplates": [
+        "If asked who's really in charge here: pause before answering. It's genuinely unclear whether it's {threat} or the llamas.",
+        "If asked why everyone's so afraid of a llama: they aren't, not exactly - they're afraid of what happens if they're the one it doesn't nuzzle."
       ]
     }
   },
   "names": [
-    "Kest Vane", "Ilyra Duskthorn", "Bram Ashgrove", "Sable Wren", "Orin Marrow",
-    "Tessa Nightfell", "Draven Cole", "Mira Halloway", "Corvin Blackwell", "Anwen Frost",
-    "Talon Reyes", "Wren Castellan", "Lucian Vale", "Sera Windham", "Garrick Thorne",
-    "Nyx Callahan", "Edric Stormcrow", "Isolde Grey", "Malachi Fenn", "Rowan Ashby",
-    "Vesper Cain", "Thane Ossian", "Briar Locke", "Cassian Drake", "Eowyn March",
-    "Finnick Sable", "Zara Voss", "Percival Hale", "Delphine Ash", "Kael Ravensworth",
-    "Marisol Fane", "Ossian Cray", "Liora Wick", "Bastian Grim", "Yolanda Pike",
-    "Renlow Ash", "Sylvie Corbin", "Auric Bane", "Wynne Solace", "Torin Hearst"
+    "Kest Vane",
+    "Ilyra Duskthorn",
+    "Bram Ashgrove",
+    "Sable Wren",
+    "Orin Marrow",
+    "Tessa Nightfell",
+    "Draven Cole",
+    "Mira Halloway",
+    "Corvin Blackwell",
+    "Anwen Frost",
+    "Talon Reyes",
+    "Wren Castellan",
+    "Lucian Vale",
+    "Sera Windham",
+    "Garrick Thorne",
+    "Nyx Callahan",
+    "Edric Stormcrow",
+    "Isolde Grey",
+    "Malachi Fenn",
+    "Rowan Ashby",
+    "Vesper Cain",
+    "Thane Ossian",
+    "Briar Locke",
+    "Cassian Drake",
+    "Eowyn March",
+    "Finnick Sable",
+    "Zara Voss",
+    "Percival Hale",
+    "Delphine Ash",
+    "Kael Ravensworth",
+    "Marisol Fane",
+    "Ossian Cray",
+    "Liora Wick",
+    "Bastian Grim",
+    "Yolanda Pike",
+    "Renlow Ash",
+    "Sylvie Corbin",
+    "Auric Bane",
+    "Wynne Solace",
+    "Torin Hearst"
   ],
   "roomRoleTemplates": {
     "entrance": [
@@ -220,10 +632,22 @@
     ]
   },
   "hazardTemplates": [
-    { "text": "A pressure plate near the threshold triggers a hidden mechanism unless disarmed (DC {dc} to notice, DC {dc} to disarm).", "dcBase": 12 },
-    { "text": "The floor here is unstable and gives way under careless weight (DC {dc} to notice before stepping wrong).", "dcBase": 13 },
-    { "text": "A ward etched into the doorway reacts to anyone who isn't already marked as an ally (DC {dc} to detect and counter).", "dcBase": 14 },
-    { "text": "A residual effect lingers in the air, growing worse the longer anyone stays without taking precautions (DC {dc} to resist each round).", "dcBase": 11 }
+    {
+      "text": "A pressure plate near the threshold triggers a hidden mechanism unless disarmed (DC {dc} to notice, DC {dc} to disarm).",
+      "dcBase": 12
+    },
+    {
+      "text": "The floor here is unstable and gives way under careless weight (DC {dc} to notice before stepping wrong).",
+      "dcBase": 13
+    },
+    {
+      "text": "A ward etched into the doorway reacts to anyone who isn't already marked as an ally (DC {dc} to detect and counter).",
+      "dcBase": 14
+    },
+    {
+      "text": "A residual effect lingers in the air, growing worse the longer anyone stays without taking precautions (DC {dc} to resist each round).",
+      "dcBase": 11
+    }
   ],
   "encounterTemplates": [
     "Roll a random encounter check when the party lingers here more than a few minutes - something has noticed them.",

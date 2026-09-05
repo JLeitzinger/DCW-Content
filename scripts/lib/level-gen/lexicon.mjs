@@ -52,6 +52,46 @@ export function pickName(rng) {
   return rng.pick(lexicon.names);
 }
 
+/**
+ * One recurring minor named character/creature for the floor - picked once (like {threat}) and
+ * threaded through room dressing/side quests via the {cast} slot, so a floor's small-scale color
+ * keeps naming the same person/creature instead of a new one in every room.
+ */
+export function pickCastMember(rng, category, overrides = {}) {
+  const name = pickName(rng);
+  const blurb = fillTemplate(rng, category, rng.pick(category.castTemplates), { ...overrides, name });
+  return { name, blurb };
+}
+
+/** A trivial, low-stakes side quest hook - explicitly optional color, distinct from the main arc/substories. */
+export function pickSideQuest(rng, category, overrides = {}) {
+  return fillTemplate(rng, category, rng.pick(category.sideQuestTemplates), overrides);
+}
+
+/** A no-mechanical-weight detail/color beat for a room that otherwise has nothing going on. */
+export function pickBreatherDetail(rng, category, overrides = {}) {
+  return fillTemplate(rng, category, rng.pick(category.breatherTemplates), overrides);
+}
+
+/** An extra sensory/texture sentence to vary a room's read-aloud text beyond its role template. */
+export function pickRoomDetail(rng, category, overrides = {}) {
+  return fillTemplate(rng, category, rng.pick(category.detailTemplates), overrides);
+}
+
+/** {leverage, payoff} - what a floor's secret actually is, and the concrete non-combat option it buys against the boss. */
+export function pickSecretPayload(rng, category, overrides = {}) {
+  const preset = rng.pick(category.secretPayloads);
+  return {
+    leverage: fillTemplate(rng, category, preset.leverage, overrides),
+    payoff: fillTemplate(rng, category, preset.payoff, overrides)
+  };
+}
+
+/** A ready "say if asked" line for the DM/AI to voice when a player asks an obvious question. */
+export function pickPromptedFlavor(rng, category, overrides = {}) {
+  return fillTemplate(rng, category, rng.pick(category.promptedFlavorTemplates), overrides);
+}
+
 /** A {threat}-templated title for a floor's boss, e.g. "Warlord of the Alchemist's Guild". */
 export function pickBossTitle(rng, category, overrides = {}) {
   return fillTemplate(rng, category, rng.pick(category.bossTitles), overrides);

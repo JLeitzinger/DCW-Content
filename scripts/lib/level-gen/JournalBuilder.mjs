@@ -7,11 +7,25 @@
  * "folder-main-plot" are just how callers ask for the *same* id twice (e.g. a JournalEntry's
  * own id vs. a Note's entryId pointing at it).
  */
-import { getCategory, pickRoomText, pickHazard, pickEncounterHook } from './lexicon.mjs';
+import { getCategory, pickRoomText, pickHazard, pickEncounterHook, pickRoomDetail, pickBreatherDetail } from './lexicon.mjs';
 import { buildJournalEntryEnvelope, buildJournalPage, buildFolderEnvelope } from './envelope.mjs';
 
 function roomLabel(room) {
   return room.role.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+}
+
+// Friendlier GM-notes labels for story-graph node kinds than a mechanical title-case of the
+// kind string would give (e.g. "cast-intro" -> "Cast intro"). Anything not listed here falls
+// back to that title-case default, so a new node kind never crashes, it just reads a bit flat.
+const KIND_LABELS = {
+  'sidequest': 'Subquest',
+  'cast-intro': 'Meet',
+  'flavor-prompt': 'Say if asked',
+  'substory-beat': 'Substory beat'
+};
+
+function nodeLabel(node) {
+  return KIND_LABELS[node.kind] || node.kind.replace(/-/g, ' ').replace(/^\w/, c => c.toUpperCase());
 }
 
 /** Match each story-graph node needing a room (requiredRoomRole) to an actual generated room. */
@@ -34,25 +48,50 @@ function assignNodesToRooms(rooms, nodes) {
   return placements;
 }
 
-function buildRoomKeyEntry(rng, id, theme, category, room, placedNodes, tierConfig, folderId) {
-  const readAloud = pickRoomText(rng, category, theme.themeCategory, room.role);
+function buildRoomKeyEntry(rng, id, theme, category, room, placedNodes, tierConfig, folderId, secretNodes) {
+  // {domain}/{adj} deliberately re-roll per room (see StoryGenerator.mjs's overrides comment on
+  // why {threat}/{cast} are pinned floor-wide instead) - two rooms of the same role should be
+  // able to name different districts/textures even on one floor.
+  const roomOverrides = { threat: theme.threat, cast: theme.cast.name };
+  let readAloud = pickRoomText(rng, category, theme.themeCategory, room.role, roomOverrides);
+  // A second sentence, about half the time, so rooms sharing a role don't all read as the same
+  // template with a different adjective swapped in.
+  if (rng.bool(0.5)) {
+    readAloud += ` ${pickRoomDetail(rng, category, roomOverrides)}`;
+  }
+
   const secretParts = [];
   if (room.role === 'boss-arena') {
     secretParts.push('<p><strong>Objective:</strong> The stairwell down to the next floor is here - whatever holds this room is standing between the party and it.</p>');
   }
-  secretParts.push(...placedNodes.map(node => {
-    const label = node.kind.replace(/-/g, ' ').replace(/^\w/, c => c.toUpperCase());
-    return `<p><strong>${label}:</strong> ${node.text}</p>`;
-  }));
+  secretParts.push(...placedNodes.map(node => `<p><strong>${nodeLabel(node)}:</strong> ${node.text}</p>`));
+  // The secret's non-combat payoff belongs with the boss, not wherever the secret-vault happens
+  // to land - it's useless as a note anywhere else, and easy for a GM to miss if it's buried in
+  // an unrelated room's key instead.
+  if (room.role === 'boss-arena' && secretNodes) {
+    for (const secret of secretNodes) {
+      if (secret.payoffText) {
+        secretParts.push(`<p><strong>Non-combat option:</strong> ${secret.payoffText}</p>`);
+      }
+    }
+  }
   if (rng.bool(0.25)) {
     secretParts.push(`<p><strong>Hazard:</strong> ${pickHazard(rng, tierConfig.dcBonus)}</p>`);
   }
   if ((room.role === 'hazard-chamber' || room.role === 'corridor-junction') && rng.bool(0.4)) {
     secretParts.push(`<p><strong>Encounter:</strong> ${pickEncounterHook(rng)}</p>`);
   }
-  const secretHtml = secretParts.length
-    ? `<section class="secret"><h3>GM Notes</h3>${secretParts.join('')}</section>`
-    : `<section class="secret"><h3>GM Notes</h3><p>Nothing special here - a breather room.</p></section>`;
+  // A room with no story-graph content at all still gets a chance at pure color (no mechanical
+  // weight, just texture) instead of defaulting straight to "nothing here" - but not always: a
+  // real breather room here and there is good pacing, not a gap to fill.
+  let secretHtml;
+  if (secretParts.length) {
+    secretHtml = `<section class="secret"><h3>GM Notes</h3>${secretParts.join('')}</section>`;
+  } else if (rng.bool(0.65)) {
+    secretHtml = `<section class="secret"><h3>GM Notes</h3><p><strong>Detail:</strong> ${pickBreatherDetail(rng, category, roomOverrides)}</p></section>`;
+  } else {
+    secretHtml = `<section class="secret"><h3>GM Notes</h3><p>Nothing special here - a breather room.</p></section>`;
+  }
 
   const name = `${roomLabel(room)} (Room ${room.id})`;
   const entryId = id(`room-${room.id}`);
@@ -145,8 +184,9 @@ export function buildJournals(rng, id, theme, storyGraph, rooms, tierConfig) {
     nodesByRoom.get(room.id).push(storyGraph.nodes.find(n => n.id === nodeId));
   }
 
+  const secretNodes = storyGraph.nodes.filter(n => n.kind === 'secret');
   const roomEntries = rooms.map(room =>
-    buildRoomKeyEntry(rng, id, theme, category, room, nodesByRoom.get(room.id) || [], tierConfig, folderIds.roomKeys)
+    buildRoomKeyEntry(rng, id, theme, category, room, nodesByRoom.get(room.id) || [], tierConfig, folderIds.roomKeys, secretNodes)
   );
   const mainPlotEntry = buildMainPlotEntry(id, theme, storyGraph, placements, folderIds.mainPlot);
   const secretEntries = buildSecretEntries(id, storyGraph, placements, folderIds.secrets);
