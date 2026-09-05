@@ -634,9 +634,16 @@ entirely optional and picked up automatically, no manifest entry needed:
 
 1. Add spell definition to `data/spells-manifest.json` under the appropriate category
 2. Ensure prowess is calculated correctly: `spellLevel + ceil(spellLevel / 3)` (`npm run validate` checks this exactly)
-3. Run `npm run generate:spells` to create JSON files in `src/packs/spells/`
-4. Run `npm run pack:spells` (or `npm run pack`) to update compendium
-5. Commit `data/spells-manifest.json`, `src/packs/spells/`, and `packs/spells/`
+3. Optionally set `classes: ["ClassName"]` to flavor the spell for one class - it's both what
+   `CharacterGenerator.mjs` uses to build that class's own spell pool (layered on top of the
+   shared castStat-matched spells) and which compendium folder it's filed under (see below).
+   Leave it unset/empty for a spell any caster can use (e.g. Fireball) - `npm run validate`
+   checks every name against real classes and warns if more than one is listed.
+4. Run `npm run generate:spells` to create JSON files in `src/packs/spells/` - this also
+   (re)builds one compendium folder per class that owns a spell, plus a shared "General" folder
+   for untagged spells, in `src/packs/spell-folders/`
+5. Run `npm run pack:spells` (or `npm run pack`) to update compendium
+6. Commit `data/spells-manifest.json`, `src/packs/spells/`, `src/packs/spell-folders/`, and `packs/spells/`
 
 ## Utilities
 

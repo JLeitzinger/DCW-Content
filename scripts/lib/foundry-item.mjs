@@ -33,7 +33,7 @@ export const DOCUMENT_STATS = {
  * Wrap a piece of content into the standard Foundry Item document envelope every generator
  * needs, so individual generate-<type>.mjs scripts only have to build `system`.
  */
-export function wrapItem({ id, name, type, img, system }) {
+export function wrapItem({ id, name, type, img, system, folder = null }) {
   return {
     _id: id,
     name,
@@ -41,7 +41,7 @@ export function wrapItem({ id, name, type, img, system }) {
     img,
     system,
     effects: [],
-    folder: null,
+    folder,
     sort: 0,
     ownership: {
       default: 0

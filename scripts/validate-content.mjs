@@ -327,6 +327,7 @@ function validateFeatures() {
 function validateSpells() {
   const entries = loadEntries('spells');
   checkNoDuplicates('spells', entries);
+  const classNames = new Set(loadEntries('classes').map(({ data }) => data.name));
   for (const { file, data } of entries) {
     const s = data.system;
     checkImg('spells', file, data.img);
@@ -342,6 +343,17 @@ function validateSpells() {
     const expectedProwess = s.spellLevel + Math.ceil(s.spellLevel / 3);
     if (s.prowess !== expectedProwess) {
       error('spells', file, `prowess should be ${expectedProwess} (spellLevel + ceil(spellLevel/3)), found ${s.prowess}`);
+    }
+    // `classes` (generator-only, see generate-spells.mjs) - determines both CharacterGenerator's
+    // per-class spell pool and this spell's compendium folder. Unrecognized names silently drop
+    // the spell into General instead of erroring, so catch typos here.
+    for (const className of s.classes || []) {
+      if (!classNames.has(className)) {
+        error('spells', file, `classes references unknown class "${className}"`);
+      }
+    }
+    if ((s.classes || []).length > 1) {
+      warn('spells', file, `tagged with ${s.classes.length} classes - has no single-class folder home, falls back to General`);
     }
   }
 }
