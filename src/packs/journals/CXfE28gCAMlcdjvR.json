@@ -12,7 +12,7 @@
         "level": 1
       },
       "text": {
-        "content": "<p><strong>The Wool-Crowned Warrens</strong></p><p>the Wool-Crowned King and his stolen throne of saddlebags started as a joke - a goblin sat on a llama once, on a dare - and now it's the closest thing this warren has to a government.</p>",
+        "content": "<p><strong>The Wool-Crowned Warrens</strong></p><p>Generations ago this was a way-station stable-yard, built by a shepherd-hermit named <strong>Old Tam</strong> to house pack animals passing through. Goblins moved into its bones long after he was gone and never left, and somewhere along the way they started worshipping the animals instead of just herding them - a joke, originally, about a drover who fell off a llama on a dare and wasn't spat at for it. That drover, <strong>Corvin Blackwell</strong>, is still here. He no longer looks entirely goblin, and he no longer entirely knows why.</p><p>The warren runs on a single, sincerely-held political principle: rank follows the favor of the herd, and especially of one llama, <strong>Buttercup</strong>, who now sits an actual throne of stacked saddlebags in the Larders while Corvin stands beside her and does the governing she has no interest in doing. The goblins see nothing strange in this. The party will.</p>",
         "markdown": "",
         "format": 1
       },
@@ -32,7 +32,7 @@
         "level": 1
       },
       "text": {
-        "content": "<p>A sign of the floor's deeper story: Somewhere in the Larders, the Wool-Crowned King and his stolen throne of saddlebags is handing out promotions based entirely on who the llamas nuzzle first.</p><p><em>Tied to: Entrance (Room 0)</em></p>",
+        "content": "<p>Somewhere in the Larders, the warren's leadership is being quietly reshuffled based entirely on which goblins Buttercup nuzzles first - a live, ongoing process the party can watch play out on chalkboards and rumor throughout the floor (Rooms 1, 7, and 8 all reflect the current standings).</p><p><em>Tied to: Entrance (Room 0)</em></p>",
         "markdown": "",
         "format": 1
       },
@@ -52,7 +52,7 @@
         "level": 1
       },
       "text": {
-        "content": "<p>A sign of the floor's deeper story: the Wool-Crowned King and his stolen throne of saddlebags has turned the Larders into equal parts throne room and petting zoo, and nobody currently in charge can explain how that happened.</p><p><em>Tied to: Corridor Junction (Room 6)</em></p>",
+        "content": "<p>The Larders - once exactly that, a food store - have become equal parts throne room and petting zoo, and no goblin nominally in charge can explain when or how the shift happened. The party gets their first real look at it through the gap at the Corridor Junction (Room 6): a llama on a saddlebag throne, and a goblin-shaped something standing far too close beside it.</p><p><em>Tied to: Corridor Junction (Room 6)</em></p>",
         "markdown": "",
         "format": 1
       },
@@ -72,7 +72,7 @@
         "level": 1
       },
       "text": {
-        "content": "<p>This is where the floor's story comes to a head: the Wool-Crowned King and his stolen throne of saddlebags started as a joke - a goblin sat on a llama once, on a dare - and now it's the closest thing this warren has to a government. Its name is Corvin Blackwell, Drover of the Wool-Crowned King and his stolen throne of saddlebags. The stairs down to the next floor are here too - finding them means going through whatever's guarding this room first.</p><p><em>Tied to: Boss Arena (Room 28)</em></p>",
+        "content": "<p>The floor's story resolves in the Boss Arena: the Wool-Crowned King the goblins keep talking about is genuinely just Buttercup, beloved and harmless. The real threat is her \"drover,\" Corvin Blackwell - a goblin who found something buried in Old Tam's old stable-yard, picked it up, and hasn't been entirely goblin, or entirely himself, since. The stairs down are behind his throne, past a ward that isn't goblin work at all.</p><p><em>Tied to: Boss Arena (Room 28)</em></p>",
         "markdown": "",
         "format": 1
       },
@@ -92,7 +92,7 @@
         "level": 1
       },
       "text": {
-        "content": "<p>One llama has figured out that spitting on goblins gets it double rations, and has started training the others.</p>",
+        "content": "<p><strong>Mudflap's Union.</strong> One llama has figured out that spitting on goblins earns double rations from a nervous administration eager to keep the herd happy, and has started training the rest of the pen in the technique - a small, self-inflicted crisis for the warren's already-thin food supply (Hazard Chamber, Room 3).</p>",
         "markdown": "",
         "format": 1
       },
@@ -112,7 +112,7 @@
         "level": 1
       },
       "text": {
-        "content": "<p>Two rival goblin chiefs have agreed to settle their feud with a llama race down the main hall - and both have been caught trying to bribe the same llama.</p>",
+        "content": "<p><strong>The Fixed Race.</strong> Two rival war-chiefs, Grull and Nak, have agreed to settle a feud with a llama race down the Larders' main hall - and have both been caught bribing the same racer, Spitfire, to throw it for them. Betting is open at the Treasure Vault (Room 4) and the Corridor Junction betting board (Room 18); the party is welcome to get involved.</p>",
         "markdown": "",
         "format": 1
       },
