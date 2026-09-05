@@ -1,0 +1,45 @@
+{
+  "_id": "All-InGambit",
+  "name": "All-In Gambit",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You bet everything on one throw, hurling a burst of raw probability at a target for force damage. If your damage roll comes up all maximum values, the damage is doubled; if it comes up all minimum values, you take the difference as backlash instead.</p><p><strong>Scaling:</strong> At dice count 3, the backlash on a bad roll is halved. At dice count 6, the bet extends to a second target.</p>",
+    "spellLevel": 4,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "evocation",
+    "prowess": 6,
+    "castingTime": "instantaneous",
+    "range": "60 feet",
+    "duration": "instantaneous",
+    "grantedSkills": [],
+    "offensive": true,
+    "roll": {
+      "diceNum": 2,
+      "diceSize": "d8",
+      "diceBonus": "+@int.mod"
+    },
+    "classes": [
+      "Card Duelist"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

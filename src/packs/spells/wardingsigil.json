@@ -1,0 +1,45 @@
+{
+  "_id": "WardingSigil",
+  "name": "Warding Sigil",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You carve a small protective rune into an object or a willing creature's skin. The bearer gains a small bonus to saving throws for the duration.</p><p><strong>Scaling:</strong> At dice count 3, the bonus also applies to AC. At dice count 6, the rune can be carved onto two bearers at once.</p>",
+    "spellLevel": 1,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "abjuration",
+    "prowess": 2,
+    "castingTime": "1 round",
+    "range": "touch",
+    "duration": "1 hour",
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    },
+    "classes": [
+      "Runesmith"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

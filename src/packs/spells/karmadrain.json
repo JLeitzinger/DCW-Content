@@ -1,0 +1,45 @@
+{
+  "_id": "KarmaDrain",
+  "name": "Karma Drain",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You siphon a target's good standing straight out of them, dealing necrotic damage and regaining hit points equal to half the damage dealt as their karma flows into you.</p><p><strong>Scaling:</strong> At dice count 3, you regain the full damage dealt instead of half. At dice count 6, the drain can be performed at range.</p>",
+    "spellLevel": 2,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "necromancy",
+    "prowess": 3,
+    "castingTime": "instantaneous",
+    "range": "touch",
+    "duration": "instantaneous",
+    "grantedSkills": [],
+    "offensive": true,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d8",
+      "diceBonus": "+@int.mod"
+    },
+    "classes": [
+      "Redditor"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

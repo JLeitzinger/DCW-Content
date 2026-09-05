@@ -1,0 +1,45 @@
+{
+  "_id": "KineticWard",
+  "name": "Kinetic Ward",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You wrap yourself in a shell of telekinetic tension that flexes to absorb incoming force. You gain damage reduction against physical attacks for the duration.</p><p><strong>Scaling:</strong> At dice count 3, the reduction also applies to one ally within 5 feet of you. At dice count 6, the ward reflects a portion of absorbed damage back at the attacker.</p>",
+    "spellLevel": 3,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "abjuration",
+    "prowess": 4,
+    "castingTime": "instantaneous",
+    "range": "self",
+    "duration": "1 minute",
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    },
+    "classes": [
+      "Psi-Knight"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

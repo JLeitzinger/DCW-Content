@@ -1,0 +1,45 @@
+{
+  "_id": "UnstableGenome",
+  "name": "Unstable Genome",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You force a burst of chaotic mutation into a target's cells. At the start of each of its turns, roll to determine which ability score is temporarily reduced as its body struggles to stabilize.</p><p><strong>Scaling:</strong> At dice count 3, two ability scores are affected each round. At dice count 6, the target also has disadvantage on concentration-like effects.</p>",
+    "spellLevel": 6,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "transmutation",
+    "prowess": 8,
+    "castingTime": "instantaneous",
+    "range": "30 feet",
+    "duration": "1 minute",
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    },
+    "classes": [
+      "Gene Splicer"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -120,13 +120,23 @@ function pickGear(rng, level) {
   return { weapon: pickByRarity(rng, WEAPONS, rarities), armor: pickByRarity(rng, ARMOR, rarities) };
 }
 
-/** Only meaningful for caster classes - see isCasterClass(). Spells' castStat is only ever int/wis. */
+/**
+ * Only meaningful for caster classes - see isCasterClass(). Spells' castStat is
+ * int, wis, or cha. Each spell's (generator-only, not in item-spell.mjs's own
+ * schema) `classes` array optionally names which class(es) it's flavored for -
+ * when a class has any of its own tagged spells, its pool is those spells plus
+ * the shared untagged/generic ones (same castStat); otherwise it falls back to
+ * the full shared castStat-matched pool, exactly like before this field existed.
+ */
 function pickSpells(rng, classDoc, level) {
-  const castStat = [classDoc.system.primaryAbility, classDoc.system.secondaryAbility].find(a => a === 'int' || a === 'wis');
+  const castStat = [classDoc.system.primaryAbility, classDoc.system.secondaryAbility].find(a => a === 'int' || a === 'wis' || a === 'cha');
   if (!castStat) return [];
 
   const maxSpellLevel = Math.min(9, Math.ceil(level / 2));
-  const pool = SPELLS.filter(s => s.system.castStat === castStat && s.system.spellLevel <= maxSpellLevel);
+  const byCastStat = SPELLS.filter(s => s.system.castStat === castStat && s.system.spellLevel <= maxSpellLevel);
+  const classSpells = byCastStat.filter(s => (s.system.classes || []).includes(classDoc.name));
+  const genericSpells = byCastStat.filter(s => !(s.system.classes || []).length);
+  const pool = classSpells.length ? [...classSpells, ...genericSpells] : byCastStat;
   if (!pool.length) return [];
 
   const count = Math.min(4, Math.max(1, Math.floor(level / 3) + 1));

@@ -1,0 +1,45 @@
+{
+  "_id": "Unmake",
+  "name": "Unmake",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You speak a target's name backward, and for a moment reality forgets it was ever finished making them. The target takes massive necrotic damage as parts of it simply cease to have happened.</p><p><strong>Scaling:</strong> At dice count 3, a creature reduced to 0 HP by this spell leaves no remains. At dice count 6, you can target two creatures within 10 feet of each other.</p>",
+    "spellLevel": 7,
+    "diceCount": 1,
+    "castStat": "cha",
+    "category": "necromancy",
+    "prowess": 10,
+    "castingTime": "instantaneous",
+    "range": "30 feet",
+    "duration": "instantaneous",
+    "grantedSkills": [],
+    "offensive": true,
+    "roll": {
+      "diceNum": 4,
+      "diceSize": "d8",
+      "diceBonus": "+@cha.mod"
+    },
+    "classes": [
+      "Void Touched"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

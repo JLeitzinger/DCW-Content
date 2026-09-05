@@ -1,0 +1,45 @@
+{
+  "_id": "GlimpsetheLedger",
+  "name": "Glimpse the Ledger",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You read the balance a creature's fate is currently keeping, learning its current hit points, resistances, and vulnerabilities. You can share this knowledge with any ally who can hear you.</p><p><strong>Scaling:</strong> At dice count 3, you also learn its immunities. At dice count 6, you can glimpse two creatures at once.</p>",
+    "spellLevel": 2,
+    "diceCount": 1,
+    "castStat": "wis",
+    "category": "divination",
+    "prowess": 3,
+    "castingTime": "instantaneous",
+    "range": "60 feet",
+    "duration": "instantaneous",
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    },
+    "classes": [
+      "Oracle"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

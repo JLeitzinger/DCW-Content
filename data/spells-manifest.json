@@ -5,7 +5,7 @@
     "diceCount": "All spells start at diceCount: 1. Higher level spells may increase dice count based on spell design.",
     "prowess": "Mana cost formula: prowess = spellLevel + ceil(spellLevel / 3)",
     "levelRange": "Spells range from level 1-15",
-    "castStat": "Either 'int' (arcane magic) or 'wis' (divine magic)"
+    "castStat": "'int' (arcane magic), 'wis' (divine magic), or 'cha' (innate/charisma-driven magic)"
   },
   "categories": {
     "evocation": {
@@ -52,7 +52,13 @@
         "castingTime": "instantaneous",
         "range": "120 feet",
         "duration": "instantaneous",
-        "description": "<p>Conjures glowing darts of magical force that unerringly strike targets, dealing force damage. Each dart automatically hits its target.</p><p><strong>Scaling:</strong> At dice count 3, fires two additional darts. At dice count 6, fires four additional darts. At dice count 9, darts can pass through cover. At dice count 12, each dart explodes on impact. At dice count 15, creates a barrage of ten darts.</p>"
+        "description": "<p>Conjures glowing darts of magical force that unerringly strike targets, dealing force damage. Each dart automatically hits its target.</p><p><strong>Scaling:</strong> At dice count 3, fires two additional darts. At dice count 6, fires four additional darts. At dice count 9, darts can pass through cover. At dice count 12, each dart explodes on impact. At dice count 15, creates a barrage of ten darts.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 1,
+          "diceSize": "d8",
+          "diceBonus": "+@int.mod"
+        }
       },
       {
         "name": "Acid Arrow",
@@ -63,7 +69,13 @@
         "castingTime": "instantaneous",
         "range": "90 feet",
         "duration": "instantaneous",
-        "description": "<p>Conjures a glowing arrow of acid that melts through armor and continues burning, dealing acid damage.</p><p><strong>Scaling:</strong> At dice count 3, the acid continues to burn for an additional round. At dice count 6, creates a splash that damages nearby creatures. At dice count 9, melts through metal armor. At dice count 12, creates a pool of acid. At dice count 15, the acid becomes incredibly corrosive, destroying nonmagical objects.</p>"
+        "description": "<p>Conjures a glowing arrow of acid that melts through armor and continues burning, dealing acid damage.</p><p><strong>Scaling:</strong> At dice count 3, the acid continues to burn for an additional round. At dice count 6, creates a splash that damages nearby creatures. At dice count 9, melts through metal armor. At dice count 12, creates a pool of acid. At dice count 15, the acid becomes incredibly corrosive, destroying nonmagical objects.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 1,
+          "diceSize": "d8",
+          "diceBonus": "+@int.mod"
+        }
       },
       {
         "name": "Fireball",
@@ -74,7 +86,13 @@
         "castingTime": "instantaneous",
         "range": "150 feet",
         "duration": "instantaneous",
-        "description": "<p>Hurls an explosive sphere of flame that detonates in a fiery blast, dealing fire damage to all creatures in a 20-foot radius.</p><p><strong>Scaling:</strong> At dice count 3, the radius increases to 30 feet. At dice count 6, the radius increases to 40 feet and ignites flammable objects. At dice count 9, creates secondary explosions. At dice count 12, leaves the area burning for 1 minute. At dice count 15, the explosion is massive, with a 60-foot radius.</p>"
+        "description": "<p>Hurls an explosive sphere of flame that detonates in a fiery blast, dealing fire damage to all creatures in a 20-foot radius.</p><p><strong>Scaling:</strong> At dice count 3, the radius increases to 30 feet. At dice count 6, the radius increases to 40 feet and ignites flammable objects. At dice count 9, creates secondary explosions. At dice count 12, leaves the area burning for 1 minute. At dice count 15, the explosion is massive, with a 60-foot radius.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d8",
+          "diceBonus": "+@int.mod"
+        }
       },
       {
         "name": "Lightning Bolt",
@@ -85,7 +103,13 @@
         "castingTime": "instantaneous",
         "range": "100 feet",
         "duration": "instantaneous",
-        "description": "<p>Unleashes a stroke of lightning that arcs toward targets in a 100-foot line, dealing lightning damage.</p><p><strong>Scaling:</strong> At dice count 3, the bolt can curve around corners. At dice count 6, strikes two parallel lines. At dice count 9, stuns targets briefly. At dice count 12, bounces off surfaces. At dice count 15, creates a sustained lightning stream.</p>"
+        "description": "<p>Unleashes a stroke of lightning that arcs toward targets in a 100-foot line, dealing lightning damage.</p><p><strong>Scaling:</strong> At dice count 3, the bolt can curve around corners. At dice count 6, strikes two parallel lines. At dice count 9, stuns targets briefly. At dice count 12, bounces off surfaces. At dice count 15, creates a sustained lightning stream.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d8",
+          "diceBonus": "+@int.mod"
+        }
       },
       {
         "name": "Cone of Cold",
@@ -96,7 +120,13 @@
         "castingTime": "instantaneous",
         "range": "60 feet",
         "duration": "instantaneous",
-        "description": "<p>Blasts forth a 60-foot cone of freezing air and ice, dealing cold damage to all creatures in the area.</p><p><strong>Scaling:</strong> At dice count 3, freezes the ground creating difficult terrain. At dice count 6, can freeze creatures solid. At dice count 9, creates ice walls where the cone hits surfaces. At dice count 12, the cone extends to 90 feet. At dice count 15, flash-freezes everything, potentially shattering frozen creatures.</p>"
+        "description": "<p>Blasts forth a 60-foot cone of freezing air and ice, dealing cold damage to all creatures in the area.</p><p><strong>Scaling:</strong> At dice count 3, freezes the ground creating difficult terrain. At dice count 6, can freeze creatures solid. At dice count 9, creates ice walls where the cone hits surfaces. At dice count 12, the cone extends to 90 feet. At dice count 15, flash-freezes everything, potentially shattering frozen creatures.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 3,
+          "diceSize": "d8",
+          "diceBonus": "+@int.mod"
+        }
       },
       {
         "name": "Chain Lightning",
@@ -107,7 +137,13 @@
         "castingTime": "instantaneous",
         "range": "150 feet",
         "duration": "instantaneous",
-        "description": "<p>Creates a bolt of lightning that arcs and jumps between multiple targets within 30 feet of each other, dealing lightning damage. Hits up to 3 targets.</p><p><strong>Scaling:</strong> At dice count 3, chains to 5 targets. At dice count 6, chains to 7 targets and can hit the same target twice. At dice count 9, chains to 10 targets. At dice count 12, creates branching lightning storms. At dice count 15, hits unlimited targets in range.</p>"
+        "description": "<p>Creates a bolt of lightning that arcs and jumps between multiple targets within 30 feet of each other, dealing lightning damage. Hits up to 3 targets.</p><p><strong>Scaling:</strong> At dice count 3, chains to 5 targets. At dice count 6, chains to 7 targets and can hit the same target twice. At dice count 9, chains to 10 targets. At dice count 12, creates branching lightning storms. At dice count 15, hits unlimited targets in range.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 3,
+          "diceSize": "d8",
+          "diceBonus": "+@int.mod"
+        }
       },
       {
         "name": "Flame Strike",
@@ -118,7 +154,13 @@
         "castingTime": "instantaneous",
         "range": "60 feet",
         "duration": "instantaneous",
-        "description": "<p>Calls down a column of divine fire from above to incinerate enemies in a 10-foot radius, 40-foot high cylinder, dealing radiant and fire damage.</p><p><strong>Scaling:</strong> At dice count 3, the radius increases to 15 feet. At dice count 6, calls down multiple pillars in a 30-foot area. At dice count 9, the flames are holy and bypass resistances. At dice count 12, leaves blessed flames that heal allies. At dice count 15, summons a rain of divine fire over a 60-foot radius.</p>"
+        "description": "<p>Calls down a column of divine fire from above to incinerate enemies in a 10-foot radius, 40-foot high cylinder, dealing radiant and fire damage.</p><p><strong>Scaling:</strong> At dice count 3, the radius increases to 15 feet. At dice count 6, calls down multiple pillars in a 30-foot area. At dice count 9, the flames are holy and bypass resistances. At dice count 12, leaves blessed flames that heal allies. At dice count 15, summons a rain of divine fire over a 60-foot radius.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 3,
+          "diceSize": "d8",
+          "diceBonus": "+@wis.mod"
+        }
       },
       {
         "name": "Meteor Swarm",
@@ -129,7 +171,13 @@
         "castingTime": "instantaneous",
         "range": "1 mile",
         "duration": "instantaneous",
-        "description": "<p>Summons blazing meteors from the sky to rain down on enemies, creating four 40-foot radius explosions anywhere within range, dealing fire and bludgeoning damage.</p><p><strong>Scaling:</strong> At dice count 6, summons eight meteors. At dice count 9, meteors leave craters and burning terrain. At dice count 12, calls down a continuous meteor shower. At dice count 15, summons apocalyptic meteor storm covering a 500-foot radius.</p>"
+        "description": "<p>Summons blazing meteors from the sky to rain down on enemies, creating four 40-foot radius explosions anywhere within range, dealing fire and bludgeoning damage.</p><p><strong>Scaling:</strong> At dice count 6, summons eight meteors. At dice count 9, meteors leave craters and burning terrain. At dice count 12, calls down a continuous meteor shower. At dice count 15, summons apocalyptic meteor storm covering a 500-foot radius.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 5,
+          "diceSize": "d8",
+          "diceBonus": "+@int.mod"
+        }
       },
       {
         "name": "Wild Surge",
@@ -140,7 +188,13 @@
         "castingTime": "instantaneous",
         "range": "30 feet",
         "duration": "instantaneous",
-        "description": "<p>You release a burst of unstable, half-controlled magic at a point you can see. Roll a d6 to determine the damage type at random: fire, cold, lightning, acid, thunder, or force. Each creature within a 15-foot radius takes damage of that type.</p><p><strong>Scaling:</strong> At dice count 3, the radius increases to 20 feet. At dice count 6, roll twice on the damage type table and apply both. At dice count 9, the damage increases substantially. At dice count 12, the surge ignores resistance to the chosen damage type. At dice count 15, the surge deals damage of all six types simultaneously.</p>"
+        "description": "<p>You release a burst of unstable, half-controlled magic at a point you can see. Roll a d6 to determine the damage type at random: fire, cold, lightning, acid, thunder, or force. Each creature within a 15-foot radius takes damage of that type.</p><p><strong>Scaling:</strong> At dice count 3, the radius increases to 20 feet. At dice count 6, roll twice on the damage type table and apply both. At dice count 9, the damage increases substantially. At dice count 12, the surge ignores resistance to the chosen damage type. At dice count 15, the surge deals damage of all six types simultaneously.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d8",
+          "diceBonus": "+@int.mod"
+        }
       },
       {
         "name": "Overchannel",
@@ -151,7 +205,8 @@
         "castingTime": "instantaneous",
         "range": "self",
         "duration": "1 round",
-        "description": "<p>You force more power through yourself than is safe to channel. The next offensive spell you cast before the end of your turn deals maximum possible effect instead of an average roll, but you take a measure of damage from the strain immediately after it resolves.</p><p><strong>Scaling:</strong> At dice count 3, the strain damage is halved. At dice count 6, the strain damage no longer applies. At dice count 9, the empowered spell also ignores resistance. At dice count 12, you can overchannel twice before the end of your turn. At dice count 15, overchanneling costs no strain and can be used on every spell you cast this turn.</p>"
+        "description": "<p>You force more power through yourself than is safe to channel. The next offensive spell you cast before the end of your turn deals maximum possible effect instead of an average roll, but you take a measure of damage from the strain immediately after it resolves.</p><p><strong>Scaling:</strong> At dice count 3, the strain damage is halved. At dice count 6, the strain damage no longer applies. At dice count 9, the empowered spell also ignores resistance. At dice count 12, you can overchannel twice before the end of your turn. At dice count 15, overchanneling costs no strain and can be used on every spell you cast this turn.</p>",
+        "offensive": false
       },
       {
         "name": "Thunderclap",
@@ -162,7 +217,13 @@
         "castingTime": "instantaneous",
         "range": "self (15-foot radius)",
         "duration": "instantaneous",
-        "description": "<p>You clap your hands and unleash a peal of magical thunder that bursts outward from you. Each creature within 15 feet of you takes thunder damage and must succeed on a Constitution save or be deafened until the end of its next turn.</p><p><strong>Scaling:</strong> At dice count 3, the radius increases to 20 feet. At dice count 6, a failed save also knocks the creature prone. At dice count 9, the damage increases substantially. At dice count 12, the thunderclap can be heard for a mile, alerting or terrifying anyone who hears it. At dice count 15, the radius engulfs the entire battlefield.</p>"
+        "description": "<p>You clap your hands and unleash a peal of magical thunder that bursts outward from you. Each creature within 15 feet of you takes thunder damage and must succeed on a Constitution save or be deafened until the end of its next turn.</p><p><strong>Scaling:</strong> At dice count 3, the radius increases to 20 feet. At dice count 6, a failed save also knocks the creature prone. At dice count 9, the damage increases substantially. At dice count 12, the thunderclap can be heard for a mile, alerting or terrifying anyone who hears it. At dice count 15, the radius engulfs the entire battlefield.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 1,
+          "diceSize": "d8",
+          "diceBonus": "+@int.mod"
+        }
       },
       {
         "name": "Call Lightning",
@@ -173,7 +234,13 @@
         "castingTime": "instantaneous",
         "range": "120 feet",
         "duration": "concentration, 10 minutes",
-        "description": "<p>A storm cloud forms overhead, crackling and ready to strike wherever you point. On later turns while this spell lasts, you can call down a bolt at a point you can see within range; each creature within 5 feet of that point takes lightning damage.</p><p><strong>Scaling:</strong> At dice count 3, the damage increases substantially. At dice count 6, you can call down two bolts at different points with a single action. At dice count 9, the storm also creates heavy rain that douses flames and obscures vision in the area. At dice count 12, you can call a bolt as a reaction. At dice count 15, every bolt you call strikes all valid targets in the area, not just one.</p>"
+        "description": "<p>A storm cloud forms overhead, crackling and ready to strike wherever you point. On later turns while this spell lasts, you can call down a bolt at a point you can see within range; each creature within 5 feet of that point takes lightning damage.</p><p><strong>Scaling:</strong> At dice count 3, the damage increases substantially. At dice count 6, you can call down two bolts at different points with a single action. At dice count 9, the storm also creates heavy rain that douses flames and obscures vision in the area. At dice count 12, you can call a bolt as a reaction. At dice count 15, every bolt you call strikes all valid targets in the area, not just one.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d8",
+          "diceBonus": "+@int.mod"
+        }
       },
       {
         "name": "Telekinetic Slam",
@@ -184,7 +251,253 @@
         "castingTime": "instantaneous",
         "range": "30 feet",
         "duration": "instantaneous",
-        "description": "<p>You seize a creature or unattended object with raw telekinetic force and hurl it into the nearest solid surface or creature. The target takes bludgeoning damage and must succeed on a Strength save or be knocked prone.</p><p><strong>Scaling:</strong> At dice count 3, the damage increases substantially. At dice count 6, you can target a second creature within range. At dice count 9, a failed save also pushes the target 10 feet. At dice count 12, the slam deals damage to a creature caught between the target and the surface it's hurled into. At dice count 15, you can slam every enemy within 15 feet of the original target simultaneously.</p>"
+        "description": "<p>You seize a creature or unattended object with raw telekinetic force and hurl it into the nearest solid surface or creature. The target takes bludgeoning damage and must succeed on a Strength save or be knocked prone.</p><p><strong>Scaling:</strong> At dice count 3, the damage increases substantially. At dice count 6, you can target a second creature within range. At dice count 9, a failed save also pushes the target 10 feet. At dice count 12, the slam deals damage to a creature caught between the target and the surface it's hurled into. At dice count 15, you can slam every enemy within 15 feet of the original target simultaneously.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 1,
+          "diceSize": "d8",
+          "diceBonus": "+@int.mod"
+        }
+      },
+      {
+        "name": "Terminal Countdown",
+        "spellLevel": 6,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "evocation",
+        "castingTime": "instantaneous",
+        "range": "90 feet",
+        "duration": "3 rounds",
+        "description": "<p>You plant an unstable temporal marker on a target that counts down out loud. When it hits zero, the accumulated seconds unravel all at once, dealing force damage as the target's own recent past catches up to it.</p><p><strong>Scaling:</strong> At dice count 3, the countdown accelerates by one round. At dice count 6, the detonation also damages creatures within 10 feet of the target.</p>",
+        "offensive": true,
+        "classes": [
+          "Chronomancer"
+        ],
+        "roll": {
+          "diceNum": 3,
+          "diceSize": "d8",
+          "diceBonus": "+@int.mod"
+        }
+      },
+      {
+        "name": "Firewall Breach",
+        "spellLevel": 3,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "evocation",
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "instantaneous",
+        "description": "<p>You force a spike of raw code through a target's defenses, dealing force damage as its own wards are turned against it. Any active magical or technological shield on the target is weakened for the rest of the encounter.</p><p><strong>Scaling:</strong> At dice count 3, the breach also disables one of the target's active magic items until it rests. At dice count 6, the spike chains to a second target.</p>",
+        "offensive": true,
+        "classes": [
+          "Netrunner"
+        ],
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d8",
+          "diceBonus": "+@int.mod"
+        }
+      },
+      {
+        "name": "Mind Blade",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "evocation",
+        "castingTime": "instantaneous",
+        "range": "melee",
+        "duration": "instantaneous",
+        "description": "<p>You manifest a blade of pure focused thought along your weapon arm and drive it into a target, dealing psychic damage that bypasses nonmagical armor entirely.</p><p><strong>Scaling:</strong> At dice count 3, the blade also disorients the target, giving it disadvantage on its next attack. At dice count 6, you can strike two adjacent targets.</p>",
+        "offensive": true,
+        "classes": [
+          "Psi-Knight"
+        ],
+        "roll": {
+          "diceNum": 1,
+          "diceSize": "d8",
+          "diceBonus": "+@int.mod"
+        }
+      },
+      {
+        "name": "All-In Gambit",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "evocation",
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "instantaneous",
+        "description": "<p>You bet everything on one throw, hurling a burst of raw probability at a target for force damage. If your damage roll comes up all maximum values, the damage is doubled; if it comes up all minimum values, you take the difference as backlash instead.</p><p><strong>Scaling:</strong> At dice count 3, the backlash on a bad roll is halved. At dice count 6, the bet extends to a second target.</p>",
+        "offensive": true,
+        "classes": [
+          "Card Duelist"
+        ],
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d8",
+          "diceBonus": "+@int.mod"
+        }
+      },
+      {
+        "name": "Arcane Overflow",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "evocation",
+        "castingTime": "instantaneous",
+        "range": "90 feet",
+        "duration": "instantaneous",
+        "description": "<p>You let raw, unshaped magic spill out ahead of you in a torrent, dealing force damage to a target as unrefined arcane energy tears through whatever's in the way.</p><p><strong>Scaling:</strong> At dice count 3, the overflow punches through to a second target behind the first. At dice count 6, the damage type can be changed to match any spell you know.</p>",
+        "offensive": true,
+        "classes": [
+          "Wizard"
+        ],
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d8",
+          "diceBonus": "+@int.mod"
+        }
+      },
+      {
+        "name": "Zealous Smite",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "wis",
+        "category": "evocation",
+        "castingTime": "instantaneous",
+        "range": "melee",
+        "duration": "instantaneous",
+        "description": "<p>Your next successful weapon strike carries a flash of righteous light, dealing extra radiant damage. Fiends and undead take extra damage from the radiant portion.</p><p><strong>Scaling:</strong> At dice count 3, the radiant damage increases. At dice count 6, the light also blinds the target until the end of its next turn.</p>",
+        "offensive": true,
+        "classes": [
+          "Cleric"
+        ],
+        "roll": {
+          "diceNum": 1,
+          "diceSize": "d8",
+          "diceBonus": "+@wis.mod"
+        }
+      },
+      {
+        "name": "Divine Rebuke",
+        "spellLevel": 5,
+        "diceCount": 1,
+        "castStat": "wis",
+        "category": "evocation",
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "instantaneous",
+        "description": "<p>You call down a column of judgment onto a target, dealing radiant damage. If the target has harmed an ally of yours within the last minute, it takes extra damage.</p><p><strong>Scaling:</strong> At dice count 3, the column widens to catch one adjacent creature. At dice count 6, the target is also blinded until the end of its next turn.</p>",
+        "offensive": true,
+        "classes": [
+          "Cleric"
+        ],
+        "roll": {
+          "diceNum": 3,
+          "diceSize": "d8",
+          "diceBonus": "+@wis.mod"
+        }
+      },
+      {
+        "name": "Barometric Slam",
+        "spellLevel": 3,
+        "diceCount": 1,
+        "castStat": "wis",
+        "category": "evocation",
+        "castingTime": "instantaneous",
+        "range": "30-foot cone",
+        "duration": "instantaneous",
+        "description": "<p>You drop the air pressure in a cone in front of you all at once, and it snaps back with bone-jarring force, dealing thunder damage to everyone caught in the area and forcing a Strength save or be knocked prone.</p><p><strong>Scaling:</strong> At dice count 3, the cone extends to 45 feet. At dice count 6, creatures that fail the save are also deafened until the end of their next turn.</p>",
+        "offensive": true,
+        "classes": [
+          "Stormcaller"
+        ],
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d8",
+          "diceBonus": "+@wis.mod"
+        }
+      },
+      {
+        "name": "Fated Strike",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "wis",
+        "category": "evocation",
+        "castingTime": "instantaneous",
+        "range": "90 feet",
+        "duration": "instantaneous",
+        "description": "<p>You speak a target's death written into the near future and let it happen early, dealing force damage as fate catches up all at once. This spell cannot miss.</p><p><strong>Scaling:</strong> At dice count 3, the damage increases. At dice count 6, if this spell reduces the target below half its hit points, it also has disadvantage on its next saving throw.</p>",
+        "offensive": true,
+        "classes": [
+          "Oracle"
+        ],
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d8",
+          "diceBonus": "+@wis.mod"
+        }
+      },
+      {
+        "name": "Mic Drop",
+        "spellLevel": 3,
+        "diceCount": 1,
+        "castStat": "cha",
+        "category": "evocation",
+        "castingTime": "instantaneous",
+        "range": "30-foot radius",
+        "duration": "instantaneous",
+        "description": "<p>You end your performance on the single loudest, most devastating note you know, dealing thunder damage to every hostile creature in range and briefly stunning any that fail a Constitution save.</p><p><strong>Scaling:</strong> At dice count 3, the radius increases to 40 feet. At dice count 6, allies within the radius are inspired, gaining a small bonus to their next attack roll.</p>",
+        "offensive": true,
+        "classes": [
+          "Bard"
+        ],
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d8",
+          "diceBonus": "+@cha.mod"
+        }
+      },
+      {
+        "name": "Chaos Bolt",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "cha",
+        "category": "evocation",
+        "castingTime": "instantaneous",
+        "range": "90 feet",
+        "duration": "instantaneous",
+        "description": "<p>You hurl a crackling, unstable bolt of raw magic at a target. Roll a d6 to determine its damage type at random: fire, cold, lightning, acid, thunder, or force. If you roll the same type twice on subsequent castings this encounter, the second casting's damage is doubled.</p><p><strong>Scaling:</strong> At dice count 3, the bolt bounces to a second target for half damage. At dice count 6, the chance of a chain reaction from matching types no longer requires consecutive castings.</p>",
+        "offensive": true,
+        "classes": [
+          "Sorcerer"
+        ],
+        "roll": {
+          "diceNum": 1,
+          "diceSize": "d8",
+          "diceBonus": "+@cha.mod"
+        }
+      },
+      {
+        "name": "Overflow",
+        "spellLevel": 6,
+        "diceCount": 1,
+        "castStat": "cha",
+        "category": "evocation",
+        "castingTime": "instantaneous",
+        "range": "30-foot radius",
+        "duration": "instantaneous",
+        "description": "<p>You let everything you're holding back go at once in a single uncontrolled detonation of force damage centered on yourself, catching allies and enemies alike. You take a portion of the damage dealt as backlash.</p><p><strong>Scaling:</strong> At dice count 3, allies caught in the radius can choose to take no damage. At dice count 6, your own backlash damage is halved.</p>",
+        "offensive": true,
+        "classes": [
+          "Sorcerer"
+        ],
+        "roll": {
+          "diceNum": 3,
+          "diceSize": "d8",
+          "diceBonus": "+@cha.mod"
+        }
       }
     ],
     "abjuration": [
@@ -197,7 +510,8 @@
         "castingTime": "instantaneous",
         "range": "self",
         "duration": "1 round",
-        "description": "<p>Creates an invisible barrier of magical force that protects you, granting +5 to AC until the start of your next turn.</p><p><strong>Scaling:</strong> At dice count 3, also grants resistance to force damage. At dice count 6, reflects projectiles back at attackers. At dice count 9, the shield lasts for 1 minute. At dice count 12, can protect adjacent allies. At dice count 15, creates an impenetrable force dome.</p>"
+        "description": "<p>Creates an invisible barrier of magical force that protects you, granting +5 to AC until the start of your next turn.</p><p><strong>Scaling:</strong> At dice count 3, also grants resistance to force damage. At dice count 6, reflects projectiles back at attackers. At dice count 9, the shield lasts for 1 minute. At dice count 12, can protect adjacent allies. At dice count 15, creates an impenetrable force dome.</p>",
+        "offensive": false
       },
       {
         "name": "Protection from Evil",
@@ -208,7 +522,8 @@
         "castingTime": "instantaneous",
         "range": "touch",
         "duration": "10 minutes",
-        "description": "<p>Wards a creature against attacks from evil creatures, granting advantage on saves against their abilities and preventing possession.</p><p><strong>Scaling:</strong> At dice count 3, extends to protect against aberrations and undead. At dice count 6, can affect multiple creatures. At dice count 9, actively repels evil creatures. At dice count 12, duration extends to 1 hour. At dice count 15, creates a permanent ward until dispelled.</p>"
+        "description": "<p>Wards a creature against attacks from evil creatures, granting advantage on saves against their abilities and preventing possession.</p><p><strong>Scaling:</strong> At dice count 3, extends to protect against aberrations and undead. At dice count 6, can affect multiple creatures. At dice count 9, actively repels evil creatures. At dice count 12, duration extends to 1 hour. At dice count 15, creates a permanent ward until dispelled.</p>",
+        "offensive": false
       },
       {
         "name": "Resist Energy",
@@ -219,7 +534,8 @@
         "castingTime": "instantaneous",
         "range": "touch",
         "duration": "1 hour",
-        "description": "<p>Grants resistance to a chosen energy type (fire, cold, lightning, or acid), reducing damage of that type by half.</p><p><strong>Scaling:</strong> At dice count 3, can choose two energy types. At dice count 6, grants immunity instead of resistance. At dice count 9, can protect multiple creatures. At dice count 12, also reflects 25% of energy damage back. At dice count 15, grants immunity to all energy types.</p>"
+        "description": "<p>Grants resistance to a chosen energy type (fire, cold, lightning, or acid), reducing damage of that type by half.</p><p><strong>Scaling:</strong> At dice count 3, can choose two energy types. At dice count 6, grants immunity instead of resistance. At dice count 9, can protect multiple creatures. At dice count 12, also reflects 25% of energy damage back. At dice count 15, grants immunity to all energy types.</p>",
+        "offensive": false
       },
       {
         "name": "Dispel Magic",
@@ -230,7 +546,8 @@
         "castingTime": "instantaneous",
         "range": "120 feet",
         "duration": "instantaneous",
-        "description": "<p>Ends ongoing magical effects within range. Automatically dispels spells of 3rd level or lower; higher level spells require a check.</p><p><strong>Scaling:</strong> At dice count 3, automatically dispels 5th level spells. At dice count 6, affects a 20-foot radius. At dice count 9, automatically dispels 7th level spells. At dice count 12, can target multiple effects. At dice count 15, creates an antimagic pulse that dispels everything in 60 feet.</p>"
+        "description": "<p>Ends ongoing magical effects within range. Automatically dispels spells of 3rd level or lower; higher level spells require a check.</p><p><strong>Scaling:</strong> At dice count 3, automatically dispels 5th level spells. At dice count 6, affects a 20-foot radius. At dice count 9, automatically dispels 7th level spells. At dice count 12, can target multiple effects. At dice count 15, creates an antimagic pulse that dispels everything in 60 feet.</p>",
+        "offensive": false
       },
       {
         "name": "Stoneskin",
@@ -241,7 +558,8 @@
         "castingTime": "instantaneous",
         "range": "touch",
         "duration": "1 hour",
-        "description": "<p>Hardens the target's flesh to the toughness of stone, granting resistance to nonmagical physical damage.</p><p><strong>Scaling:</strong> At dice count 3, also grants resistance to magical physical damage. At dice count 6, can affect multiple creatures. At dice count 9, the skin becomes adamantine, granting damage reduction. At dice count 12, attackers take damage when they hit you. At dice count 15, you become nearly invulnerable to physical attacks.</p>"
+        "description": "<p>Hardens the target's flesh to the toughness of stone, granting resistance to nonmagical physical damage.</p><p><strong>Scaling:</strong> At dice count 3, also grants resistance to magical physical damage. At dice count 6, can affect multiple creatures. At dice count 9, the skin becomes adamantine, granting damage reduction. At dice count 12, attackers take damage when they hit you. At dice count 15, you become nearly invulnerable to physical attacks.</p>",
+        "offensive": false
       },
       {
         "name": "Wall of Force",
@@ -252,7 +570,8 @@
         "castingTime": "instantaneous",
         "range": "120 feet",
         "duration": "10 minutes",
-        "description": "<p>Creates an invisible wall of pure magical force that is completely impenetrable. The wall can be shaped as a dome, sphere, or flat panels.</p><p><strong>Scaling:</strong> At dice count 3, the wall becomes mobile. At dice count 6, can create multiple walls. At dice count 9, the wall damages creatures that touch it. At dice count 12, duration extends to 1 hour. At dice count 15, creates a permanent force structure.</p>"
+        "description": "<p>Creates an invisible wall of pure magical force that is completely impenetrable. The wall can be shaped as a dome, sphere, or flat panels.</p><p><strong>Scaling:</strong> At dice count 3, the wall becomes mobile. At dice count 6, can create multiple walls. At dice count 9, the wall damages creatures that touch it. At dice count 12, duration extends to 1 hour. At dice count 15, creates a permanent force structure.</p>",
+        "offensive": false
       },
       {
         "name": "Antimagic Field",
@@ -263,7 +582,8 @@
         "castingTime": "instantaneous",
         "range": "self",
         "duration": "concentration, 1 hour",
-        "description": "<p>Creates a 10-foot radius sphere where magic cannot function and spells are suppressed. Magical items become mundane and spells cannot be cast.</p><p><strong>Scaling:</strong> At dice count 3, radius increases to 20 feet. At dice count 6, can exclude certain magical effects. At dice count 9, radius increases to 30 feet. At dice count 12, the field becomes mobile and can be projected. At dice count 15, creates a permanent antimagic zone.</p>"
+        "description": "<p>Creates a 10-foot radius sphere where magic cannot function and spells are suppressed. Magical items become mundane and spells cannot be cast.</p><p><strong>Scaling:</strong> At dice count 3, radius increases to 20 feet. At dice count 6, can exclude certain magical effects. At dice count 9, radius increases to 30 feet. At dice count 12, the field becomes mobile and can be projected. At dice count 15, creates a permanent antimagic zone.</p>",
+        "offensive": false
       },
       {
         "name": "Spell Turning",
@@ -274,7 +594,8 @@
         "castingTime": "instantaneous",
         "range": "self",
         "duration": "1 round",
-        "description": "<p>A shimmering ward surrounds you. The next spell that targets you before the ward fades is deflected back at its caster, contested by a Cast check.</p><p><strong>Scaling:</strong> At dice count 3, you gain advantage on the contested check. At dice count 6, a failed contest still negates the spell's effect on you entirely. At dice count 9, the ward deflects the next two spells instead of one. At dice count 12, deflected spells deal an extra 1d6 damage of their type. At dice count 15, the ward reflects any spell automatically, no contest required.</p>"
+        "description": "<p>A shimmering ward surrounds you. The next spell that targets you before the ward fades is deflected back at its caster, contested by a Cast check.</p><p><strong>Scaling:</strong> At dice count 3, you gain advantage on the contested check. At dice count 6, a failed contest still negates the spell's effect on you entirely. At dice count 9, the ward deflects the next two spells instead of one. At dice count 12, deflected spells deal an extra 1d6 damage of their type. At dice count 15, the ward reflects any spell automatically, no contest required.</p>",
+        "offensive": false
       },
       {
         "name": "Cure Wounds",
@@ -285,7 +606,8 @@
         "castingTime": "instantaneous",
         "range": "touch",
         "duration": "instantaneous",
-        "description": "<p>A surge of divine energy flows through your touch, closing wounds and mending flesh. The target regains a significant amount of hit points.</p><p><strong>Scaling:</strong> At dice count 3, the healing increases substantially. At dice count 6, you can touch a second creature as part of the same casting. At dice count 9, the spell also removes one minor ailment (poison or disease). At dice count 12, healing no longer requires touch, working at 30 feet instead. At dice count 15, the spell restores a creature to full hit points.</p>"
+        "description": "<p>A surge of divine energy flows through your touch, closing wounds and mending flesh. The target regains a significant amount of hit points.</p><p><strong>Scaling:</strong> At dice count 3, the healing increases substantially. At dice count 6, you can touch a second creature as part of the same casting. At dice count 9, the spell also removes one minor ailment (poison or disease). At dice count 12, healing no longer requires touch, working at 30 feet instead. At dice count 15, the spell restores a creature to full hit points.</p>",
+        "offensive": false
       },
       {
         "name": "Healing Word",
@@ -296,7 +618,8 @@
         "castingTime": "instantaneous",
         "range": "30 feet",
         "duration": "instantaneous",
-        "description": "<p>You speak a single word of divine power, and a wave of healing energy washes over a creature you can see, restoring a modest amount of hit points - less than a hands-on healing spell, but fast enough to speak between blows.</p><p><strong>Scaling:</strong> At dice count 3, the healing increases. At dice count 6, you can target a second creature within range. At dice count 9, the word also grants the target advantage on its next saving throw. At dice count 12, the range increases to 60 feet. At dice count 15, every ally within 30 feet of the target is healed as well.</p>"
+        "description": "<p>You speak a single word of divine power, and a wave of healing energy washes over a creature you can see, restoring a modest amount of hit points - less than a hands-on healing spell, but fast enough to speak between blows.</p><p><strong>Scaling:</strong> At dice count 3, the healing increases. At dice count 6, you can target a second creature within range. At dice count 9, the word also grants the target advantage on its next saving throw. At dice count 12, the range increases to 60 feet. At dice count 15, every ally within 30 feet of the target is healed as well.</p>",
+        "offensive": false
       },
       {
         "name": "Glyph of Warding",
@@ -307,7 +630,13 @@
         "castingTime": "1 round",
         "range": "touch",
         "duration": "8 hours",
-        "description": "<p>You inscribe a hidden rune onto a surface or object, primed to trigger when your chosen condition is met. When triggered, the rune detonates, dealing damage to the triggering creature and any creature within 10 feet of it. Only you and creatures you designate can bypass it safely.</p><p><strong>Scaling:</strong> At dice count 3, the damage increases substantially. At dice count 6, you can inscribe two glyphs from a single casting. At dice count 9, the glyph also applies a condition of your choice (blinded, deafened, or restrained) to the triggering creature. At dice count 12, the glyph's duration extends to 1 week. At dice count 15, the glyph is permanent until triggered or dispelled.</p>"
+        "description": "<p>You inscribe a hidden rune onto a surface or object, primed to trigger when your chosen condition is met. When triggered, the rune detonates, dealing damage to the triggering creature and any creature within 10 feet of it. Only you and creatures you designate can bypass it safely.</p><p><strong>Scaling:</strong> At dice count 3, the damage increases substantially. At dice count 6, you can inscribe two glyphs from a single casting. At dice count 9, the glyph also applies a condition of your choice (blinded, deafened, or restrained) to the triggering creature. At dice count 12, the glyph's duration extends to 1 week. At dice count 15, the glyph is permanent until triggered or dispelled.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d6",
+          "diceBonus": "+@int.mod"
+        }
       },
       {
         "name": "Trap Card",
@@ -318,7 +647,153 @@
         "castingTime": "instantaneous",
         "range": "self",
         "duration": "1 hour",
-        "description": "<p>You set a hidden ward that springs to life the instant it's needed. The next time a creature hits you with an attack or targets you with a spell before this ends, the trap triggers: the triggering creature takes damage and, if it hasn't yet resolved its own effect, that effect fails.</p><p><strong>Scaling:</strong> At dice count 3, the damage increases substantially. At dice count 6, the trap can trigger twice before it's spent. At dice count 9, the duration increases to 8 hours. At dice count 12, triggering the trap also grants you advantage on your next attack against the triggering creature. At dice count 15, the trap protects every ally within 5 feet of you as well.</p>"
+        "description": "<p>You set a hidden ward that springs to life the instant it's needed. The next time a creature hits you with an attack or targets you with a spell before this ends, the trap triggers: the triggering creature takes damage and, if it hasn't yet resolved its own effect, that effect fails.</p><p><strong>Scaling:</strong> At dice count 3, the damage increases substantially. At dice count 6, the trap can trigger twice before it's spent. At dice count 9, the duration increases to 8 hours. At dice count 12, triggering the trap also grants you advantage on your next attack against the triggering creature. At dice count 15, the trap protects every ally within 5 feet of you as well.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 1,
+          "diceSize": "d6",
+          "diceBonus": "+@int.mod"
+        }
+      },
+      {
+        "name": "Kinetic Ward",
+        "spellLevel": 3,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "abjuration",
+        "castingTime": "instantaneous",
+        "range": "self",
+        "duration": "1 minute",
+        "description": "<p>You wrap yourself in a shell of telekinetic tension that flexes to absorb incoming force. You gain damage reduction against physical attacks for the duration.</p><p><strong>Scaling:</strong> At dice count 3, the reduction also applies to one ally within 5 feet of you. At dice count 6, the ward reflects a portion of absorbed damage back at the attacker.</p>",
+        "offensive": false,
+        "classes": [
+          "Psi-Knight"
+        ]
+      },
+      {
+        "name": "Precognitive Riposte",
+        "spellLevel": 5,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "abjuration",
+        "castingTime": "instantaneous",
+        "range": "self",
+        "duration": "1 round",
+        "description": "<p>A half-second flash of the immediate future lets you see an attack before it lands. The next time a creature would hit you with an attack before the start of your next turn, you can immediately make one weapon attack against it as a reaction, resolved before the triggering attack's damage.</p><p><strong>Scaling:</strong> At dice count 3, you also gain advantage on that reaction attack. At dice count 6, the foresight lasts until the start of your next turn even after triggering once.</p>",
+        "offensive": false,
+        "classes": [
+          "Psi-Knight"
+        ]
+      },
+      {
+        "name": "Warding Sigil",
+        "spellLevel": 1,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "abjuration",
+        "castingTime": "1 round",
+        "range": "touch",
+        "duration": "1 hour",
+        "description": "<p>You carve a small protective rune into an object or a willing creature's skin. The bearer gains a small bonus to saving throws for the duration.</p><p><strong>Scaling:</strong> At dice count 3, the bonus also applies to AC. At dice count 6, the rune can be carved onto two bearers at once.</p>",
+        "offensive": false,
+        "classes": [
+          "Runesmith"
+        ]
+      },
+      {
+        "name": "Explosive Glyph",
+        "spellLevel": 3,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "abjuration",
+        "castingTime": "1 round",
+        "range": "touch",
+        "duration": "8 hours",
+        "description": "<p>You inscribe a hidden rune onto a surface, keyed to detonate when a creature you didn't mark crosses it. The rune bursts in a shower of force, dealing damage to the triggering creature.</p><p><strong>Scaling:</strong> At dice count 3, the blast also catches creatures within 5 feet of the trigger point. At dice count 6, you can inscribe two glyphs from a single casting.</p>",
+        "offensive": true,
+        "classes": [
+          "Runesmith"
+        ],
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d6",
+          "diceBonus": "+@int.mod"
+        }
+      },
+      {
+        "name": "Battlefield Triage",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "abjuration",
+        "castingTime": "instantaneous",
+        "range": "30 feet",
+        "duration": "instantaneous",
+        "description": "<p>You bark rapid-fire instructions and guide a struggling ally's hands, stabilizing a wound from a distance without ever touching it. The target regains a modest amount of hit points.</p><p><strong>Scaling:</strong> At dice count 3, the healing increases substantially. At dice count 6, you can triage two creatures with the same casting.</p>",
+        "offensive": false,
+        "classes": [
+          "Field Surgeon"
+        ]
+      },
+      {
+        "name": "Sanctified Ground",
+        "spellLevel": 3,
+        "diceCount": 1,
+        "castStat": "wis",
+        "category": "abjuration",
+        "castingTime": "1 round",
+        "range": "30 feet",
+        "duration": "1 minute",
+        "description": "<p>You bless a 15-foot radius area, marking it as consecrated ground. Allies within the area regain a small amount of hit points at the start of each of their turns.</p><p><strong>Scaling:</strong> At dice count 3, the healing increases. At dice count 6, undead entering the area for the first time on a turn take radiant damage.</p>",
+        "offensive": false,
+        "classes": [
+          "Cleric"
+        ]
+      },
+      {
+        "name": "Eye of the Storm",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "wis",
+        "category": "abjuration",
+        "castingTime": "instantaneous",
+        "range": "self",
+        "duration": "1 minute",
+        "description": "<p>You carve out a pocket of dead calm around yourself in a 15-foot radius, even as chaos rages outside it. Allies within the area gain advantage on saving throws against being frightened, deafened, or knocked prone.</p><p><strong>Scaling:</strong> At dice count 3, the radius increases to 20 feet. At dice count 6, allies within also gain resistance to thunder and lightning damage.</p>",
+        "offensive": false,
+        "classes": [
+          "Stormcaller"
+        ]
+      },
+      {
+        "name": "Priority Reroute",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "wis",
+        "category": "abjuration",
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "instantaneous",
+        "description": "<p>You call an emergency reroute on an incoming attack, redirecting a portion of the harm elsewhere. When an ally within range would take damage, you can use your reaction to shift a portion of that damage to yourself instead.</p><p><strong>Scaling:</strong> At dice count 3, the amount you can absorb increases. At dice count 6, you can reroute damage from two allies with a single reaction.</p>",
+        "offensive": false,
+        "classes": [
+          "Dispatcher"
+        ]
+      },
+      {
+        "name": "State of Emergency",
+        "spellLevel": 5,
+        "diceCount": 1,
+        "castStat": "cha",
+        "category": "abjuration",
+        "castingTime": "instantaneous",
+        "range": "30-foot radius",
+        "duration": "1 minute",
+        "description": "<p>You declare emergency powers, and your allies feel the shift immediately. Every ally within range gains temporary hit points and advantage on their next saving throw before the spell ends.</p><p><strong>Scaling:</strong> At dice count 3, the temporary hit points increase. At dice count 6, the radius increases to 40 feet.</p>",
+        "offensive": false,
+        "classes": [
+          "President"
+        ]
       }
     ],
     "conjuration": [
@@ -331,7 +806,8 @@
         "castingTime": "instantaneous",
         "range": "30 feet",
         "duration": "instantaneous",
-        "description": "<p>Conjures fresh, drinkable water from thin air, creating up to 10 gallons that fills containers or creates puddles.</p><p><strong>Scaling:</strong> At dice count 3, creates 50 gallons. At dice count 6, can create other liquids (wine, oil). At dice count 9, creates 200 gallons. At dice count 12, can create a flowing stream. At dice count 15, creates a permanent water source.</p>"
+        "description": "<p>Conjures fresh, drinkable water from thin air, creating up to 10 gallons that fills containers or creates puddles.</p><p><strong>Scaling:</strong> At dice count 3, creates 50 gallons. At dice count 6, can create other liquids (wine, oil). At dice count 9, creates 200 gallons. At dice count 12, can create a flowing stream. At dice count 15, creates a permanent water source.</p>",
+        "offensive": false
       },
       {
         "name": "Summon Familiar",
@@ -342,7 +818,8 @@
         "castingTime": "1 round",
         "range": "10 feet",
         "duration": "until dismissed",
-        "description": "<p>Summons a magical animal companion (cat, owl, rat, raven, etc.) to serve you. You can communicate telepathically and see through its eyes.</p><p><strong>Scaling:</strong> At dice count 3, familiar gains enhanced abilities. At dice count 6, can summon exotic familiars. At dice count 9, familiar can cast cantrips. At dice count 12, summon multiple familiars. At dice count 15, familiar becomes a powerful magical creature.</p>"
+        "description": "<p>Summons a magical animal companion (cat, owl, rat, raven, etc.) to serve you. You can communicate telepathically and see through its eyes.</p><p><strong>Scaling:</strong> At dice count 3, familiar gains enhanced abilities. At dice count 6, can summon exotic familiars. At dice count 9, familiar can cast cantrips. At dice count 12, summon multiple familiars. At dice count 15, familiar becomes a powerful magical creature.</p>",
+        "offensive": false
       },
       {
         "name": "Misty Step",
@@ -353,7 +830,8 @@
         "castingTime": "instantaneous",
         "range": "self",
         "duration": "instantaneous",
-        "description": "<p>Teleports you up to 30 feet to an unoccupied space you can see in a puff of silvery mist.</p><p><strong>Scaling:</strong> At dice count 3, range increases to 60 feet. At dice count 6, can bring one willing creature. At dice count 9, can teleport as a reaction. At dice count 12, range increases to 120 feet. At dice count 15, can teleport at will for 1 minute.</p>"
+        "description": "<p>Teleports you up to 30 feet to an unoccupied space you can see in a puff of silvery mist.</p><p><strong>Scaling:</strong> At dice count 3, range increases to 60 feet. At dice count 6, can bring one willing creature. At dice count 9, can teleport as a reaction. At dice count 12, range increases to 120 feet. At dice count 15, can teleport at will for 1 minute.</p>",
+        "offensive": false
       },
       {
         "name": "Web",
@@ -364,7 +842,8 @@
         "castingTime": "instantaneous",
         "range": "60 feet",
         "duration": "concentration, 1 hour",
-        "description": "<p>Conjures thick, sticky webs that fill a 20-foot cube, heavily obscuring the area and restraining creatures that enter.</p><p><strong>Scaling:</strong> At dice count 3, webs are fireproof. At dice count 6, creates 40-foot cube. At dice count 9, webs are stronger and harder to escape. At dice count 12, webs deal damage to restrained creatures. At dice count 15, creates a massive web network covering 100 feet.</p>"
+        "description": "<p>Conjures thick, sticky webs that fill a 20-foot cube, heavily obscuring the area and restraining creatures that enter.</p><p><strong>Scaling:</strong> At dice count 3, webs are fireproof. At dice count 6, creates 40-foot cube. At dice count 9, webs are stronger and harder to escape. At dice count 12, webs deal damage to restrained creatures. At dice count 15, creates a massive web network covering 100 feet.</p>",
+        "offensive": false
       },
       {
         "name": "Dimension Door",
@@ -375,7 +854,8 @@
         "castingTime": "instantaneous",
         "range": "500 feet",
         "duration": "instantaneous",
-        "description": "<p>Teleports you up to 500 feet to a location you can visualize, passing through barriers and obstacles. Can bring one willing creature.</p><p><strong>Scaling:</strong> At dice count 3, range increases to 1000 feet. At dice count 6, can bring multiple creatures. At dice count 9, can teleport to any location you've been before. At dice count 12, leaves no trace and cannot be tracked. At dice count 15, can teleport between planes.</p>"
+        "description": "<p>Teleports you up to 500 feet to a location you can visualize, passing through barriers and obstacles. Can bring one willing creature.</p><p><strong>Scaling:</strong> At dice count 3, range increases to 1000 feet. At dice count 6, can bring multiple creatures. At dice count 9, can teleport to any location you've been before. At dice count 12, leaves no trace and cannot be tracked. At dice count 15, can teleport between planes.</p>",
+        "offensive": false
       },
       {
         "name": "Summon Monster",
@@ -386,7 +866,8 @@
         "castingTime": "1 round",
         "range": "60 feet",
         "duration": "concentration, 1 hour",
-        "description": "<p>Summons an extraplanar creature (elemental, demon, etc.) to do your bidding. The creature is friendly and obeys your commands.</p><p><strong>Scaling:</strong> At dice count 3, summons a more powerful creature. At dice count 6, can summon multiple creatures. At dice count 9, summoned creatures are enhanced. At dice count 12, can summon legendary creatures. At dice count 15, summons an army of creatures.</p>"
+        "description": "<p>Summons an extraplanar creature (elemental, demon, etc.) to do your bidding. The creature is friendly and obeys your commands.</p><p><strong>Scaling:</strong> At dice count 3, summons a more powerful creature. At dice count 6, can summon multiple creatures. At dice count 9, summoned creatures are enhanced. At dice count 12, can summon legendary creatures. At dice count 15, summons an army of creatures.</p>",
+        "offensive": false
       },
       {
         "name": "Teleport",
@@ -397,7 +878,8 @@
         "castingTime": "instantaneous",
         "range": "10 feet",
         "duration": "instantaneous",
-        "description": "<p>Instantly transports you and up to 8 willing creatures to a distant location you've been to before. Unfamiliar destinations carry risk of mishap.</p><p><strong>Scaling:</strong> At dice count 3, can teleport to locations you've only seen. At dice count 6, eliminates risk of mishap. At dice count 9, can bring more creatures or objects. At dice count 12, can create permanent teleportation circles. At dice count 15, can teleport across planes without error.</p>"
+        "description": "<p>Instantly transports you and up to 8 willing creatures to a distant location you've been to before. Unfamiliar destinations carry risk of mishap.</p><p><strong>Scaling:</strong> At dice count 3, can teleport to locations you've only seen. At dice count 6, eliminates risk of mishap. At dice count 9, can bring more creatures or objects. At dice count 12, can create permanent teleportation circles. At dice count 15, can teleport across planes without error.</p>",
+        "offensive": false
       },
       {
         "name": "Draw Reinforcement",
@@ -408,7 +890,8 @@
         "castingTime": "instantaneous",
         "range": "30 feet",
         "duration": "1 minute",
-        "description": "<p>You draw the next card from an unseen deck and it tears free of reality as a spectral ally. The summoned creature appears in an unoccupied space you choose within range and fights on your behalf until the spell ends or it's destroyed.</p><p><strong>Scaling:</strong> At dice count 3, the summoned creature is sturdier and hits harder. At dice count 6, the duration increases to 10 minutes. At dice count 9, you can summon a second creature with the same casting. At dice count 12, the summon's attacks count as magical for the purpose of overcoming resistance. At dice count 15, the summon remains until dismissed instead of expiring.</p>"
+        "description": "<p>You draw the next card from an unseen deck and it tears free of reality as a spectral ally. The summoned creature appears in an unoccupied space you choose within range and fights on your behalf until the spell ends or it's destroyed.</p><p><strong>Scaling:</strong> At dice count 3, the summoned creature is sturdier and hits harder. At dice count 6, the duration increases to 10 minutes. At dice count 9, you can summon a second creature with the same casting. At dice count 12, the summon's attacks count as magical for the purpose of overcoming resistance. At dice count 15, the summon remains until dismissed instead of expiring.</p>",
+        "offensive": false
       },
       {
         "name": "Baited Swap",
@@ -419,7 +902,88 @@
         "castingTime": "instantaneous",
         "range": "60 feet",
         "duration": "instantaneous",
-        "description": "<p>You trade places with a creature within range in a blink of misdirection, willing or not (an unwilling creature can negate the swap with a successful Charisma save). You and the target instantly swap positions.</p><p><strong>Scaling:</strong> At dice count 3, the range increases to 90 feet. At dice count 6, the target has disadvantage on the save if it's currently unaware of you. At dice count 9, you can swap a willing ally into the target's space instead of yourself. At dice count 12, the swap also disorients the target, giving it disadvantage on its next attack roll. At dice count 15, you can swap the positions of any two creatures you can see, without needing to be one of them.</p>"
+        "description": "<p>You trade places with a creature within range in a blink of misdirection, willing or not (an unwilling creature can negate the swap with a successful Charisma save). You and the target instantly swap positions.</p><p><strong>Scaling:</strong> At dice count 3, the range increases to 90 feet. At dice count 6, the target has disadvantage on the save if it's currently unaware of you. At dice count 9, you can swap a willing ally into the target's space instead of yourself. At dice count 12, the swap also disorients the target, giving it disadvantage on its next attack roll. At dice count 15, you can swap the positions of any two creatures you can see, without needing to be one of them.</p>",
+        "offensive": false
+      },
+      {
+        "name": "Wild Card",
+        "spellLevel": 3,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "conjuration",
+        "castingTime": "instantaneous",
+        "range": "30 feet",
+        "duration": "instantaneous",
+        "description": "<p>You conjure a single glowing card and flick it at a target, letting reality decide what it does: roll to randomly apply a helpful effect to an ally or a hindering one to an enemy (blinded, prone, slowed, or stunned until the end of its next turn).</p><p><strong>Scaling:</strong> At dice count 3, you draw two cards and apply both. At dice count 6, you can choose the effect instead of rolling.</p>",
+        "offensive": false,
+        "classes": [
+          "Card Duelist"
+        ]
+      },
+      {
+        "name": "All Units Respond",
+        "spellLevel": 5,
+        "diceCount": 1,
+        "castStat": "wis",
+        "category": "conjuration",
+        "castingTime": "1 round",
+        "range": "30 feet",
+        "duration": "1 minute",
+        "description": "<p>You put out an all-call, and a spectral response team answers, appearing in unoccupied spaces you choose within range. They follow your orders and fight on your behalf until the spell ends or they're destroyed.</p><p><strong>Scaling:</strong> At dice count 3, an additional responder answers the call. At dice count 6, the responders are noticeably tougher.</p>",
+        "offensive": false,
+        "classes": [
+          "Dispatcher"
+        ]
+      },
+      {
+        "name": "Dreamscape Shift",
+        "spellLevel": 5,
+        "diceCount": 1,
+        "castStat": "cha",
+        "category": "conjuration",
+        "castingTime": "instantaneous",
+        "range": "self",
+        "duration": "instantaneous",
+        "description": "<p>You fold the space around yourself through the edge of the dreaming world and step back out somewhere else. You and up to two willing creatures within 10 feet teleport up to 60 feet to an unoccupied space you can visualize.</p><p><strong>Scaling:</strong> At dice count 3, the range increases to 120 feet. At dice count 6, you can bring up to four creatures.</p>",
+        "offensive": false,
+        "classes": [
+          "Dreamweaver"
+        ]
+      },
+      {
+        "name": "Eldritch Grasp",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "cha",
+        "category": "conjuration",
+        "castingTime": "instantaneous",
+        "range": "30 feet",
+        "duration": "instantaneous",
+        "description": "<p>An appendage that shouldn't exist reaches through the space behind you and closes around a target, dealing psychic damage and pulling it up to 15 feet toward you.</p><p><strong>Scaling:</strong> At dice count 3, the target is also restrained until the end of its next turn. At dice count 6, the grasp can seize two targets.</p>",
+        "offensive": true,
+        "classes": [
+          "Void Touched"
+        ],
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d8",
+          "diceBonus": "+@cha.mod"
+        }
+      },
+      {
+        "name": "Stan Army",
+        "spellLevel": 5,
+        "diceCount": 1,
+        "castStat": "cha",
+        "category": "conjuration",
+        "castingTime": "1 round",
+        "range": "30 feet",
+        "duration": "1 minute",
+        "description": "<p>A devoted crowd of fans pushes through the crowd to your side, utterly convinced you need their help. Up to two spectral fans appear in unoccupied spaces you choose within range and fight on your behalf until the spell ends or they're destroyed.</p><p><strong>Scaling:</strong> At dice count 3, an additional fan answers the call. At dice count 6, the fans are noticeably tougher.</p>",
+        "offensive": false,
+        "classes": [
+          "Child Star"
+        ]
       }
     ],
     "enchantment": [
@@ -432,7 +996,8 @@
         "castingTime": "instantaneous",
         "range": "30 feet",
         "duration": "1 hour",
-        "description": "<p>Makes a humanoid regard you as a trusted friend. The target has advantage on social interactions with you but won't do anything harmful to itself.</p><p><strong>Scaling:</strong> At dice count 3, can affect multiple humanoids. At dice count 6, works on any creature type. At dice count 9, duration extends to 8 hours. At dice count 12, the charm is much stronger and harder to break. At dice count 15, creates permanent loyalty.</p>"
+        "description": "<p>Makes a humanoid regard you as a trusted friend. The target has advantage on social interactions with you but won't do anything harmful to itself.</p><p><strong>Scaling:</strong> At dice count 3, can affect multiple humanoids. At dice count 6, works on any creature type. At dice count 9, duration extends to 8 hours. At dice count 12, the charm is much stronger and harder to break. At dice count 15, creates permanent loyalty.</p>",
+        "offensive": false
       },
       {
         "name": "Sleep",
@@ -443,7 +1008,8 @@
         "castingTime": "instantaneous",
         "range": "90 feet",
         "duration": "1 minute",
-        "description": "<p>Sends creatures into a magical slumber in a 20-foot radius. Affects the weakest creatures first based on their hit points.</p><p><strong>Scaling:</strong> At dice count 3, affects more hit points of creatures. At dice count 6, radius increases to 40 feet. At dice count 9, can affect stronger creatures. At dice count 12, sleep is very deep and hard to wake from. At dice count 15, puts entire armies to sleep.</p>"
+        "description": "<p>Sends creatures into a magical slumber in a 20-foot radius. Affects the weakest creatures first based on their hit points.</p><p><strong>Scaling:</strong> At dice count 3, affects more hit points of creatures. At dice count 6, radius increases to 40 feet. At dice count 9, can affect stronger creatures. At dice count 12, sleep is very deep and hard to wake from. At dice count 15, puts entire armies to sleep.</p>",
+        "offensive": false
       },
       {
         "name": "Hold Person",
@@ -454,7 +1020,8 @@
         "castingTime": "instantaneous",
         "range": "60 feet",
         "duration": "concentration, 1 minute",
-        "description": "<p>Paralyzes a humanoid, rendering them unable to move or act. The target can repeat the save each round to break free.</p><p><strong>Scaling:</strong> At dice count 3, can affect 2 humanoids. At dice count 6, works on any creature type. At dice count 9, paralysis is harder to resist. At dice count 12, can affect multiple creatures. At dice count 15, creates a zone of paralysis.</p>"
+        "description": "<p>Paralyzes a humanoid, rendering them unable to move or act. The target can repeat the save each round to break free.</p><p><strong>Scaling:</strong> At dice count 3, can affect 2 humanoids. At dice count 6, works on any creature type. At dice count 9, paralysis is harder to resist. At dice count 12, can affect multiple creatures. At dice count 15, creates a zone of paralysis.</p>",
+        "offensive": false
       },
       {
         "name": "Suggestion",
@@ -465,7 +1032,8 @@
         "castingTime": "instantaneous",
         "range": "30 feet",
         "duration": "concentration, 8 hours",
-        "description": "<p>Magically influences a creature to follow a suggested course of action that sounds reasonable. The suggestion must be worded to sound reasonable.</p><p><strong>Scaling:</strong> At dice count 3, can suggest to multiple creatures. At dice count 6, suggestions can be more complex. At dice count 9, no concentration required. At dice count 12, can implant delayed suggestions. At dice count 15, mass suggestion affecting dozens of creatures.</p>"
+        "description": "<p>Magically influences a creature to follow a suggested course of action that sounds reasonable. The suggestion must be worded to sound reasonable.</p><p><strong>Scaling:</strong> At dice count 3, can suggest to multiple creatures. At dice count 6, suggestions can be more complex. At dice count 9, no concentration required. At dice count 12, can implant delayed suggestions. At dice count 15, mass suggestion affecting dozens of creatures.</p>",
+        "offensive": false
       },
       {
         "name": "Fear",
@@ -476,7 +1044,8 @@
         "castingTime": "instantaneous",
         "range": "self",
         "duration": "concentration, 1 minute",
-        "description": "<p>Projects a terrifying image in a 30-foot cone that causes creatures to flee in panic, using their action to move away from you.</p><p><strong>Scaling:</strong> At dice count 3, cone extends to 60 feet. At dice count 6, frightened creatures are also stunned. At dice count 9, creates a zone of fear. At dice count 12, fear is so intense creatures may die of fright. At dice count 15, spreads terror across a mile radius.</p>"
+        "description": "<p>Projects a terrifying image in a 30-foot cone that causes creatures to flee in panic, using their action to move away from you.</p><p><strong>Scaling:</strong> At dice count 3, cone extends to 60 feet. At dice count 6, frightened creatures are also stunned. At dice count 9, creates a zone of fear. At dice count 12, fear is so intense creatures may die of fright. At dice count 15, spreads terror across a mile radius.</p>",
+        "offensive": false
       },
       {
         "name": "Confusion",
@@ -487,7 +1056,8 @@
         "castingTime": "instantaneous",
         "range": "90 feet",
         "duration": "concentration, 1 minute",
-        "description": "<p>Scrambles the minds of creatures in a 10-foot radius, making them act randomly and unpredictably each turn. They might attack allies, stand still, or flee.</p><p><strong>Scaling:</strong> At dice count 3, radius increases to 20 feet. At dice count 6, confusion is more severe with worse outcomes. At dice count 9, can affect more creatures. At dice count 12, creates permanent madness. At dice count 15, drives entire armies insane.</p>"
+        "description": "<p>Scrambles the minds of creatures in a 10-foot radius, making them act randomly and unpredictably each turn. They might attack allies, stand still, or flee.</p><p><strong>Scaling:</strong> At dice count 3, radius increases to 20 feet. At dice count 6, confusion is more severe with worse outcomes. At dice count 9, can affect more creatures. At dice count 12, creates permanent madness. At dice count 15, drives entire armies insane.</p>",
+        "offensive": false
       },
       {
         "name": "Dominate Person",
@@ -498,7 +1068,8 @@
         "castingTime": "instantaneous",
         "range": "60 feet",
         "duration": "concentration, 1 minute",
-        "description": "<p>Takes complete control of a humanoid's actions. You can command them telepathically and they follow your orders to the best of their ability.</p><p><strong>Scaling:</strong> At dice count 3, works on any creature type. At dice count 6, duration extends to 10 minutes. At dice count 9, can control multiple creatures. At dice count 12, control lasts for 1 hour. At dice count 15, creates permanent mental domination.</p>"
+        "description": "<p>Takes complete control of a humanoid's actions. You can command them telepathically and they follow your orders to the best of their ability.</p><p><strong>Scaling:</strong> At dice count 3, works on any creature type. At dice count 6, duration extends to 10 minutes. At dice count 9, can control multiple creatures. At dice count 12, control lasts for 1 hour. At dice count 15, creates permanent mental domination.</p>",
+        "offensive": false
       },
       {
         "name": "Bless",
@@ -509,7 +1080,8 @@
         "castingTime": "instantaneous",
         "range": "30 feet",
         "duration": "concentration, 1 minute",
-        "description": "<p>You call down favor upon up to three creatures of your choice within range. Whenever a blessed creature makes an attack roll or a saving throw before the spell ends, it gains a small bonus to the roll.</p><p><strong>Scaling:</strong> At dice count 3, you can bless up to 5 creatures. At dice count 6, the bonus improves. At dice count 9, blessed creatures also can't be frightened. At dice count 12, the duration increases to 10 minutes. At dice count 15, you can bless every ally within range regardless of number.</p>"
+        "description": "<p>You call down favor upon up to three creatures of your choice within range. Whenever a blessed creature makes an attack roll or a saving throw before the spell ends, it gains a small bonus to the roll.</p><p><strong>Scaling:</strong> At dice count 3, you can bless up to 5 creatures. At dice count 6, the bonus improves. At dice count 9, blessed creatures also can't be frightened. At dice count 12, the duration increases to 10 minutes. At dice count 15, you can bless every ally within range regardless of number.</p>",
+        "offensive": false
       },
       {
         "name": "Dreamless Sleep",
@@ -520,7 +1092,8 @@
         "castingTime": "1 round",
         "range": "touch",
         "duration": "8 hours",
-        "description": "<p>You guide a willing creature into a deep, restorative sleep untroubled by dreams, nightmares, or magical intrusion into its mind. The creature wakes having gained the benefit of a full rest, even if only a short one was actually taken.</p><p><strong>Scaling:</strong> At dice count 3, the creature also gains advantage on saving throws against being charmed or frightened for 1 hour after waking. At dice count 6, you can lull up to 3 willing creatures at once. At dice count 9, the sleep also cures one level of exhaustion. At dice count 12, casting time drops to instantaneous. At dice count 15, you can extend the effect to any creature within 30 feet, willing or not, that fails a Wisdom save.</p>"
+        "description": "<p>You guide a willing creature into a deep, restorative sleep untroubled by dreams, nightmares, or magical intrusion into its mind. The creature wakes having gained the benefit of a full rest, even if only a short one was actually taken.</p><p><strong>Scaling:</strong> At dice count 3, the creature also gains advantage on saving throws against being charmed or frightened for 1 hour after waking. At dice count 6, you can lull up to 3 willing creatures at once. At dice count 9, the sleep also cures one level of exhaustion. At dice count 12, casting time drops to instantaneous. At dice count 15, you can extend the effect to any creature within 30 feet, willing or not, that fails a Wisdom save.</p>",
+        "offensive": false
       },
       {
         "name": "Whispers of the Void",
@@ -531,7 +1104,13 @@
         "castingTime": "instantaneous",
         "range": "60 feet",
         "duration": "1 minute",
-        "description": "<p>You pour the maddening susurrus of the void directly into a creature's mind. The target takes psychic damage and must succeed on a Wisdom save or have disadvantage on attack rolls and ability checks for the duration as the whispers gnaw at its concentration.</p><p><strong>Scaling:</strong> At dice count 3, the target also has disadvantage on saving throws. At dice count 6, you can target a second creature within range. At dice count 9, while the target is affected, you can sense its surface emotions whenever you're within 60 feet of it. At dice count 12, the duration increases to 10 minutes. At dice count 15, the whispers spread to any ally of the target within 10 feet of it.</p>"
+        "description": "<p>You pour the maddening susurrus of the void directly into a creature's mind. The target takes psychic damage and must succeed on a Wisdom save or have disadvantage on attack rolls and ability checks for the duration as the whispers gnaw at its concentration.</p><p><strong>Scaling:</strong> At dice count 3, the target also has disadvantage on saving throws. At dice count 6, you can target a second creature within range. At dice count 9, while the target is affected, you can sense its surface emotions whenever you're within 60 feet of it. At dice count 12, the duration increases to 10 minutes. At dice count 15, the whispers spread to any ally of the target within 10 feet of it.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d6",
+          "diceBonus": "+@int.mod"
+        }
       },
       {
         "name": "Mind Spike",
@@ -542,7 +1121,13 @@
         "castingTime": "instantaneous",
         "range": "60 feet",
         "duration": "1 hour",
-        "description": "<p>You drive a spike of psionic force directly into a creature's mind. The target takes psychic damage, and for the duration you always know the target's location and it cannot become hidden or invisible to you, even if it leaves your line of sight.</p><p><strong>Scaling:</strong> At dice count 3, the damage increases substantially. At dice count 6, the duration increases to 8 hours. At dice count 9, you also know the target's current emotional state at a glance. At dice count 12, you can spike two creatures with the same casting. At dice count 15, the duration becomes permanent until the target dies or you release it.</p>"
+        "description": "<p>You drive a spike of psionic force directly into a creature's mind. The target takes psychic damage, and for the duration you always know the target's location and it cannot become hidden or invisible to you, even if it leaves your line of sight.</p><p><strong>Scaling:</strong> At dice count 3, the damage increases substantially. At dice count 6, the duration increases to 8 hours. At dice count 9, you also know the target's current emotional state at a glance. At dice count 12, you can spike two creatures with the same casting. At dice count 15, the duration becomes permanent until the target dies or you release it.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d6",
+          "diceBonus": "+@int.mod"
+        }
       },
       {
         "name": "Discordant Chord",
@@ -553,7 +1138,13 @@
         "castingTime": "instantaneous",
         "range": "30 feet",
         "duration": "instantaneous",
-        "description": "<p>You strike a single jarring, magically amplified chord that rattles a target's bones and nerves alike. The target takes psychic damage and must succeed on a Constitution save or be deafened and have disadvantage on its next attack roll.</p><p><strong>Scaling:</strong> At dice count 3, the damage increases substantially. At dice count 6, the spell affects up to 2 creatures within 10 feet of each other. At dice count 9, a failed save also silences the target, preventing it from casting spells with a verbal component. At dice count 12, the range increases to 60 feet. At dice count 15, the chord affects every enemy who can hear you.</p>"
+        "description": "<p>You strike a single jarring, magically amplified chord that rattles a target's bones and nerves alike. The target takes psychic damage and must succeed on a Constitution save or be deafened and have disadvantage on its next attack roll.</p><p><strong>Scaling:</strong> At dice count 3, the damage increases substantially. At dice count 6, the spell affects up to 2 creatures within 10 feet of each other. At dice count 9, a failed save also silences the target, preventing it from casting spells with a verbal component. At dice count 12, the range increases to 60 feet. At dice count 15, the chord affects every enemy who can hear you.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 1,
+          "diceSize": "d6",
+          "diceBonus": "+@int.mod"
+        }
       },
       {
         "name": "Encore",
@@ -564,7 +1155,238 @@
         "castingTime": "instantaneous",
         "range": "30 feet",
         "duration": "instantaneous",
-        "description": "<p>You weave a snippet of magic that loops a moment of time just for one ally. Choose one ally within range who took an action on their last turn - they can immediately repeat that exact action (the same attack, the same spell at the same target, or the same skill use) as part of your casting, without spending their own action.</p><p><strong>Scaling:</strong> At dice count 3, the ally can choose a different action to take instead of repeating their last one. At dice count 6, you can target two allies. At dice count 9, the repeated action gains advantage. At dice count 12, the ally can also move up to their speed before or after the repeated action. At dice count 15, every ally within 30 feet gets an encore.</p>"
+        "description": "<p>You weave a snippet of magic that loops a moment of time just for one ally. Choose one ally within range who took an action on their last turn - they can immediately repeat that exact action (the same attack, the same spell at the same target, or the same skill use) as part of your casting, without spending their own action.</p><p><strong>Scaling:</strong> At dice count 3, the ally can choose a different action to take instead of repeating their last one. At dice count 6, you can target two allies. At dice count 9, the repeated action gains advantage. At dice count 12, the ally can also move up to their speed before or after the repeated action. At dice count 15, every ally within 30 feet gets an encore.</p>",
+        "offensive": false
+      },
+      {
+        "name": "Paradox Loop",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "enchantment",
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "1 round",
+        "description": "<p>You snag a target in a stuttering loop of the last six seconds. On its next turn, the target must repeat the exact action it took on its last turn, even if the circumstances have changed.</p><p><strong>Scaling:</strong> At dice count 3, the target also has disadvantage on saves until the loop ends. At dice count 6, you can target two creatures.</p>",
+        "offensive": false,
+        "classes": [
+          "Chronomancer"
+        ]
+      },
+      {
+        "name": "Ransomware",
+        "spellLevel": 5,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "enchantment",
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "1 minute",
+        "description": "<p>You lock a portion of a target's vitality behind an encryption only you hold the key to, dealing psychic damage as the intrusion takes hold. Until the target pays the \"ransom\" (succeeding a save each round) or the spell ends, that portion of its maximum hit points stays locked away.</p><p><strong>Scaling:</strong> At dice count 3, the locked portion increases. At dice count 6, the target's regen boost effects are also locked out.</p>",
+        "offensive": true,
+        "classes": [
+          "Netrunner"
+        ],
+        "roll": {
+          "diceNum": 3,
+          "diceSize": "d6",
+          "diceBonus": "+@int.mod"
+        }
+      },
+      {
+        "name": "Downvote Brigade",
+        "spellLevel": 3,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "enchantment",
+        "castingTime": "instantaneous",
+        "range": "20-foot radius",
+        "duration": "instantaneous",
+        "description": "<p>You summon the withering weight of a thousand anonymous critics onto everyone in the area, dealing psychic damage to each creature caught in the radius. Creatures with fewer than 10 hit points remaining take extra damage.</p><p><strong>Scaling:</strong> At dice count 3, the radius increases to 30 feet. At dice count 6, affected creatures also have disadvantage on their next attack roll.</p>",
+        "offensive": true,
+        "classes": [
+          "Redditor"
+        ],
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d6",
+          "diceBonus": "+@int.mod"
+        }
+      },
+      {
+        "name": "Front Page",
+        "spellLevel": 5,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "enchantment",
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "1 minute",
+        "description": "<p>You make yourself the center of every conversation in the area, an inescapable pull of attention. Every hostile creature within range must make the triggering roll needed to target anyone but you with an attack for the duration.</p><p><strong>Scaling:</strong> At dice count 3, you also gain resistance to the first attack that targets you each round. At dice count 6, one ally can share the spotlight with you, splitting the attention.</p>",
+        "offensive": false,
+        "classes": [
+          "Redditor"
+        ]
+      },
+      {
+        "name": "Code Red",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "wis",
+        "category": "enchantment",
+        "castingTime": "instantaneous",
+        "range": "30 feet",
+        "duration": "1 round",
+        "description": "<p>You bark a single sharp command over an open channel only your allies can hear. Up to three allies within range can immediately use their reaction to move up to their speed without provoking.</p><p><strong>Scaling:</strong> At dice count 3, affected allies also gain advantage on their next attack roll this round. At dice count 6, you can affect up to five allies.</p>",
+        "offensive": false,
+        "classes": [
+          "Dispatcher"
+        ]
+      },
+      {
+        "name": "Sample Loop",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "cha",
+        "category": "enchantment",
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "special",
+        "description": "<p>You catch the last spell effect you or an ally created within the last round on a loop pedal and let it play again. You can immediately reproduce the effects of that spell without spending mana, though any damage or healing it dealt is not repeated.</p><p><strong>Scaling:</strong> At dice count 3, you can also extend the sampled spell's duration by 1 round if it has one. At dice count 6, you can sample a spell from the last two rounds instead of one.</p>",
+        "offensive": false,
+        "classes": [
+          "Bard"
+        ]
+      },
+      {
+        "name": "Lucid Snare",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "cha",
+        "category": "enchantment",
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "1 minute",
+        "description": "<p>You pull a target halfway into a waking dream, its limbs suddenly heavy with borrowed sleep-logic. The target must succeed on a Wisdom save or be restrained for the duration, and can retry the save at the end of each of its turns.</p><p><strong>Scaling:</strong> At dice count 3, the target has disadvantage on the save. At dice count 6, you can snare two targets.</p>",
+        "offensive": false,
+        "classes": [
+          "Dreamweaver"
+        ]
+      },
+      {
+        "name": "Whisper from Beyond",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "cha",
+        "category": "enchantment",
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "1 minute",
+        "description": "<p>You let a single syllable of something vast and uncaring slip from your mouth toward a target. The target must succeed on a Wisdom save or have disadvantage on attack rolls and ability checks for the duration as an unplaceable dread gnaws at it.</p><p><strong>Scaling:</strong> At dice count 3, a failed save also reduces the target's speed by half. At dice count 6, you can whisper to two targets.</p>",
+        "offensive": false,
+        "classes": [
+          "Void Touched"
+        ]
+      },
+      {
+        "name": "Viral Moment",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "cha",
+        "category": "enchantment",
+        "castingTime": "instantaneous",
+        "range": "30 feet",
+        "duration": "1 minute",
+        "description": "<p>You do something undeniably iconic, and everyone within range can't stop talking about it. Up to three allies who witnessed it gain a small bonus to attack rolls and saving throws for the duration.</p><p><strong>Scaling:</strong> At dice count 3, the bonus increases. At dice count 6, you can affect up to five allies.</p>",
+        "offensive": false,
+        "classes": [
+          "Child Star"
+        ]
+      },
+      {
+        "name": "Sponsored Content",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "cha",
+        "category": "enchantment",
+        "castingTime": "instantaneous",
+        "range": "30 feet",
+        "duration": "1 minute",
+        "description": "<p>You plant a suggestion in a target's mind, dressed up as their own idea. The target has disadvantage on saves against your next spell cast before the end of your next turn, convinced it's a good idea to go along with it.</p><p><strong>Scaling:</strong> At dice count 3, the effect also applies to the next spell cast by an ally of yours. At dice count 6, you can target two creatures.</p>",
+        "offensive": false,
+        "classes": [
+          "Influencer"
+        ]
+      },
+      {
+        "name": "Ratio",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "cha",
+        "category": "enchantment",
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "1 minute",
+        "description": "<p>You turn the full weight of public opinion against a single target, dealing psychic damage as the pile-on hits. Until the spell ends, the target has disadvantage on Charisma checks and saving throws.</p><p><strong>Scaling:</strong> At dice count 3, the damage increases. At dice count 6, one ally within range gains a small bonus to attack rolls against the target for the duration.</p>",
+        "offensive": true,
+        "classes": [
+          "Influencer"
+        ],
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d6",
+          "diceBonus": "+@cha.mod"
+        }
+      },
+      {
+        "name": "Filibuster",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "cha",
+        "category": "enchantment",
+        "castingTime": "instantaneous",
+        "range": "30 feet",
+        "duration": "1 round",
+        "description": "<p>You bury a target in procedure, talking just long enough to eat their turn. The target must succeed on a Wisdom save or lose its next reaction.</p><p><strong>Scaling:</strong> At dice count 3, a failed save also costs the target its bonus action next turn. At dice count 6, you can filibuster two targets.</p>",
+        "offensive": false,
+        "classes": [
+          "President"
+        ]
+      },
+      {
+        "name": "Executive Order",
+        "spellLevel": 3,
+        "diceCount": 1,
+        "castStat": "cha",
+        "category": "enchantment",
+        "castingTime": "instantaneous",
+        "range": "30 feet",
+        "duration": "instantaneous",
+        "description": "<p>You issue a single, absolute command to a creature that can understand you: approach, flee, drop, or halt. The target must succeed on a Wisdom save or immediately follow the order to the best of its ability on its next turn.</p><p><strong>Scaling:</strong> At dice count 3, the target has disadvantage on the save. At dice count 6, you can issue the order to two creatures.</p>",
+        "offensive": false,
+        "classes": [
+          "President"
+        ]
+      },
+      {
+        "name": "Villain Edit",
+        "spellLevel": 5,
+        "diceCount": 1,
+        "castStat": "cha",
+        "category": "enchantment",
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "1 minute",
+        "description": "<p>You reframe a target's every action in the worst possible light, and the room turns on them, dealing psychic damage. Until the spell ends, any ally who attacks the target gains a small bonus to the attack roll.</p><p><strong>Scaling:</strong> At dice count 3, the target also has disadvantage on Charisma checks for the duration. At dice count 6, the damage increases.</p>",
+        "offensive": true,
+        "classes": [
+          "Reality Star"
+        ],
+        "roll": {
+          "diceNum": 3,
+          "diceSize": "d6",
+          "diceBonus": "+@cha.mod"
+        }
       }
     ],
     "illusion": [
@@ -577,7 +1399,8 @@
         "castingTime": "instantaneous",
         "range": "self",
         "duration": "1 hour",
-        "description": "<p>Makes you look different, changing your appearance including clothing, armor, and equipment. Does not change your body shape but can make you appear taller or shorter.</p><p><strong>Scaling:</strong> At dice count 3, can change apparent size significantly. At dice count 6, can disguise others. At dice count 9, disguise includes sound and smell. At dice count 12, can appear as specific individuals. At dice count 15, the illusion is perfect and undetectable.</p>"
+        "description": "<p>Makes you look different, changing your appearance including clothing, armor, and equipment. Does not change your body shape but can make you appear taller or shorter.</p><p><strong>Scaling:</strong> At dice count 3, can change apparent size significantly. At dice count 6, can disguise others. At dice count 9, disguise includes sound and smell. At dice count 12, can appear as specific individuals. At dice count 15, the illusion is perfect and undetectable.</p>",
+        "offensive": false
       },
       {
         "name": "Silent Image",
@@ -588,7 +1411,8 @@
         "castingTime": "instantaneous",
         "range": "60 feet",
         "duration": "concentration, 10 minutes",
-        "description": "<p>Creates a visual illusion of an object, creature, or phenomenon in a 15-foot cube. The illusion has no sound, smell, or texture.</p><p><strong>Scaling:</strong> At dice count 3, illusion can move and animate. At dice count 6, can create multiple images. At dice count 9, images include sound. At dice count 12, creates tactile illusions. At dice count 15, creates fully real-seeming illusions.</p>"
+        "description": "<p>Creates a visual illusion of an object, creature, or phenomenon in a 15-foot cube. The illusion has no sound, smell, or texture.</p><p><strong>Scaling:</strong> At dice count 3, illusion can move and animate. At dice count 6, can create multiple images. At dice count 9, images include sound. At dice count 12, creates tactile illusions. At dice count 15, creates fully real-seeming illusions.</p>",
+        "offensive": false
       },
       {
         "name": "Blur",
@@ -599,7 +1423,8 @@
         "castingTime": "instantaneous",
         "range": "self",
         "duration": "concentration, 1 minute",
-        "description": "<p>Distorts your form, making you appear as a hazy, shifting blur. Attackers have disadvantage on attack rolls against you.</p><p><strong>Scaling:</strong> At dice count 3, also grants advantage on Dexterity saves. At dice count 6, can affect allies. At dice count 9, you can move through enemies. At dice count 12, become nearly impossible to target. At dice count 15, phase partially out of reality.</p>"
+        "description": "<p>Distorts your form, making you appear as a hazy, shifting blur. Attackers have disadvantage on attack rolls against you.</p><p><strong>Scaling:</strong> At dice count 3, also grants advantage on Dexterity saves. At dice count 6, can affect allies. At dice count 9, you can move through enemies. At dice count 12, become nearly impossible to target. At dice count 15, phase partially out of reality.</p>",
+        "offensive": false
       },
       {
         "name": "Invisibility",
@@ -610,7 +1435,8 @@
         "castingTime": "instantaneous",
         "range": "touch",
         "duration": "concentration, 1 hour",
-        "description": "<p>Renders a creature completely invisible until they attack or cast a spell. Items carried and worn become invisible as well.</p><p><strong>Scaling:</strong> At dice count 3, can affect multiple creatures. At dice count 6, invisibility doesn't end when attacking. At dice count 9, no concentration required. At dice count 12, can become invisible at will. At dice count 15, grants permanent invisibility.</p>"
+        "description": "<p>Renders a creature completely invisible until they attack or cast a spell. Items carried and worn become invisible as well.</p><p><strong>Scaling:</strong> At dice count 3, can affect multiple creatures. At dice count 6, invisibility doesn't end when attacking. At dice count 9, no concentration required. At dice count 12, can become invisible at will. At dice count 15, grants permanent invisibility.</p>",
+        "offensive": false
       },
       {
         "name": "Mirror Image",
@@ -621,7 +1447,8 @@
         "castingTime": "instantaneous",
         "range": "self",
         "duration": "1 minute",
-        "description": "<p>Creates 3 illusory duplicates of yourself that confound attackers. When attacked, there's a chance the attack hits a duplicate instead of you.</p><p><strong>Scaling:</strong> At dice count 3, creates 5 duplicates. At dice count 6, duplicates can move independently. At dice count 9, creates 7 duplicates that fight. At dice count 12, duplicates are semi-real and can deal damage. At dice count 15, creates unlimited duplicates.</p>"
+        "description": "<p>Creates 3 illusory duplicates of yourself that confound attackers. When attacked, there's a chance the attack hits a duplicate instead of you.</p><p><strong>Scaling:</strong> At dice count 3, creates 5 duplicates. At dice count 6, duplicates can move independently. At dice count 9, creates 7 duplicates that fight. At dice count 12, duplicates are semi-real and can deal damage. At dice count 15, creates unlimited duplicates.</p>",
+        "offensive": false
       },
       {
         "name": "Greater Invisibility",
@@ -632,7 +1459,8 @@
         "castingTime": "instantaneous",
         "range": "touch",
         "duration": "concentration, 1 minute",
-        "description": "<p>Turns a creature invisible even while attacking or casting spells. The invisibility persists through any action.</p><p><strong>Scaling:</strong> At dice count 3, can affect multiple creatures. At dice count 6, grants advantage on attacks while invisible. At dice count 9, no concentration required. At dice count 12, duration extends to 10 minutes. At dice count 15, invisibility cannot be dispelled or detected.</p>"
+        "description": "<p>Turns a creature invisible even while attacking or casting spells. The invisibility persists through any action.</p><p><strong>Scaling:</strong> At dice count 3, can affect multiple creatures. At dice count 6, grants advantage on attacks while invisible. At dice count 9, no concentration required. At dice count 12, duration extends to 10 minutes. At dice count 15, invisibility cannot be dispelled or detected.</p>",
+        "offensive": false
       },
       {
         "name": "Phantasmal Killer",
@@ -643,7 +1471,13 @@
         "castingTime": "instantaneous",
         "range": "120 feet",
         "duration": "concentration, 1 minute",
-        "description": "<p>Creates a nightmarish illusion of the target's deepest fears visible only to them. Each turn, the target takes psychic damage and must save or be frightened.</p><p><strong>Scaling:</strong> At dice count 3, fear can kill weak creatures. At dice count 6, affects multiple targets. At dice count 9, the nightmare becomes partially real. At dice count 12, nightmare manifests for all to see. At dice count 15, can kill even powerful creatures with fear.</p>"
+        "description": "<p>Creates a nightmarish illusion of the target's deepest fears visible only to them. Each turn, the target takes psychic damage and must save or be frightened.</p><p><strong>Scaling:</strong> At dice count 3, fear can kill weak creatures. At dice count 6, affects multiple targets. At dice count 9, the nightmare becomes partially real. At dice count 12, nightmare manifests for all to see. At dice count 15, can kill even powerful creatures with fear.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d6",
+          "diceBonus": "+@int.mod"
+        }
       },
       {
         "name": "Nightmare",
@@ -654,7 +1488,13 @@
         "castingTime": "instantaneous",
         "range": "120 feet",
         "duration": "instantaneous",
-        "description": "<p>You reach into a creature's mind and conjure a vision of its deepest fear given terrible form. The target takes psychic damage and must succeed on a Wisdom save or be frightened of you until the end of its next turn.</p><p><strong>Scaling:</strong> At dice count 3, the target has disadvantage on the save. At dice count 6, you can target a second creature within range. At dice count 9, a failed save also stuns the target for 1 round. At dice count 12, the nightmare lingers, and the target is frightened again the next time it tries to sleep. At dice count 15, you can plant the nightmare in every enemy within 30 feet of the original target.</p>"
+        "description": "<p>You reach into a creature's mind and conjure a vision of its deepest fear given terrible form. The target takes psychic damage and must succeed on a Wisdom save or be frightened of you until the end of its next turn.</p><p><strong>Scaling:</strong> At dice count 3, the target has disadvantage on the save. At dice count 6, you can target a second creature within range. At dice count 9, a failed save also stuns the target for 1 round. At dice count 12, the nightmare lingers, and the target is frightened again the next time it tries to sleep. At dice count 15, you can plant the nightmare in every enemy within 30 feet of the original target.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d6",
+          "diceBonus": "+@int.mod"
+        }
       },
       {
         "name": "Mirror Trick",
@@ -665,7 +1505,63 @@
         "castingTime": "instantaneous",
         "range": "self",
         "duration": "1 minute",
-        "description": "<p>You conjure a perfect illusory duplicate of yourself in your space. The next time a creature targets you with an attack, it instead strikes the duplicate, which absorbs the hit and pops like a soap bubble, ending the spell.</p><p><strong>Scaling:</strong> At dice count 3, you conjure two duplicates instead of one. At dice count 6, the duplicate also mimics one of your movements each round, making it harder to tell which of you is real. At dice count 9, the duplicate can absorb a spell instead of only a physical attack. At dice count 12, the duplicate lasts until it's targeted, regardless of time elapsed. At dice count 15, you conjure a duplicate for every ally within 30 feet as well.</p>"
+        "description": "<p>You conjure a perfect illusory duplicate of yourself in your space. The next time a creature targets you with an attack, it instead strikes the duplicate, which absorbs the hit and pops like a soap bubble, ending the spell.</p><p><strong>Scaling:</strong> At dice count 3, you conjure two duplicates instead of one. At dice count 6, the duplicate also mimics one of your movements each round, making it harder to tell which of you is real. At dice count 9, the duplicate can absorb a spell instead of only a physical attack. At dice count 12, the duplicate lasts until it's targeted, regardless of time elapsed. At dice count 15, you conjure a duplicate for every ally within 30 feet as well.</p>",
+        "offensive": false
+      },
+      {
+        "name": "Deepfake",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "illusion",
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "1 minute",
+        "description": "<p>You splice a false feed into a target's senses, making them see, hear, or read something that isn't there. Convincing enough to redirect a patrol, forge a command, or plant a false memory of the last minute.</p><p><strong>Scaling:</strong> At dice count 3, the fake is convincing enough to fool magical detection. At dice count 6, you can target multiple creatures with the same feed.</p>",
+        "offensive": false,
+        "classes": [
+          "Netrunner"
+        ]
+      },
+      {
+        "name": "Nightmare Fuel",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "cha",
+        "category": "illusion",
+        "castingTime": "instantaneous",
+        "range": "30 feet",
+        "duration": "instantaneous",
+        "description": "<p>You reach into a target's own nightmares and drag the worst of it out into the open where it can hurt them, dealing psychic damage and forcing a Wisdom save or the target is frightened of you until the end of its next turn.</p><p><strong>Scaling:</strong> At dice count 3, the damage increases. At dice count 6, a frightened target also has disadvantage on attack rolls while frightened.</p>",
+        "offensive": true,
+        "classes": [
+          "Dreamweaver"
+        ],
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d6",
+          "diceBonus": "+@cha.mod"
+        }
+      },
+      {
+        "name": "Paparazzi Flash",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "cha",
+        "category": "illusion",
+        "castingTime": "instantaneous",
+        "range": "30-foot cone",
+        "duration": "instantaneous",
+        "description": "<p>An explosion of phantom camera flashes goes off in a cone in front of you, dealing psychic damage as the sheer overwhelming attention overloads everyone caught in it. Creatures that fail a Constitution save are also blinded until the end of their next turn.</p><p><strong>Scaling:</strong> At dice count 3, the cone extends to 45 feet. At dice count 6, you gain advantage on your next attack roll against a blinded creature this encounter.</p>",
+        "offensive": true,
+        "classes": [
+          "Child Star"
+        ],
+        "roll": {
+          "diceNum": 1,
+          "diceSize": "d6",
+          "diceBonus": "+@cha.mod"
+        }
       }
     ],
     "necromancy": [
@@ -678,7 +1574,13 @@
         "castingTime": "instantaneous",
         "range": "touch",
         "duration": "instantaneous",
-        "description": "<p>Channels negative energy through your touch to deal necrotic damage to a creature you touch.</p><p><strong>Scaling:</strong> At dice count 3, wounds continue to bleed. At dice count 6, can affect at range. At dice count 9, prevents healing temporarily. At dice count 12, causes festering wounds. At dice count 15, can cause instant death to weak creatures.</p>"
+        "description": "<p>Channels negative energy through your touch to deal necrotic damage to a creature you touch.</p><p><strong>Scaling:</strong> At dice count 3, wounds continue to bleed. At dice count 6, can affect at range. At dice count 9, prevents healing temporarily. At dice count 12, causes festering wounds. At dice count 15, can cause instant death to weak creatures.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 1,
+          "diceSize": "d8",
+          "diceBonus": "+@wis.mod"
+        }
       },
       {
         "name": "Ray of Enfeeblement",
@@ -689,7 +1591,8 @@
         "castingTime": "instantaneous",
         "range": "60 feet",
         "duration": "concentration, 1 minute",
-        "description": "<p>A beam of enervating energy saps the target's strength, causing them to deal only half damage with weapon attacks using Strength.</p><p><strong>Scaling:</strong> At dice count 3, also reduces Constitution. At dice count 6, affects multiple targets. At dice count 9, weakening is more severe. At dice count 12, can drain all physical stats. At dice count 15, causes complete paralysis.</p>"
+        "description": "<p>A beam of enervating energy saps the target's strength, causing them to deal only half damage with weapon attacks using Strength.</p><p><strong>Scaling:</strong> At dice count 3, also reduces Constitution. At dice count 6, affects multiple targets. At dice count 9, weakening is more severe. At dice count 12, can drain all physical stats. At dice count 15, causes complete paralysis.</p>",
+        "offensive": false
       },
       {
         "name": "Animate Dead",
@@ -700,7 +1603,8 @@
         "castingTime": "1 round",
         "range": "10 feet",
         "duration": "instantaneous",
-        "description": "<p>Raises corpses or piles of bones as undead servants (skeletons or zombies) that obey your commands. You can control up to 4 undead at once.</p><p><strong>Scaling:</strong> At dice count 3, can control more undead. At dice count 6, creates more powerful undead. At dice count 9, undead are intelligent and skilled. At dice count 12, creates specialized undead. At dice count 15, raises armies of undead.</p>"
+        "description": "<p>Raises corpses or piles of bones as undead servants (skeletons or zombies) that obey your commands. You can control up to 4 undead at once.</p><p><strong>Scaling:</strong> At dice count 3, can control more undead. At dice count 6, creates more powerful undead. At dice count 9, undead are intelligent and skilled. At dice count 12, creates specialized undead. At dice count 15, raises armies of undead.</p>",
+        "offensive": false
       },
       {
         "name": "Vampiric Touch",
@@ -711,7 +1615,13 @@
         "castingTime": "instantaneous",
         "range": "touch",
         "duration": "concentration, 1 minute",
-        "description": "<p>Your touch drains life force from enemies and transfers it to heal your wounds. You deal necrotic damage and regain hit points equal to half the damage dealt.</p><p><strong>Scaling:</strong> At dice count 3, heal for full damage dealt. At dice count 6, can steal temporary hit points. At dice count 9, drains multiple attributes. At dice count 12, can work at range. At dice count 15, can drain permanent life force.</p>"
+        "description": "<p>Your touch drains life force from enemies and transfers it to heal your wounds. You deal necrotic damage and regain hit points equal to half the damage dealt.</p><p><strong>Scaling:</strong> At dice count 3, heal for full damage dealt. At dice count 6, can steal temporary hit points. At dice count 9, drains multiple attributes. At dice count 12, can work at range. At dice count 15, can drain permanent life force.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d8",
+          "diceBonus": "+@int.mod"
+        }
       },
       {
         "name": "Blight",
@@ -722,7 +1632,13 @@
         "castingTime": "instantaneous",
         "range": "30 feet",
         "duration": "instantaneous",
-        "description": "<p>Drains moisture and vitality from a creature, dealing necrotic damage. Particularly effective against plants, dealing maximum damage.</p><p><strong>Scaling:</strong> At dice count 3, affects an area. At dice count 6, withers the land around targets. At dice count 9, creates zones of death. At dice count 12, can kill plants instantly. At dice count 15, creates permanent dead zones.</p>"
+        "description": "<p>Drains moisture and vitality from a creature, dealing necrotic damage. Particularly effective against plants, dealing maximum damage.</p><p><strong>Scaling:</strong> At dice count 3, affects an area. At dice count 6, withers the land around targets. At dice count 9, creates zones of death. At dice count 12, can kill plants instantly. At dice count 15, creates permanent dead zones.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d8",
+          "diceBonus": "+@wis.mod"
+        }
       },
       {
         "name": "Circle of Death",
@@ -733,7 +1649,13 @@
         "castingTime": "instantaneous",
         "range": "150 feet",
         "duration": "instantaneous",
-        "description": "<p>A sphere of necromantic energy bursts outward in a 60-foot radius, withering all life within and dealing massive necrotic damage.</p><p><strong>Scaling:</strong> At dice count 3, radius increases to 90 feet. At dice count 6, killed creatures rise as undead. At dice count 9, creates lingering death energy. At dice count 12, can affect huge areas. At dice count 15, kills everything in a 200-foot radius.</p>"
+        "description": "<p>A sphere of necromantic energy bursts outward in a 60-foot radius, withering all life within and dealing massive necrotic damage.</p><p><strong>Scaling:</strong> At dice count 3, radius increases to 90 feet. At dice count 6, killed creatures rise as undead. At dice count 9, creates lingering death energy. At dice count 12, can affect huge areas. At dice count 15, kills everything in a 200-foot radius.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 3,
+          "diceSize": "d8",
+          "diceBonus": "+@int.mod"
+        }
       },
       {
         "name": "Finger of Death",
@@ -744,7 +1666,13 @@
         "castingTime": "instantaneous",
         "range": "60 feet",
         "duration": "instantaneous",
-        "description": "<p>Sends negative energy coursing through a creature, potentially killing it instantly. Deals massive necrotic damage, and creatures killed by this spell rise as zombies under your control.</p><p><strong>Scaling:</strong> At dice count 3, can affect multiple targets. At dice count 6, raised zombies are more powerful. At dice count 9, instant death on failed save. At dice count 12, creates powerful undead servants. At dice count 15, can kill nearly anything with a gesture.</p>"
+        "description": "<p>Sends negative energy coursing through a creature, potentially killing it instantly. Deals massive necrotic damage, and creatures killed by this spell rise as zombies under your control.</p><p><strong>Scaling:</strong> At dice count 3, can affect multiple targets. At dice count 6, raised zombies are more powerful. At dice count 9, instant death on failed save. At dice count 12, creates powerful undead servants. At dice count 15, can kill nearly anything with a gesture.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 4,
+          "diceSize": "d8",
+          "diceBonus": "+@int.mod"
+        }
       },
       {
         "name": "Reanimate Chassis",
@@ -755,7 +1683,8 @@
         "castingTime": "1 round",
         "range": "10 feet",
         "duration": "1 hour",
-        "description": "<p>You graft salvaged plating and a crude directive engine onto a fresh corpse, hauling it back into a shambling semblance of service. The corpse rises as a necromech minion under your control, able to fight on your behalf until the spell ends or it's destroyed.</p><p><strong>Scaling:</strong> At dice count 3, the minion is sturdier and hits harder. At dice count 6, you can reanimate a second corpse at the same time. At dice count 9, the minion's duration extends to 8 hours. At dice count 12, the minion permanently remains in your service until destroyed. At dice count 15, you can reanimate an entire fallen squad at once.</p>"
+        "description": "<p>You graft salvaged plating and a crude directive engine onto a fresh corpse, hauling it back into a shambling semblance of service. The corpse rises as a necromech minion under your control, able to fight on your behalf until the spell ends or it's destroyed.</p><p><strong>Scaling:</strong> At dice count 3, the minion is sturdier and hits harder. At dice count 6, you can reanimate a second corpse at the same time. At dice count 9, the minion's duration extends to 8 hours. At dice count 12, the minion permanently remains in your service until destroyed. At dice count 15, you can reanimate an entire fallen squad at once.</p>",
+        "offensive": false
       },
       {
         "name": "Overload Jolt",
@@ -766,7 +1695,13 @@
         "castingTime": "instantaneous",
         "range": "30 feet",
         "duration": "instantaneous",
-        "description": "<p>You send a corrosive pulse of necrotic-charged current into a target, frying circuitry and curdling blood in equal measure. The target takes necrotic damage, and if it is a construct or has cybernetic augmentations, it must succeed on a Constitution save or be stunned until the end of your next turn.</p><p><strong>Scaling:</strong> At dice count 3, the damage increases substantially. At dice count 6, the jolt arcs to a second creature within 10 feet of the first. At dice count 9, the stun effect applies to any creature type, not just constructs and cybernetics. At dice count 12, the jolt permanently disables one of a construct's abilities. At dice count 15, the pulse chains through every valid target within 30 feet.</p>"
+        "description": "<p>You send a corrosive pulse of necrotic-charged current into a target, frying circuitry and curdling blood in equal measure. The target takes necrotic damage, and if it is a construct or has cybernetic augmentations, it must succeed on a Constitution save or be stunned until the end of your next turn.</p><p><strong>Scaling:</strong> At dice count 3, the damage increases substantially. At dice count 6, the jolt arcs to a second creature within 10 feet of the first. At dice count 9, the stun effect applies to any creature type, not just constructs and cybernetics. At dice count 12, the jolt permanently disables one of a construct's abilities. At dice count 15, the pulse chains through every valid target within 30 feet.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d8",
+          "diceBonus": "+@wis.mod"
+        }
       },
       {
         "name": "Devour Light",
@@ -777,7 +1712,13 @@
         "castingTime": "instantaneous",
         "range": "30 feet",
         "duration": "1 round",
-        "description": "<p>You tear open a sliver of the void at a point you can see, and it hungrily consumes light and warmth in a 15-foot radius. Each creature in the area takes necrotic damage and is blinded until the end of its next turn; the area is filled with magical darkness for the duration.</p><p><strong>Scaling:</strong> At dice count 3, the radius increases to 20 feet. At dice count 6, the darkness lingers for 1 minute instead. At dice count 9, the damage increases substantially. At dice count 12, creatures that start their turn in the area take damage again. At dice count 15, the void consumes healing magic cast within it, negating it entirely.</p>"
+        "description": "<p>You tear open a sliver of the void at a point you can see, and it hungrily consumes light and warmth in a 15-foot radius. Each creature in the area takes necrotic damage and is blinded until the end of its next turn; the area is filled with magical darkness for the duration.</p><p><strong>Scaling:</strong> At dice count 3, the radius increases to 20 feet. At dice count 6, the darkness lingers for 1 minute instead. At dice count 9, the damage increases substantially. At dice count 12, creatures that start their turn in the area take damage again. At dice count 15, the void consumes healing magic cast within it, negating it entirely.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d8",
+          "diceBonus": "+@int.mod"
+        }
       },
       {
         "name": "Garnish Wages",
@@ -788,7 +1729,188 @@
         "castingTime": "instantaneous",
         "range": "30 feet",
         "duration": "1 minute",
-        "description": "<p>You slap a curse of crushing debt onto a creature, and it takes necrotic damage as the weight of it lands. Until the curse ends, whenever the target would regain hit points from any source, it regains only half that amount - the rest is seized to cover the balance.</p><p><strong>Scaling:</strong> At dice count 3, the curse also prevents the target from gaining temporary hit points for its duration. At dice count 6, the damage increases substantially. At dice count 9, the healing reduction becomes total: the target regains no hit points at all while cursed. At dice count 12, the duration increases to 10 minutes. At dice count 15, the seized healing instead flows to you or an ally you designate.</p>"
+        "description": "<p>You slap a curse of crushing debt onto a creature, and it takes necrotic damage as the weight of it lands. Until the curse ends, whenever the target would regain hit points from any source, it regains only half that amount - the rest is seized to cover the balance.</p><p><strong>Scaling:</strong> At dice count 3, the curse also prevents the target from gaining temporary hit points for its duration. At dice count 6, the damage increases substantially. At dice count 9, the healing reduction becomes total: the target regains no hit points at all while cursed. At dice count 12, the duration increases to 10 minutes. At dice count 15, the seized healing instead flows to you or an ally you designate.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d8",
+          "diceBonus": "+@int.mod"
+        }
+      },
+      {
+        "name": "Mutagenic Lash",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "necromancy",
+        "castingTime": "instantaneous",
+        "range": "30 feet",
+        "duration": "instantaneous",
+        "description": "<p>A whip of hastily grown, venom-slick tissue lashes out from your hand and tears into a target, dealing necrotic damage as the raw biomass eats at living tissue.</p><p><strong>Scaling:</strong> At dice count 3, the wound continues to fester, dealing damage again next round. At dice count 6, the lash can strike two targets.</p>",
+        "offensive": true,
+        "classes": [
+          "Gene Splicer"
+        ],
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d8",
+          "diceBonus": "+@int.mod"
+        }
+      },
+      {
+        "name": "Reboot the Dead",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "necromancy",
+        "castingTime": "1 round",
+        "range": "touch",
+        "duration": "instantaneous",
+        "description": "<p>You jam a spike of scavenged current into a fresh corpse, forcing its nerves through a crude boot sequence. The corpse rises as a shambling servant that follows simple commands until destroyed.</p><p><strong>Scaling:</strong> At dice count 3, the servant is sturdier and hits harder. At dice count 6, you can reboot two corpses at once.</p>",
+        "offensive": false,
+        "classes": [
+          "Necrotech"
+        ]
+      },
+      {
+        "name": "Ferrous Rot",
+        "spellLevel": 3,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "necromancy",
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "instantaneous",
+        "description": "<p>You spit a coded pulse that rusts metal and curdles flesh in the same breath, dealing necrotic damage. Constructs and creatures with cybernetic augmentations take extra damage.</p><p><strong>Scaling:</strong> At dice count 3, the corrosion spreads to armor, reducing its protection for the fight. At dice count 6, the effect covers a 10-foot radius.</p>",
+        "offensive": true,
+        "classes": [
+          "Necrotech"
+        ],
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d8",
+          "diceBonus": "+@int.mod"
+        }
+      },
+      {
+        "name": "Cascade Failure",
+        "spellLevel": 6,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "necromancy",
+        "castingTime": "instantaneous",
+        "range": "90 feet",
+        "duration": "instantaneous",
+        "description": "<p>You trigger a full-system fault in a target's flesh and any augments it carries, dealing massive necrotic damage as everything shuts down at once. A construct reduced to 0 HP by this spell cannot be repaired without a full rebuild.</p><p><strong>Scaling:</strong> At dice count 3, the fault jumps to a second target within 10 feet. At dice count 6, affected creatures are also stunned until the end of their next turn.</p>",
+        "offensive": true,
+        "classes": [
+          "Necrotech"
+        ],
+        "roll": {
+          "diceNum": 3,
+          "diceSize": "d8",
+          "diceBonus": "+@int.mod"
+        }
+      },
+      {
+        "name": "Emergency Amputation",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "necromancy",
+        "castingTime": "instantaneous",
+        "range": "30 feet",
+        "duration": "instantaneous",
+        "description": "<p>You make a brutal, precise field call and force a wound to close by sacrificing the tissue around it, dealing damage to a target as you excise the injury before it can spread. Half the damage dealt this way is dealt to yourself as strain from forcing the procedure at range.</p><p><strong>Scaling:</strong> At dice count 3, the self-inflicted strain is halved. At dice count 6, the target is also cured of one disease or poison affecting it.</p>",
+        "offensive": true,
+        "classes": [
+          "Field Surgeon"
+        ],
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d8",
+          "diceBonus": "+@int.mod"
+        }
+      },
+      {
+        "name": "Compliance Strike",
+        "spellLevel": 3,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "necromancy",
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "instantaneous",
+        "description": "<p>You cite a target for a violation only you can see, and the weight of the penalty lands as necrotic damage. Until the target succeeds on a save, it has disadvantage on any check made to resist your spells.</p><p><strong>Scaling:</strong> At dice count 3, the penalty also applies to its saving throws. At dice count 6, you can strike two targets from the same casting.</p>",
+        "offensive": true,
+        "classes": [
+          "Auditor"
+        ],
+        "roll": {
+          "diceNum": 2,
+          "diceSize": "d6",
+          "diceBonus": "+@int.mod"
+        }
+      },
+      {
+        "name": "Asset Seizure",
+        "spellLevel": 5,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "necromancy",
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "1 minute",
+        "description": "<p>You freeze a target's resources mid-transaction, dealing necrotic damage as its reserves are garnished on the spot. Until the spell ends, the target's regen effects are reduced by half.</p><p><strong>Scaling:</strong> At dice count 3, the target also can't benefit from luck bonuses for the duration. At dice count 6, a portion of what's seized restores your own mana.</p>",
+        "offensive": true,
+        "classes": [
+          "Auditor"
+        ],
+        "roll": {
+          "diceNum": 3,
+          "diceSize": "d6",
+          "diceBonus": "+@int.mod"
+        }
+      },
+      {
+        "name": "Karma Drain",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "necromancy",
+        "castingTime": "instantaneous",
+        "range": "touch",
+        "duration": "instantaneous",
+        "description": "<p>You siphon a target's good standing straight out of them, dealing necrotic damage and regaining hit points equal to half the damage dealt as their karma flows into you.</p><p><strong>Scaling:</strong> At dice count 3, you regain the full damage dealt instead of half. At dice count 6, the drain can be performed at range.</p>",
+        "offensive": true,
+        "classes": [
+          "Redditor"
+        ],
+        "roll": {
+          "diceNum": 1,
+          "diceSize": "d8",
+          "diceBonus": "+@int.mod"
+        }
+      },
+      {
+        "name": "Unmake",
+        "spellLevel": 7,
+        "diceCount": 1,
+        "castStat": "cha",
+        "category": "necromancy",
+        "castingTime": "instantaneous",
+        "range": "30 feet",
+        "duration": "instantaneous",
+        "description": "<p>You speak a target's name backward, and for a moment reality forgets it was ever finished making them. The target takes massive necrotic damage as parts of it simply cease to have happened.</p><p><strong>Scaling:</strong> At dice count 3, a creature reduced to 0 HP by this spell leaves no remains. At dice count 6, you can target two creatures within 10 feet of each other.</p>",
+        "offensive": true,
+        "classes": [
+          "Void Touched"
+        ],
+        "roll": {
+          "diceNum": 4,
+          "diceSize": "d8",
+          "diceBonus": "+@cha.mod"
+        }
       }
     ],
     "transmutation": [
@@ -801,7 +1923,8 @@
         "castingTime": "instantaneous",
         "range": "self",
         "duration": "concentration, 10 minutes",
-        "description": "<p>Greatly increases your movement speed, allowing you to take the Dash action as a bonus action on each turn.</p><p><strong>Scaling:</strong> At dice count 3, doubles movement speed. At dice count 6, can affect allies. At dice count 9, can move through difficult terrain. At dice count 12, grants supernatural speed. At dice count 15, can move at the speed of thought.</p>"
+        "description": "<p>Greatly increases your movement speed, allowing you to take the Dash action as a bonus action on each turn.</p><p><strong>Scaling:</strong> At dice count 3, doubles movement speed. At dice count 6, can affect allies. At dice count 9, can move through difficult terrain. At dice count 12, grants supernatural speed. At dice count 15, can move at the speed of thought.</p>",
+        "offensive": false
       },
       {
         "name": "Enlarge Person",
@@ -812,7 +1935,8 @@
         "castingTime": "instantaneous",
         "range": "30 feet",
         "duration": "concentration, 1 minute",
-        "description": "<p>Causes a creature to grow to twice its normal size, increasing its size category. The target gains advantage on Strength checks and deals extra damage.</p><p><strong>Scaling:</strong> At dice count 3, target grows even larger. At dice count 6, can affect multiple creatures. At dice count 9, grants additional benefits like reach. At dice count 12, become giant-sized. At dice count 15, grow to colossal proportions.</p>"
+        "description": "<p>Causes a creature to grow to twice its normal size, increasing its size category. The target gains advantage on Strength checks and deals extra damage.</p><p><strong>Scaling:</strong> At dice count 3, target grows even larger. At dice count 6, can affect multiple creatures. At dice count 9, grants additional benefits like reach. At dice count 12, become giant-sized. At dice count 15, grow to colossal proportions.</p>",
+        "offensive": false
       },
       {
         "name": "Haste",
@@ -823,7 +1947,8 @@
         "castingTime": "instantaneous",
         "range": "30 feet",
         "duration": "concentration, 1 minute",
-        "description": "<p>Doubles a creature's speed and grants an additional action each turn for the duration. When the spell ends, the target is lethargic for one turn.</p><p><strong>Scaling:</strong> At dice count 3, can affect 2 creatures. At dice count 6, grants even more actions. At dice count 9, no lethargy afterward. At dice count 12, affects multiple creatures. At dice count 15, grants supernatural speed and multiple extra actions.</p>"
+        "description": "<p>Doubles a creature's speed and grants an additional action each turn for the duration. When the spell ends, the target is lethargic for one turn.</p><p><strong>Scaling:</strong> At dice count 3, can affect 2 creatures. At dice count 6, grants even more actions. At dice count 9, no lethargy afterward. At dice count 12, affects multiple creatures. At dice count 15, grants supernatural speed and multiple extra actions.</p>",
+        "offensive": false
       },
       {
         "name": "Slow",
@@ -834,7 +1959,8 @@
         "castingTime": "instantaneous",
         "range": "120 feet",
         "duration": "concentration, 1 minute",
-        "description": "<p>Drastically reduces the speed and reaction time of up to 6 creatures in a 40-foot cube. Targets have reduced movement, can't take reactions, and can take only one action or bonus action per turn.</p><p><strong>Scaling:</strong> At dice count 3, affects more creatures. At dice count 6, slowing is more severe. At dice count 9, can freeze creatures in time briefly. At dice count 12, creates zones of slow time. At dice count 15, stops time for enemies.</p>"
+        "description": "<p>Drastically reduces the speed and reaction time of up to 6 creatures in a 40-foot cube. Targets have reduced movement, can't take reactions, and can take only one action or bonus action per turn.</p><p><strong>Scaling:</strong> At dice count 3, affects more creatures. At dice count 6, slowing is more severe. At dice count 9, can freeze creatures in time briefly. At dice count 12, creates zones of slow time. At dice count 15, stops time for enemies.</p>",
+        "offensive": false
       },
       {
         "name": "Polymorph",
@@ -845,7 +1971,8 @@
         "castingTime": "instantaneous",
         "range": "60 feet",
         "duration": "concentration, 1 hour",
-        "description": "<p>Transforms a creature into a different beast form. The target gains the beast's statistics but retains its personality. When reduced to 0 HP, reverts to original form.</p><p><strong>Scaling:</strong> At dice count 3, can transform into more powerful beasts. At dice count 6, can affect multiple creatures. At dice count 9, can polymorph into magical beasts. At dice count 12, transformations last longer. At dice count 15, can permanently transform creatures.</p>"
+        "description": "<p>Transforms a creature into a different beast form. The target gains the beast's statistics but retains its personality. When reduced to 0 HP, reverts to original form.</p><p><strong>Scaling:</strong> At dice count 3, can transform into more powerful beasts. At dice count 6, can affect multiple creatures. At dice count 9, can polymorph into magical beasts. At dice count 12, transformations last longer. At dice count 15, can permanently transform creatures.</p>",
+        "offensive": false
       },
       {
         "name": "Stone Shape",
@@ -856,7 +1983,8 @@
         "castingTime": "instantaneous",
         "range": "touch",
         "duration": "instantaneous",
-        "description": "<p>Molds and sculpts stone into any shape you desire, allowing you to create passages, sculptures, or modify stone structures.</p><p><strong>Scaling:</strong> At dice count 3, can affect more stone. At dice count 6, can shape metal as well. At dice count 9, creations are permanent and detailed. At dice count 12, can create complex stone mechanisms. At dice count 15, can reshape entire stone structures or mountains.</p>"
+        "description": "<p>Molds and sculpts stone into any shape you desire, allowing you to create passages, sculptures, or modify stone structures.</p><p><strong>Scaling:</strong> At dice count 3, can affect more stone. At dice count 6, can shape metal as well. At dice count 9, creations are permanent and detailed. At dice count 12, can create complex stone mechanisms. At dice count 15, can reshape entire stone structures or mountains.</p>",
+        "offensive": false
       },
       {
         "name": "Disintegrate",
@@ -867,7 +1995,13 @@
         "castingTime": "instantaneous",
         "range": "60 feet",
         "duration": "instantaneous",
-        "description": "<p>Transforms matter into fine dust with a thin green ray, dealing massive force damage. A creature reduced to 0 HP is completely disintegrated along with what they're wearing.</p><p><strong>Scaling:</strong> At dice count 3, affects larger objects. At dice count 6, can pierce through multiple targets. At dice count 9, disintegrates nearly anything. At dice count 12, creates disintegration zones. At dice count 15, erases targets from existence.</p>"
+        "description": "<p>Transforms matter into fine dust with a thin green ray, dealing massive force damage. A creature reduced to 0 HP is completely disintegrated along with what they're wearing.</p><p><strong>Scaling:</strong> At dice count 3, affects larger objects. At dice count 6, can pierce through multiple targets. At dice count 9, disintegrates nearly anything. At dice count 12, creates disintegration zones. At dice count 15, erases targets from existence.</p>",
+        "offensive": true,
+        "roll": {
+          "diceNum": 3,
+          "diceSize": "d8",
+          "diceBonus": "+@int.mod"
+        }
       },
       {
         "name": "Temporal Anchor",
@@ -878,7 +2012,8 @@
         "castingTime": "instantaneous",
         "range": "60 feet",
         "duration": "1 minute",
-        "description": "<p>You lock a creature's position in the flow of time. The target cannot be teleported, banished, or forcibly moved for the duration, and has disadvantage on saving throws against effects that would displace it.</p><p><strong>Scaling:</strong> At dice count 3, you can target a second creature. At dice count 6, the anchor also grants the target resistance to force damage. At dice count 9, the duration increases to 10 minutes. At dice count 12, the anchor can be placed on yourself as well, at no extra cost. At dice count 15, you can anchor every creature within 30 feet of the target simultaneously.</p>"
+        "description": "<p>You lock a creature's position in the flow of time. The target cannot be teleported, banished, or forcibly moved for the duration, and has disadvantage on saving throws against effects that would displace it.</p><p><strong>Scaling:</strong> At dice count 3, you can target a second creature. At dice count 6, the anchor also grants the target resistance to force damage. At dice count 9, the duration increases to 10 minutes. At dice count 12, the anchor can be placed on yourself as well, at no extra cost. At dice count 15, you can anchor every creature within 30 feet of the target simultaneously.</p>",
+        "offensive": false
       },
       {
         "name": "Rewind",
@@ -889,7 +2024,8 @@
         "castingTime": "instantaneous",
         "range": "30 feet",
         "duration": "instantaneous",
-        "description": "<p>The instant after a creature you can see takes damage, you unravel the last few seconds and undo some of the harm. The creature regains a portion of the hit points it just lost.</p><p><strong>Scaling:</strong> At dice count 3, the creature regains all of the damage it just took. At dice count 6, you can also remove one condition imposed by the same instance of damage. At dice count 9, the spell can be cast as your reaction rather than using your turn. At dice count 12, you can target two creatures who were damaged in the same round. At dice count 15, the rewind is total: the triggering attack is undone as though it never happened.</p>"
+        "description": "<p>The instant after a creature you can see takes damage, you unravel the last few seconds and undo some of the harm. The creature regains a portion of the hit points it just lost.</p><p><strong>Scaling:</strong> At dice count 3, the creature regains all of the damage it just took. At dice count 6, you can also remove one condition imposed by the same instance of damage. At dice count 9, the spell can be cast as your reaction rather than using your turn. At dice count 12, you can target two creatures who were damaged in the same round. At dice count 15, the rewind is total: the triggering attack is undone as though it never happened.</p>",
+        "offensive": false
       },
       {
         "name": "Runic Weapon",
@@ -900,7 +2036,173 @@
         "castingTime": "1 round",
         "range": "touch",
         "duration": "1 hour",
-        "description": "<p>You etch a rune of your choosing onto a weapon or piece of ammunition: Flame, Frost, Shock, or Force. While the rune lasts, the weapon deals extra damage of the chosen type on a hit.</p><p><strong>Scaling:</strong> At dice count 3, the bonus damage increases. At dice count 6, you can inscribe runes on up to 2 weapons at once. At dice count 9, the rune also grants the wielder resistance to its own damage type. At dice count 12, the duration increases to 8 hours. At dice count 15, the rune becomes permanent, bonded to the weapon.</p>"
+        "description": "<p>You etch a rune of your choosing onto a weapon or piece of ammunition: Flame, Frost, Shock, or Force. While the rune lasts, the weapon deals extra damage of the chosen type on a hit.</p><p><strong>Scaling:</strong> At dice count 3, the bonus damage increases. At dice count 6, you can inscribe runes on up to 2 weapons at once. At dice count 9, the rune also grants the wielder resistance to its own damage type. At dice count 12, the duration increases to 8 hours. At dice count 15, the rune becomes permanent, bonded to the weapon.</p>",
+        "offensive": false
+      },
+      {
+        "name": "Borrowed Second",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "transmutation",
+        "castingTime": "instantaneous",
+        "range": "touch",
+        "duration": "1 round",
+        "description": "<p>You pinch a sliver of time loose and hand it to an ally, letting them act twice in the same instant. The target can immediately take one extra action on their turn.</p><p><strong>Scaling:</strong> At dice count 3, the target also gains an extra reaction this round. At dice count 6, you can target two creatures.</p>",
+        "offensive": false,
+        "classes": [
+          "Chronomancer"
+        ]
+      },
+      {
+        "name": "Adrenal Splice",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "transmutation",
+        "castingTime": "instantaneous",
+        "range": "touch",
+        "duration": "1 minute",
+        "description": "<p>You graft a splice of overtuned adrenal tissue onto a willing creature, flooding it with borrowed vigor. The target's speed increases and it gains advantage on Strength checks for the duration.</p><p><strong>Scaling:</strong> At dice count 3, the target also gains temporary hit points. At dice count 6, you can splice two creatures at once.</p>",
+        "offensive": false,
+        "classes": [
+          "Gene Splicer"
+        ]
+      },
+      {
+        "name": "Unstable Genome",
+        "spellLevel": 6,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "transmutation",
+        "castingTime": "instantaneous",
+        "range": "30 feet",
+        "duration": "1 minute",
+        "description": "<p>You force a burst of chaotic mutation into a target's cells. At the start of each of its turns, roll to determine which ability score is temporarily reduced as its body struggles to stabilize.</p><p><strong>Scaling:</strong> At dice count 3, two ability scores are affected each round. At dice count 6, the target also has disadvantage on concentration-like effects.</p>",
+        "offensive": false,
+        "classes": [
+          "Gene Splicer"
+        ]
+      },
+      {
+        "name": "Runeblade Empowerment",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "transmutation",
+        "castingTime": "1 round",
+        "range": "touch",
+        "duration": "1 minute",
+        "description": "<p>You etch a rapidly-fading rune along a weapon's edge, charging it with raw arcane current. The weapon deals extra force damage on a hit for the duration.</p><p><strong>Scaling:</strong> At dice count 3, the bonus damage increases. At dice count 6, the rune also grants advantage on the wielder's next attack roll each turn.</p>",
+        "offensive": false,
+        "classes": [
+          "Runesmith"
+        ]
+      },
+      {
+        "name": "Adrenaline Shot",
+        "spellLevel": 1,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "transmutation",
+        "castingTime": "instantaneous",
+        "range": "touch",
+        "duration": "1 round",
+        "description": "<p>You slam a jury-rigged stimulant injector into an ally, jolting them upright. The target can immediately stand from prone for free and gains extra movement speed until the start of your next turn.</p><p><strong>Scaling:</strong> At dice count 3, the target also gains temporary hit points. At dice count 6, you can inject two creatures at once.</p>",
+        "offensive": false,
+        "classes": [
+          "Field Surgeon"
+        ]
+      },
+      {
+        "name": "Mana Battery",
+        "spellLevel": 3,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "transmutation",
+        "castingTime": "instantaneous",
+        "range": "touch",
+        "duration": "1 hour",
+        "description": "<p>You compress a reserve of raw arcane potential into a small charm and hand it to an ally. At any point before the spell ends, they can crack it open to instantly restore a modest amount of their own mana.</p><p><strong>Scaling:</strong> At dice count 3, the stored mana increases. At dice count 6, you can charge two charms from the same casting.</p>",
+        "offensive": false,
+        "classes": [
+          "Wizard"
+        ]
+      },
+      {
+        "name": "Static Charge",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "wis",
+        "category": "transmutation",
+        "castingTime": "instantaneous",
+        "range": "self",
+        "duration": "1 minute",
+        "description": "<p>You wreathe yourself in crackling static that hums along your skin. You gain extra movement speed, and the first melee attack that hits you before the spell ends deals lightning damage back to the attacker.</p><p><strong>Scaling:</strong> At dice count 3, the return damage increases. At dice count 6, the charge can trigger twice before dissipating.</p>",
+        "offensive": false,
+        "classes": [
+          "Stormcaller"
+        ]
+      },
+      {
+        "name": "Crowd Surf",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "cha",
+        "category": "transmutation",
+        "castingTime": "instantaneous",
+        "range": "30 feet",
+        "duration": "1 round",
+        "description": "<p>You strike up a beat so infectious that allies within range are swept along by it, hoisted overhead by an unseen crowd. Up to three allies within range can immediately move up to their speed without provoking opportunity attacks.</p><p><strong>Scaling:</strong> At dice count 3, affected allies also gain advantage on their next Athletics or Acrobatics check. At dice count 6, you can affect up to five allies.</p>",
+        "offensive": false,
+        "classes": [
+          "Bard"
+        ]
+      },
+      {
+        "name": "Bloodline Surge",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "cha",
+        "category": "transmutation",
+        "castingTime": "instantaneous",
+        "range": "self",
+        "duration": "1 round",
+        "description": "<p>You let your innate power spike past what's comfortable to control. The next spell you cast before the end of your turn deals maximum damage instead of rolling, but you take a small amount of damage from the strain.</p><p><strong>Scaling:</strong> At dice count 3, the self-inflicted damage is halved. At dice count 6, the surge also increases that spell's save DC.</p>",
+        "offensive": false,
+        "classes": [
+          "Sorcerer"
+        ]
+      },
+      {
+        "name": "Algorithm Boost",
+        "spellLevel": 3,
+        "diceCount": 1,
+        "castStat": "cha",
+        "category": "transmutation",
+        "castingTime": "instantaneous",
+        "range": "30 feet",
+        "duration": "1 minute",
+        "description": "<p>You put an ally's next move in front of everyone who matters. The target gains advantage on the next ability check or attack roll it makes before the spell ends.</p><p><strong>Scaling:</strong> At dice count 3, the boost lasts until the target uses it or the encounter ends, whichever comes first. At dice count 6, you can boost two allies.</p>",
+        "offensive": false,
+        "classes": [
+          "Influencer"
+        ]
+      },
+      {
+        "name": "Plot Twist",
+        "spellLevel": 4,
+        "diceCount": 1,
+        "castStat": "cha",
+        "category": "transmutation",
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "instantaneous",
+        "description": "<p>You rewrite the last thing that happened for maximum drama. You can force a reroll of any attack roll, ability check, or saving throw made within the last round, by any creature, using the new result instead.</p><p><strong>Scaling:</strong> At dice count 3, you can choose to apply advantage or disadvantage to the reroll. At dice count 6, you can rewrite two rolls with one casting.</p>",
+        "offensive": false,
+        "classes": [
+          "Reality Star"
+        ]
       }
     ],
     "divination": [
@@ -913,7 +2215,8 @@
         "castingTime": "instantaneous",
         "range": "self",
         "duration": "concentration, 10 minutes",
-        "description": "<p>Senses the presence of magic within 30 feet. You can determine the school of magic and see a faint aura around magical objects and creatures.</p><p><strong>Scaling:</strong> At dice count 3, range increases to 60 feet. At dice count 6, can identify specific spells. At dice count 9, can see through illusions. At dice count 12, range increases to 120 feet. At dice count 15, detects all magic within a mile.</p>"
+        "description": "<p>Senses the presence of magic within 30 feet. You can determine the school of magic and see a faint aura around magical objects and creatures.</p><p><strong>Scaling:</strong> At dice count 3, range increases to 60 feet. At dice count 6, can identify specific spells. At dice count 9, can see through illusions. At dice count 12, range increases to 120 feet. At dice count 15, detects all magic within a mile.</p>",
+        "offensive": false
       },
       {
         "name": "Identify",
@@ -924,7 +2227,8 @@
         "castingTime": "1 round",
         "range": "touch",
         "duration": "instantaneous",
-        "description": "<p>Reveals the properties of a magical object, including how to use it, whether it requires attunement, and any curses it carries.</p><p><strong>Scaling:</strong> At dice count 3, can identify multiple objects. At dice count 6, reveals hidden properties. At dice count 9, can identify at range. At dice count 12, learns object's history. At dice count 15, knows everything about any object.</p>"
+        "description": "<p>Reveals the properties of a magical object, including how to use it, whether it requires attunement, and any curses it carries.</p><p><strong>Scaling:</strong> At dice count 3, can identify multiple objects. At dice count 6, reveals hidden properties. At dice count 9, can identify at range. At dice count 12, learns object's history. At dice count 15, knows everything about any object.</p>",
+        "offensive": false
       },
       {
         "name": "Locate Object",
@@ -935,7 +2239,8 @@
         "castingTime": "instantaneous",
         "range": "self",
         "duration": "concentration, 10 minutes",
-        "description": "<p>Senses the direction to a known object within 1000 feet. Can locate a specific object you've seen or a general type of object.</p><p><strong>Scaling:</strong> At dice count 3, range increases to 5 miles. At dice count 6, can locate creatures as well. At dice count 9, can locate across planes. At dice count 12, pinpoints exact location. At dice count 15, can find anything anywhere.</p>"
+        "description": "<p>Senses the direction to a known object within 1000 feet. Can locate a specific object you've seen or a general type of object.</p><p><strong>Scaling:</strong> At dice count 3, range increases to 5 miles. At dice count 6, can locate creatures as well. At dice count 9, can locate across planes. At dice count 12, pinpoints exact location. At dice count 15, can find anything anywhere.</p>",
+        "offensive": false
       },
       {
         "name": "See Invisibility",
@@ -946,7 +2251,8 @@
         "castingTime": "instantaneous",
         "range": "self",
         "duration": "1 hour",
-        "description": "<p>Allows you to see invisible creatures and objects as if they were visible. You can also see into the Ethereal Plane.</p><p><strong>Scaling:</strong> At dice count 3, can grant this to allies. At dice count 6, see through all illusions. At dice count 9, see in darkness and through walls. At dice count 12, see the true form of all things. At dice count 15, omniscient vision in your area.</p>"
+        "description": "<p>Allows you to see invisible creatures and objects as if they were visible. You can also see into the Ethereal Plane.</p><p><strong>Scaling:</strong> At dice count 3, can grant this to allies. At dice count 6, see through all illusions. At dice count 9, see in darkness and through walls. At dice count 12, see the true form of all things. At dice count 15, omniscient vision in your area.</p>",
+        "offensive": false
       },
       {
         "name": "Clairvoyance",
@@ -957,7 +2263,8 @@
         "castingTime": "1 round",
         "range": "1 mile",
         "duration": "concentration, 10 minutes",
-        "description": "<p>Creates an invisible sensor at a distant location you've been to or can see. You can see or hear (choose one) through the sensor.</p><p><strong>Scaling:</strong> At dice count 3, can see and hear simultaneously. At dice count 6, range extends to 10 miles. At dice count 9, can create multiple sensors. At dice count 12, sensors can move. At dice count 15, can observe anywhere on the same plane.</p>"
+        "description": "<p>Creates an invisible sensor at a distant location you've been to or can see. You can see or hear (choose one) through the sensor.</p><p><strong>Scaling:</strong> At dice count 3, can see and hear simultaneously. At dice count 6, range extends to 10 miles. At dice count 9, can create multiple sensors. At dice count 12, sensors can move. At dice count 15, can observe anywhere on the same plane.</p>",
+        "offensive": false
       },
       {
         "name": "Scrying",
@@ -968,7 +2275,8 @@
         "castingTime": "1 round",
         "range": "unlimited",
         "duration": "concentration, 10 minutes",
-        "description": "<p>Observes a creature at any distance through magical sight. You can see and hear the target and their surroundings. The target can make a save to resist.</p><p><strong>Scaling:</strong> At dice count 3, target has disadvantage on save. At dice count 6, can scry multiple targets. At dice count 9, can scry across planes. At dice count 12, scrying is undetectable. At dice count 15, can communicate through the scrying sensor.</p>"
+        "description": "<p>Observes a creature at any distance through magical sight. You can see and hear the target and their surroundings. The target can make a save to resist.</p><p><strong>Scaling:</strong> At dice count 3, target has disadvantage on save. At dice count 6, can scry multiple targets. At dice count 9, can scry across planes. At dice count 12, scrying is undetectable. At dice count 15, can communicate through the scrying sensor.</p>",
+        "offensive": false
       },
       {
         "name": "True Seeing",
@@ -979,7 +2287,8 @@
         "castingTime": "instantaneous",
         "range": "touch",
         "duration": "1 hour",
-        "description": "<p>Grants the ability to see through all illusions, darkness, and hidden doors. You can see invisible creatures, detect secret doors, and perceive the true form of shapeshifters.</p><p><strong>Scaling:</strong> At dice count 3, can see into other planes. At dice count 6, can grant to multiple creatures. At dice count 9, see the future briefly. At dice count 12, see all hidden things. At dice count 15, omniscient sight that sees all truths.</p>"
+        "description": "<p>Grants the ability to see through all illusions, darkness, and hidden doors. You can see invisible creatures, detect secret doors, and perceive the true form of shapeshifters.</p><p><strong>Scaling:</strong> At dice count 3, can see into other planes. At dice count 6, can grant to multiple creatures. At dice count 9, see the future briefly. At dice count 12, see all hidden things. At dice count 15, omniscient sight that sees all truths.</p>",
+        "offensive": false
       },
       {
         "name": "Analyze Weakness",
@@ -990,7 +2299,8 @@
         "castingTime": "instantaneous",
         "range": "60 feet",
         "duration": "1 minute",
-        "description": "<p>You study a creature's magical signature and physical form, laying bare exactly what harms it best. You learn the target's resistances, vulnerabilities, and immunities, and can share this knowledge with any ally within earshot.</p><p><strong>Scaling:</strong> At dice count 3, you also learn one saving throw the target is weak against. At dice count 6, you can analyze up to 3 creatures with a single casting. At dice count 9, the knowledge grants advantage on the first attack any ally makes against a revealed vulnerability. At dice count 12, the effect lasts for the rest of the encounter. At dice count 15, you instantly know the weaknesses of every creature you can see.</p>"
+        "description": "<p>You study a creature's magical signature and physical form, laying bare exactly what harms it best. You learn the target's resistances, vulnerabilities, and immunities, and can share this knowledge with any ally within earshot.</p><p><strong>Scaling:</strong> At dice count 3, you also learn one saving throw the target is weak against. At dice count 6, you can analyze up to 3 creatures with a single casting. At dice count 9, the knowledge grants advantage on the first attack any ally makes against a revealed vulnerability. At dice count 12, the effect lasts for the rest of the encounter. At dice count 15, you instantly know the weaknesses of every creature you can see.</p>",
+        "offensive": false
       },
       {
         "name": "Assess Liability",
@@ -1001,7 +2311,8 @@
         "castingTime": "instantaneous",
         "range": "30 feet",
         "duration": "1 minute",
-        "description": "<p>You size up a creature the way you'd size up a bad investment, cataloging every exploitable weakness. You and any ally who can see the target gain advantage on the first saving throw made against an effect created by that creature within the duration.</p><p><strong>Scaling:</strong> At dice count 3, you can target a second creature. At dice count 6, the advantage applies to every saving throw made against the target's effects for the duration. At dice count 9, the duration increases to 10 minutes. At dice count 12, allies also gain advantage on attack rolls against the target. At dice count 15, the effect applies to every enemy you can see.</p>"
+        "description": "<p>You size up a creature the way you'd size up a bad investment, cataloging every exploitable weakness. You and any ally who can see the target gain advantage on the first saving throw made against an effect created by that creature within the duration.</p><p><strong>Scaling:</strong> At dice count 3, you can target a second creature. At dice count 6, the advantage applies to every saving throw made against the target's effects for the duration. At dice count 9, the duration increases to 10 minutes. At dice count 12, allies also gain advantage on attack rolls against the target. At dice count 15, the effect applies to every enemy you can see.</p>",
+        "offensive": false
       },
       {
         "name": "Foretell Doom",
@@ -1012,7 +2323,8 @@
         "castingTime": "instantaneous",
         "range": "60 feet",
         "duration": "1 minute",
-        "description": "<p>You speak a fragment of a creature's fate aloud, and the weight of it settles over the target. The target has disadvantage on the next saving throw it makes, and the next attack roll made against it by an ally has advantage.</p><p><strong>Scaling:</strong> At dice count 3, the effect applies to the next two rolls of each type. At dice count 6, you can target a second creature within range. At dice count 9, the duration increases to 10 minutes. At dice count 12, the doom also reduces the target's speed by 10 feet for its duration. At dice count 15, you can foretell the doom of every enemy you can see.</p>"
+        "description": "<p>You speak a fragment of a creature's fate aloud, and the weight of it settles over the target. The target has disadvantage on the next saving throw it makes, and the next attack roll made against it by an ally has advantage.</p><p><strong>Scaling:</strong> At dice count 3, the effect applies to the next two rolls of each type. At dice count 6, you can target a second creature within range. At dice count 9, the duration increases to 10 minutes. At dice count 12, the doom also reduces the target's speed by 10 feet for its duration. At dice count 15, you can foretell the doom of every enemy you can see.</p>",
+        "offensive": false
       },
       {
         "name": "Vision of the Threads",
@@ -1023,7 +2335,98 @@
         "castingTime": "1 round",
         "range": "self",
         "duration": "10 minutes",
-        "description": "<p>You still your mind and let the threads of the immediate future unspool before you. For the duration, you have advantage on initiative rolls, and once before the spell ends you can warn an ally of danger as a reaction, granting them advantage on one saving throw or letting them shift 5 feet to avoid an area of effect.</p><p><strong>Scaling:</strong> At dice count 3, you can grant the warning to two different allies. At dice count 6, the duration increases to 1 hour. At dice count 9, the warning can instead grant an ally advantage on an attack roll. At dice count 12, you can use the warning twice before the spell ends. At dice count 15, every ally within 30 feet of you shares the benefit of your foresight for the entire duration.</p>"
+        "description": "<p>You still your mind and let the threads of the immediate future unspool before you. For the duration, you have advantage on initiative rolls, and once before the spell ends you can warn an ally of danger as a reaction, granting them advantage on one saving throw or letting them shift 5 feet to avoid an area of effect.</p><p><strong>Scaling:</strong> At dice count 3, you can grant the warning to two different allies. At dice count 6, the duration increases to 1 hour. At dice count 9, the warning can instead grant an ally advantage on an attack roll. At dice count 12, you can use the warning twice before the spell ends. At dice count 15, every ally within 30 feet of you shares the benefit of your foresight for the entire duration.</p>",
+        "offensive": false
+      },
+      {
+        "name": "Audit Trail",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "divination",
+        "castingTime": "instantaneous",
+        "range": "120 feet",
+        "duration": "1 hour",
+        "description": "<p>You open an invisible ledger on a creature you can see, logging its every movement. For the duration, you always know the general direction and distance to the target, even through walls.</p><p><strong>Scaling:</strong> At dice count 3, you also learn what the target is carrying. At dice count 6, you can audit two creatures at once.</p>",
+        "offensive": false,
+        "classes": [
+          "Auditor"
+        ]
+      },
+      {
+        "name": "Marked Deck",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "divination",
+        "castingTime": "instantaneous",
+        "range": "self",
+        "duration": "1 minute",
+        "description": "<p>You riffle a deck only you can see and slip a glance at what's coming. You gain advantage on your next ability check, attack roll, or saving throw made before the spell ends.</p><p><strong>Scaling:</strong> At dice count 3, the advantage can be shared with an ally within 30 feet instead. At dice count 6, you can mark two future rolls.</p>",
+        "offensive": false,
+        "classes": [
+          "Card Duelist"
+        ]
+      },
+      {
+        "name": "Spellbook Shortcut",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "int",
+        "category": "divination",
+        "castingTime": "instantaneous",
+        "range": "self",
+        "duration": "instantaneous",
+        "description": "<p>You flip your spellbook open to a page that was never there a moment ago, letting you cast a second spell you know of 1st level or lower this turn without spending an additional action, only mana.</p><p><strong>Scaling:</strong> At dice count 3, the shortcut works on spells of 2nd level or lower. At dice count 6, works on spells of 3rd level or lower.</p>",
+        "offensive": false,
+        "classes": [
+          "Wizard"
+        ]
+      },
+      {
+        "name": "Glimpse the Ledger",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "wis",
+        "category": "divination",
+        "castingTime": "instantaneous",
+        "range": "60 feet",
+        "duration": "instantaneous",
+        "description": "<p>You read the balance a creature's fate is currently keeping, learning its current hit points, resistances, and vulnerabilities. You can share this knowledge with any ally who can hear you.</p><p><strong>Scaling:</strong> At dice count 3, you also learn its immunities. At dice count 6, you can glimpse two creatures at once.</p>",
+        "offensive": false,
+        "classes": [
+          "Oracle"
+        ]
+      },
+      {
+        "name": "Unwritten Future",
+        "spellLevel": 6,
+        "diceCount": 1,
+        "castStat": "wis",
+        "category": "divination",
+        "castingTime": "instantaneous",
+        "range": "30 feet",
+        "duration": "instantaneous",
+        "description": "<p>You reach into the pages that haven't been written yet and cross out a line. You or an ally within range can immediately reroll one failed saving throw, ability check, or attack roll made in the last minute, taking the new result.</p><p><strong>Scaling:</strong> At dice count 3, you can reroll a roll made by an enemy instead, forcing them to use the worse of the two results. At dice count 6, you can rewrite two rolls with one casting.</p>",
+        "offensive": false,
+        "classes": [
+          "Oracle"
+        ]
+      },
+      {
+        "name": "Confessional Cam",
+        "spellLevel": 2,
+        "diceCount": 1,
+        "castStat": "cha",
+        "category": "divination",
+        "castingTime": "instantaneous",
+        "range": "30 feet",
+        "duration": "instantaneous",
+        "description": "<p>You catch a target in a private, unguarded moment only you can see, and it spills what it's really thinking. You learn the target's true intentions toward the nearest creature to it, and whether it's currently under any charm or fear effect.</p><p><strong>Scaling:</strong> At dice count 3, you also learn one secret the target is actively concealing. At dice count 6, you can read two targets at once.</p>",
+        "offensive": false,
+        "classes": [
+          "Reality Star"
+        ]
       }
     ]
   }

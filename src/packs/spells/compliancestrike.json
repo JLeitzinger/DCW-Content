@@ -1,0 +1,45 @@
+{
+  "_id": "ComplianceStrike",
+  "name": "Compliance Strike",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You cite a target for a violation only you can see, and the weight of the penalty lands as necrotic damage. Until the target succeeds on a save, it has disadvantage on any check made to resist your spells.</p><p><strong>Scaling:</strong> At dice count 3, the penalty also applies to its saving throws. At dice count 6, you can strike two targets from the same casting.</p>",
+    "spellLevel": 3,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "necromancy",
+    "prowess": 4,
+    "castingTime": "instantaneous",
+    "range": "60 feet",
+    "duration": "instantaneous",
+    "grantedSkills": [],
+    "offensive": true,
+    "roll": {
+      "diceNum": 2,
+      "diceSize": "d6",
+      "diceBonus": "+@int.mod"
+    },
+    "classes": [
+      "Auditor"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

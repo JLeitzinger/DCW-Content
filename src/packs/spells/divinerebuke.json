@@ -1,0 +1,45 @@
+{
+  "_id": "DivineRebuke",
+  "name": "Divine Rebuke",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You call down a column of judgment onto a target, dealing radiant damage. If the target has harmed an ally of yours within the last minute, it takes extra damage.</p><p><strong>Scaling:</strong> At dice count 3, the column widens to catch one adjacent creature. At dice count 6, the target is also blinded until the end of its next turn.</p>",
+    "spellLevel": 5,
+    "diceCount": 1,
+    "castStat": "wis",
+    "category": "evocation",
+    "prowess": 7,
+    "castingTime": "instantaneous",
+    "range": "60 feet",
+    "duration": "instantaneous",
+    "grantedSkills": [],
+    "offensive": true,
+    "roll": {
+      "diceNum": 3,
+      "diceSize": "d8",
+      "diceBonus": "+@wis.mod"
+    },
+    "classes": [
+      "Cleric"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

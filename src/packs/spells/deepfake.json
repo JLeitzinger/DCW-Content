@@ -1,0 +1,45 @@
+{
+  "_id": "Deepfake",
+  "name": "Deepfake",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You splice a false feed into a target's senses, making them see, hear, or read something that isn't there. Convincing enough to redirect a patrol, forge a command, or plant a false memory of the last minute.</p><p><strong>Scaling:</strong> At dice count 3, the fake is convincing enough to fool magical detection. At dice count 6, you can target multiple creatures with the same feed.</p>",
+    "spellLevel": 2,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "illusion",
+    "prowess": 3,
+    "castingTime": "instantaneous",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    },
+    "classes": [
+      "Netrunner"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

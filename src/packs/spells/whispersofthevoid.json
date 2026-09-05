@@ -14,12 +14,13 @@
     "range": "60 feet",
     "duration": "1 minute",
     "grantedSkills": [],
-    "offensive": false,
+    "offensive": true,
     "roll": {
-      "diceNum": 1,
+      "diceNum": 2,
       "diceSize": "d6",
-      "diceBonus": ""
-    }
+      "diceBonus": "+@int.mod"
+    },
+    "classes": []
   },
   "effects": [],
   "folder": null,

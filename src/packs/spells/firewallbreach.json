@@ -1,0 +1,45 @@
+{
+  "_id": "FirewallBreach",
+  "name": "Firewall Breach",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You force a spike of raw code through a target's defenses, dealing force damage as its own wards are turned against it. Any active magical or technological shield on the target is weakened for the rest of the encounter.</p><p><strong>Scaling:</strong> At dice count 3, the breach also disables one of the target's active magic items until it rests. At dice count 6, the spike chains to a second target.</p>",
+    "spellLevel": 3,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "evocation",
+    "prowess": 4,
+    "castingTime": "instantaneous",
+    "range": "60 feet",
+    "duration": "instantaneous",
+    "grantedSkills": [],
+    "offensive": true,
+    "roll": {
+      "diceNum": 2,
+      "diceSize": "d8",
+      "diceBonus": "+@int.mod"
+    },
+    "classes": [
+      "Netrunner"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

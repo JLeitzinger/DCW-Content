@@ -1,0 +1,45 @@
+{
+  "_id": "PaparazziFlash",
+  "name": "Paparazzi Flash",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>An explosion of phantom camera flashes goes off in a cone in front of you, dealing psychic damage as the sheer overwhelming attention overloads everyone caught in it. Creatures that fail a Constitution save are also blinded until the end of their next turn.</p><p><strong>Scaling:</strong> At dice count 3, the cone extends to 45 feet. At dice count 6, you gain advantage on your next attack roll against a blinded creature this encounter.</p>",
+    "spellLevel": 2,
+    "diceCount": 1,
+    "castStat": "cha",
+    "category": "illusion",
+    "prowess": 3,
+    "castingTime": "instantaneous",
+    "range": "30-foot cone",
+    "duration": "instantaneous",
+    "grantedSkills": [],
+    "offensive": true,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": "+@cha.mod"
+    },
+    "classes": [
+      "Child Star"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

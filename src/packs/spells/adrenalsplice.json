@@ -1,0 +1,45 @@
+{
+  "_id": "AdrenalSplice",
+  "name": "Adrenal Splice",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You graft a splice of overtuned adrenal tissue onto a willing creature, flooding it with borrowed vigor. The target's speed increases and it gains advantage on Strength checks for the duration.</p><p><strong>Scaling:</strong> At dice count 3, the target also gains temporary hit points. At dice count 6, you can splice two creatures at once.</p>",
+    "spellLevel": 2,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "transmutation",
+    "prowess": 3,
+    "castingTime": "instantaneous",
+    "range": "touch",
+    "duration": "1 minute",
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    },
+    "classes": [
+      "Gene Splicer"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

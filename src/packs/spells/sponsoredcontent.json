@@ -1,0 +1,45 @@
+{
+  "_id": "SponsoredContent",
+  "name": "Sponsored Content",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You plant a suggestion in a target's mind, dressed up as their own idea. The target has disadvantage on saves against your next spell cast before the end of your next turn, convinced it's a good idea to go along with it.</p><p><strong>Scaling:</strong> At dice count 3, the effect also applies to the next spell cast by an ally of yours. At dice count 6, you can target two creatures.</p>",
+    "spellLevel": 2,
+    "diceCount": 1,
+    "castStat": "cha",
+    "category": "enchantment",
+    "prowess": 3,
+    "castingTime": "instantaneous",
+    "range": "30 feet",
+    "duration": "1 minute",
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    },
+    "classes": [
+      "Influencer"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

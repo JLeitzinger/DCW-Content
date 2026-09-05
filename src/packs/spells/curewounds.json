@@ -19,7 +19,8 @@
       "diceNum": 1,
       "diceSize": "d6",
       "diceBonus": ""
-    }
+    },
+    "classes": []
   },
   "effects": [],
   "folder": null,

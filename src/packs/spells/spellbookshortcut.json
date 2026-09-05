@@ -1,0 +1,45 @@
+{
+  "_id": "SpellbookShortcut",
+  "name": "Spellbook Shortcut",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You flip your spellbook open to a page that was never there a moment ago, letting you cast a second spell you know of 1st level or lower this turn without spending an additional action, only mana.</p><p><strong>Scaling:</strong> At dice count 3, the shortcut works on spells of 2nd level or lower. At dice count 6, works on spells of 3rd level or lower.</p>",
+    "spellLevel": 2,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "divination",
+    "prowess": 3,
+    "castingTime": "instantaneous",
+    "range": "self",
+    "duration": "instantaneous",
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    },
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

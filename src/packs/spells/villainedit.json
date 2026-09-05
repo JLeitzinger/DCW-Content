@@ -1,0 +1,45 @@
+{
+  "_id": "VillainEdit",
+  "name": "Villain Edit",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You reframe a target's every action in the worst possible light, and the room turns on them, dealing psychic damage. Until the spell ends, any ally who attacks the target gains a small bonus to the attack roll.</p><p><strong>Scaling:</strong> At dice count 3, the target also has disadvantage on Charisma checks for the duration. At dice count 6, the damage increases.</p>",
+    "spellLevel": 5,
+    "diceCount": 1,
+    "castStat": "cha",
+    "category": "enchantment",
+    "prowess": 7,
+    "castingTime": "instantaneous",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "grantedSkills": [],
+    "offensive": true,
+    "roll": {
+      "diceNum": 3,
+      "diceSize": "d6",
+      "diceBonus": "+@cha.mod"
+    },
+    "classes": [
+      "Reality Star"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

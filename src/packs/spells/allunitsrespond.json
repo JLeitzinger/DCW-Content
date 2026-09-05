@@ -1,0 +1,45 @@
+{
+  "_id": "AllUnitsRespond",
+  "name": "All Units Respond",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You put out an all-call, and a spectral response team answers, appearing in unoccupied spaces you choose within range. They follow your orders and fight on your behalf until the spell ends or they're destroyed.</p><p><strong>Scaling:</strong> At dice count 3, an additional responder answers the call. At dice count 6, the responders are noticeably tougher.</p>",
+    "spellLevel": 5,
+    "diceCount": 1,
+    "castStat": "wis",
+    "category": "conjuration",
+    "prowess": 7,
+    "castingTime": "1 round",
+    "range": "30 feet",
+    "duration": "1 minute",
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    },
+    "classes": [
+      "Dispatcher"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

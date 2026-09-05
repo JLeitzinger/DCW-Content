@@ -1,0 +1,45 @@
+{
+  "_id": "StateofEmergency",
+  "name": "State of Emergency",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You declare emergency powers, and your allies feel the shift immediately. Every ally within range gains temporary hit points and advantage on their next saving throw before the spell ends.</p><p><strong>Scaling:</strong> At dice count 3, the temporary hit points increase. At dice count 6, the radius increases to 40 feet.</p>",
+    "spellLevel": 5,
+    "diceCount": 1,
+    "castStat": "cha",
+    "category": "abjuration",
+    "prowess": 7,
+    "castingTime": "instantaneous",
+    "range": "30-foot radius",
+    "duration": "1 minute",
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    },
+    "classes": [
+      "President"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

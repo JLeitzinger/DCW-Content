@@ -1,0 +1,45 @@
+{
+  "_id": "SanctifiedGround",
+  "name": "Sanctified Ground",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You bless a 15-foot radius area, marking it as consecrated ground. Allies within the area regain a small amount of hit points at the start of each of their turns.</p><p><strong>Scaling:</strong> At dice count 3, the healing increases. At dice count 6, undead entering the area for the first time on a turn take radiant damage.</p>",
+    "spellLevel": 3,
+    "diceCount": 1,
+    "castStat": "wis",
+    "category": "abjuration",
+    "prowess": 4,
+    "castingTime": "1 round",
+    "range": "30 feet",
+    "duration": "1 minute",
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    },
+    "classes": [
+      "Cleric"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

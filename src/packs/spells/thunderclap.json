@@ -14,12 +14,13 @@
     "range": "self (15-foot radius)",
     "duration": "instantaneous",
     "grantedSkills": [],
-    "offensive": false,
+    "offensive": true,
     "roll": {
       "diceNum": 1,
-      "diceSize": "d6",
-      "diceBonus": ""
-    }
+      "diceSize": "d8",
+      "diceBonus": "+@int.mod"
+    },
+    "classes": []
   },
   "effects": [],
   "folder": null,

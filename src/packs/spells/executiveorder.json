@@ -1,0 +1,45 @@
+{
+  "_id": "ExecutiveOrder",
+  "name": "Executive Order",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You issue a single, absolute command to a creature that can understand you: approach, flee, drop, or halt. The target must succeed on a Wisdom save or immediately follow the order to the best of its ability on its next turn.</p><p><strong>Scaling:</strong> At dice count 3, the target has disadvantage on the save. At dice count 6, you can issue the order to two creatures.</p>",
+    "spellLevel": 3,
+    "diceCount": 1,
+    "castStat": "cha",
+    "category": "enchantment",
+    "prowess": 4,
+    "castingTime": "instantaneous",
+    "range": "30 feet",
+    "duration": "instantaneous",
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    },
+    "classes": [
+      "President"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

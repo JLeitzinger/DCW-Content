@@ -1,0 +1,45 @@
+{
+  "_id": "RunebladeEmpowerment",
+  "name": "Runeblade Empowerment",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You etch a rapidly-fading rune along a weapon's edge, charging it with raw arcane current. The weapon deals extra force damage on a hit for the duration.</p><p><strong>Scaling:</strong> At dice count 3, the bonus damage increases. At dice count 6, the rune also grants advantage on the wielder's next attack roll each turn.</p>",
+    "spellLevel": 4,
+    "diceCount": 1,
+    "castStat": "int",
+    "category": "transmutation",
+    "prowess": 6,
+    "castingTime": "1 round",
+    "range": "touch",
+    "duration": "1 minute",
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    },
+    "classes": [
+      "Runesmith"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

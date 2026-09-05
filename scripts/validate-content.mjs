@@ -336,8 +336,8 @@ function validateSpells() {
     if (!(s.spellLevel >= 1 && s.spellLevel <= 15)) {
       error('spells', file, `spellLevel must be 1-15, found ${s.spellLevel}`);
     }
-    if (s.castStat !== null && !['int', 'wis'].includes(s.castStat)) {
-      error('spells', file, `castStat must be "int", "wis", or null, found ${JSON.stringify(s.castStat)}`);
+    if (s.castStat !== null && !['int', 'wis', 'cha'].includes(s.castStat)) {
+      error('spells', file, `castStat must be "int", "wis", "cha", or null, found ${JSON.stringify(s.castStat)}`);
     }
     const expectedProwess = s.spellLevel + Math.ceil(s.spellLevel / 3);
     if (s.prowess !== expectedProwess) {

@@ -1,0 +1,45 @@
+{
+  "_id": "Overflow",
+  "name": "Overflow",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You let everything you're holding back go at once in a single uncontrolled detonation of force damage centered on yourself, catching allies and enemies alike. You take a portion of the damage dealt as backlash.</p><p><strong>Scaling:</strong> At dice count 3, allies caught in the radius can choose to take no damage. At dice count 6, your own backlash damage is halved.</p>",
+    "spellLevel": 6,
+    "diceCount": 1,
+    "castStat": "cha",
+    "category": "evocation",
+    "prowess": 8,
+    "castingTime": "instantaneous",
+    "range": "30-foot radius",
+    "duration": "instantaneous",
+    "grantedSkills": [],
+    "offensive": true,
+    "roll": {
+      "diceNum": 3,
+      "diceSize": "d8",
+      "diceBonus": "+@cha.mod"
+    },
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

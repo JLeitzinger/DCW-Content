@@ -14,12 +14,13 @@
     "range": "1 mile",
     "duration": "instantaneous",
     "grantedSkills": [],
-    "offensive": false,
+    "offensive": true,
     "roll": {
-      "diceNum": 1,
-      "diceSize": "d6",
-      "diceBonus": ""
-    }
+      "diceNum": 5,
+      "diceSize": "d8",
+      "diceBonus": "+@int.mod"
+    },
+    "classes": []
   },
   "effects": [],
   "folder": null,

@@ -1,0 +1,45 @@
+{
+  "_id": "EldritchGrasp",
+  "name": "Eldritch Grasp",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>An appendage that shouldn't exist reaches through the space behind you and closes around a target, dealing psychic damage and pulling it up to 15 feet toward you.</p><p><strong>Scaling:</strong> At dice count 3, the target is also restrained until the end of its next turn. At dice count 6, the grasp can seize two targets.</p>",
+    "spellLevel": 4,
+    "diceCount": 1,
+    "castStat": "cha",
+    "category": "conjuration",
+    "prowess": 6,
+    "castingTime": "instantaneous",
+    "range": "30 feet",
+    "duration": "instantaneous",
+    "grantedSkills": [],
+    "offensive": true,
+    "roll": {
+      "diceNum": 2,
+      "diceSize": "d8",
+      "diceBonus": "+@cha.mod"
+    },
+    "classes": [
+      "Void Touched"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

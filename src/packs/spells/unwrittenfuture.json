@@ -1,0 +1,45 @@
+{
+  "_id": "UnwrittenFuture",
+  "name": "Unwritten Future",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You reach into the pages that haven't been written yet and cross out a line. You or an ally within range can immediately reroll one failed saving throw, ability check, or attack roll made in the last minute, taking the new result.</p><p><strong>Scaling:</strong> At dice count 3, you can reroll a roll made by an enemy instead, forcing them to use the worse of the two results. At dice count 6, you can rewrite two rolls with one casting.</p>",
+    "spellLevel": 6,
+    "diceCount": 1,
+    "castStat": "wis",
+    "category": "divination",
+    "prowess": 8,
+    "castingTime": "instantaneous",
+    "range": "30 feet",
+    "duration": "instantaneous",
+    "grantedSkills": [],
+    "offensive": false,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": ""
+    },
+    "classes": [
+      "Oracle"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

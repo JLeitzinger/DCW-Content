@@ -14,12 +14,13 @@
     "range": "120 feet",
     "duration": "concentration, 10 minutes",
     "grantedSkills": [],
-    "offensive": false,
+    "offensive": true,
     "roll": {
-      "diceNum": 1,
-      "diceSize": "d6",
-      "diceBonus": ""
-    }
+      "diceNum": 2,
+      "diceSize": "d8",
+      "diceBonus": "+@int.mod"
+    },
+    "classes": []
   },
   "effects": [],
   "folder": null,

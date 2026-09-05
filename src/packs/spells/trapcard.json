@@ -14,12 +14,13 @@
     "range": "self",
     "duration": "1 hour",
     "grantedSkills": [],
-    "offensive": false,
+    "offensive": true,
     "roll": {
       "diceNum": 1,
       "diceSize": "d6",
-      "diceBonus": ""
-    }
+      "diceBonus": "+@int.mod"
+    },
+    "classes": []
   },
   "effects": [],
   "folder": null,

@@ -40,7 +40,8 @@ for (const [categoryName, categorySpells] of Object.entries(manifest.spells)) {
       duration: spell.duration,
       prowess: calculateProwess(spell.spellLevel),
       offensive: spell.offensive ?? false,
-      roll: spell.roll ?? { diceNum: 1, diceSize: 'd6', diceBonus: '' }
+      roll: spell.roll ?? { diceNum: 1, diceSize: 'd6', diceBonus: '' },
+      classes: spell.classes ?? []
     });
   }
 }
@@ -63,7 +64,12 @@ function createSpellItem(spell) {
       duration: spell.duration,
       grantedSkills: [],
       offensive: spell.offensive,
-      roll: spell.roll
+      roll: spell.roll,
+      // Not part of item-spell.mjs's schema (same as `category` above) - Foundry
+      // silently drops it on load. Read directly off this generated JSON by
+      // CharacterGenerator.mjs's pickSpells() to build each class's own flavor
+      // pool, layered on top of the shared castStat-matched generic spells.
+      classes: spell.classes
     }
   });
 }
