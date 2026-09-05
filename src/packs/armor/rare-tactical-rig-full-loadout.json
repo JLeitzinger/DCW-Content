@@ -1,0 +1,40 @@
+{
+  "_id": "rare-tactical-rig-full-loadout",
+  "name": "Tactical Rig (Full Loadout)",
+  "type": "armor",
+  "img": "icons/equipment/chest/harness-tactical-heavy.webp",
+  "system": {
+    "description": "A full tactical harness plated with ceramic inserts, apparently left behind in a hurry. Serious gear for people who expected a serious fight.",
+    "quantity": 1,
+    "weight": 12,
+    "rarity": "rare",
+    "effort": 3,
+    "damageReduction": 5,
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Block",
+        "level": 3
+      }
+    ],
+    "luckBonus": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

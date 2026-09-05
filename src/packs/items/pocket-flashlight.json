@@ -1,0 +1,42 @@
+{
+  "_id": "pocket-flashlight",
+  "name": "Pocket Flashlight",
+  "type": "item",
+  "img": "icons/sundries/lights/flash-light.webp",
+  "system": {
+    "description": "A cheap plastic flashlight with a wobbly beam. No mechanical light rules yet - carry it for the flavor and the occasional Survival check in the dark.",
+    "quantity": 1,
+    "weight": 0.3,
+    "rarity": "common",
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Survival",
+        "level": 1
+      }
+    ],
+    "luckBonus": 0,
+    "consumable": false,
+    "restoreResource": "",
+    "restoreAmount": 0,
+    "regenBoostAmount": 0,
+    "regenBoostUses": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

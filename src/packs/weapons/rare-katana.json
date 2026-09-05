@@ -1,0 +1,49 @@
+{
+  "_id": "rare-katana",
+  "name": "Katana",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-katana.webp",
+  "system": {
+    "description": "A genuine antique blade, found wrapped in cloth at the back of a stranger's closet during an estate sale. Sharper than anything else in the pile.",
+    "quantity": 1,
+    "weight": 3,
+    "roll": {
+      "diceNum": 2,
+      "diceSize": "d6",
+      "diceBonus": "+@str.mod+ceil(@lvl / 2)+2"
+    },
+    "rarity": "rare",
+    "effort": 2,
+    "range": "melee",
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Slash",
+        "level": 2
+      },
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Pierce",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

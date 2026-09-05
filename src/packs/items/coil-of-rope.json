@@ -1,0 +1,42 @@
+{
+  "_id": "coil-of-rope",
+  "name": "Coil of Rope",
+  "type": "item",
+  "img": "icons/sundries/survival/rope-coiled-brown.webp",
+  "system": {
+    "description": "A length of sturdy rope, coiled and ready. Useful for climbing, hauling, or tying someone down.",
+    "quantity": 1,
+    "weight": 5,
+    "rarity": "common",
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Athletics",
+        "level": 1
+      }
+    ],
+    "luckBonus": 0,
+    "consumable": false,
+    "restoreResource": "",
+    "restoreAmount": 0,
+    "regenBoostAmount": 0,
+    "regenBoostUses": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -76,6 +76,166 @@
         }
       ],
       "img": "icons/sundries/lights/torch-brown.webp"
+    },
+    {
+      "name": "Half-Eaten Candy Bar",
+      "description": "Half a candy bar in a crumpled wrapper. A little stale, but the sugar helps.",
+      "quantity": 1,
+      "weight": 0.1,
+      "rarity": "common",
+      "consumable": true,
+      "restoreResource": "hp",
+      "restoreAmount": 3,
+      "img": "icons/consumables/food/candy-bar.webp"
+    },
+    {
+      "name": "Canned Beans",
+      "description": "A dented can, label long gone. Still sealed, still good.",
+      "quantity": 1,
+      "weight": 1,
+      "rarity": "common",
+      "consumable": true,
+      "restoreResource": "hp",
+      "restoreAmount": 6,
+      "img": "icons/consumables/food/ration-canned-tomato.webp"
+    },
+    {
+      "name": "Duct Tape Roll",
+      "description": "Silver tape that fixes nearly anything for about five minutes. Never leave home without it.",
+      "quantity": 1,
+      "weight": 0.5,
+      "rarity": "common",
+      "grantedSkills": [
+        {
+          "skillName": "Mend",
+          "level": 1
+        }
+      ],
+      "img": "icons/sundries/survival/tape-duct.webp"
+    },
+    {
+      "name": "Coil of Rope",
+      "description": "A length of sturdy rope, coiled and ready. Useful for climbing, hauling, or tying someone down.",
+      "quantity": 1,
+      "weight": 5,
+      "rarity": "common",
+      "grantedSkills": [
+        {
+          "skillName": "Athletics",
+          "level": 1
+        }
+      ],
+      "img": "icons/sundries/survival/rope-coiled-brown.webp"
+    },
+    {
+      "name": "Reading Glasses",
+      "description": "A pair of scratched reading glasses. Makes fine print, old inscriptions, and faded labels a lot easier to parse.",
+      "quantity": 1,
+      "weight": 0.2,
+      "rarity": "common",
+      "grantedSkills": [
+        {
+          "skillName": "Lore",
+          "level": 1
+        }
+      ],
+      "img": "icons/equipment/head/glasses-spectacles.webp"
+    },
+    {
+      "name": "Painkillers",
+      "description": "A half-empty bottle of over-the-counter pills. Mundane, reliable, and safe to use as often as you have them.",
+      "quantity": 1,
+      "weight": 0.2,
+      "rarity": "common",
+      "consumable": true,
+      "restoreResource": "hp",
+      "restoreAmount": 5,
+      "img": "icons/tools/medical/medication-pills-bottle.webp"
+    },
+    {
+      "name": "Pocket Flashlight",
+      "description": "A cheap plastic flashlight with a wobbly beam. No mechanical light rules yet - carry it for the flavor and the occasional Survival check in the dark.",
+      "quantity": 1,
+      "weight": 0.3,
+      "rarity": "common",
+      "grantedSkills": [
+        {
+          "skillName": "Survival",
+          "level": 1
+        }
+      ],
+      "img": "icons/sundries/lights/flash-light.webp"
+    },
+    {
+      "name": "Energy Drink",
+      "description": "An ice-cold can of something neon and caffeinated. Restores vigor and quickens recovery for a short while after drinking.",
+      "quantity": 1,
+      "weight": 0.5,
+      "rarity": "uncommon",
+      "consumable": true,
+      "restoreResource": "stamina",
+      "restoreAmount": 12,
+      "regenBoostAmount": 2,
+      "regenBoostUses": 2,
+      "img": "icons/consumables/drinks/drink-can-red.webp"
+    },
+    {
+      "name": "First Aid Kit",
+      "description": "A proper trauma kit, gauze and antiseptic and all. Restores a solid chunk of HP and quickens recovery for a short while after use.",
+      "quantity": 1,
+      "weight": 1.5,
+      "rarity": "uncommon",
+      "consumable": true,
+      "restoreResource": "hp",
+      "restoreAmount": 15,
+      "regenBoostAmount": 2,
+      "regenBoostUses": 2,
+      "img": "icons/tools/medical/medkit-white-red.webp"
+    },
+    {
+      "name": "Smartphone",
+      "description": "A cracked but functional smartphone. Maps, cameras, and a signal when you're lucky - handy for noticing things you'd otherwise miss.",
+      "quantity": 1,
+      "weight": 0.3,
+      "rarity": "uncommon",
+      "grantedSkills": [
+        {
+          "skillName": "Perception",
+          "level": 1
+        }
+      ],
+      "img": "icons/commodities/tech/phone-smart-tablet.webp"
+    },
+    {
+      "name": "Field Trauma Kit",
+      "description": "A professional paramedic's kit, fully stocked. Whoever lost this knew what they were doing.",
+      "quantity": 1,
+      "weight": 2,
+      "rarity": "rare",
+      "consumable": true,
+      "restoreResource": "hp",
+      "restoreAmount": 25,
+      "regenBoostAmount": 3,
+      "regenBoostUses": 3,
+      "img": "icons/tools/medical/medkit-heavy.webp"
+    },
+    {
+      "name": "Titanium Multitool",
+      "description": "A sturdy folding multitool with a dozen attachments. Somehow still in the box, tucked behind a shelf.",
+      "quantity": 1,
+      "weight": 0.5,
+      "rarity": "rare",
+      "grantedSkills": [
+        {
+          "skillName": "Craft",
+          "level": 2
+        },
+        {
+          "skillName": "Mend",
+          "level": 1
+        }
+      ],
+      "img": "icons/weapons/daggers/knife-utility-multitool.webp"
     }
   ]
 }

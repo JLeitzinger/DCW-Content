@@ -1,0 +1,37 @@
+{
+  "_id": "first-aid-kit",
+  "name": "First Aid Kit",
+  "type": "item",
+  "img": "icons/tools/medical/medkit-white-red.webp",
+  "system": {
+    "description": "A proper trauma kit, gauze and antiseptic and all. Restores a solid chunk of HP and quickens recovery for a short while after use.",
+    "quantity": 1,
+    "weight": 1.5,
+    "rarity": "uncommon",
+    "grantedSkills": [],
+    "luckBonus": 0,
+    "consumable": true,
+    "restoreResource": "hp",
+    "restoreAmount": 15,
+    "regenBoostAmount": 2,
+    "regenBoostUses": 2
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

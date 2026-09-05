@@ -1,0 +1,37 @@
+{
+  "_id": "canned-beans",
+  "name": "Canned Beans",
+  "type": "item",
+  "img": "icons/consumables/food/ration-canned-tomato.webp",
+  "system": {
+    "description": "A dented can, label long gone. Still sealed, still good.",
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "common",
+    "grantedSkills": [],
+    "luckBonus": 0,
+    "consumable": true,
+    "restoreResource": "hp",
+    "restoreAmount": 6,
+    "regenBoostAmount": 0,
+    "regenBoostUses": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

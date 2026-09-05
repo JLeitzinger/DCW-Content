@@ -1,0 +1,42 @@
+{
+  "_id": "duct-tape-roll",
+  "name": "Duct Tape Roll",
+  "type": "item",
+  "img": "icons/sundries/survival/tape-duct.webp",
+  "system": {
+    "description": "Silver tape that fixes nearly anything for about five minutes. Never leave home without it.",
+    "quantity": 1,
+    "weight": 0.5,
+    "rarity": "common",
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Mend",
+        "level": 1
+      }
+    ],
+    "luckBonus": 0,
+    "consumable": false,
+    "restoreResource": "",
+    "restoreAmount": 0,
+    "regenBoostAmount": 0,
+    "regenBoostUses": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

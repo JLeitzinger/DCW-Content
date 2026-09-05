@@ -1,0 +1,45 @@
+{
+  "_id": "common-kitchen-knife",
+  "name": "Kitchen Knife",
+  "type": "weapon",
+  "img": "icons/weapons/daggers/knife-kitchen-red.webp",
+  "system": {
+    "description": "A plain knife pulled from a drawer. Meant for chopping vegetables, but it'll do in a pinch.",
+    "quantity": 1,
+    "weight": 0.5,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d4",
+      "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+    },
+    "rarity": "common",
+    "effort": 1,
+    "range": "melee",
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Pierce",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

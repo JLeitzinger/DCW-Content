@@ -81,6 +81,182 @@
         }
       ],
       "img": "modules/dcw-content/assets/tiles/item/armor/shields/large_shield_1.png"
+    },
+    {
+      "name": "Thick Sweater",
+      "description": "A bulky knit sweater pulled from a closet. Not much, but it takes the edge off a glancing blow.",
+      "quantity": 1,
+      "weight": 1.5,
+      "rarity": "common",
+      "effort": 1,
+      "damageReduction": 1,
+      "grantedSkills": [
+        {
+          "skillName": "Dodge",
+          "level": 1
+        }
+      ],
+      "img": "icons/equipment/chest/shirt-sweater-yellow.webp"
+    },
+    {
+      "name": "Couch Cushion Padding",
+      "description": "Foam cushions lashed to the torso with duct tape. Ridiculous to look at, surprisingly absorbent.",
+      "quantity": 1,
+      "weight": 3,
+      "rarity": "common",
+      "effort": 1,
+      "damageReduction": 1,
+      "grantedSkills": [
+        {
+          "skillName": "Block",
+          "level": 1
+        }
+      ],
+      "img": "icons/equipment/chest/vest-improvised.webp"
+    },
+    {
+      "name": "Garden Gloves",
+      "description": "Thick canvas gloves meant for pulling weeds. Better than bare knuckles.",
+      "quantity": 1,
+      "weight": 0.5,
+      "rarity": "common",
+      "effort": 1,
+      "damageReduction": 1,
+      "grantedSkills": [
+        {
+          "skillName": "Dodge",
+          "level": 1
+        }
+      ],
+      "img": "icons/equipment/hand/glove-simple-cloth-white.webp"
+    },
+    {
+      "name": "Work Gloves",
+      "description": "Reinforced leather gloves from a hardware store. Grippy, tough, and good in a scrap.",
+      "quantity": 1,
+      "weight": 0.5,
+      "rarity": "common",
+      "effort": 1,
+      "damageReduction": 1,
+      "grantedSkills": [
+        {
+          "skillName": "Dodge",
+          "level": 1
+        }
+      ],
+      "img": "icons/equipment/hand/gloves-leather-tan.webp"
+    },
+    {
+      "name": "Steel-Toe Boots",
+      "description": "Heavy work boots with reinforced caps. Not built for combat, but good for standing your ground.",
+      "quantity": 1,
+      "weight": 3,
+      "rarity": "common",
+      "effort": 1,
+      "damageReduction": 1,
+      "grantedSkills": [
+        {
+          "skillName": "Dodge",
+          "level": 1
+        }
+      ],
+      "img": "icons/equipment/feet/boots-hiking.webp"
+    },
+    {
+      "name": "Trash Can Lid Shield",
+      "description": "A dented steel lid, still sturdy enough to catch a swing. The neighborhood's least dignified shield.",
+      "quantity": 1,
+      "weight": 6,
+      "rarity": "uncommon",
+      "effort": 2,
+      "damageReduction": 3,
+      "grantedSkills": [
+        {
+          "skillName": "Block",
+          "level": 2
+        }
+      ],
+      "img": "icons/equipment/shield/shield-round-boss-wood-brown.webp"
+    },
+    {
+      "name": "Thrift Store Trench Coat",
+      "description": "A long, slightly musty coat that flares nicely when you turn. Extra fabric to tangle a blade.",
+      "quantity": 1,
+      "weight": 5,
+      "rarity": "uncommon",
+      "effort": 2,
+      "damageReduction": 2,
+      "grantedSkills": [
+        {
+          "skillName": "Dodge",
+          "level": 2
+        }
+      ],
+      "img": "icons/equipment/chest/coat-trench-brown.webp"
+    },
+    {
+      "name": "Motorcycle Jacket",
+      "description": "Armored leather built for road rash, not blades, but it still turns aside a glancing hit.",
+      "quantity": 1,
+      "weight": 6,
+      "rarity": "uncommon",
+      "effort": 2,
+      "damageReduction": 2,
+      "grantedSkills": [
+        {
+          "skillName": "Dodge",
+          "level": 2
+        }
+      ],
+      "img": "icons/equipment/chest/jacket-motorcycle-leather-black.webp"
+    },
+    {
+      "name": "Riot Vest",
+      "description": "Scuffed padded armor left behind after a crowd dispersed. Built to shrug off thrown debris.",
+      "quantity": 1,
+      "weight": 4,
+      "rarity": "uncommon",
+      "effort": 2,
+      "damageReduction": 2,
+      "grantedSkills": [
+        {
+          "skillName": "Block",
+          "level": 2
+        }
+      ],
+      "img": "icons/equipment/chest/riot-black.webp"
+    },
+    {
+      "name": "Improvised Kevlar Vest",
+      "description": "Ballistic panels stitched into a canvas vest by someone who clearly knew what they were doing.",
+      "quantity": 1,
+      "weight": 8,
+      "rarity": "uncommon",
+      "effort": 2,
+      "damageReduction": 3,
+      "grantedSkills": [
+        {
+          "skillName": "Block",
+          "level": 2
+        }
+      ],
+      "img": "icons/equipment/chest/bullet-proof-vest-kevlar.webp"
+    },
+    {
+      "name": "Tactical Rig (Full Loadout)",
+      "description": "A full tactical harness plated with ceramic inserts, apparently left behind in a hurry. Serious gear for people who expected a serious fight.",
+      "quantity": 1,
+      "weight": 12,
+      "rarity": "rare",
+      "effort": 3,
+      "damageReduction": 5,
+      "grantedSkills": [
+        {
+          "skillName": "Block",
+          "level": 3
+        }
+      ],
+      "img": "icons/equipment/chest/harness-tactical-heavy.webp"
     }
   ]
 }

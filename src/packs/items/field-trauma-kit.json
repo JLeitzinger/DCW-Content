@@ -1,0 +1,37 @@
+{
+  "_id": "field-trauma-kit",
+  "name": "Field Trauma Kit",
+  "type": "item",
+  "img": "icons/tools/medical/medkit-heavy.webp",
+  "system": {
+    "description": "A professional paramedic's kit, fully stocked. Whoever lost this knew what they were doing.",
+    "quantity": 1,
+    "weight": 2,
+    "rarity": "rare",
+    "grantedSkills": [],
+    "luckBonus": 0,
+    "consumable": true,
+    "restoreResource": "hp",
+    "restoreAmount": 25,
+    "regenBoostAmount": 3,
+    "regenBoostUses": 3
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "_id": "uncommon-motorcycle-jacket",
+  "name": "Motorcycle Jacket",
+  "type": "armor",
+  "img": "icons/equipment/chest/jacket-motorcycle-leather-black.webp",
+  "system": {
+    "description": "Armored leather built for road rash, not blades, but it still turns aside a glancing hit.",
+    "quantity": 1,
+    "weight": 6,
+    "rarity": "uncommon",
+    "effort": 2,
+    "damageReduction": 2,
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Dodge",
+        "level": 2
+      }
+    ],
+    "luckBonus": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

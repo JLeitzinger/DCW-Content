@@ -1,0 +1,40 @@
+{
+  "_id": "common-thick-sweater",
+  "name": "Thick Sweater",
+  "type": "armor",
+  "img": "icons/equipment/chest/shirt-sweater-yellow.webp",
+  "system": {
+    "description": "A bulky knit sweater pulled from a closet. Not much, but it takes the edge off a glancing blow.",
+    "quantity": 1,
+    "weight": 1.5,
+    "rarity": "common",
+    "effort": 1,
+    "damageReduction": 1,
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Dodge",
+        "level": 1
+      }
+    ],
+    "luckBonus": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

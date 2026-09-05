@@ -1,0 +1,40 @@
+{
+  "_id": "common-work-gloves",
+  "name": "Work Gloves",
+  "type": "armor",
+  "img": "icons/equipment/hand/gloves-leather-tan.webp",
+  "system": {
+    "description": "Reinforced leather gloves from a hardware store. Grippy, tough, and good in a scrap.",
+    "quantity": 1,
+    "weight": 0.5,
+    "rarity": "common",
+    "effort": 1,
+    "damageReduction": 1,
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Dodge",
+        "level": 1
+      }
+    ],
+    "luckBonus": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

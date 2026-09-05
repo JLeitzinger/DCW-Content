@@ -1,0 +1,40 @@
+{
+  "_id": "uncommon-riot-vest",
+  "name": "Riot Vest",
+  "type": "armor",
+  "img": "icons/equipment/chest/riot-black.webp",
+  "system": {
+    "description": "Scuffed padded armor left behind after a crowd dispersed. Built to shrug off thrown debris.",
+    "quantity": 1,
+    "weight": 4,
+    "rarity": "uncommon",
+    "effort": 2,
+    "damageReduction": 2,
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Block",
+        "level": 2
+      }
+    ],
+    "luckBonus": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

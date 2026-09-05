@@ -1,0 +1,45 @@
+{
+  "_id": "uncommon-nail-gun",
+  "name": "Nail Gun",
+  "type": "weapon",
+  "img": "icons/tools/hand/drill-steel-brown-grey.webp",
+  "system": {
+    "description": "A battery-powered nail gun, scavenged from a construction site. Punches fasteners hard enough to matter at range.",
+    "quantity": 1,
+    "weight": 4,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d6",
+      "diceBonus": "+@dex.mod+ceil(@lvl / 2)+1"
+    },
+    "rarity": "uncommon",
+    "effort": 1,
+    "range": "melee / 20 feet",
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Shoot",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

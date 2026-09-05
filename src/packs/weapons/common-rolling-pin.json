@@ -1,0 +1,45 @@
+{
+  "_id": "common-rolling-pin",
+  "name": "Rolling Pin",
+  "type": "weapon",
+  "img": "icons/weapons/hammers/hammer-mallet-wood.webp",
+  "system": {
+    "description": "A heavy length of turned oak. Better suited to pastry than combat, but it still cracks a skull.",
+    "quantity": 1,
+    "weight": 1.5,
+    "roll": {
+      "diceNum": 1,
+      "diceSize": "d4",
+      "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+    },
+    "rarity": "common",
+    "effort": 1,
+    "range": "melee",
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Blunt",
+        "level": 1
+      }
+    ],
+    "grantedFeatures": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

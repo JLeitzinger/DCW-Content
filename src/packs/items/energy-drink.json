@@ -1,0 +1,37 @@
+{
+  "_id": "energy-drink",
+  "name": "Energy Drink",
+  "type": "item",
+  "img": "icons/consumables/drinks/drink-can-red.webp",
+  "system": {
+    "description": "An ice-cold can of something neon and caffeinated. Restores vigor and quickens recovery for a short while after drinking.",
+    "quantity": 1,
+    "weight": 0.5,
+    "rarity": "uncommon",
+    "grantedSkills": [],
+    "luckBonus": 0,
+    "consumable": true,
+    "restoreResource": "stamina",
+    "restoreAmount": 12,
+    "regenBoostAmount": 2,
+    "regenBoostUses": 2
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

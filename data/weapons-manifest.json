@@ -611,6 +611,278 @@
         }
       ],
       "grantedFeatures": []
+    },
+    {
+      "name": "Broken Bottle",
+      "img": "icons/weapons/misc/bottle-broken.webp",
+      "description": "A jagged-edged bottle, snapped off at the neck. Found in an alley or fished out of a dumpster, it's ugly but it'll cut.",
+      "quantity": 1,
+      "weight": 0.5,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d4",
+        "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Slash",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Kitchen Knife",
+      "img": "icons/weapons/daggers/knife-kitchen-red.webp",
+      "description": "A plain knife pulled from a drawer. Meant for chopping vegetables, but it'll do in a pinch.",
+      "quantity": 1,
+      "weight": 0.5,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d4",
+        "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Pierce",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Rolling Pin",
+      "img": "icons/weapons/hammers/hammer-mallet-wood.webp",
+      "description": "A heavy length of turned oak. Better suited to pastry than combat, but it still cracks a skull.",
+      "quantity": 1,
+      "weight": 1.5,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d4",
+        "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Blunt",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Fireplace Poker",
+      "img": "icons/tools/hand/pry-bar-steel.webp",
+      "description": "A soot-blackened iron rod, pulled from a hearth. The tapered tip makes for an ugly stab.",
+      "quantity": 1,
+      "weight": 2,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d4",
+        "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Pierce",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Box Cutter",
+      "img": "icons/weapons/daggers/knife-utility-red.webp",
+      "description": "A cheap retractable blade meant for opening cardboard. Small, sharp, and easy to conceal.",
+      "quantity": 1,
+      "weight": 0.3,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d4",
+        "diceBonus": "+@dex.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Slash",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Tire Iron",
+      "img": "icons/tools/hand/wrench-iron-grey.webp",
+      "description": "A length of forged steel meant for lug nuts. Its weight and reach make it a solid improvised bludgeon.",
+      "quantity": 1,
+      "weight": 3,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d6",
+        "diceBonus": "+@str.mod+ceil(@lvl / 2)"
+      },
+      "rarity": "common",
+      "effort": 1,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Blunt",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Meat Cleaver",
+      "img": "icons/weapons/axes/cleaver-red.webp",
+      "description": "A wide, heavy-bladed cleaver from a butcher's block. Overbuilt for chopping meat and none too pleasant on people either.",
+      "quantity": 1,
+      "weight": 2,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d6",
+        "diceBonus": "+@str.mod+ceil(@lvl / 2)+1"
+      },
+      "rarity": "uncommon",
+      "effort": 1,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Slash",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Aluminum Baseball Bat",
+      "img": "icons/weapons/clubs/baseball-bat-metal.webp",
+      "description": "A dented but serviceable bat, still gripped in tape. Light, balanced, and built to swing hard.",
+      "quantity": 1,
+      "weight": 3,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d6",
+        "diceBonus": "+@str.mod+ceil(@lvl / 2)+1"
+      },
+      "rarity": "uncommon",
+      "effort": 1,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Blunt",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Crowbar",
+      "img": "icons/tools/hand/pry-bar-hook-steel.webp",
+      "description": "A hooked steel bar for prying open doors, crates, and skulls. Reliable and satisfyingly heavy.",
+      "quantity": 1,
+      "weight": 4,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d6",
+        "diceBonus": "+@str.mod+ceil(@lvl / 2)+1"
+      },
+      "rarity": "uncommon",
+      "effort": 1,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Blunt",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Nail Gun",
+      "img": "icons/tools/hand/drill-steel-brown-grey.webp",
+      "description": "A battery-powered nail gun, scavenged from a construction site. Punches fasteners hard enough to matter at range.",
+      "quantity": 1,
+      "weight": 4,
+      "roll": {
+        "diceNum": 1,
+        "diceSize": "d6",
+        "diceBonus": "+@dex.mod+ceil(@lvl / 2)+1"
+      },
+      "rarity": "uncommon",
+      "effort": 1,
+      "range": "melee / 20 feet",
+      "grantedSkills": [
+        {
+          "skillName": "Shoot",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Katana",
+      "img": "icons/weapons/swords/sword-katana.webp",
+      "description": "A genuine antique blade, found wrapped in cloth at the back of a stranger's closet during an estate sale. Sharper than anything else in the pile.",
+      "quantity": 1,
+      "weight": 3,
+      "roll": {
+        "diceNum": 2,
+        "diceSize": "d6",
+        "diceBonus": "+@str.mod+ceil(@lvl / 2)+2"
+      },
+      "rarity": "rare",
+      "effort": 2,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Slash",
+          "level": 2
+        },
+        {
+          "skillName": "Pierce",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
+    },
+    {
+      "name": "Nail-Studded Bat",
+      "img": "icons/weapons/clubs/bat-nail.webp",
+      "description": "A baseball bat wrapped in barbed wire and driven through with nails. Someone clearly expected trouble.",
+      "quantity": 1,
+      "weight": 4,
+      "roll": {
+        "diceNum": 2,
+        "diceSize": "d6",
+        "diceBonus": "+@str.mod+ceil(@lvl / 2)+2"
+      },
+      "rarity": "rare",
+      "effort": 2,
+      "range": "melee",
+      "grantedSkills": [
+        {
+          "skillName": "Blunt",
+          "level": 2
+        },
+        {
+          "skillName": "Pierce",
+          "level": 1
+        }
+      ],
+      "grantedFeatures": []
     }
   ]
 }

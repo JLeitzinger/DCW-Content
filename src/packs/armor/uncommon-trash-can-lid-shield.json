@@ -1,0 +1,40 @@
+{
+  "_id": "uncommon-trash-can-lid-shield",
+  "name": "Trash Can Lid Shield",
+  "type": "armor",
+  "img": "icons/equipment/shield/shield-round-boss-wood-brown.webp",
+  "system": {
+    "description": "A dented steel lid, still sturdy enough to catch a swing. The neighborhood's least dignified shield.",
+    "quantity": 1,
+    "weight": 6,
+    "rarity": "uncommon",
+    "effort": 2,
+    "damageReduction": 3,
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Block",
+        "level": 2
+      }
+    ],
+    "luckBonus": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

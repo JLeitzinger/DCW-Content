@@ -1,0 +1,40 @@
+{
+  "_id": "uncommon-improvised-kevlar-vest",
+  "name": "Improvised Kevlar Vest",
+  "type": "armor",
+  "img": "icons/equipment/chest/bullet-proof-vest-kevlar.webp",
+  "system": {
+    "description": "Ballistic panels stitched into a canvas vest by someone who clearly knew what they were doing.",
+    "quantity": 1,
+    "weight": 8,
+    "rarity": "uncommon",
+    "effort": 2,
+    "damageReduction": 3,
+    "equipped": false,
+    "grantedSkills": [
+      {
+        "skillUuid": "Compendium.dcw-content.skills.Item.Block",
+        "level": 2
+      }
+    ],
+    "luckBonus": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.341",
+    "systemId": "dungeon-crawler-world",
+    "systemVersion": null,
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}
